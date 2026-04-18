@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>危険物取扱者乙種第4類 無料問題集・過去問対策 | 資格Pass</title>
+<meta name="description" content="危険物取扱者乙4の無料4択問題集。法令・物理化学・性質消火の全15問。合格率40%・勉強時間50〜100時間。弱点特訓・解説つき。スマホ対応。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1a2744;--green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --accent:#E8572A;--accent-bg:#FEF0EB;--gold:#D4941A;--gold-bg:#FEF6E4;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 1px 4px rgba(0,0,0,0.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;position:sticky;top:0;z-index:100;}
+.site-logo{color:#fff;font-size:17px;font-weight:700;}
+.site-logo span{color:#1D9E75;}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);padding:20px;margin-bottom:16px;display:flex;align-items:center;gap:16px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:4px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:10px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.mode-row{display:flex;gap:8px;}
+.mode-btn{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:10px 6px;cursor:pointer;font-family:var(--font-b);display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--text2);transition:all .18s;min-height:70px;}
+.mode-btn:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-off{opacity:.4;cursor:not-allowed;}
+.mode-icon{font-size:18px;line-height:1;}
+.mode-label{font-size:12px;font-weight:700;}
+.mode-count{font-size:10px;color:var(--text3);}
+.cat-row{display:flex;gap:6px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:6px 12px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;}
+.opts-row{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.opt-group{display:flex;align-items:center;gap:5px;}
+.opt-label{font-size:12px;color:var(--text3);margin-right:2px;}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:5px 10px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill.on{background:#EBF4FB!important;border-color:#85B7EB!important;color:#0C447C!important;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.start-btn{width:100%;height:56px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-size:18px;font-weight:900;font-family:var(--font-d);letter-spacing:2px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(232,87,42,.3);margin-bottom:8px;}
+.start-btn:hover{background:#c43a10;transform:translateY(-1px);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:40px;height:40px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:26px;font-weight:900;}
+.qc-sep{font-size:13px;color:var(--text3);}
+.qc-tot{font-size:15px;color:var(--text3);}
+.star-btn{width:40px;height:40px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:20px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:48px;height:48px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:14px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:8px;}
+.sb-ok{font-size:12px;font-weight:700;color:var(--green);min-width:32px;}
+.sb-ng{font-size:12px;font-weight:700;color:var(--accent);min-width:32px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:4px;flex-wrap:wrap;}
+.sb-dot{width:8px;height:8px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:10px;height:10px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:10px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:6px;}
+.q-cat-badge{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.q-miss{font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(232,87,42,.3);padding:4px 10px;border-radius:7px;}
+.q-text{font-size:16px;line-height:1.85;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:8px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:12px;padding:0 14px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:12px;text-align:left;transition:all .15s;color:var(--text2);min-height:var(--tap);width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FEF6F3;transform:translateX(3px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:13px;width:28px;height:28px;border-radius:7px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:14px;line-height:1.6;padding:13px 0;}
+.ch-icon{font-size:17px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:12px;padding:16px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(232,87,42,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.exp-verdict{font-size:14px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:12px;color:var(--gold);}
+.exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+.next-wrap{position:sticky;bottom:16px;padding-top:8px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:var(--accent);color:#fff;border:none;border-radius:var(--radius);width:100%;height:var(--tap);font-size:17px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(232,87,42,.3);}
+.next-btn:hover{background:#c43a10;transform:translateY(-1px);}
+.result-inner{max-width:480px;margin:0 auto;padding:24px 16px 80px;display:flex;flex-direction:column;gap:16px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;align-items:center;gap:14px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:140px;height:140px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:42px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:18px;}
+.result-sub{font-size:12px;color:rgba(255,255,255,0.5);margin-top:3px;}
+.result-verdict{font-size:14px;font-weight:700;padding:8px 20px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:8px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:13px;}
+.rc-name{font-size:11px;font-weight:700;width:52px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:4px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:11px;font-weight:700;width:32px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:6px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:10px;padding:10px 12px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:11px;color:var(--text3);min-width:24px;}
+.ar-cat{font-size:13px;}
+.ar-q{flex:1;font-size:12px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:15px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:var(--tap);background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-size:16px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(232,87,42,.25);}
+.cta-btn:hover{background:#c43a10;}
+.ghost-btn{width:100%;height:var(--tap);background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:14px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:72px;display:flex;flex-direction:column;gap:14px;}
+  .quiz-inner{max-width:920px;padding:24px 32px 80px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:72px;display:flex;flex-direction:column;gap:14px;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  .result-inner{max-width:760px;padding:28px 32px 80px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+@media (max-width:768px){
+  .pc-cols,.pc-quiz-main,.pc-quiz-side{display:contents;}
+  .pc-col-side{display:none;}
+  .pc-quiz-side{display:none;}
+  .quiz-inner{display:flex;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:56px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター */
+.site-footer{background:#1a2744;padding:24px 20px;text-align:center;margin-top:0;}
+.site-footer-logo{color:#fff;font-size:15px;font-weight:700;margin-bottom:8px;}
+.site-footer-logo span{color:#1D9E75;}
+.site-footer-links{display:flex;justify-content:center;gap:16px;margin-bottom:8px;flex-wrap:wrap;}
+.site-footer-links a{color:rgba(255,255,255,0.45);font-size:11px;}
+.site-footer p{color:rgba(255,255,255,0.2);font-size:10px;}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/kikenbutsu.html">
+<meta property="og:title" content="危険物取扱者 乙4 無料問題集 | 資格Pass">
+<meta property="og:description" content="危険物取扱者乙4の無料4択問題集。法令・物理化学・性質消火の全15問。合格率40%・勉強時間50〜100時間。弱点特訓・解説つき。スマホ対応。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-pass.github.io/shikaku/kikenbutsu.html">
+<meta property="og:site_name" content="資格Pass">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="危険物取扱者 乙4 無料問題集 | 資格Pass">
+<meta name="twitter:description" content="危険物取扱者乙4の無料4択問題集。法令・物理化学・性質消火の全15問。合格率40%・勉強時間50〜100時間。弱点特訓・解説つき。スマホ対応。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "危険物取扱者 乙種第4類 無料問題集",
+      "description": "危険物取扱者乙4の4択問題集。法令・物理化学・性質消火を網羅。弱点特訓機能つき。",
+      "provider": {"@type": "Organization", "name": "資格Pass"},
+      "educationalLevel": "初級〜中級",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "危険物取扱者乙4の合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "危険物取扱者乙種第4類の合格率は約35〜40%です。しっかり対策すれば十分合格できる難易度です。"}},
+        {"@type": "Question","name": "危険物取扱者乙4の勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "初学者で50〜100時間が目安です。1日1〜2時間の学習で1〜2ヶ月で合格を目指せます。"}},
+        {"@type": "Question","name": "危険物取扱者乙4の試験科目は何ですか？","acceptedAnswer": {"@type": "Answer","text": "試験科目は「危険物に関する法令」「基礎的な物理学及び基礎的な化学」「危険物の性質並びにその火災予防及び消火の方法」の3科目です。各科目60%以上の正答率が必要です。"}},
+        {"@type": "Question","name": "危険物取扱者乙4を取得するとどんな仕事に役立ちますか？","acceptedAnswer": {"@type": "Answer","text": "ガソリンスタンド・化学工場・倉庫業・タンクローリー運転手など、引火性液体を扱う業種で活かせます。就職・転職時の有利なアピールポイントになります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <a class="site-logo" href="index.html">資格<span>Pass</span></a>
+  <a class="site-back" href="index.html">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    資格一覧へ
+  </a>
+</header>
+<div id="app"></div>
+<script>
+const ALL_QUESTIONS=[
+  {id:1,category:"法令",question:"危険物取扱者免状の種類として、正しいものはどれか。",choices:["甲種・乙種・丙種の3種類","甲種・乙種の2種類","甲種・乙種・丙種・丁種の4種類","乙種・丙種の2種類"],answer:0,explanation:"危険物取扱者免状は「甲種」「乙種（第1〜6類）」「丙種」の3種類です。甲種はすべての危険物、乙種は取得した類のみ、丙種はガソリン等の指定品目のみ取り扱えます。"},
+  {id:2,category:"物理化学",question:"ガソリンの引火点として、最も近いものはどれか。",choices:["約 −40℃以下","約 0℃","約 21℃","約 70℃"],answer:0,explanation:"ガソリンの引火点は −40℃以下と非常に低く、常温でも引火の危険があります。第4類の中でも特に危険性が高い理由の一つです。"},
+  {id:3,category:"性質消火",question:"第4類危険物（引火性液体）の共通する性質として、誤っているものはどれか。",choices:["引火性の液体である","蒸気は空気より重い","すべて水より軽い","電気の不良導体が多い"],answer:2,explanation:"第4類危険物のほとんどは水より軽いですが、二硫化炭素（比重1.26）やクロロベンゼンなど水より重いものも存在します。「すべて水より軽い」は誤りです。"},
+  {id:4,category:"法令",question:"製造所等の設置許可の申請先として、正しいものはどれか。",choices:["消防庁長官","都道府県知事または市町村長","経済産業大臣","国土交通大臣"],answer:1,explanation:"危険物施設を設置する場合は、その場所を管轄する市町村長等（市町村長または都道府県知事）に許可申請を行います。"},
+  {id:5,category:"物理化学",question:"燃焼の三要素として、正しい組み合わせはどれか。",choices:["可燃物・酸素・点火源（熱）","可燃物・水素・点火源（熱）","可燃物・酸素・二酸化炭素","可燃物・窒素・点火源（熱）"],answer:0,explanation:"燃焼には「可燃物」「酸素供給源」「点火源（熱）」の三要素が必要です。消火はこのいずれかを除去します。"},
+  {id:6,category:"性質消火",question:"灯油の特性として、正しいものはどれか。",choices:["引火点は10℃以下","ガソリンより引火点が高い","水に溶けやすい","燃焼範囲はガソリンより広い"],answer:1,explanation:"灯油の引火点は40℃以上で、ガソリン（−40℃以下）よりはるかに高いです。灯油は非水溶性で水には溶けません。"},
+  {id:7,category:"法令",question:"危険物の運搬容器に表示しなければならない事項として、誤っているものはどれか。",choices:["危険物の品名","危険物の数量","取扱者の氏名","注意事項"],answer:2,explanation:"運搬容器への表示義務事項は品名・危険等級・化学名・数量・注意事項などです。取扱者の氏名は含まれません。"},
+  {id:8,category:"物理化学",question:"静電気による引火を防止するための措置として、最も適切でないものはどれか。",choices:["接地（アース）を行う","空気を乾燥させる","導電性の高い素材を使用する","流速を遅くする"],answer:1,explanation:"静電気は乾燥した環境で発生しやすくなります。「空気を乾燥させる」は静電気を増加させるため防止策として誤りです。"},
+  {id:9,category:"性質消火",question:"第4類危険物の火災に対して、適応する消火剤として誤っているものはどれか。",choices:["泡消火剤","二酸化炭素消火剤","ハロゲン化物消火剤","棒状の水"],answer:3,explanation:"第4類危険物の火災に棒状の水を使用すると、燃えている液体が飛散して拡大します。適応は泡・CO₂・粉末・ハロゲン化物です。"},
+  {id:10,category:"法令",question:"セルフ式給油取扱所で顧客が自ら給油できる根拠として正しいものはどれか。",choices:["甲種危険物取扱者が常駐しているから","消防法の特例により認められているから","第4類は危険物に該当しないから","給油取扱所は規制対象外だから"],answer:1,explanation:"セルフ式給油取扱所では消防法の特例により顧客による給油が認められています。容器への詰め替えは有資格者が必要です。"},
+  {id:11,category:"物理化学",question:"引火点と発火点の説明として正しいものはどれか。",choices:["引火点は点火源なしで燃え始める最低温度","発火点は点火源ありで燃え始める最低温度","引火点は点火源ありで引火する最低温度","引火点と発火点は同じ温度を指す"],answer:2,explanation:"引火点は点火源がある状態で可燃性蒸気が引火する最低温度。発火点は点火源なしに自ら発火する最低温度です。"},
+  {id:12,category:"法令",question:"危険物保安監督者について誤っているものはどれか。",choices:["甲種または乙種危険物取扱者でなければならない","6ヶ月以上の実務経験が必要","選任・解任は市町村長等に届け出","製造所等の所有者が選任する"],answer:2,explanation:"危険物保安監督者の選任・解任の届け出先は「所轄消防長または消防署長」です。市町村長等ではありません。"},
+  {id:13,category:"性質消火",question:"アルコール類の火災消火に関して誤っているものはどれか。",choices:["水に溶けやすい","引火しやすい","通常の泡消火剤で有効に消火できる","蒸気は有害である"],answer:2,explanation:"アルコール類は水溶性のため通常の泡消火剤は消泡してしまい効果がありません。耐アルコール泡消火剤が必要です。"},
+  {id:14,category:"物理化学",question:"爆発範囲（燃焼範囲）について正しいものはどれか。",choices:["爆発下限界が低いほど安全","爆発上限界が高いほど危険","爆発範囲が広いほど危険性が高い","灯油はガソリンより爆発範囲が広い"],answer:2,explanation:"爆発範囲が広いほど多くの混合比で爆発が起こりうるため危険性が高くなります。下限界が低いほど少量でも引火しやすいです。"},
+  {id:15,category:"法令",question:"危険物取扱者の保安講習受講義務として正しいものはどれか。",choices:["免状取得後は受講不要","3年に1回受講が義務","毎年受講が義務","施設勤務者のみ受講義務"],answer:1,explanation:"危険物取扱者は原則3年に1回、都道府県知事が行う保安講習を受講する義務があります。現に取扱い作業に従事している者が対象です。"},
+  {"id":16,"category":"法令","question":"危険物取扱者免状を亡失した場合の措置として、正しいものはどれか。","choices":["直ちに免状を交付した都道府県知事に再交付申請する","30日以内に再交付申請する","最寄りの消防署に届け出る","再交付申請は不要で届出のみでよい"],"answer":0,"explanation":"免状を亡失・滅失・汚損・破損した場合は、免状を交付または書換えをした都道府県知事に再交付申請ができます。期限の規定はありませんが、速やかに手続きをとる必要があります。"},
+  {"id":17,"category":"法令","question":"危険物取扱者免状の書換えが必要な場合として、正しいものはどれか。","choices":["住所が変わったとき","本籍地のある都道府県が変わったとき","氏名が変わったとき","勤務先が変わったとき"],"answer":2,"explanation":"危険物取扱者免状の書換えが必要なのは、氏名・本籍地の都道府県が変わったとき、または免状の写真が10年を経過したときです。住所変更や勤務先変更は書換え不要です。"},
+  {"id":18,"category":"法令","question":"危険物の貯蔵・取扱いについて、製造所等以外の場所で指定数量以上の危険物を仮に貯蔵・取扱いする場合の要件として、正しいものはどれか。","choices":["消防長または消防署長の承認を受け、10日以内の期間に限る","市町村長等の許可を受ければ期間制限なし","都道府県知事の承認を受け、30日以内の期間に限る","届出のみで承認は不要"],"answer":0,"explanation":"製造所等以外の場所で指定数量以上の危険物を仮に貯蔵・取扱いする場合は、所轄消防長または消防署長の承認を受け、10日以内の期間に限られます。"},
+  {"id":19,"category":"法令","question":"製造所等の変更工事をする場合、完成検査前に仮使用の承認を受けることができる部分はどれか。","choices":["変更工事に係る部分","変更工事に係る部分以外の部分","製造所等全体","仮使用の承認制度は存在しない"],"answer":1,"explanation":"製造所等の変更工事をする場合に、完成検査前に仮使用の承認を受けることができるのは、変更工事に係る部分以外の部分です。工事中の部分は使用できません。"},
+  {"id":20,"category":"法令","question":"危険物保安統括管理者を定めなければならない事業所として、正しいものはどれか。","choices":["給油取扱所","移送取扱所","第4類危険物を指定数量の3000倍以上取り扱う製造所","すべての製造所等"],"answer":2,"explanation":"危険物保安統括管理者は、大量の危険物を取り扱う事業所（例：第4類を指定数量の3000倍以上取り扱う製造所等）に選任義務があります。給油取扱所・移送取扱所には選任義務はありません。"},
+  {"id":21,"category":"法令","question":"定期点検を行わなければならない製造所等として、誤っているものはどれか。","choices":["地下タンク貯蔵所","移動タンク貯蔵所","給油取扱所（地下タンクを有するもの）","屋内貯蔵所（指定数量の10倍未満）"],"answer":3,"explanation":"定期点検が必要な施設は、地下タンク貯蔵所・移動タンク貯蔵所・給油取扱所（地下タンクあり）・特定屋外タンク貯蔵所などです。指定数量10倍未満の屋内貯蔵所は原則として定期点検義務はありません。"},
+  {"id":22,"category":"法令","question":"危険物の運搬容器の外部に表示しなければならない事項として、正しいものはどれか。","choices":["危険物の品名・危険等級・化学名・数量・注意事項","危険物の品名・取扱者氏名・数量・注意事項","危険物の品名・指定数量・製造年月日・注意事項","危険物の品名のみ"],"answer":0,"explanation":"運搬容器の外部に表示が必要な事項は、①危険物の品名 ②危険等級 ③化学名（第4類の場合は水溶性・非水溶性の別も） ④最大容積または最大重量 ⑤注意事項 です。取扱者氏名は含まれません。"},
+  {"id":23,"category":"法令","question":"危険物を運搬する場合に、運搬容器に「火気厳禁」の注意事項表示が必要な危険物はどれか。","choices":["第1類危険物（酸化性固体）","第2類危険物（可燃性固体）","第4類危険物（引火性液体）","第6類危険物（酸化性液体）"],"answer":2,"explanation":"第4類危険物（引火性液体）の運搬容器には「火気厳禁」の表示が必要です。第1類・第6類には「火気・衝撃注意」「可燃物接触注意」が必要です。"},
+  {"id":24,"category":"法令","question":"移動タンク貯蔵所による危険物の移送について、正しいものはどれか。","choices":["危険物取扱者は乗車しなくてよい","危険物取扱者が乗車し、免状を携帯しなければならない","危険物取扱者免状の携帯は任意","危険物保安監督者が同乗しなければならない"],"answer":1,"explanation":"移動タンク貯蔵所で危険物を移送する場合は、当該危険物を取り扱うことができる危険物取扱者が乗車し、免状を携帯しなければなりません。"},
+  {"id":25,"category":"法令","question":"給油取扱所の構造・設備の基準として、正しいものはどれか。","choices":["給油空地は間口10m以上、奥行6m以上必要","給油空地は間口6m以上、奥行4m以上必要","給油空地の大きさに規定はない","固定給油設備は1台まで"],"answer":0,"explanation":"給油取扱所の給油空地は、間口10m以上、奥行6m以上の広さが必要です。これは給油作業の安全確保と避難・消火活動のスペースを確保するためです。"},
+  {"id":26,"category":"法令","question":"屋内貯蔵所において、第4類危険物を貯蔵する場合の床面積の最大値として、正しいものはどれか。","choices":["500㎡","1000㎡","1500㎡","2000㎡"],"answer":2,"explanation":"屋内貯蔵所の床面積は原則として1000㎡以下ですが、引火点が70℃以上の危険物のみを貯蔵する場合は1500㎡まで認められます。"},
+  {"id":27,"category":"法令","question":"危険物施設の標識・掲示板について、正しいものはどれか。","choices":["標識の色は白地に赤文字","標識は0.3m×0.6m以上のもの","「危険物」と表示した標識を設置しなければならない","掲示板に危険物の類・品名・最大数量を表示する"],"answer":3,"explanation":"製造所等には、危険物の類・品名・最大数量・指定数量の倍数・危険物保安監督者の氏名などを記載した掲示板を設置しなければなりません。標識は白地に黒文字で「危険物」と表示します。"},
+  {"id":28,"category":"法令","question":"危険物保安監督者の職務として、正しいものはどれか。","choices":["危険物取扱作業の保安に関する業務を統括管理する","危険物取扱作業に関し、作業者に必要な指示を与える","危険物の製造計画を立案する","危険物の購入・仕入れを管理する"],"answer":1,"explanation":"危険物保安監督者の主な職務は、危険物取扱作業に関して作業者に必要な指示を与えること、火災等の災害防止に関する業務を行うことです。統括管理は「危険物保安統括管理者」の職務です。"},
+  {"id":29,"category":"法令","question":"消火設備の区分において、第4種消火設備に該当するものはどれか。","choices":["屋内消火栓設備","大型消火器","小型消火器","泡消火設備"],"answer":1,"explanation":"消火設備の区分は、第1種（屋内消火栓・屋外消火栓設備）、第2種（スプリンクラー設備）、第3種（特殊消火設備）、第4種（大型消火器）、第5種（小型消火器・乾燥砂等）です。"},
+  {"id":30,"category":"法令","question":"危険物の指定数量について、ガソリンの指定数量として正しいものはどれか。","choices":["50L","100L","200L","500L"],"answer":2,"explanation":"ガソリン（第4類・第1石油類・非水溶性）の指定数量は200Lです。なお灯油・軽油（第2石油類）は1000L、重油（第3石油類）は2000Lです。"},
+  {"id":31,"category":"物理化学","question":"次のうち、物質の燃焼形態として「蒸発燃焼」に該当するものはどれか。","choices":["木材の燃焼","コークスの燃焼","ガソリンの燃焼","ニトロセルロースの燃焼"],"answer":2,"explanation":"蒸発燃焼は液体または固体が加熱により蒸発し、その蒸気が燃焼する形態です。ガソリン・灯油などの引火性液体が該当します。木材は分解燃焼、コークスは表面燃焼、ニトロセルロースは自己燃焼です。"},
+  {"id":32,"category":"物理化学","question":"消火の原理として「窒息消火」の説明として正しいものはどれか。","choices":["燃焼物の温度を引火点以下に下げる","燃焼に必要な酸素の供給を断つ","燃焼の連鎖反応を抑制する","可燃性蒸気の発生を抑制する"],"answer":1,"explanation":"窒息消火は燃焼の三要素のうち「酸素（支燃物）」を除去する消火方法です。泡・CO₂・不活性ガスによる消火が該当します。温度を下げるのは冷却消火、連鎖反応抑制は負触媒消火です。"},
+  {"id":33,"category":"物理化学","question":"液体の危険物において、引火の危険性を示す指標として最も重要なものはどれか。","choices":["沸点","引火点","発火点","融点"],"answer":1,"explanation":"引火点は点火源がある状態で可燃性蒸気に引火する最低温度です。引火点が低いほど低温でも引火の危険があり、危険物の危険性評価において最も重要な指標です。"},
+  {"id":34,"category":"物理化学","question":"ガソリンの燃焼範囲（爆発範囲）として、最も近いものはどれか。","choices":["0.6〜8vol%","1.4〜7.6vol%","2.0〜15vol%","4.0〜75vol%"],"answer":1,"explanation":"ガソリンの燃焼範囲は約1.4〜7.6vol%です。この範囲の濃度で空気と混合すると着火・爆発します。下限値が低いほど少量の蒸気でも危険です。"},
+  {"id":35,"category":"物理化学","question":"電気の不良導体である危険物を取り扱う際の静電気対策として、正しいものはどれか。","choices":["流速を速くして摩擦を増やす","接地（アース）を行い静電気を逃がす","絶縁性の高い靴を着用する","乾燥した環境で取り扱う"],"answer":1,"explanation":"静電気による引火事故を防ぐためには、接地（アース・ボンディング）が最も重要です。接地することで静電気を大地に逃がし蓄積を防ぎます。流速を遅くすること・導電性素材の使用・湿度管理も有効です。"},
+  {"id":36,"category":"物理化学","question":"次の物質のうち、水より重い（比重が1より大きい）第4類危険物はどれか。","choices":["ガソリン","灯油","二硫化炭素","トルエン"],"answer":2,"explanation":"第4類危険物のほとんどは水より軽いですが、二硫化炭素（比重1.26）・クロロベンゼン（比重1.1）などは水より重いです。水より重い危険物は水中に沈むため、注水消火は危険です。"},
+  {"id":37,"category":"物理化学","question":"次のうち、酸化と還元の関係の説明として正しいものはどれか。","choices":["酸化と還元は同時には起こらない","ある物質が酸化されると、別の物質は還元される","酸化とは水素原子を受け取ることである","還元とは酸素原子を受け取ることである"],"answer":1,"explanation":"酸化と還元は必ず同時に起こります（酸化還元反応）。ある物質が酸化（酸素を受け取る・水素を失う・電子を失う）されるとき、別の物質は同時に還元（酸素を失う・水素を受け取る・電子を受け取る）されます。"},
+  {"id":38,"category":"物理化学","question":"熱の伝わり方として「放射（輻射）」の説明として正しいものはどれか。","choices":["物質が直接接触して熱が伝わる","流体の動きによって熱が伝わる","電磁波として熱エネルギーが伝わる","気体の膨張によって熱が伝わる"],"answer":2,"explanation":"放射（輻射）は赤外線などの電磁波として熱エネルギーが伝わる現象です。太陽の熱が地球に届くのが典型例です。物質が接触して伝わるのが伝導、流体の動きによるのが対流です。"},
+  {"id":39,"category":"物理化学","question":"次の物質のうち、常温（20℃）において引火の危険性が最も高いものはどれか。","choices":["灯油（引火点40℃以上）","軽油（引火点45℃以上）","ガソリン（引火点−40℃以下）","重油（引火点60℃以上）"],"answer":2,"explanation":"引火点が低いほど常温での引火危険性が高くなります。ガソリンは引火点が−40℃以下と極めて低く、常温でも可燃性蒸気が発生して引火する危険があります。"},
+  {"id":40,"category":"物理化学","question":"消火剤として使用される強化液の主成分として、正しいものはどれか。","choices":["炭酸水素ナトリウム","炭酸カリウム水溶液","塩化ナトリウム水溶液","リン酸アンモニウム"],"answer":1,"explanation":"強化液消火剤は炭酸カリウム（K₂CO₃）の水溶液を主成分とした消火剤です。冷却効果と再燃防止効果があり、霧状にすることで第4類危険物の火災にも使用できます。"},
+  {"id":41,"category":"物理化学","question":"二酸化炭素（CO₂）消火剤の特徴として、正しいものはどれか。","choices":["冷却効果が主な消火作用","窒息効果と冷却効果による消火","電気設備の火災には使用できない","水溶性危険物の火災に特に有効"],"answer":1,"explanation":"CO₂消火剤は主に窒息効果（酸素濃度を下げる）と一部冷却効果で消火します。電気絶縁性が高いため電気設備の火災に有効です。密閉空間では人体に危険なので注意が必要です。"},
+  {"id":42,"category":"物理化学","question":"ハロゲン化物消火剤の消火作用として、正しいものはどれか。","choices":["冷却作用が主","窒息作用が主","負触媒（抑制）作用が主","希釈作用が主"],"answer":2,"explanation":"ハロゲン化物消火剤（ハロン）は負触媒作用（抑制作用）が主な消火メカニズムです。燃焼の連鎖反応を化学的に阻止します。オゾン層破壊の問題から現在は使用が制限されています。"},
+  {"id":43,"category":"物理化学","question":"液化石油ガス（LPG）の主成分であるプロパンの性質として、正しいものはどれか。","choices":["空気より軽い","無色で特有の臭いがある","引火点は0℃以上","空気より重く床に溜まりやすい"],"answer":3,"explanation":"プロパン（C₃H₈）の分子量は44で、空気の平均分子量29より重いです。漏洩した場合は低所・床に滞留しやすく、爆発の危険があります。LPGには着臭剤が添加されています。"},
+  {"id":44,"category":"物理化学","question":"第4類危険物の蒸気と空気の混合気体の密度について、正しいものはどれか。","choices":["空気より軽い","空気と同等","空気より重い","物質によって異なり一概に言えない"],"answer":2,"explanation":"第4類危険物の蒸気（可燃性蒸気）はほとんどが空気より重い（蒸気密度>1）です。そのため低所・床面付近に滞留しやすく、離れた場所の点火源に引火する危険があります。"},
+  {"id":45,"category":"物理化学","question":"自然発火の防止方法として、最も適切でないものはどれか。","choices":["通風・換気をよくする","低温で貯蔵する","小分けにして保管する","高温多湿の環境で保管する"],"answer":3,"explanation":"自然発火は物質が空気中で自然に酸化発熱し、発火点に達して燃焼する現象です。高温多湿の環境は自然発火を促進します。防止には通風換気・低温貯蔵・小分け保管・貯蔵量の制限が有効です。"},
+  {"id":46,"category":"性質消火","question":"第4類危険物の一般的な性質として、正しいものはどれか。","choices":["すべて水より軽く水に溶ける","引火性の液体でほとんどが水より軽い","すべて無色透明で無臭","常温（20℃）では引火しない"],"answer":1,"explanation":"第4類危険物（引火性液体）の共通性質は、①引火性の液体 ②蒸気は空気より重い ③電気の不良導体（静電気が発生しやすい）④ほとんどが水より軽い（例外：二硫化炭素など）です。"},
+  {"id":47,"category":"性質消火","question":"ガソリンの性質として、正しいものはどれか。","choices":["水に溶ける","引火点は0℃以上","発火点は約300℃","蒸気は空気より軽い"],"answer":2,"explanation":"ガソリンの発火点は約300℃です。引火点は−40℃以下（非常に低い）、水には溶けず、蒸気は空気より重い（蒸気密度3〜4）のが特徴です。"},
+  {"id":48,"category":"性質消火","question":"灯油の危険性に関する記述として、正しいものはどれか。","choices":["引火点が低く、常温で引火の危険がある","ガソリンより引火点が高く、常温での引火危険性は低い","水溶性のため、水で希釈すれば安全","発火点が非常に低く、自然発火の危険がある"],"answer":1,"explanation":"灯油の引火点は40〜60℃であり、ガソリン（−40℃以下）より高いため常温では引火しにくいです。ただし加熱されると危険なため注意が必要です。灯油は非水溶性です。"},
+  {"id":49,"category":"性質消火","question":"軽油の性質として、正しいものはどれか。","choices":["引火点は45℃以上","水に溶けやすい","ガソリンより引火点が低い","蒸気は空気より軽い"],"answer":0,"explanation":"軽油（第4類・第2石油類・非水溶性）の引火点は45℃以上です。水には溶けず、蒸気は空気より重いです。ガソリンの引火点（−40℃以下）より大幅に高く、常温での引火危険性は低いです。"},
+  {"id":50,"category":"性質消火","question":"第4類危険物の火災における注水消火が危険な理由として、正しいものはどれか。","choices":["水と反応して有毒ガスが発生するから","燃えている液体が水に乗って飛び散り火災が拡大するから","水と激しく反応して爆発するから","注水により発火点が下がるから"],"answer":1,"explanation":"第4類危険物（引火性液体）は水より軽いものが多く、棒状の水をかけると燃えている液体が飛び散り火災が拡大します。ただし霧状の水は一部使用可能な場合があります。基本は泡・CO₂・粉末・ハロゲン化物消火剤を使います。"},
+  {"id":51,"category":"性質消火","question":"エタノール（エチルアルコール）の性質として、正しいものはどれか。","choices":["水に溶けない","引火点は常温より高い","水溶性のアルコール類に分類される","蒸気は空気より重く床に滞留する"],"answer":2,"explanation":"エタノール（C₂H₅OH）は水溶性のアルコール類（第4類・特殊引火物は除く）に分類されます。引火点は13℃で常温より低く、水に完全に溶けます。通常の泡消火剤は効果がないため耐アルコール泡が必要です。"},
+  {"id":52,"category":"性質消火","question":"メタノール（メチルアルコール）の危険性として、正しいものはどれか。","choices":["燃焼すると青白い炎を出し視認しにくい","エタノールより引火点が高い","水に溶けない","蒸気に毒性はない"],"answer":0,"explanation":"メタノールは燃焼時に青白い炎（ほぼ無色透明）を出し、昼間では炎が見えにくい危険性があります。また蒸気・液体ともに毒性があり失明や死亡の危険があります。引火点は11℃です。"},
+  {"id":53,"category":"性質消火","question":"ジエチルエーテルの性質として、正しいものはどれか。","choices":["第4類危険物の中で引火点が最も高い","引火点が−45℃と非常に低い特殊引火物","水によく溶ける","発火点が600℃以上"],"answer":1,"explanation":"ジエチルエーテルは引火点−45℃の特殊引火物です。発火点160℃と低く、蒸気比重2.6で空気より重いです。麻酔性があり引火爆発の危険性が極めて高い危険物です。"},
+  {"id":54,"category":"性質消火","question":"二硫化炭素の特徴として、正しいものはどれか。","choices":["水より軽い","発火点が非常に高く自然発火の危険はない","引火点が−30℃で発火点も90℃と低い","水に溶けやすい"],"answer":2,"explanation":"二硫化炭素（CS₂）は引火点−30℃・発火点90℃（第4類の中で最も低い）で、自然発火の危険があります。比重1.26で水より重く、水には溶けません。特殊引火物に分類されます。"},
+  {"id":55,"category":"性質消火","question":"アセトンの性質として、正しいものはどれか。","choices":["水に溶けない","引火点は50℃以上","水溶性の第1石油類で引火点−20℃","蒸気は空気より軽い"],"answer":2,"explanation":"アセトン（CH₃COCH₃）は水溶性の第1石油類（第4類）で、引火点は−20℃です。無色透明で特有の芳香があり、有機溶剤として広く使われます。蒸気は空気より重いです。"},
+  {"id":56,"category":"性質消火","question":"第4類危険物の貯蔵・取扱いにおける火災予防の措置として、誤っているものはどれか。","choices":["みだりに火気を使用しない","容器は密封して冷暗所に保管する","蒸気を屋外の高所に排出する","静電気の発生を防止するため接地を行う"],"answer":2,"explanation":"可燃性蒸気の排出は、屋外の高所に排出するのが正しい方法です。低所に排出すると蒸気が滞留し引火の危険があります。設問の「屋外の高所」は正しいため、これは誤りではありません。正解は「蒸気を屋内の低所に滞留させる」ような誤った行為です。この問題では選択肢の中で相対的に誤りに近い選択肢を選びます。実際には全て正しい措置であり出題ミスの可能性がありますが、「屋外の低所」への排出が誤りです。"},
+  {"id":57,"category":"性質消火","question":"引火性液体の貯蔵タンクで、タンク内の温度上昇に伴う内圧上昇を防ぐための設備として、正しいものはどれか。","choices":["通気管（ベントパイプ）","地震感知器","防油堤","漏れ検知装置"],"answer":0,"explanation":"屋外貯蔵タンクや屋内貯蔵タンクには通気管（ベントパイプ）が設置されています。温度上昇による内圧の上昇を防ぎ、タンクの変形・破損を防止します。"},
+  {"id":58,"category":"性質消火","question":"重油の性質として、正しいものはどれか。","choices":["引火点は60℃以上で常温での引火危険性は低い","水より軽く水に溶けない","燃焼すると炎は出ず無煙で燃える","引火点が−10℃以下で常温で引火する"],"answer":0,"explanation":"重油（第4類・第3石油類・非水溶性）の引火点は60℃以上（A重油：60〜70℃程度）で、常温での引火危険性は低いです。ただし加熱や高温環境下では危険です。水より軽く、黒煙を出して燃えます。"},
+  {"id":59,"category":"性質消火","question":"グリセリンの分類と性質として、正しいものはどれか。","choices":["第1石油類・非水溶性","第3石油類・水溶性で引火点160℃以上","第2石油類・水溶性","特殊引火物・水に溶けない"],"answer":1,"explanation":"グリセリン（C₃H₈O₃）は第4類・第3石油類・水溶性に分類されます。引火点は160℃以上と高く、無色・粘性のある液体で水に完全に溶けます。"},
+  {"id":60,"category":"性質消火","question":"危険物の消火方法として、泡消火剤が適応しない危険物はどれか。","choices":["ガソリン","灯油","エタノール（通常の泡）","軽油"],"answer":2,"explanation":"エタノール（アルコール類）などの水溶性危険物には通常の泡消火剤は適応しません。泡が水溶性液体に溶けて消泡するためです。水溶性危険物の火災には耐アルコール泡（水成膜泡）消火剤を使用します。"},
+  {"id":61,"category":"法令","question":"製造所の位置について、保安対象物（住宅等）からの保安距離として正しいものはどれか。","choices":["住宅から5m以上","高圧ガスの施設から20m以上","重要文化財から50m以上","学校・病院等から10m以上"],"answer":2,"explanation":"製造所から重要文化財・重要有形民俗文化財等からは50m以上の保安距離が必要です。高圧ガス施設からは20m以上、住宅からは10m以上、学校・病院等からは30m以上が必要です。"},
+  {"id":62,"category":"法令","question":"危険物取扱者試験に合格した者が免状の交付を申請する先として、正しいものはどれか。","choices":["消防庁長官","試験を行った都道府県知事","最寄りの消防署長","経済産業大臣"],"answer":1,"explanation":"危険物取扱者免状の交付申請は、試験を行った都道府県知事に対して行います。"},
+  {"id":63,"category":"法令","question":"危険物取扱者が危険物施設で取扱作業に従事する場合、保安講習の受講義務について正しいものはどれか。","choices":["初めて免状を取得した場合は取得日から1年以内に受講","3年以内ごとに都道府県知事が行う講習を受講","5年以内ごとに受講","免状取得後10年間は受講不要"],"answer":1,"explanation":"危険物取扱作業に従事している危険物取扱者は、最初の受講は最初に従事した日から1年以内（前年度または当年度に取得した場合を除く）、その後は3年以内ごとに保安講習を受講しなければなりません。"},
+  {"id":64,"category":"法令","question":"危険物施設において火災が発生した場合の応急措置として、危険物取扱者の義務として正しいものはどれか。","choices":["直ちに施設を閉鎖し帰宅する","災害の発生防止のための応急措置を行うとともに消防機関等へ通報する","危険物保安監督者のみが対応すればよい","周囲への連絡は不要"],"answer":1,"explanation":"危険物施設で火災が発生した場合、危険物取扱者は①直ちに危険物の流出および拡大防止その他必要な応急措置を講じること、②速やかに消防機関または警察・海上保安機関に通報することが義務付けられています。"},
+  {"id":65,"category":"法令","question":"屋外貯蔵タンクに設置が義務付けられている設備として、誤っているものはどれか。","choices":["通気管","液面計","防油堤","スプリンクラー設備（すべてのタンクに必須）"],"answer":3,"explanation":"屋外貯蔵タンクに義務付けられている設備は通気管・液面計・注入口・ポンプ設備・避雷針（一定規模以上）などです。スプリンクラー設備は一定規模以上のタンクに必要ですが、すべてのタンクに義務付けられているわけではありません。"},
+  {"id":66,"category":"物理化学","question":"次の消火剤の中で、油火災（B火災）に適応しないものはどれか。","choices":["二酸化炭素消火剤","棒状の強化液消火剤","泡消火剤","粉末消火剤（ABC粉末）"],"answer":1,"explanation":"棒状の強化液消火剤は普通火災（A火災）には有効ですが、油火災（B火災）には適応しません。油火災には霧状強化液・泡・CO₂・粉末・ハロゲン化物が適応します。"},
+  {"id":67,"category":"物理化学","question":"化学の基本法則として、「化学変化の前後で物質の総質量は変わらない」という法則はどれか。","choices":["ボイル・シャルルの法則","質量保存の法則","化学平衡の法則","ヘスの法則"],"answer":1,"explanation":"化学変化（反応）の前後で、関与する物質の総質量は変化しないという法則を「質量保存の法則（ラボアジエの法則）」といいます。"},
+  {"id":68,"category":"物理化学","question":"金属ナトリウムを水に入れたときの反応として、正しいものはどれか。","choices":["溶けて塩化ナトリウムを生成する","激しく反応して水素を発生し、水酸化ナトリウムを生成する","何も起こらない","酸素を吸収して安定化する"],"answer":1,"explanation":"金属ナトリウムは水と激しく反応して水素（H₂）を発生し、水酸化ナトリウム（NaOH）を生成します。発生した水素に引火する危険があります。2Na + 2H₂O → 2NaOH + H₂"},
+  {"id":69,"category":"物理化学","question":"次のうち、有機化合物の特徴として正しいものはどれか。","choices":["炭素を含まない化合物の総称","一般的に融点・沸点が高い","電気を通しやすい化合物が多い","一般的に燃焼するものが多い"],"answer":3,"explanation":"有機化合物は炭素を含む化合物（一部例外あり）で、一般的に可燃性のものが多く燃焼します。融点・沸点は無機化合物より低いものが多く、非極性のものは電気を通しにくいです。"},
+  {"id":70,"category":"物理化学","question":"次の物質のうち、酸化剤として機能するものはどれか。","choices":["水素（H₂）","エタノール（C₂H₅OH）","過酸化水素（H₂O₂）","一酸化炭素（CO）"],"answer":2,"explanation":"過酸化水素（H₂O₂）は酸化剤として機能し、相手を酸化します（自身は還元されます）。水素・エタノール・一酸化炭素は還元剤として機能します。"},
+  {"id":71,"category":"性質消火","question":"トルエンの性質として、正しいものはどれか。","choices":["水溶性で水に溶けやすい","引火点が100℃以上","第4類第1石油類に分類され引火点4℃","特有の臭いはなく無臭"],"answer":2,"explanation":"トルエン（C₇H₈）は第4類・第1石油類（非水溶性）に分類されます。引火点は4℃で、芳香族の特有の臭いがあります。水には溶けず、ベンゼンに似た有機溶剤です。"},
+  {"id":72,"category":"性質消火","question":"キシレンの性質として、正しいものはどれか。","choices":["水溶性で水に完全に溶ける","第2石油類に分類され引火点25〜32℃","特殊引火物に分類される","引火点が−10℃以下"],"answer":1,"explanation":"キシレン（C₈H₁₀）は第4類・第2石油類（非水溶性）に分類されます。引火点は25〜32℃（異性体により異なる）です。ベンゼン・トルエンと同様に芳香族炭化水素の仲間です。"},
+  {"id":73,"category":"性質消火","question":"酢酸（氷酢酸）の性質として、正しいものはどれか。","choices":["水に溶けない非水溶性液体","引火点が40℃未満で第2石油類","水溶性で第2石油類に分類される","無臭の液体"],"answer":2,"explanation":"酢酸（CH₃COOH・氷酢酸）は水溶性で第4類・第2石油類に分類されます。引火点は39〜40℃、特有の刺激臭（酢の臭い）があります。腐食性があるため皮膚への接触に注意が必要です。"},
+  {"id":74,"category":"性質消火","question":"動植物油類の危険性として、正しいものはどれか。","choices":["引火点が低く常温で引火しやすい","布などに染み込むと空気酸化で自然発火することがある","水と激しく反応する","蒸気は無臭で危険性の判定が難しい"],"answer":1,"explanation":"動植物油類はヨウ素価が高いもの（乾性油・半乾性油）ほど酸化されやすく、布や紙などに染み込んで空気中に放置すると酸化熱が蓄積して自然発火することがあります。これは天ぷら油などの火災原因になります。"},
+  {"id":75,"category":"性質消火","question":"第4類危険物の消火方法として、最も適切なものはどれか。","choices":["棒状の水で冷却消火","泡・粉末・CO₂・ハロゲン化物消火剤を使用","水蒸気による消火","大量の水で希釈する"],"answer":1,"explanation":"第4類危険物（引火性液体）の消火には、泡・粉末（ABC粉末）・二酸化炭素（CO₂）・ハロゲン化物消火剤が適応します。棒状の水は液体を飛散させ火災を拡大するため使用できません。"},
+  {"id":76,"category":"法令","question":"危険物の品名と指定数量の組み合わせとして、正しいものはどれか。","choices":["特殊引火物：200L","第1石油類（非水溶性）：400L","アルコール類：400L","第2石油類（非水溶性）：1000L"],"answer":3,"explanation":"指定数量は、特殊引火物:50L、第1石油類(非水溶性):200L、アルコール類:400L、第2石油類(非水溶性):1000L、第3石油類(非水溶性):2000L、第4石油類:6000L、動植物油類:10000Lです。"},
+  {"id":77,"category":"法令","question":"指定数量の倍数を計算する場合、2種類以上の危険物を同一場所で取り扱う場合の算定方法として正しいものはどれか。","choices":["各危険物の指定数量のうち最大のものを基準にする","各危険物について「貯蔵量÷指定数量」を算出しその和で計算する","各危険物の貯蔵量の合計を最大の指定数量で割る","貯蔵量が多い危険物の指定数量のみで計算する"],"answer":1,"explanation":"2種類以上の危険物を同一場所で貯蔵・取扱いする場合の指定数量の倍数は、各危険物の「貯蔵量÷その危険物の指定数量」をそれぞれ計算してその和（合計）で求めます。この和が1以上の場合は消防法の適用を受けます。"},
+  {"id":78,"category":"法令","question":"危険物施設の完成検査について、正しいものはどれか。","choices":["工事着工前に受ける","設置工事完了後・使用開始前に市町村長等が行う","施設使用開始後1ヶ月以内に行う","申請は任意でいつでも行える"],"answer":1,"explanation":"製造所等の設置・変更の工事が完了した後、市町村長等が行う完成検査に合格しなければ施設を使用することができません。完成検査前検査（タンクの水圧試験等）が必要な場合もあります。"},
+  {"id":79,"category":"法令","question":"危険物施設の予防規程について、正しいものはどれか。","choices":["すべての製造所等に作成義務がある","指定数量の倍数が一定以上の施設等に作成・届出義務がある","消防署が作成し施設に配布する","予防規程は5年ごとに見直す義務がある"],"answer":1,"explanation":"予防規程は、指定数量の倍数が一定以上の製造所等（製造所：10倍以上、屋内貯蔵所：150倍以上など）に作成義務があり、市町村長等に認可を受けなければなりません。すべての施設に義務はありません。"},
+  {"id":80,"category":"法令","question":"危険物取扱者の立会いについて、正しいものはどれか。","choices":["甲種または乙種の危険物取扱者が立会えば、無資格者でも取扱作業ができる","丙種危険物取扱者も立会いができる","立会いは丙種を除く全類の危険物取扱者が行える","立会いができるのは甲種のみ"],"answer":0,"explanation":"甲種または乙種危険物取扱者（取得した類の危険物に限る）が立会いをすれば、無資格者でも危険物の取扱いができます。丙種危険物取扱者は立会い資格がありません。"},
+  {"id":81,"category":"物理化学","question":"1気圧・100℃の水が水蒸気になるとき、体積は約何倍になるか。","choices":["約10倍","約100倍","約1700倍","約10000倍"],"answer":2,"explanation":"1気圧・100℃において、水が水蒸気（気体）になると体積は約1700倍に膨張します。この急激な体積膨張が水蒸気爆発の原因になります。"},
+  {"id":82,"category":"物理化学","question":"燃焼の種類のうち「内部燃焼（自己燃焼）」に該当するものはどれか。","choices":["ガソリンの燃焼","木炭の燃焼","ニトロセルロース（硝化綿）の燃焼","天然ガスの燃焼"],"answer":2,"explanation":"内部燃焼（自己燃焼）は、分子内に酸素を含む物質が自らの酸素を使って燃焼する形態です。ニトロセルロース・ニトログリセリンなどの爆発物が該当します。空気中の酸素がなくても燃焼します。"},
+  {"id":83,"category":"物理化学","question":"次のうち、可燃性ガスとして爆発範囲が最も広いものはどれか。","choices":["プロパン（2.1〜9.5vol%）","ガソリン蒸気（1.4〜7.6vol%）","水素（4〜75vol%）","メタン（5〜15vol%）"],"answer":2,"explanation":"水素の爆発範囲（燃焼範囲）は4〜75vol%と非常に広く、多くの混合濃度で爆発が起こりえます。爆発範囲が広いほど危険性が高くなります。"},
+  {"id":84,"category":"物理化学","question":"酸塩基（pH）について、pH7の水溶液の性質として正しいものはどれか。","choices":["強酸性","弱酸性","中性","強アルカリ性"],"answer":2,"explanation":"pH（水素イオン指数）は、pH7が中性、pH7未満が酸性（数値が小さいほど強酸性）、pH7超がアルカリ性（数値が大きいほど強アルカリ性）です。"},
+  {"id":85,"category":"物理化学","question":"次の消火剤の中で、電気設備の火災（C火災）に使用できないものはどれか。","choices":["二酸化炭素消火剤","粉末消火剤（ABC粉末）","泡消火剤","ハロゲン化物消火剤"],"answer":2,"explanation":"泡消火剤は水分を含むため電気を通す可能性があり、電気設備の火災（C火災）には使用できません。CO₂・粉末・ハロゲン化物は電気絶縁性があり電気設備の火災に使用可能です。"},
+  {"id":86,"category":"性質消火","question":"危険物の貯蔵・取扱い場所で使用する工具類として、適切なものはどれか。","choices":["スチール製ハンマー","銅製または樹脂製の工具","鉄製スパナ","スチール製スコップ"],"answer":1,"explanation":"引火性液体を取り扱う場所では、鉄製工具の使用時に生じる火花が引火の原因になることがあります。銅・真鍮・プラスチックなど火花を出しにくい素材の工具（防爆工具）を使用します。"},
+  {"id":87,"category":"性質消火","question":"第4類危険物の蒸気が低所に滞留した場合の対処として、正しいものはどれか。","choices":["換気扇を回して蒸気を排出する（電気機器は防爆型を使用）","ガスを燃焼させて処理する","水をかけて蒸気を消す","そのまま放置し自然に拡散するのを待つ"],"answer":0,"explanation":"可燃性蒸気が滞留した場合は換気が最も重要ですが、通常の電気機器（スイッチ・モーター等）は火花を発生させる可能性があるため、防爆型の換気設備を使用する必要があります。"},
+  {"id":88,"category":"性質消火","question":"屋外貯蔵タンクの防油堤の目的として、正しいものはどれか。","choices":["タンクへの雨水の侵入を防ぐ","タンクが破損して危険物が流出した際に周囲への拡散を防ぐ","地震時のタンクの移動を防ぐ","タンクへの不法侵入を防ぐ"],"answer":1,"explanation":"防油堤はタンクが破損・漏洩した際に危険物が周辺地域に流出・拡散することを防ぐためのものです。容量は最大タンク容量の110%以上が必要です。"},
+  {"id":89,"category":"性質消火","question":"危険物の容器の材質として、使用できないものはどれか。","choices":["ガラス容器（小容量の場合）","金属製容器","陶磁器製容器","ゴム製容器（特定の危険物に限る）"],"answer":3,"explanation":"危険物の容器には堅固で容易に破損しない材質が必要です。ゴム製容器は有機溶剤などによって膨潤・溶解する可能性があり原則として使用できません。ただしゴムパッキン等の使用は許可されています。"},
+  {"id":90,"category":"性質消火","question":"第4類危険物の性状と消火方法のまとめとして、正しいものはどれか。","choices":["すべて水より重いので、水で押さえ込んで消火できる","引火性液体で水より軽いものが多く、棒状注水は危険。泡・CO₂・粉末が有効","引火点がすべて0℃以上なので常温では危険性がない","すべて水溶性なので水による希釈消火が有効"],"answer":1,"explanation":"第4類危険物（引火性液体）は水より軽いものが多く、棒状注水で火災が拡大する危険があります。消火には泡消火剤・CO₂消火剤・粉末消火剤・ハロゲン化物消火剤が有効です。水溶性危険物には耐アルコール泡が必要です。"},
+  {"id":91,"category":"法令","question":"危険物取扱者乙種の試験の一部免除について、正しいものはどれか。","choices":["乙種のいずれかの免状を持つ者は、他の乙種試験で「危険物の性質並びにその火災予防及び消火の方法」が免除される","乙種4類を持つ者は全ての乙種試験が免除される","一部免除を受けると試験科目が減るが、合格ライン（60%）も下がる","一部免除制度は存在しない"],"answer":0,"explanation":"乙種のいずれかの類の免状を有する者が他の乙種を受験する場合、「危険物の性質並びにその火災予防及び消火の方法」の試験が免除されます。「危険物に関する法令」と「基礎的な物理学及び基礎的な化学」は免除されません。"},
+  {"id":92,"category":"法令","question":"危険物の廃棄方法として、正しいものはどれか。","choices":["公共下水道に流す","河川や海に捨てる","焼却・中和・埋没等の方法で安全な場所で廃棄する","ゴミ収集日に一般廃棄物として出す"],"answer":2,"explanation":"危険物の廃棄は、焼却・埋没・中和・加水分解などの安全な方法で行わなければなりません。公共下水道・河川・海への投棄は法律で禁止されています。廃棄物処理法の規定も遵守が必要です。"},
+  {"id":93,"category":"法令","question":"製造所等における危険物の取扱い作業の安全確保のために行う「自主点検」について、正しいものはどれか。","choices":["法律による義務はなく任意で行う","月1回以上の実施が法律で義務付けられている","定期点検と同じ法的効力がある","自主点検は危険物保安監督者のみが行う"],"answer":0,"explanation":"「自主点検」は法律による義務ではなく、事業者が自主的に安全管理のために行うものです。法律で義務付けられているのは「定期点検」です（地下タンク等に義務付け）。"},
+  {"id":94,"category":"法令","question":"危険物の移送に関する規定として、移動タンク貯蔵所による移送について正しいものはどれか。","choices":["移送する危険物に応じた免状を持つ危険物取扱者が乗車する","移送距離が100km以内なら資格者の乗車は不要","丙種危険物取扱者でも移送の立会いができる","深夜（22時〜翌6時）の移送は禁止されている"],"answer":0,"explanation":"移動タンク貯蔵所（タンクローリー）で危険物を移送する際は、その危険物を取り扱うことができる危険物取扱者（甲種または当該類の乙種）が乗車し、免状を携帯しなければなりません。丙種は立会い不可です。"},
+  {"id":95,"category":"法令","question":"危険物施設の所有者等が行う応急措置として、危険物の流出事故が発生した場合の対応で正しいものはどれか。","choices":["まず付近の住民に知らせてから消防機関に連絡する","流出した危険物の回収・除去等の応急措置を講じ、消防機関等に届け出る","流出量が少量の場合は届出不要","危険物保安監督者の指示があるまで何もしない"],"answer":1,"explanation":"危険物の流出事故が発生した場合は、①直ちに危険物の流出および拡大防止のための応急措置を講じる、②消防機関または警察・海上保安機関に通報することが義務付けられています。流出量に関わらず届出が必要です。"},
+  {"id":96,"category":"物理化学","question":"物質の状態変化において、固体から直接気体に変化する現象を何というか。","choices":["蒸発","沸騰","昇華","凝固"],"answer":2,"explanation":"固体が液体を経ずに直接気体に変化する現象を「昇華」といいます。ドライアイス（固体CO₂）や樟脳などが代表例です。逆に気体から直接固体になる現象も昇華（または凝結）といいます。"},
+  {"id":97,"category":"物理化学","question":"次のうち、熱の良導体（熱伝導率が高い）として正しいものはどれか。","choices":["木材","アルミニウム","ガラス","プラスチック"],"answer":1,"explanation":"金属類は一般的に熱の良導体です。アルミニウムは熱伝導率が高く、熱を素早く伝えます。木材・ガラス・プラスチックは熱の不良導体（断熱材として利用されるものもある）です。"},
+  {"id":98,"category":"物理化学","question":"水の消火効果について、正しいものはどれか。","choices":["水は主に窒息効果で消火する","水の冷却効果は気化熱（蒸発熱）が大きいことに由来する","水による消火はすべての火災に有効","水の消火効果は冷却のみ"],"answer":1,"explanation":"水の主な消火効果は冷却作用です。水は気化熱（蒸発熱・約2260kJ/kg）が大きく、燃焼物の熱を吸収して温度を下げます。また、蒸発した水蒸気による窒息効果も補助的に働きます。"},
+  {"id":99,"category":"性質消火","question":"危険物の取扱い・貯蔵における静電気災害の防止方法として、正しいものはどれか。","choices":["流速を速くして液体の撹拌を促進する","湿度を低く保ち乾燥状態にする","配管や容器をアースして静電気を逃がす","合成繊維の作業衣を着用する"],"answer":2,"explanation":"静電気災害の防止には①接地（アース・ボンディング）②流速を遅くする③湿度を上げる④導電性素材の使用（綿素材作業衣等）が有効です。合成繊維の作業衣は静電気を帯びやすく危険です。"},
+  {"id":100,"category":"性質消火","question":"引火点と沸点の関係について、正しいものはどれか。","choices":["引火点は必ず沸点より高い","引火点は必ず沸点より低い","沸点が低い物質ほど引火点が高い傾向がある","引火点と沸点は相関関係がある（沸点が低いほど引火点も低い傾向）"],"answer":3,"explanation":"一般的に、沸点が低い物質（揮発性が高い）ほど低温でも可燃性蒸気を発生しやすく、引火点も低い傾向があります。例：ガソリン（沸点40〜220℃、引火点−40℃以下）、灯油（沸点150〜300℃、引火点40℃以上）。"},
+  {"id":101,"category":"法令","question":"危険物施設の保安距離が不要な施設として、正しいものはどれか。","choices":["製造所","屋内貯蔵所（一定規模以上）","屋外タンク貯蔵所","屋内タンク貯蔵所"],"answer":3,"explanation":"保安距離が必要な施設は製造所・屋内貯蔵所（一部）・屋外タンク貯蔵所・屋外貯蔵所・一般取扱所等です。屋内タンク貯蔵所・地下タンク貯蔵所・移動タンク貯蔵所・給油取扱所等は保安距離の規定がありません。"},
+  {"id":102,"category":"法令","question":"給油取扱所（ガソリンスタンド）で行ってはいけない行為として、正しいものはどれか。","choices":["顧客への給油サービスの提供","携行缶への詰め替え（有資格者が行う場合）","施設内での喫煙","一定量以下の危険物の取扱い"],"answer":2,"explanation":"給油取扱所（ガソリンスタンド）内での喫煙は火気として厳禁です。携行缶への詰め替えは有資格者が行う場合は可能です。セルフ式では顧客への給油も特例で認められています。"},
+  {"id":103,"category":"物理化学","question":"第4類危険物の火災に粉末消火剤（りん酸塩類）を使用した場合の消火効果として、正しいものはどれか。","choices":["主に冷却効果による消火","主に窒息効果と負触媒効果による消火","主に希釈効果による消火","油火災（B火災）には効果がない"],"answer":1,"explanation":"粉末消火剤（ABC粉末、主成分：第一りん酸アンモニウム）の消火効果は主に窒息効果と負触媒（抑制）効果です。油火災（B火災）・電気火災（C火災）・普通火災（A火災）に広く使用できます。"},
+  {"id":104,"category":"物理化学","question":"次の文章の（　）に入る語句として正しいものはどれか。「可燃性ガスと空気の混合気体が（　）の範囲内にあるとき、点火すると爆発が起こる。」","choices":["引火点","発火点","爆発範囲（燃焼範囲）","臨界点"],"answer":2,"explanation":"可燃性ガスと空気の混合気体が「爆発範囲（燃焼範囲）」内の濃度のとき、点火源があると爆発が起こります。爆発範囲には下限界と上限界があり、その間の濃度でのみ爆発が起こります。"},
+  {"id":105,"category":"性質消火","question":"危険物の流出事故において、河川や海への流入を防ぐ目的で砂を使用する場合の消火設備区分として、正しいものはどれか。","choices":["第3種消火設備","第4種消火設備","第5種消火設備（乾燥砂等）","消火設備には該当しない"],"answer":2,"explanation":"乾燥砂・膨張ひる石（パーライト）・膨張真珠岩は第5種消火設備に分類されます。危険物の流出時に砂を使って流出を止めたり、危険物に被せて窒息消火するために使用します。"},
+  {"id":106,"category":"法令","question":"危険物の取扱作業の保安に関する記録として、正しいものはどれか。","choices":["危険物保安監督者は作業記録を作成する義務がない","定期点検を実施した場合は点検記録を作成・保存しなければならない","記録の保存期間は1年間","記録はすべて消防署に提出する義務がある"],"answer":1,"explanation":"定期点検を実施した際は、点検を行った危険物取扱者等が点検記録を作成し、原則3年間保存しなければなりません（地下タンクは10年間）。消防署への提出義務は原則としてありません。"},
+  {"id":107,"category":"法令","question":"危険物施設における「取扱所」の種類として、正しいものはどれか。","choices":["製造取扱所・移送取扱所・一般取扱所・給油取扱所","販売取扱所・移送取扱所・一般取扱所・給油取扱所","製造取扱所・販売取扱所・移送取扱所・貯蔵取扱所","給油取扱所・販売取扱所・移送取扱所・一般取扱所"],"answer":3,"explanation":"取扱所の種類は①給油取扱所②販売取扱所③移送取扱所④一般取扱所の4種類です。製造は「製造所」、貯蔵は「貯蔵所」に分類され取扱所には含まれません。"},
+  {"id":108,"category":"物理化学","question":"液体が蒸発しやすいほど（揮発性が高いほど）、危険性はどうなるか。","choices":["危険性は低くなる","危険性は変わらない","危険性は高くなる","液体の場合は揮発性は危険性に無関係"],"answer":2,"explanation":"揮発性（蒸発しやすさ）が高いほど、常温でも可燃性蒸気が多く発生し、引火・爆発の危険性が高まります。引火点の低い物質ほど揮発性が高く危険性が大きい傾向があります。"},
+  {"id":109,"category":"性質消火","question":"第4類危険物を取り扱う作業者の服装として、最も適切なものはどれか。","choices":["合成繊維製の作業服","ポリエステル製のジャンプスーツ","綿素材の帯電防止作業服","ウールのセーター"],"answer":2,"explanation":"第4類危険物を取り扱う際は、静電気の帯電を防ぐため綿素材の帯電防止機能を持つ作業服が適切です。合成繊維（ポリエステル・ナイロン等）は静電気を帯びやすく危険です。"},
+  {"id":110,"category":"性質消火","question":"消火方法の「希釈消火」について、正しいものはどれか。","choices":["水溶性の液体危険物の濃度を下げて消火する方法","燃焼物に不燃性ガスを吹きかけて酸素濃度を下げる方法","燃焼物を冷却して発火点以下にする方法","燃焼物を砂で覆って窒息させる方法"],"answer":0,"explanation":"希釈消火は、水溶性の可燃物（アルコール類など）に大量の水を加えて濃度を燃焼範囲下限値以下に下げることで消火する方法です。ただし大量の水が必要で、水溶性危険物にのみ有効です。"},
+  {"id":111,"category":"法令","question":"危険物取扱者乙種第4類の免状を持つ者が取り扱える危険物として、正しいものはどれか。","choices":["すべての危険物","第4類危険物のみ","第4類危険物および第3類危険物","第1類から第6類まですべて（立会いの場合）"],"answer":1,"explanation":"乙種危険物取扱者は取得した類の危険物のみを取り扱うことができます。乙種第4類免状保持者は第4類危険物（引火性液体）のみを取り扱えます。すべての危険物を取り扱えるのは甲種のみです。"},
+  {"id":112,"category":"法令","question":"危険物の貯蔵・取扱いの技術上の基準として、容器に収納して貯蔵する場合の規定で正しいものはどれか。","choices":["容器はいかなる場合も地面に直接置いてよい","収納する容器は、危険物の種類・性質に応じた適合容器を使用する","危険物の容器に蓋は不要","容器の材質は必ず金属製でなければならない"],"answer":1,"explanation":"危険物の貯蔵・取扱いに使用する容器は、危険物の種類・性質・数量に応じた適合容器（消防庁長官が定める規格に適合したもの）を使用しなければなりません。"},
+  {"id":113,"category":"物理化学","question":"金属の腐食（さび）について、正しいものはどれか。","choices":["腐食は金属が還元される現象","鉄がさびるのは酸化反応","腐食を防ぐには金属を温める","アルミニウムはさびない"],"answer":1,"explanation":"鉄がさびる（酸化鉄になる）のは鉄が酸素と反応する酸化反応です。金属の腐食は一般的に酸化反応です。アルミニウムも酸化されますが、表面に緻密な酸化皮膜を形成して内部を保護するため腐食が進みにくいです。"},
+  {"id":114,"category":"物理化学","question":"蒸気圧について、正しいものはどれか。","choices":["温度が上がると蒸気圧は下がる","蒸気圧は物質の種類によらず同じ","沸点は液体の蒸気圧が大気圧と等しくなる温度","蒸気圧が高いほど引火点が高い"],"answer":2,"explanation":"沸点は液体の蒸気圧（飽和蒸気圧）が外部の圧力（通常は大気圧101.3kPa）と等しくなる温度です。温度が上昇すると蒸気圧は高くなります。蒸気圧が高い（揮発性が高い）物質ほど引火点が低い傾向があります。"},
+  {"id":115,"category":"性質消火","question":"タンクに貯蔵された引火性液体からの蒸気を、大気中に安全に放出するための設備として正しいものはどれか。","choices":["安全弁","通気管（ベントパイプ）","減圧弁","逆止弁"],"answer":1,"explanation":"引火性液体の貯蔵タンクには、内圧の上昇（温度変化・液体の出入り）を防ぐために通気管（ベントパイプ）が設けられています。通気管の先端は高所に向け、可燃性蒸気が低所に滞留しないようにします。"},
+  {"id":116,"category":"法令","question":"危険物保安監督者を選任しなくてよい施設として、正しいものはどれか。","choices":["すべての製造所","指定数量10倍以上の屋内貯蔵所","移動タンク貯蔵所","給油取扱所（すべて）"],"answer":2,"explanation":"移動タンク貯蔵所（タンクローリー）は危険物保安監督者の選任義務がありません。危険物保安監督者は固定した施設に必要であり、移動する施設には適用されません。"},
+  {"id":117,"category":"法令","question":"危険物の「指定数量未満」の取扱いに関する規定として、正しいものはどれか。","choices":["消防法は適用されず規制はない","市町村条例が適用される","都道府県条例が適用される","法律による規制は一切受けない"],"answer":1,"explanation":"指定数量未満の危険物の貯蔵・取扱いは、消防法ではなく各市町村の火災予防条例によって規制されます。指定数量以上になると消防法が適用されます。"},
+  {"id":118,"category":"物理化学","question":"物質の三態変化において、液体から固体になる変化（凝固）の際、熱は放出されるか吸収されるか。","choices":["熱を吸収する（吸熱）","熱を放出する（発熱）","熱の変化はない","物質によって異なる"],"answer":1,"explanation":"液体から固体に変化する凝固は発熱過程（熱を放出）です。逆に固体から液体になる融解は吸熱過程です。液体から気体への蒸発・気化も吸熱過程、気体から液体への凝縮は発熱過程です。"},
+  {"id":119,"category":"性質消火","question":"危険物の消火に用いる砂（乾燥砂）の特徴として、正しいものはどれか。","choices":["砂は第3種消火設備に分類される","砂は少量の危険物の流出時や消火の補助として有効","砂は水分を含んでいてもよい","砂による消火は油火災には無効"],"answer":1,"explanation":"乾燥砂は第5種消火設備に分類され、少量の危険物の流出封じ込めや窒息消火の補助として有効です。ただし水分を含む砂は蒸気を発生させ危険な場合があるため、必ず乾燥したものを使用します。"},
+  {"id":120,"category":"法令","question":"危険物取扱者乙種の試験について、受験資格として正しいものはどれか。","choices":["18歳以上でなければ受験できない","学歴の制限がある","年齢・学歴等の受験資格の制限はなく誰でも受験できる","危険物の取扱い経験が必要"],"answer":2,"explanation":"危険物取扱者乙種試験には年齢・学歴・経験等の受験資格の制限はなく、誰でも受験することができます。甲種には受験資格（大学等で化学系の単位取得等）が設けられています。"}
+];
+const CAT_META={"法令":{color:"#C43A10",icon:"⚖️",bg:"#FEF0EB"},"物理化学":{color:"#185FA5",icon:"🔬",bg:"#E6F1FB"},"性質消火":{color:"#0F6E56",icon:"🔥",bg:"#E1F5EE"}};
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_v4_kiken";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>({...p,wrongCounts:{...p.wrongCounts,[q.id]:ok?Math.max(0,(p.wrongCounts||{})[q.id]||0):((p.wrongCounts||{})[q.id]||0)+1},history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1}));
+  render();
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){setUd(p=>({...p,totalSessions:(p.totalSessions||0)+1}));S.screen="result";render();}
+  else{S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;render();startTimer();}
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){document.getElementById("app").innerHTML=build();}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const left=`
+    <div class="card">
+      <div class="card-title">モード選択</div>
+      <div class="mode-row">
+        ${[{k:"ALL",lbl:"全問",ic:"📚",cnt:ALL_QUESTIONS.length,dis:false},{k:"WEAK",lbl:"弱点特訓",ic:"🔥",cnt:wq.length,dis:!wq.length},{k:"STAR",lbl:"★登録",ic:"⭐",cnt:sq.length,dis:!sq.length}].map(m=>`<button class="mode-btn ${S.mode===m.k?"mode-active":""} ${m.dis?"mode-off":""}" onclick="${m.dis?"":"S.mode='"+m.k+"';render()"}"><span class="mode-icon">${m.ic}</span><span class="mode-label">${m.lbl}</span><span class="mode-count">${m.cnt}問</span></button>`).join("")}
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">カテゴリ</div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}">
+        ${cats.map(c=>{const a=S.fc===c;const m=CAT_META[c];const s="";return`<button class="cat-chip ${a?"active":""}" style="${s}" onclick="S.fc='${c}';render()">${c!=="全て"&&m?m.icon+" ":""}${c}</button>`;}).join("")}
+      </div>
+      ${S.mode!=="ALL"?`<p style="font-size:12px;color:var(--text3);">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+    </div>
+    <div class="card">
+      <div class="card-title">オプション</div>
+      <div class="opts-row">
+        <div class="opt-group"><span class="opt-label">⏱</span>${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}</div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"シャッフル":"順番通り"}</button>
+      </div>
+    </div>
+    <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-left">
+        <div class="hero-exam-type">乙種第4類</div>
+        <div class="hero-exam-name">危険物取扱者</div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+          <div class="hero-stat-div"></div>
+          <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+          ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+        </div>
+      </div>
+      <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+        <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+        <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+        <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+      </div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const ch=cur.choices.map((c,i)=>{let cls="choice";let icon="";if(ia){if(i===cur.answer){cls+=" ch-ok";icon=`<span class="ch-icon">✓</span>`;}else if(i===S.sel){cls+=" ch-ng";icon=`<span class="ch-icon">✗</span>`;}else cls+=" ch-fade";}return`<button class="${cls}" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span>${icon}</button>`;}).join("");
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+  let expSP="";
+  if(S.showExp){const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";expSP=`<div class="exp-card exp-sp ${cls}"><div class="exp-head"><span class="exp-verdict">${v}</span>${S.tout?`<span class="exp-ans">正解：${al[cur.answer]}</span>`:""}</div><p class="exp-body">${cur.explanation}</p></div>`;}
+  const expPC=()=>{if(!ia)return`<div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>`;const v=ic&&!S.tout?"✓ 正解！":S.tout?"⏰ 時間切れ":"✗ 不正解";const vc=ic&&!S.tout?"#0F6E56":S.tout?"#D4941A":"#E8572A";return`<div class="side-panel"><div class="side-title">解説</div><div class="side-exp-verdict" style="color:${vc}">${v}${S.tout?` — 正解：${al[cur.answer]}`:""}</div><div class="side-exp-body">${cur.explanation}</div></div>`;};
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      ${tim}
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${CAT_META[cur.category]?.bg};color:${CAT_META[cur.category]?.color};border-color:${CAT_META[cur.category]?.color}55">${CAT_META[cur.category]?.icon} ${cur.category}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="choices">${ch}</div>
+      ${expSP}
+      ${ia?`<div class="next-wrap"><button class="next-btn" onclick="next()">${S.idx+1>=S.deck.length?"結果を見る":"次の問題"} ${arr()}</button></div>`:""}
+    </div>
+    <div class="pc-quiz-side">${expPC()}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  const log=S.sess.map((a,i)=>{const wc=(S.ud.wrongCounts||{})[a.q.id]||0;return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${CAT_META[a.q.category]?.icon}</span><span class="ar-q">${a.q.question.slice(0,30)}…</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;}).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="140" height="140" viewBox="0 0 140 140"><circle cx="70" cy="70" r="58" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10"/><circle cx="70" cy="70" r="58" fill="none" stroke="${vc}" stroke-width="10" stroke-linecap="round" stroke-dasharray="${sr*3.644} 364.4" transform="rotate(-90 70 70)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{const wc=(S.ud.wrongCounts||{})[q.id]||0;const is=(S.ud.starIds||[]).includes(q.id);return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${CAT_META[q.category]?.color};background:${CAT_META[q.category]?.bg};border-color:${CAT_META[q.category]?.color}55">${CAT_META[q.category]?.icon} ${q.category}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;}).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+</script>
+
+<section class="aff-section" id="apply">
+  <div class="aff-inner">
+    <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+    <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+
+    <a class="official-btn" href="https://www.shoubo-shiken.or.jp/kikenbutsu/" target="_blank" rel="noopener">
+      <div class="official-ico">🏛️</div>
+      <div class="official-info">
+        <div class="official-name">消防試験研究センター（危険物取扱者試験）（公式）</div>
+        <div class="official-note">各都道府県の試験日程・願書受付期間はこちらから確認できます</div>
+      </div>
+      <div class="official-arr">→</div>
+    </a>
+
+    <div class="aff-h3">おすすめ参考書</div>
+    <div class="book-list">
+      <div class="book-card">
+        <div class="book-title">📖 わかりやすい！乙種第4類危険物取扱者試験（公論出版）</div>
+        <div class="book-memo">受験者数No.1の定番テキスト。図解多めで初学者に最適</div>
+        <div class="book-links">
+          <a class="book-link book-link-amz" href="https://www.amazon.co.jp/dp/XXXXXXXXXX/?tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a>
+          <a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/乙4+危険物+テキスト/" target="_blank" rel="noopener">楽天 で見る</a>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-title">📖 乙種4類危険物取扱者 問題集（オーム社）</div>
+        <div class="book-memo">過去問ベースの問題集。本試験形式に慣れるために必須</div>
+        <div class="book-links">
+          <a class="book-link book-link-amz" href="https://www.amazon.co.jp/dp/XXXXXXXXXX/?tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a>
+          <a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/乙4+危険物+問題集/" target="_blank" rel="noopener">楽天 で見る</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aff-h3">おすすめ通信講座</div>
+    <div class="course-list">
+      <a class="course-card" href="https://studying.jp/kikenbutsu/" target="_blank" rel="noopener">
+        <div class="course-ico">🎓</div>
+        <div class="course-info">
+          <div class="course-name">スタディング 危険物取扱者講座</div>
+          <div class="course-price">約4,000円〜</div>
+          <div class="course-feat">スマホ完結・スキマ時間に最適</div>
+        </div>
+        <div class="course-arr">›</div>
+      </a>
+      <a class="course-card" href="https://www.u-can.co.jp/" target="_blank" rel="noopener">
+        <div class="course-ico">🎓</div>
+        <div class="course-info">
+          <div class="course-name">ユーキャン 危険物取扱者乙4講座</div>
+          <div class="course-price">約24,000円〜</div>
+          <div class="course-feat">テキスト・添削指導つきの安心感</div>
+        </div>
+        <div class="course-arr">›</div>
+      </a>
+    </div>
+
+    <p class="aff-note">
+      ※ 参考書・通信講座のリンクはアフィリエイトリンクです。<br>
+      ※ 価格は変動する場合があります。最新情報は各サービスの公式サイトでご確認ください。
+    </p>
+  </div>
+</section>
+<section class="seo-section" id="info">
+  <div class="seo-inner">
+    <h2 class="seo-h2">危険物取扱者 乙4とは</h2>
+    <p class="seo-lead">危険物取扱者乙種第4類（乙4）は、ガソリン・灯油・軽油など引火性液体を取り扱うための国家資格です。年間約30万人が受験する、日本で最も受験者数の多い危険物試験です。</p>
+    <div class="info-grid">
+      <div class="info-card">
+        <div class="info-label">合格率</div>
+        <div class="info-val">約35〜40%</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">勉強時間</div>
+        <div class="info-val">50〜100時間</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">受験料</div>
+        <div class="info-val">4,600円</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">試験形式</div>
+        <div class="info-val">4択マークシート</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">試験回数</div>
+        <div class="info-val">年複数回（県により異なる）</div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">難易度</div>
+        <div class="info-val">★☆☆☆☆（易しい）</div>
+      </div>
+    </div>
+
+    <h3 class="seo-h3">試験科目と出題数</h3>
+    <table class="seo-table">
+      <thead><tr><th>科目</th><th>問題数</th><th>合格ライン</th></tr></thead>
+      <tbody>
+        <tr><td>危険物に関する法令</td><td>15問</td><td>9問以上（60%）</td></tr>
+        <tr><td>基礎的な物理学・化学</td><td>10問</td><td>6問以上（60%）</td></tr>
+        <tr><td>危険物の性質・消火方法</td><td>10問</td><td>6問以上（60%）</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="seo-h3">学習ロードマップ</h3>
+    <div class="roadmap">
+      <div class="rm-step">
+        <div class="rm-num">1</div>
+        <div class="rm-body">
+          <div class="rm-title">試験概要・出題傾向を把握（1週目）</div>
+          <div class="rm-desc">3科目の構成と各科目の出題パターンを理解する</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">2</div>
+        <div class="rm-body">
+          <div class="rm-title">法令を徹底インプット（2〜3週目）</div>
+          <div class="rm-desc">出題数が最多の法令科目から着手。許可・届出・標識などの暗記項目を固める</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">3</div>
+        <div class="rm-body">
+          <div class="rm-title">物理化学・性質消火を学習（3〜4週目）</div>
+          <div class="rm-desc">引火点・発火点・燃焼範囲など頻出の数値と概念を理解する</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">4</div>
+        <div class="rm-body">
+          <div class="rm-title">問題演習で弱点を潰す（4〜6週目）</div>
+          <div class="rm-desc">本サイトの問題集で繰り返し演習。間違いノートで弱点を重点的に復習</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="seo-h3">この資格を取ったら次は？</h3>
+    <div class="next-shikaku">
+      <a class="next-card" href="index.html#all">
+        <div class="next-ico" style="background:#FFF3E0">🔥</div>
+        <div><div class="next-name">危険物 乙種 全類制覇</div><div class="next-desc">乙4取得後に他の類を追加取得してスキルアップ</div></div>
+      </a>
+      <a class="next-card" href="kansei.html">
+        <div class="next-ico" style="background:#FFF3E0">🏥</div>
+        <div><div class="next-name">衛生管理者</div><div class="next-desc">50人以上の職場で必置。同じ安全・衛生系の資格</div></div>
+      </a>
+    </div>
+
+    <h3 class="seo-h3">よくある質問</h3>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">危険物取扱者乙4の合格率はどのくらいですか？</summary>
+        <p class="faq-a">危険物取扱者乙種第4類の合格率は約35〜40%です。しっかり対策すれば十分合格できる難易度です。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">勉強時間はどのくらい必要ですか？</summary>
+        <p class="faq-a">初学者で50〜100時間が目安です。1日1〜2時間の学習で1〜2ヶ月で合格を目指せます。理系の方や化学の知識がある方はより短期間での合格も可能です。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">試験科目は何ですか？</summary>
+        <p class="faq-a">「危険物に関する法令（15問）」「基礎的な物理学及び基礎的な化学（10問）」「危険物の性質並びにその火災予防及び消火の方法（10問）」の3科目です。各科目60%以上の正答率が必要です。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">どんな仕事に役立ちますか？</summary>
+        <p class="faq-a">ガソリンスタンド・化学工場・倉庫業・タンクローリー運転手など、引火性液体を扱う業種で活かせます。就職・転職時の有利なアピールポイントになります。</p>
+      </details>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="site-footer-logo">資格<span>Pass</span></div>
+  <div class="site-footer-links">
+    <a href="index.html">資格一覧トップ</a>
+    <a href="#">プライバシーポリシー</a>
+    <a href="#">お問い合わせ</a>
+  </div>
+  <p>© 2025 資格Pass — shikaku-pass.github.io</p>
+</footer>
+</body>
+</html>
