@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資格Pass — 4択問題で学ぶ無料資格学習サイト</title>
+<meta name="description" content="ITパスポート・宅建・FP・簿記・危険物など人気資格の無料4択問題集。60資格対応。目的別・難易度別で資格を探せる。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans JP',sans-serif;background:#f5f4f0;color:#1a1a1a;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+.hd{background:#1a2744;height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;position:sticky;top:0;z-index:200;}
+.logo{color:#fff;font-size:18px;font-weight:700;}.logo span{color:#1D9E75;}
+.nav{display:flex;gap:18px;}.nav a{color:rgba(255,255,255,0.7);font-size:13px;transition:color .15s;white-space:nowrap;}.nav a:hover{color:#fff;}
+.hero{background:#1a2744;padding:18px 20px 20px;text-align:center;}
+.hero-badge{display:inline-block;background:rgba(29,158,117,.25);color:#5DCAA5;font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.hero h1{color:#fff;font-size:19px;font-weight:700;line-height:1.45;margin-bottom:5px;}
+.hero p{color:rgba(255,255,255,0.5);font-size:11px;margin-bottom:14px;}
+.hero-stats{display:flex;justify-content:center;}
+.hstat{text-align:center;padding:0 14px;border-right:1px solid rgba(255,255,255,0.12);}.hstat:last-child{border-right:none;}
+.hstat-n{color:#fff;font-size:16px;font-weight:700;}.hstat-l{color:rgba(255,255,255,0.4);font-size:10px;margin-top:1px;}
+.rsec{padding:18px 16px 0;}
+.rsec-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+.rsec-hd-l{display:flex;align-items:center;gap:7px;}.rsec-hd-l::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;}
+.rsec-hd h2{font-size:13px;font-weight:700;}
+.rclear{font-size:11px;color:#bbb;cursor:pointer;background:none;border:none;font-family:inherit;padding:0;}.rclear:hover{color:#999;}
+.rscroll{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;}.rscroll::-webkit-scrollbar{display:none;}
+.rcrd{flex-shrink:0;background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:11px;width:136px;text-decoration:none;color:inherit;transition:border-color .15s;display:flex;flex-direction:column;gap:5px;}.rcrd:hover{border-color:#1D9E75;}
+.rcrd-top{display:flex;align-items:center;gap:7px;}
+.rcrd-ico{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+.rcrd-name{font-size:10px;font-weight:700;line-height:1.3;}
+.rcrd-bar{height:3px;background:#f0efe8;border-radius:2px;overflow:hidden;}.rcrd-fill{height:100%;background:#1D9E75;border-radius:2px;}
+.rcrd-meta{font-size:9px;color:#aaa;}
+.sec{padding:22px 16px 0;}
+.sec-hd{display:flex;align-items:center;gap:7px;margin-bottom:3px;}.sec-hd::before{content:'';width:3px;height:16px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+.sec-hd h2{font-size:14px;font-weight:700;}.sec-sub{font-size:11px;color:#aaa;margin-bottom:12px;padding-left:10px;}
+.divl{height:1px;background:#e5e3dc;margin:22px 16px 0;}
+.pg{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.pc{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:12px 10px;cursor:pointer;transition:all .15s;display:flex;gap:9px;align-items:flex-start;}.pc:hover{border-color:#1D9E75;box-shadow:0 2px 8px rgba(29,158,117,.09);}
+.pc-ico{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.pc-name{font-size:12px;font-weight:700;margin-bottom:1px;line-height:1.3;}.pc-desc{font-size:10px;color:#aaa;line-height:1.35;}.pc-cnt{font-size:10px;font-weight:700;color:#1D9E75;margin-top:3px;}
+.rtabs{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;margin-bottom:12px;padding-bottom:2px;}.rtabs::-webkit-scrollbar{display:none;}
+.rtab{flex-shrink:0;padding:6px 12px;border-radius:16px;font-size:11px;font-weight:700;cursor:pointer;border:1.5px solid #e5e3dc;background:#fff;color:#999;transition:all .15s;white-space:nowrap;}.rtab.on{background:#1a2744;border-color:#1a2744;color:#fff;}
+.rlist{display:flex;flex-direction:column;gap:6px;}
+.ri{display:flex;align-items:center;gap:9px;background:#fff;border:1px solid #e5e3dc;border-radius:10px;padding:10px 11px;text-decoration:none;color:inherit;transition:border-color .15s;}.ri:hover{border-color:#1D9E75;}
+.rnum{font-size:16px;font-weight:700;min-width:22px;text-align:center;flex-shrink:0;}.rnum.g{color:#D4941A;}.rnum.s{color:#8a8880;}.rnum.b{color:#993C1D;}
+.ric{width:32px;height:32px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.rinfo{flex:1;min-width:0;}.rname{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}.rmeta{font-size:10px;color:#aaa;margin-top:1px;}
+.rarr{color:#ccc;font-size:14px;flex-shrink:0;}.sbadge{font-size:9px;color:#999;background:#f0efe8;border-radius:4px;padding:1px 5px;margin-left:4px;font-weight:400;vertical-align:middle;}
+.frow{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px;}
+.fbtn{padding:4px 10px;border-radius:12px;font-size:11px;cursor:pointer;border:1px solid #e5e3dc;background:#fff;color:#888;font-weight:500;transition:all .15s;white-space:nowrap;}.fbtn.on{background:#1a2744;border-color:#1a2744;color:#fff;}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.sc{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:12px;display:block;transition:all .15s;}.sc.av:hover{border-color:#1D9E75;box-shadow:0 2px 8px rgba(29,158,117,.07);}.sc.dim{opacity:.55;cursor:default;}
+.sc-ico{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px;margin-bottom:8px;}
+.sc-name{font-size:11px;font-weight:700;margin-bottom:2px;line-height:1.35;}.sc-meta{font-size:10px;color:#aaa;line-height:1.55;}
+.sc-tags{display:flex;flex-wrap:wrap;gap:3px;margin-top:5px;}
+.tp{font-size:9px;padding:2px 6px;border-radius:5px;font-weight:700;}.tp-hot{background:#FCEBEB;color:#A32D2D;}.tp-pop{background:#FAEEDA;color:#633806;}.tp-new{background:#E1F5EE;color:#085041;}.tp-hard{background:#F3EBFE;color:#4a2080;}.tp-soon{background:#E6F1FB;color:#0C447C;}
+.stars{color:#D4941A;font-size:10px;letter-spacing:-1px;}
+.ibox{background:#1a2744;margin:22px 16px 0;border-radius:12px;padding:16px;}.ibox h3{color:#fff;font-size:13px;font-weight:700;margin-bottom:4px;}.ibox p{color:rgba(255,255,255,0.5);font-size:11px;line-height:1.7;}
+.ft{background:#1a2744;padding:22px 20px;text-align:center;margin-top:20px;}.ftl{color:#fff;font-size:14px;font-weight:700;margin-bottom:8px;}.ftl span{color:#1D9E75;}
+.ftlinks{display:flex;justify-content:center;gap:16px;margin-bottom:8px;flex-wrap:wrap;}.ftlinks a{color:rgba(255,255,255,0.4);font-size:11px;}.ft p{color:rgba(255,255,255,0.2);font-size:10px;}
+.ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:300;}.ov.on{display:block;}
+.dr{position:fixed;bottom:0;left:0;right:0;background:#fff;border-radius:16px 16px 0 0;padding:16px 16px 36px;z-index:301;max-height:84vh;overflow-y:auto;transform:translateY(100%);transition:transform .3s cubic-bezier(.16,1,.3,1);}.dr.on{transform:translateY(0);}
+.dr-bar{width:32px;height:4px;background:#e5e3dc;border-radius:2px;margin:0 auto 13px;}.dr-ttl{font-size:15px;font-weight:700;margin-bottom:2px;}.dr-sub{font-size:11px;color:#aaa;margin-bottom:11px;}
+.dr-list{display:flex;flex-direction:column;gap:6px;}
+.di{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid #e5e3dc;border-radius:10px;text-decoration:none;color:inherit;transition:all .15s;}.di:hover{border-color:#1D9E75;background:#f9fdf9;}
+.di-ico{width:32px;height:32px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.di-info{flex:1;min-width:0;}.di-name{font-size:12px;font-weight:700;}.di-meta{font-size:10px;color:#aaa;margin-top:1px;}.di-arr{color:#ccc;font-size:14px;}
+@media(min-width:769px){
+  .hero h1{font-size:24px;}.hstat{padding:0 28px;}
+  .rsec{padding:26px 32px 0;max-width:980px;margin:0 auto;}.rscroll{flex-wrap:wrap;}.rcrd{width:155px;}
+  .sec{padding:28px 32px 0;max-width:980px;margin:0 auto;}.divl{max-width:980px;margin:22px auto 0;}
+  .pg{grid-template-columns:repeat(3,1fr);}.sgrid{grid-template-columns:repeat(4,1fr);}
+  .ibox{max-width:980px;margin:22px auto 0;}.rlist{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
+  .dr{max-width:540px;left:50%;transform:translateX(-50%) translateY(100%);}.dr.on{transform:translateX(-50%) translateY(0);}
+}
+</style>
+</head>
+<body>
+<header class="hd">
+  <div class="logo">資格<span>Pass</span></div>
+  <nav class="nav">
+    <a href="#purpose">目的から探す</a>
+    <a href="#rank">ランキング</a>
+    <a href="#all">資格一覧</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="hero-badge">4択問題で効率学習</div>
+  <h1>合格への最短ルートを、<br>ここから始めよう</h1>
+  <p>スキマ時間に学べる無料4択問題集・60資格対応</p>
+  <div class="hero-stats">
+    <div class="hstat"><div class="hstat-n">60</div><div class="hstat-l">対応資格数</div></div>
+    <div class="hstat"><div class="hstat-n">無料</div><div class="hstat-l">完全無料</div></div>
+    <div class="hstat"><div class="hstat-n">PC/スマホ</div><div class="hstat-l">両対応</div></div>
+  </div>
+</section>
+<section class="rsec" id="rsec" style="display:none;">
+  <div class="rsec-hd">
+    <div class="rsec-hd-l"><h2>続きから学習する</h2></div>
+    <button class="rclear" onclick="clearHist()">履歴を消す</button>
+  </div>
+  <div class="rscroll" id="rscroll"></div>
+</section>
+<section class="sec" id="purpose">
+  <div class="sec-hd"><h2>目的から探す</h2></div>
+  <p class="sec-sub">あなたのゴールに合った資格を見つけよう</p>
+  <div class="pg" id="pg"></div>
+</section>
+<div class="divl"></div>
+<section class="sec" id="rank">
+  <div class="sec-hd"><h2>資格ランキング</h2></div>
+  <p class="sec-sub">目的別に比較して、次に狙う資格を決めよう</p>
+  <div class="rtabs" id="rtabs"></div>
+  <div class="rlist" id="rlist"></div>
+</section>
+<div class="divl"></div>
+<section class="sec" id="all">
+  <div class="sec-hd"><h2>資格一覧</h2></div>
+  <p class="sec-sub">全60資格をカテゴリで絞り込んで探す</p>
+  <div class="frow" id="frow"></div>
+  <div class="sgrid" id="sgrid"></div>
+</section>
+<div class="ibox">
+  <h3>資格Passとは？</h3>
+  <p>4択択一問題に特化した無料の資格学習サービスです。<br>弱点特訓・スター登録・正答率管理つき。PC・スマホ両対応。</p>
+</div>
+<footer class="ft">
+  <div class="ftl">資格<span>Pass</span></div>
+  <div class="ftlinks"><a href="#">プライバシーポリシー</a><a href="#">お問い合わせ</a></div>
+  <p>© 2025 資格Pass — shikaku-pass.github.io</p>
+</footer>
+<div class="ov" id="ov" onclick="closeDr()"></div>
+<div class="dr" id="dr">
+  <div class="dr-bar"></div>
+  <div class="dr-ttl" id="dr-ttl"></div>
+  <div class="dr-sub" id="dr-sub"></div>
+  <div class="dr-list" id="dr-list"></div>
+</div>
+<script>
+const S=[
+  // ── IT・デジタル系 ──
+  {id:"genai",      name:"生成AIパスポート",                cat:"it",  ico:"✨",bg:"#E3F2FD",url:"genai.html",          q:120, rate:70,h:"50〜80h",   sal:15,dif:1,pop:7,  tags:["new"],      lk:"dojo_genai"},
+  {id:"itpass",     name:"ITパスポート",                    cat:"it",  ico:"💻",bg:"#E3F2FD",url:"itpass.html",         q:180, rate:50,h:"100〜150h", sal:15,dif:1,pop:1,  tags:["pop"],      lk:"dojo_v4_itpass"},
+  {id:"fe",         name:"基本情報技術者（午前）",           cat:"it",  ico:"🖥️",bg:"#E3F2FD",url:"fe.html",             q:120, rate:30,h:"200〜300h", sal:35,dif:2,pop:2,  tags:["hot"],      lk:"dojo_fe"},
+  {id:"ap",         name:"応用情報技術者（午前）",           cat:"it",  ico:"⚙️",bg:"#E3F2FD",url:"ap.html",             q:120, rate:25,h:"400〜500h", sal:55,dif:3,pop:4,  tags:["hard"],     lk:"dojo_ap"},
+  {id:"scmgmt",     name:"情報セキュリティマネジメント",    cat:"it",  ico:"🔐",bg:"#E3F2FD",url:"scmgmt.html",         q:120, rate:55,h:"150〜200h", sal:30,dif:2,pop:8,  tags:["new"],      lk:"dojo_scmgmt"},
+  {id:"gken",       name:"G検定",                           cat:"it",  ico:"🤖",bg:"#E3F2FD",url:"gken.html",           q:120, rate:65,h:"100〜150h", sal:20,dif:2,pop:9,  tags:["hot","new"],lk:"dojo_gken"},
+  {id:"ds",         name:"DS検定（リテラシー）",             cat:"it",  ico:"📊",bg:"#E3F2FD",url:"ds.html",             q:120, rate:60,h:"80〜120h",  sal:20,dif:2,pop:10, tags:["new"],      lk:"dojo_ds"},
+  {id:"dx",         name:"DX検定",                          cat:"it",  ico:"🔄",bg:"#E3F2FD",url:"dx.html",             q:120, rate:65,h:"60〜100h",  sal:15,dif:1,pop:11, tags:["new"],      lk:"dojo_dx"},
+  // ── 金融・会計系 ──
+  {id:"fp3",        name:"FP 3級",                          cat:"fin", ico:"💴",bg:"#E8F5E9",url:"fp3.html",            q:20,  rate:70,h:"100〜150h", sal:20,dif:1,pop:3,  tags:["pop"],      lk:"dojo_v4_fp3"},
+  {id:"fp2",        name:"FP 2級",                          cat:"fin", ico:"💰",bg:"#E8F5E9",url:"fp2.html",            q:120, rate:40,h:"200〜300h", sal:40,dif:2,pop:5,  tags:["hot"],      lk:"dojo_fp2"},
+  {id:"boki3",      name:"日商簿記 3級",                    cat:"fin", ico:"📒",bg:"#E8F5E9",url:"boki3.html",          q:120, rate:45,h:"100〜150h", sal:10,dif:1,pop:6,  tags:["pop"],      lk:"dojo_boki3"},
+  {id:"boki2",      name:"日商簿記 2級",                    cat:"fin", ico:"📊",bg:"#E8F5E9",url:"boki2.html",          q:120, rate:25,h:"250〜350h", sal:25,dif:3,pop:12, tags:["hot"],      lk:"dojo_boki2"},
+  {id:"bizacc3",    name:"ビジネス会計 3級",                 cat:"fin", ico:"📈",bg:"#E8F5E9",url:"bizacc3.html",        q:120, rate:65,h:"60〜100h",  sal:10,dif:1,pop:18, tags:["new"],      lk:"dojo_bizacc3"},
+  {id:"bizacc2",    name:"ビジネス会計 2級",                 cat:"fin", ico:"📉",bg:"#E8F5E9",url:"bizacc2.html",        q:120, rate:50,h:"150〜200h", sal:20,dif:2,pop:22, tags:[],           lk:"dojo_bizacc2"},
+  {id:"gaitan2",    name:"証券外務員 二種",                  cat:"fin", ico:"📝",bg:"#E8F5E9",url:"gaitan2.html",        q:120, rate:65,h:"100〜150h", sal:30,dif:2,pop:20, tags:["hot"],      lk:"dojo_gaitan2"},
+  {id:"gaitan1",    name:"証券外務員 一種",                  cat:"fin", ico:"💹",bg:"#E8F5E9",url:"gaitan1.html",        q:120, rate:55,h:"150〜250h", sal:40,dif:2,pop:23, tags:[],           lk:"dojo_gaitan1"},
+  {id:"kashikin",   name:"貸金業務取扱主任者",               cat:"fin", ico:"🏦",bg:"#E8F5E9",url:"kashikin.html",       q:120, rate:35,h:"200〜300h", sal:20,dif:3,pop:30, tags:[],           lk:"dojo_kashikin"},
+  // ── 法務・ビジネス系 ──
+  {id:"bizlaw3",    name:"ビジネス実務法務 3級",              cat:"law", ico:"⚖️",bg:"#FAEEDA",url:"bizlaw3.html",        q:120, rate:70,h:"60〜100h",  sal:10,dif:1,pop:13, tags:["pop"],      lk:"dojo_bizlaw3"},
+  {id:"bizlaw2",    name:"ビジネス実務法務 2級",              cat:"law", ico:"📜",bg:"#FAEEDA",url:"bizlaw2.html",        q:120, rate:40,h:"150〜250h", sal:20,dif:2,pop:17, tags:[],           lk:"dojo_bizlaw2"},
+  {id:"chizai3",    name:"知的財産管理技能士 3級",            cat:"law", ico:"💡",bg:"#FAEEDA",url:"chizai3.html",        q:120, rate:65,h:"60〜100h",  sal:15,dif:1,pop:16, tags:["new"],      lk:"dojo_chizai3"},
+  {id:"chizai2",    name:"知的財産管理技能士 2級",            cat:"law", ico:"🔑",bg:"#FAEEDA",url:"chizai2.html",        q:120, rate:35,h:"150〜250h", sal:25,dif:3,pop:21, tags:[],           lk:"dojo_chizai2"},
+  {id:"hisho2",     name:"秘書検定 2級",                     cat:"law", ico:"📋",bg:"#FAEEDA",url:"hisho2.html",         q:120, rate:55,h:"60〜100h",  sal:5, dif:1,pop:25, tags:["pop"],      lk:"dojo_hisho2"},
+  {id:"hisho3",     name:"秘書検定 3級",                     cat:"law", ico:"📋",bg:"#FAEEDA",url:"hisho3.html",         q:120, rate:70,h:"30〜60h",   sal:5, dif:1,pop:26, tags:["pop"],      lk:"dojo_hisho3"},
+  {id:"service2",   name:"サービス接遇検定 2級",              cat:"law", ico:"🤝",bg:"#FAEEDA",url:"service2.html",       q:120, rate:60,h:"40〜80h",   sal:5, dif:1,pop:27, tags:[],           lk:"dojo_service2"},
+  {id:"service3",   name:"サービス接遇検定 3級",              cat:"law", ico:"🤝",bg:"#FAEEDA",url:"service3.html",       q:120, rate:70,h:"20〜40h",   sal:5, dif:1,pop:28, tags:[],           lk:"dojo_service3"},
+  {id:"bunsho",     name:"ビジネス文書検定",                  cat:"law", ico:"✉️",bg:"#FAEEDA",url:"bunsho.html",         q:120, rate:65,h:"40〜60h",   sal:5, dif:1,pop:29, tags:[],           lk:"dojo_bunsho"},
+  // ── 不動産・流通系 ──
+  {id:"takken",     name:"宅地建物取引士",                   cat:"re",  ico:"🏠",bg:"#FFF8E1",url:"takken.html",         q:20,  rate:17,h:"300〜500h", sal:45,dif:3,pop:14, tags:["hot"],      lk:"dojo_v4_takken"},
+  {id:"kanri",      name:"管理業務主任者",                   cat:"re",  ico:"🏢",bg:"#FFF8E1",url:"kanri.html",          q:120, rate:20,h:"300〜400h", sal:25,dif:3,pop:19, tags:[],           lk:"dojo_kanri"},
+  {id:"mankan",     name:"マンション管理士",                 cat:"re",  ico:"🏗️",bg:"#FFF8E1",url:"mankan.html",         q:120, rate:8, h:"500〜700h", sal:25,dif:4,pop:32, tags:["hard"],     lk:"dojo_mankan"},
+  {id:"hanbai3",    name:"販売士検定 3級",                   cat:"re",  ico:"🛒",bg:"#FFF8E1",url:"hanbai3.html",        q:120, rate:60,h:"60〜100h",  sal:5, dif:1,pop:34, tags:["pop"],      lk:"dojo_hanbai3"},
+  {id:"hanbai2",    name:"販売士検定 2級",                   cat:"re",  ico:"🛒",bg:"#FFF8E1",url:"hanbai2.html",        q:120, rate:45,h:"150〜250h", sal:10,dif:2,pop:35, tags:[],           lk:"dojo_hanbai2"},
+  // ── 技術・工業系 ──
+  {id:"kiken4",     name:"危険物取扱者 乙4",                 cat:"tech",ico:"🔥",bg:"#FFF3E0",url:"kikenbutsu.html",     q:120, rate:40,h:"50〜100h",  sal:10,dif:1,pop:15, tags:["pop"],      lk:"dojo_v4_kiken"},
+  {id:"torihan",    name:"登録販売者",                       cat:"tech",ico:"💊",bg:"#FFF3E0",url:"torihan.html",        q:120, rate:45,h:"200〜300h", sal:15,dif:2,pop:24, tags:["hot"],      lk:"dojo_torihan"},
+  {id:"kansei1",    name:"衛生管理者 第一種",                cat:"tech",ico:"🏥",bg:"#FFF3E0",url:"kansei1.html",        q:120, rate:45,h:"100〜200h", sal:15,dif:2,pop:31, tags:["hot"],      lk:"dojo_kansei1"},
+  {id:"kansei2",    name:"衛生管理者 第二種",                cat:"tech",ico:"🏥",bg:"#FFF3E0",url:"kansei2.html",        q:120, rate:55,h:"60〜120h",  sal:10,dif:2,pop:33, tags:[],           lk:"dojo_kansei2"},
+  {id:"boiler",     name:"ボイラー技士 2級",                 cat:"tech",ico:"🔩",bg:"#FFF3E0",url:"boiler.html",         q:120, rate:55,h:"100〜150h", sal:10,dif:1,pop:36, tags:["pop"],      lk:"dojo_boiler"},
+  {id:"gas_ko",     name:"ガス主任技術者 甲種",              cat:"tech",ico:"🔵",bg:"#FFF3E0",url:"gas_ko.html",         q:120, rate:30,h:"400〜600h", sal:20,dif:4,pop:47, tags:["hard"],     lk:"dojo_gas_ko"},
+  {id:"gas_otsu",   name:"ガス主任技術者 乙種",              cat:"tech",ico:"🔵",bg:"#FFF3E0",url:"gas_otsu.html",       q:120, rate:35,h:"300〜500h", sal:18,dif:3,pop:48, tags:[],           lk:"dojo_gas_otsu"},
+  {id:"gas_hei",    name:"ガス主任技術者 丙種",              cat:"tech",ico:"🔵",bg:"#FFF3E0",url:"gas_hei.html",        q:120, rate:45,h:"150〜300h", sal:15,dif:2,pop:49, tags:[],           lk:"dojo_gas_hei"},
+  {id:"kogai_taiki",name:"公害防止管理者 大気関係",          cat:"tech",ico:"🌿",bg:"#FFF3E0",url:"kogai_taiki.html",    q:120, rate:25,h:"300〜500h", sal:20,dif:3,pop:50, tags:[],           lk:"dojo_kogai_taiki"},
+  {id:"kogai_sui",  name:"公害防止管理者 水質関係",          cat:"tech",ico:"🌿",bg:"#FFF3E0",url:"kogai_suishitsu.html",q:120, rate:25,h:"300〜500h", sal:20,dif:3,pop:51, tags:[],           lk:"dojo_kogai_sui"},
+  {id:"sokuryo",    name:"測量士補",                         cat:"tech",ico:"📏",bg:"#FFF3E0",url:"sokuryo.html",        q:120, rate:30,h:"200〜300h", sal:15,dif:2,pop:37, tags:[],           lk:"dojo_sokuryo"},
+  {id:"unko",       name:"運行管理者（貨物）",               cat:"tech",ico:"🚛",bg:"#FFF3E0",url:"unko.html",           q:120, rate:35,h:"100〜200h", sal:10,dif:2,pop:38, tags:[],           lk:"dojo_unko"},
+  {id:"energy",     name:"エネルギー管理士",                 cat:"tech",ico:"⚡",bg:"#FFF3E0",url:"energy.html",         q:120, rate:25,h:"400〜600h", sal:25,dif:3,pop:39, tags:["hard"],     lk:"dojo_energy"},
+  // ── ライフ・その他 ──
+  {id:"ryoko_k",    name:"旅行業務取扱管理者（国内）",        cat:"life",ico:"✈️",bg:"#FBEAF0",url:"ryoko_kokunai.html", q:120, rate:40,h:"150〜250h", sal:10,dif:2,pop:40, tags:[],           lk:"dojo_ryoko_k"},
+  {id:"ryoko_s",    name:"旅行業務取扱管理者（総合）",        cat:"life",ico:"✈️",bg:"#FBEAF0",url:"ryoko_sogo.html",    q:120, rate:15,h:"300〜500h", sal:15,dif:3,pop:41, tags:["hard"],     lk:"dojo_ryoko_s"},
+  {id:"color_std",  name:"カラーコーディネーター スタンダード",cat:"life",ico:"🎨",bg:"#FBEAF0",url:"color_std.html",   q:120, rate:60,h:"60〜100h",  sal:5, dif:1,pop:42, tags:[],           lk:"dojo_color_std"},
+  {id:"color_adv",  name:"カラーコーディネーター アドバンス", cat:"life",ico:"🎨",bg:"#FBEAF0",url:"color_adv.html",    q:120, rate:40,h:"150〜200h", sal:8, dif:3,pop:43, tags:[],           lk:"dojo_color_adv"},
+  {id:"mental1",    name:"メンタルヘルスマネジメント Ⅰ種",   cat:"life",ico:"🧠",bg:"#FBEAF0",url:"mental1.html",       q:120, rate:20,h:"150〜200h", sal:8, dif:3,pop:44, tags:[],           lk:"dojo_mental1"},
+  {id:"mental2",    name:"メンタルヘルスマネジメント Ⅱ種",   cat:"life",ico:"🧠",bg:"#FBEAF0",url:"mental2.html",       q:120, rate:55,h:"60〜100h",  sal:5, dif:2,pop:45, tags:["new"],      lk:"dojo_mental2"},
+  {id:"mental3",    name:"メンタルヘルスマネジメント Ⅲ種",   cat:"life",ico:"🧠",bg:"#FBEAF0",url:"mental3.html",       q:120, rate:75,h:"30〜60h",   sal:5, dif:1,pop:46, tags:["new"],      lk:"dojo_mental3"},
+  {id:"eco",        name:"eco検定",                          cat:"life",ico:"🌱",bg:"#FBEAF0",url:"eco.html",           q:120, rate:65,h:"60〜80h",   sal:5, dif:1,pop:52, tags:["new"],      lk:"dojo_eco"},
+  {id:"qc4",        name:"QC検定 4級",                       cat:"life",ico:"📐",bg:"#FBEAF0",url:"qc4.html",           q:120, rate:70,h:"30〜60h",   sal:5, dif:1,pop:53, tags:[],           lk:"dojo_qc4"},
+  {id:"qc3",        name:"QC検定 3級",                       cat:"life",ico:"📐",bg:"#FBEAF0",url:"qc3.html",           q:120, rate:50,h:"100〜150h", sal:8, dif:2,pop:54, tags:[],           lk:"dojo_qc3"},
+  {id:"qc2",        name:"QC検定 2級",                       cat:"life",ico:"📐",bg:"#FBEAF0",url:"qc2.html",           q:120, rate:35,h:"200〜300h", sal:12,dif:3,pop:55, tags:[],           lk:"dojo_qc2"},
+  {id:"tsukanshi",  name:"通関士",                           cat:"life",ico:"🌏",bg:"#FBEAF0",url:"tsukanshi.html",     q:120, rate:15,h:"500〜700h", sal:30,dif:4,pop:56, tags:["hard"],     lk:"dojo_tsukanshi"},
+  {id:"fukushi2",   name:"福祉住環境コーディネーター 2級",    cat:"life",ico:"♿",bg:"#FBEAF0",url:"fukushi2.html",      q:120, rate:50,h:"100〜200h", sal:10,dif:2,pop:57, tags:[],           lk:"dojo_fukushi2"},
+  {id:"fukushi3",   name:"福祉住環境コーディネーター 3級",    cat:"life",ico:"♿",bg:"#FBEAF0",url:"fukushi3.html",      q:120, rate:70,h:"40〜80h",   sal:5, dif:1,pop:58, tags:[],           lk:"dojo_fukushi3"},
+  {id:"interior",   name:"インテリアコーディネーター",        cat:"life",ico:"🛋️",bg:"#FBEAF0",url:"interior.html",      q:120, rate:25,h:"400〜600h", sal:15,dif:3,pop:59, tags:[],           lk:"dojo_interior"},
+  {id:"eiyoshi",    name:"管理栄養士",                       cat:"life",ico:"🥗",bg:"#FBEAF0",url:"eiyoshi.html",       q:120, rate:55,h:"1000h〜",   sal:10,dif:3,pop:60, tags:[],           lk:"dojo_eiyoshi"},
+];
+const PURPOSES=[
+  {id:"short",  ico:"⚡",bg:"#FFFDE7",name:"短期間で取れる",    desc:"〜3ヶ月で合格を狙う",      f:s=>s.dif===1},
+  {id:"salary", ico:"💰",bg:"#E8F5E9",name:"年収アップを狙う",  desc:"収入増に直結する資格",      f:s=>s.sal>=25},
+  {id:"bunkei", ico:"📚",bg:"#FAEEDA",name:"文系向け",          desc:"理系知識不要で取れる",      f:s=>["takken","fp3","fp2","boki3","boki2","bizlaw3","bizlaw2","chizai3","bizacc3","bizacc2","torihan","mental","hanbai","hisho","service","bunsho","gaitan2","kashikin"].includes(s.id)},
+  {id:"worker", ico:"👔",bg:"#E6F1FB",name:"社会人向け",        desc:"働きながらスキマ時間で",    f:s=>s.dif<=2&&!["eiyoshi","interior","mankan","tsukanshi"].includes(s.id)},
+  {id:"student",ico:"🎓",bg:"#FBEAF0",name:"学生・就活向け",    desc:"就活前に差をつける",        f:s=>["itpass","fe","fp3","boki3","boki2","bizlaw3","gken","genai","ds","dx","color","hisho"].includes(s.id)},
+  {id:"kanri2", ico:"🏢",bg:"#F3EBFE",name:"職場で役立つ",      desc:"会社・職場で直接活かせる",  f:s=>["bizlaw3","bizlaw2","mental","kansei","hanbai","unko","torihan","eco","bizacc3","qc","hisho","service","bunsho"].includes(s.id)},
+];
+const RTYPES=[
+  {id:"pop",   lbl:"👥 人気",        sort:(a,b)=>a.pop-b.pop,            meta:s=>`受験者数 年間上位 ／ 合格率 ${s.rate}% ／ ${s.h}`},
+  {id:"easy",  lbl:"✅ 合格しやすい", sort:(a,b)=>b.rate-a.rate,          meta:s=>`合格率 ${s.rate}% ／ 難易度 ${str(s.dif)} ／ ${s.h}`},
+  {id:"sal",   lbl:"💰 年収アップ",   sort:(a,b)=>b.sal-a.sal,            meta:s=>`年収増加目安 +${s.sal}万〜 ／ 難易度 ${str(s.dif)}`},
+  {id:"begin", lbl:"🌱 初心者向け",   sort:(a,b)=>a.dif-b.dif||a.pop-b.pop,meta:s=>`難易度 ${str(s.dif)} ／ ${s.h} ／ 合格率 ${s.rate}%`},
+];
+const CATS=[
+  {id:"all",  lbl:"すべて"},
+  {id:"it",   lbl:"IT・デジタル"},
+  {id:"fin",  lbl:"金融・会計"},
+  {id:"law",  lbl:"法務・ビジネス"},
+  {id:"re",   lbl:"不動産・流通"},
+  {id:"tech", lbl:"技術・工業"},
+  {id:"life", lbl:"ライフ・その他"},
+];
+const HK="shikaku_pass_hist",MH=6;
+let cR="pop",cC="all";
+function av(s){return true;}
+function str(d){return"★".repeat(d)+"☆".repeat(5-d);}
+function nc(i){return i===0?"g":i===1?"s":i===2?"b":"";}
+function tH(tags){const M={hot:["tp-hot","人気"],pop:["tp-pop","定番"],new:["tp-new","新着"],hard:["tp-hard","難関"]};return tags.map(t=>{const[c,l]=M[t]||["",""];return`<span class="tp ${c}">${l}</span>`;}).join("");}
+function gH(){try{return JSON.parse(localStorage.getItem(HK)||"[]");}catch{return[];}}
+function sH(a){try{localStorage.setItem(HK,JSON.stringify(a));}catch{}}
+function gP(s){if(!s.lk)return null;try{const d=JSON.parse(localStorage.getItem(s.lk)||"null");if(!d)return null;const h=(d.history||[]).slice(-50);if(!h.length)return null;return{rate:Math.round(h.filter(x=>x.correct).length/h.length*100),ans:d.totalAnswered||0};}catch{return null;}}
+function renderResume(){const hist=gH();if(!hist.length){document.getElementById("rsec").style.display="none";return;}document.getElementById("rsec").style.display="block";const items=hist.map(id=>S.find(s=>s.id===id)).filter(Boolean);document.getElementById("rscroll").innerHTML=items.map(s=>{const p=gP(s);const bar=p?p.rate:0;const meta=p?`正答率 ${p.rate}% ／ ${p.ans}問`:"未学習";return`<a class="rcrd" href="#" onclick="event.preventDefault();go('${s.id}','${s.url}')"><div class="rcrd-top"><div class="rcrd-ico" style="background:${s.bg}">${s.ico}</div><div class="rcrd-name">${s.name}</div></div><div class="rcrd-bar"><div class="rcrd-fill" style="width:${bar}%"></div></div><div class="rcrd-meta">${meta}</div></a>`;}).join("");}
+function clearHist(){if(confirm("学習履歴を消去しますか？")){localStorage.removeItem(HK);document.getElementById("rsec").style.display="none";}}
+function go(id,url){let h=gH();h=[id,...h.filter(x=>x!==id)].slice(0,MH);sH(h);window.location.href=url;}
+function renderPurpose(){document.getElementById("pg").innerHTML=PURPOSES.map(p=>`<div class="pc" onclick="openDr('${p.id}')"><div class="pc-ico" style="background:${p.bg}">${p.ico}</div><div><div class="pc-name">${p.name}</div><div class="pc-desc">${p.desc}</div><div class="pc-cnt">${S.filter(p.f).length}資格を見る →</div></div></div>`).join("");}
+function renderRankTabs(){document.getElementById("rtabs").innerHTML=RTYPES.map(r=>`<div class="rtab ${r.id===cR?"on":""}" onclick="swR('${r.id}')">${r.lbl}</div>`).join("");}
+function renderRankList(){const rt=RTYPES.find(r=>r.id===cR);const items=[...S].sort(rt.sort).slice(0,10);document.getElementById("rlist").innerHTML=items.map((s,i)=>`<a class="ri" href="#" onclick="event.preventDefault();${av(s)?`go('${s.id}','${s.url}')`:""};return false"><div class="rnum ${nc(i)}">${i+1}</div><div class="ric" style="background:${s.bg}">${s.ico}</div><div class="rinfo"><div class="rname">${s.name}${!av(s)?`<span class="sbadge">準備中</span>`:""}</div><div class="rmeta">${rt.meta(s)}</div></div><div class="rarr">›</div></a>`).join("");}
+function renderCatBtns(){const cnt={};CATS.forEach(c=>{cnt[c.id]=c.id==="all"?S.length:S.filter(s=>s.cat===c.id).length;});document.getElementById("frow").innerHTML=CATS.map(c=>`<button class="fbtn ${c.id===cC?"on":""}" onclick="swC('${c.id}')">${c.lbl}（${cnt[c.id]}）</button>`).join("");}
+function renderGrid(){const list=cC==="all"?S:S.filter(s=>s.cat===cC);document.getElementById("sgrid").innerHTML=list.map(s=>`<a class="sc ${av(s)?"av":"dim"}" href="#" onclick="event.preventDefault();${av(s)?`go('${s.id}','${s.url}')`:""};return false"><div class="sc-ico" style="background:${s.bg}">${s.ico}</div><div class="sc-name">${s.name}</div><div class="sc-meta">${av(s)?s.q+"問":"準備中"} ／ 合格率 ${s.rate}%<br>${s.h} ／ 難易度 <span class="stars">${str(s.dif)}</span></div><div class="sc-tags">${tH(s.tags)}${!av(s)?`<span class="tp tp-soon">準備中</span>`:""}</div></a>`).join("");}
+function swR(id){cR=id;renderRankTabs();renderRankList();}
+function swC(id){cC=id;renderCatBtns();renderGrid();}
+function openDr(pid){const p=PURPOSES.find(x=>x.id===pid);if(!p)return;const items=S.filter(p.f);document.getElementById("dr-ttl").textContent=p.ico+" "+p.name;document.getElementById("dr-sub").textContent=p.desc+"（"+items.length+"資格）";document.getElementById("dr-list").innerHTML=items.map(s=>`<a class="di" href="#" onclick="event.preventDefault();closeDr();${av(s)?`setTimeout(()=>go('${s.id}','${s.url}'),200)`:""};return false"><div class="di-ico" style="background:${s.bg}">${s.ico}</div><div class="di-info"><div class="di-name">${s.name}${!av(s)?`<span class="sbadge">準備中</span>`:""}</div><div class="di-meta">難易度 <span class="stars">${str(s.dif)}</span> ／ ${s.h} ／ 合格率 ${s.rate}%</div></div><div class="di-arr">›</div></a>`).join("");document.getElementById("ov").classList.add("on");document.getElementById("dr").classList.add("on");document.body.style.overflow="hidden";}
+function closeDr(){document.getElementById("ov").classList.remove("on");document.getElementById("dr").classList.remove("on");document.body.style.overflow="";}
+renderResume();renderPurpose();renderRankTabs();renderRankList();renderCatBtns();renderGrid();
+</script>
+</body>
+</html>
