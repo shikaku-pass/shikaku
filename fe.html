@@ -3,164 +3,246 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>基本情報技術者（科目A） 無料問題集 | 資格Pass</title>
-<meta name="description" content="基本情報技術者（科目A/午前）の無料4択問題集。スマホ対応・解説付き。参考書・通信講座情報も掲載。">
+<title>基本情報技術者（科目A）対策 | 資格Pass</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#1a2744;--green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
-  --accent-bg:#FEF0EB;--gold:#D4941A;--gold-bg:#FEF6E4;
-  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
-  --text:#1a1a1a;--text2:#555;--text3:#999;
-  --font-d:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;
-  --font-b:'Noto Sans JP',sans-serif;
-  --radius:14px;--radius-sm:10px;--tap:52px;
-  --shadow:0 1px 4px rgba(0,0,0,0.08);
+  --accent:#ff5722;--accent-d:#e64a19;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Zen Kaku Gothic New',sans-serif;
+  --radius:14px;--shadow:0 1px 4px rgba(0,0,0,0.08);
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
-html,body{background:var(--bg);font-family:var(--font-b);color:var(--text);line-height:1.6;}
-a{text-decoration:none;color:inherit;}
+body{background:var(--bg);font-family:'Noto Sans JP',sans-serif;color:var(--text);line-height:1.6;}
 
-/* Header */
-.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;position:sticky;top:0;z-index:100;}
-.site-logo{color:#fff;font-size:17px;font-weight:700;}.site-logo span{color:#1D9E75;}
-.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;}
+/* Header / Dashboard Area */
+.main-header{background:var(--navy);color:#fff;padding:24px 20px 40px;position:relative;}
+.header-inner{max-width:800px;margin:0 auto;}
+.badge-top{font-size:10px;font-weight:700;color:var(--green);letter-spacing:1px;margin-bottom:4px;display:block;}
+.site-title{font-family:var(--font-d);font-size:24px;font-weight:900;margin-bottom:20px;}
+.stats-grid{display:flex;gap:24px;}
+.stat-item{display:flex;flex-direction:column;}
+.stat-val{font-size:20px;font-weight:900;color:var(--green);}
+.stat-lbl{font-size:11px;opacity:0.6;}
 
-/* Main Layout */
-.app-container{max-width:600px;margin:0 auto;padding:20px 16px;}
+/* Dashboard Cards */
+.container{max-width:800px;margin:-25px auto 60px;padding:0 16px;}
+.card{background:var(--bg2);border-radius:var(--radius);padding:20px;margin-bottom:16px;box-shadow:var(--shadow);border:1px solid var(--border);}
+.card-ttl{font-size:12px;font-weight:700;color:var(--text3);margin-bottom:15px;letter-spacing:0.5px;}
 
-/* Quiz Section */
-.quiz-card{background:var(--bg2);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);padding:24px;margin-bottom:20px;}
-.choice-btn{width:100%;padding:14px 18px;margin-bottom:10px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);text-align:left;font-size:15px;cursor:pointer;}
-.choice-btn.correct{background:var(--green-bg);border-color:var(--green);color:var(--green-d);font-weight:700;}
-.choice-btn.wrong{background:var(--accent-bg);border-color:#fb9a7c;color:#e65b3c;font-weight:700;}
+/* Grid Layout */
+.dash-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;}
 
-/* Info Section (The Bottom Part) */
-.aff-section{background:#f5f4f0;padding:24px 0;margin-top:40px;}
-.aff-inner{max-width:600px;margin:0 auto;padding:0 20px;}
-.aff-h2{font-size:16px;font-weight:700;margin-bottom:16px;}
-.book-card{background:#fff;border:1px solid var(--border);border-radius:11px;padding:13px;margin-bottom:10px;}
-.course-card{display:flex;align-items:center;gap:12px;background:#fff;padding:12px;border-radius:11px;margin-bottom:10px;border:1px solid var(--border);}
-.official-btn{display:flex;align-items:center;gap:12px;background:var(--navy);color:#fff;border-radius:12px;padding:14px;margin-bottom:20px;}
+/* Mode Select */
+.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.mode-btn{border:1px solid var(--border);border-radius:10px;padding:15px 5px;text-align:center;cursor:pointer;background:#fff;}
+.mode-btn.active{border:2px solid var(--accent);background:var(--bg2);}
+.mode-ico{font-size:20px;margin-bottom:5px;display:block;}
+.mode-name{font-size:12px;font-weight:700;}
 
-/* SEO / FAQ Section */
-.seo-section{background:#fff;padding:40px 20px;}
-.seo-h3{font-size:15px;font-weight:700;margin:24px 0 10px;border-left:3px solid var(--green);padding-left:9px;}
-.faq-item{background:#f9f8f5;border:1px solid var(--border);border-radius:9px;margin-bottom:10px;padding:12px;font-size:13px;font-weight:700;}
+/* Category Select */
+.cat-list{display:flex;flex-wrap:wrap;gap:8px;}
+.cat-btn{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;cursor:pointer;}
+.cat-btn.active{background:var(--navy);color:#fff;border-color:var(--navy);}
 
-/* Footer */
-.site-footer{background:var(--navy);padding:30px 20px;text-align:center;color:rgba(255,255,255,0.4);font-size:11px;}
-.site-footer-links{display:flex;justify-content:center;gap:15px;margin-bottom:10px;}
+/* Start Button */
+.start-btn{width:100%;background:var(--accent);color:#fff;border:none;padding:18px;border-radius:14px;font-size:18px;font-weight:900;cursor:pointer;margin-top:10px;box-shadow:0 4px 0 var(--accent-d);transition:0.1s;}
+.start-btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--accent-d);}
+
+/* Quiz Area (Initial Hidden) */
+#quiz-screen{display:none;max-width:600px;margin:20px auto;}
+.quiz-q{font-size:18px;font-weight:700;margin-bottom:20px;}
+.choice-btn{width:100%;padding:15px;margin-bottom:10px;border:1px solid var(--border);border-radius:10px;background:#fff;text-align:left;font-size:15px;cursor:pointer;}
+.choice-btn.correct{background:var(--green-bg);border-color:var(--green);}
+.choice-btn.wrong{background:#fff1f0;border-color:#ffa39e;}
+
+/* Footer Sections */
+.aff-section{max-width:800px;margin:0 auto 40px;padding:0 16px;}
+.section-title{font-size:16px;font-weight:700;margin-bottom:15px;text-align:center;}
+.book-item{background:#fff;border:1px solid var(--border);border-radius:12px;padding:15px;margin-bottom:10px;display:flex;align-items:center;gap:15px;}
+.book-ico{font-size:24px;}
+.book-info{flex:1;}
+.book-name{font-size:14px;font-weight:700;}
+
+@media (max-width: 768px) {
+  .dash-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
 
-<header class="site-header">
-  <a class="site-logo" href="index.html">資格<span>Pass</span></a>
-  <a class="site-back" href="index.html">一覧へ</a>
-</header>
-
-<div class="app-container">
-  <div id="quiz-view">
-    <div id="quiz-progress" style="font-size:13px;color:var(--text3);margin-bottom:8px;">Q.1 / 10</div>
-    <div class="quiz-card">
-      <div id="question" style="font-size:17px;font-weight:700;margin-bottom:20px;">読み込み中...</div>
-      <div id="choices" class="choice-list"></div>
-      <div id="explanation" style="margin-top:20px;padding:15px;background:var(--gold-bg);border-radius:10px;display:none;">
-        <div style="font-weight:700;color:var(--gold);margin-bottom:5px;">💡 解説</div>
-        <div id="expl-text" style="font-size:14px;"></div>
+<div id="home-screen">
+  <header class="main-header">
+    <div class="header-inner">
+      <span class="badge-top">FE 科目A試験</span>
+      <h1 class="site-title">基本情報技術者</h1>
+      <div class="stats-grid">
+        <div class="stat-item"><span class="stat-val" id="total-rate">0%</span><span class="stat-lbl">正答率</span></div>
+        <div class="stat-item"><span class="stat-val" id="total-count">0</span><span class="stat-lbl">解答数</span></div>
       </div>
     </div>
-    <button id="next-btn" style="width:100%;padding:15px;background:var(--navy);color:#fff;border:none;border-radius:26px;font-weight:700;display:none;" onclick="goNext()">次の問題へ</button>
+  </header>
+
+  <div class="container">
+    <div class="dash-grid">
+      <div class="dash-left">
+        <div class="card">
+          <div class="card-ttl">モード選択</div>
+          <div class="mode-grid">
+            <div class="mode-btn active"><span class="mode-ico">📚</span><span class="mode-name">全問</span></div>
+            <div class="mode-btn"><span class="mode-ico">🔥</span><span class="mode-name">弱点特訓</span></div>
+            <div class="mode-btn"><span class="mode-ico">⭐</span><span class="mode-name">登録問題</span></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-ttl">カテゴリ</div>
+          <div class="cat-list">
+            <button class="cat-btn active">全て</button>
+            <button class="cat-btn">テクノロジ</button>
+            <button class="cat-btn">マネジメント</button>
+            <button class="cat-btn">ストラテジ</button>
+          </div>
+        </div>
+
+        <button class="start-btn" onclick="startQuiz()">学習開始 →</button>
+      </div>
+
+      <div class="dash-right">
+        <div class="card">
+          <div class="card-ttl">学習統計</div>
+          <div style="font-size:13px; color:var(--text2);">
+            <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+              <span>通算解答数</span><span style="font-weight:700;">0</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+              <span>通算正答率</span><span style="font-weight:700; color:var(--green);">0%</span>
+            </div>
+            <div style="display:flex; justify-content:space-between;">
+              <span>要復習問題</span><span style="font-weight:700; color:var(--accent);">0問</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-ttl">間違いノート</div>
+          <div style="text-align:center; padding:10px 0;">
+             <div style="font-size:24px; font-weight:900; color:var(--text3);">0</div>
+             <div style="font-size:11px; color:var(--text3);">直近の間違い</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="aff-section">
+    <h2 class="section-title">試験に申し込む・学習を深める</h2>
+    <a href="https://www.ipa.go.jp/shiken/kubun/fe.html" target="_blank" style="text-decoration:none;">
+      <div class="book-item" style="background:var(--navy); color:#fff; border:none;">
+        <span class="book-ico">🏛️</span>
+        <div class="book-info">
+          <div class="book-name">IPA 公式サイト</div>
+          <div style="font-size:11px; opacity:0.8;">最新の試験日程・申込方法を確認</div>
+        </div>
+      </div>
+    </a>
+    <div class="book-item">
+      <span class="book-ico">📖</span>
+      <div class="book-info">
+        <div class="book-name">キタミ式イラストIT塾 基本情報技術者</div>
+        <div style="font-size:11px; color:var(--text3);">初学者に最適な図解解説</div>
+      </div>
+    </div>
+    <div class="book-item">
+      <span class="book-ico">📖</span>
+      <div class="book-info">
+        <div class="book-name">基本情報技術者 パーフェクトラーニング過去集</div>
+        <div style="font-size:11px; color:var(--text3);">圧倒的な問題数と詳細解説</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="quiz-screen" class="container">
+  <div class="card">
+    <div id="quiz-progress" style="font-size:12px; color:var(--text3); margin-bottom:10px;">Q.1 / 10</div>
+    <div class="quiz-q" id="q-text"></div>
+    <div id="choice-list"></div>
+    <div id="explanation" style="display:none; margin-top:20px; padding:15px; background:var(--gold-bg); border-radius:10px; border:1px solid var(--border);">
+      <div style="font-weight:700; color:var(--gold);">💡 解説</div>
+      <div id="expl-text" style="font-size:14px; margin-top:5px;"></div>
+      <button class="start-btn" style="padding:10px; font-size:14px;" onclick="nextQuestion()">次の問題へ</button>
+    </div>
   </div>
 </div>
 
-<section class="aff-section">
-  <div class="aff-inner">
-    <h2 class="aff-h2">試験対策・学習情報</h2>
-    <a class="official-btn" href="https://www.ipa.go.jp/shiken/kubun/fe.html" target="_blank">
-      <div>🏛️</div><div>IPA公式サイトで詳細を確認</div>
-    </a>
-    
-    <h3 style="font-size:14px;margin-bottom:10px;">おすすめ参考書</h3>
-    <div class="book-card"><div>📖 キタミ式イラストIT塾 基本情報技術者</div></div>
-    <div class="book-card"><div>📖 基本情報技術者 パーフェクトラーニング</div></div>
-
-    <h3 style="font-size:14px;margin:20px 0 10px;">おすすめ通信講座</h3>
-    <a class="course-card" href="#"><div>🎓 スタディング</div></a>
-    <a class="course-card" href="#"><div>🎓 資格の大原</div></a>
-  </div>
-</section>
-
-<section class="seo-section">
-  <div class="aff-inner">
-    <h2 style="font-size:16px;margin-bottom:15px;">よくある質問</h2>
-    <div class="faq-item">Q. 文系でも合格できますか？<br><span style="font-weight:normal;color:#666;">A. はい、論理的思考の練習で合格可能です。</span></div>
-    <div class="faq-item">Q. 勉強時間はどのくらい？<br><span style="font-weight:normal;color:#666;">A. 初学者の場合、200〜300時間程度が目安です。</span></div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="site-footer-links">
-    <a href="#">プライバシーポリシー</a>
-    <a href="#">お問い合わせ</a>
-  </div>
-  <p>© 2025 資格Pass</p>
-</footer>
-
 <script>
+// 問題データ (一部抜粋 - 追加可能)
 const questions = [
-  // JSONデータ（ここに問題を追加してください）
-  { "id":1, "category":"アルゴリズム", "question":"最も計算量が小さいアルゴリズムはどれか。", "choices":["O(n log n)","O(n^2)","O(log n)","O(n)"], "answer":2, "explanation":"O(log n)が最も小さい。" },
-  { "id":2, "category":"アルゴリズム", "question":"二重ループの計算量は？", "choices":["O(n)","O(n log n)","O(n^2)","O(2^n)"], "answer":2, "explanation":"n × n で O(n^2) となります。" }
-  // ... 以下、180問まで追加可能
+  {
+    category: "テクノロジ",
+    question: "入力サイズnに対して最も計算量が小さいアルゴリズムはどれか。",
+    choices: ["O(n log n)", "O(n^2)", "O(log n)", "O(n)"],
+    answer: 2,
+    explanation: "計算量は小さい順に O(log n) < O(n) < O(n log n) < O(n^2) となります。"
+  },
+  {
+    category: "テクノロジ",
+    question: "スタックのデータ構造の動作として正しいものはどれか。",
+    choices: ["先入れ先出し", "後入れ先出し", "ランダムアクセス", "優先度順"],
+    answer: 1,
+    explanation: "スタックはLIFO（Last-In, First-Out：後入れ先出し）です。"
+  }
 ];
 
-let currentIndex = 0;
-let isAnswered = false;
+let currentIdx = 0;
 
-function loadQuestion() {
-  isAnswered = false;
-  const q = questions[currentIndex];
-  document.getElementById('question').textContent = q.question;
-  document.getElementById('quiz-progress').textContent = `Q.${currentIndex + 1} / ${questions.length}`;
-  
-  const cEl = document.getElementById('choices');
-  cEl.innerHTML = '';
-  q.choices.forEach((txt, idx) => {
+function startQuiz() {
+  document.getElementById('home-screen').style.display = 'none';
+  document.getElementById('quiz-screen').style.display = 'block';
+  showQuestion();
+}
+
+function showQuestion() {
+  const q = questions[currentIdx];
+  document.getElementById('q-text').textContent = q.question;
+  const list = document.getElementById('choice-list');
+  list.innerHTML = '';
+  q.choices.forEach((c, i) => {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
-    btn.textContent = txt;
-    btn.onclick = () => selectChoice(idx, btn);
-    cEl.appendChild(btn);
+    btn.textContent = c;
+    btn.onclick = () => checkAnswer(i);
+    list.appendChild(btn);
   });
-  document.getElementById('explanation').style.display = 'none';
-  document.getElementById('next-btn').style.display = 'none';
 }
 
-function selectChoice(idx, btn) {
-  if (isAnswered) return;
-  isAnswered = true;
-  const correct = questions[currentIndex].answer;
-  const buttons = document.getElementsByClassName('choice-btn');
-  if (idx === correct) btn.classList.add('correct');
-  else {
-    btn.classList.add('wrong');
-    buttons[correct].classList.add('correct');
+function checkAnswer(idx) {
+  const q = questions[currentIdx];
+  const btns = document.getElementsByClassName('choice-btn');
+  if(idx === q.answer) {
+    btns[idx].classList.add('correct');
+  } else {
+    btns[idx].classList.add('wrong');
+    btns[q.answer].classList.add('correct');
   }
-  document.getElementById('expl-text').textContent = questions[currentIndex].explanation;
+  document.getElementById('expl-text').textContent = q.explanation;
   document.getElementById('explanation').style.display = 'block';
-  document.getElementById('next-btn').style.display = 'block';
 }
 
-function goNext() {
-  currentIndex++;
-  if (currentIndex < questions.length) loadQuestion();
-  else alert('全問終了です！');
+function nextQuestion() {
+  currentIdx++;
+  if(currentIdx < questions.length) {
+    document.getElementById('explanation').style.display = 'none';
+    showQuestion();
+  } else {
+    alert("全問終了しました。");
+    location.reload();
+  }
 }
-
-loadQuestion();
 </script>
+
 </body>
 </html>
