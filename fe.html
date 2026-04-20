@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>基本情報技術者（科目A）対策 | 資格Pass</title>
+<title>基本情報技術者（科目A） 無料問題集・過去問対策 | 資格Pass</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -12,62 +12,84 @@
   --accent:#ff5722;--accent-d:#e64a19;
   --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--text:#1a1a1a;--text2:#555;--text3:#999;
   --font-d:'Zen Kaku Gothic New',sans-serif;
-  --radius:14px;--shadow:0 1px 4px rgba(0,0,0,0.08);
+  --radius:14px;--radius-sm:10px;--shadow:0 1px 4px rgba(0,0,0,0.08);
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
-body{background:var(--bg);font-family:'Noto Sans JP',sans-serif;color:var(--text);line-height:1.6;}
+body{background:var(--bg);font-family:'Noto Sans JP',sans-serif;color:var(--text);line-height:1.6;overflow-x:hidden;}
 
-/* Header / Dashboard Area */
-.main-header{background:var(--navy);color:#fff;padding:24px 20px 40px;position:relative;}
-.header-inner{max-width:800px;margin:0 auto;}
-.badge-top{font-size:10px;font-weight:700;color:var(--green);letter-spacing:1px;margin-bottom:4px;display:block;}
-.site-title{font-family:var(--font-d);font-size:24px;font-weight:900;margin-bottom:20px;}
-.stats-grid{display:flex;gap:24px;}
-.stat-item{display:flex;flex-direction:column;}
-.stat-val{font-size:20px;font-weight:900;color:var(--green);}
-.stat-lbl{font-size:11px;opacity:0.6;}
+/* --- Header & Dashboard --- */
+.main-header{background:var(--navy);color:#fff;padding:32px 20px 50px;position:relative;}
+.header-inner{max-width:900px;margin:0 auto;}
+.badge-top{font-size:11px;font-weight:900;color:var(--green);letter-spacing:1px;margin-bottom:6px;display:block;opacity:0.9;}
+.site-title{font-family:var(--font-d);font-size:26px;font-weight:900;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;}
+.entry-btn{font-size:12px;background:rgba(255,255,255,0.1);padding:6px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);}
 
-/* Dashboard Cards */
-.container{max-width:800px;margin:-25px auto 60px;padding:0 16px;}
-.card{background:var(--bg2);border-radius:var(--radius);padding:20px;margin-bottom:16px;box-shadow:var(--shadow);border:1px solid var(--border);}
-.card-ttl{font-size:12px;font-weight:700;color:var(--text3);margin-bottom:15px;letter-spacing:0.5px;}
+.stats-summary{display:flex;gap:30px;align-items:center;}
+.stat-main{display:flex;flex-direction:column;}
+.stat-main .val{font-size:32px;font-weight:900;color:var(--green);line-height:1;}
+.stat-main .lbl{font-size:11px;opacity:0.6;margin-top:4px;}
 
-/* Grid Layout */
-.dash-grid{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;}
+/* --- Layout Container --- */
+.container{max-width:900px;margin:-30px auto 60px;padding:0 16px;display:grid;grid-template-columns:1.8fr 1fr;gap:20px;}
 
-/* Mode Select */
-.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.mode-btn{border:1px solid var(--border);border-radius:10px;padding:15px 5px;text-align:center;cursor:pointer;background:#fff;}
-.mode-btn.active{border:2px solid var(--accent);background:var(--bg2);}
-.mode-ico{font-size:20px;margin-bottom:5px;display:block;}
-.mode-name{font-size:12px;font-weight:700;}
+/* --- Cards --- */
+.card{background:var(--bg2);border-radius:var(--radius);padding:24px;margin-bottom:20px;box-shadow:var(--shadow);border:1px solid var(--border);position:relative;}
+.card-ttl{font-size:12px;font-weight:900;color:var(--text3);margin-bottom:18px;letter-spacing:0.8px;display:flex;align-items:center;gap:6px;}
 
-/* Category Select */
+/* --- Mode Selection --- */
+.mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.mode-btn{border:2px solid var(--border);border-radius:var(--radius-sm);padding:18px 10px;text-align:center;cursor:pointer;background:#fff;transition:0.2s;}
+.mode-btn.active{border-color:var(--accent);background:#fff;}
+.mode-btn .ico{font-size:24px;display:block;margin-bottom:6px;}
+.mode-btn .name{font-size:13px;font-weight:900;display:block;}
+.mode-btn .count{font-size:10px;color:var(--text3);margin-top:2px;}
+
+/* --- Category Tags --- */
 .cat-list{display:flex;flex-wrap:wrap;gap:8px;}
-.cat-btn{background:#fff;border:1px solid var(--border);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;cursor:pointer;}
+.cat-btn{background:#fff;border:1px solid var(--border);padding:8px 16px;border-radius:24px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:5px;transition:0.2s;}
 .cat-btn.active{background:var(--navy);color:#fff;border-color:var(--navy);}
 
-/* Start Button */
-.start-btn{width:100%;background:var(--accent);color:#fff;border:none;padding:18px;border-radius:14px;font-size:18px;font-weight:900;cursor:pointer;margin-top:10px;box-shadow:0 4px 0 var(--accent-d);transition:0.1s;}
-.start-btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--accent-d);}
+/* --- Options --- */
+.opt-row{display:flex;align-items:center;gap:12px;margin-top:10px;}
+.toggle-group{display:flex;background:var(--bg);padding:4px;border-radius:8px;gap:4px;}
+.toggle-item{padding:6px 12px;font-size:12px;font-weight:700;border-radius:6px;cursor:pointer;}
+.toggle-item.active{background:#fff;box-shadow:var(--shadow);}
 
-/* Quiz Area (Initial Hidden) */
-#quiz-screen{display:none;max-width:600px;margin:20px auto;}
-.quiz-q{font-size:18px;font-weight:700;margin-bottom:20px;}
-.choice-btn{width:100%;padding:15px;margin-bottom:10px;border:1px solid var(--border);border-radius:10px;background:#fff;text-align:left;font-size:15px;cursor:pointer;}
-.choice-btn.correct{background:var(--green-bg);border-color:var(--green);}
-.choice-btn.wrong{background:#fff1f0;border-color:#ffa39e;}
+/* --- Start Action --- */
+.start-btn{width:100%;background:var(--accent);color:#fff;border:none;padding:20px;border-radius:16px;font-size:20px;font-weight:900;cursor:pointer;box-shadow:0 5px 0 var(--accent-d);transition:0.1s;margin-top:10px;}
+.start-btn:active{transform:translateY(3px);box-shadow:0 2px 0 var(--accent-d);}
+.reset-link{text-align:center;display:block;margin-top:15px;font-size:12px;color:var(--text3);text-decoration:underline;cursor:pointer;}
 
-/* Footer Sections */
-.aff-section{max-width:800px;margin:0 auto 40px;padding:0 16px;}
-.section-title{font-size:16px;font-weight:700;margin-bottom:15px;text-align:center;}
-.book-item{background:#fff;border:1px solid var(--border);border-radius:12px;padding:15px;margin-bottom:10px;display:flex;align-items:center;gap:15px;}
-.book-ico{font-size:24px;}
-.book-info{flex:1;}
-.book-name{font-size:14px;font-weight:700;}
+/* --- Right Side Stats --- */
+.mini-stat-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--border);}
+.mini-stat-row:last-child{border-bottom:none;}
+.mini-stat-lbl{font-size:13px;font-weight:500;color:var(--text2);}
+.mini-stat-val{font-size:15px;font-weight:900;}
+
+/* --- Progress Bar (Category Specific) --- */
+.cat-progress{height:6px;background:var(--border);border-radius:10px;margin-top:8px;overflow:hidden;}
+.cat-progress-inner{height:100%;background:var(--accent);width:0%;}
+
+/* --- Quiz Screen --- */
+#quiz-screen{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:var(--bg);z-index:200;overflow-y:auto;}
+.quiz-header{background:#fff;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;}
+.quiz-body{max-width:700px;margin:20px auto;padding:0 16px;}
+.q-box{background:#fff;border-radius:var(--radius);padding:30px;border:1px solid var(--border);margin-bottom:20px;}
+.choice-btn{width:100%;padding:18px;margin-bottom:12px;border:2px solid var(--border);border-radius:12px;background:#fff;text-align:left;font-size:16px;font-weight:500;cursor:pointer;}
+.choice-btn.correct{background:var(--green-bg);border-color:var(--green);color:var(--green-d);font-weight:700;}
+.choice-btn.wrong{background:#fff1f0;border-color:#ffa39e;color:#cf1322;font-weight:700;}
+
+/* --- Bottom Links (Image 1 Compliance) --- */
+.bottom-info{grid-column: 1 / -1; margin-top: 40px;}
+.info-h2{font-size:18px;font-weight:900;margin-bottom:20px;text-align:center;}
+.info-card{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;display:flex;align-items:center;gap:15px;border:1px solid var(--border);text-decoration:none;color:inherit;}
+.info-ico{font-size:24px;}
+.info-content .ttl{font-size:14px;font-weight:700;}
+.info-content .sub{font-size:11px;color:var(--text3);}
 
 @media (max-width: 768px) {
-  .dash-grid { grid-template-columns: 1fr; }
+  .container { grid-template-columns: 1fr; }
+  .stats-summary { gap: 20px; }
 }
 </style>
 </head>
@@ -77,172 +99,269 @@ body{background:var(--bg);font-family:'Noto Sans JP',sans-serif;color:var(--text
   <header class="main-header">
     <div class="header-inner">
       <span class="badge-top">FE 科目A試験</span>
-      <h1 class="site-title">基本情報技術者</h1>
-      <div class="stats-grid">
-        <div class="stat-item"><span class="stat-val" id="total-rate">0%</span><span class="stat-lbl">正答率</span></div>
-        <div class="stat-item"><span class="stat-val" id="total-count">0</span><span class="stat-lbl">解答数</span></div>
+      <div class="site-title">
+        基本情報技術者
+        <div class="entry-btn">入門 <span style="font-size:8px;">▲</span></div>
+      </div>
+      <div class="stats-summary">
+        <div class="stat-main">
+          <span class="val" id="disp-total-rate">100%</span>
+          <span class="lbl">正答率</span>
+        </div>
+        <div class="stat-main">
+          <span class="val" id="disp-total-count">1</span>
+          <span class="lbl">解答数</span>
+        </div>
       </div>
     </div>
   </header>
 
   <div class="container">
-    <div class="dash-grid">
-      <div class="dash-left">
-        <div class="card">
-          <div class="card-ttl">モード選択</div>
-          <div class="mode-grid">
-            <div class="mode-btn active"><span class="mode-ico">📚</span><span class="mode-name">全問</span></div>
-            <div class="mode-btn"><span class="mode-ico">🔥</span><span class="mode-name">弱点特訓</span></div>
-            <div class="mode-btn"><span class="mode-ico">⭐</span><span class="mode-name">登録問題</span></div>
+    <div class="dash-left">
+      <div class="card">
+        <div class="card-ttl"><span>📚</span> モード選択</div>
+        <div class="mode-grid">
+          <div class="mode-btn active" onclick="setMode('all')">
+            <span class="ico">🗂️</span>
+            <span class="name">全問</span>
+            <span class="count">120問</span>
+          </div>
+          <div class="mode-btn" onclick="setMode('weak')">
+            <span class="ico">🔥</span>
+            <span class="name">弱点特訓</span>
+            <span class="count">0問</span>
+          </div>
+          <div class="mode-btn" onclick="setMode('fav')">
+            <span class="ico">⭐</span>
+            <span class="name">登録</span>
+            <span class="count">0問</span>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card-ttl">カテゴリ</div>
-          <div class="cat-list">
-            <button class="cat-btn active">全て</button>
-            <button class="cat-btn">テクノロジ</button>
-            <button class="cat-btn">マネジメント</button>
-            <button class="cat-btn">ストラテジ</button>
-          </div>
-        </div>
-
-        <button class="start-btn" onclick="startQuiz()">学習開始 →</button>
       </div>
 
-      <div class="dash-right">
-        <div class="card">
-          <div class="card-ttl">学習統計</div>
-          <div style="font-size:13px; color:var(--text2);">
-            <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-              <span>通算解答数</span><span style="font-weight:700;">0</span>
-            </div>
-            <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-              <span>通算正答率</span><span style="font-weight:700; color:var(--green);">0%</span>
-            </div>
-            <div style="display:flex; justify-content:space-between;">
-              <span>要復習問題</span><span style="font-weight:700; color:var(--accent);">0問</span>
-            </div>
+      <div class="card">
+        <div class="card-ttl"><span>🏷️</span> カテゴリ</div>
+        <div class="cat-list">
+          <button class="cat-btn active" onclick="setCat('all')">全て</button>
+          <button class="cat-btn" onclick="setCat('tech')">⚖️ テクノロジ</button>
+          <button class="cat-btn" onclick="setCat('mana')">🔬 マネジメント</button>
+          <button class="cat-btn" onclick="setCat('stra')">🔥 ストラテジ</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-ttl"><span>⚙️</span> オプション</div>
+        <div class="opt-row">
+          <span style="font-size:12px; font-weight:700; color:var(--text3);">⏱️ タイマー</span>
+          <div class="toggle-group">
+            <div class="toggle-item active">なし</div>
+            <div class="toggle-item">30s</div>
+            <div class="toggle-item">60s</div>
+          </div>
+          <div class="toggle-group" style="margin-left:auto;">
+            <div class="toggle-item active">🔀 順番通り</div>
           </div>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="card-ttl">間違いノート</div>
-          <div style="text-align:center; padding:10px 0;">
-             <div style="font-size:24px; font-weight:900; color:var(--text3);">0</div>
-             <div style="font-size:11px; color:var(--text3);">直近の間違い</div>
+      <button class="start-btn" onclick="startQuiz()">修行開始 →</button>
+      <span class="reset-link" onclick="resetData()">データをリセット</span>
+    </div>
+
+    <div class="dash-right">
+      <div class="card">
+        <div class="card-ttl">学習統計</div>
+        <div class="mini-stat-row">
+          <span class="mini-stat-lbl">通算解答数</span>
+          <span class="mini-stat-val" id="stat-count">1</span>
+        </div>
+        <div class="mini-stat-row">
+          <span class="mini-stat-lbl">通算正答率</span>
+          <span class="mini-stat-val" id="stat-rate" style="color:var(--green);">100%</span>
+        </div>
+        <div class="mini-stat-row" style="border:none;">
+          <span class="mini-stat-lbl">要復習問題</span>
+          <span class="mini-stat-val" style="color:var(--accent);">0問</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-ttl">カテゴリ別正答率</div>
+        <div style="margin-bottom:15px;">
+          <div style="display:flex; justify-content:space-between; font-size:12px; font-weight:700;">
+            <span>⚖️ テクノロジ</span><span style="color:var(--green);">100%</span>
           </div>
+          <div class="cat-progress"><div class="cat-progress-inner" style="width:100%;"></div></div>
+        </div>
+        <div style="margin-bottom:15px;">
+          <div style="display:flex; justify-content:space-between; font-size:12px; font-weight:700;">
+            <span>🔬 マネジメント</span><span style="color:var(--text3);">ー</span>
+          </div>
+          <div class="cat-progress"><div class="cat-progress-inner" style="width:0%;"></div></div>
+        </div>
+        <div>
+          <div style="display:flex; justify-content:space-between; font-size:12px; font-weight:700;">
+            <span>🔥 ストラテジ</span><span style="color:var(--text3);">ー</span>
+          </div>
+          <div class="cat-progress"><div class="cat-progress-inner" style="width:0%;"></div></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-ttl">間違いノート</div>
+        <div style="padding:10px 0; border-top:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;">
+          <span style="font-size:13px;">間違えた問題を確認</span>
+          <span style="font-size:20px; font-weight:900; color:var(--text3);">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-info">
+      <h2 class="info-h2">試験に申し込む・学習を始める</h2>
+      <a href="#" class="info-card" style="background:var(--navy); color:#fff; border:none;">
+        <span class="info-ico">🏛️</span>
+        <div class="info-content">
+          <div class="ttl">IPA公式サイトで詳細を確認</div>
+          <div class="sub" style="color:rgba(255,255,255,0.6);">最新の試験日程・申込方法を確認してください</div>
+        </div>
+      </a>
+      <div class="info-card">
+        <span class="info-ico">📖</span>
+        <div class="info-content">
+          <div class="ttl">キタミ式イラストIT塾 基本情報技術者</div>
+          <div class="sub">イラストが豊富で文系の方にもおすすめの一冊</div>
+        </div>
+      </div>
+      <div class="info-card">
+        <span class="info-ico">📖</span>
+        <div class="info-content">
+          <div class="ttl">基本情報技術者 パーフェクトラーニング過去集</div>
+          <div class="sub">過去問対策の決定版。詳細な解説で合格力を養成</div>
         </div>
       </div>
     </div>
   </div>
-
-  <section class="aff-section">
-    <h2 class="section-title">試験に申し込む・学習を深める</h2>
-    <a href="https://www.ipa.go.jp/shiken/kubun/fe.html" target="_blank" style="text-decoration:none;">
-      <div class="book-item" style="background:var(--navy); color:#fff; border:none;">
-        <span class="book-ico">🏛️</span>
-        <div class="book-info">
-          <div class="book-name">IPA 公式サイト</div>
-          <div style="font-size:11px; opacity:0.8;">最新の試験日程・申込方法を確認</div>
-        </div>
-      </div>
-    </a>
-    <div class="book-item">
-      <span class="book-ico">📖</span>
-      <div class="book-info">
-        <div class="book-name">キタミ式イラストIT塾 基本情報技術者</div>
-        <div style="font-size:11px; color:var(--text3);">初学者に最適な図解解説</div>
-      </div>
-    </div>
-    <div class="book-item">
-      <span class="book-ico">📖</span>
-      <div class="book-info">
-        <div class="book-name">基本情報技術者 パーフェクトラーニング過去集</div>
-        <div style="font-size:11px; color:var(--text3);">圧倒的な問題数と詳細解説</div>
-      </div>
-    </div>
-  </section>
 </div>
 
-<div id="quiz-screen" class="container">
-  <div class="card">
-    <div id="quiz-progress" style="font-size:12px; color:var(--text3); margin-bottom:10px;">Q.1 / 10</div>
-    <div class="quiz-q" id="q-text"></div>
-    <div id="choice-list"></div>
-    <div id="explanation" style="display:none; margin-top:20px; padding:15px; background:var(--gold-bg); border-radius:10px; border:1px solid var(--border);">
-      <div style="font-weight:700; color:var(--gold);">💡 解説</div>
-      <div id="expl-text" style="font-size:14px; margin-top:5px;"></div>
-      <button class="start-btn" style="padding:10px; font-size:14px;" onclick="nextQuestion()">次の問題へ</button>
+<div id="quiz-screen">
+  <div class="quiz-header">
+    <button onclick="exitQuiz()" style="background:none; border:none; font-size:18px; cursor:pointer;">✕</button>
+    <div id="q-progress-txt" style="font-weight:900; font-family:var(--font-d);">Q.1 / 10</div>
+    <div style="width:24px;"></div>
+  </div>
+  <div class="quiz-body">
+    <div class="q-box">
+      <div id="q-cat-tag" style="font-size:10px; font-weight:900; color:var(--green); margin-bottom:10px;">テクノロジ</div>
+      <div id="q-text" style="font-size:18px; font-weight:700; line-height:1.6;"></div>
+    </div>
+    <div id="choices-area"></div>
+    
+    <div id="expl-area" style="display:none; background:#fff; border-radius:var(--radius); padding:24px; border:1px solid var(--border); margin-top:20px;">
+      <div style="font-weight:900; color:var(--gold); margin-bottom:10px;">💡 解説</div>
+      <div id="expl-text" style="font-size:14px; color:var(--text2); margin-bottom:24px;"></div>
+      <button class="start-btn" style="margin:0;" onclick="nextStep()">次へ進む</button>
     </div>
   </div>
 </div>
 
 <script>
-// 問題データ (一部抜粋 - 追加可能)
+// --- 問題データ ---
 const questions = [
-  {
-    category: "テクノロジ",
-    question: "入力サイズnに対して最も計算量が小さいアルゴリズムはどれか。",
-    choices: ["O(n log n)", "O(n^2)", "O(log n)", "O(n)"],
-    answer: 2,
-    explanation: "計算量は小さい順に O(log n) < O(n) < O(n log n) < O(n^2) となります。"
-  },
-  {
-    category: "テクノロジ",
-    question: "スタックのデータ構造の動作として正しいものはどれか。",
-    choices: ["先入れ先出し", "後入れ先出し", "ランダムアクセス", "優先度順"],
-    answer: 1,
-    explanation: "スタックはLIFO（Last-In, First-Out：後入れ先出し）です。"
-  }
+  { cat:"テクノロジ", q:"入力サイズnに対して最も計算量が小さいアルゴリズムはどれか。", c:["O(n log n)", "O(n^2)", "O(log n)", "O(n)"], a:2, ex:"計算量は O(log n) < O(n) < O(n log n) < O(n^2) の順に大きくなります。" },
+  { cat:"ストラテジ", q:"プロダクトライフサイクルにおける「成長期」の特徴はどれか。", c:["市場が活性化し競合が参入する", "需要が飽和し利益が減少する", "製品の認知度を高める時期", "撤退を検討する時期"], a:0, ex:"成長期は売上が急増し、利益も最大化しますが、競合他社の参入も激しくなります。" }
 ];
 
 let currentIdx = 0;
+let answered = false;
+
+// --- 初期化 ---
+window.onload = () => {
+  updateStats();
+};
+
+function updateStats() {
+  const solved = localStorage.getItem('fe_solved') || 0;
+  const correct = localStorage.getItem('fe_correct') || 0;
+  const rate = solved > 0 ? Math.round((correct / solved) * 100) : 0;
+  
+  document.getElementById('disp-total-count').innerText = solved;
+  document.getElementById('stat-count').innerText = solved;
+  document.getElementById('disp-total-rate').innerText = rate + "%";
+  document.getElementById('stat-rate').innerText = rate + "%";
+}
 
 function startQuiz() {
+  currentIdx = 0;
   document.getElementById('home-screen').style.display = 'none';
   document.getElementById('quiz-screen').style.display = 'block';
-  showQuestion();
+  loadQuestion();
 }
 
-function showQuestion() {
+function loadQuestion() {
+  answered = false;
   const q = questions[currentIdx];
-  document.getElementById('q-text').textContent = q.question;
-  const list = document.getElementById('choice-list');
-  list.innerHTML = '';
-  q.choices.forEach((c, i) => {
+  document.getElementById('q-text').innerText = q.q;
+  document.getElementById('q-cat-tag').innerText = q.cat;
+  document.getElementById('q-progress-txt').innerText = `Q.${currentIdx + 1} / ${questions.length}`;
+  
+  const area = document.getElementById('choices-area');
+  area.innerHTML = '';
+  q.c.forEach((txt, i) => {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
-    btn.textContent = c;
-    btn.onclick = () => checkAnswer(i);
-    list.appendChild(btn);
+    btn.innerText = txt;
+    btn.onclick = () => checkAnswer(i, btn);
+    area.appendChild(btn);
   });
+  
+  document.getElementById('expl-area').style.display = 'none';
 }
 
-function checkAnswer(idx) {
+function checkAnswer(idx, btn) {
+  if(answered) return;
+  answered = true;
   const q = questions[currentIdx];
   const btns = document.getElementsByClassName('choice-btn');
-  if(idx === q.answer) {
-    btns[idx].classList.add('correct');
+  
+  let solved = parseInt(localStorage.getItem('fe_solved') || 0) + 1;
+  let correct = parseInt(localStorage.getItem('fe_correct') || 0);
+
+  if(idx === q.a) {
+    btn.classList.add('correct');
+    correct++;
   } else {
-    btns[idx].classList.add('wrong');
-    btns[q.answer].classList.add('correct');
+    btn.classList.add('wrong');
+    btns[q.a].classList.add('correct');
   }
-  document.getElementById('expl-text').textContent = q.explanation;
-  document.getElementById('explanation').style.display = 'block';
+  
+  localStorage.setItem('fe_solved', solved);
+  localStorage.setItem('fe_correct', correct);
+  
+  document.getElementById('expl-text').innerText = q.ex;
+  document.getElementById('expl-area').style.display = 'block';
 }
 
-function nextQuestion() {
+function nextStep() {
   currentIdx++;
   if(currentIdx < questions.length) {
-    document.getElementById('explanation').style.display = 'none';
-    showQuestion();
+    loadQuestion();
   } else {
-    alert("全問終了しました。");
+    exitQuiz();
+  }
+}
+
+function exitQuiz() {
+  document.getElementById('home-screen').style.display = 'block';
+  document.getElementById('quiz-screen').style.display = 'none';
+  updateStats();
+}
+
+function resetData() {
+  if(confirm('学習データをリセットしますか？')) {
+    localStorage.clear();
     location.reload();
   }
 }
 </script>
-
 </body>
 </html>
