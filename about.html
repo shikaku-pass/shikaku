@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資格Passについて | 資格Pass</title>
+<meta name="description" content="資格Passは無料で使える4択問題集サービスです。ITパスポート・宅建・FP・簿記など59資格に対応。登録不要・完全無料。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1a2744;--green:#1D9E75;--green-bg:#E1F5EE;--bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--text:#1a1a1a;--text2:#555;--text3:#999;--radius:12px;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+a{text-decoration:none;color:inherit;}
+.hd{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;position:sticky;top:0;z-index:100;}
+.logo{color:#fff;font-size:17px;font-weight:900;}.logo span{color:var(--green);}
+.back{color:rgba(255,255,255,.65);font-size:13px;display:flex;align-items:center;gap:4px;}
+.back:hover{color:#fff;}
+.wrap{max-width:680px;margin:0 auto;padding:32px 16px 60px;}
+.hero{background:var(--navy);border-radius:var(--radius);padding:28px 24px;margin-bottom:24px;text-align:center;}
+.hero-ico{font-size:48px;margin-bottom:12px;}
+.hero-name{color:#fff;font-size:22px;font-weight:900;margin-bottom:6px;}
+.hero-name span{color:var(--green);}
+.hero-desc{color:rgba(255,255,255,.6);font-size:13px;line-height:1.8;}
+.hero-tags{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:14px;}
+.hero-tag{background:rgba(255,255,255,.1);color:rgba(255,255,255,.75);font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px 20px;margin-bottom:12px;}
+.card-title{font-size:13px;font-weight:700;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:6px;}
+.card-title::before{content:"";width:3px;height:14px;background:var(--green);border-radius:2px;}
+.card p{font-size:14px;color:var(--text2);line-height:1.9;margin-bottom:10px;}
+.card p:last-child{margin-bottom:0;}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px;}
+.feat{background:var(--bg);border-radius:10px;padding:14px 12px;text-align:center;}
+.feat-ico{font-size:24px;margin-bottom:6px;}
+.feat-name{font-size:12px;font-weight:700;margin-bottom:3px;}
+.feat-desc{font-size:10px;color:var(--text3);line-height:1.5;}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px;}
+.stat{background:var(--green-bg);border-radius:10px;padding:14px 8px;text-align:center;}
+.stat-n{font-size:22px;font-weight:900;color:var(--navy);line-height:1;}
+.stat-l{font-size:10px;color:var(--text3);margin-top:4px;}
+.cat-list{display:flex;flex-direction:column;gap:6px;margin-top:4px;}
+.cat-item{display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--bg);border-radius:9px;}
+.cat-ico{font-size:18px;flex-shrink:0;width:28px;text-align:center;}
+.cat-name{font-size:13px;font-weight:700;flex:1;}
+.cat-cnt{font-size:11px;color:var(--text3);}
+.nav-links{display:flex;flex-direction:column;gap:6px;margin-top:4px;}
+.nav-link{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--bg);border-radius:10px;text-decoration:none;color:inherit;transition:all .15s;}
+.nav-link:hover{border:1px solid var(--green);background:#f9fdf9;}
+.nav-link-ico{font-size:18px;flex-shrink:0;}
+.nav-link-name{font-size:13px;font-weight:700;flex:1;}
+.nav-link-arr{color:#ccc;font-size:14px;}
+.ft{background:var(--navy);padding:20px 16px;text-align:center;margin-top:32px;}
+.ftl{color:#fff;font-size:13px;font-weight:700;margin-bottom:6px;}.ftl span{color:var(--green);}
+.ftlinks{display:flex;justify-content:center;gap:14px;margin-bottom:6px;flex-wrap:wrap;}.ftlinks a{color:rgba(255,255,255,.35);font-size:11px;}
+.ft p{color:rgba(255,255,255,.18);font-size:10px;}
+@media(min-width:600px){.feature-grid{grid-template-columns:repeat(4,1fr);}}
+</style>
+</head>
+<body>
+<header class="hd">
+  <div class="logo">資格<span>Pass</span></div>
+  <a class="back" href="index.html">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+    ホームへ
+  </a>
+</header>
+
+<div class="wrap">
+  <!-- ヒーロー -->
+  <div class="hero">
+    <div class="hero-ico">🎓</div>
+    <div class="hero-name">資格<span>Pass</span></div>
+    <div class="hero-desc">スキマ時間で合格へ。<br>59資格対応の無料4択問題集サービス</div>
+    <div class="hero-tags">
+      <span class="hero-tag">完全無料</span>
+      <span class="hero-tag">登録不要</span>
+      <span class="hero-tag">59資格対応</span>
+      <span class="hero-tag">PC・スマホ両対応</span>
+    </div>
+  </div>
+
+  <!-- サービス概要 -->
+  <div class="card">
+    <div class="card-title">📋 サービス概要</div>
+    <p>資格Passは、資格試験の合格を目指す方のための無料4択問題集サービスです。スマートフォンでもパソコンでも、いつでもどこでもスキマ時間に学習できます。</p>
+    <p>会員登録やログインは一切不要。ブラウザだけで今すぐ学習を始められます。学習履歴や正答率はブラウザのローカルストレージに自動保存されるため、次回訪問時に続きから学習できます。</p>
+  </div>
+
+  <!-- 機能 -->
+  <div class="card">
+    <div class="card-title">⚡ 主な機能</div>
+    <div class="feature-grid">
+      <div class="feat"><div class="feat-ico">📝</div><div class="feat-name">4択問題</div><div class="feat-desc">全問解説つきで理解を深める</div></div>
+      <div class="feat"><div class="feat-ico">🔥</div><div class="feat-name">弱点特訓</div><div class="feat-desc">間違えた問題を集中して克服</div></div>
+      <div class="feat"><div class="feat-ico">⭐</div><div class="feat-name">スター登録</div><div class="feat-desc">重要問題をブックマーク</div></div>
+      <div class="feat"><div class="feat-ico">📊</div><div class="feat-name">正答率管理</div><div class="feat-desc">カテゴリ別に弱点を可視化</div></div>
+      <div class="feat"><div class="feat-ico">⏱️</div><div class="feat-name">タイマー</div><div class="feat-desc">本番を意識した時間制限</div></div>
+      <div class="feat"><div class="feat-ico">📓</div><div class="feat-name">間違いノート</div><div class="feat-desc">復習すべき問題を一覧表示</div></div>
+      <div class="feat"><div class="feat-ico">🔀</div><div class="feat-name">シャッフル</div><div class="feat-desc">出題順をランダム化</div></div>
+      <div class="feat"><div class="feat-ico">🏅</div><div class="feat-name">ランク制度</div><div class="feat-desc">入門→名人の6段階成長</div></div>
+    </div>
+  </div>
+
+  <!-- 対応資格数 -->
+  <div class="card">
+    <div class="card-title">🎯 対応資格</div>
+    <div class="stat-row">
+      <div class="stat"><div class="stat-n">59</div><div class="stat-l">対応資格数</div></div>
+      <div class="stat"><div class="stat-n">6</div><div class="stat-l">カテゴリ</div></div>
+      <div class="stat"><div class="stat-n">無料</div><div class="stat-l">完全無料</div></div>
+    </div>
+    <div class="cat-list" style="margin-top:12px;">
+      <div class="cat-item"><div class="cat-ico">💻</div><div class="cat-name">IT・デジタル</div><div class="cat-cnt">ITパスポート・基本情報・G検定 など8資格</div></div>
+      <div class="cat-item"><div class="cat-ico">💴</div><div class="cat-name">金融・会計</div><div class="cat-cnt">FP・簿記・証券外務員 など7資格</div></div>
+      <div class="cat-item"><div class="cat-ico">⚖️</div><div class="cat-name">法務・ビジネス</div><div class="cat-cnt">ビジネス実務法務・知財・秘書検定 など8資格</div></div>
+      <div class="cat-item"><div class="cat-ico">🏠</div><div class="cat-name">不動産・流通</div><div class="cat-cnt">宅建・管理業務主任者・販売士 など5資格</div></div>
+      <div class="cat-item"><div class="cat-ico">🔧</div><div class="cat-name">技術・工業</div><div class="cat-cnt">危険物・登録販売者・衛生管理者 など12資格</div></div>
+      <div class="cat-item"><div class="cat-ico">🌏</div><div class="cat-name">ライフ・その他</div><div class="cat-cnt">旅行業務・QC検定・メンタルヘルス など19資格</div></div>
+    </div>
+  </div>
+
+  <!-- 運営情報 -->
+  <div class="card">
+    <div class="card-title">🏛️ 運営情報</div>
+    <p>本サービスは個人が運営する非営利の学習支援サービスです。問題の正確性には十分注意していますが、本サービスの問題内容を利用した結果について、いかなる責任も負いかねます。試験の最新情報・正式な出題範囲については、各試験機関の公式サイトをご確認ください。</p>
+    <p>サービスに関するご意見・ご要望・問題の誤りの報告などは、お問い合わせフォームからお気軽にご連絡ください。</p>
+  </div>
+
+  <!-- 関連ページ -->
+  <div class="card">
+    <div class="card-title">📄 関連ページ</div>
+    <div class="nav-links">
+      <a class="nav-link" href="privacy.html"><div class="nav-link-ico">🔒</div><div class="nav-link-name">プライバシーポリシー</div><div class="nav-link-arr">›</div></a>
+      <a class="nav-link" href="terms.html"><div class="nav-link-ico">📜</div><div class="nav-link-name">利用規約</div><div class="nav-link-arr">›</div></a>
+      <a class="nav-link" href="contact.html"><div class="nav-link-ico">✉️</div><div class="nav-link-name">お問い合わせ</div><div class="nav-link-arr">›</div></a>
+    </div>
+  </div>
+</div>
+
+<footer class="ft">
+  <div class="ftl">資格<span>Pass</span></div>
+  <div class="ftlinks">
+    <a href="about.html">サイトについて</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="terms.html">利用規約</a>
+    <a href="contact.html">お問い合わせ</a>
+  </div>
+  <p>© 2025 資格Pass</p>
+</footer>
+</body>
+</html>
