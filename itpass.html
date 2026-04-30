@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>ITパスポート（iパス）無料問題集・過去問対策 | 資格Pass</title>
+<meta name="description" content="ITパスポートの無料4択問題集。ストラテジ系・マネジメント系・テクノロジ系を網羅。合格率48%・勉強時間100〜150時間。弱点特訓・解説つき。スマホ対応。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1a2744;--green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --accent:#E65100;--accent-bg:#FFF3E0;--gold:#D4941A;--gold-bg:#FEF6E4;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 1px 4px rgba(0,0,0,0.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;z-index:100;}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.site-logo{color:#fff;font-size:17px;font-weight:700;display:flex;align-items:center;gap:8px;}
+.site-logo span{color:#1D9E75;}
+.logo-mark{width:28px;height:28px;border-radius:7px;background:linear-gradient(135deg,#1D9E75 0%,#0a5e44 100%);display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 6px rgba(29,158,117,.4);}
+.logo-mark svg{display:block;}
+/* ③ PC時: ヘッダー内コンテンツを掲載内容の左端に揃える */
+@media(min-width:769px){
+  .site-header{padding:0;}
+  .site-header-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+  .page-nav-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);padding:20px;margin-bottom:16px;display:flex;align-items:center;gap:16px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:4px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:10px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.mode-row{display:flex;gap:8px;}
+.mode-btn{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:10px 6px;cursor:pointer;font-family:var(--font-b);display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--text2);transition:all .18s;min-height:70px;}
+.mode-btn:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-off{opacity:.4;cursor:not-allowed;}
+.mode-icon{font-size:18px;line-height:1;}
+.mode-label{font-size:12px;font-weight:700;}
+.mode-count{font-size:10px;color:var(--text3);}
+.cat-row{display:flex;gap:6px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:6px 12px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;}
+.opts-row{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.opt-group{display:flex;align-items:center;gap:5px;}
+.opt-label{font-size:12px;color:var(--text3);margin-right:2px;}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:5px 10px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill.on{background:#FFF3E0!important;border-color:#85B7EB!important;color:#0C447C!important;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+/* スタート・継続ボタン行 */
+.start-row{display:flex;gap:8px;margin-bottom:8px;}
+.start-btn{flex:1;height:52px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:900;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 4px 16px rgba(230,81,0,.3);}
+.start-btn:hover{background:#bf360c;transform:translateY(-1px);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.start-btn-solo{width:100%;height:56px;font-size:18px;letter-spacing:2px;margin-bottom:8px;}
+.resume-btn{flex:1;height:52px;background:var(--green-bg);border:1.5px solid var(--green);border-radius:var(--radius);color:var(--green-d);font-size:13px;font-weight:700;font-family:var(--font-b);cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;}
+.resume-btn:hover{background:var(--green);color:#fff;}
+.resume-btn-label{font-size:12px;font-weight:700;}
+.resume-btn-sub{font-size:10px;opacity:.75;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:8px 12px 70px;display:flex;flex-direction:column;gap:8px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:22px;font-weight:900;}
+.qc-sep{font-size:12px;color:var(--text3);}
+.qc-tot{font-size:13px;color:var(--text3);}
+.star-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:18px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:44px;height:44px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:13px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:6px;}
+.sb-ok{font-size:11px;font-weight:700;color:var(--green);min-width:28px;}
+.sb-ng{font-size:11px;font-weight:700;color:var(--accent);min-width:28px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.sb-dot{width:7px;height:7px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:9px;height:9px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:9px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;}
+.q-cat-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}
+.q-miss{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(230,81,0,.3);padding:3px 8px;border-radius:6px;}
+.q-text{font-size:13px;line-height:1.7;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:6px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:0 12px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:10px;text-align:left;transition:all .15s;color:var(--text2);min-height:44px;width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FFF3E0;transform:translateX(2px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:12px;width:26px;height:26px;border-radius:6px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:12px;line-height:1.5;padding:10px 0;}
+.ch-icon{font-size:15px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:10px;padding:10px 12px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(230,81,0,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.exp-verdict{font-size:13px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:11px;color:var(--gold);}
+/* 正解表示バー */
+.exp-correct-bar{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:7px;margin-bottom:6px;}
+.exp-correct-bar.ok{background:rgba(29,158,117,.12);}
+.exp-correct-bar.ng{background:rgba(230,81,0,.08);}
+.exp-correct-label{font-size:10px;font-weight:700;white-space:nowrap;padding-top:1px;}
+.exp-correct-bar.ok .exp-correct-label{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-label{color:var(--accent);}
+.exp-correct-text{font-size:12px;line-height:1.5;}
+.exp-correct-bar.ok .exp-correct-text{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-text{color:#8B2A0E;}
+.exp-body{font-size:11.5px;line-height:1.8;color:var(--text2);}
+.next-wrap{position:sticky;bottom:12px;padding-top:6px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:var(--accent);color:#fff;border:none;border-radius:var(--radius);width:100%;height:46px;font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(230,81,0,.3);}
+.next-btn:hover{background:#bf360c;transform:translateY(-1px);}
+/* ⑥ result コンパクト化 */
+.result-inner{max-width:480px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:12px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:100px;height:100px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:32px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:14px;}
+.result-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.result-verdict{font-size:13px;font-weight:700;padding:6px 16px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:6px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:12px;}
+.rc-name{font-size:10px;font-weight:700;width:68px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:10px;font-weight:700;width:28px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:5px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:10px;color:var(--text3);min-width:22px;}
+.ar-cat{font-size:12px;}
+.ar-q{flex:1;font-size:11px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:13px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:44px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(230,81,0,.25);}
+.cta-btn:hover{background:#bf360c;}
+.ghost-btn{width:100%;height:40px;background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:13px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── スマホ：サイドパネルをメインコンテンツの下に表示 ── */
+@media (max-width:768px){
+  .pc-cols{display:flex;flex-direction:column;gap:0;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{display:flex;flex-direction:column;gap:12px;margin-top:12px;}
+  .quiz-inner{display:flex;flex-direction:column;}
+  .pc-quiz-main{display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{display:none;}
+}
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  /* ② サイドパネル: ビューポート高さを超えないよう最大高さ設定してスクロール */
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-col-side::-webkit-scrollbar{display:none;}
+  .quiz-inner{max-width:920px;padding:24px 32px 40px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-quiz-side::-webkit-scrollbar{display:none;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  /* ⑥ result: PC時もコンパクトに */
+  .result-inner{max-width:680px;padding:16px 32px 40px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:72px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── ページ内タブナビ ── */
+.page-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:90;}
+.page-nav::-webkit-scrollbar{display:none;}
+.page-nav-inner{display:flex;align-items:center;min-width:max-content;padding:0 12px;}
+.pn-tab{color:rgba(255,255,255,0.55);font-size:12px;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;text-decoration:none;display:block;}
+.pn-tab:hover{color:#fff;}
+.pn-tab.active{color:#fff;border-bottom-color:#1D9E75;}
+
+/* ① resume-btn は上で定義済み */
+
+/* ── モード選択コンパクト化 ── */
+.mode-row-compact{display:flex;gap:6px;}
+.mode-btn-compact{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:7px 4px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);transition:all .18s;height:40px;}
+.mode-btn-compact:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-btn-compact.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-btn-compact.mode-off{opacity:.4;cursor:not-allowed;}
+.mbc-icon{font-size:14px;line-height:1;}
+.mbc-label{font-size:11px;font-weight:700;}
+.mbc-count{font-size:10px;color:var(--text3);margin-left:1px;}
+.mode-btn-compact.mode-active .mbc-count{color:var(--accent);}
+
+/* ── カテゴリ+オプション 横並び ── */
+.cat-opt-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.cat-opt-row .cat-row{flex:1;min-width:0;}
+.opt-mini{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター（横幅いっぱいバー）*/
+.site-footer{background:var(--navy);padding:14px 16px;margin-top:0;width:100%;}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:920px;margin:0 auto;}
+.sf-logo{color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.sf-logo span{color:#1D9E75;}
+.sf-lmark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,#1D9E75 0%,#0a5e44 100%);display:inline-flex;align-items:center;justify-content:center;}
+.sf-lmark svg{display:block;}
+.sf-links{display:flex;gap:16px;flex-wrap:wrap;}
+.sf-links a{color:rgba(255,255,255,.4);font-size:11px;transition:color .15s;}
+.sf-links a:hover{color:rgba(255,255,255,.75);}
+.sf-copy{color:rgba(255,255,255,.2);font-size:10px;}
+@media(max-width:768px){
+  .sf-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+@media(min-width:769px){
+  .site-footer{padding:14px 0;}
+  .sf-inner{padding:0 32px;}
+}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/itpass.html">
+<meta property="og:title" content="ITパスポート 無料問題集 | 資格Pass">
+<meta property="og:description" content="ITパスポートの無料4択問題集。ストラテジ系・マネジメント系・テクノロジ系を網羅。合格率48%・勉強時間100〜150時間。弱点特訓・解説つき。スマホ対応。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-pass.github.io/shikaku/itpass.html">
+<meta property="og:site_name" content="資格Pass">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ITパスポート 無料問題集 | 資格Pass">
+<meta name="twitter:description" content="ITパスポートの無料4択問題集。ストラテジ系・マネジメント系・テクノロジ系を網羅。合格率48%・勉強時間100〜150時間。弱点特訓・解説つき。スマホ対応。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "ITパスポート（iパス）無料問題集",
+      "description": "ITパスポートはストラテジ系・マネジメント系・テクノロジ系の3分野から出題されるIT系国家試験の入門資格です。",
+      "provider": {"@type": "Organization", "name": "資格Pass"},
+      "educationalLevel": "入門",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "ITパスポートの合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "例年45〜50%程度で推移しており、IT系国家試験の中では比較的取得しやすい資格です。"}},
+        {"@type": "Question","name": "ITパスポートの勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "IT未経験者で100〜150時間が目安です。毎日1〜2時間の学習で2〜3ヶ月での合格を目指せます。"}},
+        {"@type": "Question","name": "ITパスポートの試験はいつでも受けられますか？","acceptedAnswer": {"@type": "Answer","text": "CBT方式（コンピュータ試験）のため、全国のテストセンターで通年受験が可能です。"}},
+        {"@type": "Question","name": "ITパスポートを取得すると就職に有利ですか？","acceptedAnswer": {"@type": "Answer","text": "IT・デジタル人材の基礎知識を証明できるため、IT業界への就職・転職やDX推進を担う企業での評価向上に役立ちます。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="index.html">
+      <div class="logo-mark">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="5" height="7" rx="1.2" fill="white" fill-opacity="0.9"/>
+          <rect x="9" y="1.5" width="5.5" height="4.5" rx="1.2" fill="white" fill-opacity="0.6"/>
+          <rect x="1.5" y="10.5" width="13" height="2.5" rx="1.2" fill="white" fill-opacity="0.5"/>
+          <circle cx="12" cy="9.5" r="3" fill="white" fill-opacity="0.85"/>
+        </svg>
+      </div>
+      資格<span>Pass</span>
+    </a>
+    <a class="site-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      資格一覧へ
+    </a>
+  </div>
+</header>
+<nav class="page-nav" id="pageNav">
+  <div class="page-nav-inner">
+    <a class="pn-tab active" href="#app"      onclick="scrollToApp(event)">📝 問題を解く</a>
+    <a class="pn-tab"        href="#apply"    onclick="scrollTo_(event,'apply')">🖥️ 申し込み</a>
+    <a class="pn-tab"        href="#books"    onclick="scrollTo_(event,'books')">📖 参考書</a>
+    <a class="pn-tab"        href="#courses"  onclick="scrollTo_(event,'courses')">🎓 通信講座</a>
+    <a class="pn-tab"        href="#overview" onclick="scrollTo_(event,'overview')">📋 試験概要</a>
+    <a class="pn-tab"        href="#syllabus" onclick="scrollTo_(event,'syllabus')">📊 出題分野</a>
+    <a class="pn-tab"        href="#roadmap"  onclick="scrollTo_(event,'roadmap')">🗺️ 学習の流れ</a>
+    <a class="pn-tab"        href="#faq"      onclick="scrollTo_(event,'faq')">❓ よくある質問</a>
+  </div>
+</nav>
+<div id="app"></div>
+<script>
+// ▼▼▼ ここに問題データを追加してください ▼▼▼
+const ALL_QUESTIONS=[
+{id:1,category:"ストラテジ系",question:"PDCAサイクルに関する記述として、最も適切なものはどれか。",choices:["Plan（計画）→Do（実行）→Act（改善）→Check（評価）の順に繰り返す手法である","Plan（計画）→Do（実行）→Check（評価）→Act（改善）の順に繰り返すことで継続的な改善を図る手法である","一度サイクルを回したら改善策を確定させ、次のサイクルには引き継がないという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","主に製造業にのみ適用され、サービス業には適用できないという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:1,explanation:"PDCAサイクルは、Plan（計画）→Do（実行）→Check（評価）→Act（改善）の順に繰り返すことで業務の継続的な改善を図るマネジメント手法です。製造業に限らず、あらゆる業種・業務に適用できます。"},
+{id:2,category:"ストラテジ系",question:"SWOT分析に関する記述として、最も適切なものはどれか。",choices:["SWOT分析は財務データのみを対象とし、定量的な分析手法であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","強み・弱みは外部環境の要因であり、機会・脅威は内部環境の要因であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","SWOT分析の結果、常に強みを活かした戦略のみを選択すべきであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","企業の内部環境の強み（Strength）と弱み（Weakness）、外部環境の機会（Opportunity）と脅威（Threat）を分析する手法である"],answer:3,explanation:"SWOT分析は、内部環境の強み（Strength）・弱み（Weakness）と外部環境の機会（Opportunity）・脅威（Threat）を組み合わせて分析し、経営戦略の立案に活用する手法です。強みと機会の掛け合わせだけでなく、弱みや脅威への対応策も検討します。"},
+{id:3,category:"ストラテジ系",question:"DX（デジタルトランスフォーメーション）の説明として、最も適切なものはどれか。",choices:["既存の業務システムをクラウドに移行するだけの取り組みであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","社内のパソコンをすべて最新機種に入れ替えることであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","デジタル技術を活用してビジネスモデルや業務プロセスを変革し、競争上の優位性を確立する取り組みである","デジタル化とは異なり、主にアナログ業務の効率化を指すという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:2,explanation:"DX（デジタルトランスフォーメーション）とは、デジタル技術を活用してビジネスモデル・組織・業務プロセスなどを抜本的に変革し、競争上の優位性を確立することです。単なるIT化・システム移行とは異なり、価値創造やビジネスモデルの変革を伴います。"},
+{id:4,category:"ストラテジ系",question:"BCP（事業継続計画）の説明として、最も適切なものはどれか。",choices:["企業の年間事業計画書を指し、毎年度初めに作成する計画書である","新規事業を立ち上げる際の事業計画書のことであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","BCPはIT部門だけが策定するもので、全社的な取り組みではない","災害や事故などの緊急事態が発生した際に、事業の継続や早期復旧を図るための計画である"],answer:3,explanation:"BCP（Business Continuity Plan：事業継続計画）とは、地震・火災・感染症などの緊急事態が発生した際に、重要業務の継続または早期復旧を図るために策定する計画です。全社的な取り組みであり、IT部門だけでなく経営層を含む全組織で策定・訓練が必要です。"},
+{id:5,category:"ストラテジ系",question:"CSR（企業の社会的責任）に関する記述として、最も適切なものはどれか。",choices:["企業が株主（shareholders）に対してのみ責任を負う考え方であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","CSRは大企業にのみ求められ、中小企業には関係がないという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","企業が利益の追求だけでなく、環境・社会・ガバナンスへの配慮など、様々な利害関係者に対して責任を果たす考え方である","CSR活動は企業の財務諸表には一切影響しないというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない"],answer:2,explanation:"CSR（Corporate Social Responsibility：企業の社会的責任）は、企業が利益追求だけでなく、環境保護・人権・地域貢献・コンプライアンスなど、多様な利害関係者（ステークホルダー）に対して責任を果たすことを求める考え方です。企業規模を問わず求められます。"},
+{id:6,category:"ストラテジ系",question:"KPI（重要業績評価指標）の説明として、最も適切なものはどれか。",choices:["KPIは財務指標のみを指し、非財務指標はKPIに含まれない","KPIは一度設定したら変更できない固定的な指標であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","企業全体の最終目標（KGI）に対する達成状況を測定するための中間的な指標である","KPIとKGIは同じ意味で使われる用語であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:2,explanation:"KPI（Key Performance Indicator）は、最終目標（KGI：Key Goal Indicator）の達成状況を管理・評価するための中間的な指標です。例えば「受注件数」「顧客満足度スコア」など、財務・非財務を問わず設定されます。目標達成に向けた進捗を確認するために定期的に見直すことも重要です。"},
+{id:7,category:"ストラテジ系",question:"ESG投資の説明として、最も適切なものはどれか。",choices:["E（環境）・S（社会）・G（ガバナンス）の3要素を考慮した投資手法である","純粋に財務的なリターンのみを重視した投資手法であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","ESGはIT企業にのみ適用される基準であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","ESG投資はリスクを無視した短期的な利益を追求する手法である"],answer:0,explanation:"ESG投資とは、Environment（環境）・Social（社会）・Governance（ガバナンス）の3要素を財務情報とともに考慮して投資判断を行う手法です。持続可能な企業経営を評価し、長期的なリスク管理と価値創造を重視します。近年、機関投資家を中心に普及しています。"},
+{id:8,category:"ストラテジ系",question:"リスキリングの説明として、最も適切なものはどれか。",choices:["DX推進などに対応するため、新しい職業や業務に必要なスキルを習得するための学び直しである","同じ職種の技術をより高度に習得するための追加学習であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","リスキリングは企業が社員に強制的に受講させるものであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","既存スキルを活かした現職での技術向上のみを指すというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:0,explanation:"リスキリング（Reskilling）とは、DX推進や技術革新・産業構造の変化に対応するため、これまでとは異なる職種や業務に必要な新しいスキルを習得することです。企業が社員のキャリア転換を支援する文脈で多く使われ、経済産業省などが推進しています。"},
+{id:9,category:"ストラテジ系",question:"バランスト・スコアカード（BSC）の4つの視点として、最も適切な組み合わせはどれか。",choices:["財務・人事・法務・内部統制というものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","財務・顧客・内部ビジネスプロセス・学習と成長","売上・コスト・品質・納期という考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","株主・顧客・従業員・社会というアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:1,explanation:"バランスト・スコアカード（BSC）は、①財務の視点、②顧客の視点、③内部ビジネスプロセスの視点、④学習と成長の視点の4つから組織のパフォーマンスをバランスよく評価・管理するフレームワークです。財務指標だけに偏らない多面的な経営管理手法として広く活用されています。"},
+{id:10,category:"ストラテジ系",question:"SCM（サプライチェーンマネジメント）の説明として、最も適切なものはどれか。",choices:["原材料の調達から製造・物流・販売に至るまでの一連の流れを統合的に管理・最適化する手法である","自社の在庫管理のみを最適化する手法であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","SCMは小売業にのみ適用される概念であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","SCMはIT技術を使わずに実現できる手法であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:0,explanation:"SCM（Supply Chain Management）は、原材料の調達から生産・物流・販売・顧客への提供まで、サプライチェーン全体をIT技術を活用して統合的に管理・最適化する手法です。在庫コストの削減やリードタイム短縮、需給予測の精度向上などに貢献します。"},
+{id:11,category:"ストラテジ系",question:"ビジネスモデルキャンバスの説明として、最も適切なものはどれか。",choices:["財務諸表を分析するためのテンプレートであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","プロジェクトのスケジュール管理に使用するツールであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","9つのビルディングブロックを使って、ビジネスモデルを1枚のシートで可視化するフレームワークである","製品の設計図を描くためのシートであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:2,explanation:"ビジネスモデルキャンバスは、顧客セグメント・価値提案・チャネル・顧客との関係・収益の流れ・主要リソース・主要活動・主要パートナー・コスト構造の9つのビルディングブロックを1枚のシートで可視化するフレームワークです。新規事業や既存事業の分析・設計に活用されます。"},
+{id:12,category:"ストラテジ系",question:"M&A（合併・買収）に関する記述として、最も適切なものはどれか。",choices:["M&Aは必ず両社の合意のもとに行われ、敵対的買収は存在しない","M&Aによって買収された企業の従業員は全員解雇されるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","日本ではM&Aは法律で禁止されているという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","M&Aは企業が他の企業を吸収・合併したり、株式を取得して子会社化したりすることを指す"],answer:3,explanation:"M&A（Mergers and Acquisitions）は、企業の合併や買収を指します。自社の成長戦略として、新市場への参入・技術の獲得・規模の拡大などを目的に行われます。友好的M&Aのほか、対象企業の経営陣の同意なく行われる敵対的買収も存在します。"},
+{id:13,category:"ストラテジ系",question:"CRM（顧客関係管理）の説明として、最も適切なものはどれか。",choices:["CRMは新規顧客獲得のみを目的としたマーケティング手法であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","CRMシステムは製品管理にのみ使用されるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","顧客との関係を長期的に維持・強化し、顧客満足度や顧客生涯価値を高めるための戦略・システムの総称である","顧客情報を収集するだけで、分析や活用は行わないというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:2,explanation:"CRM（Customer Relationship Management：顧客関係管理）は、顧客情報を一元管理し、顧客との関係を長期的に深めることで、満足度向上・リピート率向上・顧客生涯価値（LTV）の最大化を図る戦略・システムです。営業・マーケティング・カスタマーサポートなど全部門で活用されます。"},
+{id:14,category:"ストラテジ系",question:"ロングテール戦略の説明として、最も適切なものはどれか。",choices:["売れ筋商品だけに集中して在庫を最小化する戦略であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","インターネットを活用し、売れ筋商品（ヘッド）だけでなく、少量多品種の販売量の少ない商品（テール）の総和から大きな売上を得るビジネス戦略である","長期間にわたって同じ商品を販売し続ける戦略であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","大量生産・大量販売を前提とした規模の経済を追求する戦略であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない"],answer:1,explanation:"ロングテール戦略は、Amazonのようなネット通販で典型的に見られるビジネス戦略です。従来の実店舗では陳列困難だった少量販売の多品種商品（テール部分）をインターネットで提供し、その合計売上がベストセラー（ヘッド部分）を上回るという現象・戦略です。"},
+{id:15,category:"ストラテジ系",question:"フィンテック（FinTech）の説明として、最も適切なものはどれか。",choices:["フィンテックは銀行が提供するATMサービスのみを指すというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","フィンテックは金融機関が使用する社内システムのことであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","暗号資産（仮想通貨）のみがフィンテックに含まれるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","金融（Finance）と技術（Technology）を組み合わせた造語で、IT技術を活用した革新的な金融サービスを指す"],answer:3,explanation:"フィンテック（FinTech）は、Finance（金融）とTechnology（技術）を組み合わせた造語です。スマートフォン決済・送金アプリ・ロボアドバイザー・クラウドファンディング・暗号資産など、ITを活用した革新的な金融サービス全般を指します。"},
+{id:16,category:"ストラテジ系",question:"生成AI（Generative AI）の特徴として、最も適切なものはどれか。",choices:["生成AIは入力されたデータを分類するだけで、新しいデータを作成する能力はない","生成AIは人間の判断を完全に代替するものであり、生成結果の確認は不要であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","生成AIはインターネットに接続しなければ動作しないという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","学習したデータをもとに、文章・画像・音声・プログラムコードなど、新しいコンテンツを生成できるAI技術である"],answer:3,explanation:"生成AI（Generative AI）は、大量のデータを学習し、文章・画像・音声・動画・プログラムコードなど新しいコンテンツを生成できるAI技術です。ChatGPT・Gemini・Claudeなどが代表例です。ただし誤情報（ハルシネーション）が生じる可能性があるため、生成結果の確認・検証が重要です。"},
+{id:17,category:"ストラテジ系",question:"コーポレートガバナンス（企業統治）の説明として、最も適切なものはどれか。",choices:["企業が株主や利害関係者の利益を守るために、経営の透明性・公正性・責任の明確化を図るための仕組みである","コーポレートガバナンスは経営者の権限を最大化するための制度であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","コーポレートガバナンスは上場企業にのみ適用される概念であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","コーポレートガバナンスとCSRは全く同じ概念であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:0,explanation:"コーポレートガバナンス（企業統治）は、企業が株主・投資家・社員・取引先などの利害関係者の利益を守るため、経営の透明性・公正性・迅速な意思決定・取締役会による監督機能などを整備する仕組みです。不正防止や持続的成長を実現するために重要です。"},
+{id:18,category:"ストラテジ系",question:"OEM（相手先ブランド製造）の説明として、最も適切なものはどれか。",choices:["自社ブランドで製品を製造し、直接消費者に販売することである","他社の製品を自社ブランドとして仕入れ、販売することである","他社ブランドで販売するために自社が製品を製造し、提供することである","製品の設計だけを行い、製造は行わないビジネスモデルである"],answer:2,explanation:"OEM（Original Equipment Manufacturer）とは、依頼元企業（ブランドオーナー）のブランドで販売される製品を、別の企業（製造元）が製造することです。例えばある家電メーカーが別のメーカーに自社ブランド品の製造を委託するケースが該当します。"},
+{id:19,category:"ストラテジ系",question:"プロダクトライフサイクルの4段階として、最も適切な順序はどれか。",choices:["導入期→成長期→成熟期→衰退期","成長期→導入期→成熟期→衰退期","導入期→成熟期→成長期→衰退期","成長期→成熟期→導入期→衰退期"],answer:0,explanation:"プロダクトライフサイクルは、①導入期（売上低・認知拡大中）→②成長期（売上急増・競合参入）→③成熟期（売上ピーク・競争激化）→④衰退期（売上減少）の4段階で構成されます。各段階に応じたマーケティング戦略が必要です。"},
+{id:20,category:"ストラテジ系",question:"アジャイル開発を採用した企業がDX推進のために重視する考え方として、最も適切なものはどれか。",choices:["短い開発サイクルで素早く試作品を作り、フィードバックを得ながら改善を繰り返す","仕様を最初に完全に確定させてから開発を始めるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","全ての作業を外部ベンダーに委託し、社内では管理だけ行う","品質よりもコスト削減を最優先にするという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:0,explanation:"アジャイル開発は、短い開発サイクル（スプリント）でプロトタイプを素早く作成し、ユーザーや利害関係者からのフィードバックを得ながら継続的に改善を繰り返す開発手法です。変化への柔軟な対応が求められるDX推進において特に有効です。"},
+{id:21,category:"ストラテジ系",question:"ステークホルダーの説明として、最も適切なものはどれか。",choices:["株主のみを指す用語で、企業の資本に投資した人を指すというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","上場企業の取締役のみを指すというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","ステークホルダーは企業内部の人間のみを指すという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","企業の活動に利害関係を持つ全ての関係者（株主・従業員・顧客・取引先・地域社会など）を指す"],answer:3,explanation:"ステークホルダー（Stakeholder）は、企業の活動に利害関係を持つすべての関係者を指します。内部ステークホルダー（株主・従業員・取締役）と外部ステークホルダー（顧客・取引先・金融機関・地域社会・行政）に分類されます。"},
+{id:22,category:"ストラテジ系",question:"IoT（モノのインターネット）の説明として、最も適切なものはどれか。",choices:["家電・工場機器・センサーなど様々な「モノ」をインターネットに接続し、データの収集・制御・自動化を行う技術の総称である","パソコンやスマートフォンだけをインターネットに接続する技術であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","IoTはセキュリティリスクがないため、安全対策は不要であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","IoTデバイスは常にWi-Fiのみで通信するという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:0,explanation:"IoT（Internet of Things：モノのインターネット）は、センサー・家電・工場機器・自動車など様々な「モノ」をインターネットに接続し、データの収集・分析・制御・自動化を行う技術の総称です。スマートホーム・工場の自動化・遠隔医療など幅広い分野で活用されています。IoTデバイスはセキュリティ対策が重要です。"},
+{id:23,category:"ストラテジ系",question:"クラウドソーシングの説明として、最も適切なものはどれか。",choices:["インターネットを通じて不特定多数の外部人材に業務を委託する手法である","クラウドコンピューティングを使ってデータを保存するサービスである","社内の特定部署に業務を委託することであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","クラウドソーシングは違法な労働形態であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:0,explanation:"クラウドソーシング（Crowdsourcing）は、インターネット上のプラットフォームを通じて、不特定多数の外部人材（フリーランス・専門家など）に業務を発注・委託する手法です。翻訳・デザイン・プログラミング・データ入力など多様な業務に活用されています。"},
+{id:24,category:"ストラテジ系",question:"デジタルガバメントの説明として、最も適切なものはどれか。",choices:["行政機関の内部システムをデジタル化するだけの取り組みであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","デジタルガバメントは民間企業が主導する取り組みであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","デジタル技術と行政・民間の連携を中心に行政サービスを見直し、行政の在り方をデジタル社会に対応したものに変革する政府の取り組みである","行政機関のホームページを更新することのみを指すというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:2,explanation:"デジタルガバメントは、デジタル技術の活用と行政・民間の連携を通じて行政サービスを抜本的に見直し、行政の在り方をデジタル社会に対応したものに変革する政府の取り組みです。マイナンバー活用・行政手続きのオンライン化・データ連携などが具体例です。"},
+{id:25,category:"ストラテジ系",question:"知的財産権のうち、著作権の説明として、最も適切なものはどれか。",choices:["著作権は登録しなければ効力を持たないという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","著作権の保護期間は著作者の死後10年であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","プログラムのソースコードは著作権の保護対象外であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","著作物（文章・音楽・プログラム・映像など）の創作と同時に自動的に発生する権利であり、登録手続きは不要である"],answer:3,explanation:"著作権は、文章・音楽・美術・写真・プログラム・映像など著作物を創作した時点で自動的に発生する権利です（無方式主義）。日本では著作者の死後70年間保護されます。プログラムのソースコードも著作権の保護対象です。"},
+{id:26,category:"ストラテジ系",question:"特許権に関する記述として、最も適切なものはどれか。",choices:["特許権は登録手続き不要で自動的に発生するという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","特許権の保護期間は出願日から5年間であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","デジタルコンテンツは特許権の対象にはなり得ないという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","特許権は新規な発明を保護する権利であり、出願・審査・登録の手続きが必要である"],answer:3,explanation:"特許権は、新規性・進歩性・産業上の利用可能性を持つ発明を保護する権利です。特許庁への出願・審査・登録の手続きが必要であり、登録から20年間（出願日から最大20年）保護されます。著作権とは異なり登録が必要な点が特徴です。"},
+{id:27,category:"ストラテジ系",question:"個人情報保護法における「個人情報」の説明として、最も適切なものはどれか。",choices:["生存する個人に関する情報で、特定の個人を識別できる情報（氏名・住所・生年月日など）を指す","個人情報は企業の営業秘密のみを指すという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","故人（死者）の情報も個人情報として保護されるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","個人情報は文書に記録されたものだけを指し、デジタルデータは含まれない"],answer:0,explanation:"個人情報保護法における「個人情報」とは、生存する個人に関する情報で、氏名・住所・生年月日・顔写真など、特定の個人を識別できる情報を指します。デジタルデータも含まれます。故人の情報は個人情報保護法の直接的な対象外ですが、別途配慮が求められる場合があります。"},
+{id:28,category:"ストラテジ系",question:"不正競争防止法が保護する「営業秘密」の3要件として、最も適切な組み合わせはどれか。",choices:["秘密管理性・新規性・独自性","有用性・公知性・独自性","秘密管理性・有用性・非公知性","登録性・新規性・有用性"],answer:2,explanation:"不正競争防止法が保護する「営業秘密」の3要件は、①秘密として管理されていること（秘密管理性）、②事業活動に有用であること（有用性）、③公然と知られていないこと（非公知性）です。この3要件をすべて満たす情報が法律上の保護を受けます。"},
+{id:29,category:"ストラテジ系",question:"MVV（ミッション・ビジョン・バリュー）に関する記述として、最も適切なものはどれか。",choices:["ミッション（使命）・ビジョン（将来像）・バリュー（価値観）を明確にし、組織の方向性と行動規範を示すフレームワークである","MVVは財務目標のみを示すものであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","ミッションは短期的な売上目標を指すという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","バリューは企業の株式価値のことであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:0,explanation:"MVVは、Mission（使命：なぜ存在するか）・Vision（将来像：どこに向かうか）・Values（価値観：何を大切にするか）を明確化することで、組織の方向性と構成員の行動規範を示すフレームワークです。経営理念や企業文化の基盤となります。"},
+{id:30,category:"ストラテジ系",question:"ビッグデータの特徴として、最も適切な組み合わせはどれか。",choices:["ビッグデータは構造化データ（表形式）のみを指すという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","ビッグデータはリレーショナルデータベースのみで管理できるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","ビッグデータの分析にはAI・機械学習は使えないという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","大量（Volume）・高速（Velocity）・多様性（Variety）の3つのVが代表的な特徴として挙げられる"],answer:3,explanation:"ビッグデータの特徴は一般に「3つのV」と呼ばれ、Volume（大量・大規模）・Velocity（高速・リアルタイム性）・Variety（多様性：テキスト・画像・センサーデータなど）で表されます。これらの特性を活かした分析に機械学習・AIが活用されています。"},
+{id:31,category:"ストラテジ系",question:"eコマース（電子商取引）の形態のうち、BtoC（Business to Consumer）の説明として最も適切なものはどれか。",choices:["企業が一般消費者に対して商品・サービスを販売する形態である","企業間で商品・サービスを取引する形態である","消費者同士が商品を売買する形態であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","政府が企業に対してサービスを提供する形態である"],answer:0,explanation:"BtoC（Business to Consumer）は、企業が一般消費者に直接商品やサービスを提供する電子商取引の形態です。Amazon・楽天市場などのオンラインショッピングモールが代表例です。企業間取引はBtoB、消費者間取引はCtoC（例：フリマアプリ）です。"},
+{id:32,category:"ストラテジ系",question:"サブスクリプションモデルの説明として、最も適切なものはどれか。",choices:["一度購入すれば永続的に無料で利用できるモデルであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","サブスクリプションは動画配信サービスのみに適用されるモデルであるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","商品やサービスを一度に購入するのではなく、定期的に料金を支払い継続的に利用するビジネスモデルである","サブスクリプションモデルでは、顧客が解約することはできないという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる"],answer:2,explanation:"サブスクリプション（Subscription）モデルは、月額・年額などの一定料金を支払うことでサービスを継続利用できるビジネスモデルです。Netflix・Spotifyなどの動画・音楽配信、SaaSソフトウェア、雑誌の定期購読など幅広い分野で活用されており、安定した継続収益が得やすい特徴があります。"},
+{id:33,category:"ストラテジ系",question:"データドリブン経営の説明として、最も適切なものはどれか。",choices:["感覚や経験だけに頼るのではなく、データの収集・分析に基づいて意思決定・経営戦略を立案・実行する経営手法である","データドリブン経営はデータを蓄積するだけで分析は不要であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","データドリブン経営は製造業のみに適用できる手法であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","データドリブン経営では人間の判断は一切不要になるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる"],answer:0,explanation:"データドリブン（Data-Driven）経営とは、経営上の意思決定を勘・経験・直感だけに頼らず、データの収集・分析・可視化に基づいて行う経営手法です。DXの推進に伴い重要性が増しており、顧客行動分析・需要予測・リスク管理など多方面で活用されます。"},
+{id:34,category:"ストラテジ系",question:"グリーンIT（Green IT）の説明として、最も適切なものはどれか。",choices:["ITを活用してCO₂削減など環境負荷低減を図ること（IT for Green）と、IT機器・データセンターの省エネ化（Green of IT）の両方を含む概念である","グリーンITはデータセンターの電力削減のみを指すという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","グリーンITは農業分野へのIT活用を指すという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","グリーンITは環境規制に反する取り組みであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:0,explanation:"グリーンITは2つの側面を持ちます。①Green of IT：IT機器・サーバー・データセンターの消費電力削減・省エネ化、②IT for Green：ITを活用してエネルギー管理・CO₂排出量削減・資源効率化など環境課題を解決すること。両者を合わせた概念として理解することが重要です。"},
+{id:35,category:"ストラテジ系",question:"プラットフォームビジネスの説明として、最も適切なものはどれか。",choices:["単一の製品を大量生産・販売するビジネスモデルであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","プラットフォームビジネスはソフトウェア会社のみが参入できるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","プラットフォームビジネスでは規模が大きくなるほど価値が下がるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","複数のユーザーグループ（売り手・買い手など）をつなぐ場（プラットフォーム）を提供し、ネットワーク効果で価値を創出するビジネスモデルである"],answer:3,explanation:"プラットフォームビジネスは、複数のユーザーグループをつなぐ場（プラットフォーム）を提供し、利用者が増えるほど価値が高まる「ネットワーク効果」を活用します。Amazon（売り手・買い手）・Uber（ドライバー・乗客）・YouTube（動画投稿者・視聴者）などが代表例です。"},
+{id:36,category:"ストラテジ系",question:"インボイス制度（適格請求書等保存方式）の説明として、最も適切なものはどれか。",choices:["インボイス制度は所得税の申告に関する制度であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","消費税の仕入税額控除を受けるために、適格請求書（インボイス）の保存が必要となる制度である","インボイス制度では全事業者が自動的に登録されるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","インボイス制度の導入によりすべての取引が電子化が義務付けられた"],answer:1,explanation:"インボイス制度（適格請求書等保存方式）は、2023年10月に開始された消費税の仕入税額控除に関する制度です。売り手は適格請求書発行事業者の登録が必要で、買い手は仕入税額控除を受けるために適格請求書の保存が必要となります。中小企業・フリーランスへの影響が大きい制度です。"},
+{id:37,category:"ストラテジ系",question:"パワーハラスメント防止法（改正労働施策総合推進法）に関する記述として、最も適切なものはどれか。",choices:["パワーハラスメント防止法は大企業にのみ適用され、中小企業への適用はないという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","職場のパワーハラスメント防止のための措置を事業主に義務付けた法律であり、2020年に大企業、2022年に中小企業にも適用された","パワーハラスメントは刑事罰が定められており、加害者は直ちに逮捕されるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","同法はセクシャルハラスメントのみを規制の対象としているという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である"],answer:1,explanation:"職場のパワーハラスメント（パワハラ）防止措置を事業主に義務付けた改正労働施策総合推進法は、2020年6月に大企業、2022年4月から中小企業にも適用されました。事業主は相談窓口の設置・社内規定の整備・従業員への周知などの措置が義務付けられています。"},
+{id:38,category:"ストラテジ系",question:"ポーターの競争戦略（競争優位の戦略）として、最も適切な3つの基本戦略の組み合わせはどれか。",choices:["価格戦略・品質戦略・スピード戦略というアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","攻撃戦略・防衛戦略・撤退戦略という定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","成長戦略・安定戦略・縮小戦略という発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","コストリーダーシップ戦略・差別化戦略・集中戦略"],answer:3,explanation:"マイケル・ポーターが提唱する競争優位の基本戦略は、①コストリーダーシップ戦略（業界最低コストで競争優位を獲得）、②差別化戦略（独自の価値提供で競争優位を確立）、③集中戦略（特定のセグメントに経営資源を集中）の3つです。"},
+{id:39,category:"ストラテジ系",question:"働き方改革に関連する、テレワーク（リモートワーク）のメリットとして、最も適切なものはどれか。",choices:["通勤時間の削減・優秀な人材の確保・BCP対策としての有効性などが挙げられる","テレワークは生産性を必ず低下させるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","テレワークはサービス業にしか適用できないという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","テレワークを導入すると情報セキュリティリスクが完全になくなる"],answer:0,explanation:"テレワーク（リモートワーク）のメリットには、通勤時間の削減による生産性向上・育児や介護との両立・地理的制約を超えた優秀な人材確保・自然災害や感染症発生時のBCP（事業継続計画）対策としての有効性などがあります。一方でセキュリティ対策やコミュニケーション課題への対処も必要です。"},
+{id:40,category:"ストラテジ系",question:"5フォース分析（ファイブ・フォース分析）の5つの力として、最も適切な組み合わせはどれか。",choices:["SWOT・PEST・3C・4P・BSCという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","強み・弱み・機会・脅威・リスクというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","価格・品質・ブランド・流通・販促という考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","業界内競合・新規参入の脅威・代替品の脅威・売り手の交渉力・買い手の交渉力"],answer:3,explanation:"マイケル・ポーターの5フォース分析は、①既存業者間の競合、②新規参入者の脅威、③代替製品・サービスの脅威、④売り手（サプライヤー）の交渉力、⑤買い手（顧客）の交渉力の5つの競争要因で業界の収益性を分析するフレームワークです。"},
+{id:41,category:"ストラテジ系",question:"PEST分析の説明として、最も適切なものはどれか。",choices:["企業の内部環境を強み・弱みに分けて分析するフレームワークであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","製品の価格・品質・流通・プロモーションを分析するフレームワークであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","競合他社との競争優位性を分析するフレームワークであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","政治（Political）・経済（Economic）・社会（Social）・技術（Technological）の4つの外部環境要因を分析するフレームワークである"],answer:3,explanation:"PEST分析は、Politics（政治）・Economy（経済）・Society（社会）・Technology（技術）の4要因でマクロ環境を分析するフレームワークです。法規制・為替・人口動態・技術革新など、企業がコントロールできない外部要因を把握し、戦略立案に活用します。"},
+{id:42,category:"ストラテジ系",question:"3C分析の「3C」として、最も適切な組み合わせはどれか。",choices:["Cost（コスト）・Customer（顧客）・Channel（流通）","Customer（顧客）・Competitor（競合）・Company（自社）","Communication（コミュニケーション）・Competitor（競合）・Cost（コスト）","Customer（顧客）・Cost（コスト）・Convenience（利便性）"],answer:1,explanation:"3C分析は、Customer（顧客・市場）・Competitor（競合他社）・Company（自社）の3つの視点から事業環境を分析するフレームワークです。顧客のニーズ・競合の強み弱み・自社の現状を整理することで、成功要因（KSF）を見出し、戦略立案に活用します。"},
+{id:43,category:"ストラテジ系",question:"SDGs（持続可能な開発目標）の説明として、最も適切なものはどれか。",choices:["2030年を期限に国連が採択した17の目標と169のターゲットからなる、持続可能な世界の実現を目指す国際目標である","SDGsは先進国のみを対象とした目標であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","SDGsは環境問題のみを扱う目標であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","SDGsは企業には関係なく、政府だけが取り組む目標であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる"],answer:0,explanation:"SDGs（Sustainable Development Goals：持続可能な開発目標）は、2015年の国連サミットで採択された2030年を達成期限とする17の目標・169のターゲットです。貧困撲滅・気候変動対策・ジェンダー平等など幅広いテーマを扱い、先進国・途上国を問わずすべての国・企業・個人が取り組むべき目標です。"},
+{id:44,category:"ストラテジ系",question:"ハルシネーション（Hallucination）の説明として、最も適切なものはどれか。",choices:["AIが学習データ不足により回答を拒否する現象であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","AIがユーザーの意図を正確に理解できない現象であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","AIが事実に基づかない情報や存在しないデータを、あたかも正確な情報であるかのように生成してしまう現象である","AIのプログラムがクラッシュする現象であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:2,explanation:"ハルシネーション（幻覚）は、生成AIが事実と異なる情報・存在しない文献・架空の人物などを、もっともらしく生成してしまう現象です。大規模言語モデル（LLM）の特性上完全には回避できないため、生成AIの出力結果は必ず人間が確認・検証することが重要です。"},
+{id:45,category:"ストラテジ系",question:"プロンプトエンジニアリングの説明として、最も適切なものはどれか。",choices:["AIモデルをゼロから学習させる技術であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","AIのハードウェアを設計・製造する技術であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","プロンプトエンジニアリングは特定のAIのみに有効な技術であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","生成AIから望ましい出力を得るために、入力文（プロンプト）を工夫・設計する技術・技法である"],answer:3,explanation:"プロンプトエンジニアリングとは、ChatGPTなどの生成AIに対して、より精度の高い・意図に沿った出力を得るために、入力文（プロンプト）の書き方や構造を工夫・設計する技術です。役割設定・具体的な指示・例示（Few-shotプロンプト）などのテクニックが活用されます。"},
+{id:46,category:"ストラテジ系",question:"メタバースの説明として、最も適切なものはどれか。",choices:["メタバースは2Dゲームのみを指す概念であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","コンピュータ上に構築された三次元の仮想空間で、アバターを通じてユーザーが交流・活動できる仮想世界の総称である","メタバースはインターネットが存在しない環境でのみ動作するという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","メタバースはAR（拡張現実）とは全く関係がないという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:1,explanation:"メタバース（Metaverse）は、インターネット上に構築された持続的な三次元の仮想空間で、ユーザーがアバターを通じて他者と交流・仕事・ゲーム・ショッピングなどを行える仮想世界です。VR（仮想現実）・AR（拡張現実）・ブロックチェーンなどの技術と組み合わせて発展しています。"},
+{id:47,category:"ストラテジ系",question:"ステルスマーケティング（ステマ）規制に関する記述として、最も適切なものはどれか。",choices:["ステルスマーケティングは現在も法的規制の対象外であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","SNS上での個人の投稿は全てステルスマーケティングに該当するという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","広告であることを隠して消費者に商品・サービスを宣伝する行為は、景品表示法の規制対象となっており、違反には措置命令が下される","ステルスマーケティングは販売者のみが規制対象であり、広告主は規制されないという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:2,explanation:"2023年10月から、景品表示法が改正され、広告・PR表示なしに企業依頼の宣伝を行うステルスマーケティング（ステマ）が規制対象となりました。違反した事業者には消費者庁から措置命令が下されます。SNSのインフルエンサー投稿なども対象となります。"},
+{id:48,category:"ストラテジ系",question:"情報リテラシーの説明として、最も適切なものはどれか。",choices:["情報リテラシーはプログラミングスキルのことであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","情報リテラシーはコンピュータを高速に操作する技術のことであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","情報を適切に収集・評価・活用・発信する能力であり、フェイクニュースや誤情報を見分ける批判的思考も含まれる","情報リテラシーはデータサイエンスの専門的知識を指すという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:2,explanation:"情報リテラシーは、情報を必要に応じて収集・整理・評価・活用・発信する能力の総称です。インターネット上のフェイクニュース・誤情報・偏った情報を批判的に判断する「メディアリテラシー」も含まれます。情報化社会においてすべての人に求められる基礎的能力です。"},
+{id:49,category:"ストラテジ系",question:"ピボットの説明として、最も適切なものはどれか。",choices:["ピボットとはExcelの集計機能（ピボットテーブル）のみを指すという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","スタートアップ企業などが、市場の反応・データをもとに事業の方向性を大きく転換することである","ピボットは事業計画を小幅に修正することを指すという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","ピボットは競合他社の戦略をそのまま模倣することであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:1,explanation:"ピボット（Pivot）は、スタートアップや新規事業において、市場からのフィードバック・データに基づいて事業の方向性（ターゲット顧客・製品・ビジネスモデルなど）を大きく転換することです。リーン・スタートアップの概念の一部で、仮説検証を繰り返しながら市場適合を目指します。"},
+{id:50,category:"ストラテジ系",question:"API（Application Programming Interface）エコノミーの説明として、最も適切なものはどれか。",choices:["APIエコノミーはIT企業の社内開発にのみ関係する概念であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","APIを公開するとセキュリティが完全に失われるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","企業がAPIを公開・利用することで、他社サービスと連携した新たなビジネス価値を創出するエコシステムのことである","APIエコノミーではデータの共有は行われないという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:2,explanation:"APIエコノミーは、企業がAPIを外部に公開し、他社・開発者がそのAPIを利用することで、様々なサービスが連携・統合し、新たなビジネス価値や収益機会が生まれるエコシステムです。地図API（Google Maps）・決済API（Stripe）・SNSログイン（OAuth）などが代表例です。"},
+{id:51,category:"ストラテジ系",question:"GX（グリーントランスフォーメーション）の説明として、最も適切なものはどれか。",choices:["GXは工場の緑化（植栽）に関する取り組みであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","GXはITシステムのグラフィック品質を向上させる技術であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","温室効果ガスの排出削減を図りながら、経済社会システム全体をクリーンエネルギー中心へ転換する取り組みである","GXは政府の行政デジタル化の取り組みであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:2,explanation:"GX（Green Transformation）とは、2050年カーボンニュートラル実現に向けて、化石燃料依存から再生可能エネルギー・水素などクリーンエネルギー中心の経済社会システムへ転換する取り組みです。日本政府も「GX推進法」を制定し、官民挙げての取り組みが進んでいます。"},
+{id:52,category:"ストラテジ系",question:"ブロックチェーンの特徴として、最も適切なものはどれか。",choices:["ブロックチェーンは単一のサーバーで集中管理されるデータベースであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","取引データをブロックとして連鎖的につなぎ、分散して保管することで、改ざんが極めて困難な台帳を実現する技術である","ブロックチェーンはインターネットなしでも動作する技術であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","ブロックチェーンは暗号資産（仮想通貨）にのみ使用される技術であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:1,explanation:"ブロックチェーンは、取引データをブロック単位でハッシュ値によって連鎖（チェーン）させ、ネットワーク参加者全員が分散して保管する技術です。一部のデータを改ざんしようとすると全てのブロックの整合性が崩れるため、改ざんが実質的に不可能です。暗号資産だけでなく、契約管理・サプライチェーン追跡などにも活用されています。"},
+{id:53,category:"ストラテジ系",question:"クラウドファンディングの説明として、最も適切なものはどれか。",choices:["クラウドファンディングは銀行融資の一種であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","クラウドファンディングで資金提供した支援者には必ずリターン（返礼品）がある","インターネットを通じて不特定多数の支援者から少額ずつ資金を集めるための仕組みである","クラウドファンディングは政府が運営するサービスであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる"],answer:2,explanation:"クラウドファンディング（Crowdfunding）は、新製品・映画・社会活動など様々なプロジェクトに対して、インターネット上のプラットフォームを通じて不特定多数の一般人から少額ずつ資金を集める仕組みです。購入型・寄付型・投資型・融資型など複数の形態があり、リターンの有無は形態によって異なります。"},
+{id:54,category:"ストラテジ系",question:"著作権侵害が問題になりやすい生成AIの利用場面として、最も適切なものはどれか。",choices:["生成AIで作成した文章を社内報告書に活用する場合という概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","生成AIを使って既存のデータを集計・分析する場合という特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","生成AIが既存の著作物に酷似したコンテンツを生成した場合や、著作権者の許諾なく著作物を学習データに使用した場合","生成AIでプレゼン資料の構成を考える場合という考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である"],answer:2,explanation:"生成AIに関する著作権問題は主に2点あります。①学習フェーズ：著作権者の許諾なく著作物を大量学習データとして使用する問題、②生成フェーズ：既存の著作物に酷似したコンテンツを生成し著作権侵害となる問題。文化庁・内閣府も対応方針を検討しており、利用時には確認が必要です。"},
+{id:55,category:"ストラテジ系",question:"リーン・スタートアップの考え方として、最も適切なものはどれか。",choices:["最小限の機能を持つ試作品（MVP）を素早く作り、顧客の反応を検証しながら改善を繰り返すことで、無駄な投資を避ける起業・開発手法である","大規模な初期投資を行い、完璧な製品を作ってから市場投入する手法であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","リーン・スタートアップは大企業の新規事業にのみ適用できるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","リーン・スタートアップでは顧客からのフィードバックは重視しないという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:0,explanation:"リーン・スタートアップは、エリック・リースが提唱した起業・事業開発手法です。MVP（Minimum Viable Product：実用最小限の製品）を素早く作成し、「構築→計測→学習」のサイクルを高速で繰り返しながら、顧客の反応を検証・学習することで、無駄な投資・開発を最小化します。"},
+{id:56,category:"ストラテジ系",question:"VR（仮想現実）とAR（拡張現実）の説明として、最も適切なものはどれか。",choices:["VRは現実から切り離した仮想空間を体験する技術で、ARは現実空間にデジタル情報を重ねて表示する技術である","VRとARは全く同じ技術で区別する意味はないという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","ARは現実から完全に切り離した仮想空間を体験する技術であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","VRはスマートフォンでは利用できない技術であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない"],answer:0,explanation:"VR（Virtual Reality：仮想現実）は、ヘッドセットなどを使って現実から切り離された完全な仮想空間を体験する技術です。AR（Augmented Reality：拡張現実）は、スマートフォンのカメラやARグラスを通じて現実空間にデジタル情報（3Dモデル・情報など）を重ねて表示する技術です。ゲーム・教育・製造・医療など幅広く活用されています。"},
+{id:57,category:"ストラテジ系",question:"ダイバーシティ＆インクルージョン（D&I）の説明として、最も適切なものはどれか。",choices:["D&Iは採用活動の多様化のみを指すという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","D&Iは日本国内でのみ求められる取り組みであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","D&Iは多様な人材を採用するだけで、活躍を支援する仕組みは不要であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","性別・国籍・年齢・障がいなど多様な人材が活躍できる環境を整備し、多様性を受け入れ活かす経営方針・取り組みである"],answer:3,explanation:"ダイバーシティ（多様性）＆インクルージョン（包括・包摂）は、性別・国籍・年齢・障がい・性的指向・宗教など様々な背景を持つ人材を採用するだけでなく、全員が活躍できる組織風土・制度を整備する経営方針です。イノベーション創出・人材確保・企業価値向上につながるとして、グローバルに重視されています。"},
+{id:58,category:"ストラテジ系",question:"デジタルツインの説明として、最も適切なものはどれか。",choices:["デジタルツインはバックアップデータのことであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","デジタルツインはソフトウェアのバージョン管理技術であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","デジタルツインはAI同士を競争させる技術であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","現実の物理的なモノやシステムをデジタル空間上に再現した仮想モデルであり、シミュレーションや監視・最適化に活用される技術である"],answer:3,explanation:"デジタルツインは、工場・建物・都市・人体など現実の物理的存在をデジタル空間上に精密に再現した仮想モデルです。IoTセンサーからリアルタイムでデータを取得し、シミュレーション・予測・最適化・異常検知などに活用されます。製造業・インフラ管理・都市計画・医療など幅広い分野で導入が進んでいます。"},
+{id:59,category:"ストラテジ系",question:"ゼロトラストセキュリティの基本的な考え方として、最も適切なものはどれか。",choices:["「何も信頼しない」を原則とし、社内・社外を問わずすべてのアクセスを検証・認証することでセキュリティを確保するアプローチである","社内ネットワーク内のアクセスは全て信頼し、社外からのアクセスのみを制限するアプローチである","ゼロトラストは物理的なセキュリティ対策のことであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","ゼロトラストを導入するとパスワードが不要になるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:0,explanation:"ゼロトラスト（Zero Trust）セキュリティは、従来の「社内ネットワーク＝安全」という境界型セキュリティを廃し、「全てのアクセスを信頼しない」を原則とします。社内外問わず、ユーザー・デバイス・通信のすべてを継続的に認証・検証します。テレワーク普及・クラウド利用拡大に伴い注目されています。"},
+{id:60,category:"ストラテジ系",question:"ノーコード・ローコード開発の説明として、最も適切なものはどれか。",choices:["ノーコード開発は既存システムの改修にのみ使用できるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","プログラミングの専門知識がなくても、GUIツールを使って業務アプリケーションを作成できる開発手法であり、IT人材不足の解消やDX推進に貢献する","ローコード開発は高度なプログラミングスキルが必須であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","ノーコード開発で作成できるアプリは品質が保証されないというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:1,explanation:"ノーコード（コーディング不要）・ローコード（最小限のコーディング）開発ツールは、ドラッグ＆ドロップ操作などGUIで業務アプリを作成できます。IT専門家でない「市民開発者（シチズンデベロッパー）」が開発に参加でき、IT人材不足の解消・開発期間の短縮・DX推進に貢献します。"},
+{id:61,category:"ストラテジ系",question:"「中小受託取引適正化法（旧：下請法の改正方向性）」に関する記述として、最も適切なものはどれか。",choices:["中小受託取引適正化法はIT企業にのみ適用される法律であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","この法律は発注者側にのみ義務を課し、受託者側には義務がないという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","中小企業が受託する取引における代金の支払い条件・減額禁止・買いたたき防止などを規定し、受託事業者の保護を図る法律の枠組みである","この法律により全ての取引に書面の作成が任意となったというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:2,explanation:"シラバスVer.6.5で「下請法」に代わり追加された「中小受託取引適正化法」は、中小企業が行う受託取引（製造委託・情報成果物作成委託など）において、①代金の支払期日・支払方法の規制、②代金の不当な減額禁止、③買いたたき・不当な返品禁止などを規定し、受託側の中小企業・フリーランスを保護する法律の枠組みです。"},
+{id:62,category:"ストラテジ系",question:"「情報流通プラットフォーム対処法」の説明として、最も適切なものはどれか。",choices:["SNS等のプラットフォームにおいて、誹謗中傷・フェイクニュースなどの違法・有害情報の削除手続きの迅速化と運用状況の透明化を図るための法律である","情報流通プラットフォーム対処法はデータの著作権を保護する法律であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","この法律はプラットフォーム企業に全ての投稿の検閲を義務付けるものであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","この法律は個人情報の国外移転のみを規制する法律であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:0,explanation:"情報流通プラットフォーム対処法（正式名称：特定電気通信役務提供者の損害賠償責任の制限及び発信者情報の開示に関する法律の改正を含む枠組み）は、SNSなどの大規模プラットフォーム事業者に対して、誹謗中傷などの侵害情報の削除手続きの迅速化・透明化を義務付ける法律です。シラバスVer.6.4で追加されました。"},
+{id:63,category:"ストラテジ系",question:"「D&I（ダイバーシティ＆インクルージョン）」をさらに発展させた概念「DE&I」の「E」として、最も適切なものはどれか。",choices:["Excellence（卓越性）：全員が最高のパフォーマンスを発揮することを求める概念である","Experience（体験）：従業員体験を向上させることを指すという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","Efficiency（効率性）：業務効率を最大化することを指すという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","Equity（公平性）：各個人が公平な結果を得るために、それぞれの状況に応じて異なるサポート・リソースを提供することである"],answer:3,explanation:"DE&I（Diversity：多様性、Equity：公平性、Inclusion：包摂性）のEquity（公平性）は、全員に同じものを提供するEquality（平等）とは異なり、個々の状況・ニーズに応じて適切なサポートやリソースを提供することで、誰もが公平な結果を得られるようにするという概念です。近年DE&Iまたはさらに所属感を加えたDEIBとして語られることも増えています。"},
+{id:64,category:"ストラテジ系",question:"「カーボンニュートラル」の説明として、最も適切なものはどれか。",choices:["カーボンニュートラルはCO₂排出量を50%削減することであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","カーボンニュートラルはプラスチックの使用をゼロにすることを指すというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","カーボンニュートラルは石炭の使用を禁止することのみを指すというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","CO₂などの温室効果ガスの排出量から、森林吸収や技術的除去による吸収量を差し引いた実質的な排出量をゼロにする状態・目標である"],answer:3,explanation:"カーボンニュートラル（Carbon Neutral）とは、CO₂などの温室効果ガスの排出量（Emission）と、森林による吸収・CCSなどの除去量（Removal）の差し引きを実質ゼロにすることです。日本は2050年カーボンニュートラルを宣言しており、企業のGHG排出削減・再生可能エネルギー活用・カーボンオフセットなどの取り組みが求められます。"},
+{id:65,category:"ストラテジ系",question:"「LCA（ライフサイクルアセスメント）」の説明として、最も適切なものはどれか。",choices:["LCAは製品の耐用年数を計算する会計的手法のことであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","LCAは従業員の生涯賃金を計算するHR手法のことであるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","製品・サービスの原材料調達から製造・流通・使用・廃棄・リサイクルまでの全ライフサイクルにわたる環境負荷（CO₂・エネルギー・水など）を定量的に評価する手法である","LCAは顧客の生涯価値（LTV）を計算するマーケティング手法と同じ概念であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:2,explanation:"LCA（Life Cycle Assessment：ライフサイクルアセスメント）は、製品やサービスの「ゆりかごから墓場まで」（原材料採取→製造→輸送→使用→廃棄→リサイクル）の全段階における環境影響（CO₂排出量・エネルギー消費・水資源・有害物質など）を定量的に評価するISO 14040/14044に規定された手法です。"},
+{id:66,category:"ストラテジ系",question:"「オープンイノベーション」の説明として、最も適切なものはどれか。",choices:["オープンイノベーションは社内だけで行うクローズドな研究開発手法のことであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","自社だけで研究開発を行うのではなく、外部の企業・大学・スタートアップ・個人などの知識・技術・アイデアを積極的に取り込みながらイノベーションを創出する考え方である","オープンイノベーションはオープンソースソフトウェアの開発手法のみを指すというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","オープンイノベーションはMBAで学ぶ経営学の理論のことだけを指すというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:1,explanation:"オープンイノベーション（Open Innovation）はハーバード大学のヘンリー・チェスブロウ教授が提唱した概念で、企業が自社の研究開発だけでなく、外部（他企業・大学・研究機関・スタートアップ・個人）の知識・技術・ビジネスモデルを積極的に活用（取り込みと社外提供）しながらイノベーションを加速させる戦略です。"},
+{id:67,category:"ストラテジ系",question:"「フリーランス保護新法（特定受託事業者に係る取引の適正化等に関する法律）」の説明として、最も適切なものはどれか。",choices:["フリーランス保護新法はフリーランスの税務申告を代行する制度のことであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","この法律はフリーランスへの業務委託を禁止する法律であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","フリーランスとして業務委託を受ける個人事業主を保護するため、発注者に対して書面での取引条件の明示・報酬の期日内支払い・ハラスメント対策などを義務付けた法律である","この法律は企業の正社員をフリーランスに転換することを義務付ける法律であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:2,explanation:"フリーランス保護新法（2024年11月施行）は、フリーランス（特定受託事業者）に業務委託をする発注者事業者に対して、①取引条件の書面明示義務、②報酬の60日以内支払義務、③不当な報酬減額・返品・買いたたきの禁止、④ハラスメント防止措置義務などを規定し、フリーランスの安定した就業環境を整備するための法律です。"},
+{id:68,category:"ストラテジ系",question:"「デジタルデバイド（情報格差）」の説明として、最も適切なものはどれか。",choices:["インターネットやICT技術を活用できる人とできない人との間に生じる、情報へのアクセス・活用能力・経済的機会などの格差のことである","デジタルデバイドはコンピュータの処理速度の差のことであるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","デジタルデバイドは企業と個人のデータ利活用の差のことのみを指すという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","デジタルデバイドはデジタル機器の価格差のことのみを指すというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない"],answer:0,explanation:"デジタルデバイドは、年齢・地域・所得・障がいの有無などの違いによって、インターネットやデジタル技術へのアクセス機会・活用スキル・恩恵を受ける度合いに格差が生じる問題です。高齢者や障がいのある方・離島や山間部の住民・低所得者層などに広がりやすく、行政・教育・就業機会の格差につながります。デジタル包摂（Digital Inclusion）の推進が求められます。"},
+{id:69,category:"ストラテジ系",question:"「AIガバナンス」の説明として、最も適切なものはどれか。",choices:["AIシステムの開発・運用・利用において、公平性・透明性・説明可能性・安全性・プライバシー保護などを確保するための組織的・技術的・法的な枠組み・取り組みのことである","AIガバナンスはAIの開発速度を最大化するための手法のことであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","AIガバナンスはAIを使った企業の財務管理手法のことであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","AIガバナンスはAI研究者のみが取り組む技術的な課題であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:0,explanation:"AIガバナンスは、AIが社会・個人に及ぼすリスク（誤判断・偏見・プライバシー侵害・悪用など）を管理し、倫理的・安全・公正なAIの開発・利用を確保するための仕組みです。EU AI法・OECD AI原則・日本のAI事業者ガイドラインなど国際的な規制・ガイドラインの整備が進んでおり、企業にはリスク評価・透明性確保・責任ある利用が求められます。"},
+{id:70,category:"ストラテジ系",question:"「量子暗号通信」の説明として、最も適切なものはどれか。",choices:["量子暗号通信は現在の公開鍵暗号方式（RSA）と全く同じ技術であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","量子暗号通信はブロックチェーン技術の別名であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","量子暗号通信は量子コンピュータが普及すれば不要になる技術であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","量子力学の原理（光子の量子状態）を利用して、理論上傍受が不可能な暗号鍵の配送を実現する次世代通信技術であり、量子コンピュータによる現行暗号の解読リスクへの対策として注目されている"],answer:3,explanation:"量子暗号通信（量子鍵配送：QKD）は、光子1個の量子状態を使って暗号鍵を配送する技術です。量子力学の「測定すると状態が変化する」という原理により、傍受しようとすると必ず痕跡が残るため、理論上完全に安全な鍵配送が可能です。将来の量子コンピュータによってRSA等の現行暗号が解読される「量子脅威」への対策として、ポスト量子暗号とともに世界中で研究・実用化が進んでいます。"},
+{id:71,category:"マネジメント系",question:"プロジェクトマネジメントにおける「スコープ」の説明として、最も適切なものはどれか。",choices:["プロジェクトの予算のことであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","プロジェクトの期間（スケジュール）のことである","プロジェクトで実施すべき作業と成果物の範囲を定義したものである","プロジェクトチームのメンバー数のことであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:2,explanation:"プロジェクトマネジメントにおけるスコープ（Scope）とは、プロジェクトで実施すべき作業の範囲と成果物を明確に定義したものです。スコープが不明確だと「スコープクリープ」（範囲の際限ない拡大）が発生し、コスト超過やスケジュール遅延の原因となります。"},
+{id:72,category:"マネジメント系",question:"WBS（Work Breakdown Structure）の説明として、最も適切なものはどれか。",choices:["プロジェクトのコストのみを管理するための表であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","チームメンバーの役割分担を示す組織図であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","プロジェクトのスケジュールをガントチャートで表したものである","プロジェクトの作業全体を階層的に細分化し、管理可能な単位に分解した構造図である"],answer:3,explanation:"WBS（Work Breakdown Structure：作業分解構成図）は、プロジェクト全体の作業を階層的に細分化し、管理可能な最小単位（ワークパッケージ）まで分解した構造図です。スコープの明確化・作業量の見積もり・担当者の割り当てなどに活用されます。"},
+{id:73,category:"マネジメント系",question:"ガントチャートの説明として、最も適切なものはどれか。",choices:["プロジェクトのコスト推移を折れ線グラフで表したものであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","プロジェクトの各作業を横軸を時間・縦軸をタスクとして棒グラフで表したスケジュール管理ツールである","作業の依存関係と最長経路（クリティカルパス）を示すネットワーク図である","プロジェクトのリスクを確率と影響度で評価したマトリクスであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:1,explanation:"ガントチャートは、横軸に時間（日付）、縦軸に作業（タスク）を配置し、各作業の開始・終了・進捗を棒グラフで視覚的に表したスケジュール管理ツールです。作業の依存関係や並行作業を把握しやすく、プロジェクト管理に広く使われています。"},
+{id:74,category:"マネジメント系",question:"システム開発のウォーターフォールモデルの特徴として、最も適切なものはどれか。",choices:["短い反復サイクルで継続的に開発・改善を繰り返す手法であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","要件定義→設計→実装→テスト→リリースの各工程を順番に進め、原則として前工程に戻らない開発手法である","ユーザーの要求を随時取り込みながら柔軟に仕様変更できる手法であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","コーディングを最初に行い、設計は後から行う手法であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる"],answer:1,explanation:"ウォーターフォールモデルは、要件定義→外部設計→内部設計→プログラミング→テスト→運用の各工程を順番に進め、原則として前工程には戻らない開発手法です。計画が明確な大規模システム開発に向いていますが、仕様変更への対応が難しいという課題があります。"},
+{id:75,category:"マネジメント系",question:"ITサービスマネジメントの国際標準であるITIL（IT Infrastructure Library）の説明として、最も適切なものはどれか。",choices:["ITILはソフトウェア開発の手法を定めた規格であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","ITILは日本独自のIT管理標準であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","ITILに準拠すれば全てのITトラブルが解消されるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","ITサービスの設計・移行・運用・改善などのベストプラクティスをまとめたフレームワークである"],answer:3,explanation:"ITIL（IT Infrastructure Library）は、ITサービスマネジメントのベストプラクティスをまとめた国際的なフレームワークです。サービス戦略・サービス設計・サービス移行・サービス運用・継続的サービス改善の5つのステージで構成されます（ITIL v3）。品質向上やコスト削減に貢献します。"},
+{id:76,category:"マネジメント系",question:"システム監査の目的として、最も適切なものはどれか。",choices:["情報システムのリスクを評価し、信頼性・安全性・効率性などを独立した立場から検証・評価することである","システム監査はシステムの不具合を修正するための技術的作業であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","システム監査は会計監査と同一のものであるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","システム監査は開発担当者自身が実施するものであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:0,explanation:"システム監査は、組織の情報システムが適切に整備・運用されているかを、システム部門から独立した立場の監査人が評価・検証する活動です。リスクの識別・内部統制の有効性確認・法令遵守の確認などを目的とします。「システム監査基準」に基づいて実施されます。"},
+{id:77,category:"マネジメント系",question:"SLA（サービスレベルアグリーメント）の説明として、最も適切なものはどれか。",choices:["SLAはソフトウェアのライセンス契約のことであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","SLAはシステムの設計仕様書のことであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","ITサービス提供者と利用者の間で、提供するサービスの品質・可用性・サポート内容などを具体的に取り決めた契約書（合意書）である","SLAは利用者が一方的に要求をまとめた書類であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる"],answer:2,explanation:"SLA（Service Level Agreement：サービスレベルアグリーメント）は、ITサービス提供者とユーザー・顧客が、提供するサービスの品質水準（可用性・応答時間・サポート時間など）を明確に取り決めた合意書です。サービス品質の可視化とアカウンタビリティの確保に役立ちます。"},
+{id:78,category:"マネジメント系",question:"リスクマネジメントにおけるリスク対応策のうち「リスク移転」の説明として、最も適切なものはどれか。",choices:["リスクを識別した上で、意図的に対処しない判断をすることである","保険加入や契約によって、リスクによる損失を第三者に移転することである","リスクが発生しないよう根本的な原因を排除することである","リスクの影響を軽減するための対策を講じることである"],answer:1,explanation:"リスク対応策には、①リスク回避（活動自体を中止・変更）、②リスク低減（影響・発生確率を下げる）、③リスク移転（保険加入・外部委託でリスクを第三者へ移す）、④リスク保有（許容範囲内のリスクは対策せず受け入れる）の4種類があります。"},
+{id:79,category:"マネジメント系",question:"デジタルフォレンジックスの説明として、最も適切なものはどれか。",choices:["デジタルフォレンジックスはコンピュータウイルスの開発技術であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","インシデント発生時に、コンピュータやネットワークから証拠となるデジタルデータを収集・保全・解析する技術・手法である","デジタルフォレンジックスは暗号化通信を解読する技術であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","デジタルフォレンジックスはWebサイトの高速化技術であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:1,explanation:"デジタルフォレンジックス（Digital Forensics）は、サイバー攻撃・不正アクセス・情報漏洩などのインシデント発生後に、コンピュータ・スマートフォン・ネットワーク機器などからデジタル証拠を収集・保全・解析する技術・手法です。法的証拠として使用できるよう厳密な手順で実施されます。"},
+{id:80,category:"マネジメント系",question:"DevOpsの説明として、最も適切なものはどれか。",choices:["DevOpsは開発者だけが実践する手法で、運用担当者は関係しないというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","DevOpsはウォーターフォール開発専用の手法であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","DevOpsを導入するとシステムの品質が必ず低下するという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","開発チーム（Development）と運用チーム（Operations）が連携・協力し、ソフトウェアの開発・テスト・リリースのサイクルを高速化する手法・文化である"],answer:3,explanation:"DevOpsは、Development（開発）とOperations（運用）を組み合わせた造語で、開発・テスト・リリース・運用の各チームが連携し、自動化ツールを活用することで、ソフトウェアの品質を維持しながらリリースサイクルを高速化する手法・文化です。CI/CD（継続的インテグレーション/デリバリー）が代表的な実践手法です。"},
+{id:81,category:"マネジメント系",question:"アジャイル開発手法のひとつである「スクラム」の説明として、最も適切なものはどれか。",choices:["スクラムは全ての仕様を最初に確定させる開発手法であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","スプリントと呼ばれる短い反復開発サイクル（通常1〜4週間）で機能を開発し、スプリントレビュー・レトロスペクティブで継続的に改善するフレームワークである","スクラムではプロダクトオーナーが全てのタスクを実施するという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","スクラムでは一度設定したゴールは変更できないという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:1,explanation:"スクラムはアジャイル開発のフレームワークで、スプリント（1〜4週間の反復サイクル）で機能を開発します。プロダクトオーナー・スクラムマスター・開発チームの3つの役割と、スプリントプランニング・デイリースクラム・スプリントレビュー・レトロスペクティブの4つのイベントで構成されます。"},
+{id:82,category:"マネジメント系",question:"クリティカルパス法（CPM）の説明として、最も適切なものはどれか。",choices:["クリティカルパスは最も費用がかかる作業の経路のことであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","クリティカルパス上の作業は遅延しても全体の納期に影響しないという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","プロジェクトの全作業の依存関係を分析し、完了までに最も時間がかかる経路（クリティカルパス）を特定することで、スケジュール管理を行う手法である","CPMはコスト管理にのみ使用される手法であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:2,explanation:"クリティカルパス法（CPM）は、プロジェクトの全タスクの依存関係をネットワーク図（PERT図など）で表し、完了までの最長経路（クリティカルパス）を特定する手法です。クリティカルパス上のタスクが1日でも遅れると、プロジェクト全体の完了が遅れるため、重点的に管理が必要です。"},
+{id:83,category:"マネジメント系",question:"テスト駆動開発（TDD）の説明として、最も適切なものはどれか。",choices:["テスト工程を最後に一括して行う開発手法であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","TDDはシステムの受け入れテストのみを指す手法であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","先にテストコードを書いてからプログラムを実装し、全てのテストが通るようにコードを改善するサイクルを繰り返す開発手法である","TDDではテストは開発者以外の専門チームが実施するというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:2,explanation:"テスト駆動開発（TDD：Test-Driven Development）は、①まず失敗するテストコードを書く（Red）→②テストが通る最小限のコードを実装する（Green）→③コードを整理・改善する（Refactor）のサイクルを繰り返す開発手法です。バグの早期発見・設計の改善・保守性の向上に効果があります。"},
+{id:84,category:"マネジメント系",question:"SaaS（Software as a Service）の説明として、最も適切なものはどれか。",choices:["SaaSはソフトウェアのパッケージ版を購入するモデルであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","SaaSではユーザーが自社サーバーにソフトウェアをインストールするという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","ソフトウェアをインターネット経由でサービスとして提供し、ユーザーはWebブラウザ等でいつでも利用できるクラウドサービスの提供形態である","SaaSはインターネット接続がなくても利用できるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:2,explanation:"SaaS（Software as a Service）は、ソフトウェアをインターネット経由でサービスとして提供するクラウドサービスモデルです。Google Workspace・Microsoft 365・Salesforceなどが代表例で、ユーザーはインストール不要でブラウザからアクセスできます。IaaS（インフラ）・PaaS（プラットフォーム）とともにクラウドの3形態の一つです。"},
+{id:85,category:"マネジメント系",question:"情報システムの可用性（Availability）の説明として、最も適切なものはどれか。",choices:["情報が許可された人のみにアクセスできる性質のことであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","情報が改ざんされておらず正確な状態を保つ性質のことであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","システムが必要なときに利用可能な状態にある割合・能力のことであり、稼働率で表されることが多い","システムの処理速度のことであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である"],answer:2,explanation:"情報セキュリティの3要素（CIA）のうち、可用性（Availability）は必要なときにシステム・データが利用可能な状態にある性質です。稼働率＝稼働時間÷（稼働時間＋停止時間）で表されます。機密性（Confidentiality）・完全性（Integrity）とともに情報セキュリティの基本要件です。"},
+{id:86,category:"マネジメント系",question:"RPA（Robotic Process Automation）の説明として、最も適切なものはどれか。",choices:["ルールベースの反復的なデスクワーク（データ入力・転記・集計など）をソフトウェアロボットが自動的に実行する技術である","RPAは物理的なロボットアームを制御する技術であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","RPAはAIが自律的に判断して業務を遂行する技術であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","RPAは製造ラインの自動化のみに使用されるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:0,explanation:"RPA（Robotic Process Automation）は、人間がパソコン上で行うクリック・入力・コピー&ペースト・データ転記などの反復的な定型業務を、ソフトウェアロボット（ボット）が自動的に実行する技術です。バックオフィス業務の効率化・コスト削減・ヒューマンエラー削減に効果があります。"},
+{id:87,category:"マネジメント系",question:"情報システムのBCP（事業継続計画）における目標復旧時間（RTO）の説明として、最も適切なものはどれか。",choices:["システム障害・災害発生後にシステムを復旧させるまでの目標時間である","直前のバックアップデータからどの時点まで復旧できるかの目標時点である","システムの年間稼働率の目標値であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","システム開発の完了目標日程のことであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:0,explanation:"RTO（Recovery Time Objective：目標復旧時間）は、障害・災害発生からシステムが利用可能になるまでの目標時間です。「4時間以内に復旧」などと設定されます。RPO（Recovery Point Objective：目標復旧時点）と合わせてBCPの重要な指標で、「どのデータ時点まで戻るか」を示します。"},
+{id:88,category:"マネジメント系",question:"変更管理（チェンジマネジメント）の目的として、最も適切なものはどれか。",choices:["変更管理はシステム開発中の仕様変更の禁止を指すという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","変更管理はサービスの廃止手続きのみを指すというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","ITシステムや業務プロセスへの変更を計画的に管理し、変更に伴うリスクを最小化しながらサービスへの影響を抑えることである","変更管理は人事異動の管理を指すというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:2,explanation:"変更管理（チェンジマネジメント）は、ITILのサービス移行プロセスのひとつで、システム・インフラ・サービスへの変更を計画・承認・実施・評価・記録することで、変更に伴うリスクと障害を最小化し、サービス品質を維持するための管理プロセスです。"},
+{id:89,category:"マネジメント系",question:"コンティンジェンシー計画（緊急時対応計画）の説明として、最も適切なものはどれか。",choices:["コンティンジェンシー計画は通常時の業務手順書のことであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","コンティンジェンシー計画はプロジェクトの初期計画書のことであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","予期しない事態（システム障害・自然災害・セキュリティインシデントなど）が発生した際の具体的な対応手順を事前に定めた計画である","コンティンジェンシー計画は財務上の節税計画のことであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:2,explanation:"コンティンジェンシー計画（Contingency Plan）は、システム障害・サイバー攻撃・自然災害など予期しないリスク事象が発生した際に、迅速・適切に対応するための具体的な手順・体制を事前に定めた緊急時対応計画です。BCPの一部として位置づけられます。"},
+{id:90,category:"マネジメント系",question:"CMMI（能力成熟度モデル統合）の説明として、最も適切なものはどれか。",choices:["CMMIはプロジェクトの予算管理モデルであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","CMMIはセキュリティの脅威を分類するフレームワークである","CMMIは個人のITスキルレベルを測定するテストであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","組織のソフトウェア開発プロセスの成熟度を5段階で評価・改善するためのモデルである"],answer:3,explanation:"CMMI（Capability Maturity Model Integration）は、組織のプロセス改善能力を5段階（レベル1：初期→レベル2：管理された→レベル3：定義された→レベル4：定量的に管理された→レベル5：最適化している）で評価するモデルです。ソフトウェア開発品質の向上・リスク管理に活用されます。"},
+{id:91,category:"マネジメント系",question:"PMBOK（Project Management Body of Knowledge）の説明として、最も適切なものはどれか。",choices:["PMBOKは日本独自のプロジェクト管理手法であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","PMI（プロジェクトマネジメント協会）が策定したプロジェクトマネジメントの知識体系・標準ガイドである","PMBOKはITプロジェクトにのみ適用できるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","PMBOKはプロジェクト会計専用のガイドラインであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:1,explanation:"PMBOK（Project Management Body of Knowledge）は、米国PMI（Project Management Institute）が策定したプロジェクトマネジメントの知識体系ガイドです。スコープ・スケジュール・コスト・品質・リスクなど10の知識エリアと5つのプロセス群で構成され、PMP資格の基礎となっています。"},
+{id:92,category:"マネジメント系",question:"インシデント管理の目的として、最も適切なものはどれか。",choices:["インシデント管理は障害の根本原因を特定・解決する活動であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","発生したITサービスの障害・問題に対して、できるだけ早くサービスを正常な状態に回復することである","インシデント管理は新しいサービスを設計・導入するプロセスであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","インシデント管理はユーザーへの新機能の説明活動であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:1,explanation:"インシデント管理（Incident Management）はITILのサービス運用プロセスで、ITサービスの障害・問題（インシデント）が発生した際に、できる限り早くサービスを復旧させることを目的とします。根本原因の特定・恒久対策は「問題管理（Problem Management）」が担当します。"},
+{id:93,category:"マネジメント系",question:"ソフトウェアの品質特性を定めたISO/IEC 25010（SQuaRE）の主要な品質特性として、適切なものを含む組み合わせはどれか。",choices:["価格・デザイン・納期・コンプライアンスという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","ユーザー数・稼働率・開発工数・バグ数という考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","機能適合性・性能効率性・互換性・使用性・信頼性・セキュリティ・保守性・移植性","データ量・処理速度・ストレージ容量・ネットワーク帯域という概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:2,explanation:"ISO/IEC 25010は、ソフトウェアの品質モデルを規定した国際標準で、製品品質の特性として①機能適合性②性能効率性③互換性④使用性⑤信頼性⑥セキュリティ⑦保守性⑧移植性の8特性を定義しています。ソフトウェア評価・品質管理の基準として活用されます。"},
+{id:94,category:"マネジメント系",question:"要件定義において「機能要件」と「非機能要件」の説明として、最も適切なものはどれか。",choices:["機能要件と非機能要件は同じ意味であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","非機能要件はシステム開発後に定義すればよいという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","機能要件はシステムが「何をするか」を定義し、非機能要件はシステムが「どのように動作するか」（性能・セキュリティ・可用性など）を定義する","非機能要件はユーザーには関係なく開発者だけが定義するという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:2,explanation:"機能要件は「システムが実現すべき機能・処理内容」（例：ログイン機能・データ検索機能）を定義します。非機能要件は機能以外の品質・制約（例：応答時間3秒以内・99.9%の可用性・セキュリティ要件）を定義します。両者を要件定義段階で明確にすることがプロジェクト成功の鍵です。"},
+{id:95,category:"マネジメント系",question:"ユーザー受入テスト（UAT：User Acceptance Testing）の説明として、最も適切なものはどれか。",choices:["UATは開発者が行う単体テストのことであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","UATはシステムの負荷・性能を計測するテストであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","UATはセキュリティ脆弱性を検査するテストであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","開発したシステムが実際の業務で使用できるかを、エンドユーザーが実業務に即した環境・シナリオで確認するテストである"],answer:3,explanation:"UAT（User Acceptance Testing：ユーザー受入テスト）は、開発完了後にシステムのエンドユーザー（発注者・業務担当者）が実際の業務シナリオに基づいて動作確認を行い、要件を満たしているかを検証するテストです。システムリリース前の最終確認として実施されます。"},
+{id:96,category:"マネジメント系",question:"ソフトウェア開発における「リファクタリング」の説明として、最も適切なものはどれか。",choices:["リファクタリングは新機能を追加する作業であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","ソフトウェアの外部から見た動作・機能を変えずに、内部のコード構造を改善・整理することである","リファクタリングは動作しているコードを廃棄して作り直すことである","リファクタリングはテストコードの削除作業のことであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:1,explanation:"リファクタリング（Refactoring）は、ソフトウェアの外部動作・機能を変えずに、コードの可読性・保守性・拡張性を高めるために内部構造を整理・改善する作業です。テスト駆動開発（TDD）のサイクルやアジャイル開発において重要な実践の一つです。"},
+{id:97,category:"マネジメント系",question:"情報システムの調達における「RFP（提案依頼書）」の説明として、最も適切なものはどれか。",choices:["発注者がベンダーに対してシステムの要件・条件・評価基準を示し、具体的な提案を求める文書である","RFPはベンダーが発注者に提出する見積書のことであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","RFPはシステムの設計書のことであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","RFPはシステム開発完了後に作成する検収書のことであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である"],answer:0,explanation:"RFP（Request for Proposal：提案依頼書）は、システム導入・開発を検討している発注者（ユーザー企業）が、複数のITベンダーに対してシステムの要件・現状課題・評価基準・スケジュール等を提示し、具体的な提案・見積もりを求める文書です。適切なベンダー選定のために重要な文書です。"},
+{id:98,category:"マネジメント系",question:"プロジェクトマネジメントにおける「コンフィギュレーション管理（構成管理）」の目的として、最も適切なものはどれか。",choices:["コンフィギュレーション管理はハードウェアの物理的な配置管理のことであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","コンフィギュレーション管理はプロジェクト予算の管理のことであるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","コンフィギュレーション管理はチームメンバーの役割管理のことであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","ソフトウェアやシステムの構成要素（ソースコード・設計書・仕様書など）のバージョンや変更履歴を管理し、整合性を維持することである"],answer:3,explanation:"コンフィギュレーション管理（構成管理）は、ソフトウェア開発成果物（ソースコード・設計書・テスト仕様書・実行環境設定など）の版数（バージョン）・変更履歴・各成果物間の関係を管理することで、整合性の維持とトレーサビリティの確保を目的とします。Gitなどのバージョン管理ツールが代表例です。"},
+{id:99,category:"マネジメント系",question:"アウトソーシングとオフショア開発の説明として、最も適切なものはどれか。",choices:["アウトソーシングとオフショア開発は全く同じ意味であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","オフショア開発は国内の別会社に委託することを指すという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","アウトソーシングは業務を外部委託することで、オフショア開発は特に海外（人件費の低い国）の企業へシステム開発を委託する形態である","アウトソーシングはコスト削減効果がなく、品質向上のみを目的とするという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:2,explanation:"アウトソーシングは、自社の業務の一部または全部を外部の専門企業に委託することです。オフショア開発は、アウトソーシングの一形態で、特に人件費の低いインド・中国・ベトナムなど海外の企業にシステム開発を委託することです。コスト削減が主な目的ですが、品質管理・コミュニケーション・時差等の課題もあります。"},
+{id:100,category:"マネジメント系",question:"システム開発における「フェールセーフ」の説明として、最も適切なものはどれか。",choices:["フェールセーフは障害を完全に発生させないための予防技術のことであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","システムに障害や故障が発生した際に、安全側（被害が最小限になる方向）に動作するよう設計する考え方である","フェールセーフは障害後に素早く復旧するための技術のことであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","フェールセーフは全ての操作を禁止するロック機能のことであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:1,explanation:"フェールセーフ（Fail Safe）は、システム・機器が故障・障害した際に、安全な状態に自動的に移行するよう設計する概念です。例えば、信号機が故障した際に全方向を赤にする、原子炉の制御棒が電源断で自動挿入されるなどが該当します。フォールトトレランス（障害が起きても動作継続）とは異なります。"},
+{id:101,category:"マネジメント系",question:"ソフトウェア開発の品質管理手法のひとつ「コードレビュー」の目的として、最も適切なものはどれか。",choices:["コードレビューはソフトウェアのパフォーマンスを計測するテストのことであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","コードレビューは完成したシステムをユーザーが評価する作業のことであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","コードレビューはソースコードをバックアップする作業のことであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","開発者以外の目でソースコードを確認し、バグ・セキュリティ脆弱性・コーディング規約違反・設計上の問題を早期に発見・修正することである"],answer:3,explanation:"コードレビューは、作成者とは別の開発者（またはチーム）がソースコードを読み、バグ・ロジックのミス・セキュリティ問題・可読性の低いコード・コーディング規約違反などを指摘・修正するプロセスです。テスト工程より前段階でバグを発見できるため修正コストが低く、チーム全体のコード品質向上・知識共有にも効果があります。"},
+{id:102,category:"マネジメント系",question:"プロジェクト管理における「コストマネジメント」の活動として、最も適切なものはどれか。",choices:["プロジェクトを承認された予算内で完了させるために、コストの見積もり・予算設定・コスト管理・コスト予測を行う活動である","コストマネジメントはプロジェクトの人員配置のみを管理する活動であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","コストマネジメントはシステムの処理コストを最適化するプログラミング技法のことである","コストマネジメントは完成後の保守費用のみを管理する活動であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である"],answer:0,explanation:"プロジェクトマネジメントにおけるコストマネジメントは、PMBOKの知識エリアのひとつで、①コストの見積もり（各作業の費用を推算）、②予算の設定（総コストを時間軸で配分）、③コストのコントロール（実績と計画の差異分析・EVM：アーンドバリューマネジメントを活用）の活動で構成されます。"},
+{id:103,category:"マネジメント系",question:"「ITIL」のサービスデスク機能の説明として、最も適切なものはどれか。",choices:["ユーザーからのITサービスに関する問い合わせ・障害報告・サービスリクエストを一元的に受け付け、対応する窓口機能である","サービスデスクはシステムの設計・開発を行う部門のことであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","サービスデスクはサービスの廃止手続きを専門に行う部門のことであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","サービスデスクはサービスの費用請求のみを担当する部門のことであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:0,explanation:"ITILのサービスデスク（ヘルプデスク）は、ユーザーとITサービス管理組織の間の単一の連絡窓口（SPOC：Single Point of Contact）です。インシデント（障害）の受付・記録・初期対応・エスカレーション、サービスリクエスト（パスワードリセット・アカウント作成など）への対応、ユーザーへのステータス通知などを担当します。"},
+{id:104,category:"マネジメント系",question:"「問題管理（Problem Management）」の目的として、最も適切なものはどれか。",choices:["問題管理はインシデント発生後に素早くサービスを復旧させることを目的とするという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","問題管理はユーザーからの新機能要求を管理することであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","問題管理はプロジェクトのコストを管理することであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","インシデント（障害）の根本原因を特定・排除することで、同様のインシデントの再発を防止し、サービスの安定性を向上させることである"],answer:3,explanation:"ITILにおける問題管理（Problem Management）は、インシデントの根本原因（Problem）を調査・特定・排除することで、同じインシデントの再発を防ぐことを目的とします。インシデント管理が「素早い復旧」を目的とするのに対し、問題管理は「恒久的な解決・再発防止」を目的とします。既知の誤り（Known Error）の文書化も重要な活動です。"},
+{id:105,category:"マネジメント系",question:"「アジャイルマニフェスト」で宣言されている4つの価値として、最も適切な組み合わせはどれか。",choices:["コストよりも品質を、速度よりも安全性を、個人よりも組織を、変化よりも安定性をという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","プロセスやツールよりも個人と対話を、包括的なドキュメントよりも動くソフトウェアを、契約交渉よりも顧客との協調を、計画に従うことよりも変化への対応を","厳格なプロセスよりも詳細な仕様書を、自動化よりも手動テストをというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","包括的なドキュメントよりもプロセスを、顧客よりも契約をというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:1,explanation:"2001年に発表されたアジャイルソフトウェア開発宣言（アジャイルマニフェスト）は、①プロセス・ツールよりも個人と対話、②包括的なドキュメントよりも動くソフトウェア、③契約交渉よりも顧客との協調、④計画に従うことよりも変化への対応、という4つの価値を宣言しています。これはウォーターフォール的な重厚な開発手法への反省から生まれました。"},
+{id:106,category:"マネジメント系",question:"「情報セキュリティポリシー」の説明として、最も適切なものはどれか。",choices:["情報セキュリティポリシーはIT部門のみが策定し遵守する規則であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","組織が情報セキュリティを確保するための基本方針・管理基準・対策実施手順をまとめた文書体系であり、全従業員が遵守すべきルールを定めたものである","情報セキュリティポリシーはウイルス対策ソフトの設定仕様書のことであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","情報セキュリティポリシーは一度作成したら変更する必要がない文書であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:1,explanation:"情報セキュリティポリシーは、①基本方針（組織の情報セキュリティに対する基本的な考え方・目標）、②対策基準（基本方針を実現するための具体的な管理項目・基準）、③実施手順（対策基準を実施するための具体的な手順書）の3階層で構成されます。全従業員への周知・定期的な見直しが必要で、ISMS（ISO/IEC 27001）の重要要素です。"},
+{id:107,category:"マネジメント系",question:"「プロジェクト憲章（プロジェクト定義書）」の役割として、最も適切なものはどれか。",choices:["プロジェクト憲章はプロジェクト完了後に作成する報告書のことであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","プロジェクト憲章はソフトウェアの設計仕様書のことであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","プロジェクトを正式に承認し、プロジェクトマネージャーに権限を付与する文書で、プロジェクトの目的・スコープ・主要なステークホルダー・制約条件などを記述したものである","プロジェクト憲章はプロジェクトメンバーの給与規定のことであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:2,explanation:"プロジェクト憲章（Project Charter）はPMBOKで定義されるプロジェクト開始時に作成される文書で、プロジェクトを正式に承認し、プロジェクトマネージャーに必要な権限を付与します。記載内容には、プロジェクトの目的・背景・スコープの概要・主要な成果物・期間・予算・ステークホルダー・制約条件・前提条件などが含まれます。"},
+{id:108,category:"マネジメント系",question:"ソフトウェア品質保証の「ホワイトボックステスト」と「ブラックボックステスト」の違いとして、最も適切なものはどれか。",choices:["ホワイトボックステストはユーザーが実施するテストで、ブラックボックステストは開発者が実施するテストであるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","ブラックボックステストはコードのカバレッジを計測するテストであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","ホワイトボックステストはプログラムの内部構造（ロジック・コード）を参照して行うテストで、ブラックボックステストは内部構造を参照せず入出力の仕様から行うテストである","ホワイトボックステストとブラックボックステストは同じ手法の別名であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である"],answer:2,explanation:"ホワイトボックステスト（構造テスト）はプログラムの内部コード・ロジック・分岐条件を把握した上で行うテストです。ステートメントカバレッジ・分岐カバレッジ・パスカバレッジなどの観点でテストケースを作成します。ブラックボックステスト（機能テスト）は内部構造を考慮せず、仕様書に基づいて入力と期待される出力を検証するテストです。"},
+{id:109,category:"マネジメント系",question:"「システム移行」の手法のうち「並行移行（並行稼働）」の説明として、最も適切なものはどれか。",choices:["並行移行は新システムだけを起動し、旧システムを即時に停止する手法であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","並行移行は段階的に一部のユーザーから新システムに移行していく手法であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","並行移行はシステムを一時停止してデータ移行する手法のことであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","新旧システムを一定期間同時に稼働させ、結果を照合しながら新システムの正常稼働を確認後に旧システムを停止する移行手法である"],answer:3,explanation:"システム移行手法には、①一斉移行（カットオーバー：旧システムを停止して一括移行、リスク高・移行期間短）、②並行移行（新旧を同時稼働・比較検証後に旧停止、リスク低・コスト高）、③段階移行（機能・部署・地域を段階的に移行）などがあります。並行移行はリスクが低く業務への影響を最小化できますが、両システムの維持コストがかかります。"},
+{id:110,category:"マネジメント系",question:"ITサービスマネジメントにおける「PDCA」を活用した「継続的サービス改善（CSI）」の説明として、最も適切なものはどれか。",choices:["継続的サービス改善はシステムの初期構築のみに適用されるプロセスであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","継続的サービス改善はコスト削減のみを目的とした活動であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","ITサービスの品質向上のために、サービスの指標を測定し、問題点を分析し、改善策を実施し、効果を評価するサイクルを継続的に繰り返すITILのプロセスである","継続的サービス改善は年1回の定期的な見直しのみを行う活動であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:2,explanation:"ITIL v3の継続的サービス改善（CSI：Continual Service Improvement）は、ITサービスのプロセス・サービス・ツールを継続的に評価・改善するためのアプローチです。7ステップの改善プロセス（測定すべき指標の定義→測定→データ収集→処理→分析→提示→改善策の実施）とPDCAサイクルを組み合わせて活用します。"},
+{id:111,category:"テクノロジ系",question:"2進数の「1010」を10進数に変換した結果として、正しいものはどれか。",choices:["8というアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","12","16","10"],answer:3,explanation:"2進数1010を10進数に変換します。各桁の位置の重みは右から2⁰=1、2¹=2、2²=4、2³=8です。1×8＋0×4＋1×2＋0×1＝8＋0＋2＋0＝10になります。"},
+{id:112,category:"テクノロジ系",question:"CPU（中央処理装置）の主な役割として、最も適切なものはどれか。",choices:["データを長期間保存する記憶装置であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","画像・映像の処理を専門的に行う装置であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","プログラムの命令を解読・実行し、データの演算処理と各装置の制御を行う装置である","ネットワーク通信を管理する装置であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:2,explanation:"CPU（Central Processing Unit：中央処理装置）は、コンピュータの「頭脳」に相当し、プログラムの命令を順番に読み取り（フェッチ）・解読（デコード）・実行（エグゼキュート）するとともに、メモリや入出力装置などの制御を行います。演算装置（ALU）と制御装置から構成されます。"},
+{id:113,category:"テクノロジ系",question:"RAMとROMの違いについて、最も適切な説明はどれか。",choices:["RAMは電源を切るとデータが消える揮発性メモリで、ROMは電源を切ってもデータが保持される不揮発性メモリである","RAMは読み取り専用でROMは書き込み可能なメモリであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","RAMはハードディスクの一種でROMは光ディスクの一種であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","RAMとROMは全く同じ機能を持つというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:0,explanation:"RAM（Random Access Memory）は、電源オフでデータが消える揮発性メモリで、プログラムの実行やデータの一時保存に使用されます（主記憶装置）。ROM（Read Only Memory）は、電源オフでもデータが保持される不揮発性メモリで、BIOSやファームウェアの格納に使用されます。"},
+{id:114,category:"テクノロジ系",question:"ハードディスク（HDD）とSSD（Solid State Drive）の比較として、最も適切なものはどれか。",choices:["SSDはフラッシュメモリを使用するため、HDDより読み書き速度が速く、衝撃に強い","HDDはSSDより読み書き速度が速いという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","SSDには磁気ディスクが使用されているという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","HDDはSSDより消費電力が少ないという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる"],answer:0,explanation:"SSD（Solid State Drive）はフラッシュメモリを使用した記憶装置で、HDD（Hard Disk Drive：磁気ディスクと機械的な読み取りヘッド）と比較して、読み書き速度が数倍〜10倍以上速く、物理的な可動部品がないため衝撃に強く、消費電力も少ない特徴があります。ただし同容量ではコストが高い場合が多いです。"},
+{id:115,category:"テクノロジ系",question:"OSI参照モデルの第3層（ネットワーク層）の主な役割として、最も適切なものはどれか。",choices:["MACアドレスを使ったフレームの転送を行う","通信アプリケーションへのインターフェースを提供する","ビット列の物理的な伝送を行うという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","IPアドレスを使ったパケットのルーティング（経路制御）を行う"],answer:3,explanation:"OSI参照モデルの第3層（ネットワーク層）は、IPアドレスを使ってパケットを宛先まで届けるためのルーティング（経路制御）を担当します。ルータがこの層のデバイスです。第2層（データリンク層）はMACアドレスを使ったフレーム転送、第1層（物理層）はビットの物理的伝送を担当します。"},
+{id:116,category:"テクノロジ系",question:"TCP/IPにおけるIPアドレス「192.168.1.0/24」のサブネットマスクとして、正しいものはどれか。",choices:["255.255.0.0","255.0.0.0という説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","255.255.255.0","255.255.255.128"],answer:2,explanation:"CIDR表記「/24」はネットワーク部が上位24ビットであることを示します。32ビット中24ビットが1のサブネットマスクは「11111111.11111111.11111111.00000000」となり、10進数では「255.255.255.0」です。このサブネットでは最大256個（2⁸）のIPアドレスが使用可能です。"},
+{id:117,category:"テクノロジ系",question:"HTTPSとHTTPの違いとして、最も適切な説明はどれか。",choices:["HTTPSはHTTPより通信速度が必ず速いという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","HTTPはHTTPSより安全な通信プロトコルであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","HTTPSはSSL/TLSによる暗号化通信を行うため、HTTPより通信内容の盗聴・改ざんを防止できる","HTTPSとHTTPはポート番号が同じであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:2,explanation:"HTTP（HyperText Transfer Protocol）は平文で通信するため、盗聴・改ざんのリスクがあります。HTTPS（HTTP Secure）はHTTPにSSL/TLS（暗号化プロトコル）を組み合わせることで通信を暗号化し、データの機密性・完全性・サーバー認証を確保します。HTTPは通常ポート80番、HTTPSはポート443番を使用します。"},
+{id:118,category:"テクノロジ系",question:"DNSサーバーの主な役割として、最も適切なものはどれか。",choices:["メールの送受信を管理するサーバーであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","WebページのHTMLファイルを配信するサーバーであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","ドメイン名（例：www.example.com）をIPアドレスに変換する名前解決サービスを提供する","ネットワーク内のIPアドレスを自動的に割り当てるサーバーであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:2,explanation:"DNS（Domain Name System）サーバーは、人間が読みやすいドメイン名（www.example.com）をコンピュータが処理するIPアドレス（例：192.0.2.1）に変換する「名前解決」サービスを提供します。メール送受信はMTAサーバー、Web配信はWebサーバー、IP自動割り当てはDHCPサーバーが担当します。"},
+{id:119,category:"テクノロジ系",question:"ファイアウォールの主な機能として、最も適切なものはどれか。",choices:["コンピュータウイルスを検出・駆除する機能であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","暗号化通信を復号して内容を確認する機能のみを持つというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","あらかじめ設定したルールに基づき、通信パケットをフィルタリングして不正アクセスや不審な通信を遮断する機能である","ネットワーク内のIPアドレスを管理する機能であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる"],answer:2,explanation:"ファイアウォールは、ネットワークの境界に設置し、IPアドレス・ポート番号・プロトコルなどに基づいたルール（ポリシー）によって通信パケットを許可・遮断するセキュリティ機器・ソフトウェアです。外部からの不正アクセス防止に基本的な役割を果たしますが、ウイルス検出はウイルス対策ソフトが担当します。"},
+{id:120,category:"テクノロジ系",question:"暗号化方式のうち「公開鍵暗号方式」の特徴として、最も適切なものはどれか。",choices:["暗号化に使う公開鍵と復号に使う秘密鍵の2つの鍵を使用し、公開鍵は誰でも取得できるが秘密鍵は所有者のみが管理する方式である","公開鍵と秘密鍵は同じ鍵を使用する方式であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","公開鍵暗号方式は共通鍵暗号方式より処理速度が速いという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","公開鍵は暗号化と復号の両方に使用できるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:0,explanation:"公開鍵暗号方式（非対称暗号）は、数学的に関連した2つの鍵（公開鍵・秘密鍵のペア）を使用します。送信者は受信者の公開鍵で暗号化し、受信者は自分の秘密鍵で復号します。鍵配送問題を解決できますが、共通鍵暗号方式より処理速度は遅いため、実際にはハイブリッド方式で使われることが多いです。"},
+{id:121,category:"テクノロジ系",question:"SQLのSELECT文において、重複する行を除いて結果を取得するためのキーワードとして、正しいものはどれか。",choices:["UNIQUE","DISTINCT","EXCEPT","FILTER"],answer:1,explanation:"SELECT文でDISTINCTを指定すると、結果セットから重複する行を除いて取得できます。例：SELECT DISTINCT 都道府県 FROM 顧客テーブル。UNIQUEは制約の指定に使用し、EXCEPTは差集合演算、FILTERはSQLには存在しないキーワードです。"},
+{id:122,category:"テクノロジ系",question:"リレーショナルデータベースにおける「主キー（Primary Key）」の説明として、最も適切なものはどれか。",choices:["主キーは重複した値を持つことができるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","テーブル内の各行（レコード）を一意に識別するためのカラム（列）または複数カラムの組み合わせであり、NULL値を許容しない","主キーは1つのテーブルに複数設定できるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","主キーはNULL値を許容するという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる"],answer:1,explanation:"主キー（Primary Key）はテーブルの各レコードを一意に識別するための列（または複数列の組み合わせ）です。主キーには①一意性（重複不可）②非NULL（NULL禁止）の2つの制約があります。1つのテーブルに主キーは1つのみ設定できます（複合主キーは複数列の組み合わせで1つ）。"},
+{id:123,category:"テクノロジ系",question:"データベースの「正規化」の目的として、最も適切なものはどれか。",choices:["データの冗長性を排除し、更新時の不整合を防ぐためにテーブル構造を整理することである","データの処理速度を最大化するためにデータを圧縮することである","データを暗号化してセキュリティを高めることであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","データのバックアップを自動化することであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:0,explanation:"データベースの正規化（Normalization）は、データの冗長性（同じデータの重複）を排除し、データの整合性を維持するためにテーブル構造を段階的に整理する設計手法です。第1正規形〜第3正規形（以上）のステップで行われます。更新時の不整合（更新異常・挿入異常・削除異常）を防ぐことが主な目的です。"},
+{id:124,category:"テクノロジ系",question:"NoSQLデータベースの特徴として、最も適切なものはどれか。",choices:["NoSQLはSQLを使用できないため、データの検索が全くできないという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","固定スキーマに縛られず、大量データの高速処理や柔軟なデータ構造に対応できるデータベースであり、ビッグデータ処理やWebアプリケーションで多く使用される","NoSQLはリレーショナルデータベースより常にデータの整合性が高いという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","NoSQLはトランザクション処理が不要なシステムにのみ使用できるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:1,explanation:"NoSQL（Not only SQL）データベースは、RDBの固定スキーマ・テーブル構造に縛られず、キーバリュー型・ドキュメント型・カラム型・グラフ型など様々なデータモデルをサポートします。MongoDB・Redis・Cassandraなどが代表例で、大量データの水平スケーリング・柔軟なスキーマ変更が可能です。"},
+{id:125,category:"テクノロジ系",question:"OSS（オープンソースソフトウェア）の説明として、最も適切なものはどれか。",choices:["OSSは完全に無制限で利用でき、商用利用も常に自由であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","OSSはセキュリティが保証されており、脆弱性は存在しないという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","OSSは個人利用に限定され、企業での利用は禁止されているという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","ソースコードが公開されており、無償で利用・改変・再配布できるソフトウェアであるが、利用条件はライセンスによって異なる"],answer:3,explanation:"OSS（Open Source Software）はソースコードが公開され、定められたライセンス条件のもとで自由に利用・改変・再配布が可能なソフトウェアです。ただしGPL・MIT・Apache等ライセンスによって条件が異なります。Linux・Apache・MySQLなどが代表例で、企業利用も広く行われています。"},
+{id:126,category:"テクノロジ系",question:"機械学習における「教師あり学習」の説明として、最も適切なものはどれか。",choices:["正解データなしにデータの構造やパターンを自律的に学習させる手法であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","人間の教師が直接コンピュータに操作方法を教える手法であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","正解データ（ラベル）が付いた学習データを用いて、入力と出力の対応関係をモデルに学習させる手法である","強化学習と全く同じ概念であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:2,explanation:"機械学習の教師あり学習（Supervised Learning）は、入力データと正解ラベルのペアからなる学習データを使って、入力から出力（正解）を予測するモデルを構築する手法です。スパムメール分類・画像認識・売上予測などに活用されます。対照的に教師なし学習はラベルなしでデータのパターンを発見します。"},
+{id:127,category:"テクノロジ系",question:"ディープラーニング（深層学習）の説明として、最も適切なものはどれか。",choices:["ディープラーニングは人間の手でルールを全て設定するAI技術であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","多層のニューラルネットワークを使用して、大量のデータから特徴を自動的に学習するAI技術であり、画像認識・音声認識・自然言語処理などで高い性能を発揮する","ディープラーニングは少量のデータで高精度な学習ができるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","ディープラーニングは計算資源をほとんど必要としないという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である"],answer:1,explanation:"ディープラーニング（Deep Learning：深層学習）は、人間の神経回路を模倣した多層のニューラルネットワークを使い、データから特徴や規則性を自動抽出・学習する機械学習の一手法です。膨大なデータとGPUによる大規模計算が必要ですが、画像認識・音声認識・自然言語処理で従来手法を大きく超える性能を発揮します。"},
+{id:128,category:"テクノロジ系",question:"情報セキュリティにおける「マルウェア」の説明として、最も適切なものはどれか。",choices:["マルウェアはメールの迷惑メール（スパム）のみを指すという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","コンピュータウイルス・ワーム・トロイの木馬・ランサムウェアなど、悪意を持って設計されたソフトウェアの総称である","マルウェアは不正なWebサイトのみから感染するというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","マルウェアはデータを暗号化するソフトウェアの総称であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:1,explanation:"マルウェア（Malware）は、Malicious（悪意のある）とSoftware（ソフトウェア）を組み合わせた造語で、コンピュータに損害を与えることを目的として作成されたプログラムの総称です。ウイルス・ワーム・トロイの木馬・スパイウェア・ランサムウェア・アドウェアなどが含まれます。"},
+{id:129,category:"テクノロジ系",question:"ランサムウェア（Ransomware）の説明として、最も適切なものはどれか。",choices:["ランサムウェアはネットワーク接続なしに拡散するウイルスであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","感染したコンピュータ内のファイルを暗号化して利用不能にし、復号するための身代金（Ransom）を要求するマルウェアである","ランサムウェアはコンピュータの動作を遅くするだけで、データは破壊しないという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","ランサムウェアへの感染はバックアップがあれば完全に防止できるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である"],answer:1,explanation:"ランサムウェアは、感染したPCやサーバーのファイルを強力な暗号化アルゴリズムで暗号化し、復号キーと引き換えに金銭（暗号資産）を要求するマルウェアです。企業・病院・行政機関への被害が深刻で、定期的なオフラインバックアップ・多層防御・EDR導入などの対策が重要です。"},
+{id:130,category:"テクノロジ系",question:"フィッシング（Phishing）攻撃の説明として、最も適切なものはどれか。",choices:["フィッシングはネットワーク上のパケットを傍受する攻撃であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","銀行・EC サイトなどの正規サービスを装った偽メール・偽サイトに誘導し、IDやパスワード・クレジットカード情報などを騙し取る攻撃手法である","フィッシングはシステムの脆弱性を直接悪用する攻撃手法であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","フィッシングはコンピュータウイルスを添付ファイルで送る攻撃のみを指すという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である"],answer:1,explanation:"フィッシング（Phishing）は、銀行・通販サイト・SNSなど実在する組織を装った偽のメール・SMSでユーザーを偽サイトに誘導し、ログイン情報・クレジットカード番号・個人情報などを騙し取るソーシャルエンジニアリング攻撃です。送信元メールアドレス・URLの確認、多要素認証の利用が有効な対策です。"},
+{id:131,category:"テクノロジ系",question:"SQLインジェクション攻撃の説明として、最も適切なものはどれか。",choices:["SQLインジェクションはネットワーク上の通信を傍受する攻撃であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","Webアプリケーションの入力フォームなどに悪意のあるSQL文を埋め込み、データベースを不正に操作する攻撃手法である","SQLインジェクションはメールを使った詐欺攻撃であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","SQLインジェクションはDDoS攻撃の一種であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:1,explanation:"SQLインジェクションは、Webアプリケーションの入力値検証が不十分な場合に、悪意のあるSQL文を入力フィールドに埋め込むことで、データベースへの不正アクセス・データ窃取・改ざん・削除などを行う攻撃です。プレースホルダ（バインド変数）の使用・入力値の無害化（サニタイジング）が対策として有効です。"},
+{id:132,category:"テクノロジ系",question:"XSS（クロスサイトスクリプティング）攻撃の説明として、最も適切なものはどれか。",choices:["Webサイトの脆弱性を悪用して悪意のあるスクリプトを埋め込み、サイト訪問者のブラウザ上で実行させることでCookieの窃取や偽ページへの誘導を行う攻撃手法である","XSSはサーバーに大量のリクエストを送り付けてサービスを停止させる攻撃であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","XSSはデータベースへの不正アクセスを行う攻撃であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","XSSは無線LANの通信を傍受する攻撃であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である"],answer:0,explanation:"XSS（Cross-Site Scripting）は、WebサイトのHTML出力時にスクリプト（JavaScriptなど）が埋め込まれてしまう脆弱性を悪用します。攻撃者は悪意あるURLを被害者に踏ませ、被害者のブラウザ上でスクリプトを実行させ、セッションCookieの窃取・フィッシング誘導・マルウェア配布などを行います。出力時のエスケープ処理が主な対策です。"},
+{id:133,category:"テクノロジ系",question:"DoS攻撃・DDoS攻撃の説明として、最も適切なものはどれか。",choices:["DoS攻撃はデータを盗む攻撃で、DDoSはデータを改ざんする攻撃であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","大量のリクエストをサーバーに送り付けてサービスを利用不能にする攻撃で、DDoSは複数のコンピュータ（ボットネット）から一斉に行う分散型攻撃である","DoS攻撃はメールを使った詐欺攻撃であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","DDoSはDoSの略称で同じ意味であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:1,explanation:"DoS（Denial of Service）攻撃は、1台のコンピュータからサーバーに大量のリクエストや不正パケットを送り、正常なサービス提供を妨害する攻撃です。DDoS（Distributed DoS）攻撃は、多数のボット（マルウェア感染したPCなど）を使って分散した複数地点から一斉にDoS攻撃を行うため、対策が難しくなります。"},
+{id:134,category:"テクノロジ系",question:"多要素認証（MFA）の説明として、最も適切なものはどれか。",choices:["多要素認証は2つのパスワードを入力する認証方式であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","多要素認証は同じカテゴリの認証情報を複数使用することであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","「知識」（パスワードなど）・「所持」（スマートフォン・ICカードなど）・「生体」（指紋・顔認証など）のうち2つ以上の要素を組み合わせて本人確認を行う認証方式である","多要素認証はセキュリティが高すぎて利便性が著しく低下するため実用化されていないという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:2,explanation:"多要素認証（MFA：Multi-Factor Authentication）は、認証の3要素「①知識要素（パスワード・PINなど）」「②所持要素（スマートフォン・ICカード・トークンなど）」「③生体要素（指紋・顔・虹彩など）」のうち2つ以上を組み合わせた認証方式です。パスワード漏洩時の不正アクセスを防ぐ有効な対策です。"},
+{id:135,category:"テクノロジ系",question:"PKI（公開鍵基盤）における「デジタル証明書」の役割として、最も適切なものはどれか。",choices:["デジタル証明書はデータを暗号化するためのパスワードであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","デジタル証明書はWebサイトのデザインテンプレートのことであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","デジタル証明書は電子メールの添付ファイルの容量制限証明書であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","公開鍵とその所有者の身元情報を、認証機関（CA）が電子的に証明する文書であり、通信相手の正当性を確認するために使用される"],answer:3,explanation:"デジタル証明書（電子証明書）は、公開鍵とその所有者（個人・組織・サーバー）の情報を認証局（CA：Certification Authority）が電子署名で保証した電子文書です。HTTPS通信でのサーバー証明書（TLS証明書）や電子署名での個人認証に使用され、なりすまし防止・通信相手の正当性確認に役立ちます。"},
+{id:136,category:"テクノロジ系",question:"ハッシュ関数の特徴として、最も適切なものはどれか。",choices:["ハッシュ関数はデータを暗号化・復号するための関数であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","ハッシュ関数は同じ入力データに対して異なるハッシュ値を生成するというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","ハッシュ関数はデータを圧縮して保存するための関数であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","任意の長さのデータから固定長のハッシュ値（ダイジェスト）を生成し、ハッシュ値から元のデータを復元することが計算上困難な一方向性を持つ関数である"],answer:3,explanation:"ハッシュ関数は任意の長さのデータを固定長のハッシュ値（例：SHA-256は256ビット）に変換します。同じ入力には必ず同じハッシュ値が生成され（一意性）、ハッシュ値から元データを逆算することは計算上ほぼ不可能（一方向性）です。パスワードの安全な保存・デジタル署名・データ改ざん検知などに活用されます。"},
+{id:137,category:"テクノロジ系",question:"VPN（仮想私設網）の説明として、最も適切なものはどれか。",choices:["インターネットなどの公共ネットワーク上に暗号化された仮想的な専用回線を構築し、安全なリモートアクセスや拠点間通信を実現する技術である","VPNはプロバイダが提供する物理的な専用線のことであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","VPNを使用すると通信速度が必ず速くなるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","VPNは暗号化を行わない通信技術であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:0,explanation:"VPN（Virtual Private Network）は、インターネットなどの公共ネットワーク上にトンネリング技術と暗号化を組み合わせて仮想的な専用通信路を構築する技術です。テレワーク時の社内システムへの安全なリモートアクセスや、本支店間の安全な通信に広く利用されます。SSL-VPN・IPsec VPNなどの方式があります。"},
+{id:138,category:"テクノロジ系",question:"情報セキュリティの「脆弱性（セキュリティホール）」の説明として、最も適切なものはどれか。",choices:["脆弱性はハードウェアの物理的な破損のことであるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","脆弱性はパスワードが弱いことのみを指すという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","脆弱性が発見されたソフトウェアは直ちに使用停止しなければならないという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","ソフトウェアやシステムに存在する設計・実装上の欠陥や不備で、攻撃者に悪用されるとセキュリティ上の問題を引き起こす可能性がある弱点のことである"],answer:3,explanation:"脆弱性（Vulnerability）はソフトウェア・OS・ファームウェアなどに存在する設計・実装上の欠陥や不備です。攻撃者に悪用されるとシステム侵入・情報漏洩・サービス停止などを引き起こす可能性があります。開発者が修正プログラム（パッチ・セキュリティアップデート）を提供し、利用者が適切に適用することが対策の基本です。"},
+{id:139,category:"テクノロジ系",question:"HTTPS通信で使用されるTLS（Transport Layer Security）の主な役割として、最も適切なものはどれか。",choices:["TLSはデータの圧縮のみを行うプロトコルであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","TLSはURLの変換を行うプロトコルであるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","通信データの暗号化・通信相手の認証・データの改ざん検知の3つを同時に実現するプロトコルである","TLSはファイルの転送速度を向上させるプロトコルであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:2,explanation:"TLS（Transport Layer Security）はSSLの後継プロトコルで、①暗号化（通信内容の盗聴防止）、②認証（デジタル証明書によるサーバーの正当性確認）、③完全性（MACによるデータ改ざん検知）の3機能を提供します。Webブラウザのアドレスバーの鍵マークとhttps://はTLSが使われていることを示します。"},
+{id:140,category:"テクノロジ系",question:"WAF（Web Application Firewall）の説明として、最も適切なものはどれか。",choices:["WAFはネットワーク層のパケットフィルタリングのみを行う通常のファイアウォールであるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","Webアプリケーションに対するSQLインジェクション・XSS・CSRF などの攻撃を検知・遮断するセキュリティシステムである","WAFはウイルス対策ソフトウェアの一種であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","WAFはWebサーバーの負荷分散を行うシステムであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる"],answer:1,explanation:"WAF（Web Application Firewall）は、Webアプリケーションを対象とした攻撃（SQLインジェクション・XSS・CSRF・ディレクトリトラバーサルなど）をHTTPトラフィックの内容を分析して検知・遮断するセキュリティシステムです。通常のファイアウォールが対応しないアプリケーション層（L7）の攻撃に対応します。"},
+{id:141,category:"テクノロジ系",question:"AIの機械学習において「過学習（オーバーフィッティング）」の説明として、最も適切なものはどれか。",choices:["過学習はデータが多すぎる場合に学習が完了できない現象のことである","学習データに対して過度に適合しすぎた結果、未知のデータに対する汎化性能が低下する現象である","過学習はモデルの精度が向上し続ける理想的な状態のことであるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","過学習はGPUの計算能力が不足して学習が遅くなる現象であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない"],answer:1,explanation:"過学習（オーバーフィッティング）は、機械学習モデルが訓練データのノイズや細かいパターンまで学習しすぎてしまい、新しい未知データへの予測精度（汎化性能）が低下する問題です。データの分割（訓練・検証・テスト）、正則化、ドロップアウト、交差検証などの手法で対策します。"},
+{id:142,category:"テクノロジ系",question:"クラウドコンピューティングのIaaS（Infrastructure as a Service）の説明として、最も適切なものはどれか。",choices:["IaaSはソフトウェアをサービスとして提供する形態であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","IaaSではOSのインストール・設定は全てクラウド事業者が行うという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","IaaSは自社データセンターを指す用語であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","仮想サーバー・ストレージ・ネットワークなどのITインフラをインターネット経由でサービスとして提供する形態であり、OSの管理はユーザーが行う"],answer:3,explanation:"IaaS（Infrastructure as a Service）は、仮想マシン（CPU・メモリ）・ストレージ・ネットワークなどのITインフラをクラウド事業者が提供するモデルです。OSより上の層（OS設定・ミドルウェア・アプリケーション）の管理はユーザーが担当します。Amazon EC2・Google Compute Engineなどが代表例です。"},
+{id:143,category:"テクノロジ系",question:"コンテナ技術（Dockerなど）の特徴として、最も適切なものはどれか。",choices:["アプリケーションとその実行環境を軽量なコンテナにまとめることで、環境差異に関係なく一貫した動作を保証し、高速な起動・効率的なリソース利用を実現する技術である","コンテナはフルOSを含む仮想マシンと同一の技術であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","コンテナはハードウェアの仮想化技術であり、物理サーバーに直接インストールするというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","コンテナ技術は本番環境では使用できない開発専用の技術であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる"],answer:0,explanation:"コンテナ技術（代表的にDocker）は、アプリケーションとその依存ライブラリ・設定を1つのコンテナイメージにパッケージ化する技術です。仮想マシン（VM）と異なりゲストOSを含まないため、起動が数秒と高速でリソース効率が高いです。「開発環境と本番環境の差異によるトラブル」を解消し、Kubernetes等でオーケストレーションされます。"},
+{id:144,category:"テクノロジ系",question:"Wi-Fiのセキュリティ規格「WPA3」の特徴として、最も適切なものはどれか。",choices:["WPA2より強力な暗号化（192ビット以上）と、オープンネットワークでも個別暗号化（OWE）を提供するWi-Fi最新セキュリティ規格である","WPA3はWPA2より暗号化が弱いセキュリティ規格であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","WPA3はBluetoothの接続規格であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","WPA3は有線LANにのみ使用されるセキュリティ規格であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:0,explanation:"WPA3（Wi-Fi Protected Access 3）は2018年に策定されたWi-Fiの最新セキュリティ規格です。WPA2の脆弱性（KRACKs）を修正し、SAE（Simultaneous Authentication of Equals）による強力な認証、個別暗号化（OWE：Opportunistic Wireless Encryption）、前方秘匿性の確保などの機能を持ちます。"},
+{id:145,category:"テクノロジ系",question:"IPv4アドレスの枯渇問題への対策として導入されたIPv6の説明として、最も適切なものはどれか。",choices:["IPv6はIPv4より速度が低下する通信規格であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","128ビットのアドレス空間を持ち、約340澗（3.4×10³⁸）個のアドレスが利用可能であり、IPv4の32ビット（約43億個）の枯渇問題を解決する","IPv6はセキュリティ機能を省いた簡易版プロトコルであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","IPv6はWi-Fiのみで使用される通信規格であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:1,explanation:"IPv6は128ビットのアドレス空間を持ち、理論上約340澗個（3.4×10³⁸個）のIPアドレスが利用可能です。IPv4の32ビット（約43億個）のアドレス枯渇問題を根本的に解決します。IPv6はIPsec（セキュリティ機能）の標準サポート・マルチキャストの改善なども特徴で、現在IPv4との並行運用が進んでいます。"},
+{id:146,category:"テクノロジ系",question:"Webサービスの開発で広く使用される「REST（RESTful API）」の説明として、最も適切なものはどれか。",choices:["RESTはデータベースの設計手法であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","HTTP上でリソースをURLで表現し、GETやPOSTなどのHTTPメソッドを使って操作するWebサービスのアーキテクチャスタイルである","RESTは暗号化通信の一種であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","RESTはOSのファイル管理システムであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:1,explanation:"REST（Representational State Transfer）はWebサービスの設計スタイルで、①リソースをURL（URI）で表現、②HTTPメソッド（GET：取得、POST：作成、PUT：更新、DELETE：削除）でCRUD操作、③ステートレス（サーバーがセッション状態を保持しない）を原則とします。多くのWebAPIやマイクロサービスで採用されています。"},
+{id:147,category:"テクノロジ系",question:"アルゴリズムの計算量（時間複雑度）の表記「O(n)」の意味として、最も適切なものはどれか。",choices:["O(n)は処理時間が常に一定であることを示すという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","O(n)は処理時間が2のn乗で増加することを示すという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","入力データ量nに対して処理時間が線形（比例）で増加する計算量であることを示す","O(n)はアルゴリズムのメモリ使用量がゼロであることを示す"],answer:2,explanation:"O(n)（ビッグオー記法）はアルゴリズムの計算量オーダーを表す記法です。O(n)は入力サイズnに対して処理時間が比例して増加する「線形時間」を意味します。O(1)は定数時間（nに関わらず一定）、O(log n)は対数時間、O(n²)は二乗時間（入力が2倍で処理が4倍）です。"},
+{id:148,category:"テクノロジ系",question:"スタック（Stack）データ構造の特徴として、最も適切なものはどれか。",choices:["後から追加したデータが最初に取り出されるLIFO（Last In First Out：後入れ先出し）構造である","スタックは先に追加したデータが最初に取り出されるFIFO構造であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","スタックはデータを任意の位置に挿入・削除できる構造であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","スタックは二分木の一種であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる"],answer:0,explanation:"スタック（Stack）は、データの追加（プッシュ）と取り出し（ポップ）が一方の端（スタックトップ）でのみ行われるLIFO（後入れ先出し）のデータ構造です。関数の呼び出し管理・Webブラウザの戻る機能・数式の評価などに使われます。FIFO（先入れ先出し）はキュー（Queue）です。"},
+{id:149,category:"テクノロジ系",question:"二分探索（バイナリサーチ）の説明として、最も適切なものはどれか。",choices:["二分探索はソートされていないデータに対して使用できるアルゴリズムであるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","ソート済みのデータ列に対して、中央の値と探索値を比較して探索範囲を半分ずつ絞り込んでいく高効率な探索アルゴリズムである","二分探索は全データを順番に比較して探索するアルゴリズムであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","二分探索の計算量はO(n²)であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:1,explanation:"二分探索（Binary Search）は、ソート済みのデータ列に対して中央値と探索値を比較し、探索範囲を繰り返し半分に絞り込むアルゴリズムです。計算量はO(log n)で、全件を順に調べる線形探索O(n)より大幅に高速です。100万件のデータでも最大約20回の比較で探索できます。"},
+{id:150,category:"テクノロジ系",question:"オブジェクト指向プログラミングの「カプセル化」の説明として、最も適切なものはどれか。",choices:["オブジェクトのデータ（属性）と処理（メソッド）をひとまとめにして、外部からの直接アクセスを制限する概念である","カプセル化はクラスを継承することでコードを再利用する概念であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","カプセル化は同じ名前のメソッドを異なるオブジェクトが持てる概念であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","カプセル化はプログラムを小さな関数に分割する概念のことであるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:0,explanation:"カプセル化（Encapsulation）はオブジェクト指向の基本概念のひとつで、オブジェクトのデータ（フィールド・属性）と処理（メソッド）をひとまとめにし、アクセス修飾子（private・protectedなど）で外部からの直接アクセスを制限することです。データの保護・内部実装の隠蔽・インターフェースの明確化に役立ちます。"},
+{id:151,category:"テクノロジ系",question:"プログラミングの「デバッグ」の説明として、最も適切なものはどれか。",choices:["デバッグはプログラムの設計書を作成する作業のことである","デバッグはプログラムの処理速度を最適化する作業のみを指す","プログラムに含まれるバグ（誤り）を発見し、修正する作業のことである","デバッグは完成したプログラムを本番環境に展開する作業のことである"],answer:2,explanation:"デバッグ（Debug）は、プログラムの不具合（バグ：Bug）を特定・修正する作業です。デバッガツールを使ったブレークポイントの設定・変数値の確認・ステップ実行、ログ出力による原因特定、ユニットテストによる問題箇所の絞り込みなどの手法で行われます。バグの語源は、初期のコンピュータに実際の虫（Bug）が入り込んで誤動作を起こしたことに由来します。"},
+{id:152,category:"テクノロジ系",question:"文字コードの「UTF-8」の説明として、最も適切なものはどれか。",choices:["UTF-8は日本語の文字のみを扱える文字コードであるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","UTF-8は全ての文字を固定の4バイトで表現する文字コードであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","Unicode規格に基づく可変長の文字エンコーディングで、英数字は1バイト、日本語などは3バイトで表現し、世界中の文字を扱えるWebの標準文字コードである","UTF-8はShift-JISと全く同一の文字コードであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である"],answer:2,explanation:"UTF-8はUnicodeを実装したエンコーディング方式で、英数字・ASCII文字は1バイト、ラテン文字などは2バイト、日本語・中国語などは3バイト、絵文字等は4バイトで表現する可変長エンコーディングです。Webの標準文字コードとして国際的に広く採用されており、HTMLのmetaタグでcharset=\"UTF-8\"として指定されます。"},
+{id:153,category:"テクノロジ系",question:"Pythonプログラミングにおける「リスト（list）」の特徴として、最も適切なものはどれか。",choices:["複数の要素を順序付きで格納できる変更可能（ミュータブル）なデータ型であり、インデックスで各要素にアクセスできる","Pythonのリストは同一のデータ型の要素のみ格納できるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","Pythonのリストは要素数が固定されており、追加・削除ができないという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","Pythonのリストはキーと値のペアでデータを管理するデータ型であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:0,explanation:"Pythonのリスト（list）は、[]で定義する順序付きのデータ構造です。文字列・整数・他のリストなど異なるデータ型の要素を混在させることができ、要素のインデックスアクセス・追加（append）・削除（remove）・スライスなどが可能な可変（ミュータブル）なデータ型です。"},
+{id:154,category:"テクノロジ系",question:"マイクロサービスアーキテクチャの説明として、最も適切なものはどれか。",choices:["マイクロサービスは全機能を1つのプログラムにまとめたモノリシックアーキテクチャの別名である","アプリケーションを独立した小さなサービスに分割し、各サービスが独立してデプロイ・スケーリングできるアーキテクチャスタイルである","マイクロサービスはサービスを分割するが、デプロイは常に全体を一括して行うという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","マイクロサービスはデータベースを全サービスで共有することが必須であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:1,explanation:"マイクロサービスアーキテクチャは、アプリケーションを複数の小さな独立したサービス（注文管理・在庫管理・決済など）に分割し、各サービスが独立して開発・デプロイ・スケーリング・運用できる設計スタイルです。モノリシック（一枚岩）な開発より変更の柔軟性が高い反面、サービス間通信・分散システム管理の複雑さが増します。"},
+{id:155,category:"テクノロジ系",question:"CI/CD（継続的インテグレーション/継続的デリバリー）の説明として、最も適切なものはどれか。",choices:["CI/CDは月1回の大規模リリースを前提とした開発手法であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","コードの変更を頻繁にリポジトリに統合し、自動テスト・ビルド・デプロイのパイプラインを通じてソフトウェアを継続的に提供する開発プラクティスである","CIはテストの省略を意味し、CDはコードのバックアップのことであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","CI/CDはハードウェアの継続的な改善プログラムであるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない"],answer:1,explanation:"CI（Continuous Integration：継続的インテグレーション）は、開発者が頻繁にコードをリポジトリに統合し、自動ビルド・自動テストで問題を早期検出するプラクティスです。CD（Continuous Delivery/Deployment：継続的デリバリー/デプロイ）は、テスト済みコードを自動で本番環境にデプロイする仕組みです。Jenkins・GitHub Actions・GitLab CIなどのツールが使用されます。"},
+{id:156,category:"テクノロジ系",question:"RAID（Redundant Array of Independent Disks）において、RAID 1の特徴として最も適切なものはどれか。",choices:["RAID 1はデータを複数のディスクに分散して高速化する「ストライピング」のみの構成である","2台以上のディスクに同じデータを書き込む「ミラーリング」構成で、1台が故障しても残りのディスクでデータが保持できる","RAID 1では1台のディスクが故障するとデータが失われるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","RAID 1はパリティ情報を別のディスクに記録する構成であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:1,explanation:"RAID 1はミラーリングと呼ばれ、2台以上のディスクに全く同じデータを書き込む構成です。1台が故障してもミラー側のディスクからデータを継続利用でき、可用性・信頼性が高まります。ただし実効容量は1台分になります。RAID 0はストライピング（速度向上、冗長性なし）、RAID 5はストライピング＋分散パリティです。"},
+{id:157,category:"テクノロジ系",question:"Webブラウザのキャッシュ（Cache）の説明として、最も適切なものはどれか。",choices:["一度アクセスしたWebページの画像やデータをローカルに保存し、次回アクセス時にサーバーからの再取得なしに表示することで通信量と表示速度を改善する仕組みである","キャッシュはパスワードを安全に保存する仕組みであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","キャッシュはWebページを印刷するための一時ファイルのことであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","キャッシュはウイルスを隔離する領域のことであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない"],answer:0,explanation:"Webブラウザのキャッシュは、アクセスしたWebページの画像・CSS・JavaScriptファイルなどをユーザーのPC・スマートフォンにローカル保存する機能です。再度同じページを開く際にキャッシュからデータを読み込むため、通信量の削減と表示速度の向上が期待できます。ただし古いキャッシュが残ると最新のページが表示されない場合があります。"},
+{id:158,category:"テクノロジ系",question:"量子コンピュータの特徴として、最も適切なものはどれか。",choices:["量子コンピュータは従来のコンピュータよりあらゆる計算が速いという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","量子力学の原理（重ね合わせ・量子もつれなど）を利用して、特定の問題（暗号解読・最適化・シミュレーションなど）を従来のコンピュータより指数関数的に高速に解くことができるコンピュータである","量子コンピュータは0と1のビットで計算する従来のコンピュータと全く同じ原理で動作するという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","量子コンピュータは現時点では理論上の存在でまだ実装されていないという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:1,explanation:"量子コンピュータは量子ビット（qubit）を使用し、「重ね合わせ」（0と1を同時に表現）と「量子もつれ」の性質を利用して、特定の問題（素因数分解・最適化・化学シミュレーション）を指数関数的に高速処理します。IBMやGoogleが実機を開発・公開していますが、全ての計算が速いわけではなく、得意な問題領域があります。"},
+{id:159,category:"テクノロジ系",question:"Webアクセシビリティの説明として、最も適切なものはどれか。",choices:["Webアクセシビリティはサイトの表示速度のみを指す概念であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","Webアクセシビリティはスマートフォン対応（レスポンシブデザイン）のことであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","Webアクセシビリティは大企業のWebサイトにのみ求められるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","高齢者・障がいのある方を含むすべての人がWebコンテンツを利用できるよう設計・開発することであり、WCAG（Webコンテンツアクセシビリティガイドライン）に基づいて評価される"],answer:3,explanation:"Webアクセシビリティは、視覚・聴覚・運動・認知に障がいのある方・高齢者・音声読み上げソフト利用者など、多様な人々がWebコンテンツを利用できるように設計する概念です。WCAG（Web Content Accessibility Guidelines）が国際標準で、日本では「JIS X 8341-3」として標準化されています。2024年のJIS改正により公共機関を中心に対応が求められています。"},
+{id:160,category:"テクノロジ系",question:"エッジコンピューティングの説明として、最も適切なものはどれか。",choices:["エッジコンピューティングはクラウドコンピューティングの別名であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","エッジコンピューティングはデータ処理を全てクラウドに集中させる技術であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","エッジコンピューティングはスマートフォンのCPUの技術名称であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","データの発生源（デバイス・センサー）に近い場所にコンピューティング資源を配置し、リアルタイム処理・遅延低減・通信量削減を実現する技術アーキテクチャである"],answer:3,explanation:"エッジコンピューティングは、工場機器・自動運転車・スマートカメラなどデータ発生源の近く（エッジ）でデータ処理を行うアーキテクチャです。クラウドへのデータ転送量を削減し、処理遅延を最小化できるため、自動運転・工場IoT・リアルタイム映像解析など低遅延が求められる用途に適しています。"},
+{id:161,category:"テクノロジ系",question:"5G（第5世代移動通信システム）の特徴として、最も適切なものはどれか。",choices:["5GはWi-Fiの新しい規格の名称であるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","高速大容量・超低遅延・多数同時接続の3つの特徴を持ち、自動運転・遠隔医療・スマート工場などへの活用が期待される通信規格である","5GはLTEより遅い通信規格であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","5Gは音声通話のみに対応した通信規格であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:1,explanation:"5G（第5世代移動通信システム）の主要な特徴は、①高速大容量（最大伝送速度20Gbps、4Gの100倍）、②超低遅延（1ms程度）、③多数同時接続（1km²あたり100万台のデバイス接続）です。自動運転・遠隔手術・XR（VR/AR）・スマート工場・スマートシティなど幅広い分野での活用が進んでいます。"},
+{id:162,category:"テクノロジ系",question:"バイオメトリクス認証（生体認証）の説明として、最も適切なものはどれか。",choices:["バイオメトリクス認証はパスワードと全く同じ認証方式であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","バイオメトリクス認証は生体情報が変わらないため、一度登録すれば永続的に完璧に機能する","バイオメトリクス認証は認証成功率が100%保証される方式である","指紋・顔・虹彩・声紋・静脈など、個人固有の生体情報を用いて本人確認を行う認証方式である"],answer:3,explanation:"バイオメトリクス認証（生体認証）は、指紋・顔・虹彩・声紋・静脈・歩行パターンなど個人固有の生体的特徴を用いた認証方式です。パスワードの紛失・盗難リスクがなく利便性が高い反面、生体情報が漏洩した場合に変更できない、認証精度に誤認識（本人拒否率・他人許可率）があるという課題もあります。"},
+{id:163,category:"テクノロジ系",question:"Webアプリケーションの「Cookie（クッキー）」の説明として、最も適切なものはどれか。",choices:["Webサーバーがブラウザに送信する小さなデータファイルで、ユーザーのログイン状態・設定・カート情報などを保持するためにブラウザに保存される仕組みである","Cookieはウイルスの一種で、感染するとデータが盗まれるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","CookieはWebページのデザインを管理するファイルであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","Cookieはサーバー側にのみ保存されるデータであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である"],answer:0,explanation:"Cookie（クッキー）は、WebサーバーがHTTPレスポンスを通じてブラウザに送信する小さなテキストデータで、ブラウザに保存されます。次回アクセス時にブラウザがCookieをサーバーに送信することで、ログイン状態の維持・ショッピングカートの保持・ユーザー設定の記憶などを実現します。セキュリティの観点からhttponly属性やsecure属性の設定が重要です。"},
+{id:164,category:"テクノロジ系",question:"プロキシサーバーの役割として、最も適切なものはどれか。",choices:["プロキシサーバーはメールの送受信を管理するサーバーであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","プロキシサーバーはDNSの名前解決を行うサーバーであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","プロキシサーバーはファイルを共有するためだけのサーバーであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","クライアントとサーバーの間に介在し、通信の中継・キャッシュ・アクセス制御・セキュリティフィルタリングなどを行うサーバーである"],answer:3,explanation:"プロキシサーバーはクライアントとインターネット（宛先サーバー）の間に位置し、①通信の中継（クライアントのIPアドレスを隠蔽）、②Webコンテンツのキャッシュ（帯域削減・高速化）、③アクセス制御（特定サイトへのアクセス禁止）、④セキュリティフィルタリング（マルウェアURLの遮断）などの機能を提供します。"},
+{id:165,category:"テクノロジ系",question:"16進数「FF」を10進数に変換した結果として、正しいものはどれか。",choices:["256","255","128","512"],answer:1,explanation:"16進数FFを10進数に変換します。16進数の各桁は16の累乗に対応します。F（15）×16¹ + F（15）×16⁰ = 15×16 + 15×1 = 240 + 15 = 255です。16進数はコンピュータのメモリアドレスやカラーコードなどで広く使用されます。"},
+{id:166,category:"テクノロジ系",question:"IoTセキュリティの課題として、最も適切なものはどれか。",choices:["IoTデバイスはインターネットに接続しないためセキュリティリスクがないというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","IoTデバイスは全てのメーカーが自動的にセキュリティアップデートを提供するというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","IoTデバイスは一度設置すれば永続的に安全な状態が維持されるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","IoTデバイスはセキュリティパッチの適用が困難なものが多く、初期設定のパスワードが変更されないまま使用されるケースも多いため、サイバー攻撃の踏み台になりやすい"],answer:3,explanation:"IoTデバイス（スマート家電・防犯カメラ・工場センサーなど）のセキュリティ課題として、①製造後のパッチ提供が困難・更新されないファームウェア、②出荷時のデフォルトパスワードの未変更、③処理能力の制約でセキュリティ機能を搭載しにくい、④大量のデバイスが管理されずに放置されるなどがあります。Miraiなどのボットネットに悪用されDDoS攻撃の踏み台にされた事例があります。"},
+{id:167,category:"テクノロジ系",question:"システムの「スループット」の説明として、最も適切なものはどれか。",choices:["単位時間あたりに処理できるデータ量や処理件数を示す指標であり、システムの処理能力を表す","スループットはシステムの起動時間を示す指標であるというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","スループットはシステムの応答時間（レスポンスタイム）と同じ意味である","スループットはシステムの稼働率を示す指標であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:0,explanation:"スループット（Throughput）はシステムの処理能力を示す指標で、単位時間あたりに完了できる処理件数やデータ転送量を表します（例：1秒あたりのトランザクション数 TPS、1時間あたりのバッチ処理件数）。レスポンスタイム（1件の要求への応答時間）とは異なります。"},
+{id:168,category:"テクノロジ系",question:"システム開発における「ユーザーインターフェース（UI）」と「ユーザーエクスペリエンス（UX）」の関係として、最も適切なものはどれか。",choices:["UIはシステムの見た目・操作性などの接点部分であり、UXはUIを含むユーザーがサービス全体を通じて得る経験や感情全体を指し、UIはUXの一部である","UIとUXは全く同じ概念であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","UXはUIのデザインのみを指す概念であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","UIを向上させてもUXとは無関係であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:0,explanation:"UI（User Interface）はユーザーとシステムの接点（画面デザイン・ボタン配置・操作性）を指します。UX（User Experience）はUIを含む、サービスを利用する際のユーザーの感情・体験全体（使いやすさ・満足感・感動・ブランド印象など）を指します。優れたUIはUX向上に貢献しますが、UXはUIだけでなくカスタマーサポート・価格・ブランドなども含む広い概念です。"},
+{id:169,category:"テクノロジ系",question:"アジャイル開発で使用されるバーンダウンチャートの説明として、最も適切なものはどれか。",choices:["バーンダウンチャートはプロジェクトの予算消化状況を示すグラフであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","スプリントの残作業量（ストーリーポイントや時間）を縦軸に、時間を横軸にとって進捗を可視化するグラフで、残作業が減少していく様子を表す","バーンダウンチャートは完了した作業量を積み上げて表示するグラフであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","バーンダウンチャートはガントチャートの別名であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:1,explanation:"バーンダウンチャート（Burndown Chart）はアジャイル開発（特にスクラム）で使用されるスプリント進捗の可視化ツールです。縦軸に残作業量（ストーリーポイントや時間）、横軸に日付をとり、理想線（等速で減少）と実績線を比較して進捗の遅れ・前倒しを一目で確認できます。"},
+{id:170,category:"テクノロジ系",question:"ペネトレーションテスト（侵入テスト）の説明として、最も適切なものはどれか。",choices:["ペネトレーションテストはシステムの性能・負荷耐性を測定するテストであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","ペネトレーションテストはユーザーがシステムの使いやすさを評価するテストであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","ペネトレーションテストはコードの文法エラーを自動検出するテストであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","実際の攻撃者と同じ手法を用いてシステムへの侵入を試み、セキュリティ上の弱点（脆弱性）を発見・報告するセキュリティ評価手法である"],answer:3,explanation:"ペネトレーションテスト（Penetration Testing：ペンテスト）は、セキュリティの専門家（ペンテスター）が実際のハッカーと同様の攻撃手法でシステムへの侵入を試みることで、脆弱性・セキュリティホールを発見するテストです。Webアプリケーション・ネットワーク・ソーシャルエンジニアリングなど様々な観点でテストが行われます。"},
+{id:171,category:"テクノロジ系",question:"ネットワークのプロトコルのうち、電子メールの送信に使用されるプロトコルとして、正しいものはどれか。",choices:["POP3","IMAP","SMTP","FTP"],answer:2,explanation:"SMTP（Simple Mail Transfer Protocol）はメールの「送信」に使用されるプロトコルです。POP3（Post Office Protocol 3）とIMAP（Internet Message Access Protocol）はメールの「受信・取得」に使用されます。FTPはファイル転送プロトコルです。メールの送受信には用途に応じた適切なプロトコルが使い分けられています。"},
+{id:172,category:"テクノロジ系",question:"ネットワーク機器の「ルーター」と「スイッチ（L2スイッチ）」の違いとして、最も適切なものはどれか。",choices:["ルーターとスイッチは全く同じ機能を持つ機器であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","ルーターはIPアドレスを使って異なるネットワーク間の経路制御を行い、スイッチはMACアドレスを使って同一ネットワーク内のフレーム転送を行う","スイッチはIPアドレスを使って経路制御を行う機器であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","ルーターは同一ネットワーク内の通信のみを処理する機器であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:1,explanation:"ルーター（Router）はOSI参照モデルの第3層（ネットワーク層）でIPアドレスを基にパケットの経路（ルーティング）を制御し、異なるネットワーク（サブネット間・インターネット接続）をつなぎます。L2スイッチはOSI第2層（データリンク層）でMACアドレスを基に同一LAN内のフレームを適切なポートに転送します。"},
+{id:173,category:"テクノロジ系",question:"「DHCP（Dynamic Host Configuration Protocol）」の説明として、最も適切なものはどれか。",choices:["DHCPはドメイン名をIPアドレスに変換するプロトコルであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","DHCPはメールを送信するためのプロトコルであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","ネットワーク内のデバイスにIPアドレス・サブネットマスク・デフォルトゲートウェイ・DNSサーバーアドレスなどを自動的に割り当てるプロトコルである","DHCPはファイルを暗号化して転送するプロトコルであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:2,explanation:"DHCP（Dynamic Host Configuration Protocol）は、ネットワークに接続したデバイスに対して、DHCPサーバーがIPアドレス・サブネットマスク・デフォルトゲートウェイ・DNSサーバーなどのネットワーク設定を自動的に配布するプロトコルです。手動設定の手間を省き、IPアドレスの重複を防ぎます。"},
+{id:174,category:"テクノロジ系",question:"情報システムの「稼働率」の計算式として、最も適切なものはどれか。",choices:["稼働率＝停止時間÷（稼働時間＋停止時間）","稼働率＝稼働時間×停止時間という認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","稼働率＝（稼働時間－停止時間）÷停止時間","稼働率＝稼働時間÷（稼働時間＋停止時間）"],answer:3,explanation:"稼働率（Availability）は「稼働時間÷（稼働時間＋停止時間）」で計算されます。例えば、1か月のうち稼働時間が720時間・停止時間が8時間であれば、稼働率＝720÷（720＋8）≒0.989（約98.9%）となります。システムの信頼性指標のひとつで、SLAで目標値として設定されることが多いです。"},
+{id:175,category:"テクノロジ系",question:"二つのシステムを直列に接続した場合の全体稼働率の計算として、正しいものはどれか。システムAの稼働率が0.9、システムBの稼働率が0.8の場合、全体の稼働率はいくつか。",choices:["0.85","0.98","1.7","0.72"],answer:3,explanation:"直列接続の場合、全体の稼働率は各システムの稼働率の積となります。0.9×0.8＝0.72（72%）です。直列接続は「全システムが稼働して初めてサービスが利用可能」な構成で、稼働率が最も低いシステムに引っ張られます。なお並列接続（冗長構成）の場合は、全体稼働率＝1－（1－0.9）×（1－0.8）＝1－0.02＝0.98となります。"},
+{id:176,category:"テクノロジ系",question:"暗号化方式のうち「共通鍵暗号方式」の特徴として、最も適切なものはどれか。",choices:["共通鍵暗号方式は暗号化と復号に異なる鍵を使用するというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","暗号化と復号に同じ鍵（共通鍵）を使用する方式で、処理速度が速いが鍵の安全な配送が課題である","共通鍵暗号方式は公開鍵暗号方式より処理速度が遅いというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","共通鍵暗号方式では通信相手ごとに異なる鍵を用意する必要がないというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:1,explanation:"共通鍵暗号方式（対称暗号）は、送受信双方が同じ鍵を使って暗号化・復号を行います。AES・DESなどが代表例で、公開鍵暗号方式より処理速度が大幅に速いです。ただし通信相手ごとに別の鍵が必要で、鍵を安全に相手に配送する「鍵配送問題」が課題です。実際のHTTPS通信では公開鍵暗号で鍵交換し、共通鍵で本通信を行うハイブリッド方式が使われます。"},
+{id:177,category:"テクノロジ系",question:"デジタル署名の目的として、最も適切なものはどれか。",choices:["デジタル署名はデータを暗号化して盗聴を防ぐための技術であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","デジタル署名は受信者がデータを送信者の公開鍵で暗号化する技術であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","送信者の正当性（なりすまし防止）とデータの改ざんがないことを証明するための技術で、送信者の秘密鍵で署名し受信者が公開鍵で検証する","デジタル署名はパスワードを安全に保存するための技術であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる"],answer:2,explanation:"デジタル署名は、①送信者が文書のハッシュ値を自分の秘密鍵で暗号化（署名）し、②受信者が送信者の公開鍵で復号して検証することで、「この文書は確かにその送信者が作成した（認証性）」「文書が途中で改ざんされていない（完全性）」「後から否認できない（否認防止）」を保証する技術です。"},
+{id:178,category:"テクノロジ系",question:"情報セキュリティの「リスクアセスメント」のプロセスとして、最も適切なものはどれか。",choices:["リスクアセスメントはセキュリティ製品を購入するプロセスであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","リスクアセスメントはシステムの性能を計測するプロセスであるという概念だが、ITパスポートの試験範囲における正しい定義とは異なる誤った用語の使い方である","リスクアセスメントはインシデント発生後の復旧作業のことであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","リスクの特定→リスクの分析→リスクの評価の3ステップで、情報資産に対するリスクの大きさと優先度を判断するプロセスである"],answer:3,explanation:"リスクアセスメントはISO/IEC 27001（情報セキュリティマネジメントシステム）でも規定される重要なプロセスで、①リスクの特定（どんな脅威・脆弱性があるか）→②リスクの分析（発生確率×影響度でリスクの大きさを算定）→③リスクの評価（リスク基準と比較し対処の優先度を決定）の3ステップで構成されます。"},
+{id:179,category:"テクノロジ系",question:"「ソーシャルエンジニアリング」の説明として、最も適切なものはどれか。",choices:["ソーシャルエンジニアリングはコンピュータシステムの脆弱性を直接攻撃する技術的手法である","ソーシャルエンジニアリングはSNSマーケティングの手法のことである","ソーシャルエンジニアリングはAIを使った自動攻撃ツールのことである","人間の心理的な弱点や信頼関係を悪用して、パスワードや機密情報を騙し取る攻撃手法の総称である"],answer:3,explanation:"ソーシャルエンジニアリングは、技術的手段ではなく人間の心理・信頼・権威・焦りなどを利用して機密情報を入手する攻撃手法です。フィッシングメール・電話でのなりすまし（ビッシング）・廃棄書類の漁り（スキャベンジング）・後ろについて入室（テールゲーティング）などが代表例です。技術的対策だけでなく従業員教育が重要です。"},
+{id:180,category:"テクノロジ系",question:"無線LANのセキュリティ対策として、最も効果的なものとして適切なものはどれか。",choices:["SSIDを非公開（ステルス設定）にするだけでセキュリティは十分であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","公共の無料Wi-Fiを使用する際にVPNを使わなくても安全であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","WPA3などの強力な暗号化規格を使用し、デフォルトのSSIDとパスワードを変更し、必要に応じてMACアドレスフィルタリングを設定する","WEP（Wired Equivalent Privacy）を使用すれば十分なセキュリティが確保できる"],answer:2,explanation:"無線LANのセキュリティ対策として、①暗号化規格はWPA3（またはWPA2）を使用（WEPは解読済みで危険）、②デフォルトのSSID名・管理者パスワードを変更、③MACアドレスフィルタリングの設定、④ファームウェアの定期更新が重要です。公共Wi-Fiでは通信が傍受されるリスクがあるため、VPNの利用が推奨されます。"},
+{id:181,category:"テクノロジ系",question:"プログラムの実行方式のうち「インタープリタ型」と「コンパイラ型」の違いとして、最も適切なものはどれか。",choices:["インタープリタ型はコンパイラ型より常に実行速度が速いという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","インタープリタ型はソースコードを1行ずつ解釈しながら実行し、コンパイラ型は実行前にソースコード全体を機械語に変換（コンパイル）してから実行する","コンパイラ型はソースコードを1行ずつ解釈しながら実行する方式であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","インタープリタ型では実行前にコンパイルが必要であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である"],answer:1,explanation:"インタープリタ型（Python・Ruby・JavaScriptなど）はソースコードを実行時に1行ずつ解釈・実行するため、コンパイル不要で開発が柔軟ですが実行速度は一般的に遅めです。コンパイラ型（C・C++・Goなど）は実行前に全ソースコードを機械語に変換するため起動には時間がかかりますが実行速度が速いです。"},
+{id:182,category:"テクノロジ系",question:"関係データベースにおける「外部キー（Foreign Key）」の役割として、最も適切なものはどれか。",choices:["外部キーはテーブルを外部ファイルに保存するための設定であるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","あるテーブルの列が別のテーブルの主キーを参照することで、テーブル間の参照整合性（関連する行が必ず存在すること）を維持するための制約である","外部キーはテーブルの検索速度を向上させるインデックスのことであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","外部キーは複数のテーブルを1つのテーブルに結合する機能のことであるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である"],answer:1,explanation:"外部キー（Foreign Key）はリレーショナルデータベースの参照整合性制約で、子テーブルの列が親テーブルの主キーを参照することを定義します。例えば「注文テーブル」の顧客IDが「顧客テーブル」の顧客ID（主キー）を参照する場合、存在しない顧客IDの注文データを登録できなくなります。"},
+{id:183,category:"テクノロジ系",question:"データ分析における「回帰分析」の説明として、最も適切なものはどれか。",choices:["変数間の関係性を数式（回帰式）で表し、ある変数から別の変数の値を予測・推定する統計的手法である","回帰分析はデータをいくつかのグループに分類する手法であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","回帰分析はデータの異常値を検出する手法のみを指すという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","回帰分析は画像データの分析にのみ使用される手法であるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない"],answer:0,explanation:"回帰分析は、変数間の関係を数式（例：y = ax + b）で表し、説明変数（x）から目的変数（y）を予測する統計手法です。気温と売上の関係・広告費と売上の予測・住宅面積と価格の予測などに活用されます。変数が1つの単回帰分析、複数の重回帰分析などがあります。"},
+{id:184,category:"テクノロジ系",question:"クラウドサービスのうち「PaaS（Platform as a Service）」の説明として、最も適切なものはどれか。",choices:["アプリケーションの開発・実行に必要なOS・ミドルウェア・開発フレームワーク・データベースなどのプラットフォームをサービスとして提供する形態である","PaaSは完成したソフトウェアをサービスとして提供する形態であるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","PaaSは仮想マシンとストレージのみを提供する形態であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","PaaSはプラットフォームの全管理をユーザーが行う形態であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている"],answer:0,explanation:"PaaS（Platform as a Service）は、アプリケーション開発・実行に必要なOS・ミドルウェア・データベース・開発ツール・実行環境などをクラウド事業者が管理・提供するモデルです。開発者はアプリケーションの開発に集中でき、インフラ管理の手間が省けます。Google App Engine・Heroku・AWS Elastic Beanstalkなどが代表例です。"},
+{id:185,category:"テクノロジ系",question:"システムのセキュリティ強化策のひとつ「ログ管理」の目的として、最も適切なものはどれか。",choices:["システムやアプリケーションの操作・アクセス・エラーなどの記録（ログ）を収集・保存・分析することで、不正アクセスの検知・原因調査・監査証跡の確保を行うことである","ログ管理はシステムの処理速度を向上させるための最適化作業のことであるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","ログ管理はユーザーのパスワードを管理することであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","ログ管理はソフトウェアのバージョン管理のことであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:0,explanation:"ログ管理は情報セキュリティ管理の重要な要素で、①セキュリティインシデントの早期検知（異常なアクセスパターンの発見）、②インシデント発生後の原因調査・影響範囲の特定（フォレンジック）、③内部統制・コンプライアンス対応のための監査証跡の保持を目的とします。SIEM（Security Information and Event Management）ツールで集中管理することが一般的です。"},
+{id:186,category:"テクノロジ系",question:"「NFT（非代替性トークン）」の説明として、最も適切なものはどれか。",choices:["NFTはブロックチェーン上で交換可能な通貨の一種であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","NFTはウイルス対策ソフトの新しい規格のことであるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","ブロックチェーン技術を使用してデジタルデータの唯一性と所有権を証明する技術で、デジタルアート・ゲームアイテム・音楽などに活用されている","NFTは企業間のデータ交換プロトコルのことであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:2,explanation:"NFT（Non-Fungible Token：非代替性トークン）は、ブロックチェーン上に記録されたデジタルデータの「唯一性・真正性・所有権」を証明するトークンです。ビットコインなどの暗号資産が代替可能（1BTCは別の1BTCと同等）であるのに対し、NFTは各トークンが固有の価値を持つ非代替性が特徴です。デジタルアート・ゲームアイテム・スポーツカードなどに活用されています。"},
+{id:187,category:"テクノロジ系",question:"「ゼロデイ攻撃」の説明として、最も適切なものはどれか。",choices:["ゼロデイ攻撃はDDoS攻撃の別名であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","ゼロデイ攻撃はパスワードを総当たりで試みる攻撃のことであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","ゼロデイ攻撃はパッチを適用した後にのみ発生する攻撃であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","ソフトウェアの脆弱性が発見されてから、開発者がパッチ（修正プログラム）を公開する前の段階で行われる攻撃である"],answer:3,explanation:"ゼロデイ攻撃（Zero-Day Attack）は、ソフトウェアの脆弱性が公開された日（1日目）よりも前（ゼロ日）に攻撃が行われることから名付けられた攻撃手法です。開発者が脆弱性を把握してパッチを作成・配布するまでの間、防御が困難です。多層防御・EDR・Web分離などの対策が重要です。"},
+{id:188,category:"テクノロジ系",question:"機械学習の「強化学習」の説明として、最も適切なものはどれか。",choices:["エージェントが環境と相互作用しながら試行錯誤を繰り返し、報酬が最大になる行動方針（ポリシー）を学習する手法である","強化学習は正解ラベル付きデータを大量に必要とする学習手法であるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","強化学習はデータのパターンを発見する教師なし学習の一種であるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","強化学習は人間の教師が各操作を手で教えることで学習する手法であるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である"],answer:0,explanation:"強化学習（Reinforcement Learning）は、エージェント（学習主体）が環境の中で行動し、その結果として得られる報酬（プラス）や罰（マイナス）のフィードバックをもとに、累積報酬を最大化する行動方針を試行錯誤で学習する手法です。AlphaGoやゲームAI・自動運転・ロボット制御に活用されています。"},
+{id:189,category:"テクノロジ系",question:"「API（Application Programming Interface）」の説明として、最も適切なものはどれか。",choices:["APIはデータベースの設計仕様書のことであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","APIはOSのカーネルを直接操作するためのコマンドであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","ソフトウェアやWebサービスが外部のプログラムから機能を呼び出せるように公開されたインターフェースの仕様のことである","APIはWebページのデザインを定義するスタイルシートのことであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる"],answer:2,explanation:"API（Application Programming Interface）は、ソフトウェアやWebサービスが外部のアプリケーション・プログラムに対して機能を提供するためのインターフェースです。例えば天気予報APIを呼び出すと最新の天気データを取得でき、地図APIを使えば自社アプリに地図機能を組み込めます。現代のアプリ開発・サービス連携に欠かせない技術です。"},
+{id:190,category:"テクノロジ系",question:"クラウドサービスの「マルチクラウド」戦略の説明として、最も適切なものはどれか。",choices:["マルチクラウドは同一の事業者の複数サービスを利用することであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","マルチクラウドはクラウドとオンプレミスを組み合わせるハイブリッドクラウドと同じ概念であるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","マルチクラウドはセキュリティリスクを高めるため推奨されない戦略であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","複数のクラウドサービス事業者（AWS・Azure・GCPなど）のサービスを組み合わせて利用することで、特定事業者への依存（ベンダーロックイン）を回避しサービスの可用性を高める戦略である"],answer:3,explanation:"マルチクラウド戦略は、AWS（Amazon Web Services）・Microsoft Azure・Google Cloud Platform（GCP）など複数のクラウド事業者のサービスを目的に応じて使い分ける戦略です。特定事業者への過度な依存（ベンダーロックイン）を防ぎ、コスト最適化・可用性向上・機能の最適選択が可能になる一方、管理の複雑さが増す課題もあります。"},
+{id:191,category:"テクノロジ系",question:"「ビッグデータ」の分析技術のうち「データマイニング」の説明として、最も適切なものはどれか。",choices:["大量のデータから、統計的手法や機械学習を用いて、人間が気づきにくいパターン・規則・相関関係・異常などを発見する技術である","データマイニングは単純なデータの集計・合計を計算する作業のことであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる","データマイニングはデータをサーバーに格納する作業のことであるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","データマイニングはデータを削除・廃棄する作業のことであるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる"],answer:0,explanation:"データマイニング（Data Mining）は、大量のデータから統計分析・機械学習・パターン認識などを活用して、有用な知見（購買パターン・異常検知・顧客セグメント・相関関係）を発掘する技術です。小売業での購買傾向分析（「おむつとビールが一緒に売れる」などのバスケット分析）・不正検知・医療診断支援などに活用されます。"},
+{id:192,category:"テクノロジ系",question:"「サイバー攻撃」の手法のひとつ「標的型攻撃」の説明として、最も適切なものはどれか。",choices:["標的型攻撃は不特定多数に対して無差別に行う攻撃のことであるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である","標的型攻撃はWebサーバーへの大量アクセス攻撃のことであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","標的型攻撃はパスワードを総当たりで試みる攻撃のことであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","特定の組織・個人を標的とし、その組織に合わせた巧妙な偽メールやマルウェアを使って機密情報の窃取やシステム侵害を狙う攻撃である"],answer:3,explanation:"標的型攻撃（APT：Advanced Persistent Threat含む）は、特定の組織・企業・政府機関を狙い、組織内部の人物になりすましたメール（スピアフィッシング）や業務関連のファイルを装ったマルウェアを使って侵入し、長期間にわたって情報を窃取する高度な攻撃です。技術的対策に加え従業員のセキュリティ教育が重要です。"},
+{id:193,category:"テクノロジ系",question:"「クラウドネイティブ」の説明として、最も適切なものはどれか。",choices:["クラウド環境の特性（スケーラビリティ・耐障害性・俊敏性）を最大限活用するために、コンテナ・マイクロサービス・DevOps・CI/CDなどの技術を組み合わせてシステムを設計・構築するアプローチである","クラウドネイティブは既存のオンプレミスシステムをそのままクラウドに移行することであるという考え方だが、ITパスポートの正式な技術定義とは根本的に異なる誤った解釈である","クラウドネイティブはクラウドストレージへのデータ保存のことであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","クラウドネイティブはクラウド事業者が提供するマネージドサービスのことであるという特性があるとされるが、実際のシステム・ネットワーク設計では全く異なる方式が使われる"],answer:0,explanation:"クラウドネイティブ（Cloud Native）は、クラウドの弾力性・スケーラビリティ・自動化の特性を最大限に活用するため、コンテナ（Docker）・マイクロサービス・サービスメッシュ・宣言的API・不変インフラなどの技術を採用し、CI/CDで高速にリリースするシステム設計・運用アプローチです。CNCFがガイドラインを提供しています。"},
+{id:194,category:"テクノロジ系",question:"「情報系システム」と「基幹系システム」の違いとして、最も適切なものはどれか。",choices:["基幹系システムと情報系システムは全く同じ役割を持つシステムであるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","基幹系システムは販売管理・会計・在庫管理など業務の中核となる処理を行うシステムで、情報系システムはBI・データ分析・意思決定支援など経営情報の収集・分析を行うシステムである","情報系システムは企業の最も重要な業務処理（販売・会計）を担うシステムであるというアプローチだが、現代のIT・情報技術では採用されておらず有効性も証明されていない","基幹系システムはリアルタイム性が求められず、バッチ処理のみで動作するシステムであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:1,explanation:"基幹系システム（ERP・SFA・会計システムなど）は企業の基幹業務（販売・購買・在庫・会計・生産管理）を処理し、高い可用性・正確性・トランザクション処理が求められます。情報系システム（BIツール・DWH・データマート）は基幹系のデータを収集・分析して経営判断を支援します。両者のデータ連携が企業のDXにおいて重要です。"},
+{id:195,category:"テクノロジ系",question:"「ウォームスタンバイ」と「コールドスタンバイ」の違いとして、最も適切なものはどれか。",choices:["ウォームスタンバイとコールドスタンバイは同じ意味であるという説明だが、ITの仕組みを誤って理解したものであり実際の技術的定義とは一致しない","ウォームスタンバイは予備システムを常時稼働（またはほぼ稼働）状態にしておき短時間で切り替え可能、コールドスタンバイは予備システムを停止状態で待機させ障害時に起動・設定する方式である","コールドスタンバイの方がウォームスタンバイより迅速にシステムを切り替えられるという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","ウォームスタンバイはバックアップデータのことであるという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない"],answer:1,explanation:"システムの冗長化方式として、ホットスタンバイ（二重化システムが常時同時稼働・瞬時切替）、ウォームスタンバイ（予備システムが稼働中または最新状態を維持・短時間で切替可能）、コールドスタンバイ（予備システムが停止状態で待機・障害時に起動・設定が必要で切替時間が長い）の3種類があり、コストと復旧時間がトレードオフです。"},
+{id:196,category:"テクノロジ系",question:"「ビッグデータ」の処理に用いられる「Hadoop」の説明として、最も適切なものはどれか。",choices:["HadoopはMicrosoftが開発した表計算ソフトウェアであるという認識だが、実際のIT業務・システム運用現場では全く別の原理が基礎として使われている","大量のデータを複数のサーバーに分散させてMapReduceという並列処理の仕組みで高速に処理するオープンソースの分散処理フレームワークである","HadoopはWebサーバーを構築するためのソフトウェアであるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","Hadoopはリレーショナルデータベースの一種であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである"],answer:1,explanation:"Hadoop（Apache Hadoop）はApacheソフトウェア財団が開発したオープンソースの分散処理フレームワークです。HDFS（分散ファイルシステム）でデータを複数ノードに分散保存し、MapReduce（処理を分割して並列実行・結果を集約）でペタバイト級の大量データを低コストで高速処理します。ビッグデータ分析基盤として広く採用されています。"},
+{id:197,category:"テクノロジ系",question:"「アクセシビリティ」向上のための技術・ガイドラインのうち「スクリーンリーダー」への対応として、最も適切なものはどれか。",choices:["スクリーンリーダー対応には画像を全て削除することが必要であるというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","スクリーンリーダー対応はフォントサイズを大きくするだけでよいというものだが、現実のITシステムではこのような動作は行われず技術的に成立しない","スクリーンリーダーはマウス操作のみに対応しているという発想だが、ストラテジ系・マネジメント系・テクノロジ系の正しい定義とは本質的に異なる","画像には代替テキスト（alt属性）を設定し、フォームには適切なラベルをつけ、見出し構造（h1〜h6）を適切に使用することでスクリーンリーダーがページを正確に読み上げられるようにする"],answer:3,explanation:"スクリーンリーダーは視覚障がいのあるユーザーがWebページを音声で聴くためのソフトウェアです。スクリーンリーダー対応には、①画像のalt属性（代替テキスト）の設定、②適切な見出し構造（h1〜h6）の使用、③フォームのラベル関連付け、④キーボードのみでの操作可能性の確保などが重要です。WCAGの1.1.1（非テキストコンテンツ）などのガイドラインに基づいて実装します。"},
+{id:198,category:"テクノロジ系",question:"「プログラミング言語」のうちコンパイルせずに実行できる「スクリプト言語」として、最も適切な組み合わせはどれか。",choices:["Python・JavaScript・Ruby・PHP","C・C++・Java・Goという定義だが、関連する別の概念と混同した誤りであり正確な技術的解釈ではない","アセンブリ言語・COBOL・FORTRAN","VHDL・Verilog・SystemC"],answer:0,explanation:"スクリプト言語は、コンパイル（機械語への事前変換）せずにインタープリタ（実行時逐次解釈）で動作するプログラミング言語です。Python・JavaScript・Ruby・PHPが代表例です。C・C++・Go・Javaはコンパイルが必要なコンパイラ言語（JavaはJVMバイトコードへのコンパイル後、JVM上で実行）です。"},
+{id:199,category:"テクノロジ系",question:"「クラウドコンピューティング」の利点として、最も適切なものはどれか。",choices:["初期投資コストを抑えて利用開始でき、需要に応じてリソースを柔軟にスケールアップ・ダウンでき、設備管理の手間を削減できる","クラウドはオンプレミスより常にセキュリティが高いというアイデアだが、IT・情報システムの正式な技術用語の定義とは相容れない誤解である","クラウドはインターネット接続なしでも全サービスが利用できるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","クラウドを使えばシステム障害は完全になくなるという記述だが、情報セキュリティ・システム管理の観点からは誤りとなる不適切な説明である"],answer:0,explanation:"クラウドコンピューティングの主な利点は、①初期費用（CAPEX）を抑えた従量課金での利用開始、②トラフィック増減に応じた柔軟なリソースのスケールアップ/ダウン（弾力性）、③物理サーバー・データセンターの管理・運用コスト削減、④世界中のリージョンへの迅速なデプロイです。ただしインターネット依存・セキュリティの責任分担・ベンダーロックインの課題もあります。"},
+{id:200,category:"テクノロジ系",question:"「自然言語処理（NLP）」技術の活用事例として、最も適切なものはどれか。",choices:["自然言語処理は画像の物体検出のみに使用される技術であるという説明だが、実際にはまったく異なる原理・目的のもとで設計・運用されているシステムである","自然言語処理は数値データの統計分析のみを指す技術であるという手法だが、これは理論上の概念であり現在のIT実務では標準的に採用されていない","自然言語処理はプログラムコードの自動修正のみに使用される技術であるという考え方だが、ITガバナンス・情報管理・セキュリティの観点から見ると根本的に不適切である","チャットボット・機械翻訳・文章要約・感情分析・音声アシスタント（SiriやAlexa）など、人間の言語をコンピュータが理解・生成する技術の応用事例である"],answer:3,explanation:"自然言語処理（NLP：Natural Language Processing）は、人間が日常的に使う言語（テキスト・音声）をコンピュータが理解・解析・生成する技術です。主な応用例として、機械翻訳（DeepL）・チャットボット（FAQ自動応答）・感情分析（SNSのネガポジ分析）・文章要約・音声認識（Siri・Alexa）・生成AI（ChatGPTなど大規模言語モデル）があります。"}
+];
+const CAT_META={"ストラテジ系":{color:"#0969A2",icon:"💼",bg:"#E3F2FD"},"マネジメント系":{color:"#2E7D32",icon:"📊",bg:"#E8F5E9"},"テクノロジ系":{color:"#6A1B9A",icon:"💻",bg:"#F3E5F5"}};
+// カテゴリ正規化: 各問題のカテゴリをCAT_METAのキーに統一
+(function normalizeCats(){
+  const MAP={"ストラテジ系":"ストラテジ系","マネジメント系":"マネジメント系","テクノロジ系":"テクノロジ系"};
+  ALL_QUESTIONS.forEach(q=>{if(MAP[q.category])q.category=MAP[q.category];});
+})();
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_itpass";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+// ① 前回の続きセーブ/ロード
+function saveProgress(){setUd(p=>({...p,lastProgress:{mode:S.mode,fc:S.fc,shuffle:S.shuffle,ts:S.ts,deckIds:S.deck.map(q=>q.id),idx:S.idx,ts_:Date.now()}}));}
+function hasProgress(){const p=S.ud.lastProgress;return p&&p.deckIds&&p.deckIds.length>0&&p.idx<p.deckIds.length-1;}
+function resumeSession(){
+  const p=S.ud.lastProgress;if(!p)return;
+  S.mode=p.mode;S.fc=p.fc;S.shuffle=p.shuffle||false;S.ts=p.ts||0;
+  S.deck=p.deckIds.map(id=>ALL_QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+  S.idx=p.idx;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  // ① 進捗クリアして新規スタート
+  setUd(p=>{const np={...p};delete np.lastProgress;return np;});
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;
+  clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>{
+    const wc={...p.wrongCounts};
+    if(ok){
+      // ④ 弱点モードで正解したらwrongCountsから削除（クリア）
+      if(S.mode==="WEAK") delete wc[q.id];
+      else wc[q.id]=Math.max(0,(wc[q.id]||0));
+    } else {
+      wc[q.id]=(wc[q.id]||0)+1;
+    }
+    return{...p,wrongCounts:wc,history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1};
+  });
+  // ① 進捗保存
+  saveProgress();
+  render();
+  const el=document.getElementById("app");
+  if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){
+    // ① セッション完了: 進捗クリア
+    setUd(p=>{const np={...p,totalSessions:(p.totalSessions||0)+1};delete np.lastProgress;return np;});
+    S.screen="result";render();
+  } else {
+    S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;
+    saveProgress();
+    render();startTimer();
+  }
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){
+  document.getElementById("app").innerHTML=build();
+  if(S.screen==="notebook"||S.screen==="quiz"){
+    const el=document.getElementById("app");
+    if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+  }
+  if(S.screen==="result"||S.screen==="home"){
+    // ⑥ resultとhomeは常にページ最上部
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const left=`
+    <div class="card">
+      <div class="card-title">モード選択</div>
+      <div class="mode-row-compact">
+        ${[{k:"ALL",lbl:"全問",ic:"📚",cnt:ALL_QUESTIONS.length,dis:false},{k:"WEAK",lbl:"弱点",ic:"🔥",cnt:wq.length,dis:!wq.length},{k:"STAR",lbl:"★登録",ic:"⭐",cnt:sq.length,dis:!sq.length}].map(m=>`<button class="mode-btn-compact ${S.mode===m.k?"mode-active":""} ${m.dis?"mode-off":""}" onclick="${m.dis?"":"S.mode='"+m.k+"';render()"}"><span class="mbc-icon">${m.ic}</span><span class="mbc-label">${m.lbl}</span><span class="mbc-count">${m.cnt}問</span></button>`).join("")}
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">カテゴリ・オプション</div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}" style="margin-bottom:8px;">
+        ${cats.map(c=>{
+          const a=S.fc===c;
+          const m=CAT_META[c];
+          const cnt=c==="全て"?ALL_QUESTIONS.length:ALL_QUESTIONS.filter(q=>q.category===c).length;
+          const wc=c==="全て"?wq.length:ALL_QUESTIONS.filter(q=>q.category===c&&(S.ud.wrongCounts||{})[q.id]>0).length;
+          const badge=wc>0?`<span style="display:inline-block;background:#E8572A;color:#fff;font-size:9px;font-weight:700;border-radius:4px;padding:0 4px;margin-left:3px;line-height:16px;">${wc}</span>`:"";
+          return`<button class="cat-chip ${a?"active":""}" onclick="S.fc='${c}';render()">${c!=="全て"&&m?m.icon+" ":""}${c} <span style="opacity:.65;font-size:10px;">${cnt}</span>${badge}</button>`;
+        }).join("")}
+      </div>
+      ${S.mode!=="ALL"?`<p style="font-size:11px;color:var(--text3);margin-bottom:8px;">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+      <div class="opts-row">
+        <div class="opt-group"><span class="opt-label">⏱</span>${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}</div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"シャッフル":"順番通り"}</button>
+      </div>
+    </div>
+    ${(()=>{
+      const p=S.ud.lastProgress;
+      const hasP=hasProgress();
+      if(hasP){
+        // 続きがある場合: 左右分割
+        const resumeQ=p.deckIds&&ALL_QUESTIONS.find(q=>q.id===p.deckIds[p.idx]);
+        const cat=resumeQ?(CAT_META[resumeQ.category]||{icon:"📄"}):{icon:"📄"};
+        const catLabel=resumeQ?resumeQ.category:"";
+        const qNum=p.idx+1;
+        return`<div class="start-row">
+          <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+          <button class="resume-btn" onclick="resumeSession()">
+            <span class="resume-btn-label">▶ 続きから学習</span>
+            <span class="resume-btn-sub">${qNum}問目 ${cat.icon}${catLabel}</span>
+          </button>
+        </div>`;
+      } else {
+        // 履歴なし: 従来の1ボタン（コピーを変更）
+        return`<button class="start-btn start-btn-solo ${startOff?"off":""}" onclick="go()">学習スタート ${arr()}</button>`;
+      }
+    })()}
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-left">
+        <div class="hero-exam-type">IT・デジタル</div>
+        <div class="hero-exam-name">ITパスポート</div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+          <div class="hero-stat-div"></div>
+          <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+          ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+        </div>
+      </div>
+      <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+        <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+        <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+        <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+      </div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const catMeta=CAT_META[cur.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+  const catLabel=cur.category||"";
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="44" height="44" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+
+  // ── 未回答：問題文＋4択を表示 ──────────────────────
+  if(!ia){
+    const ch=cur.choices.map((c,i)=>`<button class="choice" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span></button>`).join("");
+    return`<div class="quiz-inner">
+      <div class="pc-quiz-main">
+        <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+        <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+        ${tim}
+        <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+        <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+        <div class="choices">${ch}</div>
+      </div>
+      <div class="pc-quiz-side">
+        <div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>
+        <div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>
+      </div>
+    </div>`;
+  }
+
+  // ── 回答済み：選択肢を非表示にして解説カードのみ表示 ──
+  const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";
+  const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";
+  const vc=ic&&!S.tout?"var(--green-d)":S.tout?"var(--gold)":"var(--accent)";
+
+  const correctRow=`<div class="exp-correct-bar ok">
+    <span class="exp-correct-label">正解</span>
+    <span class="exp-correct-text">${al[cur.answer]}. ${cur.choices[cur.answer]}</span>
+  </div>`;
+  const myRow=(!ic&&!S.tout&&S.sel!==null)?`<div class="exp-correct-bar ng">
+    <span class="exp-correct-label">あなた</span>
+    <span class="exp-correct-text">${al[S.sel]}. ${cur.choices[S.sel]}</span>
+  </div>`:"";
+
+  // PC側解説パネル
+  const expPC=`<div class="side-panel">
+    <div class="side-title">解説</div>
+    <div style="font-size:13px;font-weight:700;color:${vc};margin-bottom:8px;">${v}</div>
+    <div style="background:rgba(29,158,117,.1);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#0F6E56;"><strong>正解：</strong>${al[cur.answer]}. ${cur.choices[cur.answer]}</div>
+    ${(!ic&&!S.tout&&S.sel!==null)?`<div style="background:rgba(230,81,0,.08);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#8B2A0E;"><strong>あなた：</strong>${al[S.sel]}. ${cur.choices[S.sel]}</div>`:""}
+    <div class="side-exp-body">${cur.explanation}</div>
+  </div>`;
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="exp-card exp-sp ${cls}">
+        <div class="exp-head"><span class="exp-verdict">${v}</span></div>
+        ${correctRow}${myRow}
+        <p class="exp-body">${cur.explanation}</p>
+      </div>
+      <div class="next-wrap"><button class="next-btn" onclick="next()">${S.idx+1>=S.deck.length?"結果を見る":"次の問題"} ${arr()}</button></div>
+    </div>
+    <div class="pc-quiz-side">${expPC}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  // ⑤ undefinedを除去: questionが存在するか確認
+  const log=S.sess.map((a,i)=>{
+    if(!a.q||!a.q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[a.q.id]||0;
+    const cat=CAT_META[a.q.category];
+    const icon=cat?cat.icon:"";
+    const qText=a.q.question.slice(0,28)+"…";
+    return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${icon}</span><span class="ar-q">${qText}</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;
+  }).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/><circle cx="50" cy="50" r="42" fill="none" stroke="${vc}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${sr*2.639} 263.9" transform="rotate(-90 50 50)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{
+    if(!q||!q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[q.id]||0;
+    const is=(S.ud.starIds||[]).includes(q.id);
+    const cat=CAT_META[q.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+    return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${cat.color};background:${cat.bg};border-color:${cat.color}55">${cat.icon} ${q.category||""}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;
+  }).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+
+// ── ページ内ナビ スクロール処理 ──
+function scrollToApp(e){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById("app");
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab("app");
+}
+function scrollTo_(e, id){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById(id);
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab(id);
+}
+function setActiveTab(id){
+  document.querySelectorAll(".pn-tab").forEach(t => t.classList.remove("active"));
+  const map = {app:0, apply:1, books:2, courses:3, overview:4, syllabus:5, roadmap:6, faq:7};
+  const tabs = document.querySelectorAll(".pn-tab");
+  const idx = map[id];
+  if(idx !== undefined && tabs[idx]) tabs[idx].classList.add("active");
+}
+const _navIds = ["faq","roadmap","syllabus","overview","courses","books","apply"];
+window.addEventListener("scroll", ()=>{
+  const offset = 120;
+  for(const id of _navIds){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= offset){
+      setActiveTab(id); return;
+    }
+  }
+  setActiveTab("app");
+}, {passive:true});
+</script>
+
+<section class="aff-section" id="apply">
+  <div class="aff-inner">
+    <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+    <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+
+    <a class="official-btn" href="https://www3.jitec.ipa.go.jp/JitesCbt/html/examination/ip.html" target="_blank" rel="noopener">
+      <div class="official-ico">🖥️</div>
+      <div class="official-info">
+        <div class="official-name">IPA 情報処理推進機構（公式）</div>
+        <div class="official-note">試験申込・受験票確認・合格発表はこちらから確認できます</div>
+      </div>
+      <div class="official-arr">→</div>
+    </a>
+
+    <div class="aff-h3" id="books">おすすめ参考書</div>
+    <div class="book-list">
+      <div class="book-card">
+        <div class="book-title">📖 いちばんやさしい ITパスポート 絶対合格の教科書（高橋京介 著）</div>
+        <div class="book-memo">図解が豊富で初学者でも読みやすいベストセラーテキスト。毎年改訂で最新シラバスに完全対応。</div>
+        <div class="book-links">
+          <a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93%E3%82%84%E3%81%95%E3%81%97%E3%81%84+IT%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88+%E6%95%99%E7%A7%91%E6%9B%B8" target="_blank" rel="noopener">Amazon</a>
+          <a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/%E3%81%84%E3%81%A1%E3%81%B0%E3%82%93%E3%82%84%E3%81%95%E3%81%97%E3%81%84+IT%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88/" target="_blank" rel="noopener">楽天</a>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-title">📖 ITパスポート 合格教本（岡嶋裕史 著・技術評論社）</div>
+        <div class="book-memo">丁寧な解説と豊富な演習問題で確実に合格力が身につく定番テキスト。過去問解説も充実。</div>
+        <div class="book-links">
+          <a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=IT%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88+%E5%90%88%E6%A0%BC%E6%95%99%E6%9C%AC+%E6%8A%80%E8%A1%93%E8%A9%95%E8%AB%96%E7%A4%BE" target="_blank" rel="noopener">Amazon</a>
+          <a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/IT%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88+%E5%90%88%E6%A0%BC%E6%95%99%E6%9C%AC/" target="_blank" rel="noopener">楽天</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aff-h3" id="courses">おすすめ通信講座</div>
+    <div class="course-list">
+      <a class="course-card" href="https://studying.jp/itpassport/" target="_blank" rel="noopener">
+        <div class="course-ico">📱</div>
+        <div class="course-info">
+          <div class="course-name">スタディング ITパスポート講座</div>
+          <div class="course-price">約3,850円〜</div>
+          <div class="course-feat">業界最安クラス・スマホ完結・AI問題演習つき</div>
+        </div>
+        <div class="course-arr">›</div>
+      </a>
+      <a class="course-card" href="https://www.foresight.jp/itp/" target="_blank" rel="noopener">
+        <div class="course-ico">🎯</div>
+        <div class="course-info">
+          <div class="course-name">フォーサイト ITパスポート講座</div>
+          <div class="course-price">約9,800円〜</div>
+          <div class="course-feat">合格率全国平均の2倍超・フルカラーテキスト</div>
+        </div>
+        <div class="course-arr">›</div>
+      </a>
+    </div>
+
+    <p class="aff-note">※ 価格は変動する場合があります。最新情報は各公式サイトでご確認ください。</p>
+  </div>
+</section>
+<section class="seo-section" id="info">
+  <div class="seo-inner">
+    <h2 class="seo-h2">ITパスポート（iパス）とは</h2>
+    <p class="seo-lead">ITパスポート（iパス）は、ITを活用するすべての社会人・学生を対象とした国家試験（経済産業省管轄・IPA実施）です。ストラテジ系・マネジメント系・テクノロジ系の3分野にわたる幅広いIT知識を問われ、CBT方式（コンピュータ試験）で通年受験が可能です。合格率は例年45〜50%程度と比較的取得しやすく、就職・転職活動や社内DX推進に向けたITリテラシーの証明として活用されています。</p>
+
+    <div class="info-grid">
+      <div class="info-card"><div class="info-label">合格率</div><div class="info-val">約45〜50%</div></div>
+      <div class="info-card"><div class="info-label">勉強時間</div><div class="info-val">100〜150時間</div></div>
+      <div class="info-card"><div class="info-label">受験料</div><div class="info-val">7,500円（税込）</div></div>
+      <div class="info-card"><div class="info-label">試験方式</div><div class="info-val">CBT（通年受験）</div></div>
+      <div class="info-card"><div class="info-label">試験形式</div><div class="info-val">四肢択一・100問</div></div>
+      <div class="info-card"><div class="info-label">試験時間</div><div class="info-val">120分</div></div>
+    </div>
+
+    <h3 class="seo-h3" id="overview">試験概要</h3>
+    <table class="seo-table">
+      <thead><tr><th>項目</th><th>内容</th></tr></thead>
+      <tbody>
+        <tr><td>主催</td><td>独立行政法人 情報処理推進機構（IPA）</td></tr>
+        <tr><td>試験方式</td><td>CBT（コンピュータ・ベースド・テスティング）</td></tr>
+        <tr><td>受験申込</td><td>IPA公式サイトから随時申込可能（全国約300会場）</td></tr>
+        <tr><td>合格発表</td><td>試験終了直後に仮スコア表示・翌月中旬に公式発表</td></tr>
+        <tr><td>合格基準</td><td>総合600点以上 かつ 各分野300点以上（1000点満点）</td></tr>
+        <tr><td>受験資格</td><td>制限なし（誰でも受験可）</td></tr>
+        <tr><td>対象</td><td>職業人・学生を問わずITを利活用するすべての人</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="seo-h3" id="syllabus">出題分野と配点</h3>
+    <table class="seo-table">
+      <thead><tr><th>分野</th><th>問題数（目安）</th><th>主な内容</th></tr></thead>
+      <tbody>
+        <tr><td>ストラテジ系</td><td>約35問</td><td>経営戦略・情報戦略・システム戦略・法務・産業構造など</td></tr>
+        <tr><td>マネジメント系</td><td>約20問</td><td>プロジェクト管理・サービス管理・システム開発・監査など</td></tr>
+        <tr><td>テクノロジ系</td><td>約45問</td><td>コンピュータ基礎・ネットワーク・セキュリティ・データベースなど</td></tr>
+      </tbody>
+    </table>
+    <p class="seo-lead" style="margin-top:8px;">テクノロジ系（約45問）が最も出題数が多く、特にセキュリティ・ネットワーク・アルゴリズムは頻出です。一方、ストラテジ系も35問と多く、経営・法務の知識も重要です。</p>
+
+    <h3 class="seo-h3" id="roadmap">学習ロードマップ</h3>
+    <div class="roadmap">
+      <div class="rm-step">
+        <div class="rm-num">1</div>
+        <div class="rm-body">
+          <div class="rm-title">テクノロジ系の基礎を固める（1〜3週目）</div>
+          <div class="rm-desc">出題数最多（約45問）のテクノロジ系から着手。コンピュータの仕組み・ネットワーク基礎・セキュリティの頻出用語を集中的に習得する</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">2</div>
+        <div class="rm-body">
+          <div class="rm-title">ストラテジ系を学習（3〜5週目）</div>
+          <div class="rm-desc">経営戦略・情報システム戦略・法務（知財・個人情報保護法・不正競争防止法）の基本知識を習得。ビジネス文脈での理解が鍵</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">3</div>
+        <div class="rm-body">
+          <div class="rm-title">マネジメント系を学習（5〜7週目）</div>
+          <div class="rm-desc">プロジェクト管理・ITIL（サービス管理）・開発プロセスの基礎を習得。他の分野より出題数は少ないが確実に得点源にする</div>
+        </div>
+      </div>
+      <div class="rm-step">
+        <div class="rm-num">4</div>
+        <div class="rm-body">
+          <div class="rm-title">過去問演習で仕上げ（7〜8週目）</div>
+          <div class="rm-desc">IPA公開の過去問・サンプル問題を繰り返し解く。苦手分野を重点的に復習し、本番の時間配分（120分・100問）に慣れる</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="seo-h3">この資格を取ったら次は？</h3>
+    <div class="next-shikaku">
+      <a class="next-card" href="fe.html">
+        <div class="next-ico" style="background:#E3F2FD">🖥️</div>
+        <div><div class="next-name">基本情報技術者</div><div class="next-desc">iパスの次のステップ。エンジニアへの登竜門</div></div>
+      </a>
+      <a class="next-card" href="scmgmt.html">
+        <div class="next-ico" style="background:#E8F5E9">🔐</div>
+        <div><div class="next-name">情報セキュリティマネジメント</div><div class="next-desc">セキュリティ専門職・DX推進担当に最適</div></div>
+      </a>
+      <a class="next-card" href="gken.html">
+        <div class="next-ico" style="background:#F3E5F5">🤖</div>
+        <div><div class="next-name">G検定（生成AI）</div><div class="next-desc">AI・DX時代に活躍。iパスとのダブル取得で差別化</div></div>
+      </a>
+    </div>
+
+    <h3 class="seo-h3" id="faq">よくある質問</h3>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">ITパスポートの合格率はどのくらいですか？</summary>
+        <p class="faq-a">例年45〜50%程度で推移しており、IT系国家試験の中では比較的取得しやすい資格です。1000点満点中600点以上かつ各分野300点以上で合格となります。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">勉強期間はどのくらい必要ですか？</summary>
+        <p class="faq-a">IT未経験者で100〜150時間が目安です。毎日1〜2時間の学習で2〜3ヶ月での合格を目指せます。IT業務経験者や理系出身者はさらに短縮できます。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">いつでも受験できますか？</summary>
+        <p class="faq-a">はい。CBT方式（コンピュータ試験）のため、全国約300か所のテストセンターで通年受験が可能です。自分の都合に合わせて試験日・会場を選んで申し込めます。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">文系・非IT職でも取得できますか？</summary>
+        <p class="faq-a">はい。ITパスポートはITエンジニアだけでなく、全ビジネスパーソンを対象とした試験です。文系・非IT職でも100〜150時間の学習で合格できます。経営・法務など文系の知識が活きる分野もあります。</p>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">就活・転職に有利ですか？</summary>
+        <p class="faq-a">IT業界への就職・転職はもちろん、製造・金融・医療など非IT業界でもDX推進担当として評価されます。学生の場合は「ITリテラシーの証明」として選考でアピールできます。</p>
+      </details>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-logo">
+      <span class="sf-lmark">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="4.5" height="6" rx="1" fill="white" fill-opacity="0.9"/>
+          <rect x="8" y="1.5" width="4.5" height="4" rx="1" fill="white" fill-opacity="0.6"/>
+          <rect x="1.5" y="9.5" width="11" height="2" rx="1" fill="white" fill-opacity="0.5"/>
+          <circle cx="10.5" cy="8.5" r="2" fill="white" fill-opacity="0.85"/>
+        </svg>
+      </span>
+      資格<span>Pass</span>
+    </div>
+    <div class="sf-links">
+      <a href="index.html">資格一覧トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="sf-copy">© 2026 資格Pass</div>
+  </div>
+</footer>
+</body>
+</html>
