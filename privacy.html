@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー | 資格ドリル</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --navy:#0f1623;--navy2:#171e2e;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --radius:14px;--shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);line-height:1.8;}
+a{text-decoration:none;color:var(--brand);}
+.hd{background:var(--navy);height:56px;display:flex;align-items:center;padding:0 16px;position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,.06);}
+.hd-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:760px;margin:0 auto;}
+.logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;flex-shrink:0;font-family:"Inter","Noto Sans JP";text-decoration:none;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;color:#fff;font-weight:900;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+.logo-text{background:linear-gradient(90deg,#fff,#ffd6c2);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.back{color:rgba(255,255,255,.55);font-size:13px;display:flex;align-items:center;gap:4px;text-decoration:none;transition:color .15s;}
+.back:hover{color:#fff;}
+.wrap{max-width:680px;margin:0 auto;padding:32px 16px 60px;}
+.page-header{margin-bottom:24px;}
+.page-title{font-size:22px;font-weight:900;margin-bottom:6px;}
+.page-date{font-size:12px;color:var(--text3);}
+.toc{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:20px;}
+.toc-title{font-size:12px;font-weight:700;color:var(--text3);letter-spacing:1px;margin-bottom:10px;}
+.toc-list{display:flex;flex-direction:column;gap:5px;}
+.toc-list a{font-size:13px;color:var(--brand);}
+.sec{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:10px;}
+.sec-title{font-size:15px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;}
+.sec-title::before{content:"";width:3px;height:15px;background:linear-gradient(var(--brand),var(--brand2));border-radius:2px;flex-shrink:0;}
+.sec p{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.9;}
+.sec p:last-child{margin-bottom:0;}
+.sec ul{padding-left:18px;margin-bottom:10px;}
+.sec ul li{font-size:13px;color:var(--text2);margin-bottom:5px;line-height:1.8;}
+.sec .note{background:#f9f9f7;border-left:3px solid var(--green);padding:10px 14px;border-radius:0 8px 8px 0;font-size:12px;color:var(--text2);}
+.ft{background:var(--navy);padding:28px 16px 20px;margin-top:32px;}
+.ft-inner{max-width:760px;margin:0 auto;}
+.ft-brand{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+.ft-logo-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:12px;font-weight:900;color:#fff;}
+.ft-logo{color:#fff;font-size:16px;font-weight:900;font-family:"Inter","Noto Sans JP";}
+.ft-logo .gn{color:var(--green);}
+.ft-desc{font-size:12px;color:rgba(255,255,255,.4);line-height:1.7;margin-bottom:14px;}
+.ftlinks{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:12px;}
+.ftlinks a{color:rgba(255,255,255,.35);font-size:11px;text-decoration:none;transition:color .15s;}
+.ftlinks a:hover{color:rgba(255,255,255,.7);}
+.ft-copy{color:rgba(255,255,255,.18);font-size:10px;}
+
+
+.sec-title::before{content:"";width:3px;height:15px;background:linear-gradient(var(--brand),var(--brand2));border-radius:2px;flex-shrink:0;}
+.card-title::before{content:"";width:3px;height:14px;background:linear-gradient(var(--brand),var(--brand2));border-radius:2px;}
+.form-card-title::before{content:"";width:3px;height:14px;background:linear-gradient(var(--brand),var(--brand2));border-radius:2px;}
+.faq-q::after{color:var(--brand);}
+a{color:var(--brand);}
+.toc-list a{color:var(--brand);}
+.wrap{max-width:680px;margin:0 auto;padding:32px 16px 60px;animation:fadeIn .3s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card,.form-card,.sec{transition:box-shadow .2s,transform .15s;}
+.card:hover,.sec:hover{box-shadow:0 6px 24px rgba(0,0,0,.08);}
+.nav-link{transition:all .2s;}
+.nav-link:hover{border:1px solid var(--brand);background:rgba(255,59,83,.04);transform:translateX(3px);}
+</style>
+</head>
+<body>
+<header class="hd">
+  <div class="hd-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      ホームへ
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="page-header">
+    <div class="page-title">🔒 プライバシーポリシー</div>
+    <div class="page-date">最終更新日：2025年4月25日</div>
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">目次</div>
+    <div class="toc-list">
+      <a href="#sec1">1. 収集する情報</a>
+      <a href="#sec2">2. 情報の利用目的</a>
+      <a href="#sec3">3. ローカルストレージについて</a>
+      <a href="#sec4">4. アクセス解析ツール</a>
+      <a href="#sec5">5. 広告について</a>
+      <a href="#sec6">6. 第三者への提供</a>
+      <a href="#sec7">7. プライバシーポリシーの変更</a>
+      <a href="#sec8">8. お問い合わせ</a>
+    </div>
+  </div>
+
+  <div class="sec" id="sec1">
+    <div class="sec-title">1. 収集する情報</div>
+    <p>資格ドリル（以下「本サービス」）は、以下の情報を収集する場合があります。</p>
+    <ul>
+      <li>お問い合わせフォームからご連絡いただいた場合に入力されたお名前・メールアドレス・お問い合わせ内容</li>
+      <li>Google Analyticsによるアクセスログ（IPアドレス・ブラウザ種別・OS・参照元URLなど）</li>
+    </ul>
+    <p>本サービスは、会員登録を必要としないため、個人を特定できる情報を直接収集・保存することはありません。</p>
+  </div>
+
+  <div class="sec" id="sec2">
+    <div class="sec-title">2. 情報の利用目的</div>
+    <p>収集した情報は以下の目的で利用します。</p>
+    <ul>
+      <li>お問い合わせへの回答・対応</li>
+      <li>サービスの品質向上・機能改善</li>
+      <li>アクセス状況の把握・分析</li>
+      <li>不正アクセスや不正利用の防止</li>
+    </ul>
+  </div>
+
+  <div class="sec" id="sec3">
+    <div class="sec-title">3. ローカルストレージについて</div>
+    <p>本サービスでは、ブラウザのローカルストレージ機能を使用して、以下の情報をお使いの端末（デバイス）内に保存しています。</p>
+    <ul>
+      <li>各資格の学習履歴・正答率・解答記録</li>
+      <li>連続学習日数（ストリーク）</li>
+      <li>スター登録した問題</li>
+    </ul>
+    <p>これらのデータはお客様のブラウザ内にのみ保存され、外部のサーバーには送信されません。ブラウザのキャッシュ・ローカルストレージを削除した場合、学習履歴が消去されますのでご注意ください。</p>
+    <div class="note">⚠️ ローカルストレージのデータはブラウザ・デバイスをまたいで同期されません。スマートフォンとPCでは別々に管理されます。</div>
+  </div>
+
+  <div class="sec" id="sec4">
+    <div class="sec-title">4. アクセス解析ツール</div>
+    <p>本サービスでは、サービス改善を目的として Google Analytics を利用しています。Google Analytics はCookieを使用してアクセス情報を収集しますが、個人を特定する情報は含まれません。</p>
+    <p>Google Analytics のデータ収集を無効にしたい場合は、Google アナリティクス オプトアウト アドオンをご利用ください。</p>
+    <p>Google のプライバシーポリシーについては <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">こちら</a> をご参照ください。</p>
+  </div>
+
+  <div class="sec" id="sec5">
+    <div class="sec-title">5. 広告について</div>
+    <p>本サービスは現在、第三者配信の広告は掲載していません。将来的に広告を導入する場合は、本ポリシーを更新してお知らせします。</p>
+    <p>一部のページには参考書・通信講座へのリンクが含まれていますが、これらはサービスとして有用な情報として掲載しているものです。</p>
+  </div>
+
+  <div class="sec" id="sec6">
+    <div class="sec-title">6. 第三者への提供</div>
+    <p>本サービスは、以下の場合を除き、収集した個人情報を第三者に提供・開示しません。</p>
+    <ul>
+      <li>法令に基づき開示が必要と判断される場合</li>
+      <li>人の生命・身体・財産の保護のために必要な場合</li>
+      <li>国の機関または地方公共団体から法令に基づく協力を求められた場合</li>
+    </ul>
+  </div>
+
+  <div class="sec" id="sec7">
+    <div class="sec-title">7. プライバシーポリシーの変更</div>
+    <p>本ポリシーは、必要に応じて内容を変更することがあります。重要な変更を行う場合は、本ページにてお知らせします。変更後のポリシーは、本ページに掲載した時点から有効となります。</p>
+  </div>
+
+  <div class="sec" id="sec8">
+    <div class="sec-title">8. お問い合わせ</div>
+    <p>本ポリシーに関するお問い合わせは、<a href="contact.html">お問い合わせフォーム</a> よりご連絡ください。</p>
+  </div>
+</div>
+
+<footer class="ft">
+  <div class="ft-inner">
+    <div class="ft-brand">
+      <div class="ft-logo-mark">問</div>
+      <div class="ft-logo">資格<span class="gn">ドリル</span></div>
+    </div>
+    <div class="ft-desc">登録不要・完全無料の資格学習サービス。</div>
+    <div class="ftlinks">
+      <a href="about.html">サイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="ft-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>

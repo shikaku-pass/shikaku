@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>利用規約 | 資格ドリル</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --navy:#0f1623;--navy2:#171e2e;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --radius:14px;--shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);line-height:1.8;}
+a{text-decoration:none;color:var(--brand);}
+.hd{background:var(--navy);height:56px;display:flex;align-items:center;padding:0 16px;position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,.06);}
+.hd-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:760px;margin:0 auto;}
+.logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;flex-shrink:0;font-family:"Inter","Noto Sans JP";text-decoration:none;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;color:#fff;font-weight:900;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+.logo-text{background:linear-gradient(90deg,#fff,#ffd6c2);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.back{color:rgba(255,255,255,.55);font-size:13px;display:flex;align-items:center;gap:4px;text-decoration:none;transition:color .15s;}
+.back:hover{color:#fff;}
+.wrap{max-width:680px;margin:0 auto;padding:32px 16px 60px;}
+.page-header{margin-bottom:24px;}
+.page-title{font-size:22px;font-weight:900;margin-bottom:6px;}
+.page-date{font-size:12px;color:var(--text3);}
+.toc{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px 20px;margin-bottom:20px;}
+.toc-title{font-size:12px;font-weight:700;color:var(--text3);letter-spacing:1px;margin-bottom:10px;}
+.toc-list{display:flex;flex-direction:column;gap:5px;}
+.toc-list a{font-size:13px;color:var(--brand);}
+.sec{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:10px;}
+.sec-title{font-size:15px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;}
+.sec-title::before{content:"";width:3px;height:15px;background:linear-gradient(var(--brand),var(--brand2));border-radius:2px;flex-shrink:0;}
+.sec p{font-size:13px;color:var(--text2);margin-bottom:10px;line-height:1.9;}
+.sec p:last-child{margin-bottom:0;}
+.sec ul{padding-left:18px;margin-bottom:10px;}
+.sec ul li{font-size:13px;color:var(--text2);margin-bottom:5px;line-height:1.8;}
+.warn{background:#FEF3F2;border:1px solid #FECACA;border-radius:9px;padding:12px 14px;font-size:12px;color:#9B1C1C;margin-bottom:10px;line-height:1.8;}
+.ft{background:var(--navy);padding:28px 16px 20px;margin-top:32px;}
+.ft-inner{max-width:760px;margin:0 auto;}
+.ft-brand{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+.ft-logo-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:12px;font-weight:900;color:#fff;}
+.ft-logo{color:#fff;font-size:16px;font-weight:900;font-family:"Inter","Noto Sans JP";}
+.ft-logo .gn{color:var(--green);}
+.ft-desc{font-size:12px;color:rgba(255,255,255,.4);line-height:1.7;margin-bottom:14px;}
+.ftlinks{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:12px;}
+.ftlinks a{color:rgba(255,255,255,.35);font-size:11px;text-decoration:none;transition:color .15s;}
+.ftlinks a:hover{color:rgba(255,255,255,.7);}
+.ft-copy{color:rgba(255,255,255,.18);font-size:10px;}
+
+
+.sec-title::before{content:"";width:3px;height:15px;background:linear-gradient(var(--brand),var(--brand2));border-radius:2px;flex-shrink:0;}
+.card-title::before{content:"";width:3px;height:14px;background:linear-gradient(var(--brand),var(--brand2));border-radius:2px;}
+.form-card-title::before{content:"";width:3px;height:14px;background:linear-gradient(var(--brand),var(--brand2));border-radius:2px;}
+.faq-q::after{color:var(--brand);}
+a{color:var(--brand);}
+.toc-list a{color:var(--brand);}
+.wrap{max-width:680px;margin:0 auto;padding:32px 16px 60px;animation:fadeIn .3s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card,.form-card,.sec{transition:box-shadow .2s,transform .15s;}
+.card:hover,.sec:hover{box-shadow:0 6px 24px rgba(0,0,0,.08);}
+.nav-link{transition:all .2s;}
+.nav-link:hover{border:1px solid var(--brand);background:rgba(255,59,83,.04);transform:translateX(3px);}
+</style>
+</head>
+<body>
+<header class="hd">
+  <div class="hd-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      ホームへ
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="page-header">
+    <div class="page-title">📜 利用規約</div>
+    <div class="page-date">最終更新日：2025年4月25日</div>
+  </div>
+
+  <div class="toc">
+    <div class="toc-title">目次</div>
+    <div class="toc-list">
+      <a href="#sec1">第1条（適用）</a>
+      <a href="#sec2">第2条（サービスの内容）</a>
+      <a href="#sec3">第3条（利用上の注意）</a>
+      <a href="#sec4">第4条（禁止事項）</a>
+      <a href="#sec5">第5条（免責事項）</a>
+      <a href="#sec6">第6条（著作権）</a>
+      <a href="#sec7">第7条（サービスの変更・停止）</a>
+      <a href="#sec8">第8条（準拠法・管轄）</a>
+    </div>
+  </div>
+
+  <div class="sec" id="sec1">
+    <div class="sec-title">第1条（適用）</div>
+    <p>本利用規約（以下「本規約」）は、資格ドリル（以下「本サービス」）の利用に関する条件を定めるものです。本サービスをご利用いただいた時点で、本規約に同意したものとみなします。</p>
+  </div>
+
+  <div class="sec" id="sec2">
+    <div class="sec-title">第2条（サービスの内容）</div>
+    <p>本サービスは、資格試験対策を目的とした4択問題集を無料で提供するWebサービスです。学習履歴・正答率などのデータはお使いのブラウザ内（ローカルストレージ）に保存されます。</p>
+    <p>本サービスは個人が運営する非営利のサービスであり、各資格試験の主催団体・試験機関とは一切関係ありません。</p>
+  </div>
+
+  <div class="sec" id="sec3">
+    <div class="sec-title">第3条（利用上の注意）</div>
+    <div class="warn">⚠️ 本サービスの問題・解説は学習サポートを目的として作成されており、試験合格を保証するものではありません。問題の内容は変更・改訂されることがあります。</div>
+    <p>試験の最新情報・正式な出題範囲・申込方法については、各試験機関の公式サイトを必ずご確認ください。本サービスの情報のみを根拠とした受験判断は行わないようにしてください。</p>
+  </div>
+
+  <div class="sec" id="sec4">
+    <div class="sec-title">第4条（禁止事項）</div>
+    <p>本サービスをご利用にあたり、以下の行為を禁止します。</p>
+    <ul>
+      <li>本サービスの問題・解説・コンテンツを無断で複製・転載・販売・二次利用する行為</li>
+      <li>本サービスのシステムやサーバーに過度な負荷をかける行為（自動ツールによる大量アクセスなど）</li>
+      <li>本サービスを利用した迷惑行為・不正行為</li>
+      <li>本サービスの運営を妨害する行為</li>
+      <li>その他、公序良俗に反する行為</li>
+    </ul>
+  </div>
+
+  <div class="sec" id="sec5">
+    <div class="sec-title">第5条（免責事項）</div>
+    <p>本サービスは問題の正確性について万全を期していますが、内容の完全な正確性・最新性を保証するものではありません。本サービスを利用したことにより生じた損害・不利益について、運営者は一切の責任を負いかねます。</p>
+    <p>システムの障害・メンテナンス・その他の事情により、本サービスが一時的に利用できない場合があります。これによって生じた損害についても、運営者は責任を負いません。</p>
+    <p>ブラウザのキャッシュ削除・ブラウザのアップデートなどにより学習履歴が消去された場合についても、運営者は責任を負いません。</p>
+  </div>
+
+  <div class="sec" id="sec6">
+    <div class="sec-title">第6条（著作権）</div>
+    <p>本サービスに掲載されている問題・解説・デザイン・ロゴなどのコンテンツの著作権は、運営者に帰属します。</p>
+    <p>個人の学習目的での利用は自由ですが、第三者への提供・販売・商業利用・転載は禁止します。</p>
+  </div>
+
+  <div class="sec" id="sec7">
+    <div class="sec-title">第7条（サービスの変更・停止）</div>
+    <p>運営者は、ユーザーへの事前通知なく、本サービスの内容を変更・追加・削除することができます。また、技術的な問題・その他の事情により、本サービスを一時停止または終了することがあります。</p>
+  </div>
+
+  <div class="sec" id="sec8">
+    <div class="sec-title">第8条（準拠法・管轄）</div>
+    <p>本規約は日本法に準拠するものとします。本サービスに関して紛争が生じた場合、運営者の所在地を管轄する裁判所を第一審の専属的合意管轄裁判所とします。</p>
+    <p>本規約に関するお問い合わせは、<a href="contact.html">お問い合わせフォーム</a>よりご連絡ください。</p>
+  </div>
+</div>
+
+<footer class="ft">
+  <div class="ft-inner">
+    <div class="ft-brand">
+      <div class="ft-logo-mark">問</div>
+      <div class="ft-logo">資格<span class="gn">ドリル</span></div>
+    </div>
+    <div class="ft-desc">登録不要・完全無料の資格学習サービス。</div>
+    <div class="ftlinks">
+      <a href="about.html">サイトについて</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="ft-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>
