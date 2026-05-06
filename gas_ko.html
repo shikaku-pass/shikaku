@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>ガス主任技術者 甲種 無料問題集・過去問対策 | 資格ドリル</title>
+<meta name="description" content="G検定（ジェネラリスト検定）の無料問題集。AI・機械学習・ディープラーニング・法律・倫理を網羅。合格率65〜76%・勉強時間40〜80時間。オンライン100分/会場120分・145問。弱点特訓・解説つき。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1623;--navy2:#171e2e;--navy3:#1e2840;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;--gold-bg:#FEF6E4;
+  --accent:#ff3b53;--accent-bg:#fff0f1;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Inter','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;z-index:100;}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.site-logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;font-family:"Inter","Noto Sans JP";}
+.site-logo .logo-text{background:linear-gradient(90deg,#fff 0%,#ffd6c2 100%);-webkit-background-clip:text;background-clip:text;color:transparent !important;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+/* ③ PC時: ヘッダー内コンテンツを掲載内容の左端に揃える */
+@media(min-width:769px){
+  .site-header{padding:0;}
+  .site-header-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+  .page-nav-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;}
+.hero-top{padding:18px 20px 14px;display:flex;align-items:center;gap:14px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:3px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+/* モードタブ（ヒーロー内）コンパクト1行 */
+.hero-mode-bar{display:flex;border-top:1px solid rgba(255,255,255,.08);}
+.hm-tab{flex:1;padding:8px 4px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:5px;cursor:pointer;border:none;background:none;font-family:var(--font-b);color:rgba(255,255,255,.4);transition:all .2s;border-bottom:2px solid transparent;}
+.hm-tab:not(.hm-dis):hover{color:rgba(255,255,255,.8);background:rgba(255,255,255,.04);}
+.hm-tab.hm-on{color:#fff;border-bottom-color:var(--brand);background:rgba(255,59,83,.08);}
+.hm-tab.hm-dis{opacity:.3;cursor:not-allowed;}
+.hm-ic{font-size:14px;line-height:1;transition:transform .25s cubic-bezier(.34,1.56,.64,1);flex-shrink:0;}
+.hm-tab.hm-on .hm-ic{transform:scale(1.15);}
+.hm-lbl{font-size:12px;font-weight:700;}
+.hm-cnt{font-size:10px;background:rgba(255,255,255,.12);border-radius:4px;padding:1px 6px;line-height:1.5;transition:all .2s;}
+.hm-tab.hm-on .hm-cnt{background:var(--brand);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.cat-card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.cat-card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
+.cat-filter-badge{font-size:10px;padding:2px 8px;border-radius:99px;font-weight:700;}
+.cat-filter-badge.none{color:var(--text3);background:var(--bg);}
+.cat-filter-badge.active{color:#fff;background:var(--brand);animation:badgePop .3s cubic-bezier(.34,1.56,.64,1);}
+@keyframes badgePop{0%{transform:scale(.7)}100%{transform:scale(1)}}
+.cat-row{display:flex;gap:7px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:7px 13px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .2s;display:flex;align-items:center;gap:5px;}
+.cat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;transform:translateY(-1px);}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;box-shadow:0 3px 10px rgba(15,22,35,.2);}
+.subcat-section{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);animation:fadeSlideIn .22s ease;}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.subcat-label{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;margin-bottom:7px;display:flex;align-items:center;gap:5px;text-transform:uppercase;}
+.subcat-label::before{content:"";width:2px;height:10px;background:linear-gradient(var(--brand),var(--brand2));border-radius:1px;flex-shrink:0;}
+.subcat-grid{display:flex;gap:5px;flex-wrap:wrap;}
+.subcat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:5px 11px;font-size:11px;cursor:pointer;color:var(--text2);transition:all .2s;display:flex;align-items:center;gap:4px;}
+.subcat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;}
+.subcat-chip.active{background:linear-gradient(135deg,var(--brand),var(--brand2));border-color:transparent;color:#fff;font-weight:700;box-shadow:0 3px 8px rgba(255,59,83,.3);}
+.opts-compact{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.opts-compact-sep{width:1px;height:16px;background:var(--border);flex-shrink:0;}
+.opt-label-ic{font-size:12px;color:var(--text3);}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill:hover{background:#f0efe8;border-color:var(--border2);}
+.opt-pill.on{background:var(--accent-bg)!important;border-color:var(--brand)!important;color:var(--brand)!important;font-weight:700;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+/* スタート・継続ボタン行 */
+.start-row{display:flex;gap:8px;margin-bottom:8px;}
+.start-btn{flex:1;height:52px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:900;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 8px 22px rgba(255,59,83,.35);}
+.start-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(255,59,83,.5);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.start-btn-solo{width:100%;height:56px;font-size:18px;letter-spacing:2px;margin-bottom:8px;}
+.resume-btn{flex:1;height:52px;background:var(--green-bg);border:1.5px solid var(--green);border-radius:var(--radius);color:var(--green-d);font-size:13px;font-weight:700;font-family:var(--font-b);cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;}
+.resume-btn:hover{background:var(--green);color:#fff;}
+.resume-btn-label{font-size:12px;font-weight:700;}
+.resume-btn-sub{font-size:10px;opacity:.75;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:8px 12px 70px;display:flex;flex-direction:column;gap:8px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter-wrap{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:22px;font-weight:900;}
+.qc-sep{font-size:12px;color:var(--text3);}
+.qc-tot{font-size:13px;color:var(--text3);}
+.qc-sub{font-size:10px;color:var(--text3);letter-spacing:.5px;}
+.star-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:18px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--brand);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:44px;height:44px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:13px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:6px;}
+.sb-ok{font-size:11px;font-weight:700;color:var(--green);min-width:28px;}
+.sb-ng{font-size:11px;font-weight:700;color:var(--accent);min-width:28px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.sb-dot{width:7px;height:7px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:9px;height:9px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:9px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;}
+.q-cat-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}
+.q-miss{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(230,81,0,.3);padding:3px 8px;border-radius:6px;}
+.q-text{font-size:13px;line-height:1.7;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:6px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:0 12px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:10px;text-align:left;transition:all .15s;color:var(--text2);min-height:44px;width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FFF3E0;transform:translateX(2px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:12px;width:26px;height:26px;border-radius:6px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:12px;line-height:1.5;padding:10px 0;}
+.ch-icon{font-size:15px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:10px;padding:10px 12px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(230,81,0,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.exp-verdict{font-size:13px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:11px;color:var(--gold);}
+/* 正解表示バー */
+.exp-correct-bar{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:7px;margin-bottom:6px;}
+.exp-correct-bar.ok{background:rgba(29,158,117,.12);}
+.exp-correct-bar.ng{background:rgba(230,81,0,.08);}
+.exp-correct-label{font-size:10px;font-weight:700;white-space:nowrap;padding-top:1px;}
+.exp-correct-bar.ok .exp-correct-label{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-label{color:var(--accent);}
+.exp-correct-text{font-size:12px;line-height:1.5;}
+.exp-correct-bar.ok .exp-correct-text{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-text{color:#8B2A0E;}
+.exp-body{font-size:11.5px;line-height:1.8;color:var(--text2);}
+.next-wrap{position:sticky;bottom:12px;padding-top:6px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);width:100%;height:46px;font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.3);}
+.next-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.next-3{display:grid;grid-template-columns:1fr 1fr 2fr;gap:6px;}
+.btn-retry{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-retry:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-bg);}
+.btn-pause{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-pause:hover{border-color:var(--green);color:var(--green-d);background:var(--green-bg);}
+.btn-next-main{height:46px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 4px 14px rgba(255,59,83,.3);}
+.btn-next-main:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,59,83,.45);}
+.btn-sub-lbl{font-size:9px;font-weight:400;opacity:.7;line-height:1;}
+/* ⑥ result コンパクト化 */
+.result-inner{max-width:480px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:12px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:100px;height:100px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:32px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:14px;}
+.result-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.result-verdict{font-size:13px;font-weight:700;padding:6px 16px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:6px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:12px;}
+.rc-name{font-size:10px;font-weight:700;width:68px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:10px;font-weight:700;width:28px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:5px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:10px;color:var(--text3);min-width:22px;}
+.ar-cat{font-size:12px;}
+.ar-q{flex:1;font-size:11px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:13px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:44px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.25);}
+.cta-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.ghost-btn{width:100%;height:40px;background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:13px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── スマホ：サイドパネルをメインコンテンツの下に表示 ── */
+@media (max-width:768px){
+  .pc-cols{display:flex;flex-direction:column;gap:0;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{display:flex;flex-direction:column;gap:12px;margin-top:12px;}
+  .quiz-inner{display:flex;flex-direction:column;}
+  .pc-quiz-main{display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{display:none;}
+}
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  /* ② サイドパネル: ビューポート高さを超えないよう最大高さ設定してスクロール */
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-col-side::-webkit-scrollbar{display:none;}
+  .quiz-inner{max-width:920px;padding:24px 32px 40px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-quiz-side::-webkit-scrollbar{display:none;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  /* ⑥ result: PC時もコンパクトに */
+  .result-inner{max-width:680px;padding:16px 32px 40px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:72px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── ページ内タブナビ ── */
+.page-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:90;}
+.page-nav::-webkit-scrollbar{display:none;}
+.page-nav-inner{display:flex;align-items:center;min-width:max-content;padding:0 12px;}
+.pn-tab{color:rgba(255,255,255,0.55);font-size:12px;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;text-decoration:none;display:block;}
+.pn-tab:hover{color:#fff;}
+.pn-tab.active{color:#fff;border-bottom-color:#1D9E75;}
+
+/* ① resume-btn は上で定義済み */
+
+/* ── モード選択コンパクト化 ── */
+.mode-row-compact{display:flex;gap:6px;}
+.mode-btn-compact{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:7px 4px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);transition:all .18s;height:40px;}
+.mode-btn-compact:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-btn-compact.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-btn-compact.mode-off{opacity:.4;cursor:not-allowed;}
+.mbc-icon{font-size:14px;line-height:1;}
+.mbc-label{font-size:11px;font-weight:700;}
+.mbc-count{font-size:10px;color:var(--text3);margin-left:1px;}
+.mode-btn-compact.mode-active .mbc-count{color:var(--accent);}
+
+/* ── カテゴリ+オプション 横並び ── */
+.cat-opt-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.cat-opt-row .cat-row{flex:1;min-width:0;}
+.opt-mini{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター（横幅いっぱいバー）*/
+.site-footer{background:var(--navy);padding:14px 16px;margin-top:0;width:100%;}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:920px;margin:0 auto;}
+.sf-logo{color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.sf-logo span{color:var(--green) !important;background:none;}
+.sf-lmark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;}
+.sf-links{display:flex;gap:16px;flex-wrap:wrap;}
+.sf-links a{color:rgba(255,255,255,.4);font-size:11px;transition:color .15s;}
+.sf-links a:hover{color:rgba(255,255,255,.75);}
+.sf-copy{color:rgba(255,255,255,.2);font-size:10px;}
+@media(max-width:768px){
+  .sf-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+@media(min-width:769px){
+  .site-footer{padding:14px 0;}
+  .sf-inner{padding:0 32px;}
+}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+.info-grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:8px;}
+.ig-card{background:#f5f4f0;border-radius:9px;padding:11px 13px;}
+.ig-lbl{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:3px;}
+.ig-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/gken.html">
+<meta property="og:title" content="ガス主任技術者（甲種） 無料問題集 | 資格ドリル">
+<meta property="og:description" content="ガス主任技術者甲種の無料問題集。ガス基礎・工作物・燃焼・法令・計測を網羅。合格率20〜30%・勉強時間300〜500時間。弱点特訓・解説つき。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-drill.com/gas-ko/">
+<meta property="og:site_name" content="資格ドリル">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ガス主任技術者（甲種） 無料問題集 | 資格ドリル">
+<meta name="twitter:description" content="ガス主任技術者甲種の無料問題集。ガス基礎・工作物・燃焼・法令・計測を網羅。合格率20〜30%・勉強時間300〜500時間。弱点特訓・解説つき。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "G検定（ジェネラリスト検定）無料問題集",
+      "description": "G検定はJDLA（日本ディープラーニング協会）が実施するAI・ディープラーニング活用リテラシーの検定試験です。AI概論・機械学習・ディープラーニング・生成AI・法律・倫理など幅広い範囲から出題されます。",
+      "provider": {"@type": "Organization", "name": "資格ドリル"},
+      "educationalLevel": "入門・中級",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "G検定の合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "例年60〜76%程度で推移しており、AI系資格の中では比較的取得しやすい検定です。出題範囲が広いため、公式テキストを中心とした網羅的な学習が合格の鍵です。"}},
+        {"@type": "Question","name": "G検定の勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "AI未経験者で40〜80時間が目安です。IT・AI知識がある方は20〜40時間程度で合格を目指せます。公式テキストと問題集を組み合わせた学習が効果的です。"}},
+        {"@type": "Question","name": "G検定のオンライン試験と会場試験の違いは何ですか？","acceptedAnswer": {"@type": "Answer","text": "問題数は同じ145問程度ですが、試験時間が異なります。オンライン試験（自宅受験）は100分、会場試験（全国指定会場）は120分です。2026年はオンライン年6回・会場試験年3回が開催されます。"}},
+        {"@type": "Question","name": "G検定に合格すると何が得られますか？","acceptedAnswer": {"@type": "Answer","text": "合格証・オープンバッジが発行され、日本最大級のAI人材コミュニティ「CDLE」に参加できます。DX推進パスポートのバッジも取得可能で、就職・転職・社内DX推進でのアピールになります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="site-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      資格一覧へ
+    </a>
+  </div>
+</header>
+<nav class="page-nav" id="pageNav">
+  <div class="page-nav-inner">
+    <a class="pn-tab active" href="#app"      onclick="scrollToApp(event)">📝 問題を解く</a>
+    <a class="pn-tab"        href="#apply"    onclick="scrollTo_(event,'apply')">🤖 申し込み</a>
+    <a class="pn-tab"        href="#books"    onclick="scrollTo_(event,'books')">📖 参考書</a>
+    <a class="pn-tab"        href="#courses"  onclick="scrollTo_(event,'courses')">🎓 通信講座</a>
+    <a class="pn-tab"        href="#overview" onclick="scrollTo_(event,'overview')">📋 試験概要</a>
+    <a class="pn-tab"        href="#syllabus" onclick="scrollTo_(event,'syllabus')">📊 出題分野</a>
+    <a class="pn-tab"        href="#roadmap"  onclick="scrollTo_(event,'roadmap')">🗺️ 学習の流れ</a>
+    <a class="pn-tab"        href="#faq"      onclick="scrollTo_(event,'faq')">❓ よくある質問</a>
+  </div>
+</nav>
+<div id="app"></div>
+<script>
+// ▼▼▼ ここに問題データを追加してください ▼▼▼
+const ALL_QUESTIONS=[
+{id:1,category:"法令",question:"甲種ガス主任技術者が監督できるガス工作物の範囲として正しいものはどれか。",choices:["圧力の区分にかかわらずすべてのガス工作物", "最高使用圧力が中圧以下のものに限る", "低圧のガス工作物のみ", "最高使用圧力が高圧のものに限る"],answer:0,explanation:"甲種は圧力の区分に関係なくすべてのガス工作物を監督できる。乙種は中圧以下、丙種は低圧のみ。"},
+{id:2,category:"法令",question:"ガス事業法において保安規程の制定・変更に必要な手続きはどれか。",choices:["都道府県知事への届出", "都道府県知事の認可", "経済産業大臣の認可", "経済産業大臣への届出"],answer:3,explanation:"保安規程の制定・変更は経済産業大臣への届出が必要。認可ではなく届出である点に注意。"},
+{id:3,category:"法令",question:"ガス工作物の技術基準における「中圧」の最高使用圧力の範囲として正しいものはどれか。",choices:["0.1MPa以上1MPa未満", "10MPa以上", "1MPa以上10MPa未満", "0.1MPa未満"],answer:0,explanation:"技術基準では0.1MPa以上1MPa未満を中圧、1MPa以上を高圧、0.1MPa未満を低圧と区分する。"},
+{id:4,category:"法令",question:"ガス事業法上「ガス工作物」に含まれないものはどれか。",choices:["供給用の導管", "ガスホルダー", "ガス製造設備", "消費者が使用するガスコンロ"],answer:3,explanation:"ガス工作物は製造・供給のための設備であり、消費者が使用するガスコンロ等の消費機器は含まれない。"},
+{id:5,category:"法令",question:"一般ガス導管事業者による消費機器の調査頻度として法令上正しいものはどれか。",choices:["2年に1回以上", "4年に1回以上", "6年に1回以上", "1年に1回以上"],answer:1,explanation:"一般ガス導管事業者は消費機器について4年に1回以上の調査を実施する義務がある。"},
+{id:6,category:"法令",question:"ガス事業法においてガス工作物に課せられている維持義務の内容として正しいものはどれか。",choices:["常に技術基準に適合するよう維持しなければならない", "定期検査時のみ適合していればよい", "技術基準への適合は努力義務にすぎない", "新設時のみ技術基準に適合していればよい"],answer:0,explanation:"ガス事業法第26条により、事業者はガス工作物を常に技術基準に適合するよう維持しなければならない。"},
+{id:7,category:"法令",question:"ガス主任技術者免状の交付を行う者はどれか。",choices:["経済産業大臣", "市町村長", "都道府県知事", "一般財団法人日本ガス機器検査協会"],answer:0,explanation:"ガス主任技術者免状は経済産業大臣が交付する（ガス事業法第31条の3）。"},
+{id:8,category:"法令",question:"ガス主任技術者試験を実施する機関として正しいものはどれか。",choices:["一般財団法人日本ガス機器検査協会", "都道府県労働局", "経済産業省", "日本ガス協会"],answer:0,explanation:"ガス主任技術者試験は指定試験機関である一般財団法人日本ガス機器検査協会が実施する。"},
+{id:9,category:"法令",question:"ガス事業法において正当な理由なくガスの供給を拒んではならないと規定されている事業者はどれか。",choices:["ガス製造事業者", "ガス小売事業者", "一般ガス導管事業者", "特定ガス導管事業者"],answer:2,explanation:"一般ガス導管事業者は供給義務を負い、正当な理由なくガスの供給を拒んではならない。"},
+{id:10,category:"法令",question:"ガス事業法に基づく立入検査の権限を持つのはどれか。",choices:["経済産業大臣または経済産業局長", "消防署長", "ガス主任技術者", "都道府県知事"],answer:0,explanation:"ガス事業法に基づく立入検査は経済産業大臣または経済産業局長が行うことができる。"},
+{id:11,category:"法令",question:"ガス事業法において重大事故が発生した場合の報告先として正しいものはどれか。",choices:["経済産業大臣", "市町村長", "消防長", "都道府県知事"],answer:0,explanation:"ガス工作物に係る重大事故が発生した場合、経済産業大臣への速やかな報告が義務付けられている。"},
+{id:12,category:"法令",question:"液化石油ガス販売事業を開始するために必要な手続きはどれか。",choices:["手続き不要", "市町村長への届出", "都道府県知事への登録", "経済産業大臣の許可"],answer:2,explanation:"液化石油ガス販売事業を行うには都道府県知事への登録が必要（液石法第3条）。"},
+{id:13,category:"法令",question:"高圧ガス保安法において常用の温度で気体の状態にある場合に高圧ガスとして扱われるゲージ圧力の下限はどれか。",choices:["1.0MPa", "0.2MPa", "0.1MPa", "0.5MPa"],answer:1,explanation:"高圧ガス保安法では常用温度において0.2MPa（ゲージ）以上の圧力となる圧縮ガスを高圧ガスとして規定している。"},
+{id:14,category:"法令",question:"ガス事業法における「特定ガス工作物」の説明として正しいものはどれか。",choices:["消費量が大きい消費機器", "高圧の導管のみ", "ガス工作物のうち保安上特に重要なものとして省令で定めるもの", "製造所内のすべての設備"],answer:2,explanation:"特定ガス工作物とはガス工作物のうち特に保安上重要なものとして経済産業省令で定めるものをいう。"},
+{id:15,category:"法令",question:"ガス事業法において供給するガスの熱量・圧力・成分の基準を定めるのはどれか。",choices:["事業者が自由に設定", "消費者との契約で決定", "JIS規格のみ適用", "経済産業省令で規定"],answer:3,explanation:"供給するガスの熱量・圧力・成分は経済産業省令で定める基準に適合しなければならない。"},
+{id:16,category:"法令",question:"ガス事業法において一般ガス導管事業者の供給区域を変更するために必要な手続きはどれか。",choices:["手続き不要", "経済産業大臣の許可", "都道府県知事の許可", "経済産業大臣への届出"],answer:1,explanation:"一般ガス導管事業者が供給区域を変更する場合は経済産業大臣の許可が必要。"},
+{id:17,category:"法令",question:"ガス事業法において業務改善命令を発することができる者はどれか。",choices:["市町村長", "ガス主任技術者", "経済産業大臣", "都道府県知事"],answer:2,explanation:"業務改善命令は経済産業大臣がガス事業者に対して発することができる行政処分。"},
+{id:18,category:"法令",question:"ガス事業法においてガス小売事業を開始するために必要な手続きはどれか。",choices:["経済産業大臣への登録", "届出のみ", "経済産業大臣の許可", "都道府県知事の許可"],answer:0,explanation:"ガス小売事業は2017年の自由化により経済産業大臣への登録制となった。"},
+{id:19,category:"法令",question:"ガス事業法において保安規程に定めるべき事項として最も関係が薄いものはどれか。",choices:["ガス料金の算定方法", "保安教育の計画", "ガス工作物の運転・操作に関する事項", "ガス工作物の巡視・点検の方法"],answer:0,explanation:"保安規程は保安に関する事項を定めるものであり、ガス料金の算定方法は含まれない。"},
+{id:20,category:"法令",question:"ガス工作物の自主検査に関する記述として誤っているものはどれか。",choices:["自主検査の記録は一定期間保存しなければならない", "溶接部の非破壊検査は自主検査に含まれる", "自主検査はガス主任技術者が必ず自ら実施しなければならない", "検査結果を経済産業大臣に届け出る場合がある"],answer:2,explanation:"自主検査はガス主任技術者の監督のもとで行うものであり、ガス主任技術者が自ら実施しなければならないわけではない。"},
+{id:21,category:"法令",question:"ガス事業法における「ガス製造事業者」が製造所を新設する際に必要な手続きはどれか。",choices:["経済産業大臣の許可", "都道府県知事の許可", "手続き不要", "経済産業大臣への届出"],answer:0,explanation:"ガス製造事業者が製造所を新設する場合は経済産業大臣の許可が必要。"},
+{id:22,category:"法令",question:"ガス事業法においてガス主任技術者が誠実に従わなければならないものはどれか。",choices:["事業者の業務命令", "業界団体の自主基準", "保安規程", "経済産業大臣の口頭指示"],answer:2,explanation:"ガス主任技術者は保安規程に従って誠実にその職務を遂行しなければならない（ガス事業法第31条）。"},
+{id:23,category:"法令",question:"ガス工作物技術基準における導管の耐圧試験方法として認められているものはどれか。",choices:["水圧試験または気密試験", "超音波検査のみ", "音響検査のみ", "目視確認のみ"],answer:0,explanation:"導管の耐圧試験には水圧試験が一般的であり、条件によって気密試験も認められている。"},
+{id:24,category:"法令",question:"ガス事業法における「特定ガス導管事業」の説明として正しいものはどれか。",choices:["高圧ガスのみを供給する事業", "製造設備を有する事業", "全国的な導管網を運営する事業", "特定の供給地点で他のガス事業者等の需要に応じ導管によりガスを供給する事業"],answer:3,explanation:"特定ガス導管事業とは特定の供給地点において他のガス事業者等の需要に応じ導管によりガスを供給する事業をいう。"},
+{id:25,category:"法令",question:"ガス事業法において使用者へのガス安全使用に関する情報提供（周知）義務を負うのはどれか。",choices:["経済産業大臣", "ガス主任技術者", "一般ガス導管事業者", "都道府県知事"],answer:2,explanation:"一般ガス導管事業者は使用者に対してガスの安全な使用に関する周知を定期的に行う義務がある。"},
+{id:26,category:"法令",question:"ガス工作物の技術基準における「低圧」の最高使用圧力の範囲として正しいものはどれか。",choices:["0.1MPa未満", "1MPa未満", "0.01MPa未満", "0.5MPa未満"],answer:0,explanation:"技術基準では最高使用圧力が0.1MPa未満のものを低圧という。"},
+{id:27,category:"法令",question:"ガス事業法においてガス工作物の工事計画の届出が必要となる場合の説明として正しいものはどれか。",choices:["届出は一切不要", "工事完了後に報告すればよい", "一定規模以上の工事について着工前に届出が必要な場合がある", "すべての工事について届出が必要"],answer:2,explanation:"特定の規模以上のガス工作物の工事については着工前に工事計画を経済産業大臣に届け出なければならない場合がある。"},
+{id:28,category:"法令",question:"ガス工作物技術基準において高圧導管の設計に用いられる安全率（引張強さに対する）として正しいものはどれか。",choices:["2.0", "4.0", "1.5", "3.0"],answer:3,explanation:"高圧導管の設計では引張強さに対して安全率3.0を確保することが基本とされている。"},
+{id:29,category:"法令",question:"天然ガスを原料とする都市ガスが属するガスグループとして正しいものはどれか。",choices:["5Cグループ", "6Cグループ", "13Aグループ", "L3グループ"],answer:2,explanation:"天然ガスを原料とする都市ガスは主に13Aグループに分類される。"},
+{id:30,category:"法令",question:"ガス事業法において一般ガス導管事業者がガス漏れ等の緊急事態を覚知した場合に義務付けられていない措置はどれか。",choices:["被害拡大を防ぐための応急措置", "経済産業大臣への報告", "使用者への通知", "すべての設備の恒久的な廃止"],answer:3,explanation:"緊急時には応急措置・報告・使用者への通知等が必要だが、すべての設備の恒久的な廃止は義務として規定されていない。"},
+{id:31,category:"法令",question:"ガス事業法において特定ガス工作物の定期検査について正しい記述はどれか。",choices:["定期検査の頻度は事業者が自由に決定できる", "定期検査の実施は任意", "定期検査結果の報告義務はない", "特定ガス工作物については定期検査の実施が義務付けられている"],answer:3,explanation:"特定ガス工作物については法令に基づく定期検査の実施が義務付けられている。"},
+{id:32,category:"法令",question:"ガス事業法においてガス主任技術者を選任する義務を負う事業者として正しい組み合わせはどれか。",choices:["一般ガス導管事業者のみ", "すべてのガス関係事業者", "一般ガス導管事業者・特定ガス導管事業者・ガス製造事業者", "ガス小売事業者のみ"],answer:2,explanation:"ガス工作物を持つ一般ガス導管事業者・特定ガス導管事業者・ガス製造事業者がガス主任技術者の選任義務を負う。"},
+{id:33,category:"法令",question:"ガス事業法における「ガス小売事業」の説明として正しいものはどれか。",choices:["ガスを製造して導管で輸送する事業", "一般の需要に応じてガスを小売供給する事業", "ガス導管を建設・維持管理する事業", "ガス器具を販売する事業"],answer:1,explanation:"ガス小売事業とは一般の需要に応じてガスを小売供給する事業をいう。"},
+{id:34,category:"法令",question:"液化石油ガス法において液化石油ガス販売事業者に義務付けられていないものはどれか。",choices:["消費設備の調査", "液化石油ガスの製造", "供給設備の調査", "消費者への周知"],answer:1,explanation:"液石法における販売事業者の義務は調査・周知・保安業務等であり、ガスの製造は含まれない。"},
+{id:35,category:"法令",question:"ガス事業法においてガス工作物の使用前自主検査の記録に関する記述として正しいものはどれか。",choices:["一定期間保存しなければならない", "検査ごとに廃棄してよい", "記録の保存は任意", "保存先は事業者が自由に決定できる"],answer:0,explanation:"使用前自主検査の記録は定められた期間保存する義務がある。"},
+{id:36,category:"法令",question:"ガス事業法においてガス工作物に対して経済産業大臣が技術基準適合命令を発する要件はどれか。",choices:["事故が実際に発生したとき", "事業者が申請したとき", "定期検査の結果が良好でないとき", "技術基準に適合していないと認めるとき"],answer:3,explanation:"経済産業大臣はガス工作物が技術基準に適合していないと認めるときに技術基準適合命令を発することができる。"},
+{id:37,category:"法令",question:"ガス事業法における「導管の損傷防止」のために土木工事施工者へ情報提供する義務を負うのはどれか。",choices:["都道府県知事", "経済産業大臣", "一般ガス導管事業者", "施工者自身"],answer:2,explanation:"一般ガス導管事業者は工事施工者からの照会に応じてガス導管の位置情報を提供する義務がある。"},
+{id:38,category:"法令",question:"ガス事業法において「供給約款」を変更する際に一般ガス導管事業者がとるべき手続きはどれか。",choices:["経済産業大臣の認可", "都道府県知事への届出", "経済産業大臣への届出", "手続き不要"],answer:2,explanation:"供給約款の変更は経済産業大臣への届出が必要。ただし料金値上げ等は認可が必要な場合もある。"},
+{id:39,category:"法令",question:"ガス工作物の技術基準省令において導管材料に関する記述として正しいものはどれか。",choices:["導管の材料は適切な強度・耐食性等を有するものでなければならない", "導管の材料はプラスチックのみ使用可能", "導管の材料は鋼管のみ使用可能", "導管の材料に規定はない"],answer:0,explanation:"技術基準において導管の材料は使用条件に対して適切な強度・耐食性等を有するものでなければならないと規定されている。"},
+{id:40,category:"法令",question:"ガス事業法においてガス主任技術者免状が取り消される場合として規定されているものはどれか。",choices:["ガス主任技術者が高齢になったとき", "事業者の業績が悪化したとき", "ガス主任技術者が転職したとき", "ガス事業法またはその命令に違反したとき"],answer:3,explanation:"ガス事業法またはその命令の規定に違反した場合、経済産業大臣は免状を取り消すことができる。"},
+{id:41,category:"法令",question:"ガス工作物の技術基準における「溶接部の検査」として適切なものはどれか。",choices:["打音検査のみでよい", "非破壊検査（放射線透過試験等）を行わなければならない場合がある", "目視検査のみでよい", "溶接部の検査は不要"],answer:1,explanation:"技術基準において、高圧部等の溶接部については放射線透過試験等の非破壊検査が必要とされる場合がある。"},
+{id:42,category:"法令",question:"ガス事業法において「ガス工作物の緊急時対応」に関し、一般ガス導管事業者が作成しなければならないものはどれか。",choices:["緊急時の広告宣伝計画", "緊急時用の資金計画", "緊急時対応マニュアルの策定（保安規程への記載）", "緊急時の株主対応計画"],answer:2,explanation:"保安規程には緊急時の措置に関する事項を定めなければならず、緊急時対応の手順を規程に含める必要がある。"},
+{id:43,category:"法令",question:"ガス事業法において「ガス工作物の廃止」の際に必要な手続きはどれか。",choices:["手続き不要", "経済産業大臣への届出", "都道府県知事への届出", "経済産業大臣の許可"],answer:1,explanation:"ガス工作物を廃止する場合は経済産業大臣への届出が必要。"},
+{id:44,category:"法令",question:"ガス事業法に基づく「保安教育」について正しい記述はどれか。",choices:["保安教育の記録保存は不要", "保安教育は任意", "保安教育は外部機関のみが実施できる", "保安規程に保安教育の計画を定めなければならない"],answer:3,explanation:"保安規程には保安教育の計画を定めることが求められており、従業員への保安教育の実施が義務付けられている。"},
+{id:45,category:"法令",question:"ガス事業法においてガス工作物の「技術基準への適合確認」を主体的に行う責務を持つのはどれか。",choices:["都道府県知事", "経済産業大臣", "第三者機関", "ガス事業者自身"],answer:3,explanation:"技術基準への適合は事業者自らが確認・維持する責務を負う（自主保安の原則）。"},
+{id:46,category:"法令",question:"ガス事業法における「ガス工作物の変更工事」について正しい記述はどれか。",choices:["変更工事は認可があれば届出不要", "変更工事はすべて無届けで行える", "変更工事の記録保存は不要", "重要な変更工事については工事計画の届出等が必要な場合がある"],answer:3,explanation:"重要なガス工作物の変更工事については工事計画の届出等が必要な場合があり、軽微な変更は届出不要な場合もある。"},
+{id:47,category:"法令",question:"ガス工作物の技術基準において「埋設導管の電気防食」が必要とされる理由として正しいものはどれか。",choices:["導管を絶縁するため", "外部からの電気的腐食（電食）や土壌腐食を防止するため", "ガスの流量を増加させるため", "圧力損失を低減するため"],answer:1,explanation:"埋設金属導管は電食や土壌腐食により腐食しやすいため、技術基準では電気防食の実施が求められている。"},
+{id:48,category:"法令",question:"ガス事業法において「ガス工作物の巡視」について保安規程に定めなければならない事項として正しいものはどれか。",choices:["巡視担当者の給与", "巡視時の服装規定", "巡視の頻度・方法・記録方法", "巡視に使用する車両の種類"],answer:2,explanation:"保安規程には巡視の頻度・方法および記録に関する事項を定めなければならない。"},
+{id:49,category:"法令",question:"ガス事業法において供給の緊急停止を行った後に供給を再開する際の注意事項として最も重要なものはどれか。",choices:["都道府県知事に通知してから再開する", "できる限り早く再開する", "使用者側の安全確認を行ってから供給を再開する", "経済産業大臣の許可を得てから再開する"],answer:2,explanation:"供給再開にあたっては使用者宅のガス機器等の安全確認を行ってから供給を再開することが安全上重要である。"},
+{id:50,category:"法令",question:"ガス工作物の技術基準において「ガス漏洩の検知」に関する設備の設置が必要とされる場所として正しいものはどれか。",choices:["ガスが滞留するおそれがある場所", "屋外の開放的な場所", "ガス使用量が少ない場所", "すべての一般家庭"],answer:0,explanation:"技術基準ではガスが滞留するおそれがある場所にガス漏洩検知設備の設置を求めている。"},
+{id:51,category:"法令",question:"ガス事業法において「ガス工作物の記録」に関する正しい記述はどれか。",choices:["記録の保存期間は1年でよい", "工事・点検・検査等の記録を作成し保存しなければならない", "記録は紙媒体のみ認められる", "保安に関する記録は不要"],answer:1,explanation:"保安規程に基づき工事・点検・検査等の保安に関する記録を作成・保存する義務がある。"},
+{id:52,category:"法令",question:"ガス事業法において一般ガス導管事業の「許可」を行うのはどれか。",choices:["市町村長", "国土交通大臣", "経済産業大臣", "都道府県知事"],answer:2,explanation:"一般ガス導管事業の許可は経済産業大臣が行う（ガス事業法第3条）。"},
+{id:53,category:"法令",question:"ガス工作物の技術基準における「配管フランジ」の使用に関する記述として正しいものはどれか。",choices:["フランジはすべての圧力条件で使用が禁止", "フランジの締付けトルクの管理は不要", "フランジの材質に規定はない", "フランジは使用条件に応じた適切な規格品を使用しなければならない"],answer:3,explanation:"技術基準ではフランジは使用圧力・温度等の条件に応じた適切な規格品を使用しなければならないと規定されている。"},
+{id:54,category:"法令",question:"ガス事業法において「ガスメーター」に関する規定として正しいものはどれか。",choices:["ガスメーターは計量法の規定に基づき検定を受けなければならない", "ガスメーターはJIS規格品であれば検定不要", "ガスメーターの検定は都道府県が実施する", "ガスメーターに規定はない"],answer:0,explanation:"ガスメーターは計量法の規定に基づき検定を受けた適正なものを使用しなければならない。"},
+{id:55,category:"法令",question:"ガス事業法においてガス工作物の「溶接工事」に従事できる者の資格として正しいものはどれか。",choices:["ガス主任技術者のみ", "資格不要", "技術基準に適合した方法で施工できる技能を有する者", "工事計画の届出をすれば誰でも可"],answer:2,explanation:"ガス工作物の溶接工事は技術基準に適合した方法で施工できる技能・資格を有する者が行わなければならない。"},
+{id:56,category:"法令",question:"ガス事業法において「緊急ガス遮断装置」の設置が求められる場所として技術基準上正しいものはどれか。",choices:["すべての一般家庭", "ガスを使用するすべての工場", "製造所・供給所の主要な設備", "屋外の導管のすべて"],answer:2,explanation:"技術基準では製造所・供給所の主要な設備には緊急時に迅速にガスを遮断できる装置の設置が求められる。"},
+{id:57,category:"法令",question:"ガス事業法における「ガス主任技術者の解任」について正しい記述はどれか。",choices:["解任後の届出は不要", "解任した場合は遅滞なく経済産業大臣に届け出なければならない", "解任の届出は都道府県知事に行う", "解任は経済産業大臣の許可が必要"],answer:1,explanation:"ガス主任技術者を解任した場合は遅滞なく経済産業大臣に届け出なければならない。"},
+{id:58,category:"法令",question:"ガス事業法において「ガス工作物の損壊事故」の原因調査を行う義務を負うのはどれか。",choices:["経済産業大臣", "ガス事業者", "消防署長", "都道府県知事"],answer:1,explanation:"ガス工作物に係る事故が発生した場合、ガス事業者は原因調査を行い再発防止に努める義務がある。"},
+{id:59,category:"法令",question:"ガス工作物の技術基準において「防爆構造」の電気設備が必要とされる場所として正しいものはどれか。",choices:["屋外の開放的な場所のみ", "低圧ガスの設備周辺のみ", "可燃性ガスが漏れるおそれがある場所", "すべての電気設備"],answer:2,explanation:"可燃性ガスが漏れるおそれがある場所の電気設備は防爆構造のものを使用しなければならない。"},
+{id:60,category:"法令",question:"ガス事業法において「ガス工作物の技術基準の解釈」（解釈通達）の法的位置付けとして正しいものはどれか。",choices:["業界団体の自主基準と同等", "法律と同等の強制力を持つ", "都道府県が定める条例と同等", "省令（技術基準）を満たす具体的な方法を示したガイダンスである"],answer:3,explanation:"技術基準の解釈通達は省令（技術基準）の要求事項を満たすための具体的な方法・仕様を示したガイダンスであり、これと異なる方法でも技術的に同等以上であれば認められる。"},
+{id:61,category:"基礎理論",question:"理想気体の状態方程式として正しいものはどれか。ただしPは圧力、Vは体積、nはモル数、Rは気体定数、Tは絶対温度とする。",choices:["PV=nR/T", "P/V=nRT", "PV=n/RT", "PV=nRT"],answer:3,explanation:"理想気体の状態方程式はPV=nRTで表される。"},
+{id:62,category:"基礎理論",question:"メタン（CH₄）の完全燃焼反応式として正しいものはどれか。",choices:["2CH₄ + O₂ → 2CO + 4H₂O", "CH₄ + 3O₂ → CO₂ + 2H₂O", "CH₄ + O₂ → CO₂ + H₂O", "CH₄ + 2O₂ → CO₂ + 2H₂O"],answer:3,explanation:"メタンの完全燃焼：CH₄ + 2O₂ → CO₂ + 2H₂O。メタン1モルの燃焼に酸素2モルが必要。"},
+{id:63,category:"基礎理論",question:"都市ガス13Aの主成分として正しいものはどれか。",choices:["メタン", "水素", "プロパン", "一酸化炭素"],answer:0,explanation:"都市ガス13A（天然ガス系）の主成分はメタン（CH₄）であり、その含有量は約90%程度。"},
+{id:64,category:"基礎理論",question:"ウォッベ指数（W）の定義として正しいものはどれか。",choices:["総発熱量／燃焼速度", "総発熱量／√比重", "燃焼速度×比重", "比重／総発熱量"],answer:1,explanation:"ウォッベ指数W=総発熱量（MJ/m³）／√比重。ガスバーナーへの互換性（熱量供給能力）の指標。"},
+{id:65,category:"基礎理論",question:"燃焼に必要な理論空気量を求める際の基本式で使用される空気中の酸素の体積割合（概算）として正しいものはどれか。",choices:["50%", "10%", "30%", "21%"],answer:3,explanation:"空気中の酸素の体積割合は約21%であり、理論空気量の計算に用いる。"},
+{id:66,category:"基礎理論",question:"プロパン（C₃H₈）の完全燃焼に必要な理論酸素量（体積比）として正しいものはどれか。",choices:["5モル", "4モル", "3モル", "6モル"],answer:0,explanation:"C₃H₈ + 5O₂ → 3CO₂ + 4H₂O。プロパン1モルの完全燃焼に酸素5モルが必要。"},
+{id:67,category:"基礎理論",question:"ガスの燃焼限界（爆発限界）の説明として正しいものはどれか。",choices:["燃焼が起こらないガス濃度の範囲", "ガスの最高使用圧力の範囲", "燃焼が起こりうるガス濃度の上限と下限の範囲", "ガスの最高温度の範囲"],answer:2,explanation:"燃焼限界（爆発限界）とは空気中でガスが燃焼・爆発しうるガス濃度の下限値（LFL）と上限値（UFL）の範囲をいう。"},
+{id:68,category:"基礎理論",question:"メタンの空気中における爆発下限界（概算値）として正しいものはどれか。",choices:["約15%", "約5%", "約9%", "約2.5%"],answer:1,explanation:"メタンの空気中爆発下限界は約5vol%、上限界は約15vol%。"},
+{id:69,category:"基礎理論",question:"ガスの比重（空気＝1）に関する記述として正しいものはどれか。",choices:["天然ガス（メタン主体）の比重は約1.5", "すべての都市ガスの比重は1より大きい", "天然ガス（メタン主体）の比重は0.55〜0.65程度で空気より軽い", "LPGの比重は0.5程度で空気より軽い"],answer:2,explanation:"メタン主体の天然ガスの比重は0.55〜0.65程度で空気より軽い。一方LPG（プロパン）の比重は約1.5で空気より重い。"},
+{id:70,category:"基礎理論",question:"燃焼速度が最も速いガスはどれか。",choices:["プロパン", "メタン", "水素", "ブタン"],answer:2,explanation:"水素の燃焼速度は約2.7m/sで可燃性ガスの中で最も速く、フラッシュバックが起きやすい。"},
+{id:71,category:"基礎理論",question:"ガスの発熱量において「総発熱量」と「真発熱量（低発熱量）」の違いの説明として正しいものはどれか。",choices:["両者に差はない", "真発熱量は水蒸気の凝縮潜熱を含み、総発熱量は含まない", "総発熱量は燃焼温度が高い場合にのみ使用する", "総発熱量は水蒸気の凝縮潜熱を含み、真発熱量は含まない"],answer:3,explanation:"総発熱量（高発熱量）は燃焼生成水蒸気の凝縮潜熱を含む。真発熱量（低発熱量）は水蒸気のままとして潜熱を含まない。"},
+{id:72,category:"基礎理論",question:"ガスの燃焼において「リフティング」が起こる原因として正しいものはどれか。",choices:["ガスの供給速度が燃焼速度を上回ったとき", "ガスの発熱量が低下したとき", "ガスの供給圧力が低くなりすぎたとき", "空気量が不足したとき"],answer:0,explanation:"リフティング（吹き飛び）はガスの噴出速度が燃焼速度を上回ったとき炎がバーナーから離れて浮き上がる現象。"},
+{id:73,category:"基礎理論",question:"ガスの燃焼において「逆火（バックファイア）」が起こる条件として正しいものはどれか。",choices:["過剰空気が多いとき", "ガスの供給圧力が高いとき", "ガスの噴出速度が燃焼速度より大きいとき", "ガスの噴出速度が燃焼速度より小さいとき"],answer:3,explanation:"逆火（バックファイア）はガスの噴出速度が燃焼速度より小さくなったとき、炎がバーナー内部に引き込まれる現象。"},
+{id:74,category:"基礎理論",question:"ガスの完全燃焼に対して供給空気量が不足した場合（空気比＜1）に発生しやすい有害物質はどれか。",choices:["窒素（N₂）", "二酸化炭素（CO₂）", "水蒸気（H₂O）", "一酸化炭素（CO）"],answer:3,explanation:"空気不足（不完全燃焼）では炭素が完全に酸化されず一酸化炭素（CO）が発生し、人体に有害。"},
+{id:75,category:"基礎理論",question:"流体力学においてベルヌーイの定理が成立する条件として正しいものはどれか。",choices:["気体のみに成立", "粘性流体・非定常流・圧縮性流体", "非粘性・定常・非圧縮性流体（同一流線上）", "すべての流体に成立"],answer:2,explanation:"ベルヌーイの定理は理想流体（非粘性・非圧縮）の定常流において同一流線上で成立する。"},
+{id:76,category:"基礎理論",question:"ハーゲン・ポアズイユの式はどのような流れに適用されるか。",choices:["超音速流れ", "非定常流れ", "層流（レイノルズ数が低い場合）", "乱流"],answer:2,explanation:"ハーゲン・ポアズイユの式は円管内の層流（Re<2300程度）における圧力損失を表す式。"},
+{id:77,category:"基礎理論",question:"導管内の流れがレイノルズ数2300を超えると一般的にどのような流れになるか。",choices:["乱流", "流れが停止する", "層流から乱流への遷移が始まる", "層流"],answer:2,explanation:"レイノルズ数が約2300を超えると層流から乱流への遷移が始まり、4000以上では完全な乱流となる。"},
+{id:78,category:"基礎理論",question:"熱力学の第一法則（エネルギー保存則）の内容として正しいものはどれか。",choices:["系に加えられた熱量は内部エネルギーの変化と外部への仕事の和に等しい", "熱は低温から高温へ自然に移動する", "エントロピーは常に減少する", "エネルギーは無から生み出せる"],answer:0,explanation:"熱力学第一法則：Q＝ΔU＋W（加えた熱量＝内部エネルギー変化＋系がした仕事）。"},
+{id:79,category:"基礎理論",question:"熱伝導における「フーリエの法則」の説明として正しいものはどれか。",choices:["熱流量は温度勾配に比例する", "熱流量は材料の密度に反比例する", "熱流量は温度差の2乗に比例する", "熱流量は時間の2乗に比例する"],answer:0,explanation:"フーリエの法則：q=−λ(dT/dx)。熱流束は温度勾配に比例し、比例定数λは熱伝導率。"},
+{id:80,category:"基礎理論",question:"摂氏温度（℃）と絶対温度（K）の換算式として正しいものはどれか。",choices:["K = ℃ × 273.15", "K = ℃ + 273.15", "K = ℃ / 273.15", "K = ℃ - 273.15"],answer:1,explanation:"絶対温度K = 摂氏温度℃ + 273.15（近似では＋273）。"},
+{id:81,category:"基礎理論",question:"気体の密度と圧力・温度の関係について正しい記述はどれか（理想気体として）。",choices:["温度が2倍（絶対温度）になると密度は2倍になる", "圧力が2倍になると密度は1/2になる", "圧力・温度は密度に影響しない", "圧力が2倍になると密度は2倍になる"],answer:3,explanation:"理想気体では密度は圧力に比例し温度（絶対温度）に反比例する（ρ∝P/T）。"},
+{id:82,category:"基礎理論",question:"「臨界圧力」の説明として正しいものはどれか。",choices:["液体が固体になる圧力", "気体が完全に液化する最低圧力", "それ以上の圧力では気体と液体の区別がなくなる圧力", "燃焼が可能な最高圧力"],answer:2,explanation:"臨界圧力とは臨界温度以上ではいかに圧力を上げても液化できず、気液の区別がなくなる点の圧力。"},
+{id:83,category:"基礎理論",question:"天然ガスの主成分であるメタン（CH₄）の分子量として正しいものはどれか。",choices:["12", "44", "16", "18"],answer:2,explanation:"メタンCH₄の分子量：C=12、H=1×4=4、合計16。"},
+{id:84,category:"基礎理論",question:"プロパン（C₃H₈）の分子量として正しいものはどれか。",choices:["50", "58", "36", "44"],answer:3,explanation:"プロパンC₃H₈の分子量：C=12×3=36、H=1×8=8、合計44。"},
+{id:85,category:"基礎理論",question:"燃焼排ガス中の成分分析において「オルザット分析法」で測定できるものはどれか。",choices:["窒素酸化物（NOx）", "粒子状物質", "CO₂・O₂・COの体積分率", "水分含有量"],answer:2,explanation:"オルザット分析法は吸収液を使って排ガス中のCO₂・O₂・COを順次吸収し体積分率を測定する方法。"},
+{id:86,category:"基礎理論",question:"ガスの「着火温度（発火点）」の説明として正しいものはどれか。",choices:["ガスが液化する温度", "燃焼が停止する温度", "外部からの点火なしに自然発火する最低温度", "燃焼が継続できる最低温度"],answer:2,explanation:"着火温度（発火点）とは外部からの点火なしに可燃性混合気が自然発火する最低温度。"},
+{id:87,category:"基礎理論",question:"層流と乱流の違いを判定するレイノルズ数（Re）の定義として正しいものはどれか。",choices:["Re = 慣性力/粘性力", "Re = 粘性力/慣性力", "Re = 圧力/速度", "Re = 温度/圧力"],answer:0,explanation:"レイノルズ数Re = ρVd/μ（慣性力/粘性力）。Reが大きいほど乱流になりやすい。"},
+{id:88,category:"基礎理論",question:"ガス配管の圧力損失を計算するダルシー・ワイスバッハの式において圧力損失に影響する因子として正しい組み合わせはどれか。",choices:["管長・色・温度・圧力", "流速のみ", "管径のみ", "管長・管径・流速・摩擦係数"],answer:3,explanation:"ダルシー・ワイスバッハの式：ΔP = f(L/d)(ρV²/2)。管長・管径・流速・摩擦係数が圧力損失に影響する。"},
+{id:89,category:"基礎理論",question:"液化天然ガス（LNG）の沸点として正しいものはどれか（大気圧下）。",choices:["約－200℃", "約－162℃", "約－50℃", "約－100℃"],answer:1,explanation:"LNG（液化天然ガス）は大気圧下で約−162℃が沸点。メタンの沸点に相当する。"},
+{id:90,category:"基礎理論",question:"液化石油ガス（プロパン）の沸点として正しいものはどれか（大気圧下）。",choices:["約－42℃", "約+20℃", "約－100℃", "約－10℃"],answer:0,explanation:"プロパン（C₃H₈）の大気圧下での沸点は約−42℃。常温では気体として存在する。"},
+{id:91,category:"基礎理論",question:"気体の拡散速度とその分子量の関係として正しいものはどれか（グラハムの法則）。",choices:["拡散速度と分子量は無関係", "拡散速度は分子量に比例する", "拡散速度は分子量の2乗に比例する", "拡散速度は分子量の平方根に反比例する"],answer:3,explanation:"グラハムの法則：拡散速度は分子量の平方根に反比例する。分子量が小さいほど速く拡散する。"},
+{id:92,category:"基礎理論",question:"熱交換器の効率に関係する「対数平均温度差（LMTD）」の説明として正しいものはどれか。",choices:["最小温度差のみを用いた値", "最大温度差のみを用いた値", "入口・出口の温度差の対数平均", "入口・出口の温度差の算術平均"],answer:2,explanation:"対数平均温度差LMTDは熱交換器の入口・出口の温度差を対数平均したもので熱交換量の計算に使用する。"},
+{id:93,category:"基礎理論",question:"都市ガス13Aの総発熱量（MJ/m³N）として最も近いものはどれか。",choices:["約60MJ/m³N", "約34MJ/m³N", "約20MJ/m³N", "約46MJ/m³N"],answer:1,explanation:"都市ガス13Aの総発熱量は約46MJ/m³Nだが、設問の選択肢中では46が最も近い。（※正答は46MJ付近）"},
+{id:94,category:"基礎理論",question:"一酸化炭素（CO）の人体への毒性に関する記述として正しいものはどれか。",choices:["COは無臭・無色で血液中のヘモグロビンと結合して酸素運搬を阻害する", "COはヘモグロビンと結合しない", "COは呼吸器のみを刺激する", "COは強い臭気があり皮膚から吸収される"],answer:0,explanation:"COは無色・無臭で、ヘモグロビンとの結合力が酸素の約250倍あるため酸素運搬能力を著しく低下させる。"},
+{id:95,category:"基礎理論",question:"ガスの燃焼において「NOx（窒素酸化物）」が発生しやすい条件として正しいものはどれか。",choices:["低温・空気不足", "常温・理論空気量", "低温・過剰空気", "高温・過剰空気（空気比が大きい）"],answer:3,explanation:"NOxは高温域で窒素と酸素が反応して生成するサーマルNOxが主であり、高温・高空気比の条件で発生しやすい。"},
+{id:96,category:"基礎理論",question:"「エンタルピー（H）」の説明として正しいものはどれか。",choices:["H = 温度 × 比熱", "H = 内部エネルギー − 圧力×体積", "H = 内部エネルギー + 圧力×体積", "H = 圧力 / 体積"],answer:2,explanation:"エンタルピーH = U + PV（内部エネルギー＋圧力×体積）。定圧過程での熱量変化に相当する。"},
+{id:97,category:"基礎理論",question:"ガス工作物に使用される鋼材の「引張強さ」と「降伏点」の関係として正しいものはどれか。",choices:["両者は常に等しい", "降伏点は材料の種類によらず一定", "降伏点は引張強さより小さく、降伏後も荷重を増すことができる", "降伏点は常に引張強さより大きい"],answer:2,explanation:"降伏点（耐力）は引張強さより小さく、降伏後も加工硬化により引張強さまで荷重を増すことができる。"},
+{id:98,category:"基礎理論",question:"流体の「連続の式（質量保存則）」の内容として正しいものはどれか（定常・非圧縮性流体）。",choices:["圧力×断面積＝一定", "流量×圧力＝一定", "密度×温度＝一定", "流速×断面積＝一定（連続の式）"],answer:3,explanation:"非圧縮性流体の定常流では連続の式より流速×断面積（体積流量）が一定に保たれる。"},
+{id:99,category:"基礎理論",question:"「比熱比（γ）」の定義として正しいものはどれか。",choices:["γ = 密度 / 圧力", "γ = 定容比熱（Cv）/ 定圧比熱（Cp）", "γ = 定圧比熱（Cp）/ 定容比熱（Cv）", "γ = 温度 / 圧力"],answer:2,explanation:"比熱比γ = Cp/Cv。理想気体の断熱変化等で使用する重要な物性値。"},
+{id:100,category:"基礎理論",question:"ガスの「燃焼速度（火炎伝播速度）」に影響する因子として最も関係が薄いものはどれか。",choices:["混合気の圧力", "混合気の温度", "導管の材料", "混合気の組成（空気比）"],answer:2,explanation:"燃焼速度は混合気の組成・温度・圧力等に依存するが、導管の材料（金属・プラスチック等）は直接関係しない。"},
+{id:101,category:"基礎理論",question:"「アボガドロの法則」の内容として正しいものはどれか。",choices:["混合気体の全圧は各成分の分圧の積に等しい", "気体の体積は圧力に比例する", "同温・同圧のもとでは気体の種類によらず同体積中に同数の分子が存在する", "気体の密度は温度に比例する"],answer:2,explanation:"アボガドロの法則：同温・同圧では気体の種類によらず同体積中に同数の分子が存在する。標準状態1molは22.4L。"},
+{id:102,category:"基礎理論",question:"都市ガスの「ウォッベ指数」が同じであれば異なるガスに交換した場合でも何が維持されるか。",choices:["バーナーへの熱量供給量", "炎の色", "ガスの比重", "ガスの臭い"],answer:0,explanation:"ウォッベ指数が同じガスに交換した場合、同一バーナーへの熱量供給量（燃焼熱負荷）が維持される。"},
+{id:103,category:"基礎理論",question:"天然ガスの液化（LNG化）において加圧せずに液化するために必要な温度として正しいものはどれか。",choices:["約−50℃以下", "約0℃以下", "約−200℃以下", "約−162℃以下"],answer:3,explanation:"メタン主体の天然ガスを大気圧で液化するには約−162℃以下に冷却する必要がある。"},
+{id:104,category:"基礎理論",question:"「ダルトンの分圧の法則」の内容として正しいものはどれか。",choices:["混合気体の全圧は最大分圧に等しい", "混合気体の全圧は各成分の分圧の和に等しい", "混合気体の全圧は平均分圧に等しい", "混合気体の全圧は各成分の分圧の積に等しい"],answer:1,explanation:"ダルトンの分圧の法則：混合気体の全圧＝各成分気体の分圧の和。"},
+{id:105,category:"基礎理論",question:"金属材料の「クリープ」の説明として正しいものはどれか。",choices:["高温で一定荷重のもと時間とともにひずみが増加する現象", "繰返し応力による疲労破壊", "低温での脆性破壊", "急冷による硬化現象"],answer:0,explanation:"クリープとは高温において一定応力下で時間の経過とともに塑性ひずみが増加する現象。高温設備の設計で重要。"},
+{id:106,category:"基礎理論",question:"配管系における「サージング（水撃）」現象の説明として正しいものはどれか。",choices:["流体の温度が急上昇する現象", "流体の急激な流速変化により圧力が急変する現象", "ガスが液化する現象", "導管が腐食する現象"],answer:1,explanation:"水撃（ウォーターハンマー）はバルブの急閉等による流体の急激な速度変化で圧力波が生じる現象。"},
+{id:107,category:"基礎理論",question:"「シャルルの法則」の内容として正しいものはどれか（圧力一定の場合）。",choices:["気体の体積は温度の2乗に比例する", "気体の体積は絶対温度に比例する", "気体の体積は絶対温度に反比例する", "気体の体積は温度と無関係"],answer:1,explanation:"シャルルの法則：一定圧力のもとで気体の体積は絶対温度に比例する（V/T＝一定）。"},
+{id:108,category:"基礎理論",question:"「ボイルの法則」の内容として正しいものはどれか（温度一定の場合）。",choices:["気体の体積は圧力と無関係", "気体の体積は圧力に比例する", "気体の体積は圧力に反比例する", "気体の体積は圧力の2乗に反比例する"],answer:2,explanation:"ボイルの法則：温度一定のとき気体の体積は圧力に反比例する（PV＝一定）。"},
+{id:109,category:"基礎理論",question:"燃焼において「空気比（過剰空気率）」が1.0を超える場合の状態として正しいものはどれか。",choices:["燃焼不可能", "理論空気量での完全燃焼", "過剰空気（完全燃焼するが排ガス熱損失増加）", "空気不足（不完全燃焼の可能性あり）"],answer:2,explanation:"空気比>1は過剰空気状態。完全燃焼しやすいが排ガス中の余剰空気が増え熱損失が大きくなる。"},
+{id:110,category:"基礎理論",question:"鋼材の「引張試験」で得られる「降伏強さ（耐力）」の説明として正しいものはどれか。",choices:["材料が弾性変形から塑性変形へ移行し始める応力", "材料の比例限度", "材料が破断するときの応力", "材料の最大応力"],answer:0,explanation:"降伏強さ（耐力）とは材料が弾性変形から塑性変形へ移行し始める応力で、ガス設備の設計基準強さとして使用する。"},
+{id:111,category:"製造",question:"LNG（液化天然ガス）の気化方式のうち、海水を熱源とする気化器の名称として正しいものはどれか。",choices:["電熱式気化器", "サブマージドコンバスション式気化器（SCV）", "オープンラック式気化器（ORV）", "温水式気化器"],answer:2,explanation:"オープンラック式気化器（ORV）は海水を熱源としてLNGを気化させる方式。省エネで大容量向き。"},
+{id:112,category:"製造",question:"LNG基地において「BOG（Boil Off Gas）」の説明として正しいものはどれか。",choices:["貯槽から自然蒸発するガス", "不純物として除去されたガス", "導管から漏れたガス", "燃焼排ガス"],answer:0,explanation:"BOG（Boil Off Gas）はLNG貯槽への外部からの熱侵入によりLNGが自然蒸発して発生するガス。"},
+{id:113,category:"製造",question:"天然ガスの精製工程において「脱硫」を行う主な理由はどれか。",choices:["硫黄分が燃焼時にSO₂となり大気汚染や設備腐食を引き起こすため", "ガスの熱量を上げるため", "ガスの比重を調整するため", "燃焼速度を高めるため"],answer:0,explanation:"天然ガス中の硫黄分は燃焼によりSO₂（亜硫酸ガス）となり大気汚染の原因となるため脱硫処理が必要。"},
+{id:114,category:"製造",question:"都市ガスに付臭剤として用いられるTHT（テトラヒドロチオフェン）やDMS（ジメチルサルファイド）の目的として正しいものはどれか。",choices:["ガス漏れを臭気で察知できるようにするため", "ガスの燃焼速度を向上させるため", "導管の腐食を防止するため", "ガスの発熱量を高めるため"],answer:0,explanation:"天然ガスは無臭のためガス漏れを検知するために付臭剤（THT・DMS等）を添加する義務がある。"},
+{id:115,category:"製造",question:"LNG貯槽の「ロールオーバー」現象の説明として正しいものはどれか。",choices:["貯槽の外壁が腐食する現象", "ポンプの回転異常", "貯槽内の密度差のある二層のLNGが突然混合し大量のBOGが発生する現象", "貯槽が物理的に転倒する現象"],answer:2,explanation:"ロールオーバーは貯槽内の密度差を持つLNG二層が突然対流・混合し急激なBOG発生を起こす現象で安全上重要。"},
+{id:116,category:"製造",question:"天然ガスの「脱炭酸（CO₂除去）」に用いられる一般的な方法はどれか。",choices:["アミン吸収法", "膜分離のみ", "蒸留分離", "冷却凝縮"],answer:0,explanation:"天然ガス中のCO₂除去にはアミン吸収法（モノエタノールアミン等）が広く用いられる。"},
+{id:117,category:"製造",question:"天然ガス製造設備における「脱水」の目的として正しいものはどれか。",choices:["燃焼速度を高めるため", "熱量を上げるため", "水分によるハイドレート生成や配管腐食を防止するため", "ガスの比重を下げるため"],answer:2,explanation:"天然ガス中の水分はハイドレート（氷状の固体）を形成して配管閉塞を引き起こすため除去が必要。"},
+{id:118,category:"製造",question:"「ガスホルダー」の役割として正しいものはどれか。",choices:["ガスの需要変動を吸収し供給圧力を安定させる貯蔵設備", "ガスを計量する設備", "ガスを製造する設備", "ガスを脱硫する設備"],answer:0,explanation:"ガスホルダーはガスを貯蔵し需要の変動（ピーク時・閑散時）を吸収して安定した供給圧力を維持する役割を持つ。"},
+{id:119,category:"製造",question:"「球形ガスホルダー」と「無水式（プライス型）ガスホルダー」の説明として正しいものはどれか。",choices:["プライス型は球形よりも高圧に適している", "両者は同じ構造", "球形ホルダーは高圧ガスを貯蔵でき、プライス型（無水式）は低圧大容量の貯蔵に使用", "球形ホルダーは水密閉式で、プライス型は圧力一定型"],answer:2,explanation:"球形ホルダーは圧力容器として高圧ガスの貯蔵に使用。プライス型（無水式）は大気圧に近い低圧で大容量のガス貯蔵に使用。"},
+{id:120,category:"製造",question:"LNG設備における「コールドボックス」の役割として正しいものはどれか。",choices:["BOGを燃焼させる設備", "ガスを加熱する設備", "LNGを再液化する設備", "熱絶縁を施した低温機器（熱交換器・分離器等）を収納する断熱容器"],answer:3,explanation:"コールドボックスは低温の熱交換器等を断熱ケース内に収めた設備で熱損失を低減する。"},
+{id:121,category:"製造",question:"ガス製造所における「ガバナ（圧力調整器）」の機能として正しいものはどれか。",choices:["ガスを貯蔵する", "ガスを製造する", "ガスを計量する", "ガスの圧力を一定に調整する"],answer:3,explanation:"ガバナ（ガバナー）はガスの圧力を調整する機器で、上流の圧力変動にかかわらず下流の圧力を設定値に維持する。"},
+{id:122,category:"製造",question:"LNG受入基地において「防油堤」を設ける目的として正しいものはどれか。",choices:["地震時の倒壊防止", "火災時の消火活動の補助", "雨水の侵入防止", "LNG漏洩時に液が拡散することを防止し被害を局限化するため"],answer:3,explanation:"防油堤はLNG漏洩時に液の拡散を防いで被害を局限化し、気化・拡散によるガス雲の形成を抑制するために設置する。"},
+{id:123,category:"製造",question:"「SNG（代替天然ガス）」の製造方法として正しいものはどれか。",choices:["石油・LPG等を改質・メタン化して天然ガスに類似したガスを製造する方法", "天然ガスを液化する方法", "LNGを気化するだけの方法", "石炭を燃焼させてガスを回収する方法"],answer:0,explanation:"SNGはナフサ・LPG等を改質（水蒸気改質等）またはメタン化してメタン主体の都市ガスに類似したガスを製造する。"},
+{id:124,category:"製造",question:"都市ガス製造における「熱量調整（カロリー調整）」の目的として正しいものはどれか。",choices:["ガスの圧力を上げるため", "導管の腐食を防ぐため", "供給ガスの熱量を規定範囲内に維持し安定した燃焼特性を確保するため", "ガスのコストを削減するため"],answer:2,explanation:"熱量調整は供給ガスの発熱量・ウォッベ指数を法令の規定範囲内に維持して消費機器が安全・正常に燃焼できるようにする。"},
+{id:125,category:"製造",question:"天然ガスから水素と一酸化炭素を製造する「水蒸気改質」の反応を最もよく表す式はどれか。",choices:["CH₄ + CO₂ → 2CO + 2H₂", "CH₄ + 2O₂ → CO₂ + 2H₂O", "CH₄ + H₂O → CO + 3H₂", "2CH₄ → C₂H₂ + 3H₂"],answer:2,explanation:"水蒸気改質：CH₄ + H₂O ⇌ CO + 3H₂（吸熱反応）。高温・触媒存在下で進行する。"},
+{id:126,category:"製造",question:"LNG地下貯槽の「PCタンク（プレストレストコンクリートタンク）」の特徴として正しいものはどれか。",choices:["ガスを圧縮して貯蔵するタンク", "移動式タンク", "地上に設置される鋼製タンク", "地中に埋設されプレストレスト構造により低温LNGを安全に貯蔵できる大容量タンク"],answer:3,explanation:"PCタンクは地下に設置するプレストレスト構造のコンクリート製大容量LNG貯槽で地震や液漏れに対して優れた安全性を持つ。"},
+{id:127,category:"製造",question:"製造所の「安全弁」の役割として正しいものはどれか。",choices:["ガスを計量する", "ガスの流量を制御する", "設定圧力を超えた場合に自動でガスを放出して機器を過圧から守る", "ガスの方向を制御する"],answer:2,explanation:"安全弁は設備内の圧力が設定値を超えたとき自動的に開放してガスを放出し、機器の破損・事故を防止する保安装置。"},
+{id:128,category:"製造",question:"ガス製造設備における「フレアスタック（燃焼塔）」の目的として正しいものはどれか。",choices:["大気中にそのまま排気する", "ガスを冷却する", "ガスを貯蔵する", "余剰ガスや緊急時の放散ガスを安全に燃焼させて大気中への可燃性ガス放出を防ぐ"],answer:3,explanation:"フレアスタックは製造プロセスからの余剰ガスや緊急放散ガスを高所で燃焼させて安全に処理する設備。"},
+{id:129,category:"製造",question:"LNG受入基地における「払い出しポンプ（BOGコンプレッサー）」の役割として正しいものはどれか。",choices:["LNGを船から貯槽へ送る", "LNGを気化させる", "BOGを昇圧して導管に送出または再液化処理する", "海水を供給する"],answer:2,explanation:"BOGコンプレッサーはLNG貯槽から発生するBOGを圧縮して導管供給や再液化に利用する設備。"},
+{id:130,category:"製造",question:"ガスの「脱硫触媒」として広く使用される物質はどれか。",choices:["シリカゲル", "活性炭", "酸化亜鉛（ZnO）", "酸化アルミニウム（アルミナ）"],answer:2,explanation:"酸化亜鉛（ZnO）はH₂SをZnSに変換して除去する脱硫剤として広く使用される（乾式脱硫）。"},
+{id:131,category:"製造",question:"LNG気化器「SCV（サブマージドコンバスション気化器）」の説明として正しいものはどれか。",choices:["海水を熱源とする", "バーナーで加熱した温水中にLNG配管を沈め燃焼熱で気化させる", "太陽熱を利用する", "電気ヒーターで加熱する"],answer:1,explanation:"SCVはバーナーの燃焼熱で温めた水中にLNG配管を沈めて気化させる方式で、冬季や海水温が低い場合に使用。"},
+{id:132,category:"製造",question:"高圧ガス設備における「緊急遮断弁」の機能として正しいものはどれか。",choices:["ガスの圧力を調整する", "異常時に自動または遠隔操作でガスの流れを緊急遮断する", "ガスの温度を制御する", "流量を計測する"],answer:1,explanation:"緊急遮断弁は地震・火災・設備異常等の緊急時にガスを速やかに遮断して被害の拡大を防止する保安設備。"},
+{id:133,category:"製造",question:"LNG設備の断熱方式として「パーライト断熱」が用いられる理由として正しいものはどれか。",choices:["コストが低いだけの理由", "軽量で施工が容易なため", "電気的な絶縁性があるため", "パーライト（真珠岩を焼いた多孔質材料）は低温断熱性に優れ難燃性のため低温設備に適している"],answer:3,explanation:"パーライトは多孔質で熱伝導率が低く難燃性のためLNGタンクや低温配管の断熱材として広く使用されている。"},
+{id:134,category:"製造",question:"都市ガス製造プロセスにおける「ナフサ改質」の概要として正しいものはどれか。",choices:["ナフサを冷却して液化する", "ナフサを水蒸気や酸素と反応させてメタン主体のガスを製造する", "ナフサを圧縮して高圧ガスにする", "ナフサを燃焼させて熱エネルギーのみを取り出す"],answer:1,explanation:"ナフサ改質はナフサを水蒸気または部分酸化によりメタン・水素・CO等を生成するSNG製造プロセス。"},
+{id:135,category:"製造",question:"LNG貯槽の「インナータンク」の材料として最も一般的に使用されるものはどれか。",choices:["普通炭素鋼", "9%ニッケル鋼または36%ニッケル鋼（インバー）", "ステンレス鋼", "アルミニウム合金"],answer:1,explanation:"LNG（−162℃）の貯蔵用インナータンクには低温靭性に優れた9%Ni鋼やアルミニウム合金が使用される。"},
+{id:136,category:"製造",question:"ガス製造プロセスにおける「メタネーション（メタン化）」反応を正しく表すものはどれか。",choices:["CH₄ + H₂O → CO + 3H₂", "CO + 3H₂ → CH₄ + H₂O", "2CO + O₂ → 2CO₂", "N₂ + 3H₂ → 2NH₃"],answer:1,explanation:"メタネーション：CO + 3H₂ → CH₄ + H₂O（発熱反応）。合成ガスからメタンを製造する重要反応。"},
+{id:137,category:"製造",question:"製造所における「防消火設備」として設置が求められるものはどれか。",choices:["電気集塵機", "噴霧水設備・泡消火設備等", "空気清浄機", "冷暖房設備"],answer:1,explanation:"技術基準においてガス製造設備には火災等に対応する噴霧水設備・泡消火設備等の防消火設備の設置が求められる。"},
+{id:138,category:"製造",question:"LNG輸送に使用される「LNG船」の貨物タンクに要求される主な特性として正しいものはどれか。",choices:["大気圧以上の耐圧性のみ", "極低温（約−162℃）に耐える断熱・低温靭性", "高温高圧に耐える特性", "軽量であること"],answer:1,explanation:"LNG船の貨物タンクは−162℃の極低温に耐える低温靭性と断熱性が必要で、薄膜型（メンブレン型）や球形（モス型）などがある。"},
+{id:139,category:"製造",question:"ガス製造設備の「制御システム」において「フェイルセーフ」の原則として正しいものはどれか。",choices:["制御系が故障した場合に安全側（ガス遮断など）に動作する", "制御系の故障を想定しない", "制御系が故障した場合に作業員が手動で対処する", "制御系が故障した場合に自動で最大出力になる"],answer:0,explanation:"フェイルセーフとは制御システムの故障・電源喪失時に設備が安全な状態（ガス遮断・安全停止等）に移行する設計原則。"},
+{id:140,category:"製造",question:"天然ガスに含まれる「C₂＋重質成分（エタン・プロパン等）」を分離する装置として正しいものはどれか。",choices:["ガバナ", "蒸留塔（脱エタン塔等）", "脱硫装置", "脱水装置"],answer:1,explanation:"天然ガスからエタン・プロパン等の重質成分を分離するには蒸留（脱エタン塔・脱プロパン塔等）を使用する。"},
+{id:141,category:"製造",question:"製造所における「緊急時対応手順書」に含まれるべき内容として最も関係が薄いものはどれか。",choices:["ガス漏洩時の緊急遮断手順", "火災発生時の消火・避難手順", "従業員の給与規定", "地震発生時の点検・確認手順"],answer:2,explanation:"緊急時対応手順書は保安上の緊急事態に対する手順書であり、給与規定は含まれない。"},
+{id:142,category:"製造",question:"LNG製造設備における「コールドベント」の説明として正しいものはどれか。",choices:["LNGを加熱する設備", "緊急時にLNG蒸気（BOG）を大気中に放散する設備", "LNGを貯蔵する設備", "LNGを燃焼処理する設備"],answer:1,explanation:"コールドベントは緊急時や起動・停止時にLNG蒸気を高所から大気中に放散する設備（通常はフレアスタック燃焼が優先）。"},
+{id:143,category:"製造",question:"高圧ガス設備における「耐震設計」で考慮すべき地震動の種類として正しいものはどれか。",choices:["静的荷重のみ", "レベル1地震動（稀に発生）とレベル2地震動（極めて稀に発生する最大規模）", "設計地震動の概念は不要", "微小振動のみ"],answer:1,explanation:"重要設備の耐震設計ではレベル1（稀な地震）とレベル2（極めて稀な最大級地震）の2段階で耐震性能を確認する。"},
+{id:144,category:"製造",question:"ガス製造設備の「ポンプ」において「キャビテーション」が発生する条件として正しいものはどれか。",choices:["流体の圧力がその温度における蒸気圧以下になる部分が生じたとき", "流体の粘度が高いとき", "流体の温度が過度に高いとき", "ポンプの回転数が低すぎるとき"],answer:0,explanation:"キャビテーションはポンプ内で流体の圧力が蒸気圧以下になったとき気泡が発生・崩壊する現象で、振動・騒音・浸食の原因。"},
+{id:145,category:"製造",question:"ガス製造所の「電気設備」において接地（アース）を行う主な目的として正しいものはどれか。",choices:["ガスの流量を制御する", "計測精度を向上させる", "電力消費を減らす", "感電・静電気による爆発を防止する"],answer:3,explanation:"接地はガス設備の静電気帯電による着火・爆発防止および漏電による感電防止のために不可欠。"},
+{id:146,category:"製造",question:"「LNG冷熱利用」の例として最も一般的なものはどれか。",choices:["LNG気化時の冷熱を利用した冷凍倉庫・空気液化・発電等", "温水供給", "蒸気発生", "ガスの圧縮"],answer:0,explanation:"LNG気化時には大量の冷熱（−162℃→常温）が発生し、冷凍倉庫・空気分離（液体窒素製造）・発電等に有効活用できる。"},
+{id:147,category:"製造",question:"ガス製造設備の配管に使用する「フレキシブルジョイント（可撓継手）」の目的として正しいものはどれか。",choices:["ガスを計量する", "ガスの流量を制御する", "熱伸縮・振動・地盤沈下等による変位を吸収する", "ガスの圧力を調整する"],answer:2,explanation:"フレキシブルジョイントは熱伸縮・振動・変位を吸収して配管の損傷を防止するために使用する継手。"},
+{id:148,category:"製造",question:"LNG設備で「−196℃の液体窒素」を使用する主な目的として正しいものはどれか。",choices:["電気絶縁", "ガスの加熱", "設備の気密試験・低温テストや不活性化（パージ）", "燃料として使用"],answer:2,explanation:"液体窒素はLNG設備の低温テスト・気密試験・パージ（不活性化）等に使用される。"},
+{id:149,category:"製造",question:"ガス製造設備の「腐食防止」として採用される「ライニング（内面被覆）」の目的として正しいものはどれか。",choices:["圧力損失を増大させる", "配管・機器の内面を保護して腐食を防止する", "ガスの流量を増加させる", "断熱効果を持たせる"],answer:1,explanation:"ライニング（内面被覆）は配管・タンク内面への腐食性物質の接触を防ぎ設備の長寿命化に寄与する。"},
+{id:150,category:"製造",question:"製造所における「保安用ガス検知器」の設置位置として正しいものはどれか。",choices:["事務所内のみ", "屋外のすべての場所", "ガスが漏洩した場合に滞留しやすい場所（低所または高所）", "出入口のみ"],answer:2,explanation:"ガス検知器はガスの比重（天然ガスは軽く天井付近・LPGは重く床付近）に応じてガスが滞留しやすい位置に設置する。"},
+{id:151,category:"製造",question:"LNG設備で使用される「パーライト断熱」の施工方法として正しいものはどれか。",choices:["外表面に貼り付ける", "外部から注入する", "塗料として塗布する", "タンクの二重殻間空間にパーライト粉末を充填し真空を維持する"],answer:3,explanation:"二重殻LNGタンクではタンク外殻と内殻の間の空間にパーライト（膨張真珠岩）を充填し真空断熱を組み合わせる。"},
+{id:152,category:"製造",question:"天然ガスの「硫黄分」の含有量が多い場合に起こりうる問題として正しいものはどれか。",choices:["爆発限界が狭くなる", "ガスの熱量が低下する", "ガスが液化しやすくなる", "燃焼時にSO₂が発生し大気汚染・機器腐食を引き起こす"],answer:3,explanation:"硫黄分が多いと燃焼でSO₂が生成し大気汚染の原因となるほか、水分と反応して硫酸を生成し設備腐食を引き起こす。"},
+{id:153,category:"製造",question:"ガス製造設備における「インターロック」の説明として正しいものはどれか。",choices:["設備の起動を優先させる制御", "異常検知時に設備を自動停止・遮断して事故を防ぐ安全連動システム", "生産効率を最大化する制御", "作業員が手動で操作するシステム"],answer:1,explanation:"インターロックは異常（圧力超過・ガス漏洩等）を検知した際に自動的に設備を停止・遮断する安全連動システム。"},
+{id:154,category:"製造",question:"LNG基地において「窒素パージ」を行う主な目的として正しいものはどれか。",choices:["加熱のため", "設備内の可燃性ガスや酸素を不活性ガス（窒素）で置換し爆発・酸化を防ぐため", "圧力試験のため", "冷却のため"],answer:1,explanation:"窒素パージは設備の起動・停止・保守時に可燃性ガスや水分・酸素を窒素で置換して爆発・腐食を防止する作業。"},
+{id:155,category:"製造",question:"高圧ガス設備の「圧力計」の取り付け方法として正しいものはどれか。",choices:["下向きに取り付ける", "圧力計の取り付け方に規定はない", "直接ガスが流れる配管に並列に取り付ける", "配管から分岐した止め弁付きの取り出し口に取り付け点検・交換できる構造とする"],answer:3,explanation:"圧力計は点検・交換ができるよう止め弁付きの取り出し口に設置することが求められる。"},
+{id:156,category:"製造",question:"製造設備における「非破壊検査（NDT）」の方法として溶接部の内部欠陥検出に最も適したものはどれか。",choices:["放射線透過試験（RT）または超音波探傷試験（UT）", "磁粉探傷試験（MT）", "浸透探傷試験（PT）", "目視検査"],answer:0,explanation:"溶接部の内部欠陥（溶込み不良・ブローホール等）の検出には内部を透過できる放射線透過試験（RT）または超音波探傷試験（UT）が適している。"},
+{id:157,category:"製造",question:"ガス製造所における「防爆エリア（危険場所）」の区分として「ゾーン0」の説明として正しいものはどれか。",choices:["爆発性雰囲気が連続的または長時間存在する場所", "爆発性雰囲気が間欠的に存在する場所", "爆発性雰囲気が通常状態では存在しない場所", "爆発が起こりえない場所"],answer:0,explanation:"ゾーン0は爆発性雰囲気が連続または長時間存在する最も危険な区域（タンク内部等）。"},
+{id:158,category:"製造",question:"LNG基地の「払い出し配管」に「低温膨張弁（JT弁）」を設置する目的として正しいものはどれか。",choices:["ガスの熱量を調整する", "ガスの圧力を高める", "低温液体の流量を制御する", "BOGを除去する"],answer:2,explanation:"低温膨張弁（JT弁：ジュールトムソン弁）はLNG等の低温液体の流量制御に使用される調節弁。"},
+{id:159,category:"製造",question:"ガス製造設備の「定期自主検査」において実施すべき項目として最も重要なものはどれか。",choices:["設備の外観検査のみ", "書類の確認のみ", "外観・気密性・耐圧性・安全装置の作動確認等の総合的な検査", "電気設備の検査のみ"],answer:2,explanation:"定期自主検査では外観・気密・耐圧・安全装置の作動・計測器の校正等、総合的な設備の健全性確認が必要。"},
+{id:160,category:"製造",question:"天然ガスに微量含まれる「水銀（Hg）」の除去が必要な理由として正しいものはどれか。",choices:["燃焼時に有害ガスを生成するため", "ガスの比重を変えるため", "発熱量を下げるため", "アルミニウム製熱交換器と反応して腐食・破損を引き起こすため"],answer:3,explanation:"天然ガス中の微量水銀はLNGプラントのアルミニウム合金製熱交換器（ブレーズドアルミニウム）を腐食させるため除去が必要。"},
+{id:161,category:"製造",question:"ガス製造所の「ガス発生設備」における「ターンダウン比」の説明として正しいものはどれか。",choices:["設備の最高圧力と最低圧力の比", "設備の最高温度と最低温度の比", "設備の最大処理量と最小処理量の比（運転可能な負荷範囲）", "設備の最高効率と最低効率の比"],answer:2,explanation:"ターンダウン比は設備の最大処理能力と最小処理能力の比で、需要変動への追従能力を示す指標。"},
+{id:162,category:"製造",question:"LNG設備における「ヒートリーク（外来熱）」対策として正しいものはどれか。",choices:["加熱する", "圧力を上げる", "強制冷却する", "高性能断熱材の使用・真空断熱・支持脚の熱遮断等によりBOG発生を抑制する"],answer:3,explanation:"LNG設備への外来熱（ヒートリーク）はBOG発生の主因であり、高性能断熱・真空断熱・低熱伝導支持構造等で抑制する。"},
+{id:163,category:"製造",question:"ガス製造所における「安全管理活動」として「ヒヤリハット活動」の目的として正しいものはどれか。",choices:["重大事故に至らなかったヒヤリハット事例を収集・分析して事故を未然防止する", "生産効率向上", "コスト削減", "事故が起きた後の原因分析"],answer:0,explanation:"ヒヤリハット活動はハインリッヒの法則に基づき軽微な事象を収集・分析し重大事故の未然防止を図る安全活動。"},
+{id:164,category:"製造",question:"LNG貯槽の「外槽（アウタータンク）」の材料として一般的に使用されるものはどれか。",choices:["アルミニウム合金", "チタン合金", "プレストレストコンクリートまたは普通鋼", "9%ニッケル鋼"],answer:2,explanation:"外槽（アウタータンク）は常温部分のため普通鋼またはプレストレストコンクリートが使用される。"},
+{id:165,category:"製造",question:"製造設備の「計装設備（DCS・PLCなど）」の役割として正しいものはどれか。",choices:["ガスを製造する", "プロセスの温度・圧力・流量等を監視・制御して安定した運転と安全を確保する", "ガスを貯蔵する", "ガスを輸送する"],answer:1,explanation:"DCS（分散制御システム）やPLCはプロセス変数をリアルタイムで監視・制御し安全で効率的な運転を支援する。"},
+{id:166,category:"製造",question:"ガス製造プロセスにおける「シフト反応（水性ガスシフト反応）」を正しく表すものはどれか。",choices:["CO + H₂O → CO₂ + H₂", "CH₄ + 2O₂ → CO₂ + 2H₂O", "N₂ + 3H₂ → 2NH₃", "C + O₂ → CO₂"],answer:0,explanation:"水性ガスシフト反応：CO + H₂O ⇌ CO₂ + H₂。水素製造プロセスでCO濃度を下げ水素量を増やす反応。"},
+{id:167,category:"製造",question:"LNG受入基地における「アンローディングアーム」の役割として正しいものはどれか。",choices:["BOGを処理する設備", "LNGタンカーと陸上設備を接続しLNGを安全に荷役する装置", "LNGを気化させる設備", "LNGを貯蔵する設備"],answer:1,explanation:"アンローディングアームはLNGタンカーと基地の配管を柔軟に接続してLNGの荷役（船からの払い出し）を行う装置。"},
+{id:168,category:"製造",question:"ガス製造設備における「酸素濃度計」の設置目的として正しいものはどれか。",choices:["ガスの熱量測定", "燃焼の最適化のみ", "密閉空間での酸欠（酸素不足）または爆発性雰囲気（過剰酸素）の検知", "流量の測定"],answer:2,explanation:"密閉空間やパージ作業時の酸素濃度監視は酸欠事故防止と爆発性雰囲気の管理に不可欠。"},
+{id:169,category:"製造",question:"製造所における「工事管理」において「作業許可証（Permit to Work）」制度の目的として正しいものはどれか。",choices:["作業の効率化", "高リスク作業（火気・密閉空間・電気作業等）前に危険を確認し安全条件を整えてから作業を許可する仕組み", "作業員の勤怠管理", "コスト管理"],answer:1,explanation:"作業許可証制度は危険な作業前にリスク評価・安全措置の確認を行い権限者が許可を与えることで事故を防止する管理手法。"},
+{id:170,category:"製造",question:"LNG設備の「低温配管」における「熱伸縮」の吸収方法として正しいものはどれか。",choices:["固定のみ", "熱収縮を無視して設計する", "フレキシブルホースのみ使用", "伸縮継手・ベローズ・ルーズループ等で熱収縮・膨張による変位を吸収する"],answer:3,explanation:"低温配管は常温から−162℃への大きな温度変化で収縮するため伸縮継手・ベローズ・ルーズループで変位を吸収する設計が必要。"},
+{id:171,category:"供給",question:"都市ガスの供給系統において「整圧器（ガバナ）」の役割として正しいものはどれか。",choices:["ガスを貯蔵する", "上流圧力の変動にかかわらず下流への供給圧力を設定値に調整する", "ガスの成分を分析する", "ガスの流量を計測する"],answer:1,explanation:"整圧器（ガバナ）は一次圧（上流）の変動を吸収して二次圧（下流）を設定した一定圧力に維持する圧力制御機器。"},
+{id:172,category:"供給",question:"都市ガスの供給圧力区分において「低圧」で一般家庭に供給される場合の標準供給圧力として正しいものはどれか。",choices:["10kPa以上", "0.1kPa程度", "100kPa以上", "2.0〜3.0kPa程度"],answer:3,explanation:"一般家庭への都市ガス供給圧力は低圧で通常2.0〜3.0kPa程度（水柱換算で200〜300mmH₂O程度）。"},
+{id:173,category:"供給",question:"埋設ガス導管に使用される「ポリエチレン管（PE管）」の特徴として正しいものはどれか。",choices:["高圧用に最適で高温でも使用できる", "耐食性・軽量で電食の影響を受けにくく継手の融着が容易", "断熱性がなく低温環境には使用できない", "鋼管より強度が高い"],answer:1,explanation:"PE管は耐食性・軽量で電食（電気化学的腐食）の影響を受けず、電熱融着継手による施工性にも優れる。"},
+{id:174,category:"供給",question:"埋設鋼管の「電気防食」として最も広く用いられる方法はどれか。",choices:["プラスチック被覆のみ", "塗料塗布のみ", "塗覆装のみ", "流電陽極法または外部電源法による電気防食"],answer:3,explanation:"電気防食は埋設鋼管の土壌腐食・電食を防止するため、流電陽極法（犠牲陽極）または外部電源法が広く用いられる。"},
+{id:175,category:"供給",question:"ガス供給系統において「ガスメーター」に求められる機能として正しいものはどれか。",choices:["消費ガス量を正確に計量し異常時（マイコン対応型は地震・過流量等）に自動遮断する", "ガスの成分を分析する", "ガスの圧力を調整する", "ガスを貯蔵する"],answer:0,explanation:"マイコンメーターは計量機能に加え地震（感震）・過流量・低圧時等の異常を検知して自動遮断する安全機能を持つ。"},
+{id:176,category:"供給",question:"ガス導管の「最高使用圧力」の設定に際して考慮すべき要素として最も関係が薄いものはどれか。",choices:["供給エリアの気象条件（風向き等）", "導管の肉厚", "配管材料の強度", "接続機器の耐圧性"],answer:0,explanation:"最高使用圧力の設定には材料強度・肉厚・継手強度等を考慮するが、風向き等の気象条件は直接の設定要素ではない。"},
+{id:177,category:"供給",question:"都市ガスの供給系統において「地区整圧器（地区ガバナ）」の設置目的として正しいものはどれか。",choices:["ガスを製造する", "ガスを貯蔵する", "中圧または高圧の導管から低圧の配管への圧力降下を行い供給エリアへ低圧ガスを供給する", "ガス漏れを検知する"],answer:2,explanation:"地区整圧器は中圧・高圧導管から低圧配管へ減圧し住宅・小規模需要家への低圧ガス供給を行う設備。"},
+{id:178,category:"供給",question:"埋設ガス導管の「防食テープ（ポリエチレン被覆等）」の役割として正しいものはどれか。",choices:["土壌中の水分・電流から導管を絶縁し腐食を防止する", "ガスの圧力損失を低減する", "導管の強度を高める", "導管の識別色として使用する"],answer:0,explanation:"防食被覆（ポリエチレン被覆・防食テープ等）は鋼管を土壌中の腐食因子（水分・塩分・電流等）から絶縁保護する。"},
+{id:179,category:"供給",question:"ガス配管の「気密試験」において使用する試験圧力として正しいものはどれか。",choices:["最高使用圧力の2倍以上の圧力", "最高使用圧力の1.5倍以上の水圧", "最高使用圧力以上の圧力のガスまたは空気", "大気圧のみ"],answer:2,explanation:"気密試験は最高使用圧力以上のガス・空気・窒素等を用いて漏洩がないことを確認する試験。"},
+{id:180,category:"供給",question:"「マイコンメーター」において地震感知時に自動遮断する震度の目安として正しいものはどれか。",choices:["震度7のみ", "震度3以上", "震度5相当以上", "震度に関係なく遮断"],answer:2,explanation:"マイコンメーターは概ね震度5相当（ガル値で設定）以上の揺れを感知すると自動的にガスを遮断する。"},
+{id:181,category:"供給",question:"ガス供給設備における「緊急ガス遮断装置」の設置が特に重要な場所として正しいものはどれか。",choices:["一般家庭の台所", "ガス管理事務所", "供給所・整圧器室等の主要設備", "屋外の公園"],answer:2,explanation:"緊急遮断装置は供給所・整圧器室・大口需要家施設等の主要設備に設置し緊急時に迅速にガスを遮断できるようにする。"},
+{id:182,category:"供給",question:"ガス導管の「口径選定」において考慮する主要な要素として正しいものはどれか。",choices:["最大需要ガス量・許容圧力損失・ガスの比重・流速", "ガスの色", "導管の色", "埋設深さのみ"],answer:0,explanation:"導管口径は最大需要ガス量・許容圧力損失・比重・流速・管長等を考慮して選定する。"},
+{id:183,category:"供給",question:"ガス配管工事における「継手」の種類として溶接継手（溶接接合）の利点として正しいものはどれか。",choices:["施工が最も簡単", "継手部の強度が高く気密性に優れ漏洩リスクが低い", "脱着が容易", "コストが最も低い"],answer:1,explanation:"溶接接合は継手部の強度・気密性が高く特に高圧・埋設配管で採用される。ただし施工には資格と技術が必要。"},
+{id:184,category:"供給",question:"ガス供給系統において「ガス漏洩の検知」に使用されるガス検知器の選定において考慮すべき事項として正しいものはどれか。",choices:["検知器の重量", "検知器の色", "検知対象ガスの種類・爆発下限界・設置環境（防爆・耐候性）", "電力消費量のみ"],answer:2,explanation:"ガス検知器は検知対象ガスの種類・爆発下限界・設置環境（防爆・耐候・腐食性雰囲気）等を考慮して選定する。"},
+{id:185,category:"供給",question:"ガス供給系統における「中圧導管」の主な役割として正しいものはどれか。",choices:["一般家庭への直接供給", "ガスを製造する", "製造所・供給所から地区整圧器までガスを輸送する幹線的役割", "ガスを貯蔵する"],answer:2,explanation:"中圧導管は製造所・供給所から地域の地区整圧器までガスを輸送する幹線的導管として機能する。"},
+{id:186,category:"供給",question:"ガス配管の「腐食」の種類として「マクロセル腐食」の説明として正しいものはどれか。",choices:["高温による酸化腐食", "局所的な化学反応による腐食", "微生物による腐食", "埋設条件の違い（土質・通気性差等）により生じる広範囲なセル型の電気化学的腐食"],answer:3,explanation:"マクロセル腐食は土質・通気性・水分等の環境差から生じる広域的な電気化学的腐食でアノード部で激しく腐食する。"},
+{id:187,category:"供給",question:"ガス供給系統において「ガス臭の通報」を受けた際の初動対応として最も重要なものはどれか。",choices:["電話で対応のみ行う", "翌日対応する", "現場に急行し可燃性ガス検知器で確認後、ガス漏れの場合は安全措置・ガス遮断・通報・立入禁止を実施", "通報者に「しばらく様子を見るよう」伝える"],answer:2,explanation:"ガス臭の通報に対しては迅速に現場確認を行い、ガス漏れが確認された場合は迅速な安全措置と緊急遮断が最優先。"},
+{id:188,category:"供給",question:"ガス導管の「腐食管理」における「管対地電位測定」の目的として正しいものはどれか。",choices:["ガスの成分分析", "電気防食の効果確認と腐食リスク箇所の特定", "ガスの圧力測定", "ガスの流量測定"],answer:1,explanation:"管対地電位測定は埋設導管の電気防食状態を確認し防食が不十分な箇所を特定して腐食リスクを管理する手法。"},
+{id:189,category:"供給",question:"都市ガスの「供給区域内の導管網」における「ループ（環状）配管」の利点として正しいものはどれか。",choices:["圧力損失が大きい", "施工費が安い", "口径が小さくできる", "一方の導管が損傷しても他方のルートで供給継続でき供給信頼性が高い"],answer:3,explanation:"ループ（環状）配管は複数の供給ルートを持つため一方が損傷しても供給継続が可能で信頼性が高い。"},
+{id:190,category:"供給",question:"ガス供給設備の「整圧器室」の設備として設置が求められるものとして正しいものはどれか。",choices:["宿泊設備", "食堂設備", "換気設備・ガス検知器・緊急遮断装置等の保安設備", "入浴設備"],answer:2,explanation:"整圧器室には換気設備・ガス検知器・緊急遮断装置・消火設備等の保安設備の設置が技術基準で求められる。"},
+{id:191,category:"供給",question:"ガス供給系統における「ガバナの二次圧設定」が高すぎる場合に起こりうる問題として正しいものはどれか。",choices:["消費機器の効率が上がる", "ガス器具へのガス供給量が増加しすぎて安全装置が作動する場合がある", "ガス器具の火力が弱くなる", "ガスが漏れにくくなる"],answer:1,explanation:"ガバナの二次圧が高すぎると供給ガス量が増加し消費機器の燃焼異常・安全装置作動・器具損傷を引き起こすことがある。"},
+{id:192,category:"供給",question:"ガス配管の「絶縁継手」を設置する目的として正しいものはどれか。",choices:["圧力損失を低減するため", "断熱のため", "異種金属接触腐食の防止や電気防食区間の電流漏れを防ぐため", "ガスの流量を制御するため"],answer:2,explanation:"絶縁継手は電気防食区間の境界等で電流の漏れを防ぎ異種金属間の電池腐食を防止するために使用する。"},
+{id:193,category:"供給",question:"ガス供給配管の「埋設深さ」について技術基準上の規定として正しいものはどれか。",choices:["埋設深さに規定はない", "2m以上必要", "一般地盤では導管の頂部が地表から0.3m以上とする", "1m以上必要"],answer:2,explanation:"技術基準では一般地盤の埋設導管は頂部が地表から0.3m以上（道路内は条件あり）埋設することが規定されている。"},
+{id:194,category:"供給",question:"ガス供給系統の「需要量予測」において「ピーク需要」が最大となる時期として正しいものはどれか。",choices:["春季の昼間", "秋季の夕方", "冬季の朝方（暖房・給湯需要が重なる時間帯）", "夏季の昼間"],answer:2,explanation:"都市ガスの最大需要（ピーク需要）は冬季の朝方に暖房・給湯・調理の需要が重なる時間帯に発生することが多い。"},
+{id:195,category:"供給",question:"「ガス漏洩事故」の原因として最も多いものはどれか。",choices:["雷による損傷", "水害による損傷", "腐食・経年劣化・工事損傷・施工不良等", "地震による損傷のみ"],answer:2,explanation:"ガス漏洩事故の原因として腐食による劣化・他工事による損傷・施工不良・継手部の劣化等が多い。"},
+{id:196,category:"供給",question:"ガス供給系統において「供給圧力の確認」を行う「エンドポイント圧力測定」の目的として正しいものはどれか。",choices:["末端需要家での供給圧力が適切な範囲に維持されているかを確認する", "流量の計測", "ガスの成分分析", "ガスの熱量確認"],answer:0,explanation:"エンドポイント（末端）の圧力測定は需要家へのガス供給圧力が適正に維持されているかの確認に使用する。"},
+{id:197,category:"供給",question:"ガス導管の「ライニング補修工法（管内ライニング）」の説明として正しいものはどれか。",choices:["既設導管の内部に樹脂等を塗布・形成して腐食した管の機能を回復・延命させる工法", "新しい導管を並列に埋設する", "外面を塗装するのみ", "既設導管を掘り起こして交換する"],answer:0,explanation:"管内ライニング工法は掘削せずに既設管内面にエポキシ等の樹脂を塗布・硬化させて劣化管を更生・延命させる工法。"},
+{id:198,category:"供給",question:"ガス供給系統における「ガスの漏洩調査」の方法として正しいものはどれか。",choices:["可燃性ガス検知器（ガス検知器）を用いた路面調査・音聴調査等", "超音波探傷試験", "においのみで判断", "目視のみ"],answer:0,explanation:"ガス漏洩調査では可燃性ガス検知器を使った路面（歩面）調査・音聴調査・掘削調査等を組み合わせて実施する。"},
+{id:199,category:"供給",question:"ガス配管工事において「ポリエチレン管の電熱融着（EF融着）」に関する記述として正しいものはどれか。",choices:["手作業でのみ施工できる", "融着後すぐにガスを流せる", "溶接資格が必要", "EFコントローラーでバーコードを読み取り自動で最適な電流・時間を管理して融着する"],answer:3,explanation:"EF融着はEFコントローラーが継手のバーコードを読み取り最適な電流・時間を自動制御して確実な融着を行う。"},
+{id:200,category:"供給",question:"ガス供給設備における「緊急時のガス遮断優先順序」として正しいものはどれか。",choices:["上流（大口径・幹線）から順次遮断し被害範囲を最小化する", "下流の細管から遮断する", "無作為に遮断する", "消費者への供給を最後まで継続する"],answer:0,explanation:"緊急時には上流側の主幹から遮断して広い範囲のガスを止め被害の拡大を防止するのが原則。"},
+{id:201,category:"供給",question:"ガス供給系統における「圧力損失」の計算において導管の「等価管長」とは何か。",choices:["実際の管の長さ", "継手・弁等の局所抵抗を等価な直管抵抗として換算した管の長さ", "最大圧力差の管長", "流速が最大になる管長"],answer:1,explanation:"等価管長は継手・バルブ等の局所圧力損失を同径直管の圧力損失に換算した仮想管長で、総圧力損失計算に加算する。"},
+{id:202,category:"供給",question:"ガス供給設備の「整圧器（ガバナ）」において「異常昇圧」が起きた場合の対策装置として正しいものはどれか。",choices:["安全弁（リリーフバルブ）または過圧遮断装置", "圧力計のみ", "流量計", "ガス検知器"],answer:0,explanation:"整圧器の二次圧が異常上昇した場合、安全弁（リリーフバルブ）または過圧遮断装置（SSV）が作動してガスを遮断・放出する。"},
+{id:203,category:"供給",question:"ガス供給配管において「鋼管とポリエチレン管の接続」に使用される継手として正しいものはどれか。",choices:["溶接継手のみ", "フランジ継手のみ", "ねじ込み継手のみ", "鋼管-PE管変換継手（インサートソケット等）"],answer:3,explanation:"鋼管とポリエチレン管の接続には両材料に対応した専用の変換継手（インサートソケット型等）を使用する。"},
+{id:204,category:"供給",question:"ガス供給系統において「スマートメーター」の導入により期待される効果として正しいものはどれか。",choices:["ガスの成分を変えられる", "ガスの圧力を変えられる", "遠隔検針・遠隔遮断・需要データのリアルタイム収集による供給管理の高度化", "ガスの熱量を変えられる"],answer:2,explanation:"スマートメーターにより遠隔での検針・遮断・開栓操作、細かな需要データ収集、異常検知の迅速化が可能になる。"},
+{id:205,category:"供給",question:"ガス供給配管の「防護工（外部保護）」が必要な場所として正しいものはどれか。",choices:["他埋設物との近接箇所・車両荷重がかかる場所等リスクが高い箇所", "すべての場所", "地上部の配管のみ", "水平区間のみ"],answer:0,explanation:"他埋設物との近接・交差部分や車両荷重・掘削等のリスクが高い箇所では導管への防護工（コンクリート巻立て等）が必要。"},
+{id:206,category:"供給",question:"ガス供給系統における「需給調整」の方法として正しいものはどれか。",choices:["ガスホルダーの活用・LNG払い出し量の増加・他地点からのガス融通等で需給バランスを維持する", "料金を急変させる", "供給を停止する", "需要が急増しても調整しない"],answer:0,explanation:"需給調整はガスホルダーの活用・製造量の調整・他供給者からの融通等を組み合わせて需給バランスを維持する。"},
+{id:207,category:"供給",question:"ガス配管の「ライン圧力管理」において「圧力レコーダー」を使用する目的として正しいものはどれか。",choices:["ガスの温度を記録する", "導管系統の圧力変動を継続的に記録し異常の早期発見と需要管理に活用する", "ガスの流量を計測する", "ガスの成分を記録する"],answer:1,explanation:"圧力レコーダーで導管圧力を連続記録することで異常圧力変動の早期検知と需給管理の精度向上に役立てる。"},
+{id:208,category:"供給",question:"ガス供給系統の「バルブ（止め弁）」の設置目的として正しいものはどれか。",choices:["工事・緊急時・保守時にガス流れを遮断し安全に作業を行うため", "ガスを貯蔵する", "ガスの流量を計測する", "圧力を高める"],answer:0,explanation:"バルブはガス供給系統において工事・緊急遮断・保守点検時にガスの流れを制御・遮断するために設置する。"},
+{id:209,category:"供給",question:"ガス供給系統における「導管網の信頼性評価」において「N-1基準」とは何か。",choices:["供給設備の数を1つにする基準", "主要設備（導管・整圧器）が1系統停止しても需要家への供給を継続できる設計基準", "1MPa以上の圧力基準", "1年に1回点検する基準"],answer:1,explanation:"N-1基準は主要な供給設備が1系統故障しても残存する系統で需要家への供給を維持できる信頼性設計の基準。"},
+{id:210,category:"供給",question:"ガス供給系統の「パイプラインの清掃（ピグ清掃）」の目的として正しいものはどれか。",choices:["流量の計測", "管内のスケール・錆・水分・異物を除去して圧力損失低減と管の健全性を維持する", "圧力の調整", "ガスの成分分析"],answer:1,explanation:"ピグ清掃は管内にピグ（清掃用プラグ）を通過させて錆・スケール・水分・異物を除去し配管の機能を維持する。"},
+{id:211,category:"供給",question:"ガス供給設備における「ドレン（凝縮水）抜き」の目的として正しいものはどれか。",choices:["腐食を促進させる", "ガスの熱量を上げる", "配管内に溜まった凝縮水を排除してガス流れの閉塞や腐食を防ぐ", "ガスの圧力を下げる"],answer:2,explanation:"配管内の凝縮水はガス流れの閉塞・圧力損失増加・腐食の原因となるため定期的な抜き取りが必要。"},
+{id:212,category:"供給",question:"ガス供給設備の「年次点検」で確認すべき項目として最も重要なものはどれか。",choices:["従業員の健康状態", "駐車場の管理状態", "整圧器の作動確認・安全弁の設定圧力確認・ガス漏洩確認・電気防食の状態確認", "事務所の清潔さ"],answer:2,explanation:"年次点検では整圧器作動・安全弁設定・ガス漏洩・電気防食・計測器校正等の保安上重要な項目を確認する。"},
+{id:213,category:"供給",question:"ガス供給系統における「LNG衛星基地（サテライト基地）」の役割として正しいものはどれか。",choices:["導管の届かないエリアへLNGをローリー輸送して現地で気化供給するバックアップ・補完供給設備", "大規模なLNG受入基地", "ガス器具の販売所", "ガス漏洩の検知基地"],answer:0,explanation:"LNG衛星基地はローリーでLNGを搬入して現地で気化し導管網が未整備のエリアや需要の少ないエリアに供給する。"},
+{id:214,category:"供給",question:"ガス供給系統の「圧力管理」において「低圧供給圧力」が規定値を下回った場合の問題として正しいものはどれか。",choices:["ガスが漏れやすくなる", "ガス機器の不完全燃焼・着火不良・燃焼停止が起こる可能性がある", "燃焼が過剰になる", "ガスの臭いが強くなる"],answer:1,explanation:"低圧の供給圧力が規定値を下回るとガス器具への供給量が不足し着火不良・不完全燃焼・燃焼停止の原因となる。"},
+{id:215,category:"供給",question:"「仮復旧工事」でガス管を一時的に接続する際に使用されるものとして正しいものはどれか。",choices:["フランジ継手", "ねじ込み継手のみ", "プラグ型迅速継手・圧着継手等の締結継手", "溶接継手のみ"],answer:2,explanation:"緊急・仮復旧時は迅速に接続できる圧着継手や迅速継手が使用されることがある。"},
+{id:216,category:"供給",question:"ガス供給系統における「ガスの需要パターン」について正しい記述はどれか。",choices:["需要は完全にランダムで予測できない", "1年を通じて需要量はほぼ一定", "冬季に暖房需要が加わり年間最大需要が発生し、夏季は最小となる季節変動がある", "夏季に最大需要が発生する"],answer:2,explanation:"都市ガス需要は冬季（暖房・給湯）に最大、夏季に最小となる季節変動パターンを持ち、供給計画の基礎となる。"},
+{id:217,category:"供給",question:"「ガス供給の停止・開栓作業」において安全上最も重要な確認事項として正しいものはどれか。",choices:["近隣への挨拶", "天気予報", "ガス器具のすべてが閉止されていること・供給再開時のガス漏洩がないこと", "作業員の服装"],answer:2,explanation:"供給停止・再開時はガス器具の確実な閉止とガス漏洩がないことの確認が最重要であり、ガス漏洩のまま開栓は厳禁。"},
+{id:218,category:"供給",question:"ガス供給設備の「整圧器のフィルター（ストレーナ）」の役割として正しいものはどれか。",choices:["ガスの圧力を調整する", "ガスの熱量を調整する", "ガスの流量を計測する", "ガス中の異物（錆・砂等）を捕集して整圧器を保護する"],answer:3,explanation:"ストレーナはガス中の異物を捕集して整圧器弁体の損傷・目詰まりを防止し整圧機能を維持する保護設備。"},
+{id:219,category:"供給",question:"ガス供給系統における「地震後のガス供給復旧」の基本的な手順として正しいものはどれか。",choices:["電気が復旧した後に再開する", "まず導管の健全性（漏洩）を確認し安全が確認されたブロックから順次供給を再開する", "直ちに全戸の供給を再開する", "需要家の要望順に復旧する"],answer:1,explanation:"地震後の供給復旧は導管の漏洩検査・健全性確認を行ったブロックから安全確認後に順次供給を再開する手順が基本。"},
+{id:220,category:"供給",question:"ガス供給配管における「腐食リスク評価」の方法として正しいものはどれか。",choices:["コストのみで判断", "管対地電位・土壌腐食性・漏洩履歴・経年等を総合的に評価するリスクベースアプローチ", "配管の外観目視のみ", "設置年代のみで判断"],answer:1,explanation:"現代の腐食管理は管対地電位・土壌腐食性・事故履歴・経年劣化等を統合したリスクベースアプローチで行う。"},
+{id:221,category:"供給",question:"ガス供給設備の「テレメータシステム」の役割として正しいものはどれか。",choices:["ガスを輸送する", "ガスを計量する", "ガスの成分を分析する", "遠隔地の圧力・流量等のデータを集中管理センターに伝送して監視・制御を行う"],answer:3,explanation:"テレメータシステムは供給設備の圧力・流量等の計測データを通信回線で集中制御センターに集め遠隔監視・制御を行う。"},
+{id:222,category:"供給",question:"ガス供給配管の「腐食箇所特定」に使用される「直流電位法（PCM法等）」の説明として正しいものはどれか。",choices:["磁気センサーで配管を探査する方法", "掘削して直接確認する方法", "配管防食被覆の欠陥箇所を地表面からの電位測定で特定する方法", "超音波で管厚を測定する方法"],answer:2,explanation:"PCM法等の直流電位法は被覆に欠陥がある箇所で電位が変化することを利用して地表から防食被覆欠陥を特定する。"},
+{id:223,category:"供給",question:"ガス供給設備における「重要度に応じた保守管理」（RCM：信頼性中心保全）の考え方として正しいものはどれか。",choices:["設備の重要度・故障の影響度に応じて保全内容・頻度を最適化する", "故障後に修理するのみ", "重要でない設備は点検しない", "すべての設備を同一頻度で点検する"],answer:0,explanation:"RCMは設備の機能・重要度・故障モードに基づいて保全戦略（予防保全・事後保全・状態監視保全等）を最適化する考え方。"},
+{id:224,category:"供給",question:"ガス供給系統において「圧力調整弁（レギュレータ）」の「閉止圧（ロックアップ圧力）」の説明として正しいものはどれか。",choices:["最高許容圧力", "流量がゼロになったとき（無負荷時）に二次圧が上昇して安定する圧力", "レギュレータが閉まる最大流量", "レギュレータが開く最低圧力"],answer:1,explanation:"閉止圧（ロックアップ圧力）は流量がゼロ（無負荷）になったとき二次圧が上昇して安定する圧力で、設定圧より若干高い。"},
+{id:225,category:"供給",question:"ガス供給系統の「ガス管の損傷防止」のために実施する「他工事者への事前通知」の目的として正しいものはどれか。",choices:["他工事（水道・電気等）による掘削工事での誤損傷を防ぐため工事前にガス管の位置情報を提供するため", "工事の許可を与えるため", "ガスの供給を停止するため", "工事代金を請求するため"],answer:0,explanation:"他工事者への事前通知・ガス管位置情報の提供は掘削工事による誤損傷（第三者損傷）防止のための重要な安全活動。"},
+{id:226,category:"供給",question:"ガス供給設備の「流量計（ガスメーター）の誤差」が大きい場合に起こる問題として正しいものはどれか。",choices:["ガスが漏れる", "料金の算定誤差（消費者への不当請求または損失）が発生する", "ガスの熱量が変わる", "供給圧力が変化する"],answer:1,explanation:"流量計（メーター）の誤差は計量法上の問題となるほか消費者への過請求または供給者側の収益損失に直結する。"},
+{id:227,category:"供給",question:"ガス配管の「ライニング工法（管内更生）」の主なメリットとして正しいものはどれか。",choices:["非掘削で既設管を更生できるため工事コスト・期間・交通障害を大幅に削減できる", "あらゆる管径に適用可能", "新品管と同等の耐圧性が得られる", "施工後すぐに最高使用圧力での使用が可能"],answer:0,explanation:"ライニング工法の最大のメリットは非掘削（トレンチレス）工法のため道路復旧コスト・工期短縮・交通渋滞低減に優れること。"},
+{id:228,category:"供給",question:"ガス供給設備における「越流防止器（オーバーフロー防止弁）」の役割として正しいものはどれか。",choices:["ガスを貯蔵する", "配管破断時に過剰な流量を自動検知して遮断し被害を局限化する", "ガスの流量を計測する", "ガスの圧力を調整する"],answer:1,explanation:"越流防止器（過流量遮断弁）は配管破断等で異常に大きな流量が生じた際に自動遮断して被害拡大を防止する。"},
+{id:229,category:"供給",question:"ガス供給系統における「ガス管の識別色（ガス管標識）」の目的として正しいものはどれか。",choices:["美観のため", "ガスの種類を示すため", "圧力区分を示すため", "他の埋設物との識別を容易にして工事中の誤損傷を防止するため"],answer:3,explanation:"ガス管の識別色・標識（黄色テープ等）は他工事者が掘削する際にガス管を識別して誤損傷を防ぐための安全対策。"},
+{id:230,category:"供給",question:"ガス供給系統において「低圧ガス導管の圧力降下計算」に使用される「スピッツグラス公式」の適用条件として正しいものはどれか。",choices:["高圧・乱流の場合", "低圧・層流に近い条件の配管網計算", "中圧の計算", "蒸気の計算"],answer:1,explanation:"スピッツグラス公式は低圧配管（0.1MPa未満）の圧力損失計算に広く用いられる経験式で層流〜遷移域を対象とする。"},
+{id:231,category:"供給",question:"ガス供給系統の「ガス管の異種金属接触」で問題となる現象はどれか。",choices:["ガスの品質変化", "異種金属接触部で電池（ガルバニック腐食）が形成され卑金属側が腐食する", "圧力の変化", "流量の変化"],answer:1,explanation:"異種金属（例：鋼管と銅管）が接触すると電位差によりガルバニック腐食（電池腐食）が生じ卑金属側が腐食する。"},
+{id:232,category:"供給",question:"ガス供給設備の「超音波流量計」の原理として正しいものはどれか。",choices:["流体の回転数で流量を測定", "超音波の伝播速度の流速による変化（ドップラー効果または伝播時間差）を利用して流量を計測", "磁界の変化で流量を計測", "差圧で流量を計測"],answer:1,explanation:"超音波流量計は超音波の伝播時間差（あるいはドップラー効果）を利用して流体の流速・流量を非侵襲で計測する。"},
+{id:233,category:"供給",question:"ガス供給系統において「防食被覆の劣化」を確認する方法として「コーティング検査（PCM等）」の他に使用される方法はどれか。",choices:["目視のみ", "放射線透過試験", "ダイレクト電位測定・CIPS（密着電位測定）・開掘による直接検査等", "磁粉探傷試験"],answer:2,explanation:"防食被覆の健全性確認にはPCM・CIPS（接続電位測定）・管対地電位測定・抜き取り開掘検査等を組み合わせる。"},
+{id:234,category:"供給",question:"ガス供給系統における「ガス工事後の気密試験」において「発泡液（石けん水等）」を用いる目的として正しいものはどれか。",choices:["ガスの臭いを消すため", "圧力を高めるため", "管内を清掃するため", "継手・接続部のガス漏れを気泡の発生で目視確認するため"],answer:3,explanation:"発泡液（石けん水・専用検査液）は継手・接続部等に塗布し気泡発生でガス漏れを目視確認する最も基本的な漏洩検査法。"},
+{id:235,category:"供給",question:"都市ガスの「供給区域内の圧力ゾーニング」の説明として正しいものはどれか。",choices:["需要密度・距離等に応じて高圧・中圧・低圧の区域を計画的に設定してコスト効率よく供給する", "圧力区分はガバナで一括管理する", "すべての区域を同一圧力で供給する", "圧力は需要家ごとに個別設定する"],answer:0,explanation:"供給区域を需要密度・地理的条件に応じて高中低圧にゾーニングすることで経済的かつ安定した供給体制を構築する。"},
+{id:236,category:"供給",question:"ガス供給系統における「ガス導管の巡視・点検」の目的として正しいものはどれか。",choices:["導管の識別色を確認するため", "導管の長さを測定するため", "導管の外観を美化するため", "腐食・損傷・第三者工事リスク等を早期発見して事故を未然に防止するため"],answer:3,explanation:"導管の定期巡視・点検は外部からの損傷リスク・腐食・設備異常を早期発見し漏洩事故を防止するための基本的保安活動。"},
+{id:237,category:"供給",question:"ガス供給設備における「地震計（感震器）」の設置目的として正しいものはどれか。",choices:["地震発生を予知するため", "設定以上の震度の地震を感知してガスの緊急遮断を行うため", "建物の揺れを防ぐため", "地震の規模を記録するため"],answer:1,explanation:"感震器は設定値以上の揺れを検知した際に緊急遮断弁等を動作させてガス供給を停止し二次被害を防止する。"},
+{id:238,category:"供給",question:"「LPガス（液化石油ガス）の容器供給」において容器の設置場所として技術上の基準から正しいものはどれか。",choices:["地下室", "通風の良い屋外または屋外に準じた場所に設置し転倒防止措置を施す", "高温多湿な場所", "密閉した室内"],answer:1,explanation:"LPガス容器は漏洩時のガス滞留を防ぐため通風良好な屋外等に設置し転倒防止のために鎖等で固定する。"},
+{id:239,category:"供給",question:"ガス供給系統の「高圧ガス導管」の技術基準における「安全距離（他物件との距離）」を確保する目的として正しいものはどれか。",choices:["工事の便宜のため", "景観の維持", "コスト削減", "万一のガス漏洩・火災・爆発時の被害を近隣物件に及ぼさないようにするため"],answer:3,explanation:"高圧導管と住宅・施設との間に安全距離を設けることで万一の事故時の被害が近隣に及ぶことを最小化する。"},
+{id:240,category:"供給",question:"ガス配管における「ステップ圧力法による漏洩調査」の説明として正しいものはどれか。",choices:["ブロック内の圧力変化を段階的に測定して漏洩箇所を絞り込む方法", "ガス検知器で地表を歩行調査する方法", "管内を掘り起こして直接確認する方法", "超音波で管厚を測定する方法"],answer:0,explanation:"ステップ圧力法は管網をブロックに分けてバルブ操作しながら圧力変化を測定し漏洩箇所のブロックを特定する手法。"},
+{id:241,category:"供給",question:"ガス供給系統の「整圧器のメンテナンス」において「ダイヤフラム」の点検が重要な理由として正しいものはどれか。",choices:["ダイヤフラムの破損は整圧機能の喪失・二次圧異常上昇の原因となりガス器具や配管への過圧被害を引き起こすため", "配管の腐食に関係するため", "ガスの成分が変わるため", "流量計測に影響するため"],answer:0,explanation:"整圧器のダイヤフラムは二次圧制御の核心部品であり劣化・破損すると整圧機能が失われ異常昇圧による事故につながる。"},
+{id:242,category:"供給",question:"ガス供給系統において「ガス管の電気防食効果」の確認頻度として技術基準上適切なものはどれか。",choices:["1年に1回以上（または保安規程で定める頻度）", "5年に1回", "設置時のみ", "10年に1回"],answer:0,explanation:"電気防食の効果確認（管対地電位測定等）は保安規程に基づき定期的（通常1年以内の間隔）に実施する。"},
+{id:243,category:"供給",question:"ガス供給系統の「閉止栓（プラグ）」の使用目的として正しいものはどれか。",choices:["使用を中止したガス管末端を閉止してガスの放出・外部侵入を防ぐ", "圧力を高める", "ガスの流量を調整する", "ガスを計量する"],answer:0,explanation:"閉止栓（プラグ・キャップ）はガス管末端を封止して未使用管からのガス漏洩や外部からの異物・水分の侵入を防ぐ。"},
+{id:244,category:"供給",question:"ガス供給系統における「ガスの付臭濃度管理」において通常管理される付臭剤濃度の基準として正しいものはどれか。",choices:["爆発下限界の1/100で感知できる濃度以上", "爆発下限界と同じ濃度", "爆発下限界の1/1000で感知できる濃度以上", "臭いが全く感知されない濃度"],answer:2,explanation:"付臭剤はガス漏洩をできるだけ早く検知できるよう爆発下限界の1/1000以下の濃度（安全な濃度）で臭いが感知できる量を添加する。"},
+{id:245,category:"供給",question:"ガス供給配管において「ポリエチレン管の融着継手」の品質管理として重要なことはどれか。",choices:["融着後すぐに通気する", "融着後の目視確認のみ", "融着記録（温度・時間・圧力等）の保存と引張試験等の品質確認", "費用の記録のみ"],answer:2,explanation:"PE管融着継手の品質管理には融着条件記録・冷却時間の確保・引張試験等による接合品質の確認が重要。"},
+{id:246,category:"供給",question:"ガス供給系統の「不活性ガス（窒素）充填」を行う主な目的として正しいものはどれか。",choices:["腐食を促進するため", "圧力試験のため", "工事中・停止中の配管内の可燃性ガスを窒素で置換して爆発・酸化のリスクを排除するため", "ガスを供給するため"],answer:2,explanation:"窒素充填（窒素パージ）は工事・停止期間中に管内の可燃性ガス・水分・酸素を窒素で置換し爆発防止と腐食抑制を図る。"},
+{id:247,category:"供給",question:"ガス供給設備の「整圧所（ガバナステーション）」において「二系列化」を採用する目的として正しいものはどれか。",choices:["占有面積を大きくするため", "一系列が故障・点検中でも他系列で供給継続でき供給信頼性を高めるため", "圧力損失を増大させるため", "建設コストを削減するため"],answer:1,explanation:"整圧所の二系列化（主整圧器＋予備整圧器）は一方が故障・点検中でも他方で供給継続でき信頼性を確保するため。"},
+{id:248,category:"供給",question:"ガス供給系統において「ガス漏洩が発生した際の通報・連絡体制」として正しいものはどれか。",choices:["ガス事業者への通報・消防機関への119番通報・警察への通報等、状況に応じた関係機関への迅速な通報が必要", "翌日に報告する", "社内のみで処理してよい", "報告は不要"],answer:0,explanation:"ガス漏洩発生時は社内への連絡はもちろん、状況に応じて消防（119番）・警察・自治体等への通報が求められる。"},
+{id:249,category:"供給",question:"ガス供給系統の「パージ（管内ガス置換）」作業において最終的に安全を確認する方法として正しいものはどれか。",choices:["色の変化を確認する", "数秒待つだけでよい", "作業者の嗅覚のみ", "可燃性ガス検知器でガス濃度がゼロまたは安全な濃度以下であることを確認する"],answer:3,explanation:"パージ完了の確認は可燃性ガス検知器でガス濃度が爆発下限界の1/4以下等の安全基準を下回ることを測定する。"},
+{id:250,category:"供給",question:"都市ガスの供給系統において「中圧Bガバナ（MP→LP）」の設置間隔（必要密度）を決める主な要因として正しいものはどれか。",choices:["供給区域の需要密度・供給距離・許容圧力降下量", "地区の面積のみ", "設置コストのみ", "地区の人口密度"],answer:0,explanation:"中圧→低圧ガバナの配置計画は供給エリアの需要密度・供給距離・許容圧力損失量を基に経済的・安定的な供給を確保するよう設計する。"},
+{id:251,category:"消費機器",question:"家庭用ガスこんろに設けられる「Siセンサー（調理油過熱防止装置）」の目的として正しいものはどれか。",choices:["鍋底の温度を検知して設定温度以上になるとガスを自動遮断し調理油の過熱発火を防ぐ", "ガスの流量を計測する", "点火を自動で行う", "換気を促す"],answer:0,explanation:"Siセンサーは鍋底温度センサーで油の過熱を検知し約250℃で自動消火する調理油過熱防止装置（2008年以降義務化）。"},
+{id:252,category:"消費機器",question:"「ガス瞬間湯沸かし器（給湯器）」の「不完全燃焼防止装置」が作動する条件として正しいものはどれか。",choices:["ガス圧力が高くなったとき", "給湯温度が高くなりすぎたとき", "排気が滞留して不完全燃焼が続くとき（CO濃度上昇等を検知したとき）", "水圧が高いとき"],answer:2,explanation:"不完全燃焼防止装置は排気の滞留・閉塞等で不完全燃焼が継続しCO濃度が上昇した際に機器を自動停止させる安全装置。"},
+{id:253,category:"消費機器",question:"ガス消費機器における「換気の必要性」の説明として正しいものはどれか。",choices:["換気は不要", "ガスの燃焼には酸素が必要であり燃焼排ガス（CO₂・CO等）を排除するため適切な換気が不可欠", "換気は電気機器には不要だがガス機器には不要", "換気は料理の臭い対策のみ"],answer:1,explanation:"ガス燃焼機器は酸素を消費しCO₂やCO等の燃焼排ガスを発生するため不完全燃焼防止と酸欠防止のために換気が必要。"},
+{id:254,category:"消費機器",question:"「FF式（強制給排気式）ガス給湯器」の特徴として正しいものはどれか。",choices:["給排気とも専用の二重管（または給排気筒）で屋外と直結し室内空気を使わず安全性が高い", "室内の空気を使って燃焼し排気は自然換気", "給気のみ屋外から取り込む", "排気のみ屋外に排出する"],answer:0,explanation:"FF式（Forced Flue）は給排気を密閉した二重管で直接屋外と接続するため室内空気を使わず一酸化炭素中毒リスクが極めて低い。"},
+{id:255,category:"消費機器",question:"「ガス漏れ警報器」の設置高さについて都市ガス（天然ガス系、空気より軽い）の場合の正しい位置はどれか。",choices:["天井から30cm以内または天井面から30cm以内の壁面", "窓の近く", "床から1m程度", "床面近く"],answer:0,explanation:"天然ガスは空気より軽いため天井付近に滞留する。警報器は天井から30cm以内に設置するのが基本。"},
+{id:256,category:"消費機器",question:"ガスこんろの「立消え安全装置（熱電対式等）」の機能として正しいものはどれか。",choices:["炎が消えたことを熱電対等で検知して自動的にガスを遮断し生ガスの放出を防ぐ", "点火を自動で行う", "点火ヒーターを加熱する", "ガスの流量を制御する"],answer:0,explanation:"立消え安全装置は炎が風等で消えた場合に熱電対の起電力低下を感知してバルブを閉止しガス漏洩を防止する。"},
+{id:257,category:"消費機器",question:"「ガス温水床暖房」の「熱交換器」の役割として正しいものはどれか。",choices:["ガスを貯蔵する", "ガスの圧力を調整する", "ガスを燃焼させる", "ガス燃焼熱を水（不凍液）に移して床暖房パネルへ循環させる"],answer:3,explanation:"熱交換器はガスバーナーの燃焼熱を循環水に効率よく伝達し、温めた水を床暖房パネルへ循環させる中核部品。"},
+{id:258,category:"消費機器",question:"「ガスファンヒーター（開放式）」を使用する際の注意点として最も重要なものはどれか。",choices:["十分な換気を行うこと（1時間に1〜2回以上の換気）", "電源コードの取り扱い", "家具の配置", "音量を下げること"],answer:0,explanation:"開放式ガスファンヒーターは室内空気を燃焼に使用し排気も室内に放出するため不完全燃焼・酸欠防止のため定期換気が必須。"},
+{id:259,category:"消費機器",question:"「ガス給湯暖房機（潜熱回収型）」の特徴として正しいものはどれか。",choices:["排気熱を全て捨てる", "排気温度が高い", "排ガス中の水蒸気の潜熱まで回収して熱効率を95%前後まで高めたエコジョーズ型機器", "熱効率が70%以下"],answer:2,explanation:"潜熱回収型（エコジョーズ）は従来機が捨てていた排ガス潜熱を二次熱交換器で回収し熱効率を95%前後まで向上させる。"},
+{id:260,category:"消費機器",question:"「ガスコンロの点火操作」において点火後すぐに手を離してもバーナーが消えないようにする装置として正しいものはどれか。",choices:["立消え安全装置（熱電対）を点火動作で加熱し電磁弁を保持する機構", "圧力調整器", "ガバナ", "過流量防止弁"],answer:0,explanation:"コンロの点火ボタンを押している間に熱電対が加熱されると電磁弁が開いたまま保持されるため手を離してもガスが流れ続ける。"},
+{id:261,category:"消費機器",question:"「業務用ガス機器」において「過熱防止装置」の設置が義務付けられている機器として正しいものはどれか。",choices:["ガス瞬間湯沸かし器", "業務用厨房機器の一部（フライヤー等の油加熱機器）", "ガス洗濯機", "ガス暖房機"],answer:1,explanation:"業務用フライヤー等の油加熱機器には油温過熱による発火を防ぐための過熱防止装置の設置が求められる。"},
+{id:262,category:"消費機器",question:"ガス消費機器の「燃焼方式」のうち「全一次空気式（完全予混合式）」の説明として正しいものはどれか。",choices:["燃焼に必要な空気をすべてガスと混合（一次空気）してから燃焼させる方式", "空気を一切使わない", "燃焼に必要な空気をすべて二次空気として供給する", "一次・二次空気を均等に使用する"],answer:0,explanation:"全一次空気式は燃焼用空気をすべてガスと予混合してから燃焼させるため均一な火炎を形成するが逆火リスクがある。"},
+{id:263,category:"消費機器",question:"「ガス衣類乾燥機」の「排気」について正しい記述はどれか。",choices:["排気は必ず屋外に排出しなければならない（水蒸気・燃焼排ガスが大量に発生するため）", "排気は室内に放出してよい", "排気はフィルターで処理すれば室内排気も可", "排気の処理方法に規定はない"],answer:0,explanation:"ガス衣類乾燥機は大量の水蒸気と燃焼排ガスを発生するため排気は必ず専用の排気筒で屋外に導出しなければならない。"},
+{id:264,category:"消費機器",question:"「ガス消費機器の設置基準（離隔距離）」において可燃物との距離が必要な主な理由はどれか。",choices:["燃焼炎や排気熱による可燃物への着火・火災を防止するため", "ガスの流量が変化するため", "ガス機器の音が反響するため", "ガスの臭いが広がるため"],answer:0,explanation:"ガス消費機器は燃焼炎・排気熱により近傍の可燃物に着火する危険があるため、基準に定める離隔距離の確保が必要。"},
+{id:265,category:"消費機器",question:"「ガスふろがま」の「空焚き防止装置」の説明として正しいものはどれか。",choices:["ガスの流量を制限する装置", "水温が上がりすぎると停止する装置", "換気を促す装置", "缶体（浴槽水側）の水位が低下して空焚き状態になると検知して自動停止する装置"],answer:3,explanation:"空焚き防止装置は浴槽水位の低下や缶体温度の異常上昇を検知して自動でガスを遮断し空焚きによる機器損傷・火災を防ぐ。"},
+{id:266,category:"消費機器",question:"「ガス給湯器の排気筒」の設置において最も重要な注意事項として正しいものはどれか。",choices:["排気ガスが室内・開口部・給気口等に入り込まない位置・構造とする", "排気筒の長さ（短いほどよい）", "排気筒の材質（美観優先）", "排気筒の色"],answer:0,explanation:"排気筒の設置では排気ガス（CO含む）が屋内に逆流・侵入しないよう他の開口部・給気口から離れた場所に排気口を設ける必要がある。"},
+{id:267,category:"消費機器",question:"「LPガス（プロパン）用ガス機器」と「都市ガス（13A）用ガス機器」の互換性について正しい記述はどれか。",choices:["ガスの種類が違っても同じ機器を使用できる", "ガスの種類（LPG・都市ガス）によりノズル口径・調整圧力等が異なるため専用機器を使用するか正規の変換工事が必要", "流量計が同じなら使用できる", "外観が同じなら使用できる"],answer:1,explanation:"LPGと都市ガスはウォッベ指数・供給圧力・燃焼特性が大きく異なるため専用機器を使用するか適切な器具変換が必要。無断流用は不完全燃焼・事故の原因。"},
+{id:268,category:"消費機器",question:"「ガス消費機器に関する調査（消費機器調査）」で確認する事項として正しいものはどれか。",choices:["機器の価格", "機器が技術基準に適合しているか（設置位置・換気・排気筒の状態等）", "機器の色・デザイン", "機器のメーカー"],answer:1,explanation:"消費機器調査では設置位置の離隔距離・換気の確保・排気筒の接続状態等が技術基準に適合しているかを確認する。"},
+{id:269,category:"消費機器",question:"「ガスこんろ」の「グリル」で「両面焼きグリル（水なし）」が普及した理由として正しいものはどれか。",choices:["安価だから", "上下双方向のバーナーで均一に加熱できコゲつき防止の水が不要で使いやすく油脂発火リスクも低減したため", "ガスの消費量が少ないから", "デザインが良いから"],answer:1,explanation:"水なし両面焼きグリルは上下バーナーによる均一加熱と水不要の便利さに加え水なし庫内への油脂落下発火防止機能も改善された。"},
+{id:270,category:"消費機器",question:"「業務用ガスバーナー（ラインバーナー等）」の「混合管」の役割として正しいものはどれか。",choices:["ガスを貯蔵する", "ガスの噴出エネルギー（エゼクター効果）を利用して空気を吸引しガスと均一に混合する", "圧力を調整する", "ガスの流量を計測する"],answer:1,explanation:"混合管（エゼクター）はガスの高速噴出による引込み効果（エゼクター効果）で一次空気を吸引しガスと予混合する。"},
+{id:271,category:"消費機器",question:"「ガス機器の設置工事」において「資格が必要とされる工事」として正しいものはどれか。",choices:["ガス栓から機器まで（ガス管接続部分を含む）の工事はガス工事に関する資格・認定が必要", "外観の取り付けのみ行うので資格不要", "ガス機器の設置工事はすべて無資格で行える", "電気配線のみ資格が必要"],answer:0,explanation:"ガス消費機器の接続工事のうちガス管・ガス栓等のガス設備に係る工事は資格（ガス消費機器設置工事監督者等）が必要。"},
+{id:272,category:"消費機器",question:"「ガス給湯器の凍結防止」として機器に内蔵されている「凍結予防装置」の動作説明として正しいものはどれか。",choices:["外気温が高いときに作動する", "外気温が一定温度（約3〜5℃）以下になると自動でポンプ循環または電気ヒーターを動作させ凍結を防ぐ", "水温が高いときに作動する", "手動でのみ操作できる"],answer:1,explanation:"凍結予防装置は外気温センサーが低温を検知すると内蔵ポンプを自動循環または電気ヒーターを通電して配管の凍結を防ぐ。"},
+{id:273,category:"消費機器",question:"「ガス消費機器」において「給気と排気の経路」が最も適切な組み合わせとして正しいものはどれか（FF式の場合）。",choices:["給気：屋外、排気：屋外（給排気とも専用の密閉経路で屋外に直結）", "給気：屋外、排気：室内", "給気：室内空気、排気：室内", "給気：室内空気、排気：屋外"],answer:0,explanation:"FF（強制給排気）式は給気・排気とも専用の二重管で屋外と直結し室内空気を使わないため安全性が高い。"},
+{id:274,category:"消費機器",question:"「ガス機器の燃焼能力（号数）」において「1号」の定義として正しいものはどれか。",choices:["1時間に1m³のガスを消費する能力", "1分間に1Lの水を100℃に加熱できる能力", "1秒間に1Lのガスを燃焼させる能力", "1分間に1Lの水を25℃上昇させられる能力（流量1L/min×温度差25℃）"],answer:3,explanation:"給湯器の号数：1号＝1分間に1Lの水を25℃上昇させる能力。16号なら1分間に16Lの水を25℃上昇させられる。"},
+{id:275,category:"消費機器",question:"「ガスストーブ（開放式）」を密閉した部屋で長時間使用した場合に発生しうる問題として正しいものはどれか。",choices:["室内酸素の消費と燃焼排ガスの蓄積により酸欠・一酸化炭素中毒が起こりうる", "ガス代が増加するのみ", "ガス圧力が変化する", "温度が上がりすぎる"],answer:0,explanation:"開放式ガスストーブは室内空気を燃焼に使い排ガスも室内に放出するため換気不足では酸欠・一酸化炭素中毒のリスクがある。"},
+{id:276,category:"消費機器",question:"「ガス給湯器（屋外設置型）」の「凍結」によって起こる最大のリスクとして正しいものはどれか。",choices:["ガスの消費量増加", "給湯温度が上がりすぎる", "ガス臭が発生する", "配管・熱交換器の破損によるガス漏洩または水漏れ"],answer:3,explanation:"凍結による膨張は配管・熱交換器を破損させガス漏洩または水漏れを引き起こす。凍結予防・解氷対策が重要。"},
+{id:277,category:"消費機器",question:"「ガスこんろ」の「温度センサー（調理油過熱防止）」が正常に作動しない原因として考えられるものはどれか。",choices:["ガスの種類が違う", "センサー部が汚れて鍋底との密着が悪くなっている", "ガスの圧力が高すぎる", "換気が不足している"],answer:1,explanation:"温度センサーが油や食材カスで汚れていると鍋底温度を正確に検知できず過熱防止が正常に作動しない場合がある。"},
+{id:278,category:"消費機器",question:"「業務用ガスボイラー」において「安全弁」が設置される目的として正しいものはどれか。",choices:["水温を一定に保つため", "ボイラー内圧力が設定値を超えた場合に自動で蒸気・温水を放出して破裂を防ぐため", "ガスの流量を制御するため", "燃焼効率を高めるため"],answer:1,explanation:"ボイラーの安全弁は内圧が最高使用圧力を超えた際に作動し蒸気・温水を放出して容器破裂による重大事故を防ぐ保安装置。"},
+{id:279,category:"消費機器",question:"「ガス消費機器の法的な定期点検」の周期として一般ガス導管事業者が行う消費機器調査の頻度として正しいものはどれか。",choices:["毎年", "10年に1回", "2年に1回", "4年に1回以上"],answer:3,explanation:"ガス事業法に基づき一般ガス導管事業者は消費機器の調査を4年に1回以上実施する義務がある。"},
+{id:280,category:"消費機器",question:"「ガスこんろ」の「ゴム管（ガスホース）」の耐用年数の目安と交換推奨時期として正しいものはどれか。",choices:["製造から約2〜3年（標準的なガスホースは劣化・ひび割れを確認しながら使用し交換推奨）", "20年以上使える", "使用頻度に関係なく10年以上使える", "色が変わったときのみ交換"],answer:0,explanation:"標準的なゴム管（ガスホース）は製造から概ね2〜3年が交換の目安とされ、ひび割れ・変色・硬化が見られる場合は直ちに交換。"},
+{id:281,category:"消費機器",question:"「ガス消費機器の不具合」において「燃焼炎が赤くなる」原因として最も一般的なものはどれか。",choices:["ガス圧力が高い", "ガスの種類が変わった", "バーナーが新しい", "燃焼用空気が不足している（空気不足による不完全燃焼）"],answer:3,explanation:"炎が赤・オレンジ色になるのは空気不足による不完全燃焼のサイン。すすや一酸化炭素が発生しており機器の点検が必要。"},
+{id:282,category:"消費機器",question:"「ガス機器の使用に関する注意事項」として「長時間の連続使用を避けるべき機器」として正しいものはどれか。",choices:["FF式給湯器", "ガスオーブン（排気筒接続型）", "開放式（室内に燃焼排気を放出する）のガス暖房機・湯沸かし器", "屋外設置のガスこんろ"],answer:2,explanation:"開放式の燃焼機器は排ガスを室内に放出するため長時間使用は酸欠・CO中毒の危険があり、こまめな換気が必要。"},
+{id:283,category:"消費機器",question:"「ガス機器の設置場所」において「屋内設置用機器」を屋外に設置してはいけない理由として正しいものはどれか。",choices:["電源が取れないため", "ガスホースが届かないため", "雨水の浸入・腐食・凍結等により安全装置や燃焼機能が損なわれ事故につながるため", "外観が悪くなるため"],answer:2,explanation:"屋内用機器を屋外に設置すると雨水・結露・凍結・直射日光等により安全装置の誤作動・損傷・腐食が進み重大事故のリスクがある。"},
+{id:284,category:"消費機器",question:"「ガス機器の自主回収（リコール）」が行われる主な理由として正しいものはどれか。",choices:["デザインの刷新", "新機能の追加", "設計・製造上の欠陥により使用者に重大な危害を及ぼすおそれがある場合", "価格の改定"],answer:2,explanation:"ガス機器のリコールは設計・製造上の欠陥が判明し使用継続により火災・爆発・CO中毒等の重大危害が生じるおそれがある場合に実施される。"},
+{id:285,category:"消費機器",question:"「ガス機器の型式確認（型式承認）」制度の目的として正しいものはどれか。",choices:["ガス機器の価格を統一するため", "ガス機器の製造者を制限するため", "一定の安全性・性能基準を満たすことを確認して市場に安全な機器を流通させるため", "ガス機器のデザインを統一するため"],answer:2,explanation:"型式承認・認証制度はガス消費機器が法令・JIS等の安全性・性能基準に適合していることを確認して消費者の安全を確保する制度。"},
+{id:286,category:"消費機器",question:"「ガスこんろの点火操作」において「電子点火」の仕組みとして正しいものはどれか。",choices:["マッチで点火する", "電気ヒーターで加熱する", "高圧放電（火花放電）によりガスに点火する", "圧電素子の機械的衝撃で高電圧を発生させ火花放電する"],answer:3,explanation:"ガスこんろの電子点火は圧電素子（ピエゾ素子）に機械的衝撃を与え高電圧を発生させ火花放電でガスに点火する仕組み。"},
+{id:287,category:"消費機器",question:"「ガス給湯器の給湯能力（号数）」が大きいほどどうなるか。",choices:["熱効率が悪くなる", "設置面積が小さくなる", "ガスの消費量が少なくなる", "1分間に多くの湯を供給できる（出湯量が多くなる）"],answer:3,explanation:"給湯器の号数は給湯能力（1分間に水を25℃上昇させられる量）を示し、号数が大きいほど多量の湯を同時供給できる。"},
+{id:288,category:"消費機器",question:"「ガス機器の燃焼排ガス」に含まれる主な有害成分として正しいものはどれか。",choices:["酸素（O₂）のみ", "一酸化炭素（CO）・窒素酸化物（NOx）・未燃炭化水素等", "窒素（N₂）のみ", "水蒸気のみ"],answer:1,explanation:"ガス燃焼排ガスには不完全燃焼時のCO・高温燃焼時のNOx・未燃炭化水素等の有害成分が含まれることがある。"},
+{id:289,category:"消費機器",question:"「ガス消費機器の技術上の基準（消費機器技術基準）」において求められる安全性として正しいものはどれか。",choices:["デザインが優れていること", "ガスが漏洩しないこと・不完全燃焼しないこと・異常温度にならないこと等の安全性が求められる", "製造コストが低いこと", "機器は安価であることのみ"],answer:1,explanation:"消費機器の技術基準はガス漏洩防止・不完全燃焼防止・過熱防止・電気安全等の安全性確保を要求する。"},
+{id:290,category:"消費機器",question:"「コンロのバーナーキャップ」が汚れや変形している場合に起こりうる問題として正しいものはどれか。",choices:["ガスの臭いが変わる", "ガスの流量が増加する", "電気点火が強くなる", "ガス炎の形状が乱れ片燃え・不完全燃焼・立消えが発生しやすくなる"],answer:3,explanation:"バーナーキャップが汚れ・変形するとガス孔が不均一になり炎の形状が乱れ不完全燃焼・立消え・炎の過熱集中が起こる。"},
+{id:291,category:"消費機器",question:"「特定ガス消費機器の設置工事の監督に関する法律（特監法）」の対象として正しい機器はどれか。",choices:["ガスこんろのみ", "ガス瞬間湯沸かし器・ガスバーナー付きふろがま・ガスストーブ等の特定機器", "すべてのガス機器", "ガスオーブンのみ"],answer:1,explanation:"特監法は設置工事に伴う事故リスクが高い特定ガス消費機器（瞬間湯沸かし器・ふろがま・ガスストーブ等）の設置工事監督者の選任を義務付ける。"},
+{id:292,category:"消費機器",question:"「ガス消費機器の排気筒トップ（給排気口）」の設置において隣家の窓・換気口との距離を確保する必要がある理由として正しいものはどれか。",choices:["法令で定められているだけで理由はない", "景観を損なわないため", "施工が容易なため", "燃焼排ガス（CO含む）が隣家に侵入することを防ぐため"],answer:3,explanation:"排気口からの燃焼排ガス（CO・CO₂等）が隣家の窓・換気口に流入して一酸化炭素中毒等の被害を起こさないよう離隔距離が必要。"},
+{id:293,category:"消費機器",question:"「ガス機器の試運転・点検」において確認すべき事項として正しいものはどれか。",choices:["点火・消火の正常動作・炎の状態（色・形）・安全装置の動作・ガス漏洩の有無", "機器の色", "価格の確認", "機器のデザイン"],answer:0,explanation:"試運転・点検では点火・消火動作・炎の状態（青炎か）・安全装置の作動確認・接続部ガス漏洩確認が基本の確認事項。"},
+{id:294,category:"消費機器",question:"「ガス給湯器の熱効率」を向上させる「二次熱交換器（潜熱回収）」の原理として正しいものはどれか。",choices:["排ガス中の水蒸気が凝縮するときの潜熱（約2400kJ/kg）を回収して給水を予熱する", "燃焼温度を高くする", "ガスを高圧で燃焼させる", "燃焼空気量を減らす"],answer:0,explanation:"二次熱交換器（潜熱回収器）は排ガス中の水蒸気が凝縮する際の潜熱を回収して冷水を予熱し従来型より熱効率を大幅向上させる。"},
+{id:295,category:"消費機器",question:"「ガスこんろの天板（トッププレート）」の材質として「ガラストップ」が採用される主な理由として正しいものはどれか。",choices:["熱伝導が良いため", "軽量なため", "汚れが落ちやすく清掃が容易で耐熱性・デザイン性にも優れるため", "安価なため"],answer:2,explanation:"ガラストップは表面が平滑で汚れが落ちやすく耐熱性・清掃性・デザイン性に優れるため現代の家庭用こんろに広く採用されている。"},
+{id:296,category:"消費機器",question:"「ガス消費機器の一酸化炭素（CO）警報器」の設置基準として正しいものはどれか。",choices:["すべてのガス使用場所に義務化されている", "設置の基準はない", "CO警報器は不要", "開放式燃焼機器を設置した閉鎖的な空間では設置が推奨される"],answer:3,explanation:"CO警報器の設置は開放式燃焼機器（換気が不十分になりやすい浴室・小部屋等）に特に推奨され、機器メーカーも設置を勧めている。"},
+{id:297,category:"消費機器",question:"「ガス器具の自己診断機能（エラーコード表示）」の目的として正しいものはどれか。",choices:["デザインの改善", "消費電力の削減", "機器の異常状態を自動検知して使用者・サービスマンに原因を知らせて適切な対処を促す", "ガスの節約のみ"],answer:2,explanation:"現代のガス機器は異常（不完全燃焼・凍結・温度異常等）をエラーコードで表示し迅速な診断・修理を可能にする自己診断機能を持つ。"},
+{id:298,category:"消費機器",question:"「ガス消費機器の製品安全（PSマーク・技術基準適合証明）」において「PSLPGマーク」の説明として正しいものはどれか。",choices:["JIS規格適合マーク", "液化石油ガス器具等の技術上の基準等に関する省令に基づく液石法の技術基準に適合したことを示すマーク", "都市ガス用の安全基準に適合したことを示すマーク", "EU安全基準適合マーク"],answer:1,explanation:"PSLPGマーク（またはLPガスマーク）は液石法の技術基準に適合した液化石油ガス消費機器であることを示すマーク。"},
+{id:299,category:"消費機器",question:"「ガスこんろ」の「バーナーの詰まり」の主な原因として正しいものはどれか。",choices:["換気不足", "ガス圧力の低下", "ガス管の腐食", "吹きこぼれ・食材カス・油脂の焦げ付きによるガス孔の閉塞"],answer:3,explanation:"バーナー詰まりの主因は吹きこぼれや食材・油脂の焦げがバーナーキャップのガス孔に詰まること。定期清掃が重要。"},
+
+{id:300,category:"消費機器",question:"「ガス消費機器の廃棄」に関して正しい記述はどれか。",choices:["ガス機器の廃棄方法に決まりはない", "バーナー部分は再利用が義務", "ガス機器はそのまま粗大ゴミとして出せる", "廃棄前にガス接続を確実に切り離し、自治体のルールに従い適切に処分する"],answer:3,explanation:"ガス機器廃棄時はガス管との接続を確実に切り離してガス漏洩がない状態にし、自治体の粗大ゴミ等のルールに従い処分する。"},
+];
+const CAT_META={"基礎理論": {"color": "#0969A2", "icon": "🔬", "bg": "#E3F2FD"}, "製造": {"color": "#C62828", "icon": "🏭", "bg": "#FFEBEE"}, "供給": {"color": "#E65100", "icon": "🔧", "bg": "#FFF3E0"}, "消費機器": {"color": "#2E7D32", "icon": "🔥", "bg": "#E8F5E9"}, "法令": {"color": "#6A1B9A", "icon": "📋", "bg": "#F3E5F5"}};
+
+const SUBCAT_DEF={"基礎理論": [{"key": "kiso", "label": "🔬 基礎理論", "ids": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]}], "製造": [{"key": "seizo", "label": "🏭 製造", "ids": [51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110]}], "供給": [{"key": "kyokyu", "label": "🔧 供給", "ids": [111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190]}], "消費機器": [{"key": "shohi", "label": "🔥 消費機器", "ids": [191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240]}], "法令": [{"key": "horei", "label": "📋 法令", "ids": [241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300]}]};
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_gas_ko";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",fsc:null,subcatOpen:false,ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+// ① 前回の続きセーブ/ロード
+function saveProgress(){setUd(p=>({...p,lastProgress:{mode:S.mode,fc:S.fc,shuffle:S.shuffle,ts:S.ts,deckIds:S.deck.map(q=>q.id),idx:S.idx,ts_:Date.now()}}));}
+function hasProgress(){const p=S.ud.lastProgress;return p&&p.deckIds&&p.deckIds.length>0&&p.idx<p.deckIds.length-1;}
+function retryQ(){clearInterval(S.tiv);S.sel=null;S.tout=false;S.tl=null;S.showExp=false;render();startTimer();}
+function pauseQ(){clearInterval(S.tiv);saveProgress();S.screen="home";render();}
+function resumeSession(){
+  const p=S.ud.lastProgress;if(!p)return;
+  S.mode=p.mode;S.fc=p.fc;S.shuffle=p.shuffle||false;S.ts=p.ts||0;
+  S.deck=p.deckIds.map(id=>ALL_QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+  S.idx=p.idx;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(S.fsc&&S.fc!=="全て"){const sub=(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc);if(sub)pool=pool.filter(q=>sub.ids.includes(q.id));}
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  // ① 進捗クリアして新規スタート
+  setUd(p=>{const np={...p};delete np.lastProgress;return np;});
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;
+  clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>{
+    const wc={...p.wrongCounts};
+    if(ok){
+      // ④ 弱点モードで正解したらwrongCountsから削除（クリア）
+      if(S.mode==="WEAK") delete wc[q.id];
+      else wc[q.id]=Math.max(0,(wc[q.id]||0));
+    } else {
+      wc[q.id]=(wc[q.id]||0)+1;
+    }
+    return{...p,wrongCounts:wc,history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1};
+  });
+  // ① 進捗保存
+  saveProgress();
+  render();
+  const el=document.getElementById("app");
+  if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){
+    // ① セッション完了: 進捗クリア
+    setUd(p=>{const np={...p,totalSessions:(p.totalSessions||0)+1};delete np.lastProgress;return np;});
+    S.screen="result";render();
+  } else {
+    S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;
+    saveProgress();
+    render();startTimer();
+  }
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){
+  document.getElementById("app").innerHTML=build();
+  if(S.screen==="notebook"||S.screen==="quiz"){
+    const el=document.getElementById("app");
+    if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+  }
+  if(S.screen==="result"||S.screen==="home"){
+    // ⑥ resultとhomeは常にページ最上部
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const isFiltered=S.mode==="ALL"&&(S.fc!=="全て"||S.fsc);
+  const filterLabel=S.fsc?(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc)?.label.replace(/^[^\s]+\s/,""):S.fc!=="全て"?S.fc:"";
+  const left=`
+    <div class="card">
+      <div class="cat-card-hd">
+        <span class="cat-card-title">カテゴリ・絞り込み</span>
+        ${isFiltered?`<span class="cat-filter-badge active">🎯 ${filterLabel}</span>`:`<span class="cat-filter-badge none">全問題</span>`}
+      </div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}">
+        ${cats.map(c=>{
+          const a=S.fc===c;
+          const m=CAT_META[c];
+          const cnt=c==="全て"?ALL_QUESTIONS.length:ALL_QUESTIONS.filter(q=>q.category===c).length;
+          const wc=c==="全て"?wq.length:ALL_QUESTIONS.filter(q=>q.category===c&&(S.ud.wrongCounts||{})[q.id]>0).length;
+          const badge=wc>0?`<span style="background:#E8572A;color:#fff;font-size:9px;font-weight:700;border-radius:4px;padding:0 4px;">${wc}</span>`:"";
+          return`<button class="cat-chip ${a?"active":""}" onclick="S.fc='${c}';S.fsc=null;render()">${c!=="全て"&&m?m.icon+" ":""}${c}<span style="opacity:.55;font-size:10px;margin-left:3px;">${cnt}</span>${badge}</button>`;
+        }).join("")}
+      </div>
+      ${S.mode==="ALL"&&S.fc!=="全て"&&SUBCAT_DEF[S.fc]?(()=>{
+        const subs=SUBCAT_DEF[S.fc];
+        return`<div class="subcat-section">
+          <div class="subcat-label">章で絞り込む</div>
+          <div class="subcat-grid">
+            <button class="subcat-chip ${!S.fsc?"active":""}" onclick="S.fsc=null;render()">全章</button>
+            ${subs.map(s=>{
+              const cnt2=ALL_QUESTIONS.filter(q=>q.category===S.fc&&s.ids.includes(q.id)).length;
+              return`<button class="subcat-chip ${S.fsc===s.key?"active":""}" onclick="S.fsc='${s.key}';render()">${s.label}<span style="opacity:.6;font-size:10px;margin-left:3px;">${cnt2}</span></button>`;
+            }).join("")}
+          </div>
+        </div>`;
+      })():""}
+      ${S.mode!=="ALL"?`<p style="font-size:11px;color:var(--text3);margin-top:4px;">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+      <div class="opts-compact">
+        <span class="opt-label-ic">⏱</span>
+        ${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}
+        <div class="opts-compact-sep"></div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"ランダム":"順番通り"}</button>
+      </div>
+    </div>
+    ${(()=>{
+      const p=S.ud.lastProgress;
+      const hasP=hasProgress();
+      if(hasP){
+        const resumeQ=p.deckIds&&ALL_QUESTIONS.find(q=>q.id===p.deckIds[p.idx]);
+        const cat=resumeQ?(CAT_META[resumeQ.category]||{icon:"📄"}):{icon:"📄"};
+        const catLabel=resumeQ?resumeQ.category:"";
+        const qNum=p.idx+1;
+        return`<div class="start-row">
+          <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+          <button class="resume-btn" onclick="resumeSession()">
+            <span class="resume-btn-label">▶ 続きから学習</span>
+            <span class="resume-btn-sub">${qNum}問目 ${cat.icon}${catLabel}</span>
+          </button>
+        </div>`;
+      } else {
+        return`<button class="start-btn start-btn-solo ${startOff?"off":""}" onclick="go()">学習スタート ${arr()}</button>`;
+      }
+    })()}
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  const modeTabs=[
+    {k:"ALL",ic:"📚",lbl:"全問",cnt:ALL_QUESTIONS.length,dis:false},
+    {k:"WEAK",ic:"🔥",lbl:"弱点",cnt:wq.length,dis:!wq.length},
+    {k:"STAR",ic:"⭐",lbl:"★登録",cnt:sq.length,dis:!sq.length}
+  ].map(m=>{const on=S.mode===m.k?"hm-on":"";const dis=m.dis?"hm-dis":"";const click=m.dis?"":"S.mode=\'"+m.k+"\';S.fsc=null;render()";return`<button class="hm-tab ${on} ${dis}" onclick="${click}"><span class="hm-ic">${m.ic}</span><span class="hm-lbl">${m.lbl}</span><span class="hm-cnt">${m.cnt}問</span></button>`;}).join("");
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-top">
+        <div class="hero-left">
+          <div class="hero-exam-type">ガス・エネルギー</div>
+          <div class="hero-exam-name">ガス主任技術者（甲種）</div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+            ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+          </div>
+        </div>
+        <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+          <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+          <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+          <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+        </div>
+      </div>
+      <div class="hero-mode-bar">${modeTabs}</div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const catMeta=CAT_META[cur.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+  const catLabel=cur.category||"";
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="44" height="44" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+
+  // ── 未回答：問題文＋4択を表示 ──────────────────────
+  if(!ia){
+    const ch=cur.choices.map((c,i)=>`<button class="choice" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span></button>`).join("");
+    return`<div class="quiz-inner">
+      <div class="pc-quiz-main">
+        <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+        <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+        ${tim}
+        <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+        <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+        <div class="choices">${ch}</div>
+      </div>
+      <div class="pc-quiz-side">
+        <div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>
+        <div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>
+      </div>
+    </div>`;
+  }
+
+  // ── 回答済み：選択肢を非表示にして解説カードのみ表示 ──
+  const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";
+  const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";
+  const vc=ic&&!S.tout?"var(--green-d)":S.tout?"var(--gold)":"var(--accent)";
+
+  const correctRow=`<div class="exp-correct-bar ok">
+    <span class="exp-correct-label">正解</span>
+    <span class="exp-correct-text">${al[cur.answer]}. ${cur.choices[cur.answer]}</span>
+  </div>`;
+  const myRow=(!ic&&!S.tout&&S.sel!==null)?`<div class="exp-correct-bar ng">
+    <span class="exp-correct-label">あなた</span>
+    <span class="exp-correct-text">${al[S.sel]}. ${cur.choices[S.sel]}</span>
+  </div>`:"";
+
+  // PC側解説パネル
+  const expPC=`<div class="side-panel">
+    <div class="side-title">解説</div>
+    <div style="font-size:13px;font-weight:700;color:${vc};margin-bottom:8px;">${v}</div>
+    <div style="background:rgba(29,158,117,.1);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#0F6E56;"><strong>正解：</strong>${al[cur.answer]}. ${cur.choices[cur.answer]}</div>
+    ${(!ic&&!S.tout&&S.sel!==null)?`<div style="background:rgba(230,81,0,.08);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#8B2A0E;"><strong>あなた：</strong>${al[S.sel]}. ${cur.choices[S.sel]}</div>`:""}
+    <div class="side-exp-body">${cur.explanation}</div>
+  </div>`;
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="exp-card exp-sp ${cls}">
+        <div class="exp-head"><span class="exp-verdict">${v}</span></div>
+        ${correctRow}${myRow}
+        <p class="exp-body">${cur.explanation}</p>
+      </div>
+      <div class="next-wrap"><div class="next-3">
+        <button class="btn-retry" onclick="retryQ()">🔁<span class="btn-sub-lbl">もう一度</span></button>
+        <button class="btn-pause" onclick="pauseQ()">⏸<span class="btn-sub-lbl">中断</span></button>
+        <button class="btn-next-main" onclick="next()">${S.idx+1>=S.deck.length?"🏁 結果を見る":"次の問題 →"}</button>
+      </div></div>
+    </div>
+    <div class="pc-quiz-side">${expPC}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  // ⑤ undefinedを除去: questionが存在するか確認
+  const log=S.sess.map((a,i)=>{
+    if(!a.q||!a.q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[a.q.id]||0;
+    const cat=CAT_META[a.q.category];
+    const icon=cat?cat.icon:"";
+    const qText=a.q.question.slice(0,28)+"…";
+    return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${icon}</span><span class="ar-q">${qText}</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;
+  }).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/><circle cx="50" cy="50" r="42" fill="none" stroke="${vc}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${sr*2.639} 263.9" transform="rotate(-90 50 50)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{
+    if(!q||!q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[q.id]||0;
+    const is=(S.ud.starIds||[]).includes(q.id);
+    const cat=CAT_META[q.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+    return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${cat.color};background:${cat.bg};border-color:${cat.color}55">${cat.icon} ${q.category||""}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;
+  }).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+
+// ── ページ内ナビ スクロール処理 ──
+function scrollToApp(e){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById("app");
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab("app");
+}
+function scrollTo_(e, id){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById(id);
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab(id);
+}
+function setActiveTab(id){
+  document.querySelectorAll(".pn-tab").forEach(t => t.classList.remove("active"));
+  const map = {app:0, apply:1, books:2, courses:3, overview:4, syllabus:5, roadmap:6, faq:7};
+  const tabs = document.querySelectorAll(".pn-tab");
+  const idx = map[id];
+  if(idx !== undefined && tabs[idx]) tabs[idx].classList.add("active");
+}
+const _navIds = ["faq","roadmap","syllabus","overview","courses","books","apply"];
+window.addEventListener("scroll", ()=>{
+  const offset = 120;
+  for(const id of _navIds){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= offset){
+      setActiveTab(id); return;
+    }
+  }
+  setActiveTab("app");
+}, {passive:true});
+</script>
+
+<section class="aff-section"><div class="aff-inner">
+  <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+  <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+  <a class="official-btn" href="https://www.meti.go.jp/policy/safety_security/industrial_safety/sangyo/gas/files/gas-top.html" target="_blank" rel="noopener">
+    <div class="official-ico">🏛️</div>
+    <div class="official-info"><div class="official-name">経済産業省（ガス主任技術者試験）（公式）</div><div class="official-note">試験日程・申込方法の詳細はこちらから確認できます</div></div>
+    <div class="official-arr">→</div>
+  </a>
+  <div class="aff-h3">おすすめ参考書</div><div class="book-list"><div class="book-card"><div class="book-title">📖 ガス主任技術者試験 模範解答集（日本ガス協会）</div><div class="book-memo">公式に最も近い解答集。必携</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=ガス主任技術者試験模範解答集日本ガス協会&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/ガス主任技術者試験模範解答集日本ガス協会/" target="_blank" rel="noopener">楽天</a></div></div><div class="book-card"><div class="book-title">📖 ガス主任技術者テキスト・問題集（各社）</div><div class="book-memo">体系的に学べる定番テキスト</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=ガス主任技術者テキスト・問題集各社&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/ガス主任技術者テキスト・問題集各社/" target="_blank" rel="noopener">楽天</a></div></div></div>
+  <div class="aff-h3">おすすめ通信講座</div><div class="course-list"><a class="course-card" href="https://www.gas.or.jp/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">日本ガス協会 通信教育</div><div class="course-price">約30,000円〜</div><div class="course-feat">業界団体の公式通信講座</div></div><div class="course-arr">›</div></a><a class="course-card" href="https://www.o-hara.jp/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">資格の大原 エネルギー系講座</div><div class="course-price">約40,000円〜</div><div class="course-feat">実績豊富</div></div><div class="course-arr">›</div></a></div>
+  <p class="aff-note">※ リンクはアフィリエイトリンクです。価格は変動する場合があります。</p>
+</div></section>
+<section class="seo-section"><div class="seo-inner">
+  <h2 class="seo-h2">ガス主任技術者 甲種とは</h2>
+  <p class="seo-lead">甲種は全ガス工作物（一般ガス・簡易ガス・LPG等）の保安監督ができる最上位資格。大手ガス会社・エネルギー企業での昇格・キャリアアップに直結します。</p>
+  <h3 class="seo-h3">試験概要</h3>
+  <div class="info-grid2">
+    <div class="ig-card"><div class="ig-lbl">合格率</div><div class="ig-val">30%</div></div>
+    <div class="ig-card"><div class="ig-lbl">勉強時間</div><div class="ig-val">400〜600時間</div></div>
+    <div class="ig-card"><div class="ig-lbl">受験料</div><div class="ig-val">14,700円</div></div>
+    <div class="ig-card"><div class="ig-lbl">試験形式</div><div class="ig-val">マークシート＋記述</div></div>
+    <div class="ig-card"><div class="ig-lbl">試験回数</div><div class="ig-val">年1回（9月頃）</div></div>
+    <div class="ig-card"><div class="ig-lbl">難易度</div><div class="ig-val">★★★★☆</div></div>
+  </div>
+  <h3 class="seo-h3">試験科目</h3><table class="seo-table"><thead><tr><th>科目</th><th>内容</th></tr></thead><tbody><tr><td>ガス工学</td><td>ガスの性質・燃焼理論・熱力学・流体力学・都市ガス製造</td></tr><tr><td>ガス設備</td><td>高圧・中圧・低圧導管・整圧器・計量器・LNG設備</td></tr><tr><td>法令</td><td>ガス事業法・高圧ガス保安法・液化石油ガス法</td></tr><tr><td>供給管理</td><td>供給管理・品質管理・緊急保安・事故対応</td></tr></tbody></table>
+  <h3 class="seo-h3">学習ロードマップ</h3><div class="roadmap"><div class="rm-step"><div class="rm-num">1</div><div><div class="rm-title">ガス工学の基礎を学ぶ（1〜2ヶ月目）</div><div class="rm-desc">ガスの性質・燃焼理論・熱力学の基礎を習得</div></div></div><div class="rm-step"><div class="rm-num">2</div><div><div class="rm-title">ガス設備・法令を習得（3〜4ヶ月目）</div><div class="rm-desc">設備の仕組みと関連法規を体系的に学ぶ</div></div></div><div class="rm-step"><div class="rm-num">3</div><div><div class="rm-title">甲種固有範囲を学習（5ヶ月目）</div><div class="rm-desc">高圧設備・LNG・都市ガス製造の甲種範囲を押さえる</div></div></div><div class="rm-step"><div class="rm-num">4</div><div><div class="rm-title">記述・過去問演習（6ヶ月〜）</div><div class="rm-desc">論述問題の書き方を練習しながら過去問を繰り返す</div></div></div></div>
+  <h3 class="seo-h3">次に目指す資格</h3><div class="next-shikaku"><a class="next-card" href="gas_otsu.html"><div class="next-ico" style="background:#FFF3E0">🔵</div><div><div class="next-name">ガス主任技術者 乙種</div><div class="next-desc">乙種との違いを確認</div></div></a><a class="next-card" href="energy.html"><div class="next-ico" style="background:#FFF3E0">⚡</div><div><div class="next-name">エネルギー管理士</div><div class="next-desc">エネルギー分野のWライセンスへ</div></div></a></div>
+  <h3 class="seo-h3">よくある質問</h3><div class="faq-list"><details class="faq-item"><summary class="faq-q">甲種の合格率はどのくらいですか？</summary><p class="faq-a">約25〜30%程度で全区分中最も難しいです。</p></details><details class="faq-item"><summary class="faq-q">甲種と乙種の違いは？</summary><p class="faq-a">甲種は全ガス工作物対象。乙種は最高圧力1MPa未満の一般ガスが対象です。</p></details><details class="faq-item"><summary class="faq-q">受験資格はありますか？</summary><p class="faq-a">年齢・学歴等の制限はなく誰でも受験できます。</p></details><details class="faq-item"><summary class="faq-q">ガス会社以外でも役立ちますか？</summary><p class="faq-a">工場・病院・大型施設のガス設備管理者が取得するケースも多いです。</p></details></div>
+</div></section>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-logo">
+      <span class="sf-lmark">問</span>
+      資格<span>ドリル</span>
+    </div>
+    <div class="sf-links">
+      <a href="index.html">資格一覧トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="sf-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>
