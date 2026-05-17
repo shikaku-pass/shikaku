@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>公害防止管理者 水質関係第1種 無料問題集・過去問対策 | 資格ドリル</title>
+<meta name="description" content="G検定（ジェネラリスト検定）の無料問題集。AI・機械学習・ディープラーニング・法律・倫理を網羅。合格率65〜76%・勉強時間40〜80時間。オンライン100分/会場120分・145問。弱点特訓・解説つき。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1623;--navy2:#171e2e;--navy3:#1e2840;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;--gold-bg:#FEF6E4;
+  --accent:#ff3b53;--accent-bg:#fff0f1;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Inter','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;z-index:100;}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.site-logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;font-family:"Inter","Noto Sans JP";}
+.site-logo .logo-text{background:linear-gradient(90deg,#fff 0%,#ffd6c2 100%);-webkit-background-clip:text;background-clip:text;color:transparent !important;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+/* ③ PC時: ヘッダー内コンテンツを掲載内容の左端に揃える */
+@media(min-width:769px){
+  .site-header{padding:0;}
+  .site-header-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+  .page-nav-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;}
+.hero-top{padding:18px 20px 14px;display:flex;align-items:center;gap:14px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:3px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+/* モードタブ（ヒーロー内）コンパクト1行 */
+.hero-mode-bar{display:flex;border-top:1px solid rgba(255,255,255,.08);}
+.hm-tab{flex:1;padding:8px 4px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:5px;cursor:pointer;border:none;background:none;font-family:var(--font-b);color:rgba(255,255,255,.4);transition:all .2s;border-bottom:2px solid transparent;}
+.hm-tab:not(.hm-dis):hover{color:rgba(255,255,255,.8);background:rgba(255,255,255,.04);}
+.hm-tab.hm-on{color:#fff;border-bottom-color:var(--brand);background:rgba(255,59,83,.08);}
+.hm-tab.hm-dis{opacity:.3;cursor:not-allowed;}
+.hm-ic{font-size:14px;line-height:1;transition:transform .25s cubic-bezier(.34,1.56,.64,1);flex-shrink:0;}
+.hm-tab.hm-on .hm-ic{transform:scale(1.15);}
+.hm-lbl{font-size:12px;font-weight:700;}
+.hm-cnt{font-size:10px;background:rgba(255,255,255,.12);border-radius:4px;padding:1px 6px;line-height:1.5;transition:all .2s;}
+.hm-tab.hm-on .hm-cnt{background:var(--brand);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.cat-card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.cat-card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
+.cat-filter-badge{font-size:10px;padding:2px 8px;border-radius:99px;font-weight:700;}
+.cat-filter-badge.none{color:var(--text3);background:var(--bg);}
+.cat-filter-badge.active{color:#fff;background:var(--brand);animation:badgePop .3s cubic-bezier(.34,1.56,.64,1);}
+@keyframes badgePop{0%{transform:scale(.7)}100%{transform:scale(1)}}
+.cat-row{display:flex;gap:7px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:7px 13px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .2s;display:flex;align-items:center;gap:5px;}
+.cat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;transform:translateY(-1px);}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;box-shadow:0 3px 10px rgba(15,22,35,.2);}
+.subcat-section{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);animation:fadeSlideIn .22s ease;}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.subcat-label{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;margin-bottom:7px;display:flex;align-items:center;gap:5px;text-transform:uppercase;}
+.subcat-label::before{content:"";width:2px;height:10px;background:linear-gradient(var(--brand),var(--brand2));border-radius:1px;flex-shrink:0;}
+.subcat-grid{display:flex;gap:5px;flex-wrap:wrap;}
+.subcat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:5px 11px;font-size:11px;cursor:pointer;color:var(--text2);transition:all .2s;display:flex;align-items:center;gap:4px;}
+.subcat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;}
+.subcat-chip.active{background:linear-gradient(135deg,var(--brand),var(--brand2));border-color:transparent;color:#fff;font-weight:700;box-shadow:0 3px 8px rgba(255,59,83,.3);}
+.opts-compact{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.opts-compact-sep{width:1px;height:16px;background:var(--border);flex-shrink:0;}
+.opt-label-ic{font-size:12px;color:var(--text3);}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill:hover{background:#f0efe8;border-color:var(--border2);}
+.opt-pill.on{background:var(--accent-bg)!important;border-color:var(--brand)!important;color:var(--brand)!important;font-weight:700;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+/* スタート・継続ボタン行 */
+.start-row{display:flex;gap:8px;margin-bottom:8px;}
+.start-btn{flex:1;height:52px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:900;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 8px 22px rgba(255,59,83,.35);}
+.start-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(255,59,83,.5);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.start-btn-solo{width:100%;height:56px;font-size:18px;letter-spacing:2px;margin-bottom:8px;}
+.resume-btn{flex:1;height:52px;background:var(--green-bg);border:1.5px solid var(--green);border-radius:var(--radius);color:var(--green-d);font-size:13px;font-weight:700;font-family:var(--font-b);cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;}
+.resume-btn:hover{background:var(--green);color:#fff;}
+.resume-btn-label{font-size:12px;font-weight:700;}
+.resume-btn-sub{font-size:10px;opacity:.75;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:8px 12px 70px;display:flex;flex-direction:column;gap:8px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter-wrap{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:22px;font-weight:900;}
+.qc-sep{font-size:12px;color:var(--text3);}
+.qc-tot{font-size:13px;color:var(--text3);}
+.qc-sub{font-size:10px;color:var(--text3);letter-spacing:.5px;}
+.star-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:18px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--brand);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:44px;height:44px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:13px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:6px;}
+.sb-ok{font-size:11px;font-weight:700;color:var(--green);min-width:28px;}
+.sb-ng{font-size:11px;font-weight:700;color:var(--accent);min-width:28px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.sb-dot{width:7px;height:7px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:9px;height:9px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:9px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;}
+.q-cat-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}
+.q-miss{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(230,81,0,.3);padding:3px 8px;border-radius:6px;}
+.q-text{font-size:13px;line-height:1.7;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:6px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:0 12px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:10px;text-align:left;transition:all .15s;color:var(--text2);min-height:44px;width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FFF3E0;transform:translateX(2px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:12px;width:26px;height:26px;border-radius:6px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:12px;line-height:1.5;padding:10px 0;}
+.ch-icon{font-size:15px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:10px;padding:10px 12px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(230,81,0,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.exp-verdict{font-size:13px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:11px;color:var(--gold);}
+/* 正解表示バー */
+.exp-correct-bar{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:7px;margin-bottom:6px;}
+.exp-correct-bar.ok{background:rgba(29,158,117,.12);}
+.exp-correct-bar.ng{background:rgba(230,81,0,.08);}
+.exp-correct-label{font-size:10px;font-weight:700;white-space:nowrap;padding-top:1px;}
+.exp-correct-bar.ok .exp-correct-label{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-label{color:var(--accent);}
+.exp-correct-text{font-size:12px;line-height:1.5;}
+.exp-correct-bar.ok .exp-correct-text{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-text{color:#8B2A0E;}
+.exp-body{font-size:11.5px;line-height:1.8;color:var(--text2);}
+.next-wrap{position:sticky;bottom:12px;padding-top:6px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);width:100%;height:46px;font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.3);}
+.next-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.next-3{display:grid;grid-template-columns:1fr 1fr 2fr;gap:6px;}
+.btn-retry{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-retry:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-bg);}
+.btn-pause{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-pause:hover{border-color:var(--green);color:var(--green-d);background:var(--green-bg);}
+.btn-next-main{height:46px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 4px 14px rgba(255,59,83,.3);}
+.btn-next-main:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,59,83,.45);}
+.btn-sub-lbl{font-size:9px;font-weight:400;opacity:.7;line-height:1;}
+/* ⑥ result コンパクト化 */
+.result-inner{max-width:480px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:12px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:100px;height:100px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:32px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:14px;}
+.result-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.result-verdict{font-size:13px;font-weight:700;padding:6px 16px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:6px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:12px;}
+.rc-name{font-size:10px;font-weight:700;width:68px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:10px;font-weight:700;width:28px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:5px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:10px;color:var(--text3);min-width:22px;}
+.ar-cat{font-size:12px;}
+.ar-q{flex:1;font-size:11px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:13px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:44px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.25);}
+.cta-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.ghost-btn{width:100%;height:40px;background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:13px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── スマホ：サイドパネルをメインコンテンツの下に表示 ── */
+@media (max-width:768px){
+  .pc-cols{display:flex;flex-direction:column;gap:0;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{display:flex;flex-direction:column;gap:12px;margin-top:12px;}
+  .quiz-inner{display:flex;flex-direction:column;}
+  .pc-quiz-main{display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{display:none;}
+}
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  /* ② サイドパネル: ビューポート高さを超えないよう最大高さ設定してスクロール */
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-col-side::-webkit-scrollbar{display:none;}
+  .quiz-inner{max-width:920px;padding:24px 32px 40px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-quiz-side::-webkit-scrollbar{display:none;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  /* ⑥ result: PC時もコンパクトに */
+  .result-inner{max-width:680px;padding:16px 32px 40px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:72px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── ページ内タブナビ ── */
+.page-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:90;}
+.page-nav::-webkit-scrollbar{display:none;}
+.page-nav-inner{display:flex;align-items:center;min-width:max-content;padding:0 12px;}
+.pn-tab{color:rgba(255,255,255,0.55);font-size:12px;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;text-decoration:none;display:block;}
+.pn-tab:hover{color:#fff;}
+.pn-tab.active{color:#fff;border-bottom-color:#1D9E75;}
+
+/* ① resume-btn は上で定義済み */
+
+/* ── モード選択コンパクト化 ── */
+.mode-row-compact{display:flex;gap:6px;}
+.mode-btn-compact{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:7px 4px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);transition:all .18s;height:40px;}
+.mode-btn-compact:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-btn-compact.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-btn-compact.mode-off{opacity:.4;cursor:not-allowed;}
+.mbc-icon{font-size:14px;line-height:1;}
+.mbc-label{font-size:11px;font-weight:700;}
+.mbc-count{font-size:10px;color:var(--text3);margin-left:1px;}
+.mode-btn-compact.mode-active .mbc-count{color:var(--accent);}
+
+/* ── カテゴリ+オプション 横並び ── */
+.cat-opt-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.cat-opt-row .cat-row{flex:1;min-width:0;}
+.opt-mini{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター（横幅いっぱいバー）*/
+.site-footer{background:var(--navy);padding:14px 16px;margin-top:0;width:100%;}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:920px;margin:0 auto;}
+.sf-logo{color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.sf-logo span{color:var(--green) !important;background:none;}
+.sf-lmark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;}
+.sf-links{display:flex;gap:16px;flex-wrap:wrap;}
+.sf-links a{color:rgba(255,255,255,.4);font-size:11px;transition:color .15s;}
+.sf-links a:hover{color:rgba(255,255,255,.75);}
+.sf-copy{color:rgba(255,255,255,.2);font-size:10px;}
+@media(max-width:768px){
+  .sf-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+@media(min-width:769px){
+  .site-footer{padding:14px 0;}
+  .sf-inner{padding:0 32px;}
+}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+.info-grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:8px;}
+.ig-card{background:#f5f4f0;border-radius:9px;padding:11px 13px;}
+.ig-lbl{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:3px;}
+.ig-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/gken.html">
+<meta property="og:title" content="公害防止管理者（水質） 無料問題集 | 資格ドリル">
+<meta property="og:description" content="公害防止管理者水質関係第1種の無料問題集。水質概論・汚水処理・測定技術を網羅。合格率20〜30%・勉強時間200〜300時間。弱点特訓・解説つき。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-drill.com/kogai-suishitsu/">
+<meta property="og:site_name" content="資格ドリル">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="公害防止管理者（水質） 無料問題集 | 資格ドリル">
+<meta name="twitter:description" content="公害防止管理者水質関係第1種の無料問題集。水質概論・汚水処理・測定技術を網羅。合格率20〜30%・勉強時間200〜300時間。弱点特訓・解説つき。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "G検定（ジェネラリスト検定）無料問題集",
+      "description": "G検定はJDLA（日本ディープラーニング協会）が実施するAI・ディープラーニング活用リテラシーの検定試験です。AI概論・機械学習・ディープラーニング・生成AI・法律・倫理など幅広い範囲から出題されます。",
+      "provider": {"@type": "Organization", "name": "資格ドリル"},
+      "educationalLevel": "入門・中級",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "G検定の合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "例年60〜76%程度で推移しており、AI系資格の中では比較的取得しやすい検定です。出題範囲が広いため、公式テキストを中心とした網羅的な学習が合格の鍵です。"}},
+        {"@type": "Question","name": "G検定の勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "AI未経験者で40〜80時間が目安です。IT・AI知識がある方は20〜40時間程度で合格を目指せます。公式テキストと問題集を組み合わせた学習が効果的です。"}},
+        {"@type": "Question","name": "G検定のオンライン試験と会場試験の違いは何ですか？","acceptedAnswer": {"@type": "Answer","text": "問題数は同じ145問程度ですが、試験時間が異なります。オンライン試験（自宅受験）は100分、会場試験（全国指定会場）は120分です。2026年はオンライン年6回・会場試験年3回が開催されます。"}},
+        {"@type": "Question","name": "G検定に合格すると何が得られますか？","acceptedAnswer": {"@type": "Answer","text": "合格証・オープンバッジが発行され、日本最大級のAI人材コミュニティ「CDLE」に参加できます。DX推進パスポートのバッジも取得可能で、就職・転職・社内DX推進でのアピールになります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="site-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      資格一覧へ
+    </a>
+  </div>
+</header>
+<nav class="page-nav" id="pageNav">
+  <div class="page-nav-inner">
+    <a class="pn-tab active" href="#app"      onclick="scrollToApp(event)">📝 問題を解く</a>
+    <a class="pn-tab"        href="#apply"    onclick="scrollTo_(event,'apply')">🤖 申し込み</a>
+    <a class="pn-tab"        href="#books"    onclick="scrollTo_(event,'books')">📖 参考書</a>
+    <a class="pn-tab"        href="#courses"  onclick="scrollTo_(event,'courses')">🎓 通信講座</a>
+    <a class="pn-tab"        href="#overview" onclick="scrollTo_(event,'overview')">📋 試験概要</a>
+    <a class="pn-tab"        href="#syllabus" onclick="scrollTo_(event,'syllabus')">📊 出題分野</a>
+    <a class="pn-tab"        href="#roadmap"  onclick="scrollTo_(event,'roadmap')">🗺️ 学習の流れ</a>
+    <a class="pn-tab"        href="#faq"      onclick="scrollTo_(event,'faq')">❓ よくある質問</a>
+  </div>
+</nav>
+<div id="app"></div>
+<script>
+// ▼▼▼ ここに問題データを追加してください ▼▼▼
+const ALL_QUESTIONS=[
+{id:1,category:"公害総論",question:"環境基本法に規定される「典型七公害」として正しい組み合わせはどれか。",choices:["大気汚染・水質汚濁・土壌汚染・騒音・振動・地盤沈下・悪臭","大気汚染・水質汚濁・土壌汚染・騒音・振動・放射線・悪臭","大気汚染・水質汚濁・海洋汚染・騒音・振動・地盤沈下・悪臭","大気汚染・水質汚濁・土壌汚染・騒音・振動・地盤沈下・光害"],answer:0,explanation:"典型七公害は大気汚染・水質汚濁・土壌汚染・騒音・振動・地盤沈下・悪臭の7種類。放射線・海洋汚染・光害は含まれない。"},
+{id:2,category:"公害総論",question:"水俣病の原因物質と発生地域の組み合わせとして正しいものはどれか。",choices:["カドミウム－富山県神通川流域（誤り）","六価クロム－三重県四日市という規定","有機水銀（メチル水銀）－熊本県水俣湾および新潟県阿賀野川流域","砒素－宮崎県土呂久という規定"],answer:2,explanation:"水俣病は有機水銀（メチル水銀）による神経障害。熊本県水俣湾（チッソ水俣工場）と新潟県阿賀野川流域（昭和電工鹿瀬工場）の2か所で発生。"},
+{id:3,category:"公害総論",question:"イタイイタイ病の原因物質として正しいものはどれか。",choices:["有機水銀","六価クロム","鉛","カドミウム"],answer:3,explanation:"イタイイタイ病は富山県神通川流域で発生したカドミウムによる慢性中毒。骨軟化症・腎障害が特徴。三井金属鉱業神岡鉱山の廃水が原因。"},
+{id:4,category:"公害総論",question:"水質汚濁防止法の目的として誤っているものはどれか。",choices:["工場・事業場からの公共用水域への排水規制","生活排水対策の推進","地下水の水質汚濁防止","大気中への水分蒸発の規制"],answer:3,explanation:"水質汚濁防止法は公共用水域の水質汚濁防止・地下水汚染防止・生活排水対策等が目的。大気中への水分蒸発の規制は目的に含まれない。"},
+{id:5,category:"公害総論",question:"水質汚濁に係る環境基準のうち、「人の健康の保護に関する基準」に含まれる項目として正しいものはどれか。",choices:["BOD・COD・SS","DO・pH・大腸菌群数","カドミウム・全シアン・鉛・六価クロム等","水温・色度・濁度に関する事項"],answer:2,explanation:"人の健康の保護に関する環境基準にはカドミウム・全シアン・鉛・六価クロム・砒素・水銀・アルキル水銀等の有害物質が設定されている。"},
+{id:6,category:"公害総論",question:"「生活環境の保全に関する水質環境基準」の対象項目として正しいものはどれか。",choices:["BOD・COD・SS・DO・pH・大腸菌群数","カドミウム・鉛・水銀","トリクロロエチレン・テトラクロロエチレン","砒素・フッ素・硝酸性窒素"],answer:0,explanation:"生活環境の保全に関する環境基準はBOD（河川）・COD（湖沼・海域）・SS・DO・pH・大腸菌群数等が項目として設定されている。"},
+{id:7,category:"公害総論",question:"水質汚濁防止法における「特定事業場」として正しいものはどれか。",choices:["すべての工場・事業場","特定施設を設置する工場・事業場","従業員100人以上の工場","資本金1億円以上の事業場"],answer:1,explanation:"特定事業場とは、水質汚濁防止法に定める特定施設（汚水・廃液を排出する一定の施設）を設置する工場・事業場のこと。"},
+{id:8,category:"公害総論",question:"水質汚濁防止法に基づく「排水基準」に関する記述として正しいものはどれか。",choices:["環境大臣が全国一律に設定し、都道府県は変更できない","事業者が自主的に設定するという規定","市町村が地域ごとに設定する（誤り）","全国一律基準を設定し、都道府県は条例でより厳しい上乗せ基準を定めることができる"],answer:3,explanation:"水質汚濁防止法は全国一律の排水基準を定め、都道府県は条例で上乗せ基準（より厳しい基準）を定めることができる（第3条第3項）。"},
+{id:9,category:"公害総論",question:"公害防止管理者（水質関係）の資格区分として「第1種」が対応する事業場の条件として正しいものはどれか。",choices:["排水量が1日50m³未満の事業場（誤り）","排水量に関係なく、有害物質を扱う事業場すべて","有害物質に係る特定施設を設置し、かつ排水量が1日50m³以上の事業場","生活排水のみを排出する事業場（誤り）"],answer:2,explanation:"水質関係第1種は、有害物質に係る特定施設を設置し、排水量が1日当たり50m³以上の特定事業場が対象。"},
+{id:10,category:"公害総論",question:"「総量規制」が実施されている水域として正しいものはどれか。",choices:["全国の主要河川に関する事項","東京湾・伊勢湾・瀬戸内海の指定水域","利根川・淀川の全流域","すべての湖沼に関する事項"],answer:1,explanation:"水質の総量規制は東京湾・伊勢湾・瀬戸内海（瀬戸内海環境保全特別措置法も適用）の指定水域に適用され、COD・窒素・リンが規制対象。"},
+{id:11,category:"公害総論",question:"「富栄養化」の主な原因物質として正しいものはどれか。",choices:["水銀・カドミウム等の重金属","溶存酸素（DO）","BOD・COD成分","窒素・リン等の栄養塩類"],answer:3,explanation:"富栄養化は窒素・リン等の栄養塩類が水域に流入し過剰になることで藻類が異常増殖（アオコ・赤潮等）する現象。"},
+{id:12,category:"公害総論",question:"「赤潮」が発生しやすい条件として正しいものはどれか。",choices:["水温が低く、栄養塩が少ない外洋（この説明は誤り）","水温が高く、栄養塩（窒素・リン）が豊富な閉鎖性水域・湾","河川の上流部に関する事項","水深が深い湖沼の底層という規定"],answer:1,explanation:"赤潮は富栄養化した閉鎖性水域（内湾・湖沼）で水温が高い時期（春〜秋）に植物プランクトンが異常増殖して発生する。"},
+{id:13,category:"公害総論",question:"水質汚濁防止法に基づき、特定事業場の排水が排水基準を超えた場合に都道府県知事が取ることができる措置として正しいものはどれか。",choices:["直ちに工場を閉鎖できるという規定","環境大臣に報告するのみという規定","改善命令または一時停止命令を発することができる","民事訴訟を提起するという規定"],answer:2,explanation:"水質汚濁防止法第13条に基づき、排水基準違反の場合、都道府県知事は改善命令または一時停止命令を発することができる。"},
+{id:14,category:"公害総論",question:"「地下水汚染」に関する水質汚濁防止法の規定として正しいものはどれか。",choices:["地下水は水質汚濁防止法の対象外（誤り）","有害物質を含む水の地下への浸透を原則禁止し、地下水水質の浄化措置命令等がある","地下水の水質は地方公共団体が独自に規制する（この説明は誤り）","地下水汚染への規制は別の法律のみで行われる（この説明は誤り）"],answer:1,explanation:"水質汚濁防止法は有害物質を含む汚水等の地下浸透を禁止し（第12条の2）、汚染が判明した場合の浄化措置命令等を規定している。"},
+{id:15,category:"公害総論",question:"「水質事故時の措置」として水質汚濁防止法上、特定事業場の設置者に課される義務として正しいものはどれか。",choices:["事故後1週間以内に都道府県知事に報告","被害者への賠償を直ちに行う（誤り）","環境省に直接連絡するという規定","直ちに応急措置を講じ、都道府県知事に速やかに届け出る"],answer:3,explanation:"水質汚濁防止法第14条の2に基づき、事故時には直ちに応急措置を講じ、速やかに都道府県知事に届け出なければならない。"},
+{id:16,category:"公害総論",question:"「環境基準」と「排水基準」の関係として正しいものはどれか。",choices:["環境基準は水域での達成目標、排水基準は排出口での規制値で両者は別個に設定される","環境基準と排水基準は同じ値が設定される（誤り）","排水基準が達成されれば環境基準は自動的に達成される","環境基準は工場ごとに設定される（誤り）"],answer:0,explanation:"環境基準は水域の目標値（達成すべき状態の基準）、排水基準は排出口で守るべき上限値。別個の制度で、排水基準の遵守が環境基準達成を直接保証するわけではない。"},
+{id:17,category:"公害総論",question:"「瀬戸内海環境保全特別措置法」の主な目的として正しいものはどれか。",choices:["瀬戸内海の富栄養化防止・赤潮対策・水質保全等の環境保全","瀬戸内海での漁業権保護という規定","海上交通の安全確保という規定","離島振興に関する事項"],answer:0,explanation:"瀬戸内海環境保全特別措置法は瀬戸内海の富栄養化・水質汚濁防止・自然海岸保全等を目的とした地域特別法。COD・窒素・リンの総量規制も含む。"},
+{id:18,category:"公害総論",question:"水質汚濁防止法における「有害物質」の取り扱いとして正しいものはどれか。",choices:["有害物質を含む排水は一切排出禁止（誤り）","有害物質の排出基準は事業者が自主的に設定する（この説明は誤り）","有害物質の排出は環境大臣の許可が必要（誤り）","有害物質ごとに許容限度（排水基準）が設定されており、基準値以下であれば排出可能"],answer:3,explanation:"水質汚濁防止法の有害物質排水基準は物質ごとに許容限度（mg/L等）が設定されており、この基準値以下であれば排出可能。"},
+{id:19,category:"公害総論",question:"「ダイオキシン類対策特別措置法」における水質規制として正しいものはどれか。",choices:["水質環境基準と排水基準が設定されている","大気排出基準のみが設定されている","水質への規制は別の法律でのみ行われる","ダイオキシン類の水質規制は存在しない"],answer:0,explanation:"ダイオキシン類対策特別措置法は大気排出基準に加え、水質環境基準（1pg-TEQ/L以下）および排水基準（10pg-TEQ/L）も設定している。"},
+{id:20,category:"公害総論",question:"「硝酸性窒素・亜硝酸性窒素」が問題となる主な理由として正しいものはどれか。",choices:["乳児のメトヘモグロビン血症（チアノーゼ）の原因となるため","強い臭気を持ち生活環境を損なうため","魚介類に生物濃縮され食物連鎖で人体に蓄積するため","水の透明度を著しく低下させるため"],answer:0,explanation:"硝酸性窒素は乳児がミルク等を通して摂取すると体内でメトヘモグロビン血症（チアノーゼ）を引き起こす危険性があるため規制される。"},
+{id:21,category:"公害総論",question:"水質汚濁防止法に基づく特定施設の設置届出の手続きとして正しいものはどれか。",choices:["設置の60日前までに都道府県知事に届け出る","設置後30日以内に都道府県知事に届け出る","環境大臣の許可を受けてから設置する","届出不要で自主管理のみ"],answer:0,explanation:"特定施設の設置は工事着手60日前までに都道府県知事に届け出る義務がある（水質汚濁防止法第5条）。"},
+{id:22,category:"公害総論",question:"「公害健康被害の補償等に関する法律（公健法）」における第二種地域の対象疾病として正しいものはどれか。",choices:["慢性気管支炎・気管支喘息等の非特異的疾患","肺がん・中皮腫","水俣病・イタイイタイ病・慢性砒素中毒等の特異的疾患","白血病・再生不良性貧血"],answer:2,explanation:"公健法の第二種地域は重金属等の特定有害物質による水俣病・イタイイタイ病・慢性砒素中毒症等の特異的疾患が対象。"},
+{id:23,category:"公害総論",question:"「水質汚濁防止法」における排水基準の適用除外として正しいものはどれか。",choices:["規模に関係なくすべての事業場に適用される（誤り）","海域への直接放流は適用除外（誤り）","下水道に排除する場合は水質汚濁防止法の排水基準は直接適用されず、下水道法の基準が適用される","農業排水は常に適用除外という規定"],answer:2,explanation:"公共下水道に排除する排水は水質汚濁防止法の排水基準ではなく、下水道法の除害施設基準（排除基準）が適用される。"},
+{id:24,category:"公害総論",question:"「BOD（生物化学的酸素要求量）」の環境基準が設定されている水域として正しいものはどれか。",choices:["河川のみ","湖沼・海域のみ","河川・湖沼・海域すべて","地下水のみ"],answer:0,explanation:"BODは河川に環境基準が設定される。湖沼・海域にはCOD（化学的酸素要求量）が設定される。"},
+{id:25,category:"公害総論",question:"「総量規制基準」の対象項目として現在指定されているものとして正しいものはどれか。",choices:["BOD・SS・大腸菌群数","pH・DO・透明度","重金属（鉛・カドミウム等）","COD・窒素・リン"],answer:3,explanation:"東京湾・伊勢湾・瀬戸内海の総量規制対象はCOD（化学的酸素要求量）・窒素・リンの3項目。"},
+{id:26,category:"公害総論",question:"水質汚濁防止法に基づく「立入検査」について正しいものはどれか。",choices:["裁判所の令状が必要という規定","都道府県知事等の職員が特定事業場に立ち入り、帳簿・施設・排水を検査できる","環境省職員のみが実施できる（誤り）","事前通知が法律で義務付けられている（誤り）"],answer:1,explanation:"水質汚濁防止法第22条に基づき、都道府県知事等はその職員を特定事業場等に立ち入らせ、帳簿・施設・排水等の検査・採取ができる（令状不要の行政調査）。"},
+{id:27,category:"公害総論",question:"「環境基本法」における「環境基準」の法的性格として正しいものはどれか。",choices:["事業者が直接守るべき規制基準（誤り）","行政が環境保全施策を推進するうえで達成・維持を目指す目標値（政策目標）","違反すると罰則が科される強制基準（誤り）","各都道府県が独自に設定する地方基準（誤り）"],answer:1,explanation:"環境基準は環境基本法第16条に基づく政策目標（達成・維持すべき行政目標）であり、事業者が直接守る規制基準ではない。"},
+{id:28,category:"公害総論",question:"「水質汚濁防止法」に基づく測定記録の保存期間として正しいものはどれか。",choices:["1年間","5年間","3年間","10年間"],answer:2,explanation:"水質汚濁防止法施行規則に基づき、排水の測定記録は3年間保存しなければならない。"},
+{id:29,category:"公害総論",question:"「湖沼水質保全特別措置法」の目的として正しいものはどれか。",choices:["指定湖沼の水質保全のため特定施設規制・流域対策・底質改善等の総合的施策を実施","湖沼での漁業権保護という規定","湖沼の水利権管理に関する事項","ダム建設の規制に関する事項"],answer:0,explanation:"湖沼水質保全特別措置法は指定湖沼（琵琶湖・霞ヶ浦等）について、特定施設の規制・流域排水対策・底質浚渫等の総合的な水質保全施策を定める。"},
+{id:30,category:"公害総論",question:"「排水基準を定める省令」において、有害物質の排水基準の表示単位として正しいものはどれか。",choices:["mg/L（ミリグラム毎リットル）が基本","ppm（parts per million）のみ","μg/L（マイクログラム毎リットル）のみ","mg/kg（乾燥重量基準）"],answer:0,explanation:"排水基準はmg/L（ミリグラム/リットル）を基本単位として表示される。一部の項目（水銀等）はmg/Lの小数表示。"},
+{id:31,category:"水質概論",question:"「BOD（生物化学的酸素要求量）」の定義として正しいものはどれか。",choices:["水中の有機物を微生物が好気的に分解する際に消費される酸素量","水中の有機物を化学的酸化剤で酸化する際に消費される酸素量","水中の溶存酸素量","水中の懸濁物質量"],answer:0,explanation:"BODは水中の有機物を微生物（好気性微生物）が一定条件（20℃・5日間が標準）で好気的分解する際に消費される酸素量（mg/L）。"},
+{id:32,category:"水質概論",question:"「COD（化学的酸素要求量）」の測定に使用される酸化剤として、湖沼・海域の公定法で用いられるものはどれか。",choices:["重クロム酸カリウム（K₂Cr₂O₇）","過マンガン酸カリウム（KMnO₄）","過酸化水素（H₂O₂）","硝酸（HNO₃）"],answer:1,explanation:"日本の公定法（JIS）では湖沼・海域のCOD測定に過マンガン酸カリウム（KMnO₄）を用いる酸性法が使われる。重クロム酸カリウム法はCOD-Crとして欧米や排水測定に用いられる。"},
+{id:33,category:"水質概論",question:"「DO（溶存酸素）」に関する記述として正しいものはどれか。",choices:["水温が高いほどDOは増加する（この説明は誤り）","水温が低いほどDOは増加し、塩分が高いほど低下する","DOは水質汚染と無関係という規定","DO値が高いほど水質が悪い（この説明は誤り）"],answer:1,explanation:"DOは水温が低いほど溶解度が増加（低温ほど酸素が溶けやすい）し、塩分濃度が高いほど低下する。DO低下は水質汚染（有機物分解による酸素消費）の指標。"},
+{id:34,category:"水質概論",question:"「SS（浮遊物質量）」の定義として正しいものはどれか。",choices:["水中に溶解しているイオン・分子の総量","水の色の強さに関する事項","水中の有機物量に関する事項","孔径1μmのガラス繊維ろ紙を通過しない粒子状物質の量"],answer:3,explanation:"SSは水中の懸濁（浮遊）粒子状物質で、孔径1μm（JISでは公称孔径1μmのガラス繊維ろ紙GF/C相当）のろ紙で捕捉される不溶解性物質の量（mg/L）。"},
+{id:35,category:"水質概論",question:"河川水の「自浄作用」に関する記述として正しいものはどれか。",choices:["化学物質を河川が化学的に無毒化する作用のみ","植物プランクトンが重金属を吸収する作用のみ","紫外線により汚染物質が分解される作用のみ","有機物の微生物分解・希釈・沈降・再曝気等により水質が回復する作用"],answer:3,explanation:"自浄作用は有機物の微生物分解・物理的希釈・沈降・河川への再曝気（DO回復）・光分解等の複合的な作用により水質が自然に回復する過程。"},
+{id:36,category:"水質概論",question:"「全窒素（T-N）」と「全リン（T-P）」が水質汚濁指標として重要な理由として正しいものはどれか。",choices:["湖沼・海域の富栄養化を促進するため","人体に直接毒性を示すため","BODを増加させる主因となるため","水の透明度を直接低下させるため"],answer:0,explanation:"全窒素・全リンは植物プランクトンの主要栄養素であり、これらが過剰になると湖沼・海域で富栄養化が起こりアオコ・赤潮が発生する。"},
+{id:37,category:"水質概論",question:"「pH」が水質指標として重要な理由として正しいものはどれか。",choices:["pHは水の重さを示す指標という規定","pHは有機物量の直接的指標（誤り）","pHが高いほど水質汚濁が進んでいる（誤り）","pHは水中の酸塩基平衡を示し、水生生物の生存や化学反応（腐食・沈殿等）に大きく影響する"],answer:3,explanation:"pHは水中の水素イオン濃度（酸塩基平衡）を示し、水生生物の生存域（多くの生物はpH6〜9程度）・重金属の溶解度・配管腐食等に影響する重要な水質指標。"},
+{id:38,category:"水質概論",question:"「大腸菌群数」が水質の指標として用いられる理由として正しいものはどれか。",choices:["大腸菌自体が強い毒素を産生するため（誤り）","大腸菌は水中での存在量が常に一定で定量的指標となるため","大腸菌が有機物を分解するため（誤り）","糞便による汚染の指標となり、病原微生物（腸チフス菌・コレラ菌等）汚染の可能性を示すため"],answer:3,explanation:"大腸菌群は人畜の腸内に多く存在し、その検出は糞便汚染の指標となる。病原微生物と同様の汚染経路を持つため、衛生学的水質評価に用いられる。"},
+{id:39,category:"水質概論",question:"「ノルマルヘキサン抽出物質」（油分）の測定が必要な理由として正しいものはどれか。",choices:["油分は水中で完全に分解されるため（誤り）","油分はBODの主成分であるため（誤り）","油分は水面に膜を形成して酸素移動を阻害し、水生生物や生態系に悪影響を与えるため","油分はpHを著しく変化させるため（誤り）"],answer:2,explanation:"油分（鉱油・動植物油脂等）は水面に膜を形成してDO低下を招き、水生生物・鳥類への汚染・悪臭等の問題を引き起こす。ヘキサン抽出物質として測定。"},
+{id:40,category:"水質概論",question:"「BOD₅」の測定条件として正しいものはどれか。",choices:["25℃・3日間培養","20℃・5日間培養","30℃・7日間培養","15℃・10日間培養"],answer:1,explanation:"BOD₅（標準BOD）は20℃・5日間の好気的培養条件で水中の有機物を微生物が分解する際に消費する酸素量として測定される（JIS K 0102）。"},
+{id:41,category:"水質概論",question:"「COD」と「BOD」を比較した場合の一般的な関係として正しいものはどれか。",choices:["BOD＞CODになることが多い（誤り）","COD≧BODとなることが多い（CODのほうが高い値になりやすい）","両者は常に等しいに関する事項","海水ではBOD＞CODになる（誤り）"],answer:1,explanation:"CODは化学的酸化剤により分解される有機物（生分解性・難分解性を含む）を測定するため、生分解性有機物のみを反映するBODよりも高い値になることが多い。"},
+{id:42,category:"水質概論",question:"「透視度」の測定法として正しいものはどれか。",choices:["ガラス電極法に関する事項","重力式ろ過法に関する事項","分光光度計による吸光度測定（誤り）","透視度計（ガラス管）を用い、二重十字マークが見える水深（cm）を測定"],answer:3,explanation:"透視度は透視度計（細長いガラス管の底に二重十字を描いた板を置く）に水を入れ、上から二重十字が識別できる水柱の高さ（cm）を読む方法で測定。"},
+{id:43,category:"水質概論",question:"「富栄養化指標」として用いられる「クロロフィルa」とは何を示すか。",choices:["植物プランクトンの現存量（生物量）の指標","水中の有機物量に関する事項","水の透明度の特性","窒素濃度の指標に関する事項"],answer:0,explanation:"クロロフィルaは植物プランクトン・藻類に含まれる光合成色素。水中のクロロフィルa濃度は植物プランクトンの現存量（biomass）の指標として富栄養化評価に用いられる。"},
+{id:44,category:"水質概論",question:"「閉鎖性水域」で水質汚濁が進みやすい理由として正しいものはどれか。",choices:["外部との水交換が少なく汚濁物質が蓄積しやすい","閉鎖性水域では微生物が少ない","閉鎖性水域では酸素供給が多い","閉鎖性水域では紫外線が強い（この説明は誤り）"],answer:0,explanation:"湾・湖沼等の閉鎖性水域は外海・外部水域との水交換が少ないため、流入した汚濁物質（栄養塩・有機物等）が蓄積しやすく、自浄能力も限定的。"},
+{id:45,category:"水質概論",question:"「底質」の汚染が水質に与える影響として正しいものはどれか。",choices:["底質は水質に影響しないという規定","底質の汚染は陸上生態系にのみ影響する（誤り）","底質に蓄積した有機物・栄養塩・重金属等が溶出して水質悪化を招く（内部負荷）","底質汚染は大雨時にのみ問題となる（誤り）"],answer:2,explanation:"底質に蓄積した有機物・栄養塩（窒素・リン）・重金属等は条件変化（嫌気化・pH変動等）で溶出して上層水質を悪化させる内部負荷として問題となる。"},
+{id:46,category:"水質概論",question:"「水温躍層（サーモクライン）」の形成が水質に与える影響として正しいものはどれか。",choices:["水温躍層は水の混合を促進する（誤り）","水温躍層は主に河川で問題となる（誤り）","水温躍層により上下層の水混合が阻害され、下層が貧酸素化（DO低下）しやすくなる","水温躍層形成後は富栄養化が解消される（誤り）"],answer:2,explanation:"夏季に表層が加熱されて形成される水温躍層（密度差による成層構造）により上下混合が阻害され、底層での有機物分解によりDOが低下して貧酸素・無酸素水塊が生じる。"},
+{id:47,category:"水質概論",question:"「全有機炭素（TOC）」測定の特徴として正しいものはどれか。",choices:["測定に5日間かかるという規定","生分解性有機物のみを測定する（誤り）","有機物を燃焼・酸化してCO₂として測定するため迅速測定が可能","BODと同一の測定原理という規定"],answer:2,explanation:"TOCは試料水中の有機炭素を高温燃焼等で酸化してCO₂を生成し、非分散型赤外線（NDIR）分析計等で測定する。BODの5日間と異なり迅速（数分）測定が可能。"},
+{id:48,category:"水質概論",question:"「陰イオン界面活性剤（LAS等）」が水質汚濁指標として設定されている理由として正しいものはどれか。",choices:["起泡性・泡立ちが水域の酸素供給を妨げるほか、生態系への影響が懸念されるため","強い毒性で魚が即死するため（誤り）","LASは生分解されないため永久に水中に残留するため","LASは強い酸性を示すため（誤り）"],answer:0,explanation:"LAS等陰イオン界面活性剤は合成洗剤の主成分で、水中での起泡による酸素供給障害・水生生物への毒性・生分解性（LASは比較的分解されやすいが）等の問題から排水基準項目に含まれる。"},
+{id:49,category:"水質概論",question:"「全シアン（CN）」が水質有害物質として規制される理由として正しいものはどれか。",choices:["シアン化合物は臭気が強いため（誤り）","シアン化合物は水の色を変化させるため","シアン化合物は富栄養化を促進するため","シアン化合物は細胞内の酸素利用を阻害する強い急性毒性を持つため"],answer:3,explanation:"シアン化物（HCN・CN⁻）は細胞内チトクロム酸化酵素を阻害して組織レベルの酸素利用を阻む強力な急性毒性を持ち、魚類・人体に極めて有害。"},
+{id:50,category:"水質概論",question:"「生物化学的酸素要求量（BOD）」の計算において、河川のBOD消費（有機物分解）は一般的にどのような反応式で近似されるか。",choices:["直線的な反応（一次関数）という規定","一次反応（指数関数的減衰）：L=L₀×e^(-k₁t)","ゼロ次反応（一定速度）という規定","二次反応の特性"],answer:1,explanation:"河川の有機物のBOD消費は一次反応（first-order reaction）で近似され、残留BOD：L=L₀・e^(-k₁t)（L₀：初期BOD、k₁：脱酸素係数、t：時間）で表される。ストリーター・フェルプス式の基礎。"},
+{id:51,category:"汚水処理特論",question:"「活性汚泥法」の基本原理として正しいものはどれか。",choices:["嫌気性微生物により有機物を分解する（誤り）","好気性微生物の集合体（活性汚泥）により有機物を好気的に分解・除去する","化学薬品により有機物を酸化分解する（誤り）","物理的なろ過により有機物を除去する（誤り）"],answer:1,explanation:"活性汚泥法は好気性微生物の塊（フロック）を曝気槽内で培養し、有機物を好気的に分解・除去する生物学的処理法。下水・産業排水処理の主流。"},
+{id:52,category:"汚水処理特論",question:"活性汚泥法における「MLSS（混合液浮遊物質濃度）」の一般的な管理範囲として正しいものはどれか。",choices:["1,500〜3,000mg/L","10〜50mg/L","10,000〜20,000mg/L","100,000mg/L以上"],answer:0,explanation:"標準活性汚泥法のMLSSは通常1,500〜3,000mg/L程度で管理される。低すぎると処理能力不足、高すぎると酸素供給不足・二次沈殿池での固液分離悪化を招く。"},
+{id:53,category:"汚水処理特論",question:"「SVI（汚泥容量指標）」の定義として正しいものはどれか。",choices:["汚泥1gが1時間後に占める容積（mL/g）","混合液を30分間静置したとき、汚泥1gが占める容積（mL/g）","曝気槽のMLSSをSS除去率で割った値","汚泥の含水率（%）という規定"],answer:1,explanation:"SVI（Sludge Volume Index）=30分間静置後の汚泥容積（mL/L）÷MLSS（mg/L）×1000（mL/g）。SVIが高い（150以上）と汚泥の沈降性が悪い（バルキング）。"},
+{id:54,category:"汚水処理特論",question:"「汚泥のバルキング」の原因として最も一般的なものはどれか。",choices:["MLSS濃度が低すぎるという規定","流入水温が低すぎるという規定","曝気量が多すぎるに関する事項","糸状性微生物（フィラメント状微生物）の異常増殖により汚泥の沈降性が悪化する"],answer:3,explanation:"バルキングは糸状性微生物（Thiothrix・Nocardia等）が異常増殖して汚泥フロックが軽くなり沈降しにくくなる現象。SVIが上昇し、二次沈殿池からの汚泥流出（SSの悪化）が起こる。"},
+{id:55,category:"汚水処理特論",question:"「BOD容積負荷」の定義として正しいものはどれか。",choices:["曝気槽容積あたりの1日のBOD投入量（kg-BOD/m³/day）","MLSS1kgあたりの1日のBOD投入量","処理水のBOD濃度という規定","流入水のBOD濃度と処理水のBOD濃度の差"],answer:0,explanation:"BOD容積負荷（kg-BOD/m³/day）=流入BOD（mg/L）×流量（m³/day）÷曝気槽容積（m³）÷1000。標準活性汚泥法では0.3〜0.8kg-BOD/m³/day程度が標準。"},
+{id:56,category:"汚水処理特論",question:"「二次沈殿池」の役割として正しいものはどれか。",choices:["曝気槽からの混合液を固液分離し、処理水と濃縮汚泥に分ける","流入排水の初期SS除去という規定","嫌気性消化を行うに関する事項","化学薬品を添加して凝集させる（誤り）"],answer:0,explanation:"二次沈殿池（最終沈殿池）は活性汚泥と処理水を重力沈降で分離する施設。分離した汚泥の一部を曝気槽に返送（返送汚泥）し、残りを余剰汚泥として系外に排出する。"},
+{id:57,category:"汚水処理特論",question:"「BOD-SS負荷（F/M比）」の意味として正しいものはどれか。",choices:["処理水BODをSSで割った値（誤り）","流入水BODを処理水BODで割った値（誤り）","活性汚泥（MLSS）単位量あたりに投入されるBOD量","曝気槽のBOD除去率という規定"],answer:2,explanation:"F/M比（Food to Microorganism ratio）=流入BOD量÷曝気槽MLSS量。微生物に対する有機物負荷の指標で、標準法では0.2〜0.4kg-BOD/kg-MLSS/day程度。"},
+{id:58,category:"汚水処理特論",question:"「嫌気性処理（メタン発酵）」において生成される主な生成物として正しいものはどれか。",choices:["メタン（CH₄）と二酸化炭素（CO₂）が主な生成物","CO₂と水のみに関する事項","窒素ガス（N₂）と水素という規定","硫酸と硫化水素のみという規定"],answer:0,explanation:"嫌気性処理（メタン発酵）では有機物が嫌気性微生物（メタン菌等）により分解されてCH₄とCO₂が主生成物として発生。CH₄はバイオガスとしてエネルギー回収できる。"},
+{id:59,category:"汚水処理特論",question:"「凝集沈殿法」において用いられる代表的な凝集剤として正しいものはどれか。",choices:["水酸化ナトリウム（NaOH）（誤り）","過酸化水素（H₂O₂）という規定","硫酸アルミニウム（硫酸バンド）・ポリ塩化アルミニウム（PAC）・塩化第二鉄等","活性炭の方法"],answer:2,explanation:"凝集沈殿では硫酸バンド（Al₂(SO₄)₃）・PAC（ポリ塩化アルミニウム）・FeCl₃（塩化第二鉄）等の無機凝集剤、およびポリアクリルアミド等の高分子凝集剤が使用される。"},
+{id:60,category:"汚水処理特論",question:"「砂ろ過」の主な除去対象として正しいものはどれか。",choices:["浮遊物質（SS）・微細フロック・微生物","溶解性有機物（BOD成分）","溶解性重金属に関する事項","溶解塩類（電気伝導度成分）"],answer:0,explanation:"砂ろ過は砂層（ろ材）によるSS・微細フロック・浮遊微生物の物理的除去が主目的。溶解性成分の除去は活性炭・イオン交換等が必要。"},
+{id:61,category:"汚水処理特論",question:"「活性炭吸着処理」が有効な対象物質として正しいものはどれか。",choices:["溶解性有機物（難分解性・臭気物質・色度成分等）","SS（浮遊物質）に関する事項","窒素・リンの方法","pH調整の方法"],answer:0,explanation:"活性炭は多孔質炭素材料の吸着力により、溶解性有機物（農薬・界面活性剤・臭気物質・色度成分・難分解性有機物）を吸着除去する。SSの除去には不向き。"},
+{id:62,category:"汚水処理特論",question:"「生物学的硝化・脱窒法」における「硝化反応」として正しいものはどれか。",choices:["NO₃⁻→N₂（窒素ガス）の反応（誤り）","NH₄⁺→NO₂⁻→NO₃⁻の好気的酸化反応（アンモニアが亜硝酸・硝酸に変換）","NO₃⁻→NH₄⁺の反応という規定","N₂→NH₄⁺の反応という規定"],answer:1,explanation:"硝化反応はアンモニア酸化細菌（Nitrosomonas等）によりNH₄⁺→NO₂⁻、亜硝酸酸化細菌（Nitrobacter等）によりNO₂⁻→NO₃⁻へと好気条件下で酸化される2段階反応。"},
+{id:63,category:"汚水処理特論",question:"「脱窒反応」の条件として正しいものはどれか。",choices:["好気条件（酸素存在下）でNO₃⁻をN₂に還元（誤り）","好気条件でN₂を固定してNH₄⁺を生成（誤り）","嫌気条件でNH₄⁺をN₂に酸化（誤り）","無酸素条件（嫌気的）で脱窒菌がNO₃⁻・NO₂⁻を電子受容体として有機物を分解しN₂を生成"],answer:3,explanation:"脱窒は無酸素（DO≈0・硝酸存在）条件下で通性嫌気性の脱窒菌がNO₃⁻・NO₂⁻を電子受容体として有機物を酸化し、N₂ガスを発生させる反応。"},
+{id:64,category:"汚水処理特論",question:"「生物学的リン除去（嫌気・好気法：A/O法）」の原理として正しいものはどれか。",choices:["化学薬品でリンを沈殿させる（誤り）","好気条件下でリンを酸化除去する（誤り）","嫌気槽でリンを放出したポリリン酸蓄積細菌（PAO）が好気槽で過剰にリンを摂取する性質を利用","UV照射によりリンを分解する（誤り）"],answer:2,explanation:"A/O法はポリリン酸蓄積細菌（PAO）が嫌気槽でリンを放出・好気槽で過剰摂取する性質を利用。余剰汚泥としてリンを系外に排出することで生物学的リン除去を達成。"},
+{id:65,category:"汚水処理特論",question:"「膜分離活性汚泥法（MBR）」の特徴として正しいものはどれか。",choices:["二次沈殿池が不要で高いMLSSで運転でき、処理水質が良好","砂ろ過と同じ原理に関する事項","薬品添加が必須に関する事項","嫌気性処理法の一種という規定"],answer:0,explanation:"MBR（Membrane Bioreactor）は精密ろ過（MF）・限外ろ過（UF）膜で固液分離するため二次沈殿池不要。高MLSS（8,000〜20,000mg/L）運転が可能でSS・細菌を確実に除去した高品質処理水が得られる。"},
+{id:66,category:"汚水処理特論",question:"「オゾン処理」の特徴として正しいものはどれか。",choices:["塩素よりも酸化力が弱いという規定","残留オゾンが長期間水中に存在する（誤り）","強い酸化力で難分解性有機物・色度・臭気・殺菌に有効だが残留性がない","金属腐食を起こさないという規定"],answer:2,explanation:"オゾン（O₃）は塩素より強い酸化力を持ち、難分解性有機物の分解・脱色・脱臭・殺菌に有効。ただし不安定で短時間で分解し、処理後の残留性はない。"},
+{id:67,category:"汚水処理特論",question:"「紫外線（UV）消毒」の特徴として正しいものはどれか。",choices:["微生物のDNAを損傷させて不活化する。残留消毒効果はない","消毒副生成物（THM等）を生成する","水中のSSが多くても消毒効果が変わらない","高濃度有機物の除去に有効という規定"],answer:0,explanation:"UV消毒は波長254nm付近の紫外線が微生物のDNAを損傷・不活化する物理的消毒法。消毒副生成物が生成されないが、SSが多いと照射効果が低下し残留効果はない。"},
+{id:68,category:"汚水処理特論",question:"「塩素消毒」において生成される消毒副生成物として代表的なものはどれか。",choices:["硫酸の方法","亜硝酸の方法","アンモニアの方法","トリハロメタン（THM）・ハロ酢酸等"],answer:3,explanation:"塩素消毒では有機物（フミン質等）との反応によりトリハロメタン（クロロホルム等）・ハロ酢酸・クロラミン等の消毒副生成物（DBPs）が生成し、発がんリスクが問題となる。"},
+{id:69,category:"汚水処理特論",question:"「逆浸透膜（RO膜）」の特徴として正しいものはどれか。",choices:["SS・濁質のみを除去するという規定","生物処理の一種に関する事項","活性炭と同じ原理に関する事項","浸透圧以上の圧力をかけてイオン・溶解塩類・低分子有機物まで除去できる"],answer:3,explanation:"RO膜は浸透圧以上の圧力（5〜80bar程度）をかけることで水分子のみを透過させ、溶解塩類（Na⁺・Cl⁻等）・重金属・低分子有機物・微生物まで高度除去できる。"},
+{id:70,category:"汚水処理特論",question:"「嫌気性消化（汚泥消化）」の目的として正しいものはどれか。",choices:["汚泥中の重金属を除去するという規定","汚泥の脱水性を直接向上させる（誤り）","汚泥を好気的に分解して完全に無機化する（この説明は誤り）","汚泥の有機物を嫌気分解してガス化（バイオガス回収）・減量化・安定化を図る"],answer:3,explanation:"嫌気性消化は余剰汚泥を嫌気槽（消化槽）でメタン菌等が分解し、①有機物のCH₄・CO₂へのガス化（エネルギー回収）②汚泥減量③病原微生物低減④汚泥安定化を目的とする。"},
+{id:71,category:"汚水処理特論",question:"「最初沈殿池（初沈）」の役割として正しいものはどれか。",choices:["活性汚泥と処理水を分離する（誤り）","リンを化学沈殿で除去するという規定","硝化・脱窒を行うに関する事項","流入排水中のSSを重力沈降で除去し、後段の生物処理負荷を軽減する"],answer:3,explanation:"最初沈殿池は曝気槽の前段に設置され、流入水中のSSを重力沈降で除去（SS除去率50〜70%程度）。後段の曝気槽への有機物・SS負荷を軽減する。"},
+{id:72,category:"汚水処理特論",question:"「返送汚泥率」の定義として正しいものはどれか。",choices:["余剰汚泥量を流入水量で割った値（この説明は誤り）","MLSS濃度を返送汚泥濃度で割った値","二次沈殿池から曝気槽へ返送する汚泥量を流入水量で割った比率","処理水量を流入水量で割った値（誤り）"],answer:2,explanation:"返送汚泥率r=返送汚泥流量÷流入水流量。MLSSを維持するために必要な返送率はMLSSと返送汚泥濃度（RAS濃度）から計算される。通常20〜100%程度。"},
+{id:73,category:"汚水処理特論",question:"「好気性消化（好気消化）」の特徴として正しいものはどれか。",choices:["曝気により汚泥中の有機物を好気的に酸化・安定化する","バイオガス（CH₄）を回収できる（誤り）","嫌気消化より汚泥減量効果が大きい（誤り）","硫化水素が大量に発生するという規定"],answer:0,explanation:"好気消化は曝気槽で余剰汚泥を好気的に長時間酸化・安定化する方法。バイオガス回収はできないが設備が簡単で臭気が少ない。小規模施設向き。"},
+{id:74,category:"汚水処理特論",question:"「汚泥の脱水」に用いられる方法として誤っているものはどれか。",choices:["フィルタープレス（圧搾脱水）","ベルトプレス","遠心脱水機","蒸留による水分除去"],answer:3,explanation:"汚泥脱水にはフィルタープレス・ベルトプレス・遠心脱水機・スクリュープレス等の機械脱水が用いられる。蒸留は汚泥脱水には通常使用されない。"},
+{id:75,category:"汚水処理特論",question:"「pH調整」が排水処理で必要な理由として正しいものはどれか。",choices:["pHは排水基準の対象外という規定","酸性排水は自然に中和される（誤り）","pHは処理に影響しないという規定","生物処理・凝集沈殿・化学沈殿の処理効率がpHに大きく依存するため、また排水基準"],answer:3,explanation:"生物処理は中性付近（pH6〜8）、凝集沈殿はpH6〜8、重金属の水酸化物沈殿はpH8〜10程度が最適。また排水基準（海域以外pH5.8〜8.6）を遵守するためpH調整が必須。"},
+{id:76,category:"汚水処理特論",question:"「イオン交換法」が有効な排水処理対象として正しいものはどれか。",choices:["SS（浮遊物質）の除去という規定","BODの除去に関する事項","難分解性有機物の分解という規定","溶解性イオン（重金属イオン・アンモニア・フッ素等）の除去"],answer:3,explanation:"イオン交換樹脂は溶解性のイオン性物質（Cd²⁺・Pb²⁺・Cr³⁺・NH₄⁺・F⁻等）を選択的に交換・除去する。SSや有機物の除去には不向き。"},
+{id:77,category:"汚水処理特論",question:"「電気透析」の原理として正しいものはどれか。",choices:["電流により有機物を酸化分解する（誤り）","陽イオン交換膜・陰イオン交換膜を交互に配置し直流電流でイオンを移動させ、塩類を脱塩","電気泳動でSSを除去するという規定","電気化学的にpHを調整する（誤り）"],answer:1,explanation:"電気透析は陽イオン交換膜（陽イオンのみ透過）と陰イオン交換膜（陰イオンのみ透過）を交互に並べ、直流電流によりイオンを選択的に移動させて脱塩する方法。"},
+{id:78,category:"汚水処理特論",question:"「化学的酸化法（フェントン法）」の反応原理として正しいものはどれか。",choices:["塩素で有機物を塩素化するという規定","紫外線のみで分解するという規定","オゾンのみで酸化するという規定","過酸化水素と鉄イオン（Fe²⁺）の反応でヒドロキシラジカル"],answer:3,explanation:"フェントン法はH₂O₂＋Fe²⁺→Fe³⁺＋OH⁻＋・OH（ヒドロキシラジカル）の反応を利用。ヒドロキシラジカルは強力な酸化力で難分解性有機物・色度・臭気成分を分解する。"},
+{id:79,category:"汚水処理特論",question:"「クロム（六価）含有排水」の処理方法として正しいものはどれか。",choices:["アルカリ条件で直接沈殿させる（誤り）","活性炭吸着のみで除去という規定","酸性条件（pH2〜3）で還元剤（亜硫酸水素ナトリウム等）によりCr⁶⁺をCr³⁺に還元後","中和のみで除去に関する事項"],answer:2,explanation:"六価クロム排水処理は①pH2〜3の酸性条件でNaHSO₃・SO₂等の還元剤でCr⁶⁺→Cr³⁺に還元②pH8〜9のアルカリでCr(OH)₃として水酸化物沈殿除去の2段階が標準法。"},
+{id:80,category:"汚水処理特論",question:"「シアン含有排水」の処理方法として正しいものはどれか。",choices:["酸性条件で加熱して揮発除去（誤り）","アルカリ塩素法：アルカリ条件（pH10以上）で塩素","活性炭吸着のみに関する事項","中和のみの方法"],answer:1,explanation:"シアン排水の標準処理はアルカリ塩素法。①pH10以上でNaCNO（シアン酸）に酸化（第一段）②さらにpH7〜8で完全酸化してCO₂＋N₂に分解（第二段）。酸性条件では猛毒のHCNガスが発生するため危険。"},
+{id:81,category:"汚水処理特論",question:"「フッ素含有排水」の処理方法として最も一般的なものはどれか。",choices:["活性炭吸着による除去方法という規定","消石灰または塩化カルシウム添加によりCaF₂（フッ化カルシウム）として沈殿除去","塩素酸化による除去方法という規定","イオン交換のみで除去という規定"],answer:1,explanation:"フッ素排水は消石灰（Ca(OH)₂）や塩化カルシウム（CaCl₂）を添加してF⁻をCaF₂（難溶性）として沈殿させる凝集沈殿法が標準。高度処理にはイオン交換・活性アルミナ吸着も用いる。"},
+{id:82,category:"汚水処理特論",question:"「重金属含有排水」の水酸化物沈殿法における最適pH範囲として正しいものはどれか。",choices:["pH8〜11（弱〜強アルカリ性）","pH2〜4（強酸性）","pH12以上（強アルカリ）","pH6〜7（中性付近）"],answer:0,explanation:"多くの重金属水酸化物（Cd(OH)₂・Pb(OH)₂・Ni(OH)₂等）はpH8〜11付近で溶解度が最小となり沈殿除去に最適。強アルカリすぎると錯体形成で再溶解する場合がある。"},
+{id:83,category:"汚水処理特論",question:"「凝集沈殿」における「ゼータ電位」の意味として正しいものはどれか。",choices:["コロイド粒子の粒径のことという規定","コロイド粒子表面の電気的電位。ゼータ電位がゼロに近いと凝集しやすい","水のpHと同じ概念という規定","凝集剤の添加量のことという規定"],answer:1,explanation:"コロイド粒子は表面に電荷（多くは負）を持ちゼータ電位が大きいと粒子同士が反発して安定分散。凝集剤（アルミニウム・鉄塩等）でゼータ電位をゼロに近づけると凝集しやすくなる。"},
+{id:84,category:"汚水処理特論",question:"「接触酸化法（担体利用型生物処理）」の特徴として正しいものはどれか。",choices:["浮遊微生物のみで処理するという規定","汚泥の返送が必須に関する事項","担体（プラスチック充填材・発泡体等）表面に生物膜（バイオフィルム）を形成させて処理する","嫌気性処理法の一種という規定"],answer:2,explanation:"接触酸化法は反応槽内に充填した担体表面に生物膜を形成させる固定床型生物処理。汚泥返送不要・余剰汚泥量が少ない・省スペースの特徴がある。"},
+{id:85,category:"汚水処理特論",question:"「回転円板法（RBC）」の特徴として正しいものはどれか。",choices:["回転する円板表面の生物膜で処理する固定床型生物処理で、動力消費が少ない","活性汚泥法の一種に関する事項","化学処理法の方法","高濃度有機排水のみに適用できる（誤り）"],answer:0,explanation:"回転円板法（Rotating Biological Contactor）は回転する円板（ディスク）表面に生物膜を形成し、大気と排水に交互に接触させて酸素供給・有機物分解を行う。動力が少なく維持管理が容易。"},
+{id:86,category:"汚水処理特論",question:"「散水ろ床法（トリクリングフィルター）」の原理として正しいものはどれか。",choices:["砂でSSをろ過するという規定","嫌気性分解を行うに関する事項","活性炭で有機物を吸着するという規定","岩石・プラスチック充填材上の生物膜に排水を散水し、自然通気で好気的に有機物を分解する"],answer:3,explanation:"散水ろ床は充填材（砕石・プラスチック）表面の生物膜（バイオフィルム）に排水を散水し、自然通気（または強制通気）で好気的に有機物を分解する固定床型生物処理法。"},
+{id:87,category:"汚水処理特論",question:"「UASB（上向流嫌気性汚泥床）法」の特徴として正しいものはどれか。",choices:["好気性処理の一種に関する事項","低濃度排水のみに適用可能という規定","嫌気性グラニュール汚泥床を形成し、高濃度有機排水を高効率でメタン発酵できる","汚泥の返送が必須に関する事項"],answer:2,explanation:"UASBは高密度グラニュール汚泥床に排水を上向流で通水し、高負荷・高効率の嫌気性分解（メタン発酵）を行う。食品・製紙・化学系の高濃度有機排水処理に適する。"},
+{id:88,category:"汚水処理特論",question:"「排水の生物毒性試験」として用いられるものはどれか。",choices:["BOD測定による評価方法という規定","ミジンコ・ヒメダカ等を用いた急性毒性試験（TU：毒性単位で評価）","COD測定による評価方法という規定","pH測定による評価方法という規定"],answer:1,explanation:"排水の生物毒性評価にはミジンコ（Daphnia）急性遊泳阻害試験・ヒメダカ急性毒性試験・発光バクテリア試験等が用いられ、毒性単位（TU）で表示する。"},
+{id:89,category:"汚水処理特論",question:"「排水処理における曝気」の主な目的として正しいものはどれか。",choices:["排水を冷却するためという規定","pHを調整するためという規定","排水中のSSを沈降させるため（この説明は誤り）","微生物に酸素を供給し、有機物の好気的分解を促進するため"],answer:3,explanation:"曝気の主目的は活性汚泥（微生物）への酸素供給。副次的に混合（攪拌）効果もある。散気管・機械曝気装置（表面曝気・水中曝気）等が使用される。"},
+{id:90,category:"汚水処理特論",question:"「余剰汚泥」の発生量に影響する因子として正しいものはどれか。",choices:["処理水の塩分濃度に関する事項","二次沈殿池の形状に関する事項","曝気槽の形状に関する事項","流入BOD負荷・微生物の増殖速度（収率）・汚泥日齢（SRT）"],answer:3,explanation:"余剰汚泥発生量は流入有機物量（BOD）・微生物収率（Y：有機物単位量あたりの汚泥生産量）・内生呼吸による汚泥自己分解率（Kd）・SRT（汚泥滞留時間）に依存する。"},
+{id:91,category:"汚水処理特論",question:"「汚泥日齢（SRT：Sludge Retention Time）」が長い場合の影響として正しいものはどれか。",choices:["微生物の内生呼吸が進み余剰汚泥発生量が減少するが、硝化が進みやすくなる","余剰汚泥発生量が増加するという規定","BOD除去率が低下するという規定","バルキングが必ず発生するという規定"],answer:0,explanation:"SRTが長いと微生物の内生呼吸（自己酸化）が進んで余剰汚泥量が減少し、硝化細菌（増殖速度が遅い）が系内に維持されて硝化が促進される。"},
+{id:92,category:"汚水処理特論",question:"「流量調整槽」を排水処理設備の前段に設置する目的として正しいものはどれか。",choices:["排水中の重金属を除去するため（誤り）","pHを中性にするためという規定","BODを除去するためという規定","流量・水質の変動を緩和して後段処理設備への負荷を均一化するため"],answer:3,explanation:"流量調整槽は時間変動の大きい排水を一時貯留し、後段処理への流量・水質変動を平準化する。処理設備の小型化・安定運転に寄与する。"},
+{id:93,category:"汚水処理特論",question:"「ストリッピング法」が有効な排水処理対象として正しいものはどれか。",choices:["揮発性物質（アンモニア・揮発性有機化合物等）を空気または水蒸気で気相に移行させ除去","溶解性重金属の除去方法という規定","SS（浮遊物質）の除去方法（誤り）","リンの除去方法に関する事項"],answer:0,explanation:"エアストリッピング（吹き出し法）はアンモニア（NH₃）・トリクロロエチレン等揮発性有機物（VOC）を空気と接触させて気相に移行・除去する方法。pHを高くするとNH₃ストリッピング効率が向上する。"},
+{id:94,category:"汚水処理特論",question:"「加圧浮上法（DAF）」の原理として正しいものはどれか。",choices:["重力沈降でSSを除去するという規定","加圧溶解した空気を減圧放出して微細気泡を発生させ、SS・油分等を浮上分離する","電気泳動でコロイドを除去する（誤り）","化学酸化で有機物を分解する（誤り）"],answer:1,explanation:"DAF（Dissolved Air Flotation）は加圧水に溶解させた空気を常圧に戻すことで微細気泡を発生させ、気泡にSSや油分を付着させて浮上分離する方法。食品・製紙排水等に有効。"},
+{id:95,category:"汚水処理特論",question:"「生物学的脱リン・脱窒を同時に行うA²/O法」の槽構成として正しいものはどれか。",choices:["嫌気槽→無酸素槽→好気槽の順に配置","好気槽→嫌気槽→無酸素槽","無酸素槽→好気槽→嫌気槽","好気槽→無酸素槽→嫌気槽"],answer:0,explanation:"A²/O法（嫌気・無酸素・好気法）は嫌気槽（リン放出）→無酸素槽（脱窒）→好気槽（硝化・リン過剰摂取）の順。内部循環で硝化液を無酸素槽に返送して脱窒する。"},
+{id:96,category:"汚水処理特論",question:"「精密ろ過膜（MF膜）」の除去対象として正しいものはどれか。",choices:["溶解塩類（Na⁺・Cl⁻等）（誤り）","SS・細菌・原虫（クリプトスポリジウム等）を除去するが、ウイルス・溶解性物質は通過する","ウイルスまで完全除去という規定","低分子有機物に関する事項"],answer:1,explanation:"MF膜（孔径0.1〜0.45μm程度）はSS・細菌・原虫（クリプトスポリジウム径4〜6μm）を除去できるが、ウイルス（径0.02〜0.3μm）や溶解性物質は通過する。"},
+{id:97,category:"汚水処理特論",question:"「限外ろ過膜（UF膜）」の主な除去対象として正しいものはどれか。",choices:["溶解塩類の方法","低分子有機物のみに関する事項","高分子有機物・コロイド・ウイルスを除去するが、低分子溶解塩類は通過する","すべての溶解物質に関する事項"],answer:2,explanation:"UF膜（孔径0.001〜0.1μm程度）は高分子有機物・コロイド・ウイルス・細菌を除去できるが、低分子塩類・低分子有機物は通過する。MFとROの中間的特性。"},
+{id:98,category:"汚水処理特論",question:"「排水中の油分（ノルマルヘキサン抽出物質）」の処理方法として正しいものはどれか。",choices:["生物処理のみで完全除去できる（誤り）","塩素酸化のみで除去できるという規定","油水分離槽・加圧浮上・凝集沈殿・活性炭吸着等を組み合わせて除去する","pH調整のみで除去できるという規定"],answer:2,explanation:"油分処理は①重力式油水分離槽（API分離槽）で浮上油除去②凝集沈殿・加圧浮上（DAF）で乳化油除去③活性炭・生物処理で溶解性油脂除去と段階的処理が一般的。"},
+{id:99,category:"汚水処理特論",question:"「排水処理の酸化還元電位（ORP）」の活用として正しいものはどれか。",choices:["好気・嫌気・無酸素条件の判断や塩素注入量・脱窒状態のモニタリングに活用される","ORPは排水処理に無関係という規定","ORPはpHと同じ指標という規定","ORPはBOD測定に使用される（誤り）"],answer:0,explanation:"ORP（酸化還元電位）は水中の酸化還元状態を示す。好気条件（ORP＋100mV以上）・無酸素条件（ORP：0〜-50mV）・嫌気条件（ORP：-100mV以下）の判断、塩素消毒・シアン酸化管理等に活用。"},
+{id:100,category:"汚水処理特論",question:"「排水処理設備の維持管理」において「DO（溶存酸素）計」を曝気槽に設置する目的として正しいものはどれか。",choices:["BODを直接測定するためという規定","曝気槽内の溶存酸素濃度を監視して適正な曝気量（エアー量）を制御するため","汚泥濃度を測定するためという規定","pHを監視するためという規定"],answer:1,explanation:"曝気槽のDO管理は活性汚泥処理の基本。DO不足（＜0.5mg/L）で処理能力低下・嫌気化、DO過多では曝気動力の無駄。通常1〜2mg/Lに維持。DO計による連続監視が重要。"},
+{id:101,category:"汚水処理特論",question:"「排水処理における凝集剤としてPAC（ポリ塩化アルミニウム）」が硫酸バンドより優れている点として正しいものはどれか。",choices:["コストが安いに関する事項","有機物の除去に特化している（この説明は誤り）","毒性がないの方法","低温・低濁度でも凝集効果が高く、pH低下が少ない"],answer:3,explanation:"PACは硫酸バンド（Al₂(SO₄)₃）に比べて低温・低濁度での凝集効果が高く、添加後のpH低下が少ない（アルカリ消費量が少ない）利点がある。"},
+{id:102,category:"汚水処理特論",question:"「生物学的硝化」に必要な条件として正しいものはどれか。",choices:["嫌気条件（DO＝0）・低温・低pH（誤り）","DOは不要・高温が必須という規定","十分なDO（好気条件）・適正pH（7〜8）・長いSRT（硝化菌の増殖速度が遅いため）","短いSRTが必要に関する事項"],answer:2,explanation:"硝化細菌（独立栄養細菌）は増殖速度が遅いため長いSRT（10日以上）が必要。好気条件（DO 1〜2mg/L以上）・pH7〜8・水温10℃以上が適正条件。低温・低pHで活性が著しく低下。"},
+{id:103,category:"汚水処理特論",question:"「排水処理における汚泥焼却」の目的として正しいものはどれか。",choices:["汚泥を肥料として利用するため（誤り）","バイオガスを回収するためという規定","脱水汚泥を焼却炉で燃焼させ、大幅な減量化（灰化）と有機物・病原菌の無害化を図るため","汚泥を液体肥料に転換するため（誤り）"],answer:2,explanation:"汚泥焼却は脱水汚泥（含水率75〜80%程度）を焼却炉（流動床・多段炉等）で燃焼させ、重量を1/10〜1/20程度に減量し有機物・病原微生物を完全に無害化する最終処理方法。"},
+{id:104,category:"汚水処理特論",question:"「生物膜法」と「活性汚泥法」の比較として正しいものはどれか。",choices:["生物膜法は汚泥返送が必要という規定","生物膜法は担体に固定された微生物で処理するため汚泥返送不要","生物膜法の方が常に処理水質が良好（誤り）","活性汚泥法は担体を使用する（誤り）"],answer:1,explanation:"生物膜法（接触酸化・散水ろ床等）は汚泥返送不要・余剰汚泥少・省エネの利点があるが、負荷変動への対応や硝化性能では運転管理が柔軟な活性汚泥法が優れる場合がある。"},
+{id:105,category:"汚水処理特論",question:"「電解処理法」の特徴として正しいものはどれか。",choices:["電解は化学薬品を使用しないため副生成物が生じない（誤り）","電気分解により陽極で塩素・オゾン等の酸化剤を生成してシアン","電解はSSの除去に最も有効（誤り）","電解処理はコストが安く大規模処理に最適（誤り）"],answer:1,explanation:"電解処理は陽極酸化（Cl₂・OCl⁻生成によるシアン分解・殺菌）と陰極還元（重金属のCu²⁺等の析出回収・六価クロム還元）が可能。薬品使用量削減できるが電力コストが課題。"},
+{id:106,category:"汚水処理特論",question:"「高度処理（三次処理）」の目的として正しいものはどれか。",choices:["一次処理（沈殿）の代替処理（誤り）","二次処理後の処理水からさらに窒素・リン・残留SS・難分解性有機物等を除去する処理","汚泥を減量化する処理という規定","バイオガスを回収する処理という規定"],answer:1,explanation:"高度処理（三次処理）は標準二次処理では除去しきれない全窒素・全リン・残留BOD・SS・色度・臭気・微量有害物質等を除去して再利用・放流水質向上を図る処理。"},
+{id:107,category:"汚水処理特論",question:"「排水処理の流量計測」に用いられる「三角堰・四角堰」の原理として正しいものはどれか。",choices:["電磁誘導で流量を測定するという規定","容積法で測定するに関する事項","超音波で流速を測定するという規定","越流水位（堰上の水位）を測定して流量計算式（Q=Cw・H^n）により流量を算出する"],answer:3,explanation:"堰式流量計（三角堰・四角堰・全幅堰等）は越流する水の水位Hを測定し、流量公式（三角堰：Q∝H^2.5、四角堰：Q∝H^1.5）で流量Qを算出する比較的簡便な方法。"},
+{id:108,category:"汚水処理特論",question:"「排水処理の曝気方式」として「表面曝気機（サーフェスエアレーター）」の特徴として正しいものはどれか。",choices:["槽底部に散気管を設置するという規定","水面に設置した回転体で水をはね上げて大気と接触させ酸素を溶解させる","膜を通して酸素を供給するという規定","圧縮空気を深層部に注入する（誤り）"],answer:1,explanation:"表面曝気機（水面曝気機）は水面付近に設置した回転翼で水を激しく攪拌・飛散させ大気と接触させて溶酸素を供給する方式。構造が簡単だが水深が深い槽には不向き。"},
+{id:109,category:"汚水処理特論",question:"「排水中のアンモニア性窒素（NH₄⁺-N）」の処理方法として正しいものはどれか。",choices:["凝集沈殿のみで効率よく除去できる（誤り）","生物学的硝化・脱窒法、アンモニアストリッピング法、イオン交換（ゼオライト）法等が用いられる","重力沈殿で除去できるという規定","活性炭吸着が最も有効という規定"],answer:1,explanation:"アンモニア性窒素の処理は①生物的硝化・脱窒（最も普及）②高pH（10〜11）でのエアストリッピング③ゼオライトによるイオン交換④折点塩素処理等が実用化されている。"},
+{id:110,category:"汚水処理特論",question:"「排水処理の効率」を表す「BOD除去率」の計算式として正しいものはどれか。",choices:["（流入水BOD－処理水BOD）÷流入水BOD×100（%）","（処理水BOD÷流入水BOD）×100（%）","流入水BOD÷処理水BOD×100（%）","処理水BOD×流入水BOD×100（%）"],answer:0,explanation:"BOD除去率（%）＝（流入BOD－処理水BOD）÷流入BOD×100。例：流入200mg/L・処理水10mg/L→（200-10）/200×100＝95%。"},
+{id:111,category:"水質有害物質特論",question:"「カドミウム（Cd）」の排水基準として正しいものはどれか。",choices:["0.003mg/L以下","0.1mg/L以下","0.03mg/L以下","1mg/L以下"],answer:2,explanation:"カドミウム及びその化合物の排水基準は0.03mg/L以下（令和4年改正前は0.1mg/L）。イタイイタイ病の原因物質として厳しく規制される。"},
+{id:112,category:"水質有害物質特論",question:"「水銀（全水銀）」の排水基準として正しいものはどれか。",choices:["0.005mg/L以下","0.05mg/L以下","0.1mg/L以下","0.001mg/L以下"],answer:0,explanation:"全水銀の排水基準は0.005mg/L以下。アルキル水銀は検出されないこと（不検出）が基準。水俣病の原因物質として最も厳しいレベルで規制される。"},
+{id:113,category:"水質有害物質特論",question:"「鉛（Pb）」の排水基準として正しいものはどれか。",choices:["0.01mg/L以下","1mg/L以下","0.1mg/L以下","0.001mg/L以下"],answer:2,explanation:"鉛及びその化合物の排水基準は0.1mg/L以下。鉛は神経毒性・腎毒性があり、特に小児への影響が大きい有害重金属。"},
+{id:114,category:"水質有害物質特論",question:"「六価クロム（Cr⁶⁺）」の排水基準として正しいものはどれか。",choices:["0.5mg/L以下","0.05mg/L以下","5mg/L以下","0.005mg/L以下"],answer:0,explanation:"六価クロム化合物の排水基準は0.5mg/L以下。六価クロムは発がん性（肺がん・鼻腔がん）があり、三価クロムより毒性が強い。"},
+{id:115,category:"水質有害物質特論",question:"「砒素（As）」の排水基準として正しいものはどれか。",choices:["0.001mg/L以下","1mg/L以下","0.1mg/L以下","0.01mg/L以下"],answer:3,explanation:"砒素及びその化合物の排水基準は0.1mg/L以下。慢性砒素中毒（皮膚障害・肺がん・膀胱がん等）の原因となる有害物質。"},
+{id:116,category:"水質有害物質特論",question:"「全シアン（CN）」の排水基準として正しいものはどれか。",choices:["検出されないこと（不検出）","1mg/L以下","0.1mg/L以下","10mg/L以下"],answer:1,explanation:"全シアンの排水基準は1mg/L以下。ただしめっき関連施設等の特定施設では適用施設種類によりさらに厳しい基準が設定されている場合がある。"},
+{id:117,category:"水質有害物質特論",question:"「有機リン（パラチオン・メチルパラチオン等）」の排水基準として正しいものはどれか。",choices:["検出されないこと","1mg/L以下","0.1mg/L以下","0.01mg/L以下"],answer:0,explanation:"有機リン化合物（パラチオン・メチルパラチオン・メチルジメトン・EPN）の排水基準は検出されないこと（不検出）。強い神経毒性を持つ農薬成分。"},
+{id:118,category:"水質有害物質特論",question:"「トリクロロエチレン」の排水基準として正しいものはどれか。",choices:["0.01mg/L以下","0.1mg/L以下","1mg/L以下","0.3mg/L以下"],answer:3,explanation:"トリクロロエチレンの排水基準は0.3mg/L以下。金属洗浄等に使用された揮発性有機塩素化合物で発がん性があり、地下水汚染の原因物質として問題となった。"},
+{id:119,category:"水質有害物質特論",question:"「テトラクロロエチレン（PCE）」の排水基準として正しいものはどれか。",choices:["0.1mg/L以下","0.3mg/L以下","1mg/L以下","0.01mg/L以下"],answer:3,explanation:"テトラクロロエチレンの排水基準は0.1mg/L以下。ドライクリーニング・金属洗浄に使用される揮発性有機塩素化合物で発がん性・地下水汚染が問題。"},
+{id:120,category:"水質有害物質特論",question:"「ベンゼン」の排水基準として正しいものはどれか。",choices:["0.1mg/L以下","1mg/L以下","0.01mg/L以下","0.001mg/L以下"],answer:2,explanation:"ベンゼンの排水基準は0.1mg/L以下。IARCグループ1の確定的発がん物質（白血病）であり、石油・化学工業排水等に含まれる。"},
+{id:121,category:"水質有害物質特論",question:"「水銀の測定方法」として「還元気化原子吸光法」の原理として正しいものはどれか。",choices:["水銀をpH調整で沈殿させ重量測定する（誤り）","水銀を電気化学的に酸化して電流で測定する（誤り）","水銀をICP発光で測定する（誤り）","試料中の水銀をSn²⁺等で金属水銀（Hg⁰）蒸気に還元気化し"],answer:3,explanation:"還元気化原子吸光法（冷原子吸光法）は水銀イオンを塩化スズ（SnCl₂）等で還元してHg⁰蒸気を生成し、253.7nmの共鳴線の吸光度で高感度定量する水銀専用の測定法。"},
+{id:122,category:"水質有害物質特論",question:"「カドミウムの測定方法」として代表的なものはどれか。",choices:["フレーム原子吸光法またはICP発光分析法（ICP-AES）","還元気化原子吸光法という規定","溶液導電率法に関する事項","比色法（ジチゾン法）という規定"],answer:0,explanation:"Cdの定量にはフレーム原子吸光法・フレームレス（電気加熱）原子吸光法・ICP-AES・ICP-MSが用いられる。ジチゾン比色法は古典的方法で現在は原子吸光・ICP法が主流。"},
+{id:123,category:"水質有害物質特論",question:"「六価クロムの測定方法」として正しいものはどれか。",choices:["原子吸光法で総クロムとして測定（誤り）","ジフェニルカルバジド吸光光度法でCr⁶⁺を選択的に発色・定量する","滴定法の影響","重量法の影響"],answer:1,explanation:"六価クロムはジフェニルカルバジド（DPC）と酸性条件で反応して赤紫色錯体を形成する発色反応を利用した吸光光度法で選択的に定量（540nm付近）。"},
+{id:124,category:"水質有害物質特論",question:"「全シアンの測定方法」として正しいものはどれか。",choices:["ICP発光分析法に関する事項","蒸留後に硝酸銀滴定またはピリジン-ピラゾロン吸光光度法で定量する","重クロム酸カリウム法という規定","原子吸光法の影響"],answer:1,explanation:"全シアン測定は試料を蒸留してHCNを分離・捕集後、①硝酸銀滴定法②ピリジン-ピラゾロン比色法③イソニコチン酸-ピラゾロン法等で定量（JIS K 0102）。"},
+{id:125,category:"水質有害物質特論",question:"「有機塩素化合物（VOC）」の排水中濃度測定に用いられる代表的な方法として正しいものはどれか。",choices:["パージ・トラップ-GC/MS法またはヘッドスペース-GC法","比色法による測定方法という規定","重量法による測定方法という規定","滴定法による測定方法という規定"],answer:0,explanation:"トリクロロエチレン・テトラクロロエチレン等の揮発性有機塩素化合物はパージ・トラップ（P&T）またはヘッドスペース法でGCカラムに導入しMS（質量分析）または電子捕獲検出器（ECD）で定量。"},
+{id:126,category:"水質有害物質特論",question:"「砒素の毒性」に関する記述として正しいものはどれか。",choices:["慢性暴露により皮膚がん・肺がん・膀胱がん・皮膚角化症・末梢神経障害等が生じる","急性毒性のみが問題で慢性影響はない（誤り）","砒素は人体に必須元素で毒性はない（誤り）","砒素は水に溶けないため排水汚染は起こらない（この説明は誤り）"],answer:0,explanation:"砒素はIARCグループ1の確定的発がん物質。慢性摂取で皮膚がん・肺がん・膀胱がん・肝臓がん・皮膚角化症（黒皮症）・末梢神経障害等を引き起こす。"},
+{id:127,category:"水質有害物質特論",question:"「鉛の人体への影響」として正しいものはどれか。",choices:["神経系（特に小児の知能発達障害）・腎臓・造血系（貧血）に影響を与える","肺への影響のみに関する事項","皮膚障害のみに関する事項","急性毒性のみで慢性影響はない（誤り）"],answer:0,explanation:"鉛は神経毒性（小児の知能・発達障害・成人の末梢神経障害）・腎毒性・造血障害（ヘモグロビン合成阻害による貧血）・骨代謝障害等多様な健康影響を持つ。"},
+{id:128,category:"水質有害物質特論",question:"「PCB（ポリ塩化ビフェニル）」が問題となる主な理由として正しいものはどれか。",choices:["強い臭気があるためという規定","水に非常に溶けやすいためという規定","急性毒性が非常に強いためという規定","難分解性・脂溶性が高く生物濃縮して食物連鎖で高次消費者に蓄積し、慢性毒性・発がん性が問題"],answer:3,explanation:"PCBは難分解性（環境残留性）・高脂溶性で生物濃縮係数が大きく、食物連鎖を通じて魚・鳥類・人体に高濃度蓄積する。カネミ油症事件の原因物質。内分泌かく乱物質でもある。"},
+{id:129,category:"水質有害物質特論",question:"「ダイオキシン類の水質環境基準」として正しいものはどれか。",choices:["1pg-TEQ/L以下","10pg-TEQ/L以下","0.1pg-TEQ/L以下","100pg-TEQ/L以下"],answer:0,explanation:"ダイオキシン類の水質環境基準は1pg-TEQ/L以下（公共用水域・地下水）と定められている（ダイオキシン類対策特別措置法）。"},
+{id:130,category:"水質有害物質特論",question:"「農薬（アルジカルブ・シマジン等）」が水質汚染問題となる主な経路として正しいものはどれか。",choices:["農地への散布後、雨水による河川・地下水への流出・溶脱","工場排水のみに関する事項","大気沈降のみに関する事項","下水道からのみに関する事項"],answer:0,explanation:"農薬は農地への施用後、降雨時の表面流出・土壌浸透による地下水汚染・灌漑用水経由での河川汚染が主な水質汚染経路。農薬の水質環境基準・要監視項目が設定されている。"},
+{id:131,category:"水質有害物質特論",question:"「内分泌かく乱化学物質（環境ホルモン）」に関する記述として正しいものはどれか。",choices:["すべて急性毒性が強いという規定","日本では規制されていないという規定","水に不溶なため水質汚染は起こらない（誤り）","生体のホルモン系を攪乱して生殖・発達・免疫等に影響を与える化学物質"],answer:3,explanation:"内分泌かく乱物質（EDC）はダイオキシン・PCB・ビスフェノールA・フタル酸エステル等を含む。ホルモン受容体に結合または干渉して内分泌系を攪乱し、低濃度でも生殖・発達への影響が懸念される。"},
+{id:132,category:"水質有害物質特論",question:"「ふっ素（F⁻）」の排水基準として正しいものはどれか。",choices:["8mg/L以下","1mg/L以下","0.8mg/L以下","80mg/L以下"],answer:0,explanation:"ふっ素の排水基準は8mg/L以下。海域では15mg/L以下。半導体・アルミニウム製造・リン肥料工場等から排出され、骨フッ素症・歯フッ素症の原因となる。"},
+{id:133,category:"水質有害物質特論",question:"「ほう素（B）」の排水基準として正しいものはどれか。",choices:["10mg/L以下","0.1mg/L以下","1mg/L以下","100mg/L以下"],answer:0,explanation:"ほう素の排水基準は10mg/L以下（海域は230mg/L以下）。ガラス・セラミックス製造・めっき・温泉排水等に含まれ、植物の生育阻害・農業用水汚染が問題。"},
+{id:134,category:"水質有害物質特論",question:"「1,4-ジオキサン」が水質汚染問題として近年注目されている理由として正しいものはどれか。",choices:["強い臭気があるためという規定","水に溶けないために関する事項","急性毒性が非常に強いためという規定","トリクロロエチレン等の塩素系溶剤の安定剤として使用され"],answer:3,explanation:"1,4-ジオキサンは塩素系溶剤（1,1,1-トリクロロエタン等）の安定剤として使用された。水に極めてよく溶け難分解性で、地下水・土壌汚染として問題化。動物実験で発がん性が確認され排水基準（0.5mg/L）・環境基準（0.05mg/L）が設定。"},
+{id:135,category:"水質有害物質特論",question:"「硝酸性窒素及び亜硝酸性窒素」の水質環境基準として正しいものはどれか。",choices:["10mg/L以下","1mg/L以下","0.1mg/L以下","100mg/L以下"],answer:0,explanation:"硝酸性窒素及び亜硝酸性窒素の水質環境基準（地下水・水道水源）は10mg/L以下。乳児のメトヘモグロビン血症予防が主な理由。肥料・畜産排水・生活排水が汚染源。"},
+{id:136,category:"水質有害物質特論",question:"「重金属の生物濃縮」に関する記述として正しいものはどれか。",choices:["重金属は生物濃縮しないという規定","すべての重金属が同程度に生物濃縮する（誤り）","メチル水銀・有機スズ等の有機金属化合物は特に生物濃縮しやすく","生物濃縮は淡水域では起こらない（誤り）"],answer:2,explanation:"メチル水銀・有機スズ・有機鉛等の有機金属は脂溶性が高く生物濃縮係数が大きい。メチル水銀の生物濃縮係数は10⁴〜10⁶にもなり、水俣病の原因となった。"},
+{id:137,category:"水質有害物質特論",question:"「全水銀」の測定において「前処理」として行う操作として正しいものはどれか。",choices:["試料をそのまま測定するという規定","酸（硝酸・硫酸等）と酸化剤（過マンガン酸カリウム・過硫酸カリウム等）で加熱分解し有機","試料をアルカリ分解するという規定","試料を蒸留するに関する事項"],answer:1,explanation:"全水銀測定の前処理では試料を酸（HNO₃・H₂SO₄）と酸化剤（KMnO₄・K₂S₂O₈）で加熱分解して有機水銀を含む全水銀をHg²⁺に無機化してから還元気化原子吸光法で測定する。"},
+{id:138,category:"水質有害物質特論",question:"「PFOS・PFOA（有機フッ素化合物）」が水質問題として注目される理由として正しいものはどれか。",choices:["強い臭気を持つためという規定","難分解性・蓄積性・遠距離移動性を持つ残留性有機汚染物質","急性毒性が非常に高いためという規定","水に溶けないために関する事項"],answer:1,explanation:"PFOS（ペルフルオロオクタンスルホン酸）・PFOA（ペルフルオロオクタン酸）は難分解性・生体蓄積性・長距離移動性を持つPOPs。半導体・消火剤等に使用され、発がん性・甲状腺障害等の健康影響が懸念される。日本でも水質目標値が設定された。"},
+{id:139,category:"水質有害物質特論",question:"「セレン（Se）」の排水基準として正しいものはどれか。",choices:["0.01mg/L以下","10mg/L以下","1mg/L以下","0.1mg/L以下"],answer:3,explanation:"セレン及びその化合物の排水基準は0.1mg/L以下。セレンは必須微量元素だが過剰摂取で脱毛・爪変形・神経症状等のセレン中毒を引き起こす。石炭燃焼・金属精錬から排出される。"},
+{id:140,category:"水質有害物質特論",question:"「排水試料の採取方法」として「複合試料（コンポジットサンプル）」を用いる理由として正しいものはどれか。",choices:["瞬間的な水質を正確に把握するため（誤り）","法令で瞬間試料が禁止されているため（誤り）","採取が簡便なために関する事項","時間的変動が大きい排水の平均的な水質を把握するため一定時間ごとに採取した試料を混合する"],answer:3,explanation:"複合試料は一定時間間隔（例：1時間ごと）に採取した試料を混合したもの。時間変動の大きい排水（バッチ工程・日変動大）の平均水質を把握でき、排水基準の遵守確認に適している。"},
+{id:141,category:"水質有害物質特論",question:"「排水中の重金属の共存イオン」が測定に与える影響として正しいものはどれか。",choices:["原子吸光法・ICP法において塩化物・硫酸塩・リン酸塩・有機物等の共存物質が測定値に干渉","共存イオンは測定に影響しない（誤り）","共存イオンが多いほど測定精度が向上する（誤り）","妨害は塩素イオンのみという規定"],answer:0,explanation:"重金属の測定において共存物質（Cl⁻・PO₄³⁻・有機物・他の金属）は原子吸光の化学干渉・イオン化干渉・スペクトル干渉の原因となる。マスキング剤添加・標準添加法・希釈等で対処する。"},
+{id:142,category:"水質有害物質特論",question:"「亜鉛（Zn）」の排水基準として正しいものはどれか。",choices:["0.1mg/L以下","1mg/L以下","2mg/L以下","5mg/L以下"],answer:2,explanation:"亜鉛の排水基準は2mg/L以下。亜鉛は必須微量元素だが高濃度では水生生物（魚類・藻類）への毒性が強く、特に軟水域での毒性が高い。めっき・金属加工排水が主な発生源。"},
+{id:143,category:"水質有害物質特論",question:"「銅（Cu）」の排水基準として正しいものはどれか。",choices:["0.1mg/L以下","3mg/L以下","1mg/L以下","10mg/L以下"],answer:2,explanation:"銅の排水基準は3mg/L以下。銅は水生生物（特に藻類・魚類）への毒性が高く、プリント基板製造・めっき・金属加工工場等から排出される。"},
+{id:144,category:"水質有害物質特論",question:"「ニッケル（Ni）」の排水基準として正しいものはどれか。",choices:["0.1mg/L以下","10mg/L以下","2mg/L以下","1mg/L以下"],answer:3,explanation:"ニッケル及びその化合物の排水基準は1mg/L以下（特定施設による）。ニッケル化合物は発がん性（肺がん）があり、めっき・蓄電池製造等から排出される。"},
+{id:145,category:"水質有害物質特論",question:"「排水中のBOD・COD測定における妨害物質」として正しいものはどれか。",choices:["妨害物質は存在しないという見解（誤り）","BODは塩素・重金属が微生物を阻害。COD（KMnO₄法）は塩化物イオンが正誤差を生じる","妨害は温度のみという見解という規定","妨害はpHのみという見解という規定"],answer:1,explanation:"BOD測定：残留塩素・重金属（Cu・Zn等）・極端なpH・高塩分が微生物活性を阻害。COD（KMnO₄法）：高濃度Cl⁻がKMnO₄で酸化されてCOD値に正の誤差（見かけ上高値）を生じる。Ag₂SO₄添加でCl⁻干渉を防ぐ。"},
+{id:146,category:"水質有害物質特論",question:"「総水銀」測定における「前処理操作」として正しいものはどれか。",choices:["試料をpH7に調整するのみ（誤り）","試料をろ過するのみという規定","試料を希釈するのみという規定","試料に硝酸・硫酸・過マンガン酸カリウムを加えて加熱分解し"],answer:3,explanation:"全水銀（有機水銀＋無機水銀）の前処理は酸化分解法。KMnO₄存在下でHNO₃・H₂SO₄加熱により有機水銀を含む全水銀をHg²⁺として溶液に保持した後、SnCl₂還元・気化吸光法で定量する。"},
+{id:147,category:"水質有害物質特論",question:"「排水処理における重金属除去」の確認として排水を採取する際の注意点として正しいものはどれか。",choices:["プラスチック容器より金属容器が適している（誤り）","採取後すぐに分析しなければ保存できない（誤り）","容器の種類は問わないという規定","重金属分析用試料はポリエチレン・ポリプロピレン等の酸洗いした容器に採取し"],answer:3,explanation:"重金属分析用試料はガラス・金属容器への吸着を避けるためポリエチレン等プラスチック容器を使用。採取後HNO₃でpH2以下に酸性化することで容器壁への吸着・水酸化物沈殿を防いで保存する。"},
+{id:148,category:"水質有害物質特論",question:"「クロロホルム（CHCl₃）」が排水・水道水の問題となる主な理由として正しいものはどれか。",choices:["強い臭気があるためという規定","急性毒性が非常に高いためという規定","塩素消毒副生成物（トリハロメタンの一種）として生成し、発がん性があるため","BODを著しく増加させるため（誤り）"],answer:2,explanation:"クロロホルムはトリハロメタン（THM）の主成分で、塩素消毒時にフミン質等の有機物と反応して生成する消毒副生成物。IARCグループ2Bの発がん可能性物質。水道水・排水の管理項目。"},
+{id:149,category:"水質有害物質特論",question:"「排水中のフェノール類」の測定方法として正しいものはどれか。",choices:["原子吸光法による測定という規定","重量法による測定方法という規定","4-アミノアンチピリン吸光光度法（フェノール→赤色キノン発色）またはGC法","滴定法による測定方法という規定"],answer:2,explanation:"フェノール類の公定法は4-アミノアンチピリン（4-AAP）比色法。フェノール類が4-AAPとフェリシアン化カリウムの存在下でアルカリ性においてキノン系赤色色素を形成し吸光度（510nm）で定量。"},
+{id:150,category:"水質有害物質特論",question:"「排水試料の保存」において「BOD測定用試料」の保存方法として正しいものはどれか。",choices:["常温保存で1週間以内に測定（誤り）","4℃以下に冷却して可能な限り速やかに（原則24時間以内に）測定する","酸性化して保存するという規定","凍結保存するに関する事項"],answer:1,explanation:"BOD試料は微生物による分解が進むため4℃以下（冷蔵）で保存し、採取後できるだけ速やかに（24〜48時間以内）分析する。長期保存は不可。"},
+{id:151,category:"水質有害物質特論",question:"「亜硝酸性窒素（NO₂⁻-N）」が問題となる条件として正しいものはどれか。",choices:["好気性条件では蓄積しないという規定","硝化が不完全な場合や脱窒の中間産物として蓄積し、乳児のメトヘモグロビン血症","強アルカリ条件でのみ問題となる（誤り）","亜硝酸は毒性がないという規定"],answer:1,explanation:"亜硝酸性窒素は硝酸性窒素と合算で水質環境基準（10mg/L）の対象。亜硝酸自体もメトヘモグロビン血症の原因となり、アミン類と反応して発がん性のN-ニトロソアミンを生成する。"},
+{id:152,category:"水質有害物質特論",question:"「排水基準の測定において」排水が排水基準に適合しているかの判定基準として正しいものはどれか。",choices:["排水基準は排水口における測定値（瞬間試料または複合試料）が基準値以下であることが必要","1回の測定値が基準値以下であれば常に適合（誤り）","年平均値が基準値以下であればよい（誤り）","月平均値のみで判定するという規定"],answer:0,explanation:"水質汚濁防止法の排水基準は排出口（排水口）における排水の濃度基準。原則として採取した試料（瞬間または複合）が基準値以下であることが要件。日平均値規制が設定されている項目もある。"},
+{id:153,category:"水質有害物質特論",question:"「総クロム」と「六価クロム」の測定の違いとして正しいものはどれか。",choices:["六価クロムはジフェニルカルバジド法で選択的定量。総クロムは酸化分解してICP・原子吸光で定量","総クロムと六価クロムは同じ方法で測定できる（誤り）","三価クロムのみ測定すれば六価クロムが算出できる（誤り）","クロムは一種類の方法のみで測定できる（誤り）"],answer:0,explanation:"六価クロムはDPC比色法（選択的）で直接定量。総クロムは硝酸・硫酸分解後にICP-AES・AASで定量。三価クロムは差分（総Cr-Cr⁶⁺）で算出する。形態別分析が重要。"},
+{id:154,category:"水質有害物質特論",question:"「排水中の油分（鉱油類）」の測定方法として正しいものはどれか。",choices:["原子吸光法の影響","CODとして間接的に測定という規定","ノルマルヘキサン抽出後、蒸発残留物を重量測定する方法（JIS K 0102 24節）","GC-MSのみに関する事項"],answer:2,explanation:"ノルマルヘキサン抽出物質（油分）は試料をpH4以下に酸性化後ヘキサンで抽出し、ヘキサンを蒸発させた残留物を重量（mg/L）で定量する（JIS K 0102 24節）。鉱油類と動植物油脂類を含む。"},
+{id:155,category:"水質有害物質特論",question:"「硫化物（S²⁻）」が排水中に存在する場合の問題として正しいものはどれか。",choices:["硫化水素（H₂S）として揮発して毒性・悪臭を発し金属配管を腐食させる","硫化物は無害という見解という規定","硫化物はBODを下げるという見解（誤り）","硫化物は水に溶けないという見解（誤り）"],answer:0,explanation:"硫化物は酸性条件でH₂Sガス（腐卵臭・猛毒：LC₅₀約600ppm/1h）を発生させ、金属腐食・嫌気性悪臭の原因となる。排水基準（硫化水素として）や下水道排除基準に規定されている。"},
+{id:156,category:"水質有害物質特論",question:"「排水中のアンモニア態窒素」の測定方法として正しいものはどれか。",choices:["原子吸光法による測定という規定","重量法による測定方法という規定","インドフェノール青吸光光度法またはイオン電極法（蒸留後）","比濁法による測定方法という規定"],answer:2,explanation:"アンモニア態窒素の測定はインドフェノール青法（NH₃＋フェノール＋次亜塩素酸→インドフェノール青発色、630nm吸光）またはイオン選択電極法・蒸留後中和滴定法（JIS K 0102 42節）。"},
+{id:157,category:"水質有害物質特論",question:"「クロム酸塩めっき工場」からの排水に含まれる主な有害物質として正しいものはどれか。",choices:["水銀・カドミウム","六価クロム・トリクロロエチレン","砒素・鉛","フッ素・アンモニア"],answer:0,explanation:"クロムめっき工場排水の主要有害物質は六価クロム（クロム酸塩・重クロム酸塩を使用）。トリクロロエチレンは金属洗浄脱脂に使用されるため混在する場合もある。pH・シアン・重金属も問題となる。"},
+{id:158,category:"水質有害物質特論",question:"「排水基準における『検出されないこと』」の意味として正しいものはどれか。",choices:["測定方法の検出限界以下であること（測定方法で定められた検出下限値以下）","目視で確認できないことという規定","濃度がゼロであることという規定","測定しなくてよいことという規定"],answer:0,explanation:"排水基準の「検出されないこと」は、省令で定める測定方法の検出限界（定量下限）以下であることを意味する。完全なゼロではなく、測定方法の感度で検出できないレベル以下。"},
+{id:159,category:"水質有害物質特論",question:"「排水の採取場所」として水質汚濁防止法上正しいものはどれか。",choices:["工場内の任意の場所という規定","公共用水域への排出口（排水口）または排出口に最も近い箇所","工場の敷地境界に関する事項","河川の合流点に関する事項"],answer:1,explanation:"水質汚濁防止法の排水基準の適用は公共用水域への排出口における排水。測定・採取は排出口またはそれに最も近い箇所で行うことが原則（施行規則第6条の2）。"},
+{id:160,category:"水質有害物質特論",question:"「排水中のリン（全リン）」の測定方法として正しいものはどれか。",choices:["ペルオキソ二硫酸カリウム分解後にモリブデン青吸光光度法で定量","原子吸光法による測定という規定","重量法による測定方法という規定","比濁法による測定方法という規定"],answer:0,explanation:"全リンの測定はJIS K 0102 46節。K₂S₂O₈（ペルオキソ二硫酸K）等で酸化分解してオルトリン酸（PO₄³⁻）に変換後、モリブデン酸アンモニウム・塩化スズによるモリブデン青（ヘテロポリ酸）発色法（880nm）で定量。"},
+{id:161,category:"大規模水質特論",question:"「大規模事業場」における排水管理の特徴として正しいものはどれか。",choices:["小規模事業場と同じ管理で十分（誤り）","排水量・汚濁負荷量が大きいため、排水量計測・水質連続監視","大規模事業場は排水基準が緩和される（誤り）","大規模事業場の排水管理は国が直接行う（誤り）"],answer:1,explanation:"大規模事業場は排水量・汚濁負荷が大きく公共用水域への影響が甚大なため、連続水質計測・流量管理・処理設備のバックアップ・緊急時対応等より高度な管理体制が必要。"},
+{id:162,category:"大規模水質特論",question:"「製紙・パルプ工場」の排水の特徴として正しいものはどれか。",choices:["重金属が主な汚染物質という規定","窒素・リンのみが問題という規定","フッ素・砒素が主な汚染物質（誤り）","高濃度の有機物（リグニン・繊維素等）・SS・色度が主な問題であり、BOD"],answer:3,explanation:"製紙・パルプ工場排水はリグニン・ヘミセルロース・繊維質等の有機物によるBOD・COD・SS・色度が高いことが特徴。活性汚泥法・凝集沈殿・活性炭処理等が用いられる。"},
+{id:163,category:"大規模水質特論",question:"「食品工場（食肉・乳製品等）」の排水の特徴として正しいものはどれか。",choices:["重金属汚染が主な問題という規定","タンパク質・脂質・糖質由来の高濃度有機物（高BOD・SS・油分・窒素・リン）が特徴","揮発性有機塩素化合物が主な汚染物質（誤り）","pHが常に強酸性に関する事項"],answer:1,explanation:"食品工場排水は動植物性有機物（タンパク・脂質・糖）由来の高BOD（数千〜数万mg/L）・高SS・高油分・高窒素・高リンが特徴。活性汚泥法・嫌気性処理・凝集沈殿等を組み合わせる。"},
+{id:164,category:"大規模水質特論",question:"「鉄鋼・金属工場」の排水の特徴として正しいものはどれか。",choices:["高BODのみが問題という規定","有機物のみが問題に関する事項","窒素・リンのみが問題という規定","重金属（鉄・亜鉛・鉛・クロム等）・SS・酸アルカリ"],answer:3,explanation:"鉄鋼・金属加工工場は製造工程（酸洗・めっき・冷却・圧延等）により重金属・シアン・六価クロム・フェノール・SS・酸アルカリ等多様な汚染物質を含む複合排水が発生する。"},
+{id:165,category:"大規模水質特論",question:"「化学工場」の排水管理における特徴として正しいものはどれか。",choices:["化学工場排水はBODのみを管理すればよい（誤り）","化学工場排水は自然浄化に任せてよい（誤り）","製造する化学物質に応じて多様な有害物質（有機溶剤・重金属","すべての化学工場で同一の処理方法が使用される（誤り）"],answer:2,explanation:"化学工場は製品・製造工程により排水組成が多様（有機溶剤・農薬・染料・重金属・酸アルカリ等）。物質ごとの特性に応じた処理（酸化・還元・吸着・生物処理等の組み合わせ）と厳格な管理体制が必要。"},
+{id:166,category:"大規模水質特論",question:"「電力・発電所（火力・原子力）」からの温排水が水環境に与える影響として正しいものはどれか。",choices:["冷却水として大量の海水・河川水を取水し温めて放水する温排水により水温が上昇し、溶存酸素低下","温排水は水質汚濁と無関係という規定","温排水はDOを増加させるという規定","温排水に有害物質は含まれない（誤り）"],answer:0,explanation:"発電所の温排水は取水した海水・河川水を冷却後数℃高温で放流する。水温上昇によりDO低下・魚類生態系変化・珊瑚漂白等の影響が生じる。温排水の水温上昇は一般的に7℃以内に規制。"},
+{id:167,category:"大規模水質特論",question:"「半導体・電子部品製造工場」の排水の特徴として正しいものはどれか。",choices:["有機物（BOD）のみが問題（誤り）","窒素・リンのみが問題という規定","フッ素・砒素・銅・鉛等の重金属・有機溶剤・強酸アルカリ","排水はほぼ純水のため処理不要（誤り）"],answer:2,explanation:"半導体製造では①フッ化水素酸（HF）によるフッ素②砒化ガリウム等による砒素・ガリウム③有機溶剤④強酸・強アルカリ⑤銅・鉛等のエッチング排水が発生。高度な個別処理と管理が必要。"},
+{id:168,category:"大規模水質特論",question:"「大規模な排水処理設備」における「緊急時対応設備」として重要なものはどれか。",choices:["緊急保有タンク（緊急遮断弁・調整池）・予備処理設備・警報システム・非常用電源等の設置が重要","緊急時対応設備は不要という規定","緊急時は排水を停止するだけでよい（誤り）","緊急時は都道府県知事の指示を待つだけでよい（誤り）"],answer:0,explanation:"大規模排水処理では処理設備の故障・事故に備え、①緊急遮断弁・緊急貯留槽②予備処理設備③異常検知・警報システム④非常用電源⑤緊急時対応マニュアルの整備が必要。"},
+{id:169,category:"大規模水質特論",question:"「排水処理設備の維持管理計画」において定期点検が特に重要な理由として正しいものはどれか。",choices:["法律で義務付けられているだけのため（誤り）","年1回の点検で十分なためという規定","コスト削減のみが目的という規定","処理設備の異常を早期発見して排水基準違反を防止し、設備の長寿命化・安定処理を確保するため"],answer:3,explanation:"定期点検・予防保全により①排水基準超過リスクの事前排除②機器故障の早期発見③設備寿命延長④処理安定性確保が実現できる。点検記録の保存も法令上重要。"},
+{id:170,category:"大規模水質特論",question:"「事業場排水の自主測定」の意義として正しいものはどれか。",choices:["行政の立入検査を回避するため（誤り）","測定結果の外部公表は不要という規定","排水基準の遵守確認・処理状況の把握・異常の早期発見・改善措置の基礎データとするため","自主測定は法令上義務でない（誤り）"],answer:2,explanation:"自主測定は水質汚濁防止法第14条の2に基づく義務（特定事業場）。排水基準遵守の確認・処理設備の管理状態把握・異常検知・改善措置の根拠データとして機能する。記録は3年間保存義務。"},
+{id:171,category:"大規模水質特論",question:"「総量規制に基づく汚濁負荷量の算定方法」として正しいものはどれか。",choices:["流入水質のみで算定するという規定","排水濃度（mg/L）×排水量（m³/day）÷1000で日間汚濁負荷量","汚濁負荷量は排水量のみで決まる（誤り）","排水量は測定せず推定値を使用してよい（誤り）"],answer:1,explanation:"汚濁負荷量（kg/day）＝排水濃度（mg/L）×排水量（m³/day）÷1000。総量規制では対象事業場が汚濁負荷量を日単位で算定し、都道府県知事が設定した総量基準値以下に管理する義務がある。"},
+{id:172,category:"大規模水質特論",question:"「排水処理における薬品管理」の注意点として正しいものはどれか。",choices:["薬品の種類・量は記録不要という規定","薬品コストは管理対象外という規定","薬品は混合保管してよいという規定","酸・アルカリ・塩素等の危険薬品は法令（消防法・毒劇法等）に従い適切に保管"],answer:3,explanation:"排水処理薬品（硫酸・苛性ソーダ・塩素・PAC等）は消防法・毒物劇物取締法等に基づく保管・管理義務がある。使用量記録・在庫管理・漏洩対策・作業者安全教育が必要。"},
+{id:173,category:"大規模水質特論",question:"「大規模工場における排水処理の省エネルギー対策」として正しいものはどれか。",choices:["省エネは水質管理より優先される（誤り）","曝気設備の送風量最適化（DO制御）・ポンプの可変速制御","省エネ対策は排水水質に影響しない（誤り）","電力消費量は処理に関係しない（誤り）"],answer:1,explanation:"排水処理の主要エネルギー消費は曝気（ブロワー）・ポンプ・脱水機等。DO制御による曝気量最適化・インバーター制御・嫌気処理でのバイオガス（CH₄）発電回収が省エネ・CO₂削減に有効。"},
+{id:174,category:"大規模水質特論",question:"「排水処理の水質異常時の対応手順」として正しいものはどれか。",choices:["異常を発見しても次回の定期点検まで待つ（誤り）","都道府県知事の指示を受けてから対応する（誤り）","異常は自然に回復するため対応不要（誤り）","異常発見→直ちに原因調査・応急措置→処理水の排出停止または緊急処理→管理者"],answer:3,explanation:"水質異常時は①即時発見・報告②緊急遮断・貯留③原因特定④応急処置⑤行政への届出（必要時）⑥再発防止策の順で対応。事前に緊急対応マニュアルを整備しておくことが重要。"},
+{id:175,category:"大規模水質特論",question:"「COD連続自動測定装置」の活用目的として正しいものはどれか。",choices:["CODの正確な法定測定値として使用する（誤り）","省エネのためのみに使用という規定","処理状況のリアルタイム監視・異常検知・放流管理のためのオンラインモニタリングに活用する","年1回の法定測定に使用という規定"],answer:2,explanation:"COD・BOD・TOC連続計は処理水質の常時監視・異常早期検知・排水放流管理に有効。ただし法定排水基準の確認には公定法（JIS）による測定が必要で、連続計は管理ツールとして使用。"},
+{id:176,category:"大規模水質特論",question:"「排水処理設備の老朽化対策」として正しいものはどれか。",choices:["老朽化設備は排水水質に影響しない（誤り）","設備は永久に使用できるという規定","設備の定期点検・腐食診断・計画的更新（更新計画策定）","老朽化は処理コストには影響しない（誤り）"],answer:2,explanation:"排水処理設備（反応槽・配管・ポンプ・計装機器等）は腐食・摩耗・性能劣化する。定期診断・腐食検査・計画的更新計画（LCC評価含む）による予防保全で突発故障・処理不良を防ぐ。"},
+{id:177,category:"大規模水質特論",question:"「排水の再利用・水循環」における利点として正しいものはどれか。",choices:["排水再利用は水質管理を複雑にするだけ（誤り）","再利用は法令で禁止されている（誤り）","再利用水は水質管理不要という規定","取水量・排水量の削減による水資源節約・排水基準超過リスク低減"],answer:3,explanation:"排水再利用（クローズドシステム）により①取水量削減②排水量・汚濁負荷削減③排水処理コスト低減④水資源有効活用が実現。ただし再利用水の水質管理・スケール・腐食対策が必要。"},
+{id:178,category:"大規模水質特論",question:"「窒素・リンの高度処理」が大規模施設で特に重要な理由として正しいものはどれか。",choices:["窒素・リンは排水基準に含まれないため（誤り）","窒素・リンの処理は簡単なため（誤り）","大規模施設は排出する窒素・リン負荷量が大きく、閉鎖性水域の富栄養化","窒素・リンは自然に除去される（誤り）"],answer:2,explanation:"大規模事業場は窒素・リンの絶対的排出負荷量が大きく、東京湾・伊勢湾・瀬戸内海等の閉鎖性水域の富栄養化対策として総量規制（窒素・リン）への適合が求められる。"},
+{id:179,category:"大規模水質特論",question:"「排水処理の汚泥処理・処分」において「汚泥の有効利用」として正しいものはどれか。",choices:["汚泥は産業廃棄物として必ず埋立処分（誤り）","汚泥はすべて海洋投棄してよい（誤り）","汚泥有効利用は法律で禁止されている（誤り）","消化汚泥の農地還元・汚泥焼却灰のセメント原料・乾燥汚泥の緑農地還元"],answer:3,explanation:"汚泥の有効利用は廃棄物処理法・下水道法・循環型社会推進法等に基づき推進される。消化汚泥→農地還元（コンポスト）・焼却灰→セメント原料・路盤材・バイオガス→発電・熱利用等が実用化。"},
+{id:180,category:"大規模水質特論",question:"「排水処理の費用対効果」を評価する際の考え方として正しいものはどれか。",choices:["排水処理コストは利益に無関係（誤り）","処理効率は無視してよいという規定","最も安い方法が常に最善という規定","ライフサイクルコスト（LCC：初期投資＋運転維持費＋廃棄費用）"],answer:3,explanation:"排水処理設備の費用対効果はLCC（設備投資・ランニングコスト・更新費用）だけでなく、排水基準遵守による法的リスク回避・地域社会への環境貢献・企業価値向上等も含めて総合的に評価すべき。"},
+{id:181,category:"大規模水質特論",question:"「下水道への排水（間接排水）」における「除害施設」の役割として正しいものはどれか。",choices:["下水道に排水する場合は排水処理不要（誤り）","下水道の機能障害・処理場への悪影響・公共用水域の汚染を防ぐため","除害施設の設置は任意という規定","除害施設は大規模工場のみに義務付けられる（誤り）"],answer:1,explanation:"下水道法に基づき、下水道排除基準（pH・BOD・SS・重金属・有害物質等）を超える排水は除害施設を設置して前処理する義務がある。下水処理場の処理能力保護・放流水質保全が目的。"},
+{id:182,category:"大規模水質特論",question:"「排水処理の自動化・遠隔監視」の利点として正しいものはどれか。",choices:["自動化すると人による確認が不要になる（誤り）","処理状況のリアルタイム監視・異常の早期検知・省人化","自動化は初期コストが低いという規定","遠隔監視は法令で義務付けられている（誤り）"],answer:1,explanation:"排水処理の自動化（PLC・SCADA・センサー類）・遠隔監視システムにより異常の早期検知・迅速対応・省人化・データ自動記録（法定記録要件の効率化）・24時間監視が実現できる。"},
+{id:183,category:"大規模水質特論",question:"「工場排水と生活排水の合流処理」における注意点として正しいものはどれか。",choices:["合流すれば希釈されるので処理が不要になる（誤り）","合流処理は法律で義務付けられている（誤り）","合流処理は常に効率的という規定","工場排水と生活排水を合流処理する場合、重金属・有害物質が生物処理を阻害したり汚泥中に"],answer:3,explanation:"工場排水と生活排水の合流処理では重金属・有害溶剤等が好気性微生物を阻害したり活性汚泥に蓄積して処理効率低下・余剰汚泥の有効利用障害（農地還元不可等）の問題が生じる。分流処理が原則。"},
+{id:184,category:"大規模水質特論",question:"「排水処理の記録・報告義務」として水質汚濁防止法上正しいものはどれか。",choices:["特定事業場の設置者は排水の測定結果を記録し3年間保存する義務がある","記録・報告義務はないという規定","年1回の報告書提出のみ必要（誤り）","記録は1年保存でよいという規定"],answer:0,explanation:"水質汚濁防止法第14条：特定事業場は排水の測定結果を記録し3年間保存する義務。法第14条の2：事故時の応急措置と速やかな届出義務。定期報告は都道府県条例等で求められる場合もある。"},
+{id:185,category:"大規模水質特論",question:"「排水処理設備の設計における安全率」の考え方として正しいものはどれか。",choices:["設計値ぴったりの設備で十分（誤り）","流量・水質の変動・将来の負荷増加・設備の劣化等を考慮して設計容量に適切な余裕","安全率は常に10倍以上という規定","安全率は費用の無駄なので不要（誤り）"],answer:1,explanation:"排水処理設備の設計では①流量・水質の時間変動②季節・工程変動③将来増産④設備劣化を考慮して設計容量に安全率（通常1.2〜2.0倍程度）を確保する。過小設計は排水基準超過リスクを招く。"},
+{id:186,category:"大規模水質特論",question:"「排水処理における活性汚泥の管理指標」として正しいものはどれか。",choices:["pH・温度のみを管理するという規定","排水濃度だけ管理すればよい（誤り）","MLSS・SVI・DO・SRT・F/M比・顕微鏡観察","汚泥管理は週1回の目視で十分（誤り）"],answer:2,explanation:"活性汚泥の安定管理にはMLSS（濃度）・SVI（沈降性）・DO（酸素）・SRT（汚泥日齢）・F/M比（有機物負荷）・顕微鏡観察（生物相の確認）等の総合的な管理指標の日常監視が必要。"},
+{id:187,category:"大規模水質特論",question:"「製鉄所（高炉製鉄）」の排水の特徴として正しいものはどれか。",choices:["BODのみが主な問題という規定","フッ素・砒素のみが問題という規定","コークス炉排水（フェノール・シアン・アンモニア）、圧延排水（油分・SS）等多様な汚染物質","生活排水と同様の水質という規定"],answer:2,explanation:"製鉄所は多数の工程（コークス炉・高炉・転炉・圧延・酸洗等）から工程特有の排水が発生。コークス炉排水はフェノール・シアン・NH₃・タール、圧延は油分・SS、酸洗は塩酸・硫酸・鉄イオンが特徴的汚染物質。"},
+{id:188,category:"大規模水質特論",question:"「大規模排水処理における窒素除去（硝化脱窒）」の設計で特に重要な因子として正しいものはどれか。",choices:["pHのみが重要に関する事項","流量のみが重要に関する事項","水温・SRT・DO・C/N比（炭素源の有無）・返送率等が硝化・脱窒効率に大きく影響する","BOD濃度のみが重要という規定"],answer:2,explanation:"生物的窒素除去（硝化脱窒）の設計・管理では①水温（低温で硝化速度低下）②SRT（硝化菌維持に十分な長さ）③DO③C/N比（脱窒の炭素源）④内部循環返送率が重要な設計・管理因子。"},
+{id:189,category:"大規模水質特論",question:"「排水処理施設の設置に必要な手続き」として正しいものはどれか。",choices:["排水処理施設の設置に届出は不要（誤り）","環境大臣の許可が必要という規定","特定施設を設置する場合は工事着手60日前までに都道府県知事に届け出る","市町村長への届出のみで足りる（誤り）"],answer:2,explanation:"水質汚濁防止法第5条に基づき特定施設設置は60日前届出が義務。また排水処理設備の建設には建築確認・消防法（危険物貯蔵）・廃棄物処理法（汚泥の処分）等の関連法令への対応も必要。"},
+{id:190,category:"大規模水質特論",question:"「大規模排水処理のエネルギー収支」において「嫌気性処理（メタン発酵）」が有利な理由として正しいものはどれか。",choices:["高濃度有機排水では嫌気性処理が曝気動力不要・バイオガス","嫌気性処理は好気性処理より常に処理水質が良好（誤り）","嫌気性処理は維持管理が簡単（誤り）","嫌気性処理は低濃度排水に最も適している（誤り）"],answer:0,explanation:"高濃度有機排水（BOD数千mg/L以上）の嫌気性処理はエネルギー的に有利。①曝気動力が不要②バイオガス（CH₄60〜70%）が回収できエネルギー自給が可能③余剰汚泥が少ない。食品・製紙等の大規模施設に適用。"},
+{id:191,category:"法規（水質関連）",question:"水質汚濁防止法の「特定施設」の定義として正しいものはどれか。",choices:["すべての製造設備に関する事項","従業員100人以上の工場のすべての施設（誤り）","カドミウム等の有害物質を含む汚水または廃液を排出する施設および人の健康もしくは生活環","排水量が1日100m³以上の施設（誤り）"],answer:2,explanation:"水質汚濁防止法第2条第2項：特定施設は①有害物質を含む汚水等を排出する施設②生活環境への被害のおそれのある汚水等を排出する施設として別表第一で規定される施設の種類・規模に該当するもの。"},
+{id:192,category:"法規（水質関連）",question:"水質汚濁防止法における「排水基準」の種類として正しいものはどれか。",choices:["有害物質に係る許容限度（健康項目）と生活環境項目に係る許容限度（生活環境項目）の2種類","健康項目の基準のみという規定","BODのみという規定","pHのみという規定"],answer:0,explanation:"水質汚濁防止法の排水基準は①健康項目（カドミウム・水銀・鉛・六価クロム・砒素・シアン等28項目）②生活環境項目（pH・BOD・COD・SS・DO・大腸菌群数・窒素・リン等）の2種類。"},
+{id:193,category:"法規（水質関連）",question:"水質汚濁防止法に基づく「特定施設の設置届出」の期限として正しいものはどれか。",choices:["設置後30日以内","設置工事着手の60日前まで","設置後すぐ（遅滞なく）","届出不要"],answer:1,explanation:"水質汚濁防止法第5条：特定施設を設置しようとする者は、工事着手の60日前までに都道府県知事に届け出なければならない。"},
+{id:194,category:"法規（水質関連）",question:"水質汚濁防止法における「排水基準の適用除外」として正しいものはどれか。",choices:["公共下水道に排除する排水は水質汚濁防止法の排水基準は適用されず","すべての事業場に適用される（誤り）","農業排水は常に適用除外という規定","海域への排水は適用除外という規定"],answer:0,explanation:"公共下水道（終末処理場がある）に排除する排水は水質汚濁防止法の排水基準は適用されない（水質汚濁防止法第3条第1項ただし書）。下水道法の排除基準（除害施設基準）が適用される。"},
+{id:195,category:"法規（水質関連）",question:"水質汚濁防止法に基づく「改善命令」の発令要件として正しいものはどれか。",choices:["排水基準に適合した排水を排出しているとき（誤り）","国（環境省）のみが発令できる（誤り）","都道府県知事が任意に発令できる（誤り）","排水基準に適合しない排水を排出するおそれがあると認めるとき"],answer:3,explanation:"水質汚濁防止法第13条：排水基準に適合しない排水を排出するおそれがある特定事業場に対し、都道府県知事は排水処理方法の改善命令または一時使用停止命令を発することができる。"},
+{id:196,category:"法規（水質関連）",question:"「下水道法」における「除害施設」の設置義務者として正しいものはどれか。",choices:["すべての下水道利用者という規定","国という規定","市町村という規定","下水道排除基準を超える汚水を排出する特定事業場の設置者"],answer:3,explanation:"下水道法第12条の2：政令で定める水質基準（排除基準）を超える汚水を公共下水道に排除する場合、事業者は除害施設を設置する義務がある。"},
+{id:197,category:"法規（水質関連）",question:"「水質汚濁防止法」における罰則として、排水基準違反に対する直接罰として正しいものはどれか。",choices:["罰則なし（行政指導のみ）","6月以下の懲役または50万円以下の罰金","3年以下の懲役または300万円以下の罰金","1万円以下の過料"],answer:0,explanation:"水質汚濁防止法第30条：排水基準を超えて有害物質を排出した者は6月以下の懲役または50万円以下の罰金の直罰規定がある。改善命令違反も同様の罰則。"},
+{id:198,category:"法規（水質関連）",question:"「水質汚濁防止法」における「地下水汚染の浄化措置命令」の根拠として正しいものはどれか。",choices:["地下水の浄化命令は水質汚濁防止法にない（誤り）","地下水汚染の規制は土壌汚染対策法のみ（誤り）","環境基本法のみに規定される（誤り）","水質汚濁防止法第14条の3：有害物質を含む汚水の地下浸透により地下水汚染が生じた場合"],answer:3,explanation:"水質汚濁防止法第14条の3（浄化措置命令）：有害物質の地下浸透が明らかな場合、都道府県知事は設置者に地下水の浄化措置（揚水処理等）を命令できる。"},
+{id:199,category:"法規（水質関連）",question:"「特定工場における公害防止組織の整備に関する法律」における水質関係公害防止管理者の選任が必要な工場の要件として正しいものはどれか。",choices:["すべての工場に関する事項","従業員50人以上の工場という規定","製造業・電気供給業・ガス供給業・熱供給業に属し、水質汚濁防止法の特定施設を設置する特定工場","排水量1日100m³以上の工場（誤り）"],answer:2,explanation:"公害防止管理者法の対象となる特定工場は製造業等に属し、水質汚濁防止法の特定施設（または大気・騒音等の特定施設）を設置する工場。水質関係公害防止管理者の選任義務がある。"},
+{id:200,category:"法規（水質関連）",question:"「水質汚濁防止法」における「総量規制基準」の設定方法として正しいものはどれか。",choices:["都道府県知事が当該事業場の規模・処理技術等を考慮して事業場ごとに設定し","環境省が全国一律に設定という規定","市町村が設定に関する事項","事業者が自主的に設定という規定"],answer:0,explanation:"水質汚濁防止法第4条の5：総量規制基準は指定地域内の特定事業場に対し、都道府県知事が業種・処理技術・規模等を考慮して事業場ごとの汚濁負荷量の許容限度として設定・通知する。"},
+{id:201,category:"法規（水質関連）",question:"「水質汚濁防止法」における「指定地域」（総量規制の対象地域）として正しいものはどれか。",choices:["全国の主要河川流域という規定","地下水が汚染された地域という規定","全国の湖沼流域に関する事項","東京湾・伊勢湾・瀬戸内海に流入する河川の流域等として政令で指定された地域"],answer:3,explanation:"水質汚濁防止法第4条の2：総量規制の指定地域は東京湾・伊勢湾・瀬戸内海に流入する水域を含む地域として政令（昭和51年政令第200号）で指定されている。"},
+{id:202,category:"法規（水質関連）",question:"「土壌汚染対策法」の主な対象として正しいものはどれか。",choices:["工場・事業場等の土地（特定有害物質による土壌汚染）の調査・対策・情報管理","農地の土壌汚染のみという規定","河川底質の汚染に関する事項","大気による土壌汚染という規定"],answer:0,explanation:"土壌汚染対策法は特定有害物質（重金属・揮発性有機塩素化合物・農薬等）による土地（主に工場跡地等）の土壌汚染について調査義務・汚染区域指定・対策計画・土地形質変更規制等を定める。"},
+{id:203,category:"法規（水質関連）",question:"「水道法」における「水質基準」の設定対象として正しいものはどれか。",choices:["河川の水質基準に関する事項","工場排水の基準に関する事項","水道（飲料水）の水質基準で51項目が省令で規定されている","地下水の排出基準に関する事項"],answer:2,explanation:"水道法第4条に基づく水質基準は飲料水（水道水）が満たすべき基準で、病原生物・化学物質・放射性物質・外観（色度・濁度・臭気・味）等51項目が定められている（平成15年改正以降）。"},
+{id:204,category:"法規（水質関連）",question:"「廃棄物の処理及び清掃に関する法律（廃棄物処理法）」における「産業廃棄物」として排水処理で発生する「汚泥」の扱いとして正しいものはどれか。",choices:["排水処理で発生する汚泥は産業廃棄物に該当し、マニフェスト","汚泥は一般廃棄物として処分できる（誤り）","汚泥は排水として放流できる（誤り）","汚泥の処分に規制はないという規定"],answer:0,explanation:"排水処理（工場・事業場）で発生する汚泥は廃棄物処理法第2条の産業廃棄物（汚泥）に該当。マニフェスト（電子またはゴミ）による排出・収集・処分の管理・最終処分場への適正処分が義務。"},
+{id:205,category:"法規（水質関連）",question:"「水質汚濁防止法」における「事故時の措置」（第14条の2）として正しいものはどれか。",choices:["特定事業場の設置者は有害物質等を含む水の流出事故が発生した場合","事故後1か月以内に報告すればよい（誤り）","環境大臣にのみ報告すればよい（誤り）","被害者への賠償のみが義務という規定"],answer:0,explanation:"水質汚濁防止法第14条の2：故障・破損等により有害物質等を含む水が公共用水域・地下水に流出するおそれが生じた場合、直ちに応急措置を講じ速やかに都道府県知事に届け出る義務がある。"},
+{id:206,category:"法規（水質関連）",question:"「水質汚濁防止法施行規則」において特定事業場の設置者が排水を測定する頻度として正しいものはどれか。",choices:["5年に1回以上の測定頻度という規定","測定頻度に規定なしという規定","月1回のみの測定頻度という規定","有害物質は年1回以上、生活環境項目は年4回以上が原則"],answer:3,explanation:"水質汚濁防止法施行規則第9条：測定頻度は有害物質（健康項目）は年1回以上、生活環境項目は水質規模・施設種類により年1〜12回以上が定められている。"},
+{id:207,category:"法規（水質関連）",question:"「水質汚濁防止法」における「指定物質」（第14条の3）の意味として正しいものはどれか。",choices:["排水基準が設定されている有害物質（誤り）","地下水汚染を起こす物質という規定","常時管理が必要な物質という規定","排水基準は設定されていないが流出した場合に水質汚濁を生じるおそれがある物質"],answer:3,explanation:"指定物質は排水基準対象外だが流出すると著しい水質汚濁を生じるおそれがある物質（重油・農薬・アンモニア等）。設置者に貯蔵・使用施設からの流出防止措置（構造基準）が義務付けられる。"},
+{id:208,category:"法規（水質関連）",question:"「公害防止管理者法」において水質関係第1種の資格が必要な事業場として正しいものはどれか。",choices:["有害物質に係る特定施設を設置し、排水量が1日50m³以上の特定事業場","すべての特定事業場という規定","排水量1日100m³以上のすべての事業場","製造業のすべての事業場という規定"],answer:0,explanation:"公害防止管理者（水質第1種）は有害物質使用特定施設を有し排水量1日50m³以上の特定工場に必要。第2種は同じく50m³未満、第3種・第4種は有害物質非使用施設（規模による区分）。"},
+{id:209,category:"法規（水質関連）",question:"「水質汚濁防止法」の「生活排水対策」（第14条の5以降）の内容として正しいものはどれか。",choices:["生活排水は水質汚濁防止法の規制対象外（誤り）","生活排水は全量下水道処理が義務（誤り）","生活排水排出者に排出基準が適用される（誤り）","都道府県知事による生活排水対策重点地域の指定・市町村による生活排水対策推進計画の策定"],answer:3,explanation:"水質汚濁防止法（昭和61年改正で追加）の生活排水対策規定：都道府県知事による重点地域指定・市町村の推進計画策定・住民への啓発・浄化槽設置促進等の面的対策が規定される。"},
+{id:210,category:"法規（水質関連）",question:"「浄化槽法」における「浄化槽」の定義として正しいものはどれか。",choices:["下水道の処理施設のことという規定","工場排水処理施設のことという規定","便所と連結して屎尿等を処理し公共用水域等に放流するための設備（合併処理浄化槽）","農業用排水施設のことという規定"],answer:2,explanation:"浄化槽法第2条：浄化槽は便所と連結してし尿・雑排水（生活排水全般：合併処理）を処理して公共用水域等に放流する施設。現在は合併処理浄化槽が義務化されている。"},
+{id:211,category:"法規（水質関連）",question:"「水質汚濁防止法」における「有害物質貯蔵指定施設」の規制として正しいものはどれか。",choices:["特定施設でない有害物質貯蔵施設は規制対象外（誤り）","届出は任意という規定","有害物質貯蔵は禁止という規定","有害物質を貯蔵する施設（地下タンク等）からの漏洩を防止するための構造"],answer:3,explanation:"水質汚濁防止法（平成24年改正）により有害物質貯蔵指定施設（地下タンク等）は構造基準（二重殻・漏洩検知等）への適合・定期点検・設置・廃止・使用廃止の届出義務が課された。"},
+{id:212,category:"法規（水質関連）",question:"「ダイオキシン類対策特別措置法」における水質排出基準として正しいものはどれか。",choices:["特定施設（廃棄物焼却炉・製鋼用電気炉等）の排水に対して10pg-TEQ/L以下の排出","水質排出基準はないという規定","100pg-TEQ/L以下（誤り）","1pg-TEQ/L以下という規定"],answer:0,explanation:"ダイオキシン類対策特別措置法第12条：水質排出基準は特定施設の排水について10pg-TEQ/L以下（施設種類により異なる場合あり）と定められている。環境基準（1pg-TEQ/L）より緩い値。"},
+{id:213,category:"法規（水質関連）",question:"「水質汚濁防止法」における「公共用水域」の定義として正しいものはどれか。",choices:["河川・湖沼・港湾・沿岸海域等公共の用に供される水域とその底地（地下水を除く）","国が管理する河川のみという規定","下水道のみという規定","農業用水路のみに関する事項"],answer:0,explanation:"水質汚濁防止法第2条第1項：公共用水域は河川・湖沼・港湾・沿岸海域その他公共の用に供される水域および水路と定義。地下水は別途（第2条第5項）規定される。"},
+{id:214,category:"法規（水質関連）",question:"「水質汚濁防止法」の「日間平均排水基準」が設定されている理由として正しいものはどれか。",choices:["瞬間値規制が困難なためという規定","日間平均の方が測定が容易なため（誤り）","時間変動の大きい排水の1日平均値で管理することで、瞬間的な超過があっても1日全体の負","法律の条文上の制約のためという規定"],answer:2,explanation:"日間平均排水基準（生活環境項目のみ）は時間変動が大きい排水について1日の平均濃度で管理する制度。瞬間値基準と組み合わせて実効的な排水管理を図る。"},
+{id:215,category:"法規（水質関連）",question:"「水質汚濁防止法」において「排水基準違反の改善命令」に違反した場合の罰則として正しいものはどれか。",choices:["罰則なし","6月以下の懲役または50万円以下の罰金","1年以下の懲役または100万円以下の罰金","5万円以下の過料"],answer:1,explanation:"水質汚濁防止法第30条：改善命令（第13条）に違反した者は6月以下の懲役または50万円以下の罰金（直罰）。排水基準超過排出（有害物質）も同様の直罰規定がある。"},
+{id:216,category:"法規（水質関連）",question:"「水質汚濁防止法」における「地下水の水質測定」（第14条の4）の義務として正しいものはどれか。",choices:["地下水測定義務はないという規定","市町村が地下水を測定するという規定","有害物質使用特定施設・有害物質貯蔵指定施設の設置者は定期的に敷地内の地下水水質を測定し記録","都道府県が全事業場の地下水を測定する（誤り）"],answer:2,explanation:"水質汚濁防止法第14条の4（平成24年改正）：有害物質使用特定施設・有害物質貯蔵指定施設の設置者は年1回以上地下水水質を測定し3年間記録保存する義務がある。"},
+{id:217,category:"法規（水質関連）",question:"「公害紛争処理法」に基づく水質汚濁に関する紛争処理機関として正しいものはどれか。",choices:["環境省大臣官房に関する事項","公害等調整委員会（国）および都道府県公害審査会","裁判所のみという規定","市町村長という規定"],answer:1,explanation:"公害紛争処理法に基づき、国に公害等調整委員会（あっせん・調停・仲裁・裁定）、都道府県に公害審査会（あっせん・調停・仲裁）が設置されている。"},
+{id:218,category:"法規（水質関連）",question:"「環境基本法」における水質汚濁に係る「環境基準」の法的性格として正しいものはどれか。",choices:["事業者が直接守るべき排出規制基準（誤り）","行政が水質保全施策を推進するうえで達成・維持すべき目標値","違反すると罰則が科されるという規定","国際条約に基づく義務的基準（誤り）"],answer:1,explanation:"環境基準（環境基本法第16条）は政策目標として行政が施策推進の目標とする値であり、事業者への直接的な規制効力（違反罰則）はない。排水基準・総量規制基準等の規制基準とは異なる。"},
+{id:219,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準の上乗せ条例」の法的根拠として正しいものはどれか。",choices:["都道府県は上乗せ条例を定めることができない（誤り）","水質汚濁防止法第3条第3項：都道府県は、国の排出基準より厳しい基準","市町村のみが上乗せ条例を定めることができる（誤り）","上乗せ条例は法的効力がない（誤り）"],answer:1,explanation:"水質汚濁防止法第3条第3項：都道府県は国の排水基準（許容限度）より厳しい基準を条例で定めることができ、当該条例の基準が適用される。地域の水質保全ニーズに応じた上乗せ規制が可能。"},
+{id:220,category:"法規（水質関連）",question:"「特定工場における公害防止組織の整備に関する法律」において「公害防止統括者」を選任しなくてよい場合として正しいものはどれか。",choices:["製造業に属するすべての特定工場（誤り）","水質関係施設を持つすべての工場（誤り）","常時使用する従業員数が20人以下の特定工場は公害防止統括者の選任が不要","資本金1億円未満の工場という規定"],answer:2,explanation:"公害防止管理者法：常時使用する従業員数が20人以下の特定工場は公害防止統括者の選任義務が免除される（ただし公害防止管理者の選任義務は残る）。"},
+{id:221,category:"法規（水質関連）",question:"「水質汚濁防止法」における「特定施設の廃止の届出」として正しいものはどれか。",choices:["廃止60日前に届け出る","廃止後遅滞なく都道府県知事に届け出る","廃止に届出は不要に関する事項","国（環境省）に届け出る"],answer:1,explanation:"水質汚濁防止法第10条：特定施設を廃止した場合は廃止後遅滞なく都道府県知事に届け出なければならない（事後届出）。設置は事前（60日前）届出、廃止は事後届出の違いに注意。"},
+{id:222,category:"法規（水質関連）",question:"「河川法」と「水質汚濁防止法」の関係として正しいものはどれか。",choices:["河川法は水質汚濁防止法より優先される（誤り）","両者は全く無関係に関する事項","河川法は河川の利用・管理（流量・治水・利水）を主目的とし","河川への排水規制は河川法のみで行う（誤り）"],answer:2,explanation:"河川法は河川の占用・工作物設置・土地利用等の管理が主目的で、水質規制は水質汚濁防止法が担当する。ただし河川法でも特定の行為（廃棄物投棄等）を禁止している。"},
+{id:223,category:"法規（水質関連）",question:"「海洋汚染等及び海上災害の防止に関する法律（海洋汚染防止法）」の主な規制内容として正しいものはどれか。",choices:["陸上からの排水規制という規定","工場排水の規制に関する事項","船舶からの油・有害液体物質・廃棄物の排出規制および海上からの廃棄物投棄規制","地下水汚染の規制に関する事項"],answer:2,explanation:"海洋汚染防止法は船舶からの油・有害液体物質・廃棄物の海洋排出規制、廃棄物の海洋投棄規制、海上における油等の流出防止・防除等を規定する。水質汚濁防止法（陸上）とともに海域保全の法体系を構成。"},
+{id:224,category:"法規（水質関連）",question:"「水質汚濁防止法」の「指定物質」として定められているものとして正しいものはどれか。",choices:["カドミウム・水銀・鉛（有害物質と同じ）（誤り）","重油・農薬・アンモニア等の排水基準未設定だが流出すると水質汚濁を引き起こすおそれがある物質","BOD・COD成分という規定","窒素・リンという規定"],answer:1,explanation:"水質汚濁防止法第14条の2の2（指定物質）：重油・動植物油・農薬・フェノール・アンモニア等55物質が指定物質として指定されており、貯蔵・使用施設からの流出防止措置基準が適用される。"},
+{id:225,category:"法規（水質関連）",question:"「湖沼水質保全特別措置法」における「指定湖沼」として指定されている湖の例として正しいものはどれか。",choices:["全国のすべての湖沼という規定","琵琶湖・霞ヶ浦・諏訪湖・野尻湖・中海・宍道湖・八郎潟等が指定","利根川の上流のダム湖のみという規定","人工湖（ダム貯水池）のみという規定"],answer:1,explanation:"湖沼水質保全特別措置法の指定湖沼は琵琶湖・霞ヶ浦・北浦・手賀沼・印旛沼・諏訪湖・野尻湖・中海・宍道湖・八郎潟等11湖沼（令和4年時点）が指定されている。"},
+{id:226,category:"法規（水質関連）",question:"「水質汚濁防止法」における「測定方法」として用いられるJIS規格として正しいものはどれか。",choices:["JIS B（機械）規格という規定","JIS K 0102（工場排水試験方法）が主に適用される","JIS C（電気）規格という規定","JIS A（土木・建築）規格（誤り）"],answer:1,explanation:"水質汚濁防止法の排水基準測定は原則としてJIS K 0102（工場排水試験方法）に定められた公定法で実施する。BOD・COD・SS・重金属・有害物質等の測定方法が規定されている。"},
+{id:227,category:"法規（水質関連）",question:"「水質汚濁防止法」の「水質の汚濁状況の常時監視」として都道府県知事が行う測定について正しいものはどれか。",choices:["都道府県は監視義務を持たない（誤り）","都道府県知事は公共用水域の水質を常時監視し、環境大臣に報告する義務がある","市町村が常時監視を行うという規定","国（環境省）のみが監視を行う（誤り）"],answer:1,explanation:"水質汚濁防止法第15条：都道府県知事は公共用水域（および地下水）の水質を常時監視する義務があり、その結果を環境大臣に定期的に報告しなければならない。"},
+{id:228,category:"法規（水質関連）",question:"「水質汚濁防止法」に基づく「排水基準省令」において「生活環境項目」の水素イオン濃度（pH）の基準値として正しいものはどれか。",choices:["pH4.0以上9.0以下という規定","pH5.8以上8.6以下（海域以外）・pH5.0以上9.0以下（海域）","pH6.0以上8.0以下という規定","pH7.0のみに関する事項"],answer:1,explanation:"排水基準省令の水素イオン濃度（pH）：海域以外の公共用水域への排水はpH5.8〜8.6、海域はpH5.0〜9.0の範囲内であることが基準値として定められている。"},
+{id:229,category:"法規（水質関連）",question:"「水質汚濁防止法」における「BODの排水基準（日間平均）」として正しいものはどれか。",choices:["20mg/L以下に関する事項","160mg/L以下（日間平均120mg/L以下）","600mg/L以下という規定","10mg/L以下に関する事項"],answer:1,explanation:"BODの排水基準は1日平均で120mg/L以下（日間平均）・瞬間値160mg/L以下。ただし都道府県の上乗せ条例により地域によって大幅に厳しい基準が設定されている場合が多い。"},
+{id:230,category:"法規（水質関連）",question:"「水質汚濁防止法」における「浮遊物質量（SS）の排水基準（日間平均）」として正しいものはどれか。",choices:["50mg/L以下に関する事項","200mg/L以下（日間平均150mg/L以下）","500mg/L以下という規定","10mg/L以下に関する事項"],answer:1,explanation:"SSの排水基準は日間平均150mg/L以下・瞬間値200mg/L以下。上乗せ条例により厳格化されている地域も多い。"},
+{id:231,category:"法規（水質関連）",question:"「公害健康被害の補償等に関する法律（公健法）」の補償給付の種類として正しいものはどれか。",choices:["慰謝料のみが補償対象という規定","罰金を被害者に充当する制度（誤り）","療養の給付・障害補償費・遺族補償費・葬祭料・児童補償手当・公害医療手帳等","税金を免除する制度という規定"],answer:2,explanation:"公健法の補償給付は①療養の給付（現物）②療養費③障害補償費④遺族補償費⑤遺族補償一時金⑥葬祭料⑦児童補償手当⑧公害医療手帳（優先診察等）の8種類が規定されている。"},
+{id:232,category:"法規（水質関連）",question:"「水質汚濁防止法施行令」において「有害物質」（第2条）として指定されているものとして誤っているものはどれか。",choices:["カドミウム及びその化合物","水銀及びアルキル水銀その他の水銀化合物","BOD成分（有機物全般）","六価クロム化合物"],answer:2,explanation:"水質汚濁防止法施行令第2条の有害物質はカドミウム・水銀・鉛・六価クロム・砒素・シアン化合物・有機リン・トリクロロエチレン等28種類の特定化学物質。BODは有害物質ではなく生活環境項目。"},
+{id:233,category:"法規（水質関連）",question:"「環境影響評価法（環境アセスメント法）」における水質に係る評価として正しいものはどれか。",choices:["水質は環境アセスメントの対象外（誤り）","環境アセスメントは大気のみが対象（誤り）","水質評価は都道府県のみが行う（誤り）","第一種・第二種事業の環境影響評価において水質汚濁・水底の底質の変化等が評価項目となる"],answer:3,explanation:"環境影響評価法の評価項目には水質汚濁（BOD・SS・有害物質等）・水底底質・地下水等が含まれる。ダム・道路・空港・発電所等の大規模事業で事業前に環境影響を予測・評価する。"},
+{id:234,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準の適用対象」として正しいものはどれか。",choices:["特定事業場（特定施設を設置する工場・事業場）から公共用水域に排出される水（特定排出水）","すべての排水に関する事項","家庭排水（生活排水）という規定","農業用排水という規定"],answer:0,explanation:"排水基準は特定事業場から公共用水域に直接排出される特定排出水に適用される。家庭の生活排水・農業排水は直接の適用対象外（ただし間接的に生活排水対策・農業排水対策が規定される）。"},
+{id:235,category:"法規（水質関連）",question:"「水質汚濁防止法」の「水質測定計画」として都道府県が定める内容として正しいものはどれか。",choices:["水質測定計画の策定義務はない（誤り）","都道府県知事は毎年、公共用水域の水質測定計画（測定地点","市町村が測定計画を策定する（誤り）","民間機関が策定するという規定"],answer:1,explanation:"水質汚濁防止法第16条：都道府県知事は毎年、公共用水域の水質測定計画を定め、計画に基づいて測定地点・頻度・項目を定めて測定を実施し、結果を環境大臣に報告する。"},
+{id:236,category:"法規（水質関連）",question:"「水質汚濁防止法」と「下水道法」の排水規制の棲み分けとして正しいものはどれか。",choices:["水質汚濁防止法は公共用水域への直接排出を規制し、下水道法は公共下水道への排除を規制する","両法は全く同じ内容を規定という規定","下水道法が水質汚濁防止法より優先（誤り）","水質汚濁防止法のみが有効という規定"],answer:0,explanation:"水質汚濁防止法→公共用水域（河川・海域等）への直接排水を規制。下水道法→公共下水道（下水管渠）への排除を規制（除害施設設置義務）。公共下水道経由の排水には水質汚濁防止法の排水基準は直接適用されない。"},
+{id:237,category:"法規（水質関連）",question:"「水質汚濁防止法」における「総量規制の算定方法」として正しいものはどれか。",choices:["排水濃度のみで管理する方法（誤り）","排水量（m³/日）×汚濁物質濃度（mg/L）÷1000で汚濁負荷量（kg/日）を算定し管理","排水温度で管理する方法という規定","排水回数で管理する方法という規定"],answer:1,explanation:"総量規制（水質汚濁防止法第4条の2〜7）は汚濁負荷量（kg/日）で管理。負荷量＝排水量（m³/日）×濃度（mg/L）÷1000。COD・窒素・リンの日間汚濁負荷量を総量基準値以下にする義務がある。"},
+{id:238,category:"法規（水質関連）",question:"「水質汚濁防止法」の「特定施設の変更届出」が必要な場合として正しいものはどれか。",choices:["施設の名称変更のみが対象という規定","施設の稼働時間変更が対象という規定","特定施設の構造・使用方法・汚水処理方法を変更しようとするとき（工事着手60日前まで）","担当者の変更が対象という規定"],answer:2,explanation:"水質汚濁防止法第8条：特定施設の構造・使用方法・汚水等の処理方法を変更しようとする場合は工事着手60日前までに都道府県知事に届け出る義務がある。"},
+{id:239,category:"法規（水質関連）",question:"「毒物及び劇物取締法（毒劇法）」が排水処理と関連する場面として正しいものはどれか。",choices:["排水処理薬品は毒劇法の対象外（誤り）","大規模施設のみに適用という規定","毒劇法は医薬品のみに適用という規定","排水処理薬品（シアン化ナトリウム・塩酸・硫酸等）が毒物・劇物に該当する場合に適用される"],answer:3,explanation:"排水処理薬品のシアン化ナトリウム（特定毒物）・塩酸・硫酸・NaOH（劇物）等は毒劇法の規制対象。保管設備（鍵付き・他物と分離）・表示・廃棄方法・漏洩防止・取扱者教育等の義務がある。"},
+{id:240,category:"法規（水質関連）",question:"「環境基本法」における「水質汚濁に係る環境基準」の設定形式として正しいものはどれか。",choices:["一律全国基準のみに関する事項","都道府県が独自に設定という規定","水域ごとに個別に設定という規定","類型指定（河川・湖沼・海域をA〜E等の水域類型に分類）し類型ごとに環境基準値を設定する"],answer:3,explanation:"水質環境基準（生活環境項目）は水域を類型（河川はAA・A・B・C・D・E、湖沼・海域も同様）に分け、類型ごとにBOD・COD・DO・SS・pH・大腸菌群数の基準値を設定する類型指定方式。"},
+{id:241,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準の遵守義務者」として正しいものはどれか。",choices:["公害防止管理者に関する事項","都道府県知事に関する事項","特定事業場を設置している者（工場・事業場の設置者）","公害防止統括者に関する事項"],answer:2,explanation:"水質汚濁防止法第12条：特定排出水を排出する特定事業場の設置者が排水基準遵守義務者。公害防止管理者は選任・管理の義務を負うが、法的責任（排水基準遵守義務）は設置者にある。"},
+{id:242,category:"法規（水質関連）",question:"「水質汚濁防止法」に基づく「都道府県知事による勧告」が行われる場面として正しいものはどれか。",choices:["排水基準を遵守している場合（誤り）","排水基準が設定されていない項目について水質汚濁を防止するため必要な場合に都道府県知事","勧告制度はないに関する事項","環境大臣のみが勧告できるという規定"],answer:1,explanation:"水質汚濁防止法第14条：排水基準の設定されていない汚濁物質について、著しい水質汚濁のおそれがある場合、都道府県知事は排出者に対して必要な措置をとるよう勧告することができる。"},
+{id:243,category:"法規（水質関連）",question:"「水質汚濁防止法施行規則」において「有害物質（健康項目）」の排水測定頻度として正しいものはどれか。",choices:["3年に1回以上に関する事項","年1回以上（施設によっては月1回等より高頻度が必要な場合もある）","月1回以上という規定","測定義務なしに関する事項"],answer:1,explanation:"水質汚濁防止法施行規則第9条：有害物質（健康項目26項目等）は年1回以上の測定が義務。ただし都道府県の上乗せ条例や指導により、より高頻度の測定を求められる場合がある。"},
+{id:244,category:"法規（水質関連）",question:"「水質汚濁防止法」の「特定施設を設置する工場・事業場の承継」の際の手続きとして正しいものはどれか。",choices:["承継に際し特別な手続きは不要（誤り）","都道府県知事の許可が必要という規定","承継後60日以内に新規届出を行う（誤り）","事業の譲渡・合併等により特定事業場を承継した者は遅滞なく都道府県知事に届け出る義務があり、前設置者の地位"],answer:3,explanation:"水質汚濁防止法第11条：特定事業場の譲渡・合併・分割等による承継者は前設置者の水質汚濁防止法上の地位を承継し、遅滞なく都道府県知事に届け出る義務がある。"},
+{id:245,category:"法規（水質関連）",question:"「瀬戸内海環境保全特別措置法」において「許可制度」が設けられている行為として正しいものはどれか。",choices:["瀬戸内海での漁業に関する事項","瀬戸内海に関連する一定規模以上の工場・事業場の新設・増設（知事の許可制）","瀬戸内海での船舶航行という規定","瀬戸内海沿岸の居住という規定"],answer:1,explanation:"瀬戸内海環境保全特別措置法は瀬戸内海に面する地域での一定規模以上の工場・事業場（特定施設を有するもの）の新設・増設に都道府県知事の許可を要する（水質汚濁防止法より厳しい事前規制）。"},
+{id:246,category:"法規（水質関連）",question:"「水質汚濁防止法」における「無過失責任（賠償責任）」の規定として正しいものはどれか。",choices:["過失がなければ賠償責任はない（誤り）","工場・事業場の事業活動により公共用水域の水質が汚濁し健康被害が生じた場合","被害者が過失を証明しなければ賠償されない（誤り）","賠償は行政が行うに関する事項"],answer:1,explanation:"水質汚濁防止法第19条：特定事業場の事業活動により人の生命・身体を害した場合、事業者は無過失責任（故意・過失の有無にかかわらず損害賠償責任）を負う。被害者救済を容易にするための規定。"},
+{id:247,category:"法規（水質関連）",question:"「水質汚濁防止法」において「測定機器の維持管理」に関する規定として正しいものはどれか。",choices:["測定機器の管理規定はないという規定","測定機器の管理は外部機関に委託義務がある（誤り）","測定機器は購入時のまま使い続けてよい（誤り）","排水の測定を適正に行うため測定機器を正確に保つよう管理し、校正を定期的に行う必要がある"],answer:3,explanation:"排水の法定測定を適正に実施するためには測定機器（流量計・水質分析計等）の定期校正・点検・維持管理が必要。不適切な計器による測定値は信頼性が低く、法定記録としての効力が問われる場合がある。"},
+{id:248,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準の免除」として正しいものはどれか。",choices:["排水基準の免除制度はない（すべての特定事業場に適用）","天災その他の不可抗力による場合等の例外的免除規定がある場合がある","規模が小さければ免除される","古い工場は免除される"],answer:0,explanation:"水質汚濁防止法の排水基準はすべての特定事業場に適用され、一般的な免除制度はない。ただし天災・不可抗力等に起因する事故的排出で応急措置を講じた場合は行政の判断により考慮されることがある。"},
+{id:249,category:"法規（水質関連）",question:"「公害防止管理者（水質関係）の選任後の届出期限」として正しいものはどれか。",choices:["選任後60日以内に関する事項","選任後1年以内に関する事項","選任後遅滞なく（実務上は30日以内とされることが多い）都道府県知事に届け出る","選任の届出は不要に関する事項"],answer:2,explanation:"公害防止管理者法：公害防止管理者等の選任は選任事由（欠員等）発生から30日以内に実施し、選任後は遅滞なく都道府県知事（政令市長等）に届け出る。"},
+{id:250,category:"法規（水質関連）",question:"「水質汚濁防止法」において工場排水が公共下水道に流入する場合の規制関係として正しいものはどれか。",choices:["公共下水道に排除する排水は水質汚濁防止法第3条1項ただし書きにより排水基準が適用されず","水質汚濁防止法と下水道法の両方が同時に適用される（誤り）","水質汚濁防止法が優先して適用される（誤り）","どちらの法律も適用されない（誤り）"],answer:0,explanation:"水質汚濁防止法第3条第1項ただし書き：公共下水道（終末処理を行うもの）に排除する排水には排水基準が適用されない。下水道法の排除基準（除害施設設置義務含む）が適用される棲み分けとなっている。"},
+{id:251,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準の特例」として「より緩い基準（暫定基準）」が認められる場合として正しいものはどれか。",choices:["すべての事業者に認められる（誤り）","暫定基準は永続的に適用される（誤り）","新規施設には暫定基準が適用されない（誤り）","技術的・経済的に直ちに排水基準を達成することが困難な場合に"],answer:3,explanation:"排水基準省令の附則等に基づき、技術的・経済的に直ちに基準達成が困難な特定業種・施設について暫定的な特例基準（暫定排水基準）が設けられる場合がある。期限が定められており永続的ではない。"},
+{id:252,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準省令の別表」に規定される「健康項目」の数として正しいものはどれか。",choices:["10項目のみが規制対象という規定","50項目が規制対象という規定","26項目（カドミウム・全シアン・鉛・六価クロム・砒素・水銀・PCB等）","5項目のみが規制対象という規定"],answer:2,explanation:"排水基準省令（昭和46年総理府令第35号）の別表第1（健康項目）はカドミウム・シアン・鉛・六価クロム・砒素・水銀・アルキル水銀・PCB・有機リン・トリクロロエチレン等26項目が規定されている（改正により変動あり）。"},
+{id:253,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水量の測定方法」として正しいものはどれか。",choices:["積算流量計・堰式流量計・電磁流量計等の測定機器を用いて実測するか、製造量","排水量は推定でよく測定不要（誤り）","目視による推定のみという規定","月1回の手動測定のみという規定"],answer:0,explanation:"排水量の測定には積算流量計（電磁式・超音波式等）・堰（三角堰・四角堰等）・ピトー管等の測定機器が用いられる。総量規制では正確な排水量把握が汚濁負荷量算定の基礎となる。"},
+{id:254,category:"法規（水質関連）",question:"「特定工場における公害防止組織の整備に関する法律」における「公害防止主任管理者」が必要な工場として正しいものはどれか。",choices:["すべての特定工場に関する事項","水質関係施設のみを有する工場（誤り）","水質・大気・騒音等の2種類以上の特定施設を設置する一定規模以上の特定工場","従業員500人以上の工場という規定"],answer:2,explanation:"公害防止主任管理者は複数種類の特定施設（ばい煙発生施設・特定施設・騒音発生施設等を2種以上）を設置する特定工場で選任が義務付けられる。各分野の公害防止管理者を統括・調整する役割。"},
+{id:255,category:"法規（水質関連）",question:"「水質汚濁防止法」において工場排水に係る「損害賠償請求権の時効」として正しいものはどれか。",choices:["時効は存在しないという見解（誤り）","民法の不法行為または水質汚濁防止法の無過失責任（時効3年・20年）が適用される","1年で時効となる規定という規定","10年で時効となる規定という規定"],answer:1,explanation:"水質汚濁防止法第19条の無過失責任に基づく損害賠償請求権は民法の不法行為責任と同様、損害・加害者を知った時から3年（または行為から20年）で時効消滅する（民法724条の適用）。"},
+{id:256,category:"法規（水質関連）",question:"「排水処理を外部委託する場合」に事業者が注意すべき法令上の点として正しいものはどれか。",choices:["排水処理を外部委託しても排水基準遵守の法的責任は特定事業場の設置者に残る","外部委託すれば法的責任はすべて委託先に移る（誤り）","外部委託は法律で禁止されている（誤り）","外部委託費用は排水基準遵守の免除理由になる（誤り）"],answer:0,explanation:"排水処理の外部委託は可能だが、水質汚濁防止法上の排水基準遵守義務・測定・記録保存義務は特定事業場の設置者に帰属する。委託先の不正による基準超過でも設置者が責任を負う。"},
+{id:257,category:"法規（水質関連）",question:"「水質汚濁防止法」の「罰則規定」において「両罰規定」の意味として正しいものはどれか。",choices:["違反行為者だけでなく、その法人（会社等）にも罰金刑が科される規定","2種類の罰則が選択的に適用される（誤り）","2回違反すると罰則が倍になる（誤り）","2つの法律に基づいて罰される（誤り）"],answer:0,explanation:"水質汚濁防止法第33条（両罰規定）：違反行為を行った個人（従業員等）に加え、その使用者である法人・事業主にも罰金刑が科される。企業としての責任を問う重要な規定。"},
+{id:258,category:"法規（水質関連）",question:"「水質汚濁防止法」における「COD（化学的酸素要求量）の排水基準（日間平均）」として正しいものはどれか。",choices:["50mg/L以下に関する事項","10mg/L以下に関する事項","300mg/L以下という規定","160mg/L以下（日間平均120mg/L以下）"],answer:3,explanation:"CODの排水基準は日間平均120mg/L以下・瞬間値160mg/L以下（一般基準）。BODと同様、都道府県の上乗せ条例により厳しい基準が設定されている場合が多い。"},
+{id:259,category:"法規（水質関連）",question:"「水質汚濁防止法」に基づく「水質汚濁防止のための技術指針」の役割として正しいものはどれか。",choices:["法的拘束力のある規制基準という規定","罰則の根拠という規定","排水処理の技術的な指針・ガイドラインとして事業者・行政の参考に供されるが","都道府県条例の代替という規定"],answer:2,explanation:"技術指針・排水処理技術ガイドライン等は行政機関・業界団体が策定する参考文書で、法的強制力は持たないが排水処理設備の設計・維持管理の標準的水準を示す。排水基準遵守の手段として参照される。"},
+{id:260,category:"法規（水質関連）",question:"「水質汚濁防止法」の制定年として正しいものはどれか。",choices:["1958年（昭和33年）","1967年（昭和42年）","1993年（平成5年）","1970年（昭和45年）"],answer:3,explanation:"水質汚濁防止法は1970年（昭和45年）の「公害国会」で制定（昭和46年施行）。同年に大気汚染防止法改正・廃棄物処理法・騒音規制法等、多数の公害関連法が整備された。"},
+{id:261,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準の測定結果の記録事項」として正しいものはどれか。",choices:["測定値のみを記録すればよい（誤り）","測定年月日・測定箇所・測定結果・測定を行った者の氏名","測定方法の記録は不要という規定","測定者の氏名は不要という規定"],answer:1,explanation:"水質汚濁防止法施行規則第9条の2：測定記録には①測定年月日②測定箇所③測定結果④測定を行った者の氏名⑤使用した測定方法を記載し、3年間保存する義務がある。"},
+{id:262,category:"法規（水質関連）",question:"「水質汚濁防止法」における「有害物質使用特定施設」と「有害物質貯蔵指定施設」の違いとして正しいものはどれか。",choices:["両者は同じ施設を指す規定という規定","貯蔵指定施設には規制がない（誤り）","有害物質使用特定施設は製造・使用工程の施設、有害物質貯蔵指定施設は貯蔵施設で別途規定","使用特定施設のみが対象という規定"],answer:2,explanation:"有害物質使用特定施設（製造・使用工程）は水質汚濁防止法の特定施設として届出・排水基準・地下水測定義務。有害物質貯蔵指定施設（地下タンク等）は平成24年改正で追加され構造基準・定期点検・届出義務が規定された。"},
+{id:263,category:"法規（水質関連）",question:"「水質汚濁防止法」の「窒素・リンの排水基準」が設定されている水域として正しいものはどれか。",choices:["全国すべての公共用水域が対象（誤り）","富栄養化による障害が生じるおそれのある湖沼・海域（閉鎖性水域等）へ排水する場合","河川のみが規制対象水域という規定","地下水のみが規制対象という規定"],answer:1,explanation:"窒素・リンの排水基準は閉鎖性水域（湖沼・東京湾・伊勢湾・瀬戸内海等）の富栄養化防止のため設定。指定された水域に排水する特定事業場に適用される（全国一律ではない）。"},
+{id:264,category:"法規（水質関連）",question:"「水質汚濁防止法」における「立入検査権」の行使に関して正しいものはどれか。",choices:["立入検査には裁判所の令状が必要（誤り）","都道府県知事等が職員を特定事業場等に立ち入らせて帳簿","国（環境省）のみが実施できる（誤り）","立入検査の拒否に罰則はない（誤り）"],answer:1,explanation:"水質汚濁防止法第22条の立入検査は行政調査権の行使であり裁判所の令状は不要。ただし正当な理由なく拒否・妨害・虚偽回答した場合は30万円以下の罰金（第34条）が科される。"},
+{id:265,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準の設定主体」として正しいものはどれか。",choices:["都道府県知事に関する事項","環境大臣（全国一律基準）・都道府県（上乗せ条例による厳格化）の二層構造","市町村長という規定","国会（法律で直接設定）という規定"],answer:1,explanation:"水質汚濁防止法第3条：全国一律の排水基準（許容限度）は環境省令（環境大臣）で設定。都道府県は第3条第3項に基づき条例でより厳しい基準（上乗せ基準）を定めることができる二層構造。"},
+{id:266,category:"法規（水質関連）",question:"「水質汚濁防止法」の「適用対象となる特定施設の指定方式」として正しいものはどれか。",choices:["すべての製造設備が対象という規定","排水量のみで特定される施設（誤り）","業種のみで特定される施設という規定","法律の別表に施設の種類を列挙し施行令で規模要件を定める列挙方式で特定される"],answer:3,explanation:"水質汚濁防止法別表第一・施行令第1条に施設種類（繊維・食品・化学・金属等の業種ごとの特定施設）が列挙されており、規模要件（日量処理能力・床面積等）を超えるものが特定施設として届出対象となる。"},
+{id:267,category:"法規（水質関連）",question:"「公害等調整委員会」が水質汚濁事案で行う「原因裁定」の意義として正しいものはどれか。",choices:["損害賠償額を決定するという規定","水質汚濁による被害と特定の排出行為との因果関係の有無を行政上の裁定で判断し","刑事責任を問うに関する事項","行政処分（改善命令等）の根拠となる（誤り）"],answer:1,explanation:"公害等調整委員会の原因裁定は公害被害と排出行為の因果関係（原因）を判断する行政上の手続き。裁定結果は民事訴訟での証拠として活用でき、被害者の立証負担軽減に寄与する（賠償額決定は民事裁判）。"},
+{id:268,category:"法規（水質関連）",question:"「水質汚濁防止法」の「特定施設の設置届出書の記載事項」として正しいものはどれか。",choices:["工場名と所在地のみを記載という規定","氏名・工場名・特定施設の種類・構造・使用方法・排水処理方法・排水量・排水口位置等を記載","排水量のみを記載する書類という規定","担当者名のみを記載する書類（誤り）"],answer:1,explanation:"水質汚濁防止法第5条・施行規則第1条：設置届出書には①設置者の氏名・住所②工場名・所在地③特定施設の種類・構造・使用方法④排水処理方法⑤排水量⑥排出口の位置・構造等を記載する。"},
+{id:269,category:"法規（水質関連）",question:"「水質汚濁防止法」において「総量規制」と「濃度規制（排水基準）」の関係として正しいものはどれか。",choices:["総量規制が設定されれば濃度規制は廃止される（誤り）","総量規制のみが有効という規定","指定地域内では濃度規制（排水基準）と総量規制の両方が並行して適用され","濃度規制が優先されるという規定"],answer:2,explanation:"指定地域（東京湾・伊勢湾・瀬戸内海関連）では水質汚濁防止法の排水基準（濃度規制）と総量規制基準（負荷量規制）が並行適用される。事業者は両方の基準を同時に遵守する義務がある。"},
+{id:270,category:"法規（水質関連）",question:"「水質汚濁防止法」の「行政処分（改善命令・一時停止命令）」に関して都道府県知事が命令を出せる根拠条件として正しいものはどれか。",choices:["排水が環境基準を超えた場合（誤り）","排水処理担当者が変わった場合（誤り）","排水基準に適合しない排水を排出するおそれがあると認めるとき","施設が老朽化した場合という規定"],answer:2,explanation:"水質汚濁防止法第13条：①排水基準に適合しない排水を排出するおそれがあると認めるとき→排水処理方法の改善命令②現に基準超過排水を排出しているとき→施設の一時停止命令を都道府県知事が発令できる。"},
+{id:271,category:"法規（水質関連）",question:"「水質汚濁防止法」における「特定事業場の設置者の氏名変更・住所変更」の届出として正しいものはどれか。",choices:["変更の届出は不要に関する事項","変更後60日以内に届け出る（誤り）","氏名・名称・住所の変更は変更後30日以内に都道府県知事に届け出る","環境大臣に届け出るという規定"],answer:2,explanation:"水質汚濁防止法第9条：設置者の氏名・名称または住所（法人の場合は主たる事務所の所在地）の変更は変更後30日以内に都道府県知事に届け出る義務がある。"},
+{id:272,category:"法規（水質関連）",question:"「水質汚濁防止法」と「農用地の土壌の汚染防止等に関する法律（農用地土壌汚染防止法）」の関係として正しいものはどれか。",choices:["両法は同一の目的を持つという規定","農用地土壌汚染防止法は廃止された（誤り）","水質汚濁防止法は工場排水による公共用水域汚濁を規制し、農用地土壌汚染防止法は農用地の土壌汚染","農用地土壌汚染防止法は水質のみを規制する（誤り）"],answer:2,explanation:"農用地土壌汚染防止法（昭和45年制定）はカドミウム・銅・砒素による農用地土壌汚染を防止し汚染農地の利用方法規制・客土等の対策を規定する。水質汚濁防止法（工場排水規制）と相互補完関係にある。"},
+{id:273,category:"法規（水質関連）",question:"「水質汚濁防止法」の「特定施設」の新設届出に対し都道府県知事が「計画変更命令」を出せる期限として正しいものはどれか。",choices:["届出後30日以内","届出後1年以内","届出受理後60日以内","計画変更命令制度はない"],answer:2,explanation:"水質汚濁防止法第9条の2（旧第7条）：設置届出を受理した都道府県知事は60日以内であれば排水処理方法等の計画変更命令を発することができる。この期間中は原則として工事着手が制限される（実施制限）。"},
+{id:274,category:"法規（水質関連）",question:"「水質汚濁防止法」における「都道府県知事による報告徴収」として正しいものはどれか。",choices:["報告徴収の制度はないという規定","都道府県知事は必要と認めるとき特定事業場の設置者に対し排水状況","報告は任意であるに関する事項","環境大臣のみが報告を求めることができる（誤り）"],answer:1,explanation:"水質汚濁防止法第22条第1項：都道府県知事等は必要と認めるとき特定事業場の設置者に対し、排水・施設の状況について報告を求めることができる。虚偽報告は罰則（30万円以下の罰金）の対象。"},
+{id:275,category:"法規（水質関連）",question:"「水質汚濁防止法」の「排水基準の適用水域」として「海域」が含まれる理由として正しいものはどれか。",choices:["海域は水質汚濁防止法の対象外（誤り）","湖沼のみが対象に関する事項","外洋のみが対象に関する事項","沿岸海域（領海・内湾等）も公共用水域に含まれるため"],answer:3,explanation:"水質汚濁防止法の公共用水域には河川・湖沼・港湾・沿岸海域が含まれる。沿岸海域への工場排水についても排水基準（pH・COD・SS・重金属等、海域用の基準値を含む）が適用される。"},
+{id:276,category:"法規（水質関連）",question:"「水質汚濁防止法」における「指定地域内の特定事業場の汚濁負荷量の届出」として正しいものはどれか。",choices:["届出義務はないという規定という規定","国に届け出る規定に関する事項","年1回の届出で十分な規定という規定","指定地域内の対象特定事業場は汚濁負荷量を算定して都道府県知事に届け出る義務"],answer:3,explanation:"水質汚濁防止法第14条の5・6：総量規制指定地域の対象特定事業場は汚濁負荷量（COD・全窒素・全リン）を定められた方法で測定・算定し、都道府県知事に報告（届出）する義務がある。"},
+{id:277,category:"法規（水質関連）",question:"「水質汚濁防止法」において「排水基準の遵守を確保するための技術的手段」として都道府県知事が行う指導・助言として正しいものはどれか。",choices:["技術的助言の制度はないという規定","技術的助言は罰則の代替という規定","排水基準の遵守のため必要な場合、都道府県知事は排水処理技術","技術的助言を受けると届出が不要になる（誤り）"],answer:2,explanation:"水質汚濁防止法第14条：都道府県知事は排水基準遵守のため必要があると認めるとき、排水処理施設の設置・改善等について技術的な助言または勧告を行うことができる。"},
+{id:278,category:"法規（水質関連）",question:"「水質汚濁防止法」の「環境大臣への報告義務」として都道府県知事に課されているものとして正しいものはどれか。",choices:["都道府県知事に環境大臣への報告義務はない（誤り）","5年に1回の報告でよいという規定","都道府県知事は毎年、公共用水域の水質の測定結果および水質汚濁の状況を環境大臣に報告し","市町村長が環境大臣に報告する（誤り）"],answer:2,explanation:"水質汚濁防止法第16条第2項：都道府県知事は毎年、当該都道府県内の公共用水域の水質の状況（測定結果等）を環境大臣に報告する義務がある。これにより国が全国的な水質汚濁状況を把握する。"},
+{id:279,category:"法規（水質関連）",question:"「水質汚濁防止法」の「排水基準に係る検定方法（公定法）」として定められた測定を「外部機関に委託」する場合の注意点として正しいものはどれか。",choices:["計量法に基づく計量証明事業者（環境計量証明機関）に委託することが推奨されており、測定の信頼性","外部委託は禁止されているという規定","外部委託すると記録保存義務がなくなる（誤り）","外部委託の場合は記録が不要（誤り）"],answer:0,explanation:"排水の法定測定を外部機関に委託する場合、計量法に基づく環境計量証明事業者（水質計量証明）への委託が推奨される。測定結果の証明書（計量証明書）が法定記録として有効。委託しても記録保存義務は設置者に残る。"},
+{id:280,category:"法規（水質関連）",question:"「水質汚濁防止法」の「生活排水対策」において「合併処理浄化槽」の普及を推進する法律として正しいものはどれか。",choices:["水道法という規定","農業振興地域整備法という規定","廃棄物処理法に関する事項","浄化槽法（浄化槽の設置・管理・保守点検・清掃・定期検査を規定）"],answer:3,explanation:"浄化槽法は合併処理浄化槽（し尿＋生活雑排水を一括処理）の設置義務化・保守点検・清掃・定期検査（法定検査）を規定し、生活排水対策の中核法として機能する。現在は単独処理浄化槽の新設は原則禁止。"},
+{id:281,category:"法規（水質関連）",question:"「水質汚濁防止法」における「特定施設の使用の届出（新規操業開始前）」に関連した「実施制限」として正しいものはどれか。",choices:["届出後すぐに操業開始できる（誤り）","実施制限の制度はないという規定","届出後30日経過で操業開始できる（誤り）","届出が受理されてから60日が経過した後でなければ施設の使用"],answer:3,explanation:"水質汚濁防止法第9条：特定施設の設置届出後60日間は原則として施設の使用を開始できない（実施制限）。この期間に都道府県知事が計画変更命令を出せる。ただし知事が短縮を認める場合がある。"},
+{id:282,category:"法規（水質関連）",question:"「水質汚濁防止法」の「有害物質の地下浸透禁止」規定（第12条の2）として正しいものはどれか。",choices:["有害物質の地下浸透に関する規定はない（誤り）","地下水汚染は水質汚濁防止法の対象外（誤り）","有害物質の地下浸透は届出で認められる（誤り）","特定事業場においては有害物質を含む水を地下に浸透させることが禁止されており"],answer:3,explanation:"水質汚濁防止法第12条の2：特定事業場の設置者は有害物質を含む汚水等を地下に浸透させてはならない（禁止規定）。違反すると改善命令の対象となり、命令違反は罰則（6月以下懲役または50万円以下罰金）が科される。"},
+{id:283,category:"法規（水質関連）",question:"「水質汚濁防止法」の「排水基準の検定機関（環境計量士）」に関する記述として正しいものはどれか。",choices:["排水の法定測定に資格は不要（誤り）","環境計量士（濃度関係）は計量法に基づく国家資格で、排水・環境水質の計量証明","環境計量士は大気測定のみに必要（誤り）","水質測定には医師の資格が必要（誤り）"],answer:1,explanation:"環境計量士（濃度関係）は計量法に基づく国家資格。計量証明事業者（環境計量証明機関）で排水・環境水質・底質等の計量証明（法的効力のある測定証明書の発行）を行う際に必要な資格。"},
+{id:284,category:"法規（水質関連）",question:"「水質汚濁防止法」における「業として行う排水処理の受託」に関して正しいものはどれか。",choices:["排水処理の受託業は自由に行える（誤り）","排水処理汚泥等の廃棄物を業として収集・運搬・処分する場合は廃棄物処理法に基づく許可","排水処理受託業に特別な許可は不要（誤り）","市町村の許可のみで足りるという規定"],answer:1,explanation:"排水処理から発生する汚泥（産業廃棄物）を業として収集・運搬・処分する場合は廃棄物処理法に基づく産業廃棄物収集運搬業許可（都道府県・政令市）および処分業許可が必要。排水処理業務自体には特別な許可は不要。"},
+{id:285,category:"法規（水質関連）",question:"「水質汚濁防止法」の「特定施設の種類の変更（業種変更・施設種類変更）」の手続きとして正しいものはどれか。",choices:["変更の届出は不要に関する事項","国に届け出るに関する事項","変更後に届け出ればよいという規定","新たな特定施設の種類に係る設置届出（変更届）を工事着手60日前までに都道府県知事に提出する"],answer:3,explanation:"特定施設の種類（別表第一の施設区分）が変わる場合は新たな特定施設の設置に準じた届出（変更届・60日前届出）が必要。構造・使用方法・処理方法の変更届出（第8条）とは区別される。"},
+{id:286,category:"法規（水質関連）",question:"「水質汚濁防止法」における「地下水の環境基準」として設定されている項目の例として正しいものはどれか。",choices:["BOD・COD・SSという規定","pH・DOのみに関する事項","トリクロロエチレン・テトラクロロエチレン・ベンゼン・砒素・カドミウム・硝酸性窒素等","大腸菌群数のみに関する事項"],answer:2,explanation:"地下水の環境基準（環境基本法第16条に基づく告示）はトリクロロエチレン・テトラクロロエチレン・ベンゼン・砒素・カドミウム・六価クロム・鉛・硝酸性窒素及び亜硝酸性窒素等28項目が設定されている。"},
+{id:287,category:"法規（水質関連）",question:"「水質汚濁防止法」の「排水基準の設定根拠（目的）」として正しいものはどれか。",choices:["事業者の利益保護が目的という規定","公共用水域の水質汚濁を防止して人の健康を保護し生活環境を保全すること","排水処理業者の保護が目的という規定","国際条約の履行が目的という規定"],answer:1,explanation:"水質汚濁防止法第1条（目的）：工場・事業場からの排水規制により公共用水域の水質汚濁を防止し、国民の健康保護・生活環境保全・人の健康に係る被害の防止が排水基準設定の根拠・目的。"},
+{id:288,category:"法規（水質関連）",question:"「水質汚濁防止法」の「特定施設に係る届出書類の保存義務」として正しいものはどれか。",choices:["届出書類の保存義務はないという規定","都道府県が保存するという規定","届出書類は提出後廃棄してよい（誤り）","設置・変更届出書類の写し等は事業場に保存し、行政からの求めに応じて提示できるようにし"],answer:3,explanation:"水質汚濁防止法上は届出書類の写しの保存を明示的に義務付けた規定はないが、実務上は届出書類・変更履歴・測定記録等を一括して適切に保存・管理することが行政指導上求められる。"},
+{id:289,category:"法規（水質関連）",question:"「水質汚濁防止法」の「総量規制対象物質（COD・全窒素・全リン）」のうち「全窒素」の総量規制が追加された年として正しいものはどれか。",choices:["1972年（昭和47年）","1989年（平成元年）","2000年（平成12年）","1970年（昭和45年）"],answer:1,explanation:"水質汚濁防止法の総量規制は1978年（昭和53年）にCODの総量規制が開始。全窒素・全リンは1989年（平成元年）の法改正で総量規制対象物質に追加された。富栄養化対策の強化が目的。"},
+{id:290,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水の排出口の構造基準」として正しいものはどれか。",choices:["排出口の構造に法律上の規定はない（誤り）","排出口は必ず水中に設置する（誤り）","排出口は水質の測定が容易な構造とし、かつ排出水の量を測定するための計量器等を設置する","排出口の形状は自由という規定"],answer:2,explanation:"水質汚濁防止法施行規則・指導により排出口は①測定が容易な構造（採水・流量計測が可能）②流量計の設置③漏洩防止構造等が求められる。総量規制対象事業場では流量測定装置の設置が特に重要。"},
+{id:291,category:"法規（水質関連）",question:"「水質汚濁防止法」の「適用除外（特定施設に該当しない場合）」として正しいものはどれか。",choices:["規模に関係なくすべての施設が対象（誤り）","小規模でも常に適用されるという規定","施設の種類が別表第一に列挙されていない場合、または規模要件","特定施設に該当しなくても排水基準は適用される（誤り）"],answer:2,explanation:"水質汚濁防止法の特定施設は法別表第一・施行令第1条で施設種類と規模要件が規定されており、これに該当しない施設・事業場は特定事業場に当たらず、届出・排水基準の法律上の直接適用はない（条例等の適用はある場合がある）。"},
+{id:292,category:"法規（水質関連）",question:"「水質汚濁防止法」における「公害防止管理者の資格区分（水質第3種・第4種）」の対象として正しいものはどれか。",choices:["有害物質使用施設を有する大規模事業場（誤り）","すべての特定事業場という規定","有害物質を使用しない特定施設を設置する事業場（第3種：排水量50m³/日以上","排水量1,000m³/日以上の事業場（誤り）"],answer:2,explanation:"水質関係第3種は有害物質を使用しない特定施設を設置し排水量1日50m³以上、第4種は同じく50m³未満の事業場が対象。第1・2種（有害物質使用）より適用範囲が広く、食品工場・一般製造業等に多い。"},
+{id:293,category:"法規（水質関連）",question:"「水質汚濁防止法」における「排水基準の測定結果が基準超過の場合に設置者が取るべき対応」として正しいものはどれか。",choices:["測定結果を隠蔽するという対応（誤り）","次回の測定まで様子を見るという規定","原因調査・是正措置・排水停止または一時貯留し都道府県知事への報告を行う","測定頻度を減らす対応という規定"],answer:2,explanation:"排水基準超過が判明した場合、①即時原因調査②排水停止・緊急貯留等の応急措置③排水処理の改善④都道府県知事への自主的報告（法的義務はないが行政指導上求められる）⑤再発防止策の実施が適切な対応。"},
+{id:294,category:"法規（水質関連）",question:"「水質汚濁防止法」の「特定施設の届出が受理された後の実施制限の短縮・解除」として正しいものはどれか。",choices:["都道府県知事が計画が排水基準に適合していると認める場合など","実施制限の短縮は不可能という規定","環境大臣のみが短縮できるという規定","実施制限の短縮制度はないという規定"],answer:0,explanation:"水質汚濁防止法第9条ただし書き：都道府県知事は届出に係る計画が排水基準・法令に適合していると認める場合等に60日の実施制限期間を短縮することができる（事業者の迅速な操業開始を可能にする規定）。"},
+{id:295,category:"法規（水質関連）",question:"「水質汚濁防止法」における「公共用水域の水質に係る環境基準の類型指定権者」として正しいものはどれか。",choices:["二つ以上の都道府県にまたがる水域は国（環境大臣）、一の都道府県内の水域は都道府県知事","市町村長という規定","環境大臣が全水域を指定する（誤り）","都道府県知事がすべて指定する（誤り）"],answer:0,explanation:"水質環境基準の水域類型指定：二以上の都道府県にまたがる水域（利根川・淀川等）は環境大臣、一の都道府県内に存する水域は都道府県知事が類型を当てはめて指定する（環境基本法第16条・関連政令）。"},
+{id:296,category:"法規（水質関連）",question:"「水質汚濁防止法」の「第14条の2（事故時の措置）」における「応急措置の内容」として適切なものはどれか。",choices:["事故原因の調査のみを行うという規定","次回の測定まで様子を見るという規定","流出拡大防止（排水口閉鎖等）・周辺環境のモニタリング・関係機関への連絡を直ちに行う","マスコミへの説明のみ行うという規定"],answer:2,explanation:"事故時応急措置（法第14条の2）は①排水口閉鎖・ポンプ停止による流出拡大防止②吸収材・オイルフェンス等による拡散防止③緊急貯留④都道府県知事への速報（電話等）⑤原因箇所の特定・遮断が含まれる。"},
+{id:297,category:"法規（水質関連）",question:"「水質汚濁防止法」における「指定地域における特定事業場の新設・増設」に際して必要な手続きとして正しいものはどれか。",choices:["通常の届出と全く同じ手続き（誤り）","指定地域内では汚濁負荷量の審査が強化、瀬戸内海等では特別措置法に基づく許可が必要","指定地域では届出不要という規定（誤り）","国に届け出る規定に関する事項"],answer:1,explanation:"総量規制指定地域内の特定事業場新設は水質汚濁防止法の届出に加え、瀬戸内海環境保全特別措置法対象地域では工場新設・増設に都道府県知事の許可が必要（許可制度）。通常の届出制より厳しい事前規制。"},
+{id:298,category:"法規（水質関連）",question:"「水質汚濁防止法」の「水質測定の信頼性確保」のために重要なこととして正しいものはどれか。",choices:["測定値が低ければ方法を問わない（誤り）","外部委託すれば精度管理は不要（誤り）","測定は年1回で十分という規定","JIS K 0102等の公定法に従い・測定機器の定期校正"],answer:3,explanation:"法定排水測定の信頼性確保には①JIS公定法の遵守②測定機器の定期校正（標準液・ゼロ・スパン校正）③試薬の鮮度・品質管理④ブランク・重複測定による精度確認⑤測定者の技能維持が必要。"},
+{id:299,category:"法規（水質関連）",question:"「水質汚濁防止法」の「排水基準省令」の改正に際して事業者が行うべき対応として正しいものはどれか。",choices:["省令改正は事業者に関係ない（誤り）","改正後10年は旧基準を使用できる（誤り）","改正内容を把握して自社の排水が新基準に適合しているか確認し、適合していない場合は処理方法の改善","省令改正は行政のみが対応する（誤り）"],answer:2,explanation:"排水基準省令の改正（基準値の強化・新規項目の追加等）に際して事業者は①改正内容・施行日の把握②自社排水の現状測定・適合状況確認③不適合の場合の設備改善計画策定④必要な届出・許認可手続きを行う必要がある。"},
+{id:300,category:"法規（水質関連）",question:"「水質汚濁防止法」の目的（第1条）に規定される内容として正しいものはどれか。",choices:["工場等から公共用水域に排出される水の排出規制等により水質の汚濁防止を図り国民の健康を保護","工場の生産性向上と環境保全の両立（誤り）","地球温暖化の防止と水質保全（誤り）","水道水の安全確保のみという規定"],answer:0,explanation:"水質汚濁防止法第1条：工場・事業場排水の規制・生活排水対策・地下水汚染防止等により公共用水域・地下水の水質汚濁を防止し、国民の健康保護・生活環境保全・水質汚濁に係る被害の防止が目的として規定されている。"}
+];
+const CAT_META={
+"公害総論":{"color":"#2E7D32","icon":"🌍","bg":"#E8F5E9"},
+"水質概論":{"color":"#0969A2","icon":"💧","bg":"#E3F2FD"},
+"汚水処理特論":{"color":"#6A1B9A","icon":"🔬","bg":"#F3E5F5"},
+"水質有害物質特論":{"color":"#C62828","icon":"⚠️","bg":"#FFEBEE"},
+"大規模水質特論":{"color":"#E65100","icon":"🏭","bg":"#FFF3E0"},
+"法規（水質関連）":{"color":"#37474F","icon":"📋","bg":"#ECEFF1"}
+};
+
+const SUBCAT_DEF={
+  "公害総論":[{key:"s1",label:"🌍 公害の歴史・環境基本法",ids:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]},{key:"s2",label:"📊 環境基準・水質総論",ids:[16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]}],
+  "水質概論":[{key:"g1",label:"💧 水質汚濁・水質指標",ids:[31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]}],
+  "汚水処理特論":[{key:"o1",label:"🔬 物理・化学的処理方法",ids:[51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80]},{key:"o2",label:"🦠 生物処理・汚泥処理",ids:[81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110]}],
+  "水質有害物質特論":[{key:"y1",label:"⚠️ 有害物質の種類・健康影響",ids:[111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135]},{key:"y2",label:"🔬 有害物質の測定・除去",ids:[136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160]}],
+  "大規模水質特論":[{key:"d1",label:"🏭 業種別排水・処理技術",ids:[161,162,163,164,165,166,167,168,169,170,171,172,173,174,175]},{key:"d2",label:"📐 排水処理計算・管理",ids:[176,177,178,179,180,181,182,183,184,185,186,187,188,189,190]}],
+  "法規（水質関連）":[{key:"h1",label:"📋 水質汚濁防止法・届出",ids:[191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227]},{key:"h2",label:"⚖️ 規制基準・総量規制",ids:[228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264]},{key:"h3",label:"🔍 罰則・手続き・その他法規",ids:[265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300]}]
+};
+// カテゴリ正規化
+(function normalizeCats(){
+const MAP={"公害総論":"公害総論","水質概論":"水質概論","汚水処理特論":"汚水処理特論","水質有害物質特論":"水質有害物質特論","大規模水質特論":"大規模水質特論","法規（水質関連）":"法規（水質関連）"};
+ALL_QUESTIONS.forEach(q=>{if(MAP[q.category])q.category=MAP[q.category];});
+})();
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_kogai_suishitsu";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",fsc:null,subcatOpen:false,ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+// ① 前回の続きセーブ/ロード
+function saveProgress(){setUd(p=>({...p,lastProgress:{mode:S.mode,fc:S.fc,shuffle:S.shuffle,ts:S.ts,deckIds:S.deck.map(q=>q.id),idx:S.idx,ts_:Date.now()}}));}
+function hasProgress(){const p=S.ud.lastProgress;return p&&p.deckIds&&p.deckIds.length>0&&p.idx<p.deckIds.length-1;}
+function retryQ(){clearInterval(S.tiv);S.sel=null;S.tout=false;S.tl=null;S.showExp=false;render();startTimer();}
+function pauseQ(){clearInterval(S.tiv);saveProgress();S.screen="home";render();}
+function resumeSession(){
+  const p=S.ud.lastProgress;if(!p)return;
+  S.mode=p.mode;S.fc=p.fc;S.shuffle=p.shuffle||false;S.ts=p.ts||0;
+  S.deck=p.deckIds.map(id=>ALL_QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+  S.idx=p.idx;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(S.fsc&&S.fc!=="全て"){const sub=(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc);if(sub)pool=pool.filter(q=>sub.ids.includes(q.id));}
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  // ① 進捗クリアして新規スタート
+  setUd(p=>{const np={...p};delete np.lastProgress;return np;});
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;
+  clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>{
+    const wc={...p.wrongCounts};
+    if(ok){
+      // ④ 弱点モードで正解したらwrongCountsから削除（クリア）
+      if(S.mode==="WEAK") delete wc[q.id];
+      else wc[q.id]=Math.max(0,(wc[q.id]||0));
+    } else {
+      wc[q.id]=(wc[q.id]||0)+1;
+    }
+    return{...p,wrongCounts:wc,history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1};
+  });
+  // ① 進捗保存
+  saveProgress();
+  render();
+  const el=document.getElementById("app");
+  if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){
+    // ① セッション完了: 進捗クリア
+    setUd(p=>{const np={...p,totalSessions:(p.totalSessions||0)+1};delete np.lastProgress;return np;});
+    S.screen="result";render();
+  } else {
+    S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;
+    saveProgress();
+    render();startTimer();
+  }
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){
+  document.getElementById("app").innerHTML=build();
+  if(S.screen==="notebook"||S.screen==="quiz"){
+    const el=document.getElementById("app");
+    if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+  }
+  if(S.screen==="result"||S.screen==="home"){
+    // ⑥ resultとhomeは常にページ最上部
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const isFiltered=S.mode==="ALL"&&(S.fc!=="全て"||S.fsc);
+  const filterLabel=S.fsc?(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc)?.label.replace(/^[^\s]+\s/,""):S.fc!=="全て"?S.fc:"";
+  const left=`
+    <div class="card">
+      <div class="cat-card-hd">
+        <span class="cat-card-title">カテゴリ・絞り込み</span>
+        ${isFiltered?`<span class="cat-filter-badge active">🎯 ${filterLabel}</span>`:`<span class="cat-filter-badge none">全問題</span>`}
+      </div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}">
+        ${cats.map(c=>{
+          const a=S.fc===c;
+          const m=CAT_META[c];
+          const cnt=c==="全て"?ALL_QUESTIONS.length:ALL_QUESTIONS.filter(q=>q.category===c).length;
+          const wc=c==="全て"?wq.length:ALL_QUESTIONS.filter(q=>q.category===c&&(S.ud.wrongCounts||{})[q.id]>0).length;
+          const badge=wc>0?`<span style="background:#E8572A;color:#fff;font-size:9px;font-weight:700;border-radius:4px;padding:0 4px;">${wc}</span>`:"";
+          return`<button class="cat-chip ${a?"active":""}" onclick="S.fc='${c}';S.fsc=null;render()">${c!=="全て"&&m?m.icon+" ":""}${c}<span style="opacity:.55;font-size:10px;margin-left:3px;">${cnt}</span>${badge}</button>`;
+        }).join("")}
+      </div>
+      ${S.mode==="ALL"&&S.fc!=="全て"&&SUBCAT_DEF[S.fc]?(()=>{
+        const subs=SUBCAT_DEF[S.fc];
+        return`<div class="subcat-section">
+          <div class="subcat-label">章で絞り込む</div>
+          <div class="subcat-grid">
+            <button class="subcat-chip ${!S.fsc?"active":""}" onclick="S.fsc=null;render()">全章</button>
+            ${subs.map(s=>{
+              const cnt2=ALL_QUESTIONS.filter(q=>q.category===S.fc&&s.ids.includes(q.id)).length;
+              return`<button class="subcat-chip ${S.fsc===s.key?"active":""}" onclick="S.fsc='${s.key}';render()">${s.label}<span style="opacity:.6;font-size:10px;margin-left:3px;">${cnt2}</span></button>`;
+            }).join("")}
+          </div>
+        </div>`;
+      })():""}
+      ${S.mode!=="ALL"?`<p style="font-size:11px;color:var(--text3);margin-top:4px;">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+      <div class="opts-compact">
+        <span class="opt-label-ic">⏱</span>
+        ${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}
+        <div class="opts-compact-sep"></div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"ランダム":"順番通り"}</button>
+      </div>
+    </div>
+    ${(()=>{
+      const p=S.ud.lastProgress;
+      const hasP=hasProgress();
+      if(hasP){
+        const resumeQ=p.deckIds&&ALL_QUESTIONS.find(q=>q.id===p.deckIds[p.idx]);
+        const cat=resumeQ?(CAT_META[resumeQ.category]||{icon:"📄"}):{icon:"📄"};
+        const catLabel=resumeQ?resumeQ.category:"";
+        const qNum=p.idx+1;
+        return`<div class="start-row">
+          <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+          <button class="resume-btn" onclick="resumeSession()">
+            <span class="resume-btn-label">▶ 続きから学習</span>
+            <span class="resume-btn-sub">${qNum}問目 ${cat.icon}${catLabel}</span>
+          </button>
+        </div>`;
+      } else {
+        return`<button class="start-btn start-btn-solo ${startOff?"off":""}" onclick="go()">学習スタート ${arr()}</button>`;
+      }
+    })()}
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  const modeTabs=[
+    {k:"ALL",ic:"📚",lbl:"全問",cnt:ALL_QUESTIONS.length,dis:false},
+    {k:"WEAK",ic:"🔥",lbl:"弱点",cnt:wq.length,dis:!wq.length},
+    {k:"STAR",ic:"⭐",lbl:"★登録",cnt:sq.length,dis:!sq.length}
+  ].map(m=>{const on=S.mode===m.k?"hm-on":"";const dis=m.dis?"hm-dis":"";const click=m.dis?"":"S.mode=\'"+m.k+"\';S.fsc=null;render()";return`<button class="hm-tab ${on} ${dis}" onclick="${click}"><span class="hm-ic">${m.ic}</span><span class="hm-lbl">${m.lbl}</span><span class="hm-cnt">${m.cnt}問</span></button>`;}).join("");
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-top">
+        <div class="hero-left">
+          <div class="hero-exam-type">環境・公害防止</div>
+          <div class="hero-exam-name">公害防止管理者（水質）</div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+            ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+          </div>
+        </div>
+        <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+          <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+          <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+          <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+        </div>
+      </div>
+      <div class="hero-mode-bar">${modeTabs}</div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const catMeta=CAT_META[cur.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+  const catLabel=cur.category||"";
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="44" height="44" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+
+  // ── 未回答：問題文＋4択を表示 ──────────────────────
+  if(!ia){
+    const ch=cur.choices.map((c,i)=>`<button class="choice" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span></button>`).join("");
+    return`<div class="quiz-inner">
+      <div class="pc-quiz-main">
+        <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+        <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+        ${tim}
+        <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+        <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+        <div class="choices">${ch}</div>
+      </div>
+      <div class="pc-quiz-side">
+        <div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>
+        <div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>
+      </div>
+    </div>`;
+  }
+
+  // ── 回答済み：選択肢を非表示にして解説カードのみ表示 ──
+  const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";
+  const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";
+  const vc=ic&&!S.tout?"var(--green-d)":S.tout?"var(--gold)":"var(--accent)";
+
+  const correctRow=`<div class="exp-correct-bar ok">
+    <span class="exp-correct-label">正解</span>
+    <span class="exp-correct-text">${al[cur.answer]}. ${cur.choices[cur.answer]}</span>
+  </div>`;
+  const myRow=(!ic&&!S.tout&&S.sel!==null)?`<div class="exp-correct-bar ng">
+    <span class="exp-correct-label">あなた</span>
+    <span class="exp-correct-text">${al[S.sel]}. ${cur.choices[S.sel]}</span>
+  </div>`:"";
+
+  // PC側解説パネル
+  const expPC=`<div class="side-panel">
+    <div class="side-title">解説</div>
+    <div style="font-size:13px;font-weight:700;color:${vc};margin-bottom:8px;">${v}</div>
+    <div style="background:rgba(29,158,117,.1);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#0F6E56;"><strong>正解：</strong>${al[cur.answer]}. ${cur.choices[cur.answer]}</div>
+    ${(!ic&&!S.tout&&S.sel!==null)?`<div style="background:rgba(230,81,0,.08);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#8B2A0E;"><strong>あなた：</strong>${al[S.sel]}. ${cur.choices[S.sel]}</div>`:""}
+    <div class="side-exp-body">${cur.explanation}</div>
+  </div>`;
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="exp-card exp-sp ${cls}">
+        <div class="exp-head"><span class="exp-verdict">${v}</span></div>
+        ${correctRow}${myRow}
+        <p class="exp-body">${cur.explanation}</p>
+      </div>
+      <div class="next-wrap"><div class="next-3">
+        <button class="btn-retry" onclick="retryQ()">🔁<span class="btn-sub-lbl">もう一度</span></button>
+        <button class="btn-pause" onclick="pauseQ()">⏸<span class="btn-sub-lbl">中断</span></button>
+        <button class="btn-next-main" onclick="next()">${S.idx+1>=S.deck.length?"🏁 結果を見る":"次の問題 →"}</button>
+      </div></div>
+    </div>
+    <div class="pc-quiz-side">${expPC}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  // ⑤ undefinedを除去: questionが存在するか確認
+  const log=S.sess.map((a,i)=>{
+    if(!a.q||!a.q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[a.q.id]||0;
+    const cat=CAT_META[a.q.category];
+    const icon=cat?cat.icon:"";
+    const qText=a.q.question.slice(0,28)+"…";
+    return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${icon}</span><span class="ar-q">${qText}</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;
+  }).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/><circle cx="50" cy="50" r="42" fill="none" stroke="${vc}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${sr*2.639} 263.9" transform="rotate(-90 50 50)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{
+    if(!q||!q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[q.id]||0;
+    const is=(S.ud.starIds||[]).includes(q.id);
+    const cat=CAT_META[q.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+    return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${cat.color};background:${cat.bg};border-color:${cat.color}55">${cat.icon} ${q.category||""}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;
+  }).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+
+// ── ページ内ナビ スクロール処理 ──
+function scrollToApp(e){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById("app");
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab("app");
+}
+function scrollTo_(e, id){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById(id);
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab(id);
+}
+function setActiveTab(id){
+  document.querySelectorAll(".pn-tab").forEach(t => t.classList.remove("active"));
+  const map = {app:0, apply:1, books:2, courses:3, overview:4, syllabus:5, roadmap:6, faq:7};
+  const tabs = document.querySelectorAll(".pn-tab");
+  const idx = map[id];
+  if(idx !== undefined && tabs[idx]) tabs[idx].classList.add("active");
+}
+const _navIds = ["faq","roadmap","syllabus","overview","courses","books","apply"];
+window.addEventListener("scroll", ()=>{
+  const offset = 120;
+  for(const id of _navIds){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= offset){
+      setActiveTab(id); return;
+    }
+  }
+  setActiveTab("app");
+}, {passive:true});
+</script>
+
+<section class="aff-section"><div class="aff-inner">
+  <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+  <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+  <a class="official-btn" href="https://www.jemai.or.jp/polconman/examination/" target="_blank" rel="noopener">
+    <div class="official-ico">🏛️</div>
+    <div class="official-info"><div class="official-name">産業環境管理協会（公害防止管理者等国家試験）（公式）</div><div class="official-note">試験日程・申込方法の詳細はこちらから確認できます</div></div>
+    <div class="official-arr">→</div>
+  </a>
+  <div class="aff-h3">おすすめ参考書</div><div class="book-list"><div class="book-card"><div class="book-title">📖 公害防止管理者試験 水質関係テキスト（産業環境管理協会）</div><div class="book-memo">公式テキスト必携</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=公害防止管理者試験水質関係テキスト産業環境管理協会&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/公害防止管理者試験水質関係テキスト産業環境管理協会/" target="_blank" rel="noopener">楽天</a></div></div><div class="book-card"><div class="book-title">📖 公害防止管理者試験 水質関係過去問題集（産業環境管理協会）</div><div class="book-memo">科目別の過去問演習に最適</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=公害防止管理者試験水質関係過去問題集産業環境管理協会&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/公害防止管理者試験水質関係過去問題集産業環境管理協会/" target="_blank" rel="noopener">楽天</a></div></div></div>
+  <div class="aff-h3">おすすめ通信講座</div><div class="course-list"><a class="course-card" href="https://www.jemai.or.jp/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">産業環境管理協会 通信教育</div><div class="course-price">約30,000円〜</div><div class="course-feat">公式通信教育</div></div><div class="course-arr">›</div></a><a class="course-card" href="https://www.o-hara.jp/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">資格の大原 環境系講座</div><div class="course-price">約35,000円〜</div><div class="course-feat">実績豊富</div></div><div class="course-arr">›</div></a></div>
+  <p class="aff-note">※ リンクはアフィリエイトリンクです。価格は変動する場合があります。</p>
+</div></section>
+<section class="seo-section"><div class="seo-inner">
+  <h2 class="seo-h2">公害防止管理者 水質関係第1種とは</h2>
+  <p class="seo-lead">公害防止管理者水質関係第1種は、すべての排水を行う特定工場の水質公害防止管理業務ができる最上位の水質関係資格です。化学工業・食品工業・製紙・電気めっき業等で求められます。科目合格制度があり計画的な取得が可能です。</p>
+  <h3 class="seo-h3">試験概要</h3>
+  <div class="info-grid2">
+    <div class="ig-card"><div class="ig-lbl">合格率</div><div class="ig-val">25%</div></div>
+    <div class="ig-card"><div class="ig-lbl">勉強時間</div><div class="ig-val">300〜500時間</div></div>
+    <div class="ig-card"><div class="ig-lbl">受験料</div><div class="ig-val">8,700円</div></div>
+    <div class="ig-card"><div class="ig-lbl">試験形式</div><div class="ig-val">4択マークシート（科目別）</div></div>
+    <div class="ig-card"><div class="ig-lbl">試験回数</div><div class="ig-val">年1回（10月頃）</div></div>
+    <div class="ig-card"><div class="ig-lbl">難易度</div><div class="ig-val">★★★☆☆</div></div>
+  </div>
+  <h3 class="seo-h3">試験科目</h3><table class="seo-table"><thead><tr><th>科目</th><th>内容</th></tr></thead><tbody><tr><td>公害総論（全種共通）</td><td>環境基本法・公害概論・環境測定の基礎</td></tr><tr><td>水質概論</td><td>水質汚濁・排出基準・水質汚濁防止法</td></tr><tr><td>汚水処理特論</td><td>物理・化学・生物処理法の原理と設計</td></tr><tr><td>水質有害物質特論（1種）</td><td>重金属・有機塩素化合物等の測定と規制</td></tr><tr><td>大規模水質特論（1種）</td><td>大規模工場の排水処理・総量規制</td></tr></tbody></table>
+  <h3 class="seo-h3">学習ロードマップ</h3><div class="roadmap"><div class="rm-step"><div class="rm-num">1</div><div><div class="rm-title">公害総論・水質概論を学ぶ（1〜2ヶ月目）</div><div class="rm-desc">環境法規と水質汚濁の全体像を理解する</div></div></div><div class="rm-step"><div class="rm-num">2</div><div><div class="rm-title">汚水処理特論を習得（3〜4ヶ月目）</div><div class="rm-desc">各種排水処理技術を体系的に学ぶ</div></div></div><div class="rm-step"><div class="rm-num">3</div><div><div class="rm-title">有害物質・大規模特論（1種固有）を学習（5ヶ月目）</div><div class="rm-desc">重金属・有機塩素の規制と大規模排水管理を押さえる</div></div></div><div class="rm-step"><div class="rm-num">4</div><div><div class="rm-title">過去問演習で仕上げ（6ヶ月目）</div><div class="rm-desc">科目ごとに過去問5年分を繰り返す</div></div></div></div>
+  <h3 class="seo-h3">次に目指す資格</h3><div class="next-shikaku"><a class="next-card" href="kogai_taiki.html"><div class="next-ico" style="background:#FFF3E0">🌿</div><div><div class="next-name">公害防止管理者 大気関係</div><div class="next-desc">大気のWライセンスも取得</div></div></a><a class="next-card" href="eco.html"><div class="next-ico" style="background:#FBEAF0">🌱</div><div><div class="next-name">eco検定</div><div class="next-desc">環境知識をさらに広げる</div></div></a></div>
+  <h3 class="seo-h3">よくある質問</h3><div class="faq-list"><details class="faq-item"><summary class="faq-q">水質関係第1種の合格率はどのくらいですか？</summary><p class="faq-a">約25〜30%程度です。科目合格制度を活用して複数年で取得する方も多いです。</p></details><details class="faq-item"><summary class="faq-q">大気と水質、どちらを先に取るべきですか？</summary><p class="faq-a">勤務先の工場の種類に合わせて選ぶのが一般的です。</p></details><details class="faq-item"><summary class="faq-q">科目合格制度とは何ですか？</summary><p class="faq-a">合格した科目は3年間有効です。計画的に全科目合格を目指せます。</p></details><details class="faq-item"><summary class="faq-q">化学の知識が必要ですか？</summary><p class="faq-a">基礎的な化学知識があると有利ですが、専用テキストで学習すれば合格可能です。</p></details></div>
+</div></section>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-logo">
+      <span class="sf-lmark">問</span>
+      資格<span>ドリル</span>
+    </div>
+    <div class="sf-links">
+      <a href="index.html">資格一覧トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="sf-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>
