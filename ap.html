@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>応用情報技術者（午前）無料問題集・過去問対策 | 資格ドリル</title>
+<meta name="description" content="G検定（ジェネラリスト検定）の無料問題集。AI・機械学習・ディープラーニング・法律・倫理を網羅。合格率65〜76%・勉強時間40〜80時間。オンライン100分/会場120分・145問。弱点特訓・解説つき。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1623;--navy2:#171e2e;--navy3:#1e2840;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;--gold-bg:#FEF6E4;
+  --accent:#ff3b53;--accent-bg:#fff0f1;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Inter','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;z-index:100;}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.site-logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;font-family:"Inter","Noto Sans JP";}
+.site-logo .logo-text{background:linear-gradient(90deg,#fff 0%,#ffd6c2 100%);-webkit-background-clip:text;background-clip:text;color:transparent !important;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+/* ③ PC時: ヘッダー内コンテンツを掲載内容の左端に揃える */
+@media(min-width:769px){
+  .site-header{padding:0;}
+  .site-header-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+  .page-nav-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;}
+.hero-top{padding:18px 20px 14px;display:flex;align-items:center;gap:14px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:3px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+/* モードタブ（ヒーロー内）コンパクト1行 */
+.hero-mode-bar{display:flex;border-top:1px solid rgba(255,255,255,.08);}
+.hm-tab{flex:1;padding:8px 4px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:5px;cursor:pointer;border:none;background:none;font-family:var(--font-b);color:rgba(255,255,255,.4);transition:all .2s;border-bottom:2px solid transparent;}
+.hm-tab:not(.hm-dis):hover{color:rgba(255,255,255,.8);background:rgba(255,255,255,.04);}
+.hm-tab.hm-on{color:#fff;border-bottom-color:var(--brand);background:rgba(255,59,83,.08);}
+.hm-tab.hm-dis{opacity:.3;cursor:not-allowed;}
+.hm-ic{font-size:14px;line-height:1;transition:transform .25s cubic-bezier(.34,1.56,.64,1);flex-shrink:0;}
+.hm-tab.hm-on .hm-ic{transform:scale(1.15);}
+.hm-lbl{font-size:12px;font-weight:700;}
+.hm-cnt{font-size:10px;background:rgba(255,255,255,.12);border-radius:4px;padding:1px 6px;line-height:1.5;transition:all .2s;}
+.hm-tab.hm-on .hm-cnt{background:var(--brand);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.cat-card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.cat-card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
+.cat-filter-badge{font-size:10px;padding:2px 8px;border-radius:99px;font-weight:700;}
+.cat-filter-badge.none{color:var(--text3);background:var(--bg);}
+.cat-filter-badge.active{color:#fff;background:var(--brand);animation:badgePop .3s cubic-bezier(.34,1.56,.64,1);}
+@keyframes badgePop{0%{transform:scale(.7)}100%{transform:scale(1)}}
+.cat-row{display:flex;gap:7px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:7px 13px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .2s;display:flex;align-items:center;gap:5px;}
+.cat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;transform:translateY(-1px);}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;box-shadow:0 3px 10px rgba(15,22,35,.2);}
+.subcat-section{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);animation:fadeSlideIn .22s ease;}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.subcat-label{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;margin-bottom:7px;display:flex;align-items:center;gap:5px;text-transform:uppercase;}
+.subcat-label::before{content:"";width:2px;height:10px;background:linear-gradient(var(--brand),var(--brand2));border-radius:1px;flex-shrink:0;}
+.subcat-grid{display:flex;gap:5px;flex-wrap:wrap;}
+.subcat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:5px 11px;font-size:11px;cursor:pointer;color:var(--text2);transition:all .2s;display:flex;align-items:center;gap:4px;}
+.subcat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;}
+.subcat-chip.active{background:linear-gradient(135deg,var(--brand),var(--brand2));border-color:transparent;color:#fff;font-weight:700;box-shadow:0 3px 8px rgba(255,59,83,.3);}
+.opts-compact{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.opts-compact-sep{width:1px;height:16px;background:var(--border);flex-shrink:0;}
+.opt-label-ic{font-size:12px;color:var(--text3);}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill:hover{background:#f0efe8;border-color:var(--border2);}
+.opt-pill.on{background:var(--accent-bg)!important;border-color:var(--brand)!important;color:var(--brand)!important;font-weight:700;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+/* スタート・継続ボタン行 */
+.start-row{display:flex;gap:8px;margin-bottom:8px;}
+.start-btn{flex:1;height:52px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:900;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 8px 22px rgba(255,59,83,.35);}
+.start-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(255,59,83,.5);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.start-btn-solo{width:100%;height:56px;font-size:18px;letter-spacing:2px;margin-bottom:8px;}
+.resume-btn{flex:1;height:52px;background:var(--green-bg);border:1.5px solid var(--green);border-radius:var(--radius);color:var(--green-d);font-size:13px;font-weight:700;font-family:var(--font-b);cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;}
+.resume-btn:hover{background:var(--green);color:#fff;}
+.resume-btn-label{font-size:12px;font-weight:700;}
+.resume-btn-sub{font-size:10px;opacity:.75;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:8px 12px 70px;display:flex;flex-direction:column;gap:8px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter-wrap{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:22px;font-weight:900;}
+.qc-sep{font-size:12px;color:var(--text3);}
+.qc-tot{font-size:13px;color:var(--text3);}
+.qc-sub{font-size:10px;color:var(--text3);letter-spacing:.5px;}
+.star-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:18px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--brand);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:44px;height:44px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:13px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:6px;}
+.sb-ok{font-size:11px;font-weight:700;color:var(--green);min-width:28px;}
+.sb-ng{font-size:11px;font-weight:700;color:var(--accent);min-width:28px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.sb-dot{width:7px;height:7px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:9px;height:9px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:9px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;}
+.q-cat-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}
+.q-miss{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(230,81,0,.3);padding:3px 8px;border-radius:6px;}
+.q-text{font-size:13px;line-height:1.7;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:6px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:0 12px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:10px;text-align:left;transition:all .15s;color:var(--text2);min-height:44px;width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FFF3E0;transform:translateX(2px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:12px;width:26px;height:26px;border-radius:6px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:12px;line-height:1.5;padding:10px 0;}
+.ch-icon{font-size:15px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:10px;padding:10px 12px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(230,81,0,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.exp-verdict{font-size:13px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:11px;color:var(--gold);}
+/* 正解表示バー */
+.exp-correct-bar{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:7px;margin-bottom:6px;}
+.exp-correct-bar.ok{background:rgba(29,158,117,.12);}
+.exp-correct-bar.ng{background:rgba(230,81,0,.08);}
+.exp-correct-label{font-size:10px;font-weight:700;white-space:nowrap;padding-top:1px;}
+.exp-correct-bar.ok .exp-correct-label{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-label{color:var(--accent);}
+.exp-correct-text{font-size:12px;line-height:1.5;}
+.exp-correct-bar.ok .exp-correct-text{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-text{color:#8B2A0E;}
+.exp-body{font-size:11.5px;line-height:1.8;color:var(--text2);}
+.next-wrap{position:sticky;bottom:12px;padding-top:6px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);width:100%;height:46px;font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.3);}
+.next-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.next-3{display:grid;grid-template-columns:1fr 1fr 2fr;gap:6px;}
+.btn-retry{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-retry:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-bg);}
+.btn-pause{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-pause:hover{border-color:var(--green);color:var(--green-d);background:var(--green-bg);}
+.btn-next-main{height:46px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 4px 14px rgba(255,59,83,.3);}
+.btn-next-main:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,59,83,.45);}
+.btn-sub-lbl{font-size:9px;font-weight:400;opacity:.7;line-height:1;}
+/* ⑥ result コンパクト化 */
+.result-inner{max-width:480px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:12px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:100px;height:100px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:32px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:14px;}
+.result-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.result-verdict{font-size:13px;font-weight:700;padding:6px 16px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:6px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:12px;}
+.rc-name{font-size:10px;font-weight:700;width:68px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:10px;font-weight:700;width:28px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:5px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:10px;color:var(--text3);min-width:22px;}
+.ar-cat{font-size:12px;}
+.ar-q{flex:1;font-size:11px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:13px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:44px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.25);}
+.cta-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.ghost-btn{width:100%;height:40px;background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:13px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── スマホ：サイドパネルをメインコンテンツの下に表示 ── */
+@media (max-width:768px){
+  .pc-cols{display:flex;flex-direction:column;gap:0;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{display:flex;flex-direction:column;gap:12px;margin-top:12px;}
+  .quiz-inner{display:flex;flex-direction:column;}
+  .pc-quiz-main{display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{display:none;}
+}
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  /* ② サイドパネル: ビューポート高さを超えないよう最大高さ設定してスクロール */
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-col-side::-webkit-scrollbar{display:none;}
+  .quiz-inner{max-width:920px;padding:24px 32px 40px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-quiz-side::-webkit-scrollbar{display:none;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  /* ⑥ result: PC時もコンパクトに */
+  .result-inner{max-width:680px;padding:16px 32px 40px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:72px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── ページ内タブナビ ── */
+.page-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:90;}
+.page-nav::-webkit-scrollbar{display:none;}
+.page-nav-inner{display:flex;align-items:center;min-width:max-content;padding:0 12px;}
+.pn-tab{color:rgba(255,255,255,0.55);font-size:12px;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;text-decoration:none;display:block;}
+.pn-tab:hover{color:#fff;}
+.pn-tab.active{color:#fff;border-bottom-color:#1D9E75;}
+
+/* ① resume-btn は上で定義済み */
+
+/* ── モード選択コンパクト化 ── */
+.mode-row-compact{display:flex;gap:6px;}
+.mode-btn-compact{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:7px 4px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);transition:all .18s;height:40px;}
+.mode-btn-compact:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-btn-compact.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-btn-compact.mode-off{opacity:.4;cursor:not-allowed;}
+.mbc-icon{font-size:14px;line-height:1;}
+.mbc-label{font-size:11px;font-weight:700;}
+.mbc-count{font-size:10px;color:var(--text3);margin-left:1px;}
+.mode-btn-compact.mode-active .mbc-count{color:var(--accent);}
+
+/* ── カテゴリ+オプション 横並び ── */
+.cat-opt-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.cat-opt-row .cat-row{flex:1;min-width:0;}
+.opt-mini{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター（横幅いっぱいバー）*/
+.site-footer{background:var(--navy);padding:14px 16px;margin-top:0;width:100%;}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:920px;margin:0 auto;}
+.sf-logo{color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.sf-logo span{color:var(--green) !important;background:none;}
+.sf-lmark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;}
+.sf-links{display:flex;gap:16px;flex-wrap:wrap;}
+.sf-links a{color:rgba(255,255,255,.4);font-size:11px;transition:color .15s;}
+.sf-links a:hover{color:rgba(255,255,255,.75);}
+.sf-copy{color:rgba(255,255,255,.2);font-size:10px;}
+@media(max-width:768px){
+  .sf-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+@media(min-width:769px){
+  .site-footer{padding:14px 0;}
+  .sf-inner{padding:0 32px;}
+}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+.info-grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:8px;}
+.ig-card{background:#f5f4f0;border-radius:9px;padding:11px 13px;}
+.ig-lbl{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:3px;}
+.ig-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/gken.html">
+<meta property="og:title" content="応用情報技術者 無料問題集 | 資格ドリル">
+<meta property="og:description" content="応用情報技術者（AP）の無料午前問題集。テクノロジ系・ストラテジ系・マネジメント系を網羅。合格率20〜25%・勉強時間200〜500時間。弱点特訓・解説つき。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-drill.com/ap/">
+<meta property="og:site_name" content="資格ドリル">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="応用情報技術者 無料問題集 | 資格ドリル">
+<meta name="twitter:description" content="応用情報技術者（AP）の無料午前問題集。テクノロジ系・ストラテジ系・マネジメント系を網羅。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "G検定（ジェネラリスト検定）無料問題集",
+      "description": "G検定はJDLA（日本ディープラーニング協会）が実施するAI・ディープラーニング活用リテラシーの検定試験です。AI概論・機械学習・ディープラーニング・生成AI・法律・倫理など幅広い範囲から出題されます。",
+      "provider": {"@type": "Organization", "name": "資格ドリル"},
+      "educationalLevel": "入門・中級",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "G検定の合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "例年60〜76%程度で推移しており、AI系資格の中では比較的取得しやすい検定です。出題範囲が広いため、公式テキストを中心とした網羅的な学習が合格の鍵です。"}},
+        {"@type": "Question","name": "G検定の勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "AI未経験者で40〜80時間が目安です。IT・AI知識がある方は20〜40時間程度で合格を目指せます。公式テキストと問題集を組み合わせた学習が効果的です。"}},
+        {"@type": "Question","name": "G検定のオンライン試験と会場試験の違いは何ですか？","acceptedAnswer": {"@type": "Answer","text": "問題数は同じ145問程度ですが、試験時間が異なります。オンライン試験（自宅受験）は100分、会場試験（全国指定会場）は120分です。2026年はオンライン年6回・会場試験年3回が開催されます。"}},
+        {"@type": "Question","name": "G検定に合格すると何が得られますか？","acceptedAnswer": {"@type": "Answer","text": "合格証・オープンバッジが発行され、日本最大級のAI人材コミュニティ「CDLE」に参加できます。DX推進パスポートのバッジも取得可能で、就職・転職・社内DX推進でのアピールになります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="site-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      資格一覧へ
+    </a>
+  </div>
+</header>
+<nav class="page-nav" id="pageNav">
+  <div class="page-nav-inner">
+    <a class="pn-tab active" href="#app"      onclick="scrollToApp(event)">📝 問題を解く</a>
+    <a class="pn-tab"        href="#apply"    onclick="scrollTo_(event,'apply')">🤖 申し込み</a>
+    <a class="pn-tab"        href="#books"    onclick="scrollTo_(event,'books')">📖 参考書</a>
+    <a class="pn-tab"        href="#courses"  onclick="scrollTo_(event,'courses')">🎓 通信講座</a>
+    <a class="pn-tab"        href="#overview" onclick="scrollTo_(event,'overview')">📋 試験概要</a>
+    <a class="pn-tab"        href="#syllabus" onclick="scrollTo_(event,'syllabus')">📊 出題分野</a>
+    <a class="pn-tab"        href="#roadmap"  onclick="scrollTo_(event,'roadmap')">🗺️ 学習の流れ</a>
+    <a class="pn-tab"        href="#faq"      onclick="scrollTo_(event,'faq')">❓ よくある質問</a>
+  </div>
+</nav>
+<div id="app"></div>
+<script>
+// ▼▼▼ ここに問題データを追加してください ▼▼▼
+const ALL_QUESTIONS=[
+{id:1,category:"基礎理論",question:"2の補数表現で8ビットの符号付き整数として表現できる範囲はどれか。",choices:["-128〜127","-127〜128","-256〜255","-128〜128"],answer:0,explanation:"8ビット符号付き整数は2の補数表現で-2^7〜2^7-1、すなわち-128〜127の範囲を表現できる。"},
+{id:2,category:"基礎理論",question:"浮動小数点数の演算において、絶対値の近い2つの数の差を求めたとき、有効桁数が減少する現象を何というか。",choices:["オーバフロー","丸め誤差","情報落ち","桁落ち"],answer:3,explanation:"桁落ちとは、絶対値がほぼ等しい2つの数値の差を求めたとき、有効桁数が大幅に減少する現象である。"},
+{id:3,category:"基礎理論",question:"基数変換において、10進数の0.625を2進数に変換した結果はどれか。",choices:["0.101","0.011","0.110","0.111"],answer:0,explanation:"0.625×2=1.25→1、0.25×2=0.5→0、0.5×2=1.0→1 よって0.101となる。"},
+{id:4,category:"基礎理論",question:"16進数のAF16を10進数に変換した値はどれか。",choices:["165","195","185","175"],answer:3,explanation:"A×16+F=10×16+15=160+15=175"},
+{id:5,category:"基礎理論",question:"論理演算においてド・モルガンの法則を正しく表しているものはどれか。",choices:["NOT(A AND B) = (NOT A) AND (NOT B)","NOT(A OR B) = (NOT A) AND (NOT B)","NOT(A AND B) = (NOT A) OR (NOT B) は誤り","(A AND B) = (NOT A) OR (NOT B)"],answer:1,explanation:"ド・モルガンの法則：NOT(A AND B)=(NOT A) OR (NOT B)、NOT(A OR B)=(NOT A) AND (NOT B)。選択肢イが後者を正しく表している。"},
+{id:6,category:"基礎理論",question:"ハミング符号に関する記述として適切なものはどれか。",choices:["データの圧縮に使用される符号化方式である","誤り検出のみ可能で誤り訂正はできない","1ビットの誤りを検出し訂正できる","複数ビットの誤りを全て訂正できる"],answer:2,explanation:"ハミング符号は1ビットの誤りを検出・訂正できる誤り訂正符号である。2ビットの誤りは検出できるが訂正はできない。"},
+{id:7,category:"基礎理論",question:"n個の要素をもつ配列に対する線形探索の平均比較回数はどれか。",choices:["log₂n","n/2","n","n²"],answer:1,explanation:"線形探索では先頭から順に比較するため、平均的にはn/2回の比較が必要となる。"},
+{id:8,category:"基礎理論",question:"スタックの動作として正しいものはどれか。",choices:["先に格納したデータが先に取り出される","後に格納したデータが先に取り出される","ランダムなアクセスが可能である","優先度の高いデータが先に取り出される"],answer:1,explanation:"スタックはLIFO（Last In First Out）構造で、後に格納したデータが先に取り出される。"},
+{id:9,category:"基礎理論",question:"2分探索木において、中順（中間順）でノードを走査したとき得られる結果はどれか。",choices:["根から葉へ幅優先で走査した結果","ノードの値が降順に並んだ結果","ノードの値が昇順に並んだ結果","ノードを後順で走査した結果と同じ"],answer:2,explanation:"2分探索木を中順（左→根→右）で走査するとノードの値が昇順に得られる。"},
+{id:10,category:"基礎理論",question:"キューを用いて実現できるものとして最も適切なものはどれか。",choices:["再帰呼び出しの管理","関数呼び出し時のローカル変数管理","プリンタの印刷待ちジョブ管理","式の括弧対応チェック"],answer:2,explanation:"キューはFIFO構造で先着順に処理する。プリンタのジョブ管理のように到着順に処理するケースに適している。"},
+{id:11,category:"基礎理論",question:"バブルソートの最悪計算量はどれか。",choices:["O(n)","O(n log n)","O(n²)","O(log n)"],answer:2,explanation:"バブルソートは隣接要素を比較・交換する単純なソートであり、最悪・平均ともにO(n²)の計算量となる。"},
+{id:12,category:"基礎理論",question:"クイックソートの特徴として適切なものはどれか。",choices:["常にO(n log n)の計算量が保証される","安定ソートである","ピボットの選択が性能に影響する","メモリ使用量が常に一定である"],answer:2,explanation:"クイックソートはピボットを基準に分割するアルゴリズムで、ピボット選択が偏ると最悪O(n²)になるなど性能に大きく影響する。"},
+{id:13,category:"基礎理論",question:"オートマトンにおける正規言語を受理する機械として正しいものはどれか。",choices:["チューリング機械","プッシュダウンオートマトン","有限オートマトン","線形拘束オートマトン"],answer:2,explanation:"有限オートマトンは正規言語を受理する。文脈自由言語はプッシュダウンオートマトン、再帰的言語はチューリング機械が対応する。"},
+{id:14,category:"基礎理論",question:"BNF（バッカス・ナウア記法）の用途として適切なものはどれか。",choices:["プログラミング言語の構文規則の定義","プログラムの実行順序の記述","オブジェクト指向の継承関係の表現","データベースのスキーマ定義"],answer:0,explanation:"BNFはプログラミング言語の文法（構文規則）を形式的に定義するために使用される記法である。"},
+{id:15,category:"基礎理論",question:"情報量の単位に関する記述として正しいものはどれか。",choices:["1バイトは4ビットである","1キビバイト（KiB）は1000バイトである","1ビットで表現できる状態数は2である","1ニブルは8ビットである"],answer:2,explanation:"1ビットは0または1の2状態を表現できる。1バイト=8ビット、1KiB=1024バイト、1ニブル=4ビットが正しい。"},
+{id:16,category:"基礎理論",question:"ビット列の排他的論理和（XOR）演算の性質として正しいものはどれか。",choices:["A XOR A = A","A XOR 0 = 0","A XOR A = 0","A XOR 1 = A"],answer:2,explanation:"XOR演算の性質：A XOR A=0（同じ値とのXORは0）、A XOR 0=A、A XOR 1=NOT A が成立する。"},
+{id:17,category:"基礎理論",question:"木構造において葉ノードに関する記述として正しいものはどれか。",choices:["子ノードを持たないノードである","子ノードを2つ持つノードである","親ノードを持たないノードである","根ノードの直接の子ノードである"],answer:0,explanation:"葉ノード（リーフ）とは子ノードを持たない末端のノードである。親ノードを持たないのは根（ルート）ノードである。"},
+{id:18,category:"基礎理論",question:"連結リストと配列の比較として適切なものはどれか。",choices:["配列は任意位置への挿入がO(1)で可能","連結リストはランダムアクセスがO(1)で可能","連結リストは任意位置への挿入・削除が効率的","配列は要素数の動的な変更が容易"],answer:2,explanation:"連結リストはポインタを書き換えるだけで任意位置への挿入・削除がO(1)で可能。配列は挿入・削除時に要素移動が必要でO(n)かかる。"},
+{id:19,category:"基礎理論",question:"グレイコードの特徴として正しいものはどれか。",choices:["通常の2進数と同じ符号化方式である","隣接する符号間で2ビット以上変化する","隣接する符号間で1ビットだけ変化する","誤り訂正機能を持つ符号である"],answer:2,explanation:"グレイコードは隣接する値の間でちょうど1ビットだけ変化する符号で、アナログ・デジタル変換やロータリエンコーダに使われる。"},
+{id:20,category:"基礎理論",question:"再帰アルゴリズムの特徴として適切なものはどれか。",choices:["スタックオーバフローが発生する可能性がある","再帰呼び出しにはキューが使用される","反復アルゴリズムより常に高速である","末尾再帰は最適化できない"],answer:0,explanation:"再帰呼び出しは関数呼び出しのたびにスタックフレームを積むため、再帰が深くなりすぎるとスタックオーバフローが発生する可能性がある。"},
+{id:21,category:"コンピュータシステム",question:"CPUのパイプライン処理において、分岐命令が発生したときに起こる問題はどれか。",choices:["キャッシュミスの概念","パイプラインハザード","スラッシングの概念","デッドロックの概念"],answer:1,explanation:"分岐命令によりパイプラインに読み込んだ命令が無効になるハザード（制御ハザード）が発生する。"},
+{id:22,category:"コンピュータシステム",question:"キャッシュメモリのヒット率が0.9、キャッシュアクセス時間が10ns、主記憶アクセス時間が100nsのとき、実効アクセス時間はどれか。",choices:["19ns","28ns","55ns","91ns"],answer:0,explanation:"実効アクセス時間=0.9×10+(1-0.9)×100=9+10=19ns"},
+{id:23,category:"コンピュータシステム",question:"仮想記憶のページング方式においてスラッシングが発生する原因として適切なものはどれか。",choices:["CPUのクロック周波数が高すぎる","プロセス数が少なすぎる","キャッシュメモリの容量が大きすぎる","ページフォールトが頻発し入出力処理が多発する"],answer:3,explanation:"スラッシングはページフォールトが頻繁に発生しページの入れ替えに時間を取られCPU利用率が低下する現象である。"},
+{id:24,category:"コンピュータシステム",question:"DMAの説明として正しいものはどれか。",choices:["CPUを介さずに主記憶と入出力装置間でデータ転送する方式","CPUが入出力装置を直接制御する方式","複数CPUで処理を分担する方式（この説明は誤り）","仮想記憶を実現するための機構（誤り）"],answer:0,explanation:"DMA（Direct Memory Access）はCPUを介さずに主記憶と入出力装置の間で直接データ転送を行う方式で、CPU負荷を軽減できる。"},
+{id:25,category:"コンピュータシステム",question:"RAID5の特徴として正しいものはどれか。",choices:["全ディスクにデータを二重書きする","パリティ情報を特定の1台に集中して書き込む","パリティ情報を複数のディスクに分散して書き込む","ディスク1台が故障すると全データが失われる"],answer:2,explanation:"RAID5はパリティ情報を全ディスクに分散して書き込む方式で、1台の故障に対してデータを復元できる。"},
+{id:26,category:"コンピュータシステム",question:"マルチプロセッサシステムにおけるSMPの説明として適切なものはどれか。",choices:["複数のCPUがそれぞれ独立したメモリを持つ","複数のCPUが共有メモリを使用する対称型構成","1つのCPUが複数の仮想コアをエミュレートする","CPUとGPUが協調して処理を行う"],answer:1,explanation:"SMP（Symmetric MultiProcessing）は複数のCPUが共有メモリを対称的に使用する構成で、OSから均等に利用される。"},
+{id:27,category:"コンピュータシステム",question:"割込み処理において、割込み発生時にCPUが保存するものはどれか。",choices:["キャッシュの内容の概念","仮想アドレス変換テーブル","プログラムカウンタとレジスタの内容","ページテーブル全体の概念"],answer:2,explanation:"割込み発生時、CPUは現在のプログラムカウンタ（PC）とレジスタの内容をスタックに保存し、割込みハンドラへ制御を移す。"},
+{id:28,category:"コンピュータシステム",question:"フラッシュメモリの特徴として適切なものはどれか。",choices:["電源を切るとデータが消える揮発性メモリである","バイト単位での書き込みが高速にできる","ブロック単位で消去が必要な不揮発性メモリである","磁気を利用してデータを記録する"],answer:2,explanation:"フラッシュメモリは不揮発性で電源を切ってもデータが保持されるが、書き換えにはブロック単位での消去が必要という特徴がある。"},
+{id:29,category:"コンピュータシステム",question:"パイプライン処理でステージ数を増やしたときの効果として正しいものはどれか。",choices:["消費電力が減少する","主記憶へのアクセス回数が減少する","ハザードが減少する","クロック周波数を上げやすくなる"],answer:3,explanation:"パイプラインのステージ数を増やすと各ステージの処理が細分化されクロックサイクルを短くできるためクロック周波数を上げやすくなる。"},
+{id:30,category:"コンピュータシステム",question:"仮想記憶においてTLB（Translation Lookaside Buffer）の役割はどれか。",choices:["ディスクとメモリ間のデータ転送を高速化する","ページテーブルの参照を高速化するキャッシュ","プロセス間通信を仲介する","スワッピングの対象ページを決定する"],answer:1,explanation:"TLBは仮想アドレスから物理アドレスへの変換を高速化するためのキャッシュで、ページテーブルへのアクセスを減らす。"},
+{id:31,category:"コンピュータシステム",question:"マイクロカーネルの特徴として適切なものはどれか。",choices:["OS機能全体をカーネル空間に組み込む","ハードウェアを直接制御するドライバのみを含む","最小限の機能だけカーネルに持ちその他をユーザ空間で動作させる","仮想マシンを実現するための専用カーネルである"],answer:2,explanation:"マイクロカーネルはプロセス管理・メモリ管理・IPC等の最小機能だけをカーネルに残し、ファイルシステム等をユーザ空間で動作させる設計。"},
+{id:32,category:"コンピュータシステム",question:"コンピュータのブート処理において最初に実行されるプログラムはどれか。",choices:["OS","BIOS/UEFI","ブートローダ","デバイスドライバ"],answer:1,explanation:"電源投入後まずBIOS/UEFIが実行され、ハードウェア初期化とPOSTを行った後ブートローダを起動し、最終的にOSが読み込まれる。"},
+{id:33,category:"コンピュータシステム",question:"CISC（Complex Instruction Set Computer）の特徴として正しいものはどれか。",choices:["命令の種類が少なく固定長命令を使用する","パイプライン処理が非常に効率よく動作する","コンパイラによる最適化がしやすい","複雑な命令を多数持ちメモリアクセスを減らせる"],answer:3,explanation:"CISCは複雑で多様な命令セットを持ち、1命令で複雑な処理を実現できるためプログラムのステップ数を減らせる。"},
+{id:34,category:"コンピュータシステム",question:"2つのCPUが同一のメモリ資源に同時アクセスする際の排他制御に使われる機構はどれか。",choices:["DMA","TLB","セマフォ","スプーリング"],answer:2,explanation:"セマフォは共有資源へのアクセスを制御するための同期機構で、複数プロセス・CPUからの同時アクセスを排他制御するために使用される。"},
+{id:35,category:"コンピュータシステム",question:"NUMA（Non-Uniform Memory Access）アーキテクチャの説明として正しいものはどれか。",choices:["プロセッサによってメモリアクセス時間が異なる","全プロセッサが均等な速度でメモリにアクセスできる","1つのプロセッサのみがメモリにアクセスできる","メモリがCPU内部に存在する"],answer:0,explanation:"NUMAはプロセッサごとにローカルメモリを持ち、リモートメモリへのアクセスはローカルより遅くなるためアクセス時間が不均等になる。"},
+{id:36,category:"コンピュータシステム",question:"LRU（Least Recently Used）ページ置換アルゴリズムの説明として適切なものはどれか。",choices:["最も長くメモリに存在するページを置換する","最後に参照されてから最も時間が経過したページを置換する","最も参照頻度が低いページを置換する","ランダムにページを選んで置換する"],answer:1,explanation:"LRUは最後に参照されてから最も時間が経過したページ（最近使われていないページ）を置換する局所性の原理に基づいたアルゴリズム。"},
+{id:37,category:"コンピュータシステム",question:"割込みの種類のうち、ゼロ除算や不正アドレスアクセスによって発生するものはどれか。",choices:["外部割込み","タイマ割込み","ソフトウェア割込み","内部割込み（例外）"],answer:3,explanation:"ゼロ除算や不正アドレスアクセスなどCPU内部で発生する異常は内部割込み（例外・トラップ）として処理される。"},
+{id:38,category:"コンピュータシステム",question:"コンピュータシステムの信頼性指標MTBFの説明として正しいものはどれか。",choices:["連続して正常稼働できる平均時間","システムが故障してから修復されるまでの平均時間","システムの稼働率を表す指標","1時間あたりの故障率"],answer:0,explanation:"MTBF（Mean Time Between Failures）は故障と故障の間の平均稼働時間で、値が大きいほど信頼性が高いことを示す。"},
+{id:39,category:"コンピュータシステム",question:"稼働率0.9のシステム2台を並列構成にしたときの稼働率はどれか。",choices:["0.81","0.90","0.95","0.99"],answer:3,explanation:"並列構成の稼働率=1-(1-0.9)×(1-0.9)=1-0.01=0.99"},
+{id:40,category:"コンピュータシステム",question:"GPUがCPUと比較して得意とする処理として適切なものはどれか。",choices:["複雑な条件分岐を含む逐次処理","単一スレッドの高速実行","大量の単純な並列演算処理","OSのプロセス管理"],answer:2,explanation:"GPUは多数のコアを持ち大量の単純な演算を並列処理することが得意で、グラフィックス処理や機械学習の推論・学習に活用される。"},
+{id:41,category:"システム構成",question:"クラスタリングシステムにおけるフェールオーバの説明として正しいものはどれか。",choices:["障害発生時に待機系が自動的に処理を引き継ぐ仕組み","負荷を複数サーバに均等分散する仕組み","データを複数拠点に複製する仕組み","ネットワーク障害を自動検出し修復する仕組み"],answer:0,explanation:"フェールオーバは現用系に障害が発生した際、待機系が自動的に処理を引き継いでサービスを継続させる高可用性の仕組みである。"},
+{id:42,category:"システム構成",question:"Webシステムの3層アーキテクチャにおける中間層（ミドルウェア層）の役割はどれか。",choices:["ビジネスロジックを処理するアプリケーションサーバ","HTMLを表示しユーザ操作を受け付ける","データの永続的な保存と管理","ネットワークの負荷分散"],answer:0,explanation:"3層アーキテクチャの中間層はアプリケーションサーバが担いビジネスロジックの処理を行う。プレゼンテーション層とデータ層の間に位置する。"},
+{id:43,category:"システム構成",question:"ロードバランサの機能として適切なものはどれか。",choices:["データベースのトランザクションを管理する","ネットワークのパケットをフィルタリングする","ファイルのバックアップを自動で行う","複数のサーバに処理を振り分けて負荷を分散する"],answer:3,explanation:"ロードバランサ（負荷分散装置）は受信したリクエストを複数のサーバに振り分けることで負荷を分散しシステム全体のスループットを向上させる。"},
+{id:44,category:"システム構成",question:"コールドスタンバイとホットスタンバイの違いとして正しいものはどれか。",choices:["ホットは常に稼働中で即時切替可能、コールドは停止中で切替に時間がかかる","コールドは常に稼働中、ホットは停止中の待機方式","両方とも即時切替が可能である","コールドはクラウド環境、ホットはオンプレミス環境の用語である"],answer:0,explanation:"ホットスタンバイは待機系が常時稼働し即時切替可能。コールドスタンバイは待機系が停止状態のため切替に起動時間がかかる。"},
+{id:45,category:"システム構成",question:"SPOFの説明として適切なものはどれか。",choices:["システムのセキュリティ上の脆弱点","システムのパフォーマンスのボトルネック","そこが故障するとシステム全体が停止する単一障害点","ネットワークの単一接続点"],answer:2,explanation:"SPOF（Single Point of Failure）はそのコンポーネントが故障するだけでシステム全体が停止してしまう単一障害点のことである。"},
+{id:46,category:"システム構成",question:"Webシステムでセッション管理にクッキーを使用する場合のセキュリティ対策として適切なものはどれか。",choices:["HttpOnly属性を設定しJavaScriptからのアクセスを禁止する","クッキーのパスを/に設定する（誤り）","クッキーの有効期限を無期限にする（誤り）","クッキーにパスワードをそのまま格納する（この説明は誤り）"],answer:0,explanation:"HttpOnly属性を設定するとJavaScriptからクッキーにアクセスできなくなりXSSによるクッキー盗取を防止できる。"},
+{id:47,category:"システム構成",question:"水平スケーリング（スケールアウト）の説明として正しいものはどれか。",choices:["既存サーバのCPUやメモリを増強して性能を上げる","ストレージの容量を拡張する","サーバの台数を増やして処理能力を向上させる","ネットワーク帯域幅を増やす"],answer:2,explanation:"スケールアウトはサーバ台数を増やして全体の処理能力を向上させる水平方向の拡張。既存機器の強化はスケールアップ（垂直スケーリング）という。"},
+{id:48,category:"システム構成",question:"クラウドコンピューティングのIaaSの説明として適切なものはどれか。",choices:["アプリケーションをサービスとして提供する（この説明は誤り）","データベースのみをサービスとして提供する（この説明は誤り）","開発・実行環境をサービスとして提供する（この説明は誤り）","仮想サーバ・ストレージ・ネットワーク等のインフラをサービスとして提供する"],answer:3,explanation:"IaaS（Infrastructure as a Service）は仮想マシン・ストレージ・ネットワークなどのインフラ資源をインターネット経由で提供するクラウドサービス形態。"},
+{id:49,category:"システム構成",question:"RTO（Recovery Time Objective）の説明として正しいものはどれか。",choices:["障害発生から業務再開までの目標復旧時間","障害発生時に許容できるデータ損失の最大時間","バックアップデータの保持期間","システムの年間稼働率の目標値"],answer:0,explanation:"RTO（目標復旧時間）は障害発生からシステムが復旧し業務を再開するまでに許容される最大時間を示すBCP/DRの指標。"},
+{id:50,category:"システム構成",question:"コンテナ型仮想化とハイパーバイザ型仮想化の違いとして正しいものはどれか。",choices:["コンテナはOSカーネルをホストと共有し軽量である","ハイパーバイザ型よりコンテナ型の方がセキュリティ隔離性が高い","コンテナは独自のOSカーネルを持つ","ハイパーバイザ型は起動が非常に速い"],answer:0,explanation:"コンテナ型はホストOSのカーネルを共有するため軽量で起動が速い。ハイパーバイザ型は各VMが独自のOSを持ち隔離性が高いがオーバヘッドが大きい。"},
+{id:51,category:"システム構成",question:"バックアップの種類のうち、前回のフルバックアップからの差分のみを取得する方式はどれか。",choices:["フルバックアップ","増分バックアップ","差分バックアップ","ミラーバックアップ"],answer:2,explanation:"差分バックアップは前回のフルバックアップ以降に変更されたデータのみを取得する。増分バックアップは前回のバックアップ（どの種類でも）以降の変更分のみを取得する。"},
+{id:52,category:"システム構成",question:"サービスレベル協定（SLA）の説明として適切なものはどれか。",choices:["システム開発の工程を定義した文書","サービスの品質・可用性・応答時間等を定めた契約","セキュリティポリシーを記述した文書","プロジェクトの予算と工数を示した文書"],answer:1,explanation:"SLA（Service Level Agreement）はサービス提供者と利用者間でサービスの品質水準（稼働率・応答時間・サポート体制等）を定めた契約書。"},
+{id:53,category:"システム構成",question:"マイクロサービスアーキテクチャの特徴として適切なものはどれか。",choices:["全機能を1つのプロセスとして稼働させる","サービス間通信には共有メモリのみを使用する","データベースは全サービスで必ず共有する","機能ごとに独立したサービスに分割し個別にデプロイできる"],answer:3,explanation:"マイクロサービスアーキテクチャは機能を小さな独立したサービスに分割し、各サービスを独立してデプロイ・スケールできる設計手法。"},
+{id:54,category:"システム構成",question:"CDN（コンテンツデリバリネットワーク）の目的として正しいものはどれか。",choices:["地理的に分散したサーバにコンテンツをキャッシュしユーザへの応答を高速化する","データベースの負荷を分散する（誤り）","社内ネットワークのセキュリティを強化する（この説明は誤り）","メールの送受信を高速化するという規定"],answer:0,explanation:"CDNは世界各地のエッジサーバにコンテンツをキャッシュし、ユーザに最も近いサーバから配信することでレイテンシを低減するサービス。"},
+{id:55,category:"システム構成",question:"デュアルシステムとデュプレックスシステムの違いとして正しいものはどれか。",choices:["デュアルは2系統が同時稼働し結果を照合、デュプレックスは現用系と待機系に分かれる","デュアルは待機系、デュプレックスは同時稼働方式（この説明は誤り）","両者とも同じ構成であるという規定","デュアルはクラウド専用の構成である（誤り）"],answer:0,explanation:"デュアルシステムは2系統が同時に処理を行い結果を照合することで信頼性を高める。デュプレックスは現用系と待機系に分かれる冗長構成。"},
+{id:56,category:"システム構成",question:"ベンチマークテストの目的として適切なものはどれか。",choices:["システムのセキュリティ脆弱性を発見する","ネットワークのトポロジを確認する","ソフトウェアのバグを発見する","標準的な負荷でシステムの性能を測定・比較する"],answer:3,explanation:"ベンチマークテストは標準的なワークロードを用いてシステムやコンポーネントの性能を測定し、異なるシステム間の比較を行うためのテスト。"},
+{id:57,category:"システム構成",question:"ディザスタリカバリ（DR）サイトのウォームスタンバイの説明として正しいものはどれか。",choices:["DRサイトに常時同一のシステムが稼働している","DRサイトのシステムは定期的にデータ同期されており起動すれば比較的早期に稼働できる","DRサイトには機器だけ設置されソフトウェアもデータも準備されていない","本番サイトと全く同じ構成をリアルタイム同期する"],answer:1,explanation:"ウォームスタンバイはシステムが停止状態だがデータは定期同期されており、障害時に起動・設定変更で数時間以内に復旧できる中間的なDR手法。"},
+{id:58,category:"システム構成",question:"システムの可用性（Availability）の計算式として正しいものはどれか。",choices:["MTBF÷MTTR","MTTR÷(MTBF+MTTR)","MTBF÷(MTBF+MTTR)","(MTBF-MTTR)÷MTBF"],answer:2,explanation:"可用性=MTBF÷(MTBF+MTTR)。MTBFが大きく（故障しにくく）MTTRが小さい（すぐ修復できる）ほど可用性が高くなる。"},
+{id:59,category:"システム構成",question:"グリッドコンピューティングの説明として正しいものはどれか。",choices:["ネットワーク上の複数コンピュータの余剰資源を結合して大規模処理を行う","1台の高性能コンピュータで大規模計算を行う","仮想化技術でサーバを効率的に統合する（この説明は誤り）","エッジデバイスで処理を行うアーキテクチャ"],answer:0,explanation:"グリッドコンピューティングは地理的に分散した多数のコンピュータをネットワークで連携させ、大規模な計算処理を分散して実行する技術。"},
+{id:60,category:"システム構成",question:"エッジコンピューティングのメリットとして最も適切なものはどれか。",choices:["集中管理によりセキュリティが向上する","データをクラウドに集約することでコストを削減する","データ発生源の近くで処理することでレイテンシを低減する","ストレージ容量を無制限に利用できる"],answer:2,explanation:"エッジコンピューティングはデータ発生源（センサや端末）の近くで処理を行うため、クラウドへの通信遅延を削減しリアルタイム処理が可能になる。"},
+{id:61,category:"ソフトウェア",question:"OSのプロセス管理においてデッドロックが発生する条件として誤っているものはどれか。",choices:["相互排除条件","占有と待機条件","資源の横取りが不可能","資源の先占が可能"],answer:3,explanation:"デッドロック発生の4条件は①相互排除②占有と待機③非横取り（資源横取り不可）④循環待機。資源の先占（横取り）が可能であればデッドロックは発生しない。"},
+{id:62,category:"ソフトウェア",question:"プロセスとスレッドの違いとして正しいものはどれか。",choices:["スレッドは同一プロセス内でメモリ空間を共有する","スレッドはプロセスより多くのメモリを占有する","プロセスは同一メモリ空間を共有する","スレッドの切り替えはプロセス切り替えより重い処理である"],answer:0,explanation:"スレッドは同一プロセス内のメモリ空間を共有する軽量な実行単位。プロセスは独立したメモリ空間を持ちコンテキストスイッチのコストが高い。"},
+{id:63,category:"ソフトウェア",question:"仮想記憶においてページアウトが発生する状況として正しいものはどれか。",choices:["物理メモリに空きがあるとき（この説明は誤り）","ネットワーク転送が発生したとき","CPUの使用率が高くなったとき","物理メモリが不足しディスクにページを退避するとき"],answer:3,explanation:"ページアウトは物理メモリが不足したとき、使用頻度の低いページをディスク（スワップ領域）に退避させる操作。逆にディスクからメモリに読み込むのがページイン。"},
+{id:64,category:"ソフトウェア",question:"ファイルシステムにおけるジャーナリングの目的として正しいものはどれか。",choices:["ファイルの圧縮率を向上させる","ディスクの断片化を解消するという規定","ファイルへのアクセス速度を向上させる","障害発生時のファイルシステムの整合性回復を高速化する"],answer:3,explanation:"ジャーナリングはファイルシステムへの変更をジャーナル（ログ）に先行記録することで、障害後の整合性チェックと回復を迅速に行う技術。"},
+{id:65,category:"ソフトウェア",question:"リアルタイムOSの特徴として適切なものはどれか。",choices:["スループットの最大化を優先する","処理の応答時間に厳格な期限（デッドライン）がある","汎用的なアプリケーションに最適化されている","マルチタスクをサポートしない"],answer:1,explanation:"リアルタイムOSは処理のデッドライン（期限）を守ることを最優先に設計されており、産業制御や組込みシステムで使用される。"},
+{id:66,category:"ソフトウェア",question:"シェルスクリプトにおけるパイプ（|）の機能として正しいものはどれか。",choices:["コマンドの出力をファイルにリダイレクトする","複数コマンドを順に実行する","コマンドをバックグラウンドで実行する","前のコマンドの標準出力を次のコマンドの標準入力に渡す"],answer:3,explanation:"パイプ（|）は前のコマンドの標準出力を次のコマンドの標準入力に接続する機能で、コマンドを連鎖させて処理を行うことができる。"},
+{id:67,category:"ソフトウェア",question:"コンパイラとインタプリタの説明として正しいものはどれか。",choices:["コンパイラはソースコードを1行ずつ解釈して実行する","インタプリタは実行前にソースコード全体を機械語に変換する","コンパイラは実行前に全ソースを機械語に変換しインタプリタは逐次解釈実行する","両者の実行速度に差はないという規定"],answer:2,explanation:"コンパイラは実行前に全ソースを機械語に変換するため実行は高速。インタプリタはソースを逐次解釈しながら実行するため移植性は高いが実行速度は遅い。"},
+{id:68,category:"ソフトウェア",question:"ガベージコレクションの説明として正しいものはどれか。",choices:["ファイルシステムの断片化を解消する処理","プログラムが使用しなくなったメモリを自動的に回収する機能","ディスクの不要ファイルを削除する機能","CPUキャッシュを初期化する処理"],answer:1,explanation:"ガベージコレクションはプログラムが参照しなくなったヒープメモリ領域を自動的に検出・回収するメモリ管理機能でJavaやPythonなどに搭載されている。"},
+{id:69,category:"ソフトウェア",question:"マルチタスクOSのスケジューリング方式のうち、タイムスライス方式の説明として正しいものはどれか。",choices:["優先度の高いプロセスが完了するまで他のプロセスは実行されない","各プロセスに一定の時間を割り当てて順番に切り替えながら実行する","到着順にプロセスを処理する","プロセスの処理時間が短い順に実行する"],answer:1,explanation:"タイムスライス（ラウンドロビン）方式は各プロセスに一定時間（タイムスライス）を割り当て時間切れになったら次のプロセスに切り替える公平なスケジューリング。"},
+{id:70,category:"ソフトウェア",question:"ミドルウェアの説明として最も適切なものはどれか。",choices:["ハードウェアを直接制御するソフトウェア","OSとアプリケーションの中間に位置し共通機能を提供するソフトウェア","ユーザが直接操作するアプリケーションソフトウェア","ネットワーク機器を制御するファームウェア"],answer:1,explanation:"ミドルウェアはOSの上位、アプリケーションの下位に位置し、データベース接続・メッセージング・認証等の共通基盤機能を提供するソフトウェア層。"},
+{id:71,category:"ソフトウェア",question:"POSIX標準の説明として正しいものはどれか。",choices:["Windowsのみが準拠するAPI規格","UN*X系OSの互換性を確保するためのAPIの標準規格","プログラミング言語の標準規格","ネットワークプロトコルの標準規格"],answer:1,explanation:"POSIX（Portable Operating System Interface）はUNIX系OSのAPIを標準化したもので、準拠していればOS間でのソフトウェア移植性が高まる。"},
+{id:72,category:"ソフトウェア",question:"カーネルモードとユーザモードの違いとして正しいものはどれか。",choices:["ユーザモードでは全てのハードウェアに直接アクセスできる","カーネルモードではOS機能のみ実行でき一般プログラムは実行できない","カーネルモードは全ての命令を実行でき、ユーザモードは制限された命令のみ実行できる","両モードの違いは実行速度のみである"],answer:2,explanation:"カーネルモードは特権命令を含む全命令を実行できるOSの動作モード。ユーザモードは一般アプリの実行モードで特権命令は実行できずシステムコールでOSに依頼する。"},
+{id:73,category:"ソフトウェア",question:"デバイスドライバの役割として正しいものはどれか。",choices:["アプリケーションのUIを提供する","特定のハードウェアをOSが制御するためのソフトウェア","ネットワーク通信を暗号化する（この説明は誤り）","プロセスのスケジューリングを行う"],answer:1,explanation:"デバイスドライバはプリンタ・グラフィックスカード・ネットワークカードなど特定のハードウェアをOSが制御するためのソフトウェアモジュール。"},
+{id:74,category:"ソフトウェア",question:"スプーリング（Spooling）の説明として正しいものはどれか。",choices:["低速な入出力装置との速度差を補うためデータを一時的にディスクに蓄積する技術","CPUとメモリ間の速度差を緩和する技術（誤り）","プロセス間でデータを交換するための共有メモリ","ページング処理を高速化する技術（誤り）"],answer:0,explanation:"スプーリングは低速なプリンタなどの入出力装置に対してデータを一時的にディスクのキュー（スプール）に蓄積し順次処理することでCPUの待ち時間を削減する技術。"},
+{id:75,category:"ソフトウェア",question:"オペレーティングシステムのシステムコールの説明として正しいものはどれか。",choices:["アプリケーションがOSの機能を利用するためのインタフェース","OS内部のルーチン間で使用される呼び出し","ハードウェアが割込みをCPUに通知する仕組み","コンパイラが生成するライブラリ呼び出し"],answer:0,explanation:"システムコールはユーザモードで動作するアプリケーションがファイル操作・プロセス生成・メモリ確保などOSのカーネル機能を呼び出すためのインタフェース。"},
+{id:76,category:"ソフトウェア",question:"ソフトウェアのライセンス形態のうちコピーレフトの説明として正しいものはどれか。",choices:["ソフトウェアの無償配布を禁止するライセンス","ソースコードの公開を禁止するライセンス（この説明は誤り）","商用利用を禁止するライセンス（誤り）","派生物も同じライセンスで公開することを条件とするオープンソースライセンス"],answer:3,explanation:"コピーレフトはGPLに代表される概念で、ソフトウェアの改変・再配布時に派生物も同じライセンスで公開することを義務付けるオープンソースの原則。"},
+{id:77,category:"ソフトウェア",question:"プログラムの実行形式に関してJITコンパイルの説明として正しいものはどれか。",choices:["プログラム全体を事前に機械語にコンパイルする","プログラムを逐次解釈しながら実行する","実行時に必要な部分を機械語にコンパイルしながら実行する","ハードウェアで直接バイトコードを実行する"],answer:2,explanation:"JIT（Just-In-Time）コンパイルは実行時に中間コード（バイトコード）を機械語に変換しながら実行する方式で、インタプリタより高速に動作する。JavaやC#で使用。"},
+{id:78,category:"ソフトウェア",question:"Unixにおけるプロセスのfork()システムコールの説明として正しいものはどれか。",choices:["プロセスを終了させる","現在のプロセスの複製（子プロセス）を生成する","別のプログラムをプロセスにロードする","プロセスを一時停止する"],answer:1,explanation:"fork()は呼び出したプロセス（親プロセス）のほぼ完全なコピーである子プロセスを生成するシステムコール。子プロセスは新しいPIDを持つ。"},
+{id:79,category:"ソフトウェア",question:"バッファオーバフローに関する説明として正しいものはどれか。",choices:["メモリの使用量が設計値を超える現象（誤り）","割り当てられたバッファ領域を超えてデータが書き込まれ隣接メモリを破壊する脆弱性","CPUのキャッシュが溢れてパフォーマンスが低下する現象","ネットワークバッファが溢れてパケットが廃棄される現象"],answer:1,explanation:"バッファオーバフローは入力データの長さチェックが不十分なときにバッファ領域を超えて書き込みが行われ、戻りアドレス等を上書きして任意コードを実行させる脆弱性。"},
+{id:80,category:"ソフトウェア",question:"ソフトウェアの品質特性のうちISO/IEC 25010で定義される「保守性」の副特性として正しいものはどれか。",choices:["性能効率性の副特性の概念","モジュール性・再利用性・解析性・修正性・試験性（ISO/IEC 25010の保守性）","機能的適切性の副特性という規定","互換性の副特性の概念"],answer:1,explanation:"ISO/IEC 25010の保守性の副特性はモジュール性・再利用性・解析性・修正性・試験性の5つ。システムを変更・修正しやすい性質を示す。"},
+{id:81,category:"ハードウェア",question:"半導体メモリのうちSRAMとDRAMの比較として正しいものはどれか。",choices:["SRAMはリフレッシュ不要で高速だが高価で集積度が低い","DRAMはリフレッシュ不要でSRAMよりも高速","SRAMはコンデンサに電荷を蓄えてデータを保持する","DRAMはフリップフロップ回路でデータを保持する"],answer:0,explanation:"SRAMはフリップフロップでデータを保持しリフレッシュ不要で高速だが高価で集積度が低い。DRAMはコンデンサを使い定期的なリフレッシュが必要だが安価で大容量。"},
+{id:82,category:"ハードウェア",question:"USB3.0とUSB2.0の最大転送速度の比較として正しいものはどれか。",choices:["USB3.0は5Gbps、USB2.0は480Mbps","USB3.0は480Mbps、USB2.0は5Gbps","USB3.0は1Gbps、USB2.0は100Mbps","両者とも480Mbpsで同じ"],answer:0,explanation:"USB2.0の最大転送速度は480Mbps（Hi-Speed）、USB3.0は5Gbps（SuperSpeed）。USB3.0はUSB2.0の約10倍の速度を持つ。"},
+{id:83,category:"ハードウェア",question:"ECC（Error Correcting Code）メモリの説明として正しいものはどれか。",choices:["メモリの1ビットエラーを検出・訂正できる機能","メモリの読み書き速度を向上させる技術","メモリを暗号化してセキュリティを高める機能","複数のメモリモジュールを並列動作させる技術"],answer:0,explanation:"ECCメモリはデータに誤り訂正符号を付加することで1ビットのメモリエラーを自動検出・訂正できる。サーバ等の高信頼性が要求される環境で使用される。"},
+{id:84,category:"ハードウェア",question:"PCIeの説明として正しいものはどれか。",choices:["シリアル転送方式のポイントツーポイント接続バス","並列転送方式の共有バス","USB機器を接続するための規格","ディスプレイ接続専用のインタフェース"],answer:0,explanation:"PCIe（PCI Express）はシリアル転送・ポイントツーポイント方式の高速拡張バス。グラフィックスカードやNVMe SSDの接続に使用されレーン数で帯域幅が変わる。"},
+{id:85,category:"ハードウェア",question:"HDDとSSDの比較において正しいものはどれか。",choices:["HDDはSSDより一般的に読み書きが高速","SSDは磁気ディスクを使用しているため衝撃に強い","SSDは可動部がなく衝撃に強くアクセス速度が速い","HDDはSSDより消費電力が低い"],answer:2,explanation:"SSDはフラッシュメモリを使用し可動部品がないため衝撃に強く高速。HDDは磁気ディスクを機械的に回転させるため低速・振動に弱いが大容量で安価。"},
+{id:86,category:"ハードウェア",question:"CPUのクロック周波数と処理性能の関係として正しいものはどれか。",choices:["クロック周波数のみで処理性能が決まる","クロック周波数が異なるCPU間の性能比較はクロックだけで正確にできる","クロック周波数はメモリ容量に比例する","クロック周波数が高いほど1秒間に実行できるサイクル数が多い"],answer:3,explanation:"クロック周波数は1秒間のサイクル数（Hz）を示し、高いほど多くのサイクルを実行できる。ただし実際の性能はアーキテクチャやコア数・IPC等にも依存する。"},
+{id:87,category:"ハードウェア",question:"NVMe（Non-Volatile Memory Express）の説明として正しいものはどれか。",choices:["SATAより高速なSSD向けのストレージプロトコルでPCIeを使用","HDDを接続するための旧来のインタフェース規格","ネットワーク経由でストレージにアクセスするプロトコル","光学ドライブを接続するための規格"],answer:0,explanation:"NVMeはフラッシュストレージに最適化された高速なストレージプロトコル。PCIeバスを使用しSATAより大幅に高いスループットと低レイテンシを実現する。"},
+{id:88,category:"ハードウェア",question:"マザーボードのチップセットの役割として正しいものはどれか。",choices:["CPUの演算を補助する専用プロセッサ","電源供給を管理するの概念","グラフィック処理を専門に行う","CPU・メモリ・各種I/O間のデータ転送を制御する"],answer:3,explanation:"チップセットはCPU・メモリ・拡張スロット・各種I/Oコントローラ間のデータ転送を調整・制御するマザーボードの中核的なコンポーネント。"},
+{id:89,category:"ハードウェア",question:"TDP（Thermal Design Power）の説明として正しいものはどれか。",choices:["プロセッサの最大動作電圧","プロセッサの最大消費電力の実測値","冷却システムが対処すべき最大発熱量の目安","バッテリーの容量を示す指標"],answer:2,explanation:"TDPはプロセッサが持続的に発生しうる熱量の設計上の上限値で、冷却システム（クーラー）の設計基準となる。最大消費電力の実測値とは異なる。"},
+{id:90,category:"ハードウェア",question:"QRコードの特徴として正しいものはどれか。",choices:["数字・英数字・バイナリ・漢字の4モードを持ちバーコードより多くの情報を格納できる","1次元のバーコードと同じ情報量しか持てない（誤り）","誤り訂正機能がなく一部欠損すると読み取り不能になる","読み取り方向が決まっており逆方向からは読めない（この説明は誤り）"],answer:0,explanation:"QRコードは2次元コードで複数のモードを持ち大量データを格納できる。またリード・ソロモン符号による誤り訂正機能を持ち一部欠損しても読み取り可能。"},
+{id:91,category:"ハードウェア",question:"HDMI（High-Definition Multimedia Interface）の特徴として正しいものはどれか。",choices:["音声と映像を別々のケーブルで伝送する","主にストレージ接続に使用される","アナログ信号のみを伝送する規格","映像と音声を1本のケーブルで同時に伝送できる"],answer:3,explanation:"HDMIは映像・音声・制御信号を1本のケーブルで伝送できるデジタルインタフェース規格。テレビ・モニタ・プロジェクタ等の接続に広く使用される。"},
+{id:92,category:"ハードウェア",question:"CPUのアウトオブオーダ実行の説明として正しいものはどれか。",choices:["プログラムの命令を書かれた順番通りに実行する","複数のプロセッサが協調して処理を行う","依存関係のない命令を順序に関わらず実行し並列性を高める","仮想化環境での命令実行方式"],answer:2,explanation:"アウトオブオーダ実行はプログラムの命令順にかかわらず依存関係がない命令を先行して実行することで演算ユニットの利用率を高めスループットを向上させる技術。"},
+{id:93,category:"ハードウェア",question:"光ファイバケーブルの特徴として正しいものはどれか。",choices:["電磁ノイズの影響を受けやすい","最大伝送速度はツイストペアケーブルと同等","銅線より安価で施工が容易","長距離・大容量伝送が可能で電磁ノイズの影響を受けない"],answer:3,explanation:"光ファイバは光信号で伝送するため電磁ノイズの影響を受けず、長距離・大容量・低損失な通信が可能。ただし曲げに弱く銅線より高価で施工に専門技術が必要。"},
+{id:94,category:"ハードウェア",question:"FPGAの説明として正しいものはどれか。",choices:["製造後に内部回路を書き換えられないプロセッサ","CPUとGPUを1チップに統合したデバイス","グラフィックス処理専用の固定回路","フィールドで回路構成を再プログラムできる半導体デバイス"],answer:3,explanation:"FPGA（Field-Programmable Gate Array）はユーザが購入後に内部の論理回路を自由にプログラム・再構成できる半導体デバイスでプロトタイプ開発や特定用途処理に使用。"},
+{id:95,category:"ハードウェア",question:"ノイマン型コンピュータのボトルネックとして知られるフォン・ノイマンボトルネックの説明として正しいものはどれか。",choices:["CPUと主記憶間のデータ転送速度がCPUの処理速度に追いつかない問題","CPUの演算速度とGPUの演算速度の差","CPUのコア数が少ないことによる並列処理の制約","電源供給の不安定さによる性能低下（誤り）"],answer:0,explanation:"フォン・ノイマンボトルネックはプログラムとデータを同じメモリに置く構造上、CPU-メモリ間のバス帯域幅がCPU処理速度の制約になる問題。"},
+{id:96,category:"ハードウェア",question:"ハードウェアのエンディアンに関する説明として正しいものはどれか。",choices:["ビッグエンディアンは最下位バイトを先頭アドレスに格納する","x86系CPUはビッグエンディアンを採用している","エンディアンはデータの圧縮方式を指す","リトルエンディアンは最下位バイトを先頭アドレスに格納する"],answer:3,explanation:"リトルエンディアンはデータの最下位バイト（LSB）を最小アドレスに格納する方式でx86系で採用。ビッグエンディアンはMSBを最小アドレスに格納しネットワーク通信で標準的に使用。"},
+{id:97,category:"ハードウェア",question:"ICカードのCPUカードの特徴として正しいものはどれか。",choices:["記憶媒体だけを持ちCPUを内蔵しない","通信にはUSBを使用するという規定","データを磁気で記録するという規定","CPUとメモリを内蔵しカード内で演算処理ができる"],answer:3,explanation:"CPUカード（ICカード）はマイクロプロセッサとメモリを内蔵しており、カード自体で暗号演算などの処理が可能なためセキュリティが高い。クレジットカードや住基カードに利用。"},
+{id:98,category:"ハードウェア",question:"ディスプレイの解像度4K（3840×2160）はフルHD（1920×1080）の何倍の画素数か。",choices:["4倍","2倍","8倍","16倍"],answer:0,explanation:"4Kの画素数=3840×2160=8,294,400。フルHDの画素数=1920×1080=2,073,600。比率=8,294,400÷2,073,600=4倍。"},
+{id:99,category:"ハードウェア",question:"CPUのコア数とスレッド数について正しいものはどれか。",choices:["ハイパースレッディングにより1コアで2スレッドを同時に処理できる","スレッド数は常にコア数と同じ（誤り）","スレッド数が多いほど常に処理速度が2倍になる","コア数はスレッド数より常に多い（誤り）"],answer:0,explanation:"Intelのハイパースレッディング等の技術により1物理コアで2論理スレッドを扱える。ただし2倍の性能が得られるわけではなくワークロードに依存する。"},
+{id:100,category:"ハードウェア",question:"アナログ信号をデジタル変換する際のサンプリング定理として正しいものはどれか。",choices:["サンプリング周波数は元の信号の最高周波数と同じであればよい","サンプリング周波数は元の信号の最高周波数の2倍以上必要","サンプリング周波数は任意でよい","サンプリング周波数は最高周波数の半分以上であればよい"],answer:1,explanation:"ナイキスト・シャノンのサンプリング定理により、元の信号を正確に再現するにはサンプリング周波数を信号の最高周波数の2倍以上にする必要がある。"},
+{id:101,category:"ネットワーク",question:"OSI参照モデルにおいてトランスポート層の役割として正しいものはどれか。",choices:["ビット列の物理的な伝送","隣接ノード間のフレーム転送","エンドツーエンドの通信品質の保証","アプリケーション間のデータ形式変換"],answer:2,explanation:"トランスポート層（第4層）はエンドツーエンドの通信の信頼性（エラー制御・フロー制御・再送）を保証する。TCPやUDPがこの層のプロトコル。"},
+{id:102,category:"ネットワーク",question:"TCP/IPのARP（Address Resolution Protocol）の機能として正しいものはどれか。",choices:["IPアドレスからMACアドレスを取得する","MACアドレスからIPアドレスを取得する","ドメイン名からIPアドレスを取得する","IPアドレスからドメイン名を取得する"],answer:0,explanation:"ARPはIPアドレスに対応するMACアドレスを同一ネットワークセグメント内でブロードキャストして解決するプロトコル。"},
+{id:103,category:"ネットワーク",question:"サブネットマスク255.255.255.0のネットワークにおいてホストアドレスに使用できるビット数はどれか。",choices:["8ビット","16ビット","24ビット","32ビット"],answer:0,explanation:"255.255.255.0は上位24ビットがネットワーク部で下位8ビットがホスト部。ホストアドレスとして使用可能なビット数は8ビット（256-2=254ホスト）。"},
+{id:104,category:"ネットワーク",question:"TCPの3ウェイハンドシェイクの順序として正しいものはどれか。",choices:["SYN→ACK→SYN-ACK","ACK→SYN→SYN-ACK","SYN→SYN-ACK→ACK","SYN-ACK→SYN→ACK"],answer:2,explanation:"TCPの接続確立は①クライアントがSYN送信②サーバがSYN-ACK応答③クライアントがACK送信の3ウェイハンドシェイクで行われる。"},
+{id:105,category:"ネットワーク",question:"DNSにおけるAレコードの説明として正しいものはどれか。",choices:["ドメインのメールサーバを示すレコード","ドメイン名をIPv4アドレスに対応付けるレコード","ドメイン名をIPv6アドレスに対応付けるレコード","ドメインの正式名称を示すレコード"],answer:1,explanation:"DNSのAレコードはホスト名（FQDN）をIPv4アドレスにマッピングするレコード。IPv6はAAAAレコード、メールサーバはMXレコードが担当する。"},
+{id:106,category:"ネットワーク",question:"VLANの説明として正しいものはどれか。",choices:["物理的なネットワークをそのまま論理的に表現したもの","物理的な接続に関わらず論理的にネットワークを分割する技術","異なるネットワーク間のルーティングを行う技術","無線LANのセキュリティ規格"],answer:1,explanation:"VLAN（Virtual LAN）はスイッチ上で物理的な配線に関わらず論理的にネットワークを分割できる技術。ブロードキャストドメインを分離しセキュリティや管理性を向上させる。"},
+{id:107,category:"ネットワーク",question:"NATの主な目的として正しいものはどれか。",choices:["通信を暗号化してセキュリティを強化する","プライベートIPアドレスとグローバルIPアドレスを相互変換する","ドメイン名をIPアドレスに解決する（この説明は誤り）","複数のパスからベストルートを選択する"],answer:1,explanation:"NAT（Network Address Translation）はプライベートIPアドレスとグローバルIPアドレスを変換する技術でIPv4アドレスの枯渇対策にも貢献している。"},
+{id:108,category:"ネットワーク",question:"HTTPとHTTPSの違いとして正しいものはどれか。",choices:["HTTPSはHTTPより通信速度が速い","HTTPSは特殊なサーバでのみ使用できる","HTTPSはTLS/SSLによる暗号化・認証を行う","HTTPとHTTPSのデフォルトポートは同じ80番"],answer:2,explanation:"HTTPSはHTTPにTLS（Transport Layer Security）を組み合わせてデータを暗号化し、サーバ認証を行うことで通信の盗聴・改ざん・なりすましを防止する。"},
+{id:109,category:"ネットワーク",question:"OSPF（Open Shortest Path First）の説明として正しいものはどれか。",choices:["ホップ数を基準にルーティングを行うディスタンスベクタ型プロトコル","BGPの補完として使用される外部ルーティングプロトコル","静的ルーティングのみをサポートするプロトコル","リンクステート情報を使用してダイクストラ法で最短経路を計算するプロトコル"],answer:3,explanation:"OSPFはリンクステート型の内部ゲートウェイプロトコル（IGP）でネットワーク全体のトポロジ情報を共有しダイクストラのアルゴリズムで最短経路を計算する。"},
+{id:110,category:"ネットワーク",question:"IPv6アドレスのビット数はどれか。",choices:["32ビット","64ビット","96ビット","128ビット"],answer:3,explanation:"IPv6アドレスは128ビットで構成され、16進数8グループ（各16ビット）でコロン区切りで表記する。IPv4は32ビット。"},
+{id:111,category:"ネットワーク",question:"TCP/IPの輻輳制御の目的として正しいものはどれか。",choices:["通信経路の暗号化の概念","ネットワークの過負荷を防ぐためにデータ送信量を調整する","パケットの優先度を設定するという規定","送受信ホスト間のアドレスを解決する"],answer:1,explanation:"輻輳制御はネットワークやルータが過負荷になりパケットロスが増加する輻輳を回避するためにTCPの送信ウィンドウサイズを動的に制御する機能。"},
+{id:112,category:"ネットワーク",question:"WPA2（Wi-Fi Protected Access 2）の特徴として正しいものはどれか。",choices:["暗号化にWEPを使用するという規定","MACアドレスのみで認証を行う（誤り）","暗号化にAES（CCMP）を使用した強固なセキュリティを提供する","IEEE 802.11aのみに対応している"],answer:2,explanation:"WPA2はAES-CCMPを暗号化アルゴリズムとして採用した無線LANのセキュリティ規格。脆弱性が指摘されているWEPやWPA（TKIP）より安全性が高い。"},
+{id:113,category:"ネットワーク",question:"BGP（Border Gateway Protocol）の説明として正しいものはどれか。",choices:["同一ASN内のルーティングを管理するプロトコル","異なるAS（自律システム）間のルーティングを制御するEGP","LANスイッチのVLAN間ルーティングに使用するプロトコル","DNSサーバ間の情報同期プロトコル"],answer:1,explanation:"BGPはインターネット上の異なる自律システム（AS）間でルーティング情報を交換するためのExterior Gateway Protocol（EGP）でインターネットの基盤をなす。"},
+{id:114,category:"ネットワーク",question:"ICMPの用途として正しいものはどれか。",choices:["メールの送受信の概念","Webページの転送の概念","pingコマンドによるネットワーク疎通確認","ファイルの転送の概念"],answer:2,explanation:"ICMP（Internet Control Message Protocol）はネットワークの診断や制御に使用されるプロトコル。pingはICMPエコー要求・応答を利用して疎通確認を行う。"},
+{id:115,category:"ネットワーク",question:"ポート番号443番に対応するプロトコルとして正しいものはどれか。",choices:["HTTP","FTP","SMTP","HTTPS"],answer:3,explanation:"ウェルノウンポート番号：HTTP=80、HTTPS=443、FTP=21（制御）/20（データ）、SMTP=25、DNS=53、SSH=22"},
+{id:116,category:"ネットワーク",question:"スパニングツリープロトコル（STP）の目的として正しいものはどれか。",choices:["ネットワーク帯域を複数経路で束ねて増加させる","VLANを複数のスイッチに跨って設定する","スイッチネットワークでループを防止する","ルーティングテーブルを自動構築する"],answer:2,explanation:"STP（Spanning Tree Protocol）はスイッチを冗長接続した際に発生するループ（ブロードキャストストーム等）を防止するため特定のポートをブロック状態にするプロトコル。"},
+{id:117,category:"ネットワーク",question:"QoS（Quality of Service）の説明として正しいものはどれか。",choices:["ネットワークのセキュリティを強化する仕組み","ドメイン名の解決を高速化する技術","通信の優先度付けや帯域制御により通信品質を管理する技術","ネットワーク機器の自動設定プロトコル"],answer:2,explanation:"QoSはVoIPや動画ストリーミングなど遅延に敏感なトラフィックを優先制御したり、帯域制限を行うことでネットワーク上のサービス品質を確保する技術。"},
+{id:118,category:"ネットワーク",question:"MACアドレスの特徴として正しいものはどれか。",choices:["ネットワーク管理者が自由に設定できる論理アドレス","IPアドレスと同じ長さの32ビットアドレス","NICに割り当てられた48ビットの物理アドレス","ルータを越えて通信するために使用するアドレス"],answer:2,explanation:"MACアドレスはNIC（ネットワークインタフェースカード）に製造時に割り当てられた48ビットの物理アドレス。上位24ビットがベンダID、下位24ビットが固有番号。"},
+{id:119,category:"ネットワーク",question:"SDN（Software Defined Networking）の特徴として正しいものはどれか。",choices:["ハードウェアとソフトウェアを密結合させる従来型ネットワーク","無線LANのみを対象とする技術（誤り）","各ルータが独立してルーティングを判断する分散型制御","コントロールプレーンとデータプレーンを分離しソフトウェアでネットワークを集中制御する"],answer:3,explanation:"SDNはネットワーク機器の制御（コントロールプレーン）と転送（データプレーン）を分離し、OpenFlowなどのAPIでソフトウェアによる集中的なネットワーク制御を実現する技術。"},
+{id:120,category:"ネットワーク",question:"Webサービスに使用されるREST APIの特徴として正しいものはどれか。",choices:["必ずSOAPを使用するプロトコル（誤り）","ステートレスでHTTPメソッド（GET/POST/PUT/DELETE）を利用したリ","常にXML形式のみを扱うAPI（誤り）","バイナリプロトコルを使用するAPI（誤り）"],answer:1,explanation:"REST APIはステートレスな通信・HTTPメソッドによるCRUD操作・URIでのリソース識別を原則とするWebサービスのアーキテクチャスタイル。JSONやXML等の形式を使用。"},
+{id:121,category:"セキュリティ",question:"SQLインジェクション攻撃への対策として最も適切なものはどれか。",choices:["プリペアドステートメント（バインド変数）を使用する","入力値の文字数を制限する","データベースのパスワードを複雑にする","Webサーバをファイアウォールで保護する"],answer:0,explanation:"SQLインジェクション対策の最善策はプリペアドステートメント（バインド変数）の使用。SQLの構造とデータを分離することでユーザ入力がSQL命令として解釈されるのを防ぐ。"},
+{id:122,category:"セキュリティ",question:"XSS（クロスサイトスクリプティング）の説明として正しいものはどれか。",choices:["Webページに悪意あるスクリプトを埋め込み閲覧者のブラウザで実行させる攻撃","不正なSQLを入力しデータベースを操作する攻撃","正規ユーザになりすましてWebサービスを操作させる攻撃","大量のリクエストを送りサービスを停止させる攻撃"],answer:0,explanation:"XSSはWebアプリに悪意あるスクリプトを埋め込み、サイトを閲覧したユーザのブラウザで実行させる攻撃。クッキー盗取やフィッシングに悪用される。"},
+{id:123,category:"セキュリティ",question:"公開鍵暗号方式において送信者がメッセージを暗号化する際に使用する鍵はどれか。",choices:["送信者の秘密鍵","送信者の公開鍵","受信者の秘密鍵","受信者の公開鍵"],answer:3,explanation:"公開鍵暗号では送信者が受信者の公開鍵で暗号化し受信者が自分の秘密鍵で復号する。電子署名は逆で送信者の秘密鍵で署名し受信者が送信者の公開鍵で検証する。"},
+{id:124,category:"セキュリティ",question:"デジタル署名の目的として正しいものはどれか。",choices:["送信者の正当性と改ざんの有無を証明する","メッセージを暗号化して第三者に読まれないようにする","パスワードを安全に転送する","通信経路を暗号化する"],answer:0,explanation:"デジタル署名は送信者が秘密鍵でハッシュ値を暗号化（署名）することで、なりすましの防止（認証）と改ざん検出（完全性の確認）を実現する。"},
+{id:125,category:"セキュリティ",question:"ゼロデイ攻撃の説明として正しいものはどれか。",choices:["ログインを0回試行して不正アクセスする攻撃","0バイトのパケットで攻撃する手法","ベンダがパッチを公開する前の脆弱性を悪用する攻撃","初日に大量のリクエストを送る攻撃"],answer:2,explanation:"ゼロデイ攻撃はソフトウェアの脆弱性が発見されてからベンダが修正パッチを提供するまでの間（0日目）にその脆弱性を悪用する攻撃。防御が困難。"},
+{id:126,category:"セキュリティ",question:"多要素認証（MFA）の説明として正しいものはどれか。",choices:["複数のパスワードを順番に入力する認証（誤り）","同一パスワードを複数のサービスで使用する方式","複数のサーバで認証を行う分散認証（誤り）","知識・所持・生体のうち異なるカテゴリの認証要素を2つ以上組み合わせる認証"],answer:3,explanation:"多要素認証は知識情報（パスワード）・所持情報（スマートフォン・トークン）・生体情報（指紋・顔）など異なるカテゴリの認証要素を組み合わせるセキュリティ強化手法。"},
+{id:127,category:"セキュリティ",question:"ランサムウェアの説明として正しいものはどれか。",choices:["感染したコンピュータのファイルを暗号化し身代金を要求するマルウェア","システムのリソースを消費しサービスを停止させるマルウェア","個人情報を盗み外部に送信するマルウェア","他のコンピュータに自己複製して感染拡大するマルウェア"],answer:0,explanation:"ランサムウェアはファイルやシステムを暗号化してアクセスを妨害し、復号鍵と引き換えに金銭（身代金）を要求するマルウェア。近年被害が急増している。"},
+{id:128,category:"セキュリティ",question:"ペネトレーションテストの説明として正しいものはどれか。",choices:["ソフトウェアの単体機能を検証するテスト","ユーザビリティを評価するテスト（誤り）","システムの負荷性能を測定するテスト（誤り）","実際に攻撃手法を用いてシステムの脆弱性を検証するセキュリティテスト"],answer:3,explanation:"ペネトレーションテスト（侵入テスト）は模擬的な攻撃を実施してシステムのセキュリティ上の弱点を発見・評価するテスト手法。ホワイトハットハッカーが実施する。"},
+{id:129,category:"セキュリティ",question:"SSL/TLSハンドシェイクで最初に行われる処理として正しいものはどれか。",choices:["データを暗号化する処理という規定","サーバ証明書を送付する処理という規定","クライアントとサーバが対応する暗号スイートを調整するネゴシエーション","セッション鍵を生成する処理という規定"],answer:2,explanation:"TLSハンドシェイクはClientHelloとServerHelloの交換でプロトコルバージョン・暗号スイートなどのパラメータをネゴシエートすることから始まる。"},
+{id:130,category:"セキュリティ",question:"ファイアウォールのパケットフィルタリングが参照する情報として正しいものはどれか。",choices:["パケットのペイロード（データ）の内容","送受信IPアドレスとポート番号","ユーザの認証情報","アプリケーションプロトコルの種類"],answer:1,explanation:"パケットフィルタリング型ファイアウォールはパケットのヘッダ情報（送受信IPアドレス・ポート番号・プロトコル等）に基づいて通過・遮断を制御する。"},
+{id:131,category:"セキュリティ",question:"CSRF（クロスサイトリクエストフォージェリ）の対策として最も有効なものはどれか。",choices:["入力値のエスケープ処理","Content Security Policyの設定","プリペアドステートメントの使用","CSRFトークンの利用とSameSite Cookie属性の設定"],answer:3,explanation:"CSRF対策にはフォームにサーバが発行したCSRFトークンを埋め込み正規リクエストか検証する方法と、SameSite Cookie属性で他サイトからのCookie送信を制限する方法が有効。"},
+{id:132,category:"セキュリティ",question:"AES（Advanced Encryption Standard）の特徴として正しいものはどれか。",choices:["公開鍵暗号方式のアルゴリズムである","128/192/256ビットの鍵長をもつ共通鍵暗号方式","RSAの代替として非対称暗号に使用される","ハッシュ関数の標準アルゴリズムである"],answer:1,explanation:"AESはDESの後継として標準化されたブロック暗号（共通鍵暗号）。128ビットのブロック長と128・192・256ビットの鍵長をサポートし現在広く使用されている。"},
+{id:133,category:"セキュリティ",question:"DMZ（非武装地帯）の説明として正しいものはどれか。",choices:["外部と内部ネットワークの中間に設置する緩衝ゾーン","インターネットから完全に遮断された内部ネットワーク","VPNの終端となるネットワーク領域","クラウドサービスと社内ネットワークの接続領域"],answer:0,explanation:"DMZはファイアウォールで外部と内部の両方から分離された中間ネットワーク。WebサーバやDNSサーバなど外部公開サーバを配置し内部ネットワークへの侵入リスクを低減する。"},
+{id:134,category:"セキュリティ",question:"ソーシャルエンジニアリングの説明として正しいものはどれか。",choices:["技術的手段ではなく人間の心理的隙を突いて情報を詐取する手法","AIを使ったサイバー攻撃手法（誤り）","SNSを使って大規模に攻撃を行う手法","ソーシャルメディアのアカウントを乗っ取る攻撃"],answer:0,explanation:"ソーシャルエンジニアリングはなりすまし・フィッシング・ショルダーハッキングなど技術的な手段ではなく人間の信頼や不注意を悪用して情報を詐取する手法。"},
+{id:135,category:"セキュリティ",question:"ハッシュ関数の特性として正しいものはどれか。",choices:["同じ入力から異なるハッシュ値が生成されることがある","ハッシュ値から元のデータを復元できる（可逆性）","異なる入力から同じハッシュ値が生成されることをコリジョンという","ハッシュ値の長さは入力データの長さに比例する"],answer:2,explanation:"ハッシュ関数の衝突（コリジョン）とは異なる入力から同じハッシュ値が生成されること。安全なハッシュ関数ではコリジョンを発見することが計算上困難である必要がある。"},
+{id:136,category:"セキュリティ",question:"HTTPS通信でサーバが送付するSSL証明書の検証として正しいものはどれか。",choices:["証明書のファイルサイズを確認する","サーバのMACアドレスと比較する","認証局（CA）の電子署名を検証し証明書の正当性を確認する","証明書の発行日のみを確認する（誤り）"],answer:2,explanation:"SSL証明書の検証はルートCA（認証局）による電子署名の検証・有効期限の確認・CRL/OCSPによる失効確認・ドメイン名の一致確認を行う。"},
+{id:137,category:"セキュリティ",question:"DoS攻撃とDDoS攻撃の違いとして正しいものはどれか。",choices:["DoSは暗号化攻撃、DDoSは平文攻撃","DoSはウェブ攻撃、DDoSはネットワーク攻撃","DDoSは複数の踏み台を使って一斉に攻撃を行う分散型DoS攻撃","両者に実質的な違いはないという規定"],answer:2,explanation:"DoSは単一の送信元からサービス妨害を行う攻撃。DDoS（Distributed DoS）はボットネット等の多数の踏み台から一斉攻撃を行うため遮断が困難。"},
+{id:138,category:"セキュリティ",question:"情報セキュリティの機密性（Confidentiality）の説明として正しいものはどれか。",choices:["システムが常に利用可能な状態を維持すること","情報が改ざんされていないことを保証すること","許可された者だけが情報にアクセスできること","情報の送受信者を否定できないことを保証すること"],answer:2,explanation:"情報セキュリティのCIA三要素：機密性（Confidentiality）=認可された者のみアクセス可能、完全性（Integrity）=改ざんされていない、可用性（Availability）=必要時に利用可能。"},
+{id:139,category:"セキュリティ",question:"PKI（公開鍵基盤）の構成要素として正しいものはどれか。",choices:["共通鍵の配送を安全に行うサーバ群（誤り）","認証局（CA）・登録局（RA）・証明書失効リスト（CRL）等からなる仕組み","パスワードのハッシュ化と管理を行うシステム（この説明は誤り）","バイオメトリクス認証のデータベース基盤（誤り）"],answer:1,explanation:"PKIはデジタル証明書の発行・管理・失効を行うCA・RAや、失効した証明書を管理するCRL・OCSPなどの仕組みからなる公開鍵暗号の信頼基盤。"},
+{id:140,category:"セキュリティ",question:"IDS（侵入検知システム）とIPS（侵入防止システム）の違いとして正しいものはどれか。",choices:["IDSは攻撃を自動的に遮断しIPSは検知のみ行う","両者は全く同じ機能を持つ","IPSはIDSの機能に加え攻撃を自動的に遮断・防止する機能を持つ","IDSはファイアウォールの代替としてのみ使用される"],answer:2,explanation:"IDSは不正アクセスや攻撃を検知して管理者に通知する。IPSはIDSの機能に加え検知した攻撃パケットを自動的に遮断する防御機能を持つ。"},
+{id:141,category:"データベース",question:"関係データベースにおいて第三正規形（3NF）の条件として正しいものはどれか。",choices:["繰り返し項目を排除している","部分関数従属を排除している","推移的関数従属を排除している","多値従属を排除している"],answer:2,explanation:"第1正規形＝繰り返し排除、第2正規形＝部分関数従属排除、第3正規形＝推移的関数従属排除。3NFは非キー属性がキー以外の非キー属性に従属する推移的従属を排除した形。"},
+{id:142,category:"データベース",question:"SQLのINNER JOINの説明として正しいものはどれか。",choices:["左テーブルの全行と右テーブルの一致行を返す","全ての組み合わせを返す","右テーブルの全行と左テーブルの一致行を返す","両テーブルで結合条件が一致する行のみを返す"],answer:3,explanation:"INNER JOIN（内部結合）は結合条件が一致する行だけを結果として返す。LEFT JOINは左テーブル全行、RIGHT JOINは右テーブル全行、CROSS JOINは直積を返す。"},
+{id:143,category:"データベース",question:"データベースのトランザクションのACID特性のうち「原子性（Atomicity）」の説明として正しいものはどれか。",choices:["トランザクション完了後は永続的に保存される","同時実行されるトランザクション間で干渉しない","トランザクション内の操作は全て実行されるか全て取り消されるかのどちらか","トランザクション前後でデータの整合性が保たれる"],answer:2,explanation:"原子性はトランザクションを構成するすべての操作が全て成功（コミット）するか全て失敗（ロールバック）するかのいずれかになることを保証する特性。"},
+{id:144,category:"データベース",question:"B木（B-Tree）インデックスの特徴として正しいものはどれか。",choices:["完全一致検索のみ高速で範囲検索は遅い","線形探索より遅い場合がある","ハッシュ値を使用してデータを格納する","ルートから葉まで全てのパスの長さが同じ平衡木"],answer:3,explanation:"B木は全ての葉ノードが同じ深さにある平衡木構造で、完全一致・範囲検索・前方一致検索を効率的に行える。RDBMSで最も広く使用されるインデックス構造。"},
+{id:145,category:"データベース",question:"SQLのGROUP BY句の説明として正しいものはどれか。",choices:["結果セットを並び替えるという規定","条件に合う行だけを抽出するという規定","指定した列の値が同じ行をグループ化して集計関数を適用する","テーブルを結合するの概念"],answer:2,explanation:"GROUP BYは指定列の値が同じ行をグループにまとめ、COUNT・SUM・AVG・MAX・MINなどの集計関数と組み合わせてグループごとの集計結果を得るために使用する。"},
+{id:146,category:"データベース",question:"デッドロックが発生した場合のDBMSの一般的な対処として正しいものはどれか。",choices:["全トランザクションをロールバックする","デッドロックが解消されるまでシステムを停止する","デッドロックを検出し一方のトランザクションをロールバックして解消する","ロックを全て解放してからやり直す（誤り）"],answer:2,explanation:"DBMSはデッドロック検出アルゴリズムで循環待機を検出し犠牲者（victim）として選択した一方のトランザクションをロールバックしてデッドロックを解消する。"},
+{id:147,category:"データベース",question:"NoSQLデータベースのうちキーバリュー型の説明として正しいものはどれか。",choices:["データをテーブルと行で管理する","キーと値のペアでデータを管理しシンプルで高速な読み書きが可能","グラフ構造でノードとエッジでデータを管理する","XML/JSONなどの文書をコレクションで管理する"],answer:1,explanation:"キーバリュー型NoSQL（Redis・DynamoDBなど）はキーと値のシンプルなペアでデータを管理し、高速な読み書きとスケールアウトに優れるが複雑なクエリには不向き。"},
+{id:148,category:"データベース",question:"SQLのVIEWの説明として正しいものはどれか。",choices:["SELECT文の結果を仮想テーブルとして定義したオブジェクト","データを物理的に複製して高速アクセスを実現する","テーブルのインデックスを管理する構造","ストアドプロシージャの実行結果を保存するテーブル"],answer:0,explanation:"VIEWはSELECT文を定義したもので実際のデータは持たない仮想テーブル。複雑なクエリの簡略化・セキュリティ制御（特定列のみ公開）・論理的独立性の確保に使用する。"},
+{id:149,category:"データベース",question:"データウェアハウスのOLAPとOLTPの違いとして正しいものはどれか。",choices:["OLTPは日常業務の取引処理、OLAPは大量の履歴データを多次元分析する","OLAPは少量のデータをリアルタイム更新し、OLTPは大量データの分析に使う","両者は同じ用途で使用される","OLAPはオンラインゲームに使用されOLTPは取引処理に使用される"],answer:0,explanation:"OLTPは日常的な業務トランザクションの処理（受注・在庫管理等）を対象とし、OLAPはデータウェアハウスの大量データに対する意思決定支援の多次元分析を目的とする。"},
+{id:150,category:"データベース",question:"外部キー制約の目的として正しいものはどれか。",choices:["列の値が一意であることを保証する（誤り）","参照先テーブルに存在しない値が参照元に登録されないよう参照整合性を保つ","NULL値を許可しないことを保証する（誤り）","列の値が一定範囲内であることを保証する（この説明は誤り）"],answer:1,explanation:"外部キー制約は参照整合性を維持するための制約。参照先（親テーブル）に存在しない値を参照元（子テーブル）に挿入することや、参照されている行を削除することを防止する。"},
+{id:151,category:"データベース",question:"SQLにおいてHAVING句の説明として正しいものはどれか。",choices:["テーブル結合の条件を指定する（誤り）","結果セットの並び順を指定する（誤り）","WHERE句と同じ機能を持つ（誤り）","GROUP BYでグループ化した結果に対して条件を指定する"],answer:3,explanation:"HAVING句はGROUP BYによってグループ化した後の集計結果に条件を適用する。WHERE句は行のフィルタリング（グループ化前）に使用する点で異なる。"},
+{id:152,category:"データベース",question:"データベースにおける楽観的ロックの説明として正しいものはどれか。",choices:["データアクセス時に即座にロックを取得し他からのアクセスを防ぐ","ロックのタイムアウト時間を楽観的に短く設定する方式","読み取り時にも書き込み時にもロックを行わない（誤り）","更新時にデータが取得後に変更されていないかを確認しコンフリクトがあれば処理を失敗させる"],answer:3,explanation:"楽観的ロックはデータ取得時にロックせず更新時にバージョン番号やタイムスタンプで競合を検出する方式。競合が少ない場合に効率的。悲観的ロックは取得時からロックする。"},
+{id:153,category:"データベース",question:"ERモデルにおける多対多の関連の実装として正しいものはどれか。",choices:["外部キーを一方のテーブルに追加する（この説明は誤り）","片方のテーブルを削除して統合する（誤り）","中間テーブル（関連テーブル）を作成して2つの外部キーで管理する","両テーブルに相手の主キーを全て格納する"],answer:2,explanation:"多対多（M:N）の関連はリレーショナルDBでは直接表現できないため、両テーブルの主キーを外部キーとして持つ中間テーブル（ジャンクションテーブル）を作成して実装する。"},
+{id:154,category:"データベース",question:"データベースのシャーディングの説明として正しいものはどれか。",choices:["データを圧縮してストレージを節約する技術","データを複数のデータベースサーバに水平分割して分散格納する技術","データベースのバックアップを自動化する技術","クエリの実行計画を最適化する技術（誤り）"],answer:1,explanation:"シャーディングはデータをキー範囲やハッシュ値等で複数のDBサーバ（シャード）に水平分割して分散させることでスケールアウトを実現する技術。"},
+{id:155,category:"データベース",question:"SQLのEXPLAINコマンドの用途として正しいものはどれか。",choices:["クエリの実行計画を表示してパフォーマンス分析に使用する","テーブルのデータを全件削除する","データベースのバックアップを実行する","ユーザ権限を設定するという規定"],answer:0,explanation:"EXPLAINはSQLクエリを実際に実行せずにオプティマイザが選択した実行計画（使用インデックス・結合方法・推定コスト等）を表示するパフォーマンスチューニングに使うコマンド。"},
+{id:156,category:"データベース",question:"レプリケーションの説明として正しいものはどれか。",choices:["データを圧縮して保存する技術（誤り）","マスタDBの変更をスレーブDBに複製し読み取り負荷分散や冗長化を実現する技術","データベースを暗号化する技術（誤り）","クエリキャッシュを管理する機能（誤り）"],answer:1,explanation:"レプリケーションはマスタ（プライマリ）DBの更新をスレーブ（レプリカ）DBに複製する技術。読み取りのスケールアウト・バックアップ・障害時の切り替えに活用する。"},
+{id:157,category:"データベース",question:"インメモリデータベースの特徴として正しいものはどれか。",choices:["ディスクへの書き込みを主な記憶媒体とする","大容量データの長期保存に最適化されている","データを主にメモリ上に保持することで超高速なアクセスを実現する","トランザクション機能を持たない（誤り）"],answer:2,explanation:"インメモリDBはデータをRAMに保持するため磁気ディスクへのI/Oが不要となりマイクロ秒レベルの超高速アクセスが可能。RedisやMemcachedがキャッシュ用途に広く使用される。"},
+{id:158,category:"データベース",question:"正規化の目的として最も適切なものはどれか。",choices:["データの冗長性を排除しデータ更新時の異常を防止する","検索のパフォーマンスを最大化する","テーブルの数を最小化するという規定","ストレージ使用量を最小化する"],answer:0,explanation:"正規化の目的はデータの重複（冗長性）を排除し更新異常（挿入・削除・更新の不整合）を防止することでデータの整合性を保つこと。性能は低下することもある。"},
+{id:159,category:"データベース",question:"SQLにおいてNULL値の扱いとして正しいものはどれか。",choices:["NULL = NULL はTRUEである","IS NULLを使用してNULL値の存在を確認する","NULLは0や空文字と同等である","NULLを含む算術演算の結果はNULLにならない"],answer:1,explanation:"NULLはSQLで「値が不明・存在しない」ことを示す特殊な状態。NULL同士の比較や算術演算の結果もNULL。NULLの検索にはNULL = NULLではなくIS NULLを使用する必要がある。"},
+{id:160,category:"データベース",question:"データベースの分散トランザクションにおける2フェーズコミットの説明として正しいものはどれか。",choices:["トランザクションを2回実行して整合性を確認する（この説明は誤り）","2つのデータベース間でデータを同期する方式（誤り）","2つのテーブルを同時に更新するトランザクション（この説明は誤り）","全ノードにPREPAREを送り全員のOKを確認後COMMITを送る2段階のコミット手順"],answer:3,explanation:"2フェーズコミット（2PC）は分散トランザクションで全ノードにPREPARE（準備）を送り全員のYES確認後にCOMMITを送る2段階手順で分散環境でのACID特性を保証する。"},
+{id:161,category:"ソフトウェア開発",question:"アジャイル開発のスクラムにおけるスプリントの説明として正しいものはどれか。",choices:["プロジェクト全体の開発期間という規定","プロダクトバックログの優先度付け作業","開発チームの1日の作業計画という規定","1〜4週間の固定期間で動作するソフトウェアを開発する反復単位"],answer:3,explanation:"スクラムのスプリントは1〜4週間の固定長の反復（イテレーション）で各スプリント終了時に動作するソフトウェアをインクリメントとして提供することを目標とする。"},
+{id:162,category:"ソフトウェア開発",question:"ウォーターフォールモデルの特徴として正しいものはどれか。",choices:["要件定義から運用まで各フェーズを順に進め原則として前工程に戻らない","要件定義と実装を並行して行う（誤り）","短い反復を繰り返しながら開発を進める","ユーザとの継続的なコラボレーションを重視する"],answer:0,explanation:"ウォーターフォールモデルは要件定義→設計→実装→テスト→運用の各フェーズを上から下へ順番に進める開発モデルで各フェーズが完了してから次に進むのが原則。"},
+{id:163,category:"ソフトウェア開発",question:"テスト駆動開発（TDD）の開発手順として正しいものはどれか。",choices:["実装→テスト作成→リファクタリング","テスト作成→設計→実装という規定","設計→実装→テストの概念","テスト作成（失敗）→最小限の実装（成功）→リファクタリング"],answer:3,explanation:"TDDはRed（失敗するテストを書く）→Green（テストが通る最小限の実装）→Refactor（コード改善）の3ステップを繰り返す開発手法。設計品質向上と回帰テストの自動化が目的。"},
+{id:164,category:"ソフトウェア開発",question:"UMLのクラス図で使用される集約（Aggregation）と合成（Composition）の違いとして正しいものはどれか。",choices:["集約と合成は同じ意味であるという規定","合成は部品がオーナーに強く依存し独立して存在できない、集約は部品が独立して存在できる","集約は継承を表しコンポジションは実装を表す（誤り）","合成は多重継承を実現するための概念（誤り）"],answer:1,explanation:"集約はhas-a関係で部品が独立して存在可能（車と乗員）。合成（コンポジション）はオーナーが削除されると部品も削除される強い所有関係（家と部屋）を表す。"},
+{id:165,category:"ソフトウェア開発",question:"デザインパターンのうちSingletonパターンの目的として正しいものはどれか。",choices:["オブジェクトの生成を複数のクラスで分担する","インタフェースを統一してクライアントコードを簡略化する","複雑なオブジェクトの生成手順をカプセル化する","クラスのインスタンスが1つだけ存在することを保証する"],answer:3,explanation:"Singletonパターンはクラスのインスタンスを1つに制限するデザインパターン。DBコネクションプールや設定管理など1つだけ存在すべきオブジェクトに使用される。"},
+{id:166,category:"ソフトウェア開発",question:"CI/CD（継続的インテグレーション/継続的デリバリー）の目的として正しいものはどれか。",choices:["手動テストの品質を向上させる手法（誤り）","セキュリティテストを自動化する手法（誤り）","コードの変更を自動的にビルド・テスト・デプロイして迅速なリリースを実現する","要件定義を効率化する手法という規定"],answer:2,explanation:"CI/CDはコードコミット時に自動ビルド・テストを行い（CI）、テスト通過後に自動でステージング/本番環境にデプロイ（CD）することで品質を保ちながら迅速なリリースを実現する。"},
+{id:167,category:"ソフトウェア開発",question:"ブラックボックステストの説明として正しいものはどれか。",choices:["内部構造を理解した上でコードを検査するテスト","テスト対象のコードを全て入手してカバレッジ100%を目指すテスト","データベースのみをテスト対象にするテスト","内部実装を考慮せず仕様や入出力の観点からテストする"],answer:3,explanation:"ブラックボックステストは内部実装を知らずに仕様に基づいて入出力だけを検証するテスト手法。同値分割・境界値分析などの技法がある。内部構造を考慮するのはホワイトボックステスト。"},
+{id:168,category:"ソフトウェア開発",question:"リファクタリングの説明として正しいものはどれか。",choices:["機能を追加しながらコードを改善する","バグを修正しながら設計を見直す","外部から見た振る舞いを変えずにコードの内部構造を改善する","パフォーマンスを向上させるためにアルゴリズムを変更する"],answer:2,explanation:"リファクタリングは外部の振る舞い（機能・入出力）を変えずにコードの可読性・保守性・拡張性を改善する作業。コードの臭い（デュプリケーション等）の解消が目的。"},
+{id:169,category:"ソフトウェア開発",question:"Gitにおけるブランチの説明として正しいものはどれか。",choices:["リモートリポジトリとの接続設定（誤り）","特定コミットに永続的な名前をつけるタグ","コミット履歴を指す軽量なポインタで独立した開発ラインを作成できる","ファイルの変更差分を示すもの（誤り）"],answer:2,explanation:"Gitのブランチは特定のコミットへの軽量なポインタで、mainブランチから分岐して機能開発やバグ修正を独立したラインで行いマージするワークフローに活用する。"},
+{id:170,category:"ソフトウェア開発",question:"コードレビューの目的として最も適切なものはどれか。",choices:["実装者の評価を行うの概念","テストの代替手段として使用する（誤り）","バグ・設計上の問題・コーディング規約違反の早期発見と知識共有","実装時間を短縮するの概念"],answer:2,explanation:"コードレビューはバグや設計問題の早期発見・コード品質の向上・チーム内の知識共有・コーディング規約の遵守確認を目的とする開発プロセスの重要な工程。"},
+{id:171,category:"ソフトウェア開発",question:"ユースケース図の説明として正しいものはどれか。",choices:["アクターとシステムの機能（ユースケース）の関係を表す要件定義に使うUML図","システムの内部構造を表すUML図（誤り）","クラス間の依存関係を表す設計図（誤り）","シーケンス図のサブセットとなる図（誤り）"],answer:0,explanation:"ユースケース図はシステムの利用者（アクター）とシステムが提供する機能（ユースケース）の関係を表すUML図で、要件定義フェーズでシステムの機能範囲を明確化するために使用する。"},
+{id:172,category:"ソフトウェア開発",question:"DevOpsの説明として正しいものはどれか。",choices:["開発チームと運用チームを完全に分離する組織方針（この説明は誤り）","開発と運用が協力し自動化を活用してソフトウェアを迅速・安定的にデリバリーする文化と手法","テスト専門チームによる品質保証プロセス（誤り）","アジャイル開発の特定のフレームワーク（誤り）"],answer:1,explanation:"DevOpsは開発（Dev）と運用（Ops）の壁を取り除き協力体制・CI/CD・IaC等の自動化・継続的モニタリングを組み合わせてソフトウェアの価値提供サイクルを高速化する文化・手法。"},
+{id:173,category:"ソフトウェア開発",question:"オブジェクト指向のカプセル化の説明として正しいものはどれか。",choices:["クラスが別クラスの性質を引き継ぐ仕組み","インタフェースを通じて異なるクラスを統一的に扱う仕組み","同じメソッド名で異なる動作を実現する仕組み","データ（属性）と操作（メソッド）を一つにまとめ内部を隠蔽する仕組み"],answer:3,explanation:"カプセル化はオブジェクトのデータとメソッドをクラスにまとめ内部実装を隠蔽（情報隠蔽）することでインタフェースを通じてのみアクセスを許可し結合度を下げる原則。"},
+{id:174,category:"ソフトウェア開発",question:"コードのサイクロマティック複雑度の説明として正しいものはどれか。",choices:["コードの行数を測定する指標という規定","メモリ使用量を示す指標という規定","制御フローの複雑さを判断数（分岐数）で定量化した指標","実行速度を測定する指標という規定"],answer:2,explanation:"サイクロマティック複雑度（マッキャブ複雑度）はif・for・while・case等の分岐の数＋1で算出するコードの複雑さの定量指標。10以下が適切とされテスト容易性に影響する。"},
+{id:175,category:"ソフトウェア開発",question:"ソフトウェアのバージョン管理においてセマンティックバージョニング（MAJOR.MINOR.PATCH）でMajorバージョンを上げる条件として正しいものはどれか。",choices:["後方互換性のあるバグ修正","後方互換性のある機能追加","後方互換性のないAPI変更","ドキュメントの更新"],answer:2,explanation:"セマンティックバージョニングではMAJOR=後方互換性のない変更、MINOR=後方互換性のある機能追加、PATCH=後方互換性のあるバグ修正、のそれぞれで各番号をインクリメントする。"},
+{id:176,category:"ソフトウェア開発",question:"依存性の注入（DI: Dependency Injection）の目的として正しいものはどれか。",choices:["クラス内でインスタンスを生成して依存関係を管理する（この説明は誤り）","依存オブジェクトを外部から注入することでクラス間の結合度を下げテスタビリティを向上させる","シングルトンパターンを自動的に実装する（誤り）","データベース接続を一元管理する（誤り）"],answer:1,explanation:"DIは使用するオブジェクト（依存）をクラス内でnewせず外部（DIコンテナ等）から注入することでクラス間の結合を疎にし単体テストや実装交換を容易にする設計原則。"},
+{id:177,category:"ソフトウェア開発",question:"ソフトウェアのマイグレーションにおけるブルーグリーンデプロイメントの説明として正しいものはどれか。",choices:["本番環境に直接デプロイして動作確認する方式（誤り）","同一構成の2つの環境（Blue/Green）を用意し新版をGreenに展開後トラフィ","段階的に一部ユーザへ新版を展開するカナリアリリース（誤り）","コンテナを使って環境差異をなくすデプロイ方式（誤り）"],answer:1,explanation:"ブルーグリーンデプロイメントは現行版（Blue）と同等の新版環境（Green）を構築後ロードバランサの向き先を切り替えることでダウンタイムなしにデプロイし問題時は即時ロールバックできる手法。"},
+{id:178,category:"ソフトウェア開発",question:"ソフトウェアの技術的負債の説明として正しいものはどれか。",choices:["ソフトウェア開発に使用した費用の総額（誤り）","後で修正が必要な設計上の妥協や急ごしらえのコードが将来のコスト・リスクとして蓄積したもの","外部ライブラリへの依存による脆弱性リスク（誤り）","プロジェクト遅延による追加コスト（誤り）"],answer:1,explanation:"技術的負債はスケジュール優先の手抜き実装や不適切な設計が後の保守・拡張を困難にするコストとして蓄積する概念。Ward Cunninghamが提唱。早期返済（リファクタリング）が重要。"},
+{id:179,category:"ソフトウェア開発",question:"アジャイル開発のXP（エクストリームプラクティス）のペアプログラミングの説明として正しいものはどれか。",choices:["2人の開発者が異なる機能を並行して開発する（誤り）","PM2人でプロジェクト管理を分担する（誤り）","開発者とテスタが共同でテストケースを作成する（誤り）","2人の開発者が1台のコンピュータを共有しドライバとナビゲータに分かれてコーディングする"],answer:3,explanation:"ペアプログラミングは2人がコードを書くドライバと設計・レビューするナビゲータに分かれリアルタイムでコードレビューしながら実装する手法。品質向上と知識共有が目的。"},
+{id:180,category:"ソフトウェア開発",question:"ソフトウェアのMVCアーキテクチャにおけるモデル（Model）の役割として正しいものはどれか。",choices:["ユーザインタフェースの表示を担当する","ユーザの入力を受け付けてモデルとビューの橋渡しをする","ビジネスロジックとデータを管理する","ルーティングの定義を管理する"],answer:2,explanation:"MVCのModel（モデル）はビジネスロジックの実装とデータの管理・操作を担当する。View（ビュー）が表示を、Controller（コントローラ）がユーザ操作の処理とM-V間の制御を担当する。"},
+{id:181,category:"マネジメント",question:"WBS（Work Breakdown Structure）の説明として正しいものはどれか。",choices:["プロジェクトの作業を階層的に細分化した構成図","プロジェクトのリスクを一覧化した文書","プロジェクトのスケジュールをガントチャートで表したもの","プロジェクトメンバーの責任範囲を示す表"],answer:0,explanation:"WBSはプロジェクトの全作業範囲を管理可能な単位（ワークパッケージ）に階層的に分解した構造で、作業の漏れや重複を防ぎ工数見積もり・スケジュール作成の基礎となる。"},
+{id:182,category:"マネジメント",question:"クリティカルパスの説明として正しいものはどれか。",choices:["プロジェクト内で最も優先度の高い作業の集合","リスクが最も高い作業の経路という規定","プロジェクトを最短で完了するための作業経路で余裕時間がゼロの作業の連鎖","最も費用がかかる作業経路という規定"],answer:2,explanation:"クリティカルパスはPERT/CPM図で全経路のうち所要時間が最長の経路。この経路上の作業に遅延が生じるとプロジェクト全体の完了が遅れる。クリティカルパス上の作業の余裕時間は0。"},
+{id:183,category:"マネジメント",question:"リスクマネジメントにおけるリスクの対応戦略のうち「リスク転嫁」の説明として正しいものはどれか。",choices:["保険加入や外部委託によりリスクの影響を第三者に移転する","リスクの発生確率や影響を低減する対策を取る","リスクが受容可能な水準のため特に対策を取らない","リスクを伴う活動そのものを中止する"],answer:0,explanation:"リスク転嫁は保険加入・外部委託・契約条項の設定等によりリスクの財務的影響を第三者に移転する戦略。リスクの発生確率自体は変わらないがその影響を他者に負担させる。"},
+{id:184,category:"マネジメント",question:"プロジェクト管理のEVM（アーンドバリューマネジメント）におけるCPI（コスト効率指数）の計算式として正しいものはどれか。",choices:["EV÷PV","EV÷AC","AC÷EV","PV÷AC"],answer:1,explanation:"CPI（Cost Performance Index）=EV（出来高）÷AC（実績コスト）。CPI>1はコスト効率が良好、CPI<1はコスト超過を示す。SPI（スケジュール効率）=EV÷PV。"},
+{id:185,category:"マネジメント",question:"PMBOKで定義されるプロジェクトの特徴として正しいものはどれか。",choices:["繰り返し実行される継続的な業務である","日常業務の効率化を目的とした活動","複数のプログラムを統括する長期計画","独自のプロダクトやサービスを創出するための有期の取り組み"],answer:3,explanation:"PMBOKによるプロジェクトの定義は「独自のプロダクト・サービス・所産を創出するための有期性のある取り組み」。有期性（始まりと終わりがある）と独自性が特徴。"},
+{id:186,category:"マネジメント",question:"SLA違反時のペナルティとしてよく使われるSLOの説明として正しいものはどれか。",choices:["サービスの価格を規定した合意書（誤り）","SLA内の具体的な測定可能な目標値（Service Level Objective）","ソフトウェアライセンスの種類（誤り）","セキュリティポリシーの達成目標（誤り）"],answer:1,explanation:"SLO（Service Level Objective）はSLA（契約）を構成する具体的で測定可能な指標の目標値。例：稼働率99.9%・応答時間200ms以下など。SLAはSLOが達成できなかった場合のペナルティを規定する契約。"},
+{id:187,category:"マネジメント",question:"ITILにおけるインシデント管理の目的として正しいものはどれか。",choices:["ITサービスを可能な限り迅速に正常状態に復旧させる","インシデントの根本原因を特定して恒久的解決策を実施する","変更要求のリスクを評価し承認する","SLAの遵守状況を監視・報告する"],answer:0,explanation:"ITILのインシデント管理は根本原因の分析は行わずITサービスを可能な限り迅速に正常運用状態に回復させることを目的とする。根本原因特定は問題管理が担当する。"},
+{id:188,category:"マネジメント",question:"アジャイル開発のスクラムにおけるプロダクトオーナーの役割として正しいものはどれか。",choices:["開発プロセスを管理しスクラムの障害を除去する","プロダクトバックログを管理し優先順位付けを行いビジネス価値を最大化する","技術的な設計決定を行うという規定","スプリントの計画を主導するという規定"],answer:1,explanation:"プロダクトオーナーはビジネス側の代表としてプロダクトバックログの作成・優先順位付けを行い開発チームが価値の高いものから順に開発できるよう方向付ける役割。"},
+{id:189,category:"マネジメント",question:"コンフィギュレーション管理（構成管理）の目的として正しいものはどれか。",choices:["プロジェクトのコスト管理という規定","リスクの識別と対応策の管理という規定","チームメンバーの作業割り当て管理（誤り）","ソフトウェア成果物のバージョンや構成要素を管理し変更を追跡する"],answer:3,explanation:"構成管理はソフトウェア・ドキュメント・環境設定等の成果物（CI: Configuration Item）のバージョンを管理し変更履歴を追跡・制御することでシステムの完全性と追跡可能性を確保する。"},
+{id:190,category:"マネジメント",question:"プロジェクトのスコープクリープの説明として正しいものはどれか。",choices:["プロジェクトの予算が当初計画を超過すること","技術的な負債が蓄積することという規定","プロジェクトメンバーが無断で離脱すること","明確な承認プロセスなしにプロジェクトの作業範囲が徐々に拡大する現象"],answer:3,explanation:"スコープクリープは変更管理プロセスを経ずにプロジェクトの作業範囲・要件・機能が少しずつ追加・拡大される現象。スケジュール・コスト超過の主要因の一つ。"},
+{id:191,category:"マネジメント",question:"ステークホルダーの説明として正しいものはどれか。",choices:["プロジェクトの開発メンバーのみを指す","プロジェクトや組織の活動に利害関係を持つ全ての個人・組織","プロジェクトスポンサーのみを指す","エンドユーザのみを指すという規定"],answer:1,explanation:"ステークホルダーはプロジェクトの意思決定・成果・実行に影響を与えるか影響を受ける全ての個人・組織。スポンサー・顧客・チームメンバー・エンドユーザ・規制機関等が含まれる。"},
+{id:192,category:"マネジメント",question:"KPI（Key Performance Indicator）の説明として正しいものはどれか。",choices:["プロジェクトの予算管理指標","従業員のスキルレベルを評価する指標","IT資産の価値を評価するための財務指標","戦略目標の達成度を測定するための重要業績評価指標"],answer:3,explanation:"KPIは組織や個人が戦略目標をどの程度達成できているかを定量的に測定するための主要な業績評価指標。目標（KGI）を達成するための先行指標として管理に活用する。"},
+{id:193,category:"マネジメント",question:"インシデント対応においてフォレンジック調査の説明として正しいものはどれか。",choices:["システムへの不正アクセスを予防するための事前対策（この説明は誤り）","セキュリティインシデント後にデジタル証拠を収集・保全・分析し原因と影響範囲を特定する調査","サービス復旧を最優先とした緊急対応（誤り）","脆弱性スキャンによる弱点の発見（誤り）"],answer:1,explanation:"デジタルフォレンジックはセキュリティ事故後にログ・メモリダンプ・ディスクイメージ等のデジタル証拠を収集・保全・分析する技術で法的証拠としても使用できるよう手順が重要。"},
+{id:194,category:"マネジメント",question:"ISO 27001の説明として正しいものはどれか。",choices:["情報セキュリティマネジメントシステム（ISMS）の要求事項を定めた国際標準","情報システムの品質管理に関する国際標準（誤り）","個人情報保護に関する日本の法律（誤り）","ITサービスマネジメントの国際標準（誤り）"],answer:0,explanation:"ISO 27001は組織の情報セキュリティを体系的に管理するISMSの要求事項を定めた国際規格。リスクアセスメントに基づいてセキュリティ管理策を選択・実施・監視・改善するPDCAを回す。"},
+{id:195,category:"マネジメント",question:"プロジェクト管理のガントチャートの説明として正しいものはどれか。",choices:["各タスクの開始・終了予定を時間軸で棒グラフで表した工程管理表","タスク間の依存関係とクリティカルパスを明示するネットワーク図","コストと工数の配分を示す円グラフ","プロジェクトのリスクを発生確率と影響度で整理したマトリクス"],answer:0,explanation:"ガントチャートはプロジェクトの各タスクを横棒で表し期間・進捗・担当者を視覚的に管理する工程表。タスク間の依存関係の表現はPERT図（ネットワーク図）が得意。"},
+{id:196,category:"マネジメント",question:"デミングのPDCAサイクルのDo（実行）フェーズの説明として正しいものはどれか。",choices:["改善の目標と方法を計画する","計画に基づいて業務を実行する","実行結果を測定・評価し計画との差異を分析する","分析結果をもとに標準化・改善策を実施する"],answer:1,explanation:"PDCAのPlan（計画）→Do（実行）→Check（評価）→Act（改善）のうちDo（実行）は計画で定めた手順・目標に従って実際に業務や施策を実行するフェーズ。"},
+{id:197,category:"マネジメント",question:"ITサービスマネジメントのSOC 2レポートの説明として正しいものはどれか。",choices:["財務諸表の監査報告書という規定","クラウドサービス等のセキュリティ・可用性・機密性等を第三者が監査した報告書","情報システムの性能評価報告書（誤り）","プロジェクトの完了報告書という規定"],answer:1,explanation:"SOC 2（Service Organization Control 2）はクラウドサービスプロバイダ等のセキュリティ・可用性・処理の完全性・機密性・プライバシーの5つのトラストサービス基準を第三者監査する報告書。"},
+{id:198,category:"マネジメント",question:"ビジネスインパクト分析（BIA）の目的として正しいものはどれか。",choices:["業務停止が組織に与える影響の大きさと許容停止時間を特定する","新規事業の収益性を評価するという規定","ITシステムのコスト削減効果を分析する","マーケティング施策の効果を測定する"],answer:0,explanation:"BIA（Business Impact Analysis）はBCP策定の基礎として各業務が停止した場合の財務的・非財務的影響と許容最大停止時間（RTO）・許容データ損失時間（RPO）を特定する分析。"},
+{id:199,category:"マネジメント",question:"変更管理プロセスにおけるCAB（変更諮問委員会）の役割として正しいものはどれか。",choices:["変更要求のコーディングを行う（誤り）","変更要求のリスク・影響・リソースを評価し変更の承認可否を判断する","インシデントの根本原因を調査する（誤り）","セキュリティポリシーを策定する（誤り）"],answer:1,explanation:"CAB（Change Advisory Board）はITサービスへの変更要求の技術的リスク・ビジネス影響・リソースを評価し変更の承認・否認・条件付き承認を判断する多部門横断的な意思決定機関。"},
+{id:200,category:"マネジメント",question:"アジャイル開発におけるベロシティの説明として正しいものはどれか。",choices:["開発チームの移動速度を表す物理指標（誤り）","スプリントの期間（週数）を示す値（誤り）","コードの実行速度を測定する指標（誤り）","1スプリントで完了したストーリーポイントの合計でチームの生産性の目安"],answer:3,explanation:"ベロシティはスクラムチームが1スプリントで完了できるストーリーポイントの実績値。過去の平均ベロシティを基に将来のスプリント計画やリリース予測を行う。"},
+{id:201,category:"ストラテジ",question:"ITガバナンスの説明として正しいものはどれか。",choices:["IT部門が技術方針を自主的に決定する仕組み","情報システムの運用を外部委託する仕組み（この説明は誤り）","経営層がITの活用方針を策定・監督し組織目標とIT投資を整合させる仕組み","IT資産の棚卸しと管理を行う仕組み（誤り）"],answer:2,explanation:"ITガバナンスは経営者がIT戦略・リスク・資源配分を監督し組織のビジネス目標とITの活用を整合・最適化するための意思決定・監督の仕組み。COBIT等のフレームワークが参照される。"},
+{id:202,category:"ストラテジ",question:"TOC（制約理論）のボトルネック改善のステップとして正しいものはどれか。",choices:["全プロセスを同時に改善するという規定","制約（ボトルネック）を特定→最大活用→他を従属させる→制約を強化→繰り返す","最も速いプロセスをさらに高速化する（誤り）","最もコストのかかる工程から改善する（誤り）"],answer:1,explanation:"TOC（Theory of Constraints）はシステム全体のスループットを制限するボトルネックに集中改善する手法。①制約特定②最大活用③他工程を制約に合わせる④制約強化⑤再特定を繰り返す。"},
+{id:203,category:"ストラテジ",question:"BPR（ビジネスプロセスリエンジニアリング）の説明として正しいものはどれか。",choices:["既存業務プロセスを少しずつ改善する継続的改善活動","IT化によって業務を自動化する取り組み","業務プロセスを根本から見直し抜本的に再設計して飛躍的な改善を目指す","従業員のスキルアップによって生産性を向上させる取り組み"],answer:2,explanation:"BPRはMichaelHammerが提唱したコスト・品質・スピードの劇的改善のため業務プロセスを抜本的に再設計する手法。既存業務の延長でなく「なぜその業務が必要か」から問い直す。"},
+{id:204,category:"ストラテジ",question:"ROI（投資対効果）の計算式として正しいものはどれか。",choices:["(利益÷売上高)×100","(利益÷投資額)×100","(売上高÷資産)×100","(利益÷コスト削減額)×100"],answer:1,explanation:"ROI（Return on Investment）=(利益または効果÷投資額)×100（%）。IT投資では投資によって得られた利益または削減効果を投資額で除して算出し投資効果の判断に使用する。"},
+{id:205,category:"ストラテジ",question:"DX（デジタルトランスフォーメーション）の説明として正しいものはどれか。",choices:["業務システムをクラウドに移行すること（誤り）","デジタル技術を活用して企業文化・ビジネスモデル・顧客体験を変革すること","紙帳票をPDFに電子化すること（誤り）","AIシステムを導入して一部業務を自動化すること"],answer:1,explanation:"DXは単なるIT化ではなくデジタル技術（AI・IoT・クラウド等）を活用して製品・サービス・ビジネスモデルを変革しビジネス競争上の優位性を確立するという経営戦略上の変革。"},
+{id:206,category:"ストラテジ",question:"SaaS（Software as a Service）の例として最も適切なものはどれか。",choices:["仮想サーバをレンタルするサービス","アプリケーション開発・実行環境を提供するサービス","電子メールや文書作成をブラウザから利用できるサービス","CDNを提供するサービス"],answer:2,explanation:"SaaSはソフトウェアをインターネット経由でサービスとして提供する形態。Gmail・Salesforce・Microsoft 365等がSaaSの例。IaaSは仮想インフラ提供、PaaSは開発・実行環境提供。"},
+{id:207,category:"ストラテジ",question:"バランスト・スコアカード（BSC）の4つの視点として正しいものはどれか。",choices:["財務・顧客・内部プロセス・学習と成長","財務・人材・技術・マーケティング","戦略・戦術・運用・管理","コスト・品質・納期・安全"],answer:0,explanation:"BSC（Balanced Scorecard）はKaplanとNortonが提唱した戦略管理手法で財務・顧客・内部ビジネスプロセス・学習と成長の4視点でKPIを設定し戦略の実行を管理する。"},
+{id:208,category:"ストラテジ",question:"情報システム戦略においてEA（エンタープライズアーキテクチャ）の4つのアーキテクチャとして正しいものはどれか。",choices:["ビジネス・データ・アプリケーション・テクノロジ","戦略・戦術・運用・管理という規定","要件・設計・実装・テスト","財務・人事・購買・販売という規定"],answer:0,explanation:"EAはビジネスアーキテクチャ（業務）・データアーキテクチャ・アプリケーションアーキテクチャ・テクノロジアーキテクチャ（インフラ）の4層で企業のIT全体を体系的に整理する手法。"},
+{id:209,category:"ストラテジ",question:"TCO（総保有コスト）に含まれるコストとして適切でないものはどれか。",choices:["導入時のハードウェア・ソフトウェア購入費","運用・保守費用","ユーザトレーニング費用","競合他社のシステム費用"],answer:3,explanation:"TCO（Total Cost of Ownership）はシステムの導入から廃棄までの全コスト（購入費・設置費・運用費・保守費・教育費・廃棄費等）を含む。競合他社のコストは自社のTCOに含まれない。"},
+{id:210,category:"ストラテジ",question:"AI倫理においてAIの説明可能性（XAI）の目的として正しいものはどれか。",choices:["AIの処理速度を向上させるという規定","AIの意思決定プロセスを人間が理解・検証できるようにする","AIのコスト削減を実現するという規定","AIのセキュリティを強化する（誤り）"],answer:1,explanation:"説明可能なAI（XAI: Explainable AI）はブラックボックスとなりがちなAIモデルの意思決定根拠を人間が理解できる形で説明する技術。医療・金融等高リスク分野での信頼性・説明責任確保に重要。"},
+{id:211,category:"ストラテジ",question:"ソーシャルメディアのマーケティング活用における「エンゲージメント」の説明として正しいものはどれか。",choices:["いいね・コメント・シェア等ユーザがコンテンツと積極的に関わる度合い","広告の表示回数の指標という規定","フォロワー数の合計の概念","広告クリック単価の指標という規定"],answer:0,explanation:"エンゲージメントはユーザがSNS投稿に対していいね・コメント・シェア・保存等で積極的に関わる行動の量・質を表す指標。フォロワー数より実質的な関心度を反映するとされる。"},
+{id:212,category:"ストラテジ",question:"クラウドサービスの利用に関するコンプライアンス上の注意点として最も重要なものはどれか。",choices:["クラウドサービスの費用対効果分析（誤り）","クラウドプロバイダの従業員数（誤り）","クラウドサービスのUIデザイン（誤り）","個人情報・機密データの保管場所（データレジデンシー）と法令適用関係の確認"],answer:3,explanation:"クラウド利用時はデータが保管・処理される国・地域を把握しGDPR・個人情報保護法等の適用法令やデータ主権に関するコンプライアンスリスクを事前に評価・対策することが重要。"},
+{id:213,category:"ストラテジ",question:"マイケル・ポーターの5つの競争要因に含まれないものはどれか。",choices:["既存競合他社の競争","新規参入の脅威","供給業者の交渉力","株主からの圧力"],answer:3,explanation:"ポーターの5フォースは①既存競合②新規参入の脅威③代替品の脅威④買い手の交渉力⑤供給者の交渉力。株主圧力は5フォースに含まれない。"},
+{id:214,category:"ストラテジ",question:"IoTシステムのエッジデバイスで収集したデータをクラウドに送信する際の課題として最も重要なものはどれか。",choices:["エッジデバイスのデザイン要件（誤り）","エッジデバイスの色と形状という規定","クラウドのサーバスペック選定（誤り）","大量データの帯域幅コスト・レイテンシ・プライバシー・セキュリティリスク"],answer:3,explanation:"IoTで膨大なデータを全てクラウドに送ると帯域幅コスト増大・高レイテンシ・転送中のセキュリティリスクが生じる。エッジコンピューティングで前処理し必要データのみ送信することが対策となる。"},
+{id:215,category:"ストラテジ",question:"GDPR（一般データ保護規則）の説明として正しいものはどれか。",choices:["EUの個人データ保護とプライバシーに関する規則で域外適用もある（GDPR）","アメリカの個人情報保護法という規定","日本の個人情報保護法の英訳という規定","国際会計基準の個人データ条項（誤り）"],answer:0,explanation:"GDPR（General Data Protection Regulation）はEU市民の個人データ保護を強化するEUの規則。EU外の企業でもEU市民のデータを扱う場合に適用され違反には売上高4%または2000万ユーロの高額制裁金が科される。"},
+{id:216,category:"ストラテジ",question:"グリーンITの説明として適切なものはどれか。",choices:["IT企業の株式投資に関する環境指標（誤り）","データセンターを自然冷却で運用する技術のみを指す","環境関連のアプリケーション開発（誤り）","IT機器の省エネ・資源効率化や廃棄物削減を通じて環境負荷を低減する取り組み"],answer:3,explanation:"グリーンITは情報通信技術の設計・製造・利用・廃棄の全ライフサイクルにわたり消費電力・CO2排出・電子廃棄物を削減して環境への悪影響を最小化する取り組みの総称。"},
+{id:217,category:"ストラテジ",question:"API（Application Programming Interface）エコノミーの説明として正しいものはどれか。",choices:["APIの開発コストを削減するプログラミング手法（この説明は誤り）","APIのドキュメント標準化の取り組み（誤り）","社内システム間のAPIを管理する部門（誤り）","APIを通じて企業間でサービスや機能を公開・連携してビジネス価値を創出するエコシステム"],answer:3,explanation:"APIエコノミーは企業が自社サービスのAPIを外部公開しパートナーや開発者が組み合わせてサービスを創出することで形成されるエコシステム。FinTechのオープンバンキングが典型例。"},
+{id:218,category:"ストラテジ",question:"技術採用ライフサイクルにおけるキャズム（溝）の説明として正しいものはどれか。",choices:["製品の生産コストが急落する転換点（誤り）","特許が満了するタイミングという規定","製品が市場から撤退するタイミング（誤り）","イノベータ・アーリーアダプタと一般大衆の間の普及の断絶（キャズム）"],answer:3,explanation:"ジェフリー・ムーアのキャズム理論では新技術の普及はイノベータ・アーリーアダプタ（先進層）からアーリーマジョリティ（一般層）へ移行する際に大きな断絶（キャズム）があり多くの製品がここで失敗する。"},
+{id:219,category:"ストラテジ",question:"OKR（Objectives and Key Results）の説明として正しいものはどれか。",choices:["財務指標を中心とした業績評価システム（誤り）","野心的な目標（O）と定量的な達成指標（KR）を設定する目標管理フレームワーク","プロジェクトのリスク管理手法（誤り）","IT投資の効果を測定する手法（誤り）"],answer:1,explanation:"OKRはIntelで生まれGoogleが普及させた目標管理手法。野心的なObjective（定性目標）と進捗測定するKey Results（定量指標）を四半期ごとに設定し透明性の高い組織の整合を実現する。"},
+{id:220,category:"ストラテジ",question:"マーケティングの4Pのうち「プロモーション」に含まれないものはどれか。",choices:["広告","PR（広報）","販売促進","価格設定"],answer:3,explanation:"マーケティングの4P：Product（製品）・Price（価格）・Place（流通）・Promotion（プロモーション）。広告・PR・セールスプロモーション・人的販売はPromotionに含まれ価格設定はPriceの領域。"},
+{id:221,category:"法務・規制",question:"不正アクセス禁止法において処罰される行為として正しいものはどれか。",choices:["自分が管理するサーバへのアクセス（誤り）","他人のIDとパスワードを無断で使用してシステムにアクセスする行為","自社のシステムへの負荷テストを行う行為","ネットワークの通信速度を計測する行為（この説明は誤り）"],answer:1,explanation:"不正アクセス禁止法は認証を突破して他人のコンピュータに無断でアクセスする行為を禁止する。IDPWの不正取得・保管・提供も規制対象。"},
+{id:222,category:"法務・規制",question:"個人情報保護法における「個人情報」の定義として正しいものはどれか。",choices:["企業の財務情報に関する規定という規定","生存する個人に関する情報であって特定の個人を識別できるもの（個人情報の定義）","全ての電子データに関する規定（誤り）","公的機関が保有する情報のみという規定"],answer:1,explanation:"個人情報保護法の「個人情報」は生存する個人に関する情報で氏名・生年月日・住所等により特定の個人を識別できるもの。死者の情報は対象外（ただし遺族等への配慮は必要）。"},
+{id:223,category:"法務・規制",question:"著作権法においてソフトウェアの著作権が発生するタイミングとして正しいものはどれか。",choices:["創作した時点で自動的に発生する","特許庁に申請して登録した時点","企業に納品された時点","ユーザがインストールした時点"],answer:0,explanation:"著作権は創作物を作成した時点で自動的に発生し登録・申請は不要。ソフトウェアのプログラムは著作物として保護される。特許は出願・審査・登録が必要な点と異なる。"},
+{id:224,category:"法務・規制",question:"労働者派遣法において「偽装請負」が問題となる理由として正しいものはどれか。",choices:["請負単価が市場相場より高い場合（誤り）","実態は労働者派遣なのに請負契約として処理し労働者保護規定が適用されなくなるため","請負業者が複数取引先を持つため（誤り）","外国人労働者を使用するためという規定"],answer:1,explanation:"偽装請負は指揮命令関係（業務の指示等）が発注先にある実態の派遣を請負契約で偽装するもの。労働者派遣法の規制（派遣期間制限・直接雇用申込義務等）が適用されず労働者保護が不十分になる。"},
+{id:225,category:"法務・規制",question:"特定商取引法における通信販売の「クーリングオフ」に関する記述として正しいものはどれか。",choices:["通信販売は法律上クーリングオフの対象外だが返品特約の明示が義務付けられる","通信販売は全取引でクーリングオフが8日間適用される","通信販売の返品は購入から30日以内に限られる","クーリングオフの費用は事業者が負担する"],answer:0,explanation:"特定商取引法上、通信販売にはクーリングオフ制度が適用されないが、事業者は返品の可否・条件等の返品特約を表示する義務があり、特約がない場合は商品到着後8日以内の返品が可能。"},
+{id:226,category:"法務・規制",question:"電子署名法において電子署名が担保するものとして正しいものはどれか。",choices:["電子文書の機密性の概念","電子文書の暗号化の概念","電子文書の永続的な保存という規定","電子文書の作成者の本人確認と内容の非改ざん性"],answer:3,explanation:"電子署名法は電磁的記録に本人が作成したこと（本人性）と内容が改ざんされていないこと（非改ざん性）を確認できる電子署名の効力を規定する。機密性の確保は別途暗号化が必要。"},
+{id:227,category:"法務・規制",question:"AIが生成したコンテンツの著作権に関する現行の日本の著作権法の扱いとして正しいものはどれか。",choices:["AIが生成したコンテンツには自動的にAI開発企業に著作権が発生する","AIによる自律的な生成物には人の創作意図が介在しない場合著作権は発生しないとされる","AIが生成したコンテンツは全てパブリックドメインとなる","ユーザが入力したプロンプトの著作権がそのまま出力に引き継がれる"],answer:1,explanation:"現行著作権法では著作物は「思想または感情を創作的に表現したもの」で人が創作主体であることが前提。AIが完全自律的に生成した場合は人の創作意図がなく著作物に当たらないとされる（2024年文化庁見解）。"},
+{id:228,category:"法務・規制",question:"サイバーセキュリティ基本法の目的として正しいものはどれか。",choices:["個人PCのウイルス対策を義務付ける法律（誤り）","サイバーセキュリティに関する施策を総合的に推進するための基本理念と責務を定める","不正アクセスを処罰するための刑事罰を定める（この説明は誤り）","暗号技術の標準を定める規制という規定"],answer:1,explanation:"サイバーセキュリティ基本法はサイバーセキュリティ施策を総合的に推進するための基本理念・国の責務・サイバーセキュリティ戦略の策定義務などを定めた法律。NISTの位置づけの国内法版。"},
+{id:229,category:"法務・規制",question:"NDA（秘密保持契約）の主な目的として正しいものはどれか。",choices:["開示された機密情報を第三者に漏らさないことを当事者間で約束する契約","取引の代金決済条件を定めるという規定","知的財産権の帰属を定めるという規定","労働条件を定める雇用契約の補完書類（誤り）"],answer:0,explanation:"NDA（Non-Disclosure Agreement）は業務委託や提携交渉の際に一方または双方が開示する機密情報の取扱いを定め第三者への漏洩や目的外使用を禁止する契約。"},
+{id:230,category:"法務・規制",question:"独占禁止法において規制される「優越的地位の濫用」の例として正しいものはどれか。",choices:["大企業が取引上優位な立場を利用して下請けに不当な値引きを強要する","競合他社より低い価格でサービスを提供する","特許技術のライセンス料を設定する（誤り）","広告費を増加して市場シェアを拡大する（この説明は誤り）"],answer:0,explanation:"優越的地位の濫用は取引上の優位な立場を利用して不当な不利益を相手に与える行為で独占禁止法が禁止。下請法とあわせて下請けへの不当な代金減額・返品・受領拒否等を規制する。"},
+{id:231,category:"アルゴリズム",question:"フィボナッチ数列をメモ化（Memoization）なしに再帰で計算した場合の時間計算量はどれか。",choices:["O(n)","O(n log n)","O(2ⁿ)","O(n²)"],answer:2,explanation:"メモ化なしの再帰フィボナッチはfib(n)=fib(n-1)+fib(n-2)と同じ部分問題を何度も計算するためO(2ⁿ)の指数的計算量となる。メモ化またはDPを使えばO(n)に改善できる。"},
+{id:232,category:"アルゴリズム",question:"ダイクストラ法の説明として正しいものはどれか。",choices:["負の重みを持つグラフでも正確に最短経路を求められる","グラフの連結成分を求めるアルゴリズム","全頂点間の最短経路を求めるアルゴリズム","重み付きグラフにおける単一始点最短経路を求めるアルゴリズム"],answer:3,explanation:"ダイクストラ法は非負の重みを持つグラフで始点から各頂点への最短経路を求める。負の重みがある場合はベルマンフォード法を使用する。全頂点間はワーシャルフロイド法が適している。"},
+{id:233,category:"アルゴリズム",question:"動的計画法（DP）の基本的な考え方として正しいものはどれか。",choices:["問題を再帰的に小さく分割し毎回独立に解く","部分問題の解を記録して再利用することで計算量を削減する","候補解を全て列挙して最良解を選ぶ","ランダムに解を生成して最適解に近づける"],answer:1,explanation:"動的計画法は重複する部分問題の解をテーブル（メモ）に記録し再利用することで同じ計算を繰り返さず全体問題を効率的に解く手法。フィボナッチ・最長共通部分列・ナップサック問題等に使用。"},
+{id:234,category:"アルゴリズム",question:"幅優先探索（BFS）と深さ優先探索（DFS）の違いとして正しいものはどれか。",choices:["BFSはスタックを使いDFSはキューを使う","DFSは常にBFSより速いという規定","BFSはキューを使い始点から近い順に探索し最短経路に適している","BFSとDFSは同じ計算量で同じ結果を返す"],answer:2,explanation:"BFSはキューを使い隣接ノードを層状に探索するため最短ステップ数（重みなしグラフ）を求めるのに適する。DFSはスタック（または再帰）を使い深くまで探索し連結判定・トポロジカルソート等に使う。"},
+{id:235,category:"アルゴリズム",question:"ハッシュテーブルでハッシュ衝突が発生した場合の解決策として誤っているものはどれか。",choices:["チェイン法（連結リストで同一ハッシュ値を管理）","オープンアドレス法（空きスロットを探す）","二分探索（ソート済み配列で中間比較）","二重ハッシュ（別のハッシュ関数で再ハッシュ）"],answer:2,explanation:"ハッシュ衝突の解決策はチェイン法・オープンアドレス法（線形探索・二次探索・二重ハッシュ等）が一般的。二分探索はソート済み配列の探索アルゴリズムで衝突解決には使わない。"},
+{id:236,category:"アルゴリズム",question:"マージソートの特徴として正しいものはどれか。",choices:["分割統治法を用いた安定ソートで最悪計算量O(n log n)を保証する","最悪計算量がO(n²)である（誤り）","追加メモリが不要なインプレースソートである","小さなデータに特に効率的なソートである（この説明は誤り）"],answer:0,explanation:"マージソートは分割統治で配列を半分に分割しながら再帰的に整列後マージする安定ソート。最良・平均・最悪全てO(n log n)を保証するが追加O(n)のメモリが必要。"},
+{id:237,category:"アルゴリズム",question:"貪欲法（グリーディ法）の特徴として正しいものはどれか。",choices:["全ての選択肢を試して最適解を保証する（誤り）","組み合わせ最適化問題には使用できない（誤り）","動的計画法より常に計算量が大きい（誤り）","各ステップで局所的に最良の選択をするが全体最適が保証されない場合がある"],answer:3,explanation:"貪欲法は各ステップで現時点での最良選択をする手法。コイン問題（特定の貨幣体系）・最小全域木（クラスカル法）では最適解を保証するが一般的には大局的最適を保証しない。"},
+{id:238,category:"アルゴリズム",question:"文字列パターンマッチングのKMP法の利点として正しいものはどれか。",choices:["実装がシンプルで初心者向けという規定","失敗関数を使いテキストのバックトラックなしでO(n+m)で探索できる","最も空間効率がよいアルゴリズムである（この説明は誤り）","正規表現のマッチングに特化している（誤り）"],answer:1,explanation:"KMP（Knuth-Morris-Pratt）法はパターンの部分一致情報から作成した失敗関数を利用しテキストポインタを後戻りさせずO(n+m)（n=テキスト長・m=パターン長）で検索する高速アルゴリズム。"},
+{id:239,category:"アルゴリズム",question:"トポロジカルソートが適用できるグラフの条件として正しいものはどれか。",choices:["無向グラフの特性","重み付きグラフの概念","完全グラフの特性","有向非巡回グラフ（DAG）"],answer:3,explanation:"トポロジカルソートは有向非巡回グラフ（DAG）の頂点を辺の向きに沿って線形順序に並べるアルゴリズム。タスクの依存関係・ビルド順序・科目履修順序の決定等に使用する。"},
+{id:240,category:"アルゴリズム",question:"ビット操作で整数nが2の累乗かどうかを判定する式として正しいものはどれか。",choices:["n % 2 == 0という規定","n & (n - 1) == 0 かつ n > 0","n >> 1 == 1という規定","n | (n - 1) == n"],answer:1,explanation:"2の累乗の数（例：8=1000₂）からn-1（7=0111₂）とのANDは0になるというビット演算の性質を利用してn>0 かつ n&(n-1)==0 で2の累乗を高速判定できる。"},
+{id:241,category:"情報表現",question:"文字コードUTF-8の特徴として正しいものはどれか。",choices:["ASCII文字は1バイト・日本語は3バイト等可変長で表現する","全文字を固定の2バイトで表現する（この説明は誤り）","ASCIIと互換性がないという規定","最大2バイトまでしか使用しない（誤り）"],answer:0,explanation:"UTF-8はUnicodeの文字を1〜4バイトの可変長で表現する符号化方式。ASCII文字（U+0000〜U+007F）は1バイトでASCIIと完全互換を保つ。日本語の多くは3バイト。"},
+{id:242,category:"情報表現",question:"JPEG画像の特徴として正しいものはどれか。",choices:["非可逆圧縮で写真に適しているが透過は非対応","可逆圧縮でイラストやロゴに適している","アニメーションを表示できる","透過（アルファチャンネル）をサポートしている"],answer:0,explanation:"JPEGは離散コサイン変換を使う非可逆圧縮で圧縮率が高く写真に適している。透過は非対応で繰り返し保存すると劣化する。透過対応はPNG・GIF・WebP等。"},
+{id:243,category:"情報表現",question:"XMLとJSONの比較において正しいものはどれか。",choices:["JSONは一般的にXMLより軽量でJavaScriptとの親和性が高い","JSONはXMLより冗長でデータ量が多い（この説明は誤り）","XMLはWebAPIには使用できない（誤り）","JSONはコメントを標準でサポートしている"],answer:0,explanation:"JSONはXMLに比べタグによる冗長な記述が不要で軽量かつJavaScriptオブジェクトとの変換が容易なためREST APIで広く使用される。ただしJSONは標準ではコメントをサポートしない。"},
+{id:244,category:"情報表現",question:"IEEE 754の倍精度（64ビット）浮動小数点数の構成として正しいものはどれか。",choices:["符号1+指数部8+仮数部23","符号2+指数部14+仮数部48","符号1+指数部11+仮数部52","符号1+指数部16+仮数部47"],answer:2,explanation:"IEEE 754倍精度（double）は符号1ビット+指数部11ビット+仮数部52ビットの計64ビット。単精度（float）は符号1+指数部8+仮数部23の計32ビット。"},
+{id:245,category:"情報表現",question:"Base64エンコードの目的として正しいものはどれか。",choices:["データを暗号化してセキュリティを高める","データを圧縮してサイズを縮小する","バイナリデータをASCII文字だけで表現できるようにする","データの整合性チェックを行う（誤り）"],answer:2,explanation:"Base64は6ビットずつに分割して64種類のASCII印字可能文字に変換するエンコード方式。メール添付・画像のHTML埋め込み等バイナリをテキストとして扱う必要がある場面で使用。暗号化ではない。"},
+{id:246,category:"情報表現",question:"ランレングス符号化（RLE）の説明として正しいものはどれか。",choices:["頻出文字を短いビット列で表現する可変長符号化","LZ77アルゴリズムを基にした辞書式圧縮","文字の出現確率に基づいて符号を割り当てる方式","連続する同一データを（値・繰り返し数）のペアで表現する圧縮方式"],answer:3,explanation:"ランレングス符号化はAAAABBBのような連続する同じデータをA3B3のように（値・個数）のペアで表現する単純な可逆圧縮。単色が多いBMPや古いFAX通信に使用。"},
+{id:247,category:"情報表現",question:"MP4ファイルの説明として正しいものはどれか。",choices:["音声のみを含むファイル形式という規定","テキストデータのみを含む形式","静止画専用のファイル形式という規定","動画・音声・字幕等を格納できるISO標準のコンテナ形式"],answer:3,explanation:"MP4（MPEG-4 Part 14）はH.264・H.265等の映像コーデックとAAC等の音声コーデックに加え字幕・メタデータ等を格納できるコンテナフォーマット。動画共有・ストリーミングに広く使用。"},
+{id:248,category:"情報表現",question:"情報理論においてエントロピーが最大になるのはどれか。",choices:["全ての記号が等確率で出現する場合","一方の記号の出現確率が1の場合","特定の記号のみが出現する場合","記号の種類が少ない場合"],answer:0,explanation:"シャノンのエントロピーは情報源の不確実性の指標で全記号が等確率（一様分布）のとき最大となる。特定の記号の確率が1に近づくとエントロピーは0に近づく（情報量が小さい＝予測しやすい）。"},
+{id:249,category:"情報表現",question:"SVG（Scalable Vector Graphics）の特徴として正しいものはどれか。",choices:["XMLベースのベクター形式で拡大縮小しても画質が劣化しない","拡大縮小すると画質が劣化する（誤り）","写真の表現に最も適しているという規定","ファイルサイズが常にJPEGより大きい"],answer:0,explanation:"SVGはXMLで記述するベクター形式のグラフィックス標準。数式で形状を定義するため任意の大きさに拡大縮小しても画質が劣化しない。アイコン・ロゴ・インフォグラフィックに適する。"},
+{id:250,category:"情報表現",question:"データの可逆圧縮と非可逆圧縮の違いとして正しいものはどれか。",choices:["可逆圧縮は常に非可逆圧縮より高い圧縮率を実現する","可逆圧縮は完全に元のデータを復元でき非可逆圧縮は復元時に情報が失われる","非可逆圧縮はテキストデータに使用される","可逆圧縮と非可逆圧縮のファイルサイズは常に同じ"],answer:1,explanation:"可逆圧縮（ZIP・PNG・FLAC等）は圧縮前と同一のデータを完全復元できる。非可逆圧縃（JPEG・MP3・AAC等）は人間の知覚特性を利用して一部情報を破棄し高圧縮率を実現するが完全復元は不可。"},
+{id:251,category:"人工知能・機械学習",question:"機械学習における過学習（オーバーフィッティング）の説明として正しいものはどれか。",choices:["モデルが訓練データを十分に学習できていない状態","モデルが訓練データには高精度だが未知データへの汎化性能が低い状態","モデルの学習が途中で停止した状態（誤り）","データの前処理が不十分な状態（誤り）"],answer:1,explanation:"過学習はモデルが訓練データのノイズや細かいパターンまで学習しすぎて訓練データでは高精度だが新しいデータ（テストデータ）で精度が下がる状態。正則化・ドロップアウト・データ拡張で対策する。"},
+{id:252,category:"人工知能・機械学習",question:"強化学習の説明として正しいものはどれか。",choices:["正解ラベル付きデータから関数を学習する","正解なしのデータからパターンを発見する","エージェントが環境との相互作用で報酬を最大化するよう行動を学習する","教師データのないクラスタリングを行う（この説明は誤り）"],answer:2,explanation:"強化学習はエージェントが状態を観察して行動を選択し環境からの報酬信号を受け累積報酬を最大化する行動戦略（ポリシー）を学習する手法。ゲームAI・ロボット制御・自動運転に応用。"},
+{id:253,category:"人工知能・機械学習",question:"ニューラルネットワークのバックプロパゲーション（誤差逆伝播）の目的として正しいものはどれか。",choices:["順伝播で計算した出力を次の入力として使用する（この説明は誤り）","モデルの精度を評価するという規定","データの前処理を行うという規定","出力誤差をネットワーク後方から前方へ伝播させ各重みの勾配を計算して重みを更新する"],answer:3,explanation:"バックプロパゲーションは出力層の誤差を連鎖律（チェーンルール）を使って後方から前方へ伝播させ各重みパラメータに対する勾配を計算し勾配降下法で重みを更新するNN学習の基本アルゴリズム。"},
+{id:254,category:"人工知能・機械学習",question:"自然言語処理のTransformerアーキテクチャの中核となるメカニズムはどれか。",choices:["畳み込み演算の概念","再帰的処理（RNN）という規定","自己注意機構（Self-Attention）","決定木の再帰的分割の概念"],answer:2,explanation:"Transformerは「Attention Is All You Need」（2017）で提案された。RNNなしで全トークン間の依存関係を自己注意機構で並列計算するため長距離依存を効率的に捉えGPT・BERTの基盤となった。"},
+{id:255,category:"人工知能・機械学習",question:"k-means法のkの意味として正しいものはどれか。",choices:["学習率を表すハイパーパラメータ","分類するクラスタの数","反復回数の上限","データの次元数"],answer:1,explanation:"k-means法はデータをk個のクラスタに分けるクラスタリング手法。kはユーザが事前に指定するクラスタ数。エルボー法等でkを決定し各データを最近傍の重心に割り当て重心を更新する処理を繰り返す。"},
+{id:256,category:"人工知能・機械学習",question:"混同行列（Confusion Matrix）においてPrecision（適合率）の計算式として正しいものはどれか。",choices:["TP÷(TP+FN)","TP÷(TP+FP)","(TP+TN)÷(TP+FP+TN+FN)","TP÷(TP+FP+FN)"],answer:1,explanation:"Precision（適合率）=TP÷(TP+FP)。「Positiveと予測したもののうち実際にPositiveな割合」。Recall（再現率）=TP÷(TP+FN）「実際のPositiveのうち正しく予測できた割合」。"},
+{id:257,category:"人工知能・機械学習",question:"生成AIの大規模言語モデル（LLM）に対するプロンプトインジェクション攻撃の説明として正しいものはどれか。",choices:["大量のリクエストでAIサービスをDDoS攻撃する","AIの出力結果を傍受する攻撃（誤り）","AIモデルの学習データを汚染する（誤り）","悪意ある入力でモデルの本来の指示を上書きし意図しない動作をさせる攻撃"],answer:3,explanation:"プロンプトインジェクションはユーザ入力にシステムプロンプトを上書き・無効化する指示を埋め込みAIに制限を無視した動作をさせる攻撃。LLMアプリのセキュリティ上の主要な脅威の一つ。"},
+{id:258,category:"人工知能・機械学習",question:"ランダムフォレストの説明として正しいものはどれか。",choices:["単一の深い決定木を学習するアルゴリズム","複数の決定木をアンサンブルし多数決で予測する手法","ランダムに選んだデータで学習し最初に収束した木のみを使用する","勾配ブースティングの別名"],answer:1,explanation:"ランダムフォレストはブートストラップサンプリングとランダムな特徴選択で多様な決定木を複数構築しその多数決（分類）または平均（回帰）で予測するアンサンブル学習手法。汎化性能が高く過学習しにくい。"},
+{id:259,category:"人工知能・機械学習",question:"機械学習のクロスバリデーション（交差検証）の目的として正しいものはどれか。",choices:["モデルの学習時間を短縮する手法（誤り）","データを複数のfoldに分けてモデルの汎化性能をより正確に推定する手法","テストデータを増やす手法という規定","特徴量エンジニアリングを自動化する手法（この説明は誤り）"],answer:1,explanation:"クロスバリデーションはデータをk等分（k-fold）し1つをテスト他をトレーニングとして学習・評価をk回繰り返しその平均を汎化性能の推定値とする手法。データが少ない時に特に有効。"},
+{id:260,category:"人工知能・機械学習",question:"GANs（敵対的生成ネットワーク）の構成として正しいものはどれか。",choices:["生成器と識別器が競い合いながら学習する2つのニューラルネットワーク","エンコーダとデコーダからなるオートエンコーダ","リカレントニューラルネットワークの一種","強化学習エージェントと環境のペア（誤り）"],answer:0,explanation:"GAN（Generative Adversarial Network）は偽データを生成するGenerator（生成器）とデータが本物か偽物かを判定するDiscriminator（識別器）が互いに競い合う形で学習し高品質な生成物を実現する。"},
+{id:261,category:"システム開発手法",question:"プロトタイピングモデルの利点として正しいものはどれか。",choices:["設計工程を省略できるという規定","早期にプロトタイプをユーザに見せることで要件の誤りを早期発見できる","テストが不要になるの概念","コストが常にウォーターフォールより低い"],answer:1,explanation:"プロトタイピングは初期段階でプロトタイプ（試作品）を作りユーザから早期にフィードバックを得ることで要件の齟齬や誤解を早期に発見・修正できるのが最大の利点。"},
+{id:262,category:"システム開発手法",question:"スパイラルモデルの特徴として正しいものはどれか。",choices:["設計から運用まで一方向に進む","リスク評価を繰り返しながら段階的にシステムを開発する","要件定義を最初に完全に確定する","短いイテレーションを繰り返すアジャイルの一形態"],answer:1,explanation:"スパイラルモデルはBoehm提唱。計画→リスク分析→開発→評価を螺旋状に繰り返し各サイクルでリスクを評価しながら段階的に成果物を拡充する。大規模・高リスクなプロジェクトに適する。"},
+{id:263,category:"システム開発手法",question:"ユーザストーリーの形式として正しいものはどれか。",choices:["「システムは〇〇機能を提供すること」という技術的要件","フローチャートで書かれた業務フロー（誤り）","「〔ユーザ種別〕として〔機能〕がしたい。なぜなら〔価値〕だから」という形式","UMLのシーケンス図という規定"],answer:2,explanation:"ユーザストーリーは「〇〇として（ロール）、〇〇したい（機能）、なぜなら〇〇だから（価値）」の形式で要件をユーザ視点から記述するアジャイル開発の要件記述手法。"},
+{id:264,category:"システム開発手法",question:"テスト計画書に記載する内容として適切でないものはどれか。",choices:["テストの範囲と対象","テスト環境と使用するツール","テストの合格基準","本番環境の運用監視手順"],answer:3,explanation:"テスト計画書にはテスト目的・範囲・種類・環境・データ・ツール・スケジュール・合格基準・役割分担等を記載する。本番環境の運用監視手順は運用設計書に記載する内容でテスト計画書の記載項目ではない。"},
+{id:265,category:"システム開発手法",question:"システムのリリース後に発覚したバグを修正するのに最もコストがかかる理由として正しいものはどれか。",choices:["テスト担当者が不在になるため（誤り）","早期に発見されるほど修正コストは低く後工程になるほど影響範囲が広く修正コストが指数的","リリース後は著作権の問題が生じるため（誤り）","ユーザへの影響が大きいため追加費用が発生するため（誤り）"],answer:1,explanation:"ソフトウェア工学の「欠陥の指数的コスト増大」則により要件定義段階で発見した欠陥を1とするとテストで100倍・本番後は1000倍のコストがかかるとされ早期発見が重要。"},
+{id:266,category:"システム開発手法",question:"受け入れテスト（UAT: User Acceptance Testing）の説明として正しいものはどれか。",choices:["開発者が単体機能をテストする工程（誤り）","負荷試験を行う非機能テストという規定","実際のユーザが業務要件を満たしているか確認する最終段階のテスト","セキュリティ脆弱性を検査するテスト（この説明は誤り）"],answer:2,explanation:"UATはシステムが実際のビジネス要件・業務シナリオを満たしているかをエンドユーザまたは発注者が本番環境に近い環境で確認する最終的な受け入れ判定テスト。"},
+{id:267,category:"システム開発手法",question:"ソフトウェアの結合テストの目的として正しいものはどれか。",choices:["単体（モジュール）が仕様通りに動作するか確認する","複数のモジュールを組み合わせたときのインタフェースと連携の問題を検出する","システム全体として要件を満たすか確認する","ユーザが業務要件を検証するという規定"],answer:1,explanation:"結合テストは単体テストで個々に確認されたモジュールを組み合わせてデータの受け渡し・インタフェースの不整合・連携動作の問題を検出するテスト工程。"},
+{id:268,category:"システム開発手法",question:"非機能要件に含まれるものとして正しいものはどれか。",choices:["ログイン機能の実装方法という規定","受注処理機能の実装方法という規定","応答時間・稼働率・セキュリティ・拡張性（非機能要件の例）","帳票出力機能の実装方法という規定"],answer:2,explanation:"非機能要件はシステムが「どのように動くか」を定義する要件。性能（応答時間・スループット）・可用性（稼働率）・セキュリティ・保守性・拡張性・移植性等が含まれる。具体的な業務機能は機能要件。"},
+{id:269,category:"システム開発手法",question:"リグレッションテスト（回帰テスト）の説明として正しいものはどれか。",choices:["初めて実装した機能の動作を確認するテスト","性能の劣化を確認するテストという規定","修正・変更を加えたことで既存機能に悪影響が出ていないか確認するテスト","ユーザインタフェースのデザインを評価するテスト"],answer:2,explanation:"回帰テストはバグ修正・機能追加・リファクタリング後に既存の正常動作していた機能が壊れていないかを確認するテスト。CI/CDで自動化されることが多い。"},
+{id:270,category:"システム開発手法",question:"形式手法（フォーマルメソッド）の説明として正しいものはどれか。",choices:["コーディング規約を厳守した開発手法（この説明は誤り）","ペアプログラミングを必須とする開発手法","ウォーターフォールを厳密に実践する手法","数学的な記法を使ってシステムの仕様を正確に記述し検証する手法"],answer:3,explanation:"形式手法は集合論・述語論理・プロセス代数等の数学的記法でシステム仕様を厳密に記述しモデル検査・定理証明で仕様の矛盾・誤りを検証する手法。航空・医療等高信頼性要求分野で活用。"},
+{id:271,category:"IoT・組込みシステム",question:"RTOSのタスクスケジューリングにおいて優先度ベーススケジューリングの説明として正しいものはどれか。",choices:["全タスクに均等の実行時間を割り当てる","最も実行時間が短いタスクから処理するSJF方式","到着順にタスクを処理するFCFS方式","優先度の高いタスクが優先的にCPUを使用しリアルタイム要件を満たす"],answer:3,explanation:"RTOSの優先度ベーススケジューリングは高優先度タスクが即座にCPUを獲得しデッドラインを確実に守る（プリエンプティブ）方式でリアルタイム制御に不可欠。"},
+{id:272,category:"IoT・組込みシステム",question:"ZigBeeの特徴として正しいものはどれか。",choices:["長距離・高速な通信を得意とするセルラー技術","低消費電力・低速・短距離のIoT向け無線通信規格","Wi-Fiの省電力版","LTEの後継規格"],answer:1,explanation:"ZigBeeはIEEE 802.15.4をベースにした低消費電力・低コスト・低速（250kbps）の短距離無線通信規格。センサーネットワーク・スマートホーム等バッテリー駆動の小型IoTデバイスに適する。"},
+{id:273,category:"IoT・組込みシステム",question:"組込みシステムにおけるウォッチドッグタイマの役割として正しいものはどれか。",choices:["システムの動作時間を計測する（誤り）","プロセッサのクロック周波数を制御する（誤り）","プログラムが一定時間内に正常動作を示さない場合システムをリセットするフォールトトレラ","電力消費を監視してバッテリー残量を表示する（誤り）"],answer:2,explanation:"ウォッチドッグタイマはソフトウェアが定期的にタイマをリセットしないとタイムアウトしてシステムをリセットする機構。ハングアップや無限ループからの自動復帰に使用される組込みシステムの安全機構。"},
+{id:274,category:"IoT・組込みシステム",question:"LPWA（Low Power Wide Area）の説明として正しいものはどれか。",choices:["低消費電力で広いエリアをカバーするIoT向け無線通信の総称","高速データ通信に特化した5G技術（この説明は誤り）","短距離無線通信のBluetooth技術","有線LANの省電力化技術という規定"],answer:0,explanation:"LPWAはLoRaWAN・Sigfox・NB-IoT等の低消費電力・長距離（数km〜数十km）をカバーするIoT向け無線通信の総称。電池駆動・低頻度の少量データ送信に適する。"},
+{id:275,category:"IoT・組込みシステム",question:"組込みシステムのブートローダの役割として正しいものはどれか。",choices:["アプリケーションのUIを提供する（誤り）","センサーデータの収集と前処理を行う（誤り）","リアルタイムタスクのスケジューリングを行う（誤り）","電源投入後ハードウェアを初期化しOSまたはアプリケーションをロードして実行を引き渡す"],answer:3,explanation:"ブートローダはシステム起動時に最初に実行されるプログラム。ハードウェアの初期化・自己診断後にフラッシュメモリからOSやファームウェアを主記憶にロードして実行を引き渡す役割を担う。"},
+{id:276,category:"IoT・組込みシステム",question:"CAN（Controller Area Network）バスの主な使用用途として正しいものはどれか。",choices:["インターネット通信のプロトコル（誤り）","医療機器のデータストレージ規格（誤り）","産業用ロボットのビデオ信号伝送（誤り）","自動車の車内ECU間の通信に使用されるシリアルバス（CAN）"],answer:3,explanation:"CANバスはRobert Boschが開発した自動車のECU（エンジン制御・ABS・エアバッグ等）間をつなぐシリアル通信プロトコル。高い耐障害性とリアルタイム性を持ち現在も車載ネットワークの主要規格。"},
+{id:277,category:"IoT・組込みシステム",question:"デジタルツインの説明として正しいものはどれか。",choices:["現実の物理システムをデジタル空間に仮想的に再現したモデル（デジタルツイン）","物理的な装置の予備機（バックアップ）（誤り）","2台のサーバを同期させる冗長化技術（誤り）","ツインコアCPUを使った組込みシステム（誤り）"],answer:0,explanation:"デジタルツインはIoTセンサーで収集したリアルタイムデータを基に現実の機器・プロセス・施設のデジタルコピーを構築し故障予知・性能最適化・シミュレーションに活用する技術・概念。"},
+{id:278,category:"IoT・組込みシステム",question:"OTA（Over-The-Air）アップデートの説明として正しいものはどれか。",choices:["無線通信経由でファームウェアやソフトウェアを遠隔更新する仕組み","物理的なケーブル接続でデバイスを更新する方法","空気を冷媒に使ったデバイスの冷却技術","特定の周波数帯を使った高速通信技術"],answer:0,explanation:"OTAアップデートはスマートフォン・IoT機器・車載システム等に無線通信（Wi-Fi・LTE等）経由でファームウェアやソフトウェアを遠隔配信・更新する仕組み。セキュリティパッチの迅速適用にも重要。"},
+{id:279,category:"IoT・組込みシステム",question:"組込みシステムのMMU（メモリ管理ユニット）の役割として正しいものはどれか。",choices:["仮想アドレスを物理アドレスに変換しメモリ保護を実現する","メモリのデータを圧縮するという規定","フラッシュメモリへの書き込みを制御する","キャッシュメモリを管理するという規定"],answer:0,explanation:"MMUはCPUに内蔵または付属する回路でプロセスの仮想アドレスを物理アドレスに変換（ページング）するとともにプロセスが他のプロセスやOS領域のメモリにアクセスするのを防ぐメモリ保護を行う。"},
+{id:280,category:"IoT・組込みシステム",question:"Matter規格の説明として正しいものはどれか。",choices:["産業用IoTの通信プロトコル規格（誤り）","スマートホームデバイスのメーカー間相互接続性を確保するオープン標準","自動車向けV2X通信規格という規定","医療IoT機器の安全規格という規定"],answer:1,explanation:"Matter（旧Project CHIP）はApple・Google・Amazon・Samsung等が参画するConnectivity Standards Alliance（CSA）が推進するスマートホームデバイスの相互接続性を実現するオープン規格。"},
+{id:281,category:"クラウド・仮想化",question:"Kubernetesのポッド（Pod）の説明として正しいものはどれか。",choices:["仮想マシンの単位","ストレージボリュームの単位","Kubernetesクラスタのマスターノード","1つ以上のコンテナをまとめた最小デプロイ単位"],answer:3,explanation:"KubernetesのPodは1つ以上のコンテナと共有ストレージ・ネットワークをまとめたデプロイの最小単位。同一Pod内のコンテナはlocalhostで通信でき同じライフサイクルを持つ。"},
+{id:282,category:"クラウド・仮想化",question:"Terraformの説明として正しいものはどれか。",choices:["HCL言語でインフラをコードで定義・管理するIaC","コンテナオーケストレーションツール（誤り）","Dockerイメージのビルドツール（誤り）","クラウドのモニタリングツール（誤り）"],answer:0,explanation:"Terraformはインフラ構成をコードで宣言的に記述しAWS・GCP・Azure等のクラウドリソースを一貫して作成・変更・削除するIaC（Infrastructure as Code）ツール。HashiCorp社が開発。"},
+{id:283,category:"クラウド・仮想化",question:"サーバレスコンピューティングの説明として正しいものはどれか。",choices:["物理サーバが不要な技術という規定","仮想マシンなしでコンテナを実行する技術（この説明は誤り）","サーバの管理を意識せず関数単位でコードを実行できる実行環境（FaaS）","ローカル環境のみで動作するアプリケーション"],answer:2,explanation:"サーバレスはAWS Lambda・Azure Functions等でコードをイベント駆動で関数単位（FaaS）で実行できる形態。インフラ管理不要・使用時間のみ課金が特徴。「サーバがない」わけでなく管理が不要。"},
+{id:284,category:"クラウド・仮想化",question:"マルチクラウド戦略のメリットとして正しいものはどれか。",choices:["単一クラウドより常にコストが低い（誤り）","管理が単純になるクラウド方式（誤り）","特定クラウドへのベンダーロックインを回避しリスク分散と最適サービス選択が可能","SLAが常に高くなるクラウド方式（誤り）"],answer:2,explanation:"マルチクラウドは複数クラウドを使い分けることで特定ベンダへの依存（ロックイン）を回避しサービス停止リスクを分散できるメリットがある。反面管理の複雑化やコスト増加のデメリットもある。"},
+{id:285,category:"クラウド・仮想化",question:"DockerのDockerfileの役割として正しいものはどれか。",choices:["コンテナイメージの構築手順を記述した設定ファイル","実行中のコンテナのネットワーク設定を記述するファイル","Kubernetesのデプロイ設定ファイル","コンテナのCPU・メモリ上限を設定するファイル"],answer:0,explanation:"DockerfileはDockerイメージのビルド手順をテキストで記述したファイル。ベースイメージの指定・パッケージインストール・環境変数設定・起動コマンド等を定義し「docker build」でイメージを作成する。"},
+{id:286,category:"クラウド・仮想化",question:"クラウドのリージョンとアベイラビリティゾーン（AZ）の関係として正しいものはどれか。",choices:["リージョンは地理的に分離した地域でAZはリージョン内の独立したデータセンター群","リージョンとAZは同じ概念である（誤り）","AZはリージョンより広い概念（誤り）","AZはクラウドプロバイダの本社所在地を示す（この説明は誤り）"],answer:0,explanation:"リージョンは地理的に離れた場所（東京・大阪等）を示す単位。各リージョン内には物理的・電力的に独立した複数のAZ（アベイラビリティゾーン）があり複数AZを使い高可用性を実現する。"},
+{id:287,category:"クラウド・仮想化",question:"サービスメッシュの説明として正しいものはどれか。",choices:["クラウドのコスト管理ツールという規定","マイクロサービス間の通信をサイドカープロキシで管理するインフラ層","コンテナイメージのレジストリ（誤り）","クラウドのIAMサービスという規定"],answer:1,explanation:"サービスメッシュ（Istio・Linkerd等）は各マイクロサービスのサイドカーコンテナとしてプロキシを配置しアプリコードを変更せずサービス間通信の制御・暗号化・可観測性を提供するインフラ。"},
+{id:288,category:"クラウド・仮想化",question:"FinOpsの説明として正しいものはどれか。",choices:["クラウドのコスト管理ツールという規定","クラウドコストの最適化・可視化・ガバナンスを組織横断で実践するFinOpsの手法","クラウドへの移行プロジェクト手法（誤り）","金融システム専用のガイドライン（誤り）"],answer:1,explanation:"FinOpsはエンジニア・財務・ビジネスチームが協力してクラウド利用コストの透明性確保・最適化・ガバナンスを継続的に実践するための文化・組織的手法。"},
+{id:289,category:"クラウド・仮想化",question:"ゼロトラストセキュリティモデルの基本原則として正しいものはどれか。",choices:["ネットワークの場所に関わらず全てのアクセスを常に検証し最小権限を付与する","社内ネットワーク内は安全と見なしてアクセスを許可する","VPNで接続した場合はフルアクセスを許可する","ファイアウォール外部からのアクセスのみを検証する"],answer:0,explanation:"ゼロトラストは「Never Trust, Always Verify」を原則とし社内外を問わず全アクセスを都度認証・認可・検証するセキュリティモデル。境界型セキュリティの限界を補い内部不正・侵害後の横展開に対応する。"},
+{id:290,category:"クラウド・仮想化",question:"クラウドのIAM（Identity and Access Management）の役割として正しいものはどれか。",choices:["クラウドリソースの性能監視という規定","コストの自動最適化の仕組みという規定","ネットワーク通信の暗号化の仕組み（誤り）","誰が何にアクセスできるかを定義・管理する認証・認可の仕組み（IAM）"],answer:3,explanation:"IAMはクラウドリソース（仮想マシン・ストレージ・DB等）に対するユーザ・グループ・ロール・サービスアカウントのアクセス権限を定義・管理する認証・認可の基盤。最小権限の原則で構成することが重要。"},
+{id:291,category:"ネットワーク",question:"SNMP（Simple Network Management Protocol）の説明として正しいものはどれか。",choices:["ネットワーク機器の動的IP割り当てプロトコル","メール送信に使用するプロトコル","暗号化されたリモートアクセスプロトコル","ネットワーク機器の監視・管理に使用するプロトコル"],answer:3,explanation:"SNMPはルータ・スイッチ・サーバ等ネットワーク機器の状態監視・構成管理・障害検出に使用するアプリケーション層プロトコル。MIB（管理情報ベース）を通じて機器情報を取得・設定する。"},
+{id:292,category:"セキュリティ",question:"WAF（Web Application Firewall）の説明として正しいものはどれか。",choices:["ネットワーク層でパケットをフィルタリングする従来型FW（誤り）","DNSへの攻撃を防ぐセキュリティ装置（誤り）","VPNの終端装置の概念","Webアプリケーションへの攻撃（SQLインジェクション"],answer:3,explanation:"WAFはHTTP/HTTPSトラフィックを解析してSQLインジェクション・XSS・CSRFなどWebアプリ固有の攻撃を検出・遮断するセキュリティ製品。通常のFWでは防御できないアプリ層の攻撃に対応する。"},
+{id:293,category:"データベース",question:"GraphQLの説明として正しいものはどれか。",choices:["グラフデータベースのクエリ言語（誤り）","NoSQLデータベースの標準クエリ言語","SQLの拡張仕様の概念","クライアントが必要なデータ構造を宣言的に指定できるAPIクエリ言語"],answer:3,explanation:"GraphQLはFacebook（現Meta）が開発したAPIクエリ言語。クライアントが必要なフィールドだけを指定して取得できるためRESTで問題となるオーバーフェッチ・アンダーフェッチを解決する。"},
+{id:294,category:"ソフトウェア開発",question:"契約プログラミング（Design by Contract）の説明として正しいものはどれか。",choices:["ソフトウェアの購入契約に関する取り決め（誤り）","APIの利用規約をコードに組み込む手法（誤り）","事前条件・事後条件・不変条件を明示しモジュール間の責任を明確化する設計手法","SLAをコードで表現するフレームワーク（誤り）"],answer:2,explanation:"契約プログラミング（DbC）はBertrand Meyerが提唱。呼び出し元が満たすべき事前条件・モジュールが保証する事後条件・常に成立する不変条件を明示的に定義し正確なモジュール境界を設計する手法。"},
+{id:295,category:"マネジメント",question:"RACI図の説明として正しいものはどれか。",choices:["タスクごとに責任者（R）・承認者（A）・相談先（C）・情報共有先","プロジェクトのガントチャート（誤り）","リスク評価のための4象限マトリクス（誤り）","コスト見積もりの手法という規定"],answer:0,explanation:"RACI図はResponsible（実行責任）・Accountable（説明責任）・Consulted（相談先）・Informed（報告先）の4役割を各タスクに割り当て誰が何に責任を持つかを明確にする役割分担ツール。"},
+{id:296,category:"ストラテジ",question:"OSS（オープンソースソフトウェア）のビジネスモデルとして成立しないものはどれか。",choices:["OSSをコアにサポート・コンサルティングで収益化するRedHatモデル","OSSをコアに追加機能をプロプライエタリとして提供するオープンコアモデル","OSSのソースコードを第三者には一切公開しないクローズドモデル","OSSをプラットフォームとしてクラウドで提供するSaaSモデル"],answer:2,explanation:"OSSはソースコードの公開・配布の自由を原則とするためソースを完全に非公開にするクローズドモデルはOSSの定義と矛盾する。サポートビジネス・オープンコア・SaaS等はOSSを活用したビジネスモデルとして成立する。"},
+{id:297,category:"セキュリティ",question:"ステガノグラフィの説明として正しいものはどれか。",choices:["デジタルコンテンツに秘密情報を気づかれないように埋め込む技術","データを暗号化して第三者が読めないようにする技術","デジタル署名でコンテンツの改ざんを検出する技術","パスワードをハッシュ化して安全に保存する技術"],answer:0,explanation:"ステガノグラフィは画像・音声・動画等のカバーデータに秘密のメッセージを人間が知覚できないように隠し込む技術。暗号化が「内容を隠す」のに対しステガノグラフィは「存在を隠す」点が異なる。"},
+{id:298,category:"基礎理論",question:"コルモゴロフ複雑性の説明として正しいものはどれか。",choices:["アルゴリズムの実行時間の複雑さ（誤り）","ネットワークのトポロジの複雑さ（誤り）","データベースの正規化の複雑さ（誤り）","そのデータを生成できる最短プログラムの長さで表されるデータの情報量"],answer:3,explanation:"コルモゴロフ複雑性（記述複雑性）はデータ列をそのまま出力する最短プログラムのバイト数でデータの情報量を定義する概念。規則性のあるデータは短いプログラムで生成できるため複雑性が低い。"},
+{id:299,category:"ネットワーク",question:"HTTPの冪等性（Idempotency）において冪等でないメソッドはどれか。",choices:["GET","PUT","DELETE","POST"],answer:3,explanation:"冪等性は同じリクエストを何度繰り返しても結果が同じ性質。GET・PUT・DELETE・HEADは冪等。POSTは毎回新しいリソースを生成しうるため冪等でない。APIの設計でリトライ戦略に影響する。"},
+{id:300,category:"ストラテジ",question:"プラットフォームビジネスの特徴として正しいものはどれか。",choices:["単一製品を製造・販売する垂直統合モデル（誤り）","複数グループが相互に価値を交換する場を提供しネットワーク効果で成長するビジネスモデル","既存市場でシェア拡大を目指す戦略（誤り）","サプライチェーンを最適化するモデル（誤り）"],answer:1,explanation:"プラットフォームビジネス（Uber・Amazon・Apple Store等）は需要側と供給側を結ぶ場を提供しユーザ増加が更なるユーザを呼ぶネットワーク効果で成長するモデル。データ活用と間接的ネットワーク効果が競争優位の源泉。"}
+];
+const CAT_META={
+"基礎理論":{"color":"#1565C0","icon":"📐","bg":"#E3F2FD"},
+"情報表現":{"color":"#0969A2","icon":"💡","bg":"#E8F0FE"},
+"コンピュータシステム":{"color":"#6A1B9A","icon":"🖥️","bg":"#F3E5F5"},
+"システム構成":{"color":"#00838F","icon":"🔧","bg":"#E0F7FA"},
+"ソフトウェア":{"color":"#2E7D32","icon":"💾","bg":"#E8F5E9"},
+"ハードウェア":{"color":"#37474F","icon":"⚙️","bg":"#ECEFF1"},
+"ネットワーク":{"color":"#C62828","icon":"🌐","bg":"#FFEBEE"},
+"セキュリティ":{"color":"#AD1457","icon":"🔐","bg":"#FCE4EC"},
+"データベース":{"color":"#4527A0","icon":"🗄️","bg":"#EDE7F6"},
+"ソフトウェア開発":{"color":"#00695C","icon":"👨‍💻","bg":"#E0F2F1"},
+"アルゴリズム":{"color":"#E65100","icon":"🔢","bg":"#FFF3E0"},
+"マネジメント":{"color":"#558B2F","icon":"📊","bg":"#F1F8E9"},
+"ストラテジ":{"color":"#F57F17","icon":"💼","bg":"#FFFDE7"},
+"法務・規制":{"color":"#BF360C","icon":"⚖️","bg":"#FBE9E7"},
+"人工知能・機械学習":{"color":"#880E4F","icon":"🤖","bg":"#FCE4EC"},
+"システム開発手法":{"color":"#1B5E20","icon":"🔄","bg":"#E8F5E9"},
+"IoT・組込みシステム":{"color":"#01579B","icon":"📡","bg":"#E1F5FE"},
+"クラウド・仮想化":{"color":"#4A148C","icon":"☁️","bg":"#F3E5F5"}
+};
+
+const SUBCAT_DEF={
+  "基礎理論":[{key:"b1",label:"📐 基礎理論・データ表現",ids:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,298]}],
+  "情報表現":[{key:"i1",label:"💡 情報表現・数値変換",ids:[241,242,243,244,245,246,247,248,249,250]}],
+  "コンピュータシステム":[{key:"cs1",label:"🖥️ CPU・メモリ・入出力",ids:[21,22,23,24,25,26,27,28,29,30]},{key:"cs2",label:"⚡ 性能評価・信頼性",ids:[31,32,33,34,35,36,37,38,39,40]}],
+  "システム構成":[{key:"sc1",label:"🔧 システム構成・信頼性設計",ids:[41,42,43,44,45,46,47,48,49,50]},{key:"sc2",label:"📦 仮想化・クラスタ・冗長化",ids:[51,52,53,54,55,56,57,58,59,60]}],
+  "ソフトウェア":[{key:"sw1",label:"💾 OS・ファイル管理",ids:[61,62,63,64,65,66,67,68,69,70]},{key:"sw2",label:"🛠️ ミドルウェア・ソフトウェア品質",ids:[71,72,73,74,75,76,77,78,79,80]}],
+  "ハードウェア":[{key:"hw1",label:"⚙️ ハードウェア・論理回路",ids:[81,82,83,84,85,86,87,88,89,90]},{key:"hw2",label:"🔌 入出力装置・記憶装置",ids:[91,92,93,94,95,96,97,98,99,100]}],
+  "ネットワーク":[{key:"nw1",label:"🌐 ネットワーク基礎・プロトコル",ids:[101,102,103,104,105,106,107,108,109,110,111]},{key:"nw2",label:"🔗 応用プロトコル・無線",ids:[112,113,114,115,116,117,118,119,120,291,299]}],
+  "セキュリティ":[{key:"sec1",label:"🔐 暗号・認証・脅威",ids:[121,122,123,124,125,126,127,128,129,130,131]},{key:"sec2",label:"🛡️ セキュリティ対策・法規",ids:[132,133,134,135,136,137,138,139,140,292,297]}],
+  "データベース":[{key:"db1",label:"🗄️ データモデル・SQL",ids:[141,142,143,144,145,146,147,148,149,150,151]},{key:"db2",label:"📊 トランザクション・設計",ids:[152,153,154,155,156,157,158,159,160,293]}],
+  "ソフトウェア開発":[{key:"swd1",label:"👨‍💻 開発手法・テスト",ids:[161,162,163,164,165,166,167,168,169,170,171]},{key:"swd2",label:"📋 品質管理・保守",ids:[172,173,174,175,176,177,178,179,180,294]}],
+  "アルゴリズム":[{key:"alg",label:"🔢 アルゴリズム・データ構造",ids:[231,232,233,234,235,236,237,238,239,240]}],
+  "マネジメント":[{key:"mg1",label:"📊 プロジェクト・ITサービス管理",ids:[181,182,183,184,185,186,187,188,189,190,191]},{key:"mg2",label:"📋 監査・ITマネジメント",ids:[192,193,194,195,196,197,198,199,200,295]}],
+  "ストラテジ":[{key:"st1",label:"💼 経営戦略・IT戦略",ids:[201,202,203,204,205,206,207,208,209,210,211]},{key:"st2",label:"📈 マーケティング・技術経営",ids:[212,213,214,215,216,217,218,219,220,296,300]}],
+  "法務・規制":[{key:"law",label:"⚖️ 知的財産・法規・コンプライアンス",ids:[221,222,223,224,225,226,227,228,229,230]}],
+  "人工知能・機械学習":[{key:"ai",label:"🤖 AI・機械学習・データサイエンス",ids:[251,252,253,254,255,256,257,258,259,260]}],
+  "システム開発手法":[{key:"sdm",label:"🔄 開発手法・アジャイル",ids:[261,262,263,264,265,266,267,268,269,270]}],
+  "IoT・組込みシステム":[{key:"iot",label:"📡 IoT・組込みシステム・制御",ids:[271,272,273,274,275,276,277,278,279,280]}],
+  "クラウド・仮想化":[{key:"cld",label:"☁️ クラウド・仮想化・IaC",ids:[281,282,283,284,285,286,287,288,289,290]}]
+};
+// カテゴリ正規化
+(function normalizeCats(){
+const MAP={
+"基礎理論":"基礎理論","情報表現":"情報表現","コンピュータシステム":"コンピュータシステム",
+"システム構成":"システム構成","ソフトウェア":"ソフトウェア","ハードウェア":"ハードウェア",
+"ネットワーク":"ネットワーク","セキュリティ":"セキュリティ","データベース":"データベース",
+"ソフトウェア開発":"ソフトウェア開発","アルゴリズム":"アルゴリズム","マネジメント":"マネジメント",
+"ストラテジ":"ストラテジ","法務・規制":"法務・規制","人工知能・機械学習":"人工知能・機械学習",
+"システム開発手法":"システム開発手法","IoT・組込みシステム":"IoT・組込みシステム","クラウド・仮想化":"クラウド・仮想化"
+};
+ALL_QUESTIONS.forEach(q=>{if(MAP[q.category])q.category=MAP[q.category];});
+})();
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_ap";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",fsc:null,subcatOpen:false,ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+// ① 前回の続きセーブ/ロード
+function saveProgress(){setUd(p=>({...p,lastProgress:{mode:S.mode,fc:S.fc,shuffle:S.shuffle,ts:S.ts,deckIds:S.deck.map(q=>q.id),idx:S.idx,ts_:Date.now()}}));}
+function hasProgress(){const p=S.ud.lastProgress;return p&&p.deckIds&&p.deckIds.length>0&&p.idx<p.deckIds.length-1;}
+function retryQ(){clearInterval(S.tiv);S.sel=null;S.tout=false;S.tl=null;S.showExp=false;render();startTimer();}
+function pauseQ(){clearInterval(S.tiv);saveProgress();S.screen="home";render();}
+function resumeSession(){
+  const p=S.ud.lastProgress;if(!p)return;
+  S.mode=p.mode;S.fc=p.fc;S.shuffle=p.shuffle||false;S.ts=p.ts||0;
+  S.deck=p.deckIds.map(id=>ALL_QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+  S.idx=p.idx;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(S.fsc&&S.fc!=="全て"){const sub=(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc);if(sub)pool=pool.filter(q=>sub.ids.includes(q.id));}
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  // ① 進捗クリアして新規スタート
+  setUd(p=>{const np={...p};delete np.lastProgress;return np;});
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;
+  clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>{
+    const wc={...p.wrongCounts};
+    if(ok){
+      // ④ 弱点モードで正解したらwrongCountsから削除（クリア）
+      if(S.mode==="WEAK") delete wc[q.id];
+      else wc[q.id]=Math.max(0,(wc[q.id]||0));
+    } else {
+      wc[q.id]=(wc[q.id]||0)+1;
+    }
+    return{...p,wrongCounts:wc,history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1};
+  });
+  // ① 進捗保存
+  saveProgress();
+  render();
+  const el=document.getElementById("app");
+  if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){
+    // ① セッション完了: 進捗クリア
+    setUd(p=>{const np={...p,totalSessions:(p.totalSessions||0)+1};delete np.lastProgress;return np;});
+    S.screen="result";render();
+  } else {
+    S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;
+    saveProgress();
+    render();startTimer();
+  }
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){
+  document.getElementById("app").innerHTML=build();
+  if(S.screen==="notebook"||S.screen==="quiz"){
+    const el=document.getElementById("app");
+    if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+  }
+  if(S.screen==="result"||S.screen==="home"){
+    // ⑥ resultとhomeは常にページ最上部
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const isFiltered=S.mode==="ALL"&&(S.fc!=="全て"||S.fsc);
+  const filterLabel=S.fsc?(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc)?.label.replace(/^[^\s]+\s/,""):S.fc!=="全て"?S.fc:"";
+  const left=`
+    <div class="card">
+      <div class="cat-card-hd">
+        <span class="cat-card-title">カテゴリ・絞り込み</span>
+        ${isFiltered?`<span class="cat-filter-badge active">🎯 ${filterLabel}</span>`:`<span class="cat-filter-badge none">全問題</span>`}
+      </div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}">
+        ${cats.map(c=>{
+          const a=S.fc===c;
+          const m=CAT_META[c];
+          const cnt=c==="全て"?ALL_QUESTIONS.length:ALL_QUESTIONS.filter(q=>q.category===c).length;
+          const wc=c==="全て"?wq.length:ALL_QUESTIONS.filter(q=>q.category===c&&(S.ud.wrongCounts||{})[q.id]>0).length;
+          const badge=wc>0?`<span style="background:#E8572A;color:#fff;font-size:9px;font-weight:700;border-radius:4px;padding:0 4px;">${wc}</span>`:"";
+          return`<button class="cat-chip ${a?"active":""}" onclick="S.fc='${c}';S.fsc=null;render()">${c!=="全て"&&m?m.icon+" ":""}${c}<span style="opacity:.55;font-size:10px;margin-left:3px;">${cnt}</span>${badge}</button>`;
+        }).join("")}
+      </div>
+      ${S.mode==="ALL"&&S.fc!=="全て"&&SUBCAT_DEF[S.fc]?(()=>{
+        const subs=SUBCAT_DEF[S.fc];
+        return`<div class="subcat-section">
+          <div class="subcat-label">章で絞り込む</div>
+          <div class="subcat-grid">
+            <button class="subcat-chip ${!S.fsc?"active":""}" onclick="S.fsc=null;render()">全章</button>
+            ${subs.map(s=>{
+              const cnt2=ALL_QUESTIONS.filter(q=>q.category===S.fc&&s.ids.includes(q.id)).length;
+              return`<button class="subcat-chip ${S.fsc===s.key?"active":""}" onclick="S.fsc='${s.key}';render()">${s.label}<span style="opacity:.6;font-size:10px;margin-left:3px;">${cnt2}</span></button>`;
+            }).join("")}
+          </div>
+        </div>`;
+      })():""}
+      ${S.mode!=="ALL"?`<p style="font-size:11px;color:var(--text3);margin-top:4px;">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+      <div class="opts-compact">
+        <span class="opt-label-ic">⏱</span>
+        ${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}
+        <div class="opts-compact-sep"></div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"ランダム":"順番通り"}</button>
+      </div>
+    </div>
+    ${(()=>{
+      const p=S.ud.lastProgress;
+      const hasP=hasProgress();
+      if(hasP){
+        const resumeQ=p.deckIds&&ALL_QUESTIONS.find(q=>q.id===p.deckIds[p.idx]);
+        const cat=resumeQ?(CAT_META[resumeQ.category]||{icon:"📄"}):{icon:"📄"};
+        const catLabel=resumeQ?resumeQ.category:"";
+        const qNum=p.idx+1;
+        return`<div class="start-row">
+          <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+          <button class="resume-btn" onclick="resumeSession()">
+            <span class="resume-btn-label">▶ 続きから学習</span>
+            <span class="resume-btn-sub">${qNum}問目 ${cat.icon}${catLabel}</span>
+          </button>
+        </div>`;
+      } else {
+        return`<button class="start-btn start-btn-solo ${startOff?"off":""}" onclick="go()">学習スタート ${arr()}</button>`;
+      }
+    })()}
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  const modeTabs=[
+    {k:"ALL",ic:"📚",lbl:"全問",cnt:ALL_QUESTIONS.length,dis:false},
+    {k:"WEAK",ic:"🔥",lbl:"弱点",cnt:wq.length,dis:!wq.length},
+    {k:"STAR",ic:"⭐",lbl:"★登録",cnt:sq.length,dis:!sq.length}
+  ].map(m=>{const on=S.mode===m.k?"hm-on":"";const dis=m.dis?"hm-dis":"";const click=m.dis?"":"S.mode=\'"+m.k+"\';S.fsc=null;render()";return`<button class="hm-tab ${on} ${dis}" onclick="${click}"><span class="hm-ic">${m.ic}</span><span class="hm-lbl">${m.lbl}</span><span class="hm-cnt">${m.cnt}問</span></button>`;}).join("");
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-top">
+        <div class="hero-left">
+          <div class="hero-exam-type">IT・情報技術</div>
+          <div class="hero-exam-name">応用情報技術者</div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+            ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+          </div>
+        </div>
+        <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+          <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+          <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+          <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+        </div>
+      </div>
+      <div class="hero-mode-bar">${modeTabs}</div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const catMeta=CAT_META[cur.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+  const catLabel=cur.category||"";
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="44" height="44" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+
+  // ── 未回答：問題文＋4択を表示 ──────────────────────
+  if(!ia){
+    const ch=cur.choices.map((c,i)=>`<button class="choice" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span></button>`).join("");
+    return`<div class="quiz-inner">
+      <div class="pc-quiz-main">
+        <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+        <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+        ${tim}
+        <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+        <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+        <div class="choices">${ch}</div>
+      </div>
+      <div class="pc-quiz-side">
+        <div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>
+        <div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>
+      </div>
+    </div>`;
+  }
+
+  // ── 回答済み：選択肢を非表示にして解説カードのみ表示 ──
+  const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";
+  const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";
+  const vc=ic&&!S.tout?"var(--green-d)":S.tout?"var(--gold)":"var(--accent)";
+
+  const correctRow=`<div class="exp-correct-bar ok">
+    <span class="exp-correct-label">正解</span>
+    <span class="exp-correct-text">${al[cur.answer]}. ${cur.choices[cur.answer]}</span>
+  </div>`;
+  const myRow=(!ic&&!S.tout&&S.sel!==null)?`<div class="exp-correct-bar ng">
+    <span class="exp-correct-label">あなた</span>
+    <span class="exp-correct-text">${al[S.sel]}. ${cur.choices[S.sel]}</span>
+  </div>`:"";
+
+  // PC側解説パネル
+  const expPC=`<div class="side-panel">
+    <div class="side-title">解説</div>
+    <div style="font-size:13px;font-weight:700;color:${vc};margin-bottom:8px;">${v}</div>
+    <div style="background:rgba(29,158,117,.1);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#0F6E56;"><strong>正解：</strong>${al[cur.answer]}. ${cur.choices[cur.answer]}</div>
+    ${(!ic&&!S.tout&&S.sel!==null)?`<div style="background:rgba(230,81,0,.08);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#8B2A0E;"><strong>あなた：</strong>${al[S.sel]}. ${cur.choices[S.sel]}</div>`:""}
+    <div class="side-exp-body">${cur.explanation}</div>
+  </div>`;
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="exp-card exp-sp ${cls}">
+        <div class="exp-head"><span class="exp-verdict">${v}</span></div>
+        ${correctRow}${myRow}
+        <p class="exp-body">${cur.explanation}</p>
+      </div>
+      <div class="next-wrap"><div class="next-3">
+        <button class="btn-retry" onclick="retryQ()">🔁<span class="btn-sub-lbl">もう一度</span></button>
+        <button class="btn-pause" onclick="pauseQ()">⏸<span class="btn-sub-lbl">中断</span></button>
+        <button class="btn-next-main" onclick="next()">${S.idx+1>=S.deck.length?"🏁 結果を見る":"次の問題 →"}</button>
+      </div></div>
+    </div>
+    <div class="pc-quiz-side">${expPC}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  // ⑤ undefinedを除去: questionが存在するか確認
+  const log=S.sess.map((a,i)=>{
+    if(!a.q||!a.q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[a.q.id]||0;
+    const cat=CAT_META[a.q.category];
+    const icon=cat?cat.icon:"";
+    const qText=a.q.question.slice(0,28)+"…";
+    return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${icon}</span><span class="ar-q">${qText}</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;
+  }).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/><circle cx="50" cy="50" r="42" fill="none" stroke="${vc}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${sr*2.639} 263.9" transform="rotate(-90 50 50)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{
+    if(!q||!q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[q.id]||0;
+    const is=(S.ud.starIds||[]).includes(q.id);
+    const cat=CAT_META[q.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+    return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${cat.color};background:${cat.bg};border-color:${cat.color}55">${cat.icon} ${q.category||""}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;
+  }).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+
+// ── ページ内ナビ スクロール処理 ──
+function scrollToApp(e){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById("app");
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab("app");
+}
+function scrollTo_(e, id){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById(id);
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab(id);
+}
+function setActiveTab(id){
+  document.querySelectorAll(".pn-tab").forEach(t => t.classList.remove("active"));
+  const map = {app:0, apply:1, books:2, courses:3, overview:4, syllabus:5, roadmap:6, faq:7};
+  const tabs = document.querySelectorAll(".pn-tab");
+  const idx = map[id];
+  if(idx !== undefined && tabs[idx]) tabs[idx].classList.add("active");
+}
+const _navIds = ["faq","roadmap","syllabus","overview","courses","books","apply"];
+window.addEventListener("scroll", ()=>{
+  const offset = 120;
+  for(const id of _navIds){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= offset){
+      setActiveTab(id); return;
+    }
+  }
+  setActiveTab("app");
+}, {passive:true});
+</script>
+
+<section class="aff-section">
+  <div class="aff-inner">
+    <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+    <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+    <a class="official-btn" href="https://www.ipa.go.jp/shiken/kubun/ap.html" target="_blank" rel="noopener">
+      <div class="official-ico">🏛️</div>
+      <div class="official-info">
+        <div class="official-name">IPA（情報処理推進機構）（公式）</div>
+        <div class="official-note">試験日程・申込方法・受験料の詳細はこちらから確認できます</div>
+      </div>
+      <div class="official-arr">→</div>
+    </a>
+    <div class="aff-h3">おすすめ参考書</div>
+    <div class="book-list"><div class="book-card"><div class="book-title">📖 応用情報技術者 合格教本（技術評論社）</div><div class="book-memo">網羅的なテキスト。午前・午後の両方に対応</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=応用情報技術者合格教本技術評論社&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/応用情報技術者合格教本技術評論社/" target="_blank" rel="noopener">楽天 で見る</a></div></div><div class="book-card"><div class="book-title">📖 応用情報技術者 パーフェクトラーニング過去問題集</div><div class="book-memo">過去問反復が合格の近道</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=応用情報技術者パーフェクトラーニング過去問題集&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/応用情報技術者パーフェクトラーニング過去問題集/" target="_blank" rel="noopener">楽天 で見る</a></div></div></div>
+    <div class="aff-h3">おすすめ通信講座</div>
+    <div class="course-list"><a class="course-card" href="https://studying.jp/ap/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">スタディング 応用情報技術者講座</div><div class="course-price">約12,000円〜</div><div class="course-feat">スマホ学習・コスパ最高</div></div><div class="course-arr">›</div></a><a class="course-card" href="https://www.o-hara.jp/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">資格の大原 応用情報技術者講座</div><div class="course-price">約60,000円〜</div><div class="course-feat">実績豊富</div></div><div class="course-arr">›</div></a></div>
+    <p class="aff-note">※ 参考書・通信講座のリンクはアフィリエイトリンクです。<br>※ 価格は変動する場合があります。最新情報は各サービスの公式サイトでご確認ください。</p>
+  </div>
+</section>
+<section class="seo-section">
+  <div class="seo-inner">
+    <h2 class="seo-h2">応用情報技術者（午前）とは</h2>
+    <p class="seo-lead">応用情報技術者試験は、ITエンジニアとして中級レベルの技術・知識を証明する国家試験です。基本情報より深い知識と応用力が求められ、高度試験の登竜門でもあります。</p>
+    <h3 class="seo-h3">試験概要</h3>
+    <div class="info-grid2">
+      <div class="ig-card"><div class="ig-lbl">合格率</div><div class="ig-val">25%</div></div>
+      <div class="ig-card"><div class="ig-lbl">勉強時間</div><div class="ig-val">400〜500時間</div></div>
+      <div class="ig-card"><div class="ig-lbl">受験料</div><div class="ig-val">7,500円</div></div>
+      <div class="ig-card"><div class="ig-lbl">試験形式</div><div class="ig-val">4択マークシート・80問（午前）</div></div>
+      <div class="ig-card"><div class="ig-lbl">試験回数</div><div class="ig-val">年2回（春・秋）</div></div>
+      <div class="ig-card"><div class="ig-lbl">難易度</div><div class="ig-val">★★★☆☆</div></div>
+    </div>
+    <h3 class="seo-h3">試験科目・出題範囲</h3>
+    <table class="seo-table"><thead><tr><th>科目・分野</th><th>主な内容</th></tr></thead><tbody><tr><td>テクノロジ系（50問）</td><td>アーキテクチャ・ネットワーク・DB・セキュリティ・組み込み</td></tr><tr><td>マネジメント系（16問）</td><td>プロジェクト管理・品質管理・サービスマネジメント</td></tr><tr><td>ストラテジ系（14問）</td><td>IT戦略・法律・会計・経営</td></tr></tbody></table>
+    <h3 class="seo-h3">学習ロードマップ</h3>
+    <div class="roadmap"><div class="rm-step"><div class="rm-num">1</div><div><div class="rm-title">基本情報の知識を復習（1ヶ月目）</div><div class="rm-desc">基本情報レベルの知識を確認・補強する</div></div></div><div class="rm-step"><div class="rm-num">2</div><div><div class="rm-title">テクノロジ系の深掘り（2〜4ヶ月目）</div><div class="rm-desc">ネットワーク・DB・セキュリティを応用レベルまで学習</div></div></div><div class="rm-step"><div class="rm-num">3</div><div><div class="rm-title">マネジメント・ストラテジ（4〜5ヶ月目）</div><div class="rm-desc">計算問題・法律・プロジェクト管理を押さえる</div></div></div><div class="rm-step"><div class="rm-num">4</div><div><div class="rm-title">過去問演習で仕上げ（5〜6ヶ月目）</div><div class="rm-desc">午前過去問5回分以上を反復する</div></div></div></div>
+    <h3 class="seo-h3">この資格を取ったら次は？</h3>
+    <div class="next-shikaku"><a class="next-card" href="sc.html"><div class="next-ico" style="background:#E3F2FD">🛡️</div><div><div class="next-name">情報処理安全確保支援士</div><div class="next-desc">高度資格のセキュリティ専門家</div></div></a><a class="next-card" href="nw.html"><div class="next-ico" style="background:#E3F2FD">🌐</div><div><div class="next-name">ネットワークスペシャリスト</div><div class="next-desc">ネットワーク特化の高度資格</div></div></a></div>
+    <h3 class="seo-h3">よくある質問（FAQ）</h3>
+    <div class="faq-list"><details class="faq-item"><summary class="faq-q">応用情報技術者の合格率はどのくらいですか？</summary><p class="faq-a">約25%程度です。基本情報よりも難易度が高く、十分な準備が必要です。</p></details><details class="faq-item"><summary class="faq-q">基本情報を取得してから受験すべきですか？</summary><p class="faq-a">基本情報取得後が一般的ですが、直接受験する方もいます。基本情報の知識は必須です。</p></details><details class="faq-item"><summary class="faq-q">文系でも合格できますか？</summary><p class="faq-a">午後試験で文系向けの選択問題（監査・ストラテジ等）を選べば文系でも合格実績があります。</p></details><details class="faq-item"><summary class="faq-q">合格すると何の役に得られますか？</summary><p class="faq-a">高度試験（情報処理安全確保支援士等）の午前Ⅰ試験免除が2年間得られます。</p></details></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-logo">
+      <span class="sf-lmark">問</span>
+      資格<span>ドリル</span>
+    </div>
+    <div class="sf-links">
+      <a href="index.html">資格一覧トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="sf-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>
