@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>ビジネス実務法務検定3級 無料問題集・過去問対策 | 資格ドリル</title>
+<meta name="description" content="G検定（ジェネラリスト検定）の無料問題集。AI・機械学習・ディープラーニング・法律・倫理を網羅。合格率65〜76%・勉強時間40〜80時間。オンライン100分/会場120分・145問。弱点特訓・解説つき。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1623;--navy2:#171e2e;--navy3:#1e2840;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;--gold-bg:#FEF6E4;
+  --accent:#ff3b53;--accent-bg:#fff0f1;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Inter','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;z-index:100;}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.site-logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;font-family:"Inter","Noto Sans JP";}
+.site-logo .logo-text{background:linear-gradient(90deg,#fff 0%,#ffd6c2 100%);-webkit-background-clip:text;background-clip:text;color:transparent !important;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+/* ③ PC時: ヘッダー内コンテンツを掲載内容の左端に揃える */
+@media(min-width:769px){
+  .site-header{padding:0;}
+  .site-header-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+  .page-nav-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;}
+.hero-top{padding:18px 20px 14px;display:flex;align-items:center;gap:14px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:3px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+/* モードタブ（ヒーロー内）コンパクト1行 */
+.hero-mode-bar{display:flex;border-top:1px solid rgba(255,255,255,.08);}
+.hm-tab{flex:1;padding:8px 4px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:5px;cursor:pointer;border:none;background:none;font-family:var(--font-b);color:rgba(255,255,255,.4);transition:all .2s;border-bottom:2px solid transparent;}
+.hm-tab:not(.hm-dis):hover{color:rgba(255,255,255,.8);background:rgba(255,255,255,.04);}
+.hm-tab.hm-on{color:#fff;border-bottom-color:var(--brand);background:rgba(255,59,83,.08);}
+.hm-tab.hm-dis{opacity:.3;cursor:not-allowed;}
+.hm-ic{font-size:14px;line-height:1;transition:transform .25s cubic-bezier(.34,1.56,.64,1);flex-shrink:0;}
+.hm-tab.hm-on .hm-ic{transform:scale(1.15);}
+.hm-lbl{font-size:12px;font-weight:700;}
+.hm-cnt{font-size:10px;background:rgba(255,255,255,.12);border-radius:4px;padding:1px 6px;line-height:1.5;transition:all .2s;}
+.hm-tab.hm-on .hm-cnt{background:var(--brand);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.cat-card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.cat-card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
+.cat-filter-badge{font-size:10px;padding:2px 8px;border-radius:99px;font-weight:700;}
+.cat-filter-badge.none{color:var(--text3);background:var(--bg);}
+.cat-filter-badge.active{color:#fff;background:var(--brand);animation:badgePop .3s cubic-bezier(.34,1.56,.64,1);}
+@keyframes badgePop{0%{transform:scale(.7)}100%{transform:scale(1)}}
+.cat-row{display:flex;gap:7px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:7px 13px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .2s;display:flex;align-items:center;gap:5px;}
+.cat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;transform:translateY(-1px);}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;box-shadow:0 3px 10px rgba(15,22,35,.2);}
+.subcat-section{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);animation:fadeSlideIn .22s ease;}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.subcat-label{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;margin-bottom:7px;display:flex;align-items:center;gap:5px;text-transform:uppercase;}
+.subcat-label::before{content:"";width:2px;height:10px;background:linear-gradient(var(--brand),var(--brand2));border-radius:1px;flex-shrink:0;}
+.subcat-grid{display:flex;gap:5px;flex-wrap:wrap;}
+.subcat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:5px 11px;font-size:11px;cursor:pointer;color:var(--text2);transition:all .2s;display:flex;align-items:center;gap:4px;}
+.subcat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;}
+.subcat-chip.active{background:linear-gradient(135deg,var(--brand),var(--brand2));border-color:transparent;color:#fff;font-weight:700;box-shadow:0 3px 8px rgba(255,59,83,.3);}
+.opts-compact{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.opts-compact-sep{width:1px;height:16px;background:var(--border);flex-shrink:0;}
+.opt-label-ic{font-size:12px;color:var(--text3);}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill:hover{background:#f0efe8;border-color:var(--border2);}
+.opt-pill.on{background:var(--accent-bg)!important;border-color:var(--brand)!important;color:var(--brand)!important;font-weight:700;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+/* スタート・継続ボタン行 */
+.start-row{display:flex;gap:8px;margin-bottom:8px;}
+.start-btn{flex:1;height:52px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:900;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 8px 22px rgba(255,59,83,.35);}
+.start-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(255,59,83,.5);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.start-btn-solo{width:100%;height:56px;font-size:18px;letter-spacing:2px;margin-bottom:8px;}
+.resume-btn{flex:1;height:52px;background:var(--green-bg);border:1.5px solid var(--green);border-radius:var(--radius);color:var(--green-d);font-size:13px;font-weight:700;font-family:var(--font-b);cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;}
+.resume-btn:hover{background:var(--green);color:#fff;}
+.resume-btn-label{font-size:12px;font-weight:700;}
+.resume-btn-sub{font-size:10px;opacity:.75;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:8px 12px 70px;display:flex;flex-direction:column;gap:8px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter-wrap{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:22px;font-weight:900;}
+.qc-sep{font-size:12px;color:var(--text3);}
+.qc-tot{font-size:13px;color:var(--text3);}
+.qc-sub{font-size:10px;color:var(--text3);letter-spacing:.5px;}
+.star-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:18px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--brand);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:44px;height:44px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:13px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:6px;}
+.sb-ok{font-size:11px;font-weight:700;color:var(--green);min-width:28px;}
+.sb-ng{font-size:11px;font-weight:700;color:var(--accent);min-width:28px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.sb-dot{width:7px;height:7px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:9px;height:9px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:9px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;}
+.q-cat-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}
+.q-miss{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(230,81,0,.3);padding:3px 8px;border-radius:6px;}
+.q-text{font-size:13px;line-height:1.7;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:6px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:0 12px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:10px;text-align:left;transition:all .15s;color:var(--text2);min-height:44px;width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FFF3E0;transform:translateX(2px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:12px;width:26px;height:26px;border-radius:6px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:12px;line-height:1.5;padding:10px 0;}
+.ch-icon{font-size:15px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:10px;padding:10px 12px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(230,81,0,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.exp-verdict{font-size:13px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:11px;color:var(--gold);}
+/* 正解表示バー */
+.exp-correct-bar{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:7px;margin-bottom:6px;}
+.exp-correct-bar.ok{background:rgba(29,158,117,.12);}
+.exp-correct-bar.ng{background:rgba(230,81,0,.08);}
+.exp-correct-label{font-size:10px;font-weight:700;white-space:nowrap;padding-top:1px;}
+.exp-correct-bar.ok .exp-correct-label{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-label{color:var(--accent);}
+.exp-correct-text{font-size:12px;line-height:1.5;}
+.exp-correct-bar.ok .exp-correct-text{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-text{color:#8B2A0E;}
+.exp-body{font-size:11.5px;line-height:1.8;color:var(--text2);}
+.next-wrap{position:sticky;bottom:12px;padding-top:6px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);width:100%;height:46px;font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.3);}
+.next-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.next-3{display:grid;grid-template-columns:1fr 1fr 2fr;gap:6px;}
+.btn-retry{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-retry:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-bg);}
+.btn-pause{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-pause:hover{border-color:var(--green);color:var(--green-d);background:var(--green-bg);}
+.btn-next-main{height:46px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 4px 14px rgba(255,59,83,.3);}
+.btn-next-main:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,59,83,.45);}
+.btn-sub-lbl{font-size:9px;font-weight:400;opacity:.7;line-height:1;}
+/* ⑥ result コンパクト化 */
+.result-inner{max-width:480px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:12px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:100px;height:100px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:32px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:14px;}
+.result-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.result-verdict{font-size:13px;font-weight:700;padding:6px 16px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:6px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:12px;}
+.rc-name{font-size:10px;font-weight:700;width:68px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:10px;font-weight:700;width:28px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:5px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:10px;color:var(--text3);min-width:22px;}
+.ar-cat{font-size:12px;}
+.ar-q{flex:1;font-size:11px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:13px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:44px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.25);}
+.cta-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.ghost-btn{width:100%;height:40px;background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:13px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── スマホ：サイドパネルをメインコンテンツの下に表示 ── */
+@media (max-width:768px){
+  .pc-cols{display:flex;flex-direction:column;gap:0;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{display:flex;flex-direction:column;gap:12px;margin-top:12px;}
+  .quiz-inner{display:flex;flex-direction:column;}
+  .pc-quiz-main{display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{display:none;}
+}
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  /* ② サイドパネル: ビューポート高さを超えないよう最大高さ設定してスクロール */
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-col-side::-webkit-scrollbar{display:none;}
+  .quiz-inner{max-width:920px;padding:24px 32px 40px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-quiz-side::-webkit-scrollbar{display:none;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  /* ⑥ result: PC時もコンパクトに */
+  .result-inner{max-width:680px;padding:16px 32px 40px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:72px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── ページ内タブナビ ── */
+.page-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:90;}
+.page-nav::-webkit-scrollbar{display:none;}
+.page-nav-inner{display:flex;align-items:center;min-width:max-content;padding:0 12px;}
+.pn-tab{color:rgba(255,255,255,0.55);font-size:12px;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;text-decoration:none;display:block;}
+.pn-tab:hover{color:#fff;}
+.pn-tab.active{color:#fff;border-bottom-color:#1D9E75;}
+
+/* ① resume-btn は上で定義済み */
+
+/* ── モード選択コンパクト化 ── */
+.mode-row-compact{display:flex;gap:6px;}
+.mode-btn-compact{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:7px 4px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);transition:all .18s;height:40px;}
+.mode-btn-compact:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-btn-compact.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-btn-compact.mode-off{opacity:.4;cursor:not-allowed;}
+.mbc-icon{font-size:14px;line-height:1;}
+.mbc-label{font-size:11px;font-weight:700;}
+.mbc-count{font-size:10px;color:var(--text3);margin-left:1px;}
+.mode-btn-compact.mode-active .mbc-count{color:var(--accent);}
+
+/* ── カテゴリ+オプション 横並び ── */
+.cat-opt-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.cat-opt-row .cat-row{flex:1;min-width:0;}
+.opt-mini{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター（横幅いっぱいバー）*/
+.site-footer{background:var(--navy);padding:14px 16px;margin-top:0;width:100%;}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:920px;margin:0 auto;}
+.sf-logo{color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.sf-logo span{color:var(--green) !important;background:none;}
+.sf-lmark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;}
+.sf-links{display:flex;gap:16px;flex-wrap:wrap;}
+.sf-links a{color:rgba(255,255,255,.4);font-size:11px;transition:color .15s;}
+.sf-links a:hover{color:rgba(255,255,255,.75);}
+.sf-copy{color:rgba(255,255,255,.2);font-size:10px;}
+@media(max-width:768px){
+  .sf-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+@media(min-width:769px){
+  .site-footer{padding:14px 0;}
+  .sf-inner{padding:0 32px;}
+}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+.info-grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:8px;}
+.ig-card{background:#f5f4f0;border-radius:9px;padding:11px 13px;}
+.ig-lbl{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:3px;}
+.ig-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/gken.html">
+<meta property="og:title" content="ビジネス実務法務検定3級 無料問題集 | 資格ドリル">
+<meta property="og:description" content="ビジネス実務法務検定3級の無料問題集。企業法務・契約・労働法・知財を網羅。合格率60〜70%・勉強時間40〜60時間。弱点特訓・解説つき。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-drill.com/bizlaw3/">
+<meta property="og:site_name" content="資格ドリル">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ビジネス実務法務検定3級 無料問題集 | 資格ドリル">
+<meta name="twitter:description" content="ビジネス実務法務検定3級の無料問題集。企業法務・契約・労働法・知財を網羅。合格率60〜70%・勉強時間40〜60時間。弱点特訓・解説つき。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "G検定（ジェネラリスト検定）無料問題集",
+      "description": "G検定はJDLA（日本ディープラーニング協会）が実施するAI・ディープラーニング活用リテラシーの検定試験です。AI概論・機械学習・ディープラーニング・生成AI・法律・倫理など幅広い範囲から出題されます。",
+      "provider": {"@type": "Organization", "name": "資格ドリル"},
+      "educationalLevel": "入門・中級",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "G検定の合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "例年60〜76%程度で推移しており、AI系資格の中では比較的取得しやすい検定です。出題範囲が広いため、公式テキストを中心とした網羅的な学習が合格の鍵です。"}},
+        {"@type": "Question","name": "G検定の勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "AI未経験者で40〜80時間が目安です。IT・AI知識がある方は20〜40時間程度で合格を目指せます。公式テキストと問題集を組み合わせた学習が効果的です。"}},
+        {"@type": "Question","name": "G検定のオンライン試験と会場試験の違いは何ですか？","acceptedAnswer": {"@type": "Answer","text": "問題数は同じ145問程度ですが、試験時間が異なります。オンライン試験（自宅受験）は100分、会場試験（全国指定会場）は120分です。2026年はオンライン年6回・会場試験年3回が開催されます。"}},
+        {"@type": "Question","name": "G検定に合格すると何が得られますか？","acceptedAnswer": {"@type": "Answer","text": "合格証・オープンバッジが発行され、日本最大級のAI人材コミュニティ「CDLE」に参加できます。DX推進パスポートのバッジも取得可能で、就職・転職・社内DX推進でのアピールになります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="site-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      資格一覧へ
+    </a>
+  </div>
+</header>
+<nav class="page-nav" id="pageNav">
+  <div class="page-nav-inner">
+    <a class="pn-tab active" href="#app"      onclick="scrollToApp(event)">📝 問題を解く</a>
+    <a class="pn-tab"        href="#apply"    onclick="scrollTo_(event,'apply')">🤖 申し込み</a>
+    <a class="pn-tab"        href="#books"    onclick="scrollTo_(event,'books')">📖 参考書</a>
+    <a class="pn-tab"        href="#courses"  onclick="scrollTo_(event,'courses')">🎓 通信講座</a>
+    <a class="pn-tab"        href="#overview" onclick="scrollTo_(event,'overview')">📋 試験概要</a>
+    <a class="pn-tab"        href="#syllabus" onclick="scrollTo_(event,'syllabus')">📊 出題分野</a>
+    <a class="pn-tab"        href="#roadmap"  onclick="scrollTo_(event,'roadmap')">🗺️ 学習の流れ</a>
+    <a class="pn-tab"        href="#faq"      onclick="scrollTo_(event,'faq')">❓ よくある質問</a>
+  </div>
+</nav>
+<div id="app"></div>
+<script>
+// ▼▼▼ ここに問題データを追加してください ▼▼▼
+const ALL_QUESTIONS=[
+{id:1,category:"契約の基礎",question:"契約が成立するための基本的な要件として正しいものはどれか。",choices:["書面の作成が必ず必要","第三者の立会いという規定","公証人による認証という規定","申込みと承諾の意思表示の合致"],answer:3,explanation:"契約は原則として申込みと承諾という2つの意思表示が合致することで成立する（民法522条）。書面は原則不要で口頭でも契約は成立する。"},
+{id:2,category:"契約の基礎",question:"意思表示に関して「錯誤」による取消しが認められる要件として正しいものはどれか。",choices:["どんな些細な勘違いでも取消しできる（誤り）","法律行為の目的・取引上の社会通念に照らして重要な錯誤であり表意者に重大な過失がないこと","相手方が錯誤を知っていた場合のみ取消しできない（この説明は誤り）","取消しには裁判所の判決が必要（誤り）"],answer:1,explanation:"錯誤による取消し（民法95条）は①法律行為の目的・取引通念に照らして重要な錯誤②表意者に重大な過失がないことが要件。ただし相手方が錯誤を知りまたは知ることができた場合は重過失があっても取消し可能。"},
+{id:3,category:"契約の基礎",question:"詐欺による意思表示の取消しについて正しいものはどれか。",choices:["詐欺による取消しは誰に対しても主張できる","取消しにより契約は最初から無効となり遡及効はない","詐欺による取消しには期間制限がない","詐欺による取消しは善意無過失の第三者には対抗できない"],answer:3,explanation:"詐欺による意思表示の取消し（民法96条）は取消し前に取引した善意無過失の第三者には対抗できない。強迫による取消しは善意の第三者にも対抗できる点で異なる。"},
+{id:4,category:"契約の基礎",question:"「代理」において本人が責任を負うための要件として正しいものはどれか。",choices:["代理人が本人のためにすることを示して（顕名）代理権の範囲内で行為すること","代理人が自分の名前で契約すること（誤り）","代理人が書面で委任を受けていること（誤り）","相手方が代理人の存在を知らないこと（誤り）"],answer:0,explanation:"有権代理が成立し本人が責任を負うには①代理権の存在②顕名（本人のためにすることの表示）③代理権の範囲内の行為が必要（民法99条）。顕名がない場合は代理人自身の行為とみなされる。"},
+{id:5,category:"契約の基礎",question:"「無権代理」における相手方の保護として正しいものはどれか。",choices:["無権代理の場合は契約は常に無効（誤り）","本人が追認すれば契約は有効となり相手方は無権代理人に対して責任追及できる場合がある","相手方は常に契約の履行を本人に請求できる（誤り）","無権代理人は何ら責任を負わない（誤り）"],answer:1,explanation:"無権代理の場合、本人が追認すれば契約は有効（民法113条）。本人が追認しない場合、相手方は善意無過失であれば無権代理人に対して履行または損害賠償を請求できる（民法117条）。"},
+{id:6,category:"契約の基礎",question:"「表見代理」が成立する典型的な場合として正しいものはどれか。",choices:["代理権が全く存在しない場合という解釈","代理権授与表示・権限外行為・代理権消滅後のいずれかの事情があり相手方が善意無過失の場合","代理人が詐欺を行った場合という解釈","本人が死亡した場合という規定"],answer:1,explanation:"表見代理（民法109・110・112条）は①代理権授与表示②権限外行為③代理権消滅後の3類型で相手方の正当な信頼を保護する制度。相手方が善意無過失であることが要件。"},
+{id:7,category:"契約の基礎",question:"契約の解除に関して「催告解除」の要件として正しいものはどれか。",choices:["相手方の債務不履行があれば即時に解除できる","相当の期間を定めて催告し期間内に履行がない場合に解除できる","解除には裁判所の許可が必要という解釈","相手方の同意が必要という規定"],answer:1,explanation:"催告解除（民法541条）は相当の期間を定めて履行を催告し期間内に履行または追完がない場合に契約を解除できる。ただし債務不履行が軽微な場合は解除できない。"},
+{id:8,category:"契約の基礎",question:"「同時履行の抗弁権」の説明として正しいものはどれか。",choices:["一方が履行しない限り他方も履行を拒絶できる権利","一方が先に履行しなければならない権利","代金の支払いのみに認められる権利","売買契約にのみ適用される"],answer:0,explanation:"同時履行の抗弁権（民法533条）は双務契約において相手方が債務の履行を提供するまで自己の債務の履行を拒絶できる権利。売買・請負・賃貸借等の双務契約全般に適用される。"},
+{id:9,category:"契約の基礎",question:"「危険負担」（民法の原則）について正しいものはどれか。",choices:["目的物が滅失した場合は常に売主が危険を負担する（誤り）","双務契約で債権者の責めに帰すべき事由がない目的物の滅失は債務者が危険を負担し反対給付義務は","危険負担の規定は強行規定で当事者が変更できない（誤り）","危険負担は不動産売買にのみ適用される（誤り）"],answer:1,explanation:"2020年改正民法の危険負担（民法536条）は原則として債務者主義を採用。当事者双方の責めに帰すべき事由なく債務が履行不能になった場合、債権者は反対給付（代金支払い等）を拒絶できる。"},
+{id:10,category:"契約の基礎",question:"契約の「解除」と「取消し」の違いとして正しいものはどれか。",choices:["解除と取消しは同じ意味である（誤り）","解除は詐欺・錯誤の場合にのみ使用する（誤り）","取消しは将来に向かってのみ効力が生じる（誤り）","解除は有効に成立した契約を当事者の意思で遡及的に消滅させる行為"],answer:3,explanation:"解除は有効に成立した契約を当事者の意思で解消する（民法540条〜）。取消しは詐欺・錯誤・強迫等の瑕疵ある意思表示を遡及的に無効にする（民法120条〜）。両者とも遡及効（遡って効力消滅）がある。"},
+{id:11,category:"契約の基礎",question:"「消滅時効」について民法の原則として正しいものはどれか。",choices:["全ての債権は10年で消滅する（誤り）","時効は当事者が援用しなくても自動的に完成する（誤り）","主観的起算点（権利行使できることを知ったとき）から5年または客観的起算点","時効の完成により権利は消滅する（誤り）"],answer:2,explanation:"2020年改正民法（166条）の債権消滅時効は①主観的起算点から5年②客観的起算点から10年のいずれか早い方。時効は援用（時効の利益を受ける旨の意思表示）により初めて効力が生じる（民法145条）。"},
+{id:12,category:"契約の基礎",question:"「連帯保証」と「通常の保証」の違いとして正しいものはどれか。",choices:["連帯保証人は催告・検索の抗弁権を持つ（この説明は誤り）","通常の保証の方が保証人の責任が重い（この説明は誤り）","連帯保証は書面がなくても成立する（誤り）","連帯保証人は催告・検索の抗弁権を持たず主債務者と同等の責任を負う"],answer:3,explanation:"連帯保証人（民法454条）は①催告の抗弁権（まず主債務者に請求しろ）②検索の抗弁権（主債務者の財産に先に執行しろ）を持たない。主債務者と同等の責任を負うため債権者にとって有利。"},
+{id:13,category:"契約の基礎",question:"「相殺」の説明として正しいものはどれか。",choices:["同種の債権・債務が対立する場合に一方的な意思表示で対当額の債権を消滅させること","一方的な意思表示で相手の債権を消滅させることはできない","相殺は相手方の同意が必要という解釈","不法行為債権は相殺できるという解釈"],answer:0,explanation:"相殺（民法505条）は互いに同種の債権を有する場合に一方的な意思表示で対当額を消滅させること。要件は①対立する債権②同種の目的③双方の弁済期到来④相殺禁止でないこと。不法行為の損害賠償・悪意による不法行為等は相殺禁止。"},
+{id:14,category:"契約の基礎",question:"「留置権」の説明として正しいものはどれか。",choices:["他人の物の占有者がその物に関して生じた債権を弁済されるまで物を留置できる権利","留置権者は留置物を使用・収益できる（誤り）","留置権は登記しなければ第三者に対抗できない（この説明は誤り）","留置権は当事者の合意でのみ発生する（誤り）"],answer:0,explanation:"留置権（民法295条）は他人の物を占有する者がその物に関して生じた債権（修理代金等）が弁済されるまで物を留置できる法定担保物権。登記不要。留置物の使用・収益は原則として債務者の承諾が必要。"},
+{id:15,category:"契約の基礎",question:"「賃貸借契約」において借主（賃借人）の義務として正しいものはどれか。",choices:["賃料支払い・善管注意による使用・目的物の返還・通常損耗以上の損傷の原状回復","賃料の支払い義務と善管注意義務（善良な管理者の注意をもって使用すること）のみ","賃借物の増改築が自由にできる","転貸が自由にできる"],answer:0,explanation:"賃借人の義務は①賃料支払い義務②善管注意義務③賃借物の返還義務④目的外使用禁止⑤転貸禁止（承諾なし）⑥通常損耗を超える損傷の原状回復義務等。通常の使用による経年劣化は賃貸人負担。"},
+{id:16,category:"契約の基礎",question:"「請負契約」における請負人の担保責任（契約不適合責任）について正しいものはどれか。",choices:["請負人は仕事の結果が契約内容に適合しない場合に修補・代金減額・損害賠償・解除の責任を負う","注文者の指示通りに作れば常に免責される（誤り）","担保責任の期間制限はないという解釈","請負人の責任は軽微な不適合でも常に全額賠償（誤り）"],answer:0,explanation:"2020年改正民法で請負の担保責任は売買の契約不適合責任と統一。修補請求・代金減額・損害賠償・解除が認められる（民法559条・562条〜）。注文者の指示による場合は原則免責だが請負人が知って告げなかった場合は責任あり。"},
+{id:17,category:"契約の基礎",question:"「委任契約」と「請負契約」の根本的な違いとして正しいものはどれか。",choices:["委任は有償、請負は無償","委任は仕事の完成を目的とし、請負は事務処理を目的とする","委任は一定の事務処理を目的とし、請負は仕事の完成を目的とする","両者の違いは報酬の額のみ"],answer:2,explanation:"委任（民法643条〜）は法律行為・その他の事務処理を委ねる契約で仕事の完成は目的としない（結果ではなく過程）。請負（民法632条〜）は仕事の完成と報酬の支払いを内容とする有償双務契約。"},
+{id:18,category:"契約の基礎",question:"「売買契約」における「契約不適合責任」について正しいものはどれか。",choices:["引渡し後に発見された不適合は一切責任を問えない（誤り）","引渡し物が種類・品質・数量に関して契約内容に適合しない場合に修補","不適合の告知期間は発見から1年以内（誤り）","隠れた瑕疵がある場合のみ責任を問える（誤り）"],answer:1,explanation:"2020年改正民法の契約不適合責任（民法562条〜）は旧法の瑕疵担保責任を改正。買主は不適合を知ったときから1年以内に売主に通知する必要があり、通知後は修補・代替物引渡・代金減額・損害賠償・解除を請求できる。"},
+{id:19,category:"契約の基礎",question:"「消費貸借契約」の説明として正しいものはどれか。",choices:["借りた物と同種・同等・同量の物を返す契約で金銭の貸借が典型例","借りた物と同じ物を返す契約という解釈","物の使用収益のみを目的とする契約（この説明は誤り）","期限を定めない場合は返還不要（誤り）"],answer:0,explanation:"消費貸借（民法587条）は借りた物を消費してよく返還時は同種・同等・同量のものを返す契約。金銭消費貸借が典型例で「お金を借りて同額を返す」形態。使用貸借は無償で借りた物そのものを返す。"},
+{id:20,category:"契約の基礎",question:"「和解契約」の法的効果として正しいものはどれか。",choices:["当事者が互いに譲歩して紛争を終止する契約で確定的な効力を持ち原則として錯誤を理由に取消しできない","和解後も紛争の蒸し返しは自由にできる（誤り）","和解は口頭でも裁判上と同様の効力がある（誤り）","和解契約は公正証書にしなければ無効（誤り）"],answer:0,explanation:"和解（民法695・696条）は当事者が互いに譲歩して争いを終止する契約。確定的効力（確認的効力）があり和解の目的とした事項については錯誤・真実との相違を理由に取消し・無効を主張できない。"},
+{id:21,category:"会社法",question:"株式会社の「有限責任」の説明として正しいものはどれか。",choices:["株主は出資額を限度とする有限責任しか負わない","株主は会社の債務について無限に責任を負う","取締役が会社債務について個人責任を負う","有限責任は上場会社のみに認められる"],answer:0,explanation:"株式会社の株主は会社の債務について自己の出資額を限度とする有限責任しか負わない（会社法104条）。会社が倒産しても株主は出資額を超えて責任を負わない。これが株式会社制度の重要な特徴。"},
+{id:22,category:"会社法",question:"株主総会の「普通決議」の要件として正しいものはどれか。",choices:["議決権総数の3分の2以上の賛成（誤り）","全株主の一致という規定","定足数（議決権の過半数を有する株主の出席）と出席議決権の過半数の賛成（定款で定足数排除可能）","議決権総数の過半数の賛成という解釈"],answer:2,explanation:"普通決議（会社法309条1項）は出席した議決権の過半数の賛成が必要。定足数は原則として議決権の過半数だが定款で排除可能。役員選任・計算書類承認等の通常の決議事項に使用する。"},
+{id:23,category:"会社法",question:"取締役の「善管注意義務」と「忠実義務」について正しいものはどれか。",choices:["善管注意義務は取締役に適用されない（誤り）","両義務とも株主への義務である（誤り）","忠実義務は代表取締役のみに課される（誤り）","取締役は会社に対して善良な管理者の注意義務と会社のために忠実に職務を執行する義務を負う"],answer:3,explanation:"取締役は会社に対して①善管注意義務（民法644条・会社法330条：善良な管理者の注意をもって業務執行する義務）②忠実義務（会社法355条：法令・定款・株主総会決議に従い会社のために忠実に職務執行する義務）を負う。"},
+{id:24,category:"会社法",question:"「競業避止義務」（会社法上の取締役の義務）の説明として正しいものはどれか。",choices:["取締役が自己または第三者のために会社の事業の部類に属する取引を行う際には株主総会","取締役は競合他社に勤めてはいけない（誤り）","競業は役員退任後も永久に禁止される（誤り）","競業避止義務は株主にも課される（誤り）"],answer:0,explanation:"取締役の競業避止義務（会社法356条・365条）は取締役が自己または第三者のために会社の事業に属する取引（競業取引）をするには取締役会（取締役会設置会社）の承認が必要で承認なき競業は任務懈怠となる。"},
+{id:25,category:"会社法",question:"「利益相反取引」（会社法上）において取締役が守るべき手続きとして正しいものはどれか。",choices:["利益相反取引は常に禁止という解釈","自己または第三者と会社との間の取引には取締役会（または株主総会）の承認と取引後の報告が必要","取締役の配偶者との取引は承認不要（誤り）","利益相反は代表取締役のみに適用（誤り）"],answer:1,explanation:"利益相反取引（会社法356条・365条）は直接取引と間接取引の両方について取締役会の承認と取引後の報告が義務付けられている。違反した場合は取引の無効・損害賠償責任が生じうる。"},
+{id:26,category:"会社法",question:"株式会社における「監査役」の主な権限として正しいものはどれか。",choices:["取締役と同様に業務執行権限を持つ（この説明は誤り）","株主総会の議長を務めるという解釈","取締役の業務執行の妥当性・適法性を監査し計算書類の監査を行う","代表取締役を選任するという解釈"],answer:2,explanation:"監査役（会社法381条〜）は取締役の職務執行の適法性・妥当性を監査し計算書類・事業報告等の監査を行う機関。業務執行権限は持たず独立して業務監査・会計監査を行う。取締役会への出席・意見陳述権を持つ。"},
+{id:27,category:"会社法",question:"「株主代表訴訟」の説明として正しいものはどれか。",choices:["株主が会社に代わって取締役等の責任を追及する訴訟で、株主は訴訟によって個人的な利益を得ない","株主が会社の代わりに第三者を訴える訴訟（誤り）","株主が株主総会の決議無効を求める訴訟（誤り）","複数の株主が共同して会社を訴える訴訟（誤り）"],answer:0,explanation:"株主代表訴訟（会社法847条）は株主が会社の取締役・監査役等の会社に対する責任を追及するために会社に代わって提起する訴訟。原告株主は勝訴しても個人的金銭利益を得ない（賠償は会社に帰属）。"},
+{id:28,category:"会社法",question:"「種類株式」の説明として正しいものはどれか。",choices:["剰余金の配当・議決権等について異なる内容を定めた複数種類の株式","全株主に同一の権利が与えられる株式（この説明は誤り）","外国人株主向けの株式という解釈","役員専用の株式という規定"],answer:0,explanation:"種類株式（会社法108条）は配当優先株・議決権制限株・拒否権付株（黄金株）・取得条項付株等、内容の異なる複数種類の株式。ベンチャー企業のファイナンスやM&A防衛策として活用される。"},
+{id:29,category:"会社法",question:"「合同会社（LLC）」の特徴として正しいものはどれか。",choices:["株式会社と同様に社員は有限責任（この説明は誤り）","上場が可能な会社形態という解釈","社員全員が無限責任を負うという解釈","社員全員が有限責任を負い内部自治の自由度が高く設立が容易"],answer:3,explanation:"合同会社（会社法575条〜）は全社員が有限責任を負う会社形態。定款自治の自由度が高く設立費用が安く利益配分の自由度も高い。GoogleやApple等の日本法人が採用。上場は不可。"},
+{id:30,category:"会社法",question:"株式会社の「定款」の説明として正しいものはどれか。",choices:["定款は会社の根本規則で目的・商号・本店所在地等の絶対的記載事項の記載が必須","定款は設立後に変更できないという解釈","定款の作成には公証人の認証は不要（すべての会社形態で）","定款は株主のみが閲覧できるという解釈"],answer:0,explanation:"定款（会社法26条〜）は会社の根本規則で①目的②商号③本店所在地④設立に際して出資される財産の価額⑤発起人の氏名等は絶対的記載事項（必須）。株式会社設立時の定款は公証人の認証が必要（電子定款可）。"},
+{id:31,category:"会社法",question:"「取締役会」の決議要件として正しいものはどれか。",choices:["議決権の3分の2以上の賛成という解釈","全取締役の一致という規定","取締役の過半数が出席し出席取締役の過半数が賛成（特別の定めがある場合を除く）","株主総会の承認という規定"],answer:2,explanation:"取締役会決議（会社法369条）は取締役の過半数が出席し出席者の過半数の賛成が必要（定款でより厳格な要件を定めることも可能）。取締役会を省略したみなし決議（書面決議）も定款規定があれば可能。"},
+{id:32,category:"会社法",question:"「新株発行」における既存株主の保護として正しいものはどれか。",choices:["新株発行は常に株主総会の特別決議が必要","新株発行には全株主の同意が必要","新株発行後に既存株主の持株比率が下がることは違法","著しく不公正な方法による新株発行は既存株主が差止請求できる"],answer:3,explanation:"新株発行は原則取締役会決議で可能だが著しく不公正な方法による発行（主要目的が支配権維持等）は既存株主の差止請求（会社法210条）が認められる。第三者に有利な価額での発行は株主への損害賠償責任が生じる可能性がある。"},
+{id:33,category:"会社法",question:"「合併」における「吸収合併」の説明として正しいものはどれか。",choices:["合併当事会社が全て解散して新会社を設立する","合併に株主総会の承認は不要という解釈","一方の会社が存続し他方が解散してその権利義務を存続会社が包括承継する","少数株主への対価支払いは不要（誤り）"],answer:2,explanation:"吸収合併（会社法749条〜）は存続会社が消滅会社の権利義務を包括承継し消滅会社は清算なしに消滅する。原則として両社の株主総会特別決議が必要（簡易合併・略式合併の例外あり）。"},
+{id:34,category:"会社法",question:"「会社分割」と「事業譲渡」の違いとして正しいものはどれか。",choices:["両者とも個別の契約承継手続きが必要（誤り）","会社分割では労働者の同意が常に必要（誤り）","事業譲渡には株主総会の承認が一切不要（誤り）","会社分割は権利義務を包括承継（個別手続き不要）し事業譲渡は個別の移転手続きが必要"],answer:3,explanation:"会社分割（吸収分割・新設分割）は事業に係る権利義務が包括的に承継され契約・許認可等の個別移転手続きが不要（ただし一定の場合は異議申述手続き等が必要）。事業譲渡は個々の資産・契約を個別に移転する必要がある。"},
+{id:35,category:"会社法",question:"株式会社の「計算書類」として会社法上作成が義務付けられているものはどれか。",choices:["貸借対照表・損益計算書・株主資本等変動計算書・個別注記表（大会社は会計監査人の監査が必要）","損益計算書のみという規定","キャッシュフロー計算書は全会社に必須（誤り）","有価証券報告書という規定"],answer:0,explanation:"会社法（435条）は株式会社に①貸借対照表②損益計算書③株主資本等変動計算書④個別注記表の作成を義務付ける。大会社は会計監査人の監査が必要。キャッシュフロー計算書は上場会社（金商法）に必要。"},
+{id:36,category:"会社法",question:"「株主の権利」のうち「共益権」の説明として正しいものはどれか。",choices:["配当を受ける権利という規定","残余財産の分配を受ける権利という解釈","議決権・代表訴訟提起権など会社の経営に参加・監督する権利","株式を自由に譲渡する権利という解釈"],answer:2,explanation:"株主権は①自益権（配当受領権・残余財産分配権等、株主自身の利益のための権利）と②共益権（議決権・株主提案権・代表訴訟提起権等、会社の管理・監督に参加する権利）に分類される。"},
+{id:37,category:"会社法",question:"「取締役の任期」に関する会社法の原則として正しいものはどれか。",choices:["取締役の任期は10年という解釈","取締役の任期は定款で自由に定められ制限はない","取締役の任期は2年（公開会社）で非公開会社は定款で10年まで延長可能","取締役は任期満了まで解任できない（誤り）"],answer:2,explanation:"取締役の任期（会社法332条）は原則2年（公開会社）。非公開会社（委員会等設置会社でないもの）は定款で10年まで延長可能。任期満了・辞任以外に株主総会決議（普通決議）でいつでも解任できる。"},
+{id:38,category:"会社法",question:"「会社の解散・清算」において清算人の職務として正しいものはどれか。",choices:["解散後も新たな事業を継続できる（この説明は誤り）","残余財産の換価・債務の弁済・残余財産の株主への分配を行う","清算人は株主が選任するという解釈","清算中は取締役が従来通り業務執行する"],answer:1,explanation:"会社解散後（会社法471条〜）の清算手続きでは清算人が①現務の結了②債権の取立て・弁済③残余財産の株主への分配を行う。清算結了まで会社は存続するが清算目的の範囲内でのみ行為できる。"},
+{id:39,category:"会社法",question:"「大会社」の定義として会社法上正しいものはどれか。",choices:["上場している株式会社という解釈","売上高100億円以上の会社という解釈","従業員数1000人以上の会社（誤り）","最終事業年度の貸借対照表上の資本金5億円以上または負債200億円以上の株式会社"],answer:3,explanation:"大会社（会社法2条6号）は最終事業年度の貸借対照表上で資本金5億円以上または負債総額200億円以上の株式会社。大会社は会計監査人設置が義務付けられ内部統制報告書等の要件も厳しい。"},
+{id:40,category:"会社法",question:"「指名委員会等設置会社」の特徴として正しいものはどれか。",choices:["監査役を設置する義務があるという解釈","取締役会が業務執行の全てを行う（誤り）","指名・報酬・監査の3委員会を設置し業務執行は執行役が行い取締役は監督に専念する機関設計","株主総会が全ての業務を監督する（誤り）"],answer:2,explanation:"指名委員会等設置会社（会社法2条12号・326条等）は指名・報酬・監査の3委員会（各委員会は取締役3名以上・過半数が社外取締役）を設置。業務執行は執行役が行い取締役会は監督機能に特化する経営監督分離型の機関設計。"},
+{id:41,category:"知的財産法",question:"「著作権」が発生するタイミングとして正しいものはどれか。",choices:["文化庁への登録時","創作と同時に自動的に発生し登録・申請は不要","特許庁への出願後に審査を経て登録された時","公表・発売された時"],answer:1,explanation:"著作権は創作と同時に自動的に発生する（無方式主義）。登録・届出・©マーク表示等は一切不要。著作権法10条に保護対象の著作物が列挙され、プログラム・データベース等も含む。"},
+{id:42,category:"知的財産法",question:"「特許権」の保護期間として正しいものはどれか。",choices:["創作から50年","登録日から10年","出願日から20年","公告日から15年"],answer:2,explanation:"特許権の存続期間（特許法67条）は出願日から20年（医薬品・農薬は最長5年の延長制度あり）。存続期間満了後は誰でも自由に発明を実施できる。"},
+{id:43,category:"知的財産法",question:"「商標権」の説明として正しいものはどれか。",choices:["商標は登録なしに独占的に使用できる（誤り）","特許庁に登録した商標について独占的使用権を得る権利で10年ごとの更新により永続的に保護できる","商標権の保護期間は登録から20年（誤り）","文字商標のみが登録できるという解釈"],answer:1,explanation:"商標権（商標法18条〜）は特許庁に登録した商標について指定商品・役務について独占的使用権を得る。存続期間は登録日から10年だが更新登録（何度でも可能）により永続的保護が可能な点が他の知財権と大きく異なる。"},
+{id:44,category:"知的財産法",question:"「実用新案権」と「特許権」の違いとして正しいものはどれか。",choices:["実用新案は物品の形状・構造・組合せを保護し無審査登録制度","実用新案は方法の発明を保護する（誤り）","実用新案の方が特許より保護期間が長い（誤り）","実用新案は登録なしに権利が発生する（誤り）"],answer:0,explanation:"実用新案権（実用新案法）は物品の形状・構造・組合せに関する考案を保護。無審査で登録（登録後の実体審査なし）されるため特許より迅速だが保護期間は出願から10年と短い。特許は方法の発明も保護する。"},
+{id:45,category:"知的財産法",question:"「著作権の侵害」において「引用」が認められる要件として正しいものはどれか。",choices:["公正な慣行に合致し報道・批評・研究等の目的上正当な範囲内の引用は著作権侵害にならない","どんな引用でも著作権侵害にならない（誤り）","引用は営利目的でも自由にできる（誤り）","引用部分が全体の50%未満なら問題ない（誤り）"],answer:0,explanation:"適法な引用（著作権法32条）の要件は①公表された著作物②引用の目的上正当な範囲③引用部分の明示（出所の表示）④主従関係（引用は従・自己著作物が主）⑤改変しないこと等。量の問題だけでなく質的な主従関係が重要。"},
+{id:46,category:"知的財産法",question:"「不正競争防止法」における「営業秘密」の保護要件として正しいものはどれか。",choices:["全ての社内情報は営業秘密として保護される（誤り）","個人情報のみが保護対象という解釈","登録されなければ保護されない（誤り）","秘密管理性・有用性・非公知性の3要件を全て満たす情報が営業秘密として保護される"],answer:3,explanation:"不正競争防止法（2条6項）の営業秘密は①秘密管理性（秘密として管理されている）②有用性（事業活動に有用な技術・営業情報）③非公知性（公然と知られていない）の3要件を全て満たす必要がある。"},
+{id:47,category:"知的財産法",question:"「著作者人格権」の説明として正しいものはどれか。",choices:["著作権と一体として譲渡できる（誤り）","法人は著作者人格権を持てない（誤り）","著作者が死亡すると消滅するという解釈","著作者の人格的利益を保護する権利で公表権・氏名表示権・同一性保持権が含まれ譲渡・相続できない"],answer:3,explanation:"著作者人格権（著作権法18〜20条）は①公表権②氏名表示権③同一性保持権の3つ。一身専属権として譲渡・相続ができない（著作権＝財産権は譲渡可能）。著作者の死後も遺族等が一定の保護を受けられる。"},
+{id:48,category:"知的財産法",question:"「職務発明」における特許を受ける権利の帰属について2015年改正後の特許法の原則として正しいものはどれか。",choices:["職務発明の権利は常に発明者（従業員）に帰属する（誤り）","職務発明の概念は廃止されたという解釈","使用者は何も補償する必要がない（誤り）","使用者等が契約・勤務規則等であらかじめ定めた場合は特許を受ける権利を使用者"],answer:3,explanation:"2015年特許法改正で使用者等は契約・勤務規則等に事前規定することで職務発明の特許を受ける権利を原始的に自己に帰属させることができる。その場合も従業員に相当の金銭的利益を付与する義務がある。"},
+{id:49,category:"知的財産法",question:"「著作権の存続期間」について現行法（2018年改正後）の原則として正しいものはどれか。",choices:["著作者の生存中のみ","著作者の死後50年","著作者の死後70年","創作から100年"],answer:2,explanation:"2018年の著作権法改正により個人の著作物の著作権存続期間は著作者の死後70年に延長された（旧50年から変更）。法人著作物・映画著作物は公表後70年（旧50年・60年）。"},
+{id:50,category:"知的財産法",question:"「意匠権」の保護対象として正しいものはどれか。",choices:["商品・包装等の外観（形状・模様・色彩等の視覚的デザイン）","技術的アイデアという規定","商標・ブランド名という規定","コンピュータプログラムの機能（誤り）"],answer:0,explanation:"意匠権（意匠法）は物品・建築物・画像のデザイン（外観の美観）を保護。技術的思想は特許・実用新案、商業的識別標識は商標が保護する。存続期間は登録日から25年（2020年改正で延長）。"},
+{id:51,category:"労働法",question:"「労働契約」の成立に必要な要件として正しいものはどれか。",choices:["書面による労働契約書の締結が必須（誤り）","公証人による認証が必要という解釈","公共職業安定所への届出が必要（誤り）","労使合意により成立し書面は必須ではないが使用者は労働条件の明示義務を負う"],answer:3,explanation:"労働契約は合意で成立し書面は必須でない（労働契約法6条）。ただし使用者は労働条件（賃金・労働時間等）を書面等で明示する義務がある（労働基準法15条）。明示義務違反は罰則の対象。"},
+{id:52,category:"労働法",question:"「解雇権濫用法理」の説明として正しいものはどれか。",choices:["使用者は自由にいつでも労働者を解雇できる（誤り）","解雇は客観的に合理的な理由を欠きまたは社会通念上相当でない場合は権利の濫用として無効","予告期間さえ守れば理由を問わず解雇できる（誤り）","解雇は労働組合の同意があれば常に有効（誤り）"],answer:1,explanation:"解雇権濫用法理（労働契約法16条）は解雇が客観的に合理的な理由を欠きまたは社会通念上相当と認められない場合は無効とする判例法理を明文化。「整理解雇の4要件」等の判断基準が確立している。"},
+{id:53,category:"労働法",question:"「時間外労働（残業）」を命じるために必要なものとして正しいものはどれか。",choices:["三六協定（労使協定）の締結・届出と就業規則への記載が必要","使用者の一方的な業務命令のみで命じられる","労働者全員の同意という規定","労働基準監督署の許可という解釈"],answer:0,explanation:"時間外労働（労働基準法32条・36条）は①三六協定（36協定：労使書面協定の締結・労働基準監督署への届出）②就業規則への時間外労働規定の記載の両方が必要。三六協定には時間外労働の上限（月45時間・年360時間等）の規制がある。"},
+{id:54,category:"労働法",question:"「不当労働行為」（労働組合法）に該当するものとして正しいものはどれか。",choices:["労働者が組合を結成したことを理由に解雇・不利益取扱いをすること","使用者が団体交渉の申入れに応じること","労働者が就業規則に従うことという解釈","使用者が賃上げを拒否すること（誤り）"],answer:0,explanation:"不当労働行為（労働組合法7条）は①組合加入・正当な組合活動を理由とした不利益取扱い②黄犬契約③団体交渉の正当な理由のない拒否④支配介入・経費援助等。使用者が行うと労働委員会に救済申立てができる。"},
+{id:55,category:"労働法",question:"「労働基準法」における「年次有給休暇」について正しいものはどれか。",choices:["有給休暇は使用者が必要と認めた場合のみ付与される","6か月以上継続勤務し全労働日の8割以上出勤した労働者に10日（初年度）の年次有給休暇を付与する義務がある","有給休暇の取得理由を使用者に申告する義務がある","年10日以上の有給休暇を持つ労働者に年5日の取得が義務付けられている（2019年〜）"],answer:3,explanation:"2019年労働基準法改正で年10日以上の有給休暇が付与される労働者には使用者が年5日を確実に取得させる義務が課された（39条7項）。時季指定義務。従来は取得を促すだけだったが義務化された点が重要。"},
+{id:56,category:"労働法",question:"「派遣労働」において派遣先が守るべき義務として正しいものはどれか。",choices:["派遣労働者と直接の雇用関係を持つ（誤り）","派遣期間制限（同一業務への派遣は原則3年）を遵守し期間超過時は直接雇用の申込義務が生じる","派遣労働者の賃金は派遣先が直接支払う（誤り）","派遣先は派遣会社との契約なしに派遣を受け入れられる（この説明は誤り）"],answer:1,explanation:"労働者派遣法の派遣期間制限は同一の派遣先事業所への派遣は原則3年。3年超の場合は派遣先は派遣労働者への直接雇用の申込みが義務付けられる（労働者派遣法40条の4・40条の6）。"},
+{id:57,category:"労働法",question:"「就業規則」の法的効力について正しいものはどれか。",choices:["就業規則で定めた基準に達しない労働条件は無効となり就業規則の基準が適用される","就業規則は使用者が一方的に作成し労働者を拘束できる","就業規則は個々の労働契約に優先しない（誤り）","就業規則の作成には常に労働者の同意が必要（この説明は誤り）"],answer:0,explanation:"就業規則の最低基準効（労働契約法12条）は就業規則の基準に達しない労働契約（労働者に不利な部分）は無効となり就業規則の基準が適用される。ただし就業規則は法令・労働協約に反することはできない（労基法92条）。"},
+{id:58,category:"労働法",question:"「ハラスメント」のうち「パワーハラスメント（パワハラ）」の定義として正しいものはどれか。",choices:["優越的な関係を背景に業務上必要かつ相当な範囲を超えた言動で就業環境を害すること","性的な言動で就業環境を害すること（誤り）","妊娠・出産等を理由とした不利益取扱い（誤り）","採用時の差別的取扱いという解釈"],answer:0,explanation:"パワーハラスメント（労働施策総合推進法30条の2）は①優越的な関係を背景②業務上必要かつ相当な範囲を超えた言動③就業環境を害する（または労働条件に不利益）の3要素を満たす行為。2020年から大企業に防止措置義務。"},
+{id:59,category:"労働法",question:"「最低賃金法」について正しいものはどれか。",choices:["最低賃金は全国一律に設定される（誤り）","最低賃金に違反しても罰則はない（誤り）","最低賃金は使用者と労働者の合意で下回ることができる（誤り）","地域別最低賃金と特定最低賃金があり、これを下回る賃金での労使合意は無効となり最低賃金額が適"],answer:3,explanation:"最低賃金（最低賃金法）は地域別（都道府県ごと）と産業別（特定最低賃金）がある。最低賃金を下回る賃金を定めた労使合意は無効で最低賃金額が適用される（同法4条）。違反は50万円以下の罰金。"},
+{id:60,category:"労働法",question:"「育児・介護休業法」における育児休業の基本的な権利として正しいものはどれか。",choices:["育児休業は女性労働者のみに認められる（誤り）","原則として子が1歳（最長2歳）になるまで育児休業を取得でき男女ともに認められる","育児休業取得者の賃金は全額支払われる（誤り）","育児休業を取得するには使用者の許可が必要（誤り）"],answer:1,explanation:"育児・介護休業法は男女労働者ともに原則として子が1歳になるまでの育児休業取得権利を保障（最長2歳まで延長可）。2022年の法改正で産後パパ育休（出生時育児休業）の創設・分割取得等が可能になった。"},
+{id:61,category:"民法（不法行為・物権）",question:"「不法行為」が成立するための要件として正しいものはどれか。",choices:["故意または過失・権利侵害・損害の発生・因果関係が必要","故意のみが要件で過失は不要","損害の発生のみで責任が生じる","契約関係がある場合のみ不法行為責任が生じる"],answer:0,explanation:"一般不法行為（民法709条）の要件は①故意または過失②権利・法律上保護される利益の侵害③損害の発生④行為と損害の因果関係⑤責任能力。これら全てが必要で立証責任は原則として被害者側にある。"},
+{id:62,category:"民法（不法行為・物権）",question:"「使用者責任」（民法715条）の説明として正しいものはどれか。",choices:["使用者は被用者の行為について常に無条件で責任を負う（誤り）","使用者は刑事責任のみを負うという解釈","被用者が事業の執行について第三者に加えた損害については使用者が責任を負う","使用者責任は下請け業者には適用されない（誤り）"],answer:2,explanation:"使用者責任（民法715条）は被用者が事業の執行につき第三者に損害を与えた場合使用者が賠償責任を負う（但書：選任・監督に相当の注意をしても損害が生じる場合は免責）。但書による免責は実務上認められにくい。"},
+{id:63,category:"民法（不法行為・物権）",question:"「所有権」の性質として正しいものはどれか。",choices:["所有権は20年で消滅するという解釈","所有権の行使には国の許可が必要（誤り）","法令の範囲内で自由に物を使用・収益・処分できる全面的支配権で物権の中で最も完全な権利","所有権は土地に対してのみ認められる（誤り）"],answer:2,explanation:"所有権（民法206条）は物を全面的・一般的に支配できる物権で使用・収益・処分の3権能を含む最も完全な物権。ただし法令による制限（建築基準法・土地利用規制等）に服する。消滅時効の適用はない（取得時効の対象にはなる）。"},
+{id:64,category:"民法（不法行為・物権）",question:"「地上権」の説明として正しいものはどれか。",choices:["他人の土地において工作物・竹木を所有するために土地を使用できる物権で登記すれば第三者にも対","地主の許可なしに地上権を第三者に譲渡できない（誤り）","地上権は10年で消滅するという解釈","地上権は土地の賃借権と全く同じ権利（誤り）"],answer:0,explanation:"地上権（民法265条）は他人の土地に工作物（建物等）・竹木を所有するために土地を使用できる物権。賃借権と異なり①地主の承諾なく譲渡・転貸可能②登記すれば土地所有権が移転しても地上権を主張できる（対抗力）。"},
+{id:65,category:"民法（不法行為・物権）",question:"「抵当権」の設定について正しいものはどれか。",choices:["抵当権の設定には目的物の占有移転が必要（誤り）","抵当権設定者は目的物を引き続き使用できるまま担保として提供でき登記により第三者対抗力を得る","抵当権の実行には裁判所の判決が必要（誤り）","抵当権は動産にのみ設定できる（誤り）"],answer:1,explanation:"抵当権（民法369条）は占有を移転せず不動産等に設定する担保物権。設定者は引き続き目的物を使用・収益しながら担保提供できる。登記（不動産登記）により第三者に対抗できる。競売による実行が一般的。"},
+{id:66,category:"民法（不法行為・物権）",question:"「過失相殺」の説明として正しいものはどれか。",choices:["被害者にも過失がある場合に裁判所が損害賠償額を減額または免除できる制度","被害者に過失があれば加害者は一切責任を負わない","過失相殺は加害者が主張しなければ適用されない","過失相殺は刑事裁判にのみ適用される（誤り）"],answer:0,explanation:"過失相殺（民法418条・722条2項）は被害者にも過失がある場合に裁判所が損害額から被害者過失分を減額できる制度。職権による考慮が可能（当事者の主張不要）。全額免除も可能な場合がある。"},
+{id:67,category:"民法（不法行為・物権）",question:"「動産の即時取得」（善意取得）の成立要件として正しいものはどれか。",choices:["動産を占有する者がいれば常に即時取得が成立する（この説明は誤り）","即時取得は相手方が盗品でも成立する（誤り）","不動産にも即時取得が成立する（誤り）","取引行為による動産の占有取得・平穏・公然・善意無過失の占有取得で即時取得が成立する"],answer:3,explanation:"即時取得（民法192条）の要件は①取引行為による取得②平穏・公然・善意無過失の占有取得。成立すると前主が無権利者でも所有権を取得できる。不動産は登記制度があるため対象外。盗品・遺失物は2年間の取戻権あり（193条）。"},
+{id:68,category:"民法（不法行為・物権）",question:"「不当利得」の説明として正しいものはどれか。",choices:["不当利得は常に不法行為の一種である（誤り）","不当利得の返還は現物返還のみ（誤り）","不当利得は故意がある場合のみ成立する（誤り）","法律上の原因なく他人の財産から利益を受け損失を与えた場合に返還義務が生じる"],answer:3,explanation:"不当利得（民法703条・704条）は法律上の原因なく他人の損失のもとに利益を得た場合に返還義務が生じる制度。契約無効・取消後の給付済み財産の返還等が典型例。悪意の受益者は利息の付加・損害賠償義務あり。"},
+{id:69,category:"民法（不法行為・物権）",question:"「物権と債権の違い」として正しいものはどれか。",choices:["物権は特定の人に対して主張できる権利で債権は全ての人に主張できる","不動産には物権のみが成立する（誤り）","両者の違いは権利の大小のみという解釈","物権は全ての人に対して主張できる絶対権（対世権）で債権は特定の人に対する相対権（対人権）"],answer:3,explanation:"物権は全ての人に対して主張できる絶対権（対世権）で物を直接支配する権利（所有権・抵当権等）。債権は特定の債務者に対してのみ特定の行為を請求できる相対権（対人権）。物権は優先的効力・追及効を持つ点でも異なる。"},
+{id:70,category:"民法（不法行為・物権）",question:"「根抵当権」と通常の「抵当権」の違いとして正しいものはどれか。",choices:["根抵当権は一つの債権のみを担保する（誤り）","根抵当権の方が担保する範囲が狭い（誤り）","根抵当権は一定の範囲に属する不特定の債権を極度額の範囲内で継続的に担保する","根抵当権は登記できないという解釈"],answer:2,explanation:"根抵当権（民法398条の2〜）は一定の範囲に属する不特定多数の債権（継続的取引から生じる債権等）を極度額の範囲内でまとめて担保する。個々の債権の発生・消滅にかかわらず極度額まで担保し続ける点で通常の抵当権と異なる。"},
+{id:71,category:"商法・手形法",question:"「手形」の法的性質として正しいものはどれか。",choices:["手形は口頭でも振り出せるという解釈","手形は要式証券（法定の記載事項が必要）で文言証券（証券の記載文言のみで権利が決まる）という","手形権利の行使に原因関係の証明が必要（誤り）","手形は不動産に関する権利を表す証券（誤り）"],answer:1,explanation:"手形（約束手形・為替手形）は①要式証券（手形法所定の記載事項が必要）②文言証券（証券記載の文言のみで権利内容が決まる）③有価証券（証券と権利が結合）④流通証券（裏書で権利移転可能）等の特徴がある。"},
+{id:72,category:"商法・手形法",question:"「約束手形」の「不渡り」の説明として正しいものはどれか。",choices:["手形が2回に渡って支払拒絶されると銀行取引停止処分（事実上の倒産）となる","手形の支払いが一度でも拒絶されると不渡りとなりその後は手形を振り出せない","不渡りは刑事罰の対象","不渡りになった手形は価値がゼロになる"],answer:0,explanation:"6か月以内に同一の交換所で2回不渡りを出すと銀行取引停止処分（2年間の当座預金・貸出禁止）となり事実上の倒産状態になる（全国銀行協会規則）。1回目の不渡りだけでは取引停止にはならない。"},
+{id:73,category:"商法・手形法",question:"「裏書」の法的効果として正しいものはどれか。",choices:["裏書は手形の権利を消滅させる（誤り）","裏書は電話でもできるという解釈","裏書により手形上の権利が被裏書人に移転し担保的効力（裏書人の遡及義務）も生じる","裏書は手形の発行人のみができる（誤り）"],answer:2,explanation:"手形の裏書（手形法11条〜）の効果は①権利移転効（手形権利が被裏書人に移転）②担保的効力（裏書人は満期に支払われない場合に遡及義務を負う）③資格授与的効力（所持人の形式的資格を付与）。"},
+{id:74,category:"商法・手形法",question:"「小切手」の特徴として約束手形と異なる点として正しいものはどれか。",choices:["小切手は支払期日を記載できる（誤り）","小切手は一覧払い（呈示即時支払い）が原則で支払期日の記載があっても無効","小切手は振出人が支払義務を直接負う（誤り）","小切手は金融機関への振出が必須ではない（この説明は誤り）"],answer:1,explanation:"小切手（小切手法）は一覧払い（提示と同時に支払い）が原則で将来日付（先日付）を記載しても呈示されれば即時支払いが求められる。約束手形と異なり支払期日の概念がない点が大きな違い。"},
+{id:75,category:"商法・手形法",question:"「商行為」の特則として「商事留置権」の説明として正しいものはどれか。",choices:["商事留置権は民事留置権と全く同じ要件（誤り）","商事留置権は不動産にのみ成立する（誤り）","商事留置権は登記が必要という解釈","商人間の商行為によって生じた債権であれば目的物との牽連関係なく留置できる"],answer:3,explanation:"商事留置権（商法521条）は商人間の商行為によって生じた債権であれば占有している相手方の所有物を債権の弁済まで留置できる。民事留置権と異なり目的物と債権の牽連関係（けんれん関係）が不要。"},
+{id:76,category:"商法・手形法",question:"「商号」（会社法・商法）の使用に関して正しいものはどれか。",choices:["他人が既に登記した商号と同一の商号を同一市区町村内で使用できる（誤り）","他人が登記した商号と同一の商号を同一市区町村内で同一業種に使用することは禁止されている","商号は登記しなければ保護されない（誤り）","商号はどのような文字でも自由に使用できる（誤り）"],answer:1,explanation:"商号の専用権（商法12条）は不正の目的で他人の商号を使用することを禁止する。同一の市区町村内で同一業種に同一商号を登記することは会社法上禁止（旧規定・現在は同一住所での同一商号禁止に変更）。商号登録がなくても不正競争防止法上保護されうる。"},
+{id:77,category:"商法・手形法",question:"「商人の帳簿類の保存義務」について商法上の原則として正しいものはどれか。",choices:["商業帳簿・重要書類は10年間保存する義務がある（商法19条）","帳簿類は1年間保存すればよい（誤り）","電子的記録での保存は認められない（この説明は誤り）","保存義務に違反しても法的責任はない（この説明は誤り）"],answer:0,explanation:"商法19条は商業帳簿（仕訳帳・総勘定元帳等）と重要書類を10年間保存する義務を商人に課す。電子的方法による保存も認められる。保存義務違反は訴訟における証明において不利になる可能性がある。"},
+{id:78,category:"商法・手形法",question:"「匿名組合」の説明として正しいものはどれか。",choices:["会社の一種で法人格を持つという解釈","営業者が事業を行い出資者（匿名組合員）が出資し利益の分配を受ける契約関係で出資者は対外的に","匿名組合員は無限責任を負うという解釈","匿名組合には必ず代表者が必要（誤り）"],answer:1,explanation:"匿名組合（商法535条〜）は匿名組合員（出資者）が営業者に出資し営業から生じる利益の分配を受ける契約。匿名組合員は出資額を限度に責任を負い対外的には営業者が責任を負う。法人格はなく投資ファンドの組成に広く使用される。"},
+{id:79,category:"商法・手形法",question:"「競業禁止義務」（商法上の代理商の義務）の説明として正しいものはどれか。",choices:["代理商は本人の許可なく同種の事業を営むことが禁止されている","代理商は競業に制限がないという解釈","競業禁止義務は代理商以外には適用されない","代理商の競業禁止は退任後5年間続く"],answer:0,explanation:"代理商（商法27条）は本人の許可なく①自己または第三者のために本人の事業の部類に属する取引をすること②本人の事業と同種の事業を目的とする会社の役員となることが禁止される（競業禁止義務）。"},
+{id:80,category:"商法・手形法",question:"「仲立人」（商法上）の説明として正しいものはどれか。",choices:["仲立人は取引の当事者として責任を負う（誤り）","他人間の商行為の媒介を業とする商人で自己は取引当事者にならず媒介の対価として報酬を得る","仲立人は無償で媒介するという解釈","仲立人は代理権を持つという解釈"],answer:1,explanation:"仲立人（商法543条〜）は他人間の商行為成立のために媒介することを業とする商人。仲介した取引の当事者にはならず（代理権もなく自己は取引しない）成功報酬（仲立料）を取引当事者双方から受け取る。"},
+{id:81,category:"民事訴訟法・倒産法",question:"「民事訴訟」における「立証責任（挙証責任）」の原則として正しいものはどれか。",choices:["被告が全ての事実を証明する責任を負う（この説明は誤り）","権利の発生を主張する者（原告）はその発生要件事実を証明する責任を負う","証明が不十分でも裁判所が真相を調べてくれる","立証責任は裁判官が自由に分配できる（誤り）"],answer:1,explanation:"民事訴訟では主張する側が証明責任を負う（法律要件分類説）。原告が権利根拠規定の要件事実を証明し被告が権利障害・消滅・阻止規定の事実を証明する。証明できない場合は証明責任を負う側が不利な判決を受ける。"},
+{id:82,category:"民事訴訟法・倒産法",question:"「強制執行」の申立てに必要なものとして正しいものはどれか。",choices:["執行力ある債務名義（確定判決・確定給付判決・執行証書等）が必要","警察への届出のみで足りるという解釈","相手方の同意という規定","金融機関への申請という規定"],answer:0,explanation:"強制執行（民事執行法22条）には執行力ある債務名義が必要。主な債務名義は①確定した給付判決②仮執行宣言付き判決③執行証書（公正証書）④確定した支払督促等。債務名義なき自力救済は原則禁止。"},
+{id:83,category:"民事訴訟法・倒産法",question:"「仮差押え」の目的として正しいものはどれか。",choices:["本案判決前に被告の財産を処分できなくする保全措置","確定判決を得た後に財産を差し押さえる手続き","相手方の行為を禁止する仮の処分","証拠を保全する手続き"],answer:0,explanation:"仮差押え（民事保全法20条）は金銭債権の執行保全のために本案訴訟の判決確定前に債務者の財産（動産・不動産・債権等）を処分できなくする保全処分。訴訟中に財産を隠される・散逸するリスクを防ぐ。"},
+{id:84,category:"民事訴訟法・倒産法",question:"「破産手続き」の説明として正しいものはどれか。",choices:["破産は会社のみが申立てできる（誤り）","破産手続き中も債務者は自由に財産処分できる（誤り）","破産すると全ての債務が即時消滅する（誤り）","支払不能または債務超過の債務者（または債権者）の申立てにより裁判所が破産手続きを開始し財産"],answer:3,explanation:"破産（破産法15条〜）は支払不能（債務者・債権者が申立て可能）または法人の債務超過を要件に裁判所が破産手続きを開始（破産宣告）し破産管財人が財産換価・配当を行う清算型倒産手続き。残余債務は免責申請により免責される（個人の場合）。"},
+{id:85,category:"民事訴訟法・倒産法",question:"「民事再生手続き」の特徴として正しいものはどれか。",choices:["会社を清算して債権者に配当する手続き（誤り）","金融機関の同意のみで成立する（誤り）","経営者が全員交代しなければならない（誤り）","事業を継続しながら再生計画を作成し裁判所の認可を得て債務を弁済・免除してもらう再建型倒産手続き"],answer:3,explanation:"民事再生（民事再生法1条〜）は事業継続を前提に再生計画（債務の一部免除・弁済期の猶予等）を作成し債権者集会の決議と裁判所の認可を経て再建を図る再建型倒産手続き。中小企業に多く活用される。"},
+{id:86,category:"民事訴訟法・倒産法",question:"「会社更生手続き」と「民事再生手続き」の違いとして正しいものはどれか。",choices:["両者に実質的な違いはないという解釈","会社更生は清算型手続きである（誤り）","民事再生は担保権者を手続きに取り込む（誤り）","会社更生は株式会社のみを対象とし担保権者も手続きに取り込まれる"],answer:3,explanation:"会社更生（会社更生法）は株式会社のみ対象で担保権者（抵当権者等）も更生手続きに取り込まれる（担保権の実行が停止）。民事再生は個人・法人とも対象で担保権者は手続き外で権利行使できる点が大きな違い。"},
+{id:87,category:"民事訴訟法・倒産法",question:"「ADR（裁判外紛争解決手続き）」の説明として正しいものはどれか。",choices:["訴訟によらず第三者の関与のもとで当事者が紛争を解決する手続き（調停・仲裁・あっせん等）","ADRの結果は常に裁判所の判決と同等の法的拘束力を持つ","ADRは裁判所が運営する手続き（誤り）","ADRは刑事事件にのみ使用される（誤り）"],answer:0,explanation:"ADR（Alternative Dispute Resolution）は裁判によらず第三者の仲介で紛争解決を図る手続きの総称。調停（裁判所・民間）・仲裁・あっせんが主な形態。仲裁は仲裁判断が確定すると確定判決と同一の効力を持つ。"},
+{id:88,category:"民事訴訟法・倒産法",question:"「差止請求」が認められる場合として正しいものはどれか。",choices:["損害が発生してからでないと差止めは認められない（誤り）","差止請求は金銭賠償の代わりとして認められる（誤り）","知的財産権侵害・不正競争行為・継続的不法行為等において現在または将来の侵害を差し止めること","差止請求には刑事裁判での有罪判決が必要（誤り）"],answer:2,explanation:"差止請求は侵害行為の予防・停止を求める権利。特許権・著作権等の知的財産権侵害・不正競争行為・名誉毀損等について損害が発生する前または継続中に請求可能。侵害が確実に見込まれれば予防的差止めも可能。"},
+{id:89,category:"民事訴訟法・倒産法",question:"「支払督促」の説明として正しいものはどれか。",choices:["裁判所が職権で債権の存否を審査する手続き（誤り）","支払督促は公証役場が行うという解釈","債権者の申立てにより裁判所書記官が債務者に支払いを督促する簡易な手続きで債務者が異議を申し","支払督促に対して異議を申し立てても意味がない（誤り）"],answer:2,explanation:"支払督促（民事訴訟法382条〜）は簡易裁判所の書記官が債権者の申立てに基づき発する督促状。債務者が2週間以内に異議申立てをしないと仮執行宣言後に強制執行が可能。申立コストが低い簡易な回収手段。"},
+{id:90,category:"民事訴訟法・倒産法",question:"「訴訟上の和解」の効力として正しいものはどれか。",choices:["訴訟上の和解は私的和解と同じ効力しかない（この説明は誤り）","和解条項の履行を求めるには改めて訴訟が必要","和解した場合でも訴訟は継続する（誤り）","訴訟上の和解（裁判上の和解）は確定判決と同一の効力を持ち強制執行が可能"],answer:3,explanation:"訴訟上の和解（民事訴訟法267条）は口頭弁論・弁論準備期日等に裁判所の面前で当事者が合意する和解で和解調書は確定判決と同一の効力を持つ。不履行の場合は改めて訴訟を起こさずに強制執行が可能。"},
+{id:91,category:"消費者保護法",question:"「消費者契約法」における「取消権」が認められる場合として正しいものはどれか。",choices:["消費者が単純に契約内容が気に入らない場合（誤り）","消費者が意思能力を欠く場合のみ（誤り）","不実告知・断定的判断の提供・不利益事実の不告知・不退去・退去妨害等の不当な勧誘行為があった場合","取消権は3か月以内にのみ行使できる（誤り）"],answer:2,explanation:"消費者契約法4条の取消権は①不実告知②断定的判断の提供③不利益事実の不告知④不退去（帰らせてもらえない）⑤退去妨害（帰れない）⑥困惑させる勧誘等により契約した場合に認められる。取消権の時効は①追認できる時から1年②契約から5年。"},
+{id:92,category:"消費者保護法",question:"「特定商取引法」における「クーリングオフ」制度の説明として正しいものはどれか。",choices:["全ての商取引にクーリングオフが適用される（誤り）","訪問販売・電話勧誘販売等で一定期間内（訪問販売は8日間）は無条件で契約を解除できる制度","クーリングオフには理由が必要（誤り）","クーリングオフの費用は消費者が負担する（誤り）"],answer:1,explanation:"クーリングオフ（特定商取引法）は消費者が不意打ち的な契約からの保護として無条件解除できる制度。訪問販売・電話勧誘は8日間、連鎖販売取引・業務提供誘引販売は20日間。書面交付が不適切な場合は期間が延長される。"},
+{id:93,category:"消費者保護法",question:"「製造物責任法（PL法）」における製造業者の責任として正しいものはどれか。",choices:["過失がない限り製造業者は責任を負わない（誤り）","小売業者は製造物責任を負わない（誤り）","製品の欠陥（設計・製造・警告上の欠陥）により損害が生じた場合は過失がなくても責任を負う","被害者は欠陥の存在を証明する必要はない（誤り）"],answer:2,explanation:"製造物責任法（PL法）は製品の欠陥（製品が通常有すべき安全性を欠くこと）により損害が生じた場合、製造業者等は過失の有無にかかわらず損害賠償責任を負う（無過失責任の特則）。被害者は①欠陥の存在②損害③因果関係を証明する必要がある。"},
+{id:94,category:"消費者保護法",question:"「消費者基本法」の基本原則として正しいものはどれか。",choices:["消費者と事業者は対等の立場にある（誤り）","事業者の利益が最優先という解釈","消費者は情報・交渉力の格差があるため安全の確保・情報提供","政府は消費者保護に関与しない（誤り）"],answer:2,explanation:"消費者基本法は消費者の権利（安全確保・情報提供・教育・意見反映・苦情処理・被害回復）の尊重と自立支援を基本理念とする。消費者と事業者の情報・交渉力格差を認め消費者保護と自立支援のバランスを図る。"},
+{id:95,category:"消費者保護法",question:"「景品表示法（不当景品類及び不当表示防止法）」における「優良誤認表示」の説明として正しいものはどれか。",choices:["競合他社の商品を批判する表示","商品・サービスの品質・規格等について実際よりも著しく優良であると誤認させる不当表示","価格を実際より安く見せる表示（有利誤認）","医薬品の虚偽広告"],answer:0,explanation:"優良誤認表示（景品表示法5条1号）は商品・サービスの品質・規格・内容について実際よりも著しく優良・競合品より著しく優良と誤認させる表示。有利誤認表示は価格・取引条件について有利と誤認させる表示（2号）。"},
+{id:96,category:"消費者保護法",question:"「割賦販売法」における「クレジット契約の取消し」（抗弁の接続）の説明として正しいものはどれか。",choices:["クレジット会社への支払い義務はショップの問題に関係なく継続する","販売業者に取消事由・解除事由がある場合にクレジット会社への支払いも拒絶できる抗弁権の接続制度がある","クレジット契約の取消しにはクレジット会社と販売業者両方の同意が必要","クレジットカード決済には抗弁の接続が適用されない（誤り）"],answer:1,explanation:"割賦販売法の抗弁の接続（30条の4等）は販売業者に解除・取消等の事由がある場合（商品未届・欠陥等）に消費者がクレジット会社への支払いも拒絶できる制度。個品割賦（個別信用購入）に適用され包括クレジットは対象外。"},
+{id:97,category:"消費者保護法",question:"「特定商取引法」における「通信販売」の規制として正しいものはどれか。",choices:["通信販売には法的規制が全くない（誤り）","広告に所定の事項（販売条件・返品の可否等）を必ず表示しなければならず返品特約の明示がない場","通信販売は全て8日間のクーリングオフが適用される（誤り）","通信販売の解約には事業者の同意が常に必要（誤り）"],answer:1,explanation:"通信販売（特定商取引法11条〜）は広告に販売条件等の必要事項を記載する義務がある。クーリングオフは通信販売には原則適用されないが返品特約の明示がない場合は商品到着後8日以内の返品（法定返品権）が認められる。"},
+{id:98,category:"消費者保護法",question:"「個人情報保護法」における「要配慮個人情報」として正しいものはどれか。",choices:["氏名・住所は要配慮個人情報という解釈","勤務先・電話番号という規定","人種・信条・病歴・犯罪歴・障害等の取扱いに特別な配慮が必要な個人情報","購買履歴という規定"],answer:2,explanation:"要配慮個人情報（個人情報保護法2条3項）は人種・信条・社会的身分・病歴・犯罪歴・犯罪被害歴・障害・健康診断結果等の取扱いに特別な配慮が必要な情報。取得・第三者提供には本人の同意が原則必要。"},
+{id:99,category:"消費者保護法",question:"「不正競争防止法」における「ドメイン名の不正登録」について正しいものはどれか。",choices:["不正の利益を得る目的等で他人の特定商品等表示と同一・類似のドメイン名を登録","他社の商標と同一のドメイン名を登録しても不正競争にならない","ドメイン名は早い者勝ちで問題ない（誤り）","商標登録した企業のみがドメイン名を主張できる（誤り）"],answer:0,explanation:"不正競争防止法2条1項19号はドメイン名の不正登録・使用（不正の利益を得る目的または他人に損害を与える目的で他人の特定商品等表示と同一・類似のドメイン名を使用する行為）を不正競争行為として禁止する。"},
+{id:100,category:"消費者保護法",question:"「電子消費者契約法（電子消費者契約及び電子承諾通知に関する民法の特例に関する法律）」の特則として正しいものはどれか。",choices:["消費者がクリック操作等で操作ミスをした場合の重大な過失による錯誤の特則があり","インターネット取引には民法の錯誤規定が全く適用されない（誤り）","電子契約は書面契約と全く同等の法的効力がない（誤り）","電子メール契約は常にクーリングオフが適用される（誤り）"],answer:0,explanation:"電子消費者契約法は消費者がECサイトで操作ミス（申込内容の錯誤）をした場合について事業者が確認画面等の措置を取らない場合は消費者の重過失を否定する特則。重過失なし→民法95条の錯誤取消しが可能になる。"},
+{id:101,category:"個人情報保護法",question:"「個人情報取扱事業者」の義務として正しいものはどれか。",choices:["利用目的の特定・明示、適正な取得、安全管理措置、第三者提供の制限等の義務を負う","個人情報を利用目的を問わず自由に利用できる（この説明は誤り）","個人情報は事業者の財産として扱える（誤り）","個人情報の開示請求には応じる必要はない（誤り）"],answer:0,explanation:"個人情報取扱事業者（個人情報保護法16条〜）は①利用目的の特定・通知②適正な取得③正確性の確保④安全管理措置⑤第三者提供の制限⑥開示・訂正・利用停止等への対応義務を負う。違反には命令・罰則がある。"},
+{id:102,category:"個人情報保護法",question:"「個人情報」の「第三者提供」に関する原則として正しいものはどれか。",choices:["事業者間では個人情報を自由に共有できる（この説明は誤り）","業務委託先への提供も第三者提供の規制対象となる","原則として本人の同意なく第三者に個人情報を提供することは禁止されている","警察からの任意照会には応じる義務がある（この説明は誤り）"],answer:2,explanation:"個人情報の第三者提供（個人情報保護法27条）は原則として本人の同意が必要。例外は①法令に基づく場合②生命・身体・財産保護③公衆衛生④国機関への協力等。業務委託は委託先への提供を第三者提供の例外とする（ただし委託先管理義務あり）。"},
+{id:103,category:"個人情報保護法",question:"「オプトアウト」による第三者提供の条件として正しいものはどれか。",choices:["本人の事前同意なしにいつでも第三者提供できる（誤り）","本人が拒否できる機会を提供し個人情報保護委員会に届け出ることを条件に同意なく第三者提供できる制度","オプトアウトは禁止されている（誤り）","オプトアウトは全ての個人情報に適用できる（誤り）"],answer:1,explanation:"オプトアウトによる第三者提供（個人情報保護法27条2項）は①個人情報保護委員会への届出②本人への通知または容易な知り得る状態③本人の求めに応じた提供停止を条件に本人同意なく第三者提供できる特例。要配慮個人情報・不正取得情報は不可。"},
+{id:104,category:"個人情報保護法",question:"「個人情報保護法」の2022年改正で強化された「本人の権利」として正しいものはどれか。",choices:["利用停止・消去請求権の要件緩和・第三者提供記録の開示請求","個人情報の削除請求権は廃止された（誤り）","本人が開示を求めても事業者は拒絶できる（誤り）","個人情報の利用を制限する権利が廃止された（誤り）"],answer:0,explanation:"2022年改正個人情報保護法は①利用停止・消去請求の要件拡大②第三者提供記録の開示請求③短期保存データの保護④不正利用・不適正取得の禁止強化⑤漏洩時の個人情報保護委員会への報告・本人通知義務等を追加。"},
+{id:105,category:"個人情報保護法",question:"「個人データの漏洩等」が発生した場合の事業者の対応として正しいものはどれか。",choices:["一定の漏洩・滅失・毀損については個人情報保護委員会への報告と本人への通知が義務","漏洩を隠蔽するのが最善という解釈","軽微な漏洩なら報告は不要という解釈","金融機関のみに報告義務がある（誤り）"],answer:0,explanation:"2022年改正で個人データの漏洩等（不正アクセス・誤送信等）で要件（要配慮情報含む漏洩・財産的被害の可能性等）を満たす場合は個人情報保護委員会への報告（速報3〜5日以内・確報30日以内）と本人通知が義務付けられた。"},
+{id:106,category:"個人情報保護法",question:"「仮名加工情報」と「匿名加工情報」の違いとして正しいものはどれか。",choices:["両者は全く同じ概念という規定","仮名加工情報は本人同意なく外部提供できる（誤り）","匿名加工情報は第三者提供できない（誤り）","仮名加工情報は他の情報と照合すれば特定個人を識別可能で内部利用のみ可能"],answer:3,explanation:"仮名加工情報（2022年施行）は他のデータとの照合で特定個人識別が可能なため内部分析のみに活用可能で第三者提供は原則禁止。匿名加工情報は特定個人を識別できないよう加工したもので一定条件下で第三者提供が可能。"},
+{id:107,category:"個人情報保護法",question:"「Cookieによる行動追跡データ」の個人情報保護法上の扱いとして正しいものはどれか。",choices:["Cookieはどのような場合も個人情報に該当しない（誤り）","Cookie規制は日本には存在しない（誤り）","Cookieは常に個人情報として扱わなければならない（誤り）","Cookieが氏名等の直接識別情報と結びついて特定個人を識別できる場合は個人情報として保護"],answer:3,explanation:"CookieはIDのみでは個人情報ではないが会員ID・氏名等と結びついて特定個人を識別できる場合は個人情報（個人識別符号）として個人情報保護法の規制対象となる。EUのGDPRはより広くCookieを規制している。"},
+{id:108,category:"個人情報保護法",question:"「従業員の個人情報」の取扱いについて正しいものはどれか。",choices:["雇用関係にある従業員の個人情報には個人情報保護法が適用されない","人事情報は全て機密扱いで開示義務はない（誤り）","従業員の個人情報も個人情報保護法の保護対象となり適正な取得・利用目的の通知・安全管理等が必要","従業員に自己の個人情報の開示を請求する権利はない（誤り）"],answer:2,explanation:"個人情報保護法は従業員（現職・元職）の個人情報にも適用される。採用時の取得・人事情報の管理・退職後のデータ保持期間等について適正な取扱いが必要。本人（従業員）は自己の個人情報の開示・訂正・利用停止を請求できる。"},
+{id:109,category:"個人情報保護法",question:"「個人情報保護委員会」の役割として正しいものはどれか。",choices:["個人情報保護法の監督機関として勧告・命令・立入検査等を行う独立した行政機関","個人情報に関する民事訴訟を専門に担当する裁判所","個人情報の売買を仲介する機関（誤り）","個人情報の収集を行う政府機関（誤り）"],answer:0,explanation:"個人情報保護委員会は個人情報保護法を所管する独立した行政機関で①指針の策定・公表②事業者への立入検査③報告徴収④指導・勧告⑤命令（違反に対する強制措置）等を行う権限を持つ。"},
+{id:110,category:"個人情報保護法",question:"「個人情報保護法」における罰則として正しいものはどれか。",choices:["委員会命令違反は1年以下の懲役または100万円以下の罰金","個人情報保護法違反に罰則はなく行政指導のみ（誤り）","罰則は個人にのみ科され法人には科されない（誤り）","違反があれば即座に刑事罰が科される（誤り）"],answer:0,explanation:"個人情報保護法は委員会命令違反（1年以下懲役・100万円以下罰金）・虚偽報告（6か月以下懲役・30万円以下罰金）等の刑事罰があり行為者だけでなく法人にも罰金刑が科される両罰規定がある。"},
+{id:111,category:"企業取引の法律",question:"「売買契約」における「所有権の移転時期」の民法上の原則として正しいものはどれか。",choices:["売買代金の全額支払い時に移転する（誤り）","物の引渡し時に常に移転するという解釈","特定物の場合は原則として売買契約の成立時に所有権が移転する（当事者の合意で変更可能）","登記完了時に移転するという解釈"],answer:2,explanation:"民法176条は物権変動は当事者の意思表示のみで効力を生じると規定（意思主義）。特定物の売買では原則として契約成立時に所有権が移転する。ただし当事者の合意（代金支払い時・引渡し時等）で変更できる。"},
+{id:112,category:"企業取引の法律",question:"「動産売買の所有権留保」の説明として正しいものはどれか。",choices:["売主が代金全額を受け取るまで所有権を留保し代金不払いの場合に目的物を取り戻せる担保手段","買主が代金を支払った後も売主が所有権を持ち続ける（この説明は誤り）","所有権留保は不動産にのみ認められる（誤り）","所有権留保は登記しなければ第三者に対抗できない（この説明は誤り）"],answer:0,explanation:"所有権留保は売主が代金完済まで所有権を留保する担保手段（特約で設定）。代金不払い時に売主は目的物を取り戻せる。自動車・機械設備の割賦販売で多用される。第三者対抗（占有改定等）の問題がある。"},
+{id:113,category:"企業取引の法律",question:"「電子商取引（EC）」における「電子契約の成立時期」について正しいものはどれか。",choices:["発注者がクリックした時点で常に契約成立（誤り）","電子メールによる承諾は発信時に効力が生じる（誤り）","消費者向けEC（特定商取引法上の通信販売）では消費者が申込みをして事業者が承諾した時点で契約が成立する","電子契約には民法が適用されない（誤り）"],answer:2,explanation:"電子消費者契約では消費者の申込み（クリック）と事業者の承諾通知の到達（確認メール等）で契約成立（到達主義・民法526条）。ただし事業者が予め承諾の旨を表示している場合は異なる。電子書面交付には消費者の事前同意が必要。"},
+{id:114,category:"企業取引の法律",question:"「下請法（下請代金支払遅延等防止法）」の規制対象として正しいものはどれか。",choices:["全ての企業間取引が対象という規定（誤り）","一定の資本金規模の差がある親事業者と下請事業者間の製造委託等の取引が対象","中小企業同士の取引のみという規定（誤り）","海外取引は対象外という規定という解釈"],answer:1,explanation:"下請法は親事業者（資本金規模が大きい側）と下請事業者（製造・修理委託・情報成果物作成・役務提供委託）の特定取引関係に適用。親事業者の義務（書面交付・60日以内の支払い等）と禁止行為（不当な値引き・返品・買いたたき等）を規定。"},
+{id:115,category:"企業取引の法律",question:"「ファイナンスリース契約」の特徴として正しいものはどれか。",choices:["ファイナンスリースは原則中途解約不可・物件に関するリスクをユーザーが負担し実質的に物件の全","ユーザーはいつでも中途解約できる（誤り）","リース会社が目的物の修繕義務を負う（誤り）","ファイナンスリースは賃貸借と同一の法的性質（誤り）"],answer:0,explanation:"ファイナンスリースは①中途解約不可（ノンキャンセラブル）②フルペイアウト（物件価格・金利・諸費用を全てリース料で回収）が特徴で実質的には割賦購入と類似。物件の維持管理・保険はユーザー負担。"},
+{id:116,category:"企業取引の法律",question:"「フランチャイズ契約」における「フランチャイジー（加盟店）」の主な義務として正しいものはどれか。",choices:["フランチャイジーに義務はなく権利のみある（誤り）","フランチャイジーは他のブランドで同種事業を自由にできる","加盟金・ロイヤルティの支払い・ブランドの品質基準遵守・フランチャイザーへの報告等の義務を負う","フランチャイザーへの競業避止義務は契約終了と同時に消滅する"],answer:2,explanation:"フランチャイジーの主な義務は①加盟金・ロイヤルティ（売上歩合等）の支払い②ブランドの品質・サービス基準の遵守③経営状況の報告④契約期間中の競業禁止。契約終了後の競業避止条項が有効な範囲は判例上制限がある。"},
+{id:117,category:"企業取引の法律",question:"「NDA（秘密保持契約）」における秘密情報の定義として実務上重要な点はどれか。",choices:["何も定義せず全ての情報が秘密情報となる（誤り）","秘密として指定・明示された情報または一定の範囲に属する情報を秘密情報として明確に定義するこ","口頭で伝えた情報は常に除外される（誤り）","相手方の業績情報は常に含まれる（誤り）"],answer:1,explanation:"NDAでは秘密情報の定義を明確にすることが重要。一般的に「秘密と明示した情報」「一定の種別の情報（技術情報・顧客情報等）」を秘密情報とし開示方法（書面・電子・口頭等）・確認手続きも規定する。定義が曖昧だと漏洩時の保護が困難。"},
+{id:118,category:"企業取引の法律",question:"「保証契約」は要式行為であることから何が必要か。",choices:["公証人の認証","書面（または電磁的記録）による作成（書面がなければ保証契約は無効）","保証人の押印","保証金の事前預託"],answer:0,explanation:"保証契約（民法446条2項）は書面（または電磁的記録）でしなければ効力を生じない。口頭や黙示の合意では保証契約は成立しない。書面要件は保証人の軽率な保証を防ぐための強行規定。"},
+{id:119,category:"企業取引の法律",question:"「知的財産ライセンス契約」における「独占的実施許諾」と「非独占的実施許諾」の違いとして正しいものはどれか。",choices:["独占的実施許諾でもライセンサーが自ら実施できる（誤り）","独占的実施許諾はライセンシーのみが実施でき第三者への許諾が禁止される","両者に法律上の違いはないという解釈","非独占的の方が常に高額のライセンス料となる（誤り）"],answer:1,explanation:"独占的実施許諾（専用実施権・独占的通常実施権）はライセンシーのみが独占的に実施できる（第三者への重複許諾禁止）。完全独占なら理論上ライセンサーも実施不可。非独占的通常実施権は複数者への重複許諾が可能。"},
+{id:120,category:"企業取引の法律",question:"「契約書における準拠法条項」の意義として正しいものはどれか。",choices:["準拠法条項があれば訴訟管轄も同一国に固定される（誤り）","日本国内の取引には不要という解釈","国際取引等で複数国の法律が適用されうる場合にどの国の法律によって解釈","準拠法条項は消費者に対しては強制的に外国法を適用させることができる"],answer:2,explanation:"準拠法条項は国際契約において契約の成立・効力・解釈をどの国の法律（日本法・英国法・NY州法等）に従って判断するかを当事者が合意する条項。準拠法と裁判管轄（どの裁判所で解決するか）は別個の問題。"},
+{id:121,category:"コンプライアンス経営",question:"「コンプライアンス」の意義として最も広い説明として正しいものはどれか。",choices:["法律を遵守するだけという規定","法令遵守にとどまらず社会規範・企業倫理・社内規程に従って適切な行動をとること","利益を最大化することが目的という解釈","コンプライアンスは上場企業のみに必要（誤り）"],answer:1,explanation:"コンプライアンス（法令遵守・企業倫理）は単なる法律遵守を超え社会規範・企業倫理・業界自主規制・社内規程等に従って組織や個人が適切な行動をとることを指す。近年はCSR・ESG経営とも深く連動する概念。"},
+{id:122,category:"コンプライアンス経営",question:"「内部統制」の4つの目的として正しいものはどれか。",choices:["収益の最大化・コスト削減・従業員満足・株主還元","業務の有効性と効率性・財務報告の信頼性・法令等の遵守・資産の保全","顧客満足・品質管理・在庫管理・人材育成","リスク評価・リスク対応・リスク監視・リスク報告"],answer:1,explanation:"COSOフレームワークの内部統制の目的は①業務の有効性・効率性②財務報告の信頼性③法令等の遵守④資産の保全の4つ。日本の会社法・金融商品取引法における内部統制報告制度もこれに基づく。"},
+{id:123,category:"コンプライアンス経営",question:"「内部告発（公益通報）」に関して公益通報者保護法の保護要件として正しいものはどれか。",choices:["公益通報者が不利益取扱いを受けないために保護されるには通報内容が不正の目的でなく真実または","通報内容が真実であれば誰でも無条件に保護される（誤り）","社内への通報のみが保護される（誤り）","匿名通報は一切保護されないという解釈"],answer:0,explanation:"公益通報者保護法の保護要件は①不正の目的でないこと②通報内容が真実または真実と信ずるに足りる相当の理由があること③通報先（社内・行政機関・外部）の要件を満たすこと。保護内容は解雇・降格・減給等の不利益取扱いの禁止。"},
+{id:124,category:"コンプライアンス経営",question:"「リスクマネジメント」における「リスクの4つの対応策」として正しいものはどれか。",choices:["無視・隠蔽・転嫁・諦めという解釈","回避・低減（軽減）・移転（保険等）・受容（保有）の4つ","防止・検知・対応・復旧という解釈","計画・実行・評価・改善という解釈"],answer:1,explanation:"リスクへの対応策は①回避（リスクのある活動をやめる）②低減・軽減（発生頻度・影響を下げる対策）③移転（保険加入・外部委託でリスクを第三者に転嫁）④受容・保有（受け入れられるリスクは対策せず自己負担）の4類型。"},
+{id:125,category:"コンプライアンス経営",question:"「独占禁止法（私的独占の禁止及び公正取引の確保に関する法律）」が禁止する「不当な取引制限（カルテル）」の説明として正しいものはどれか。",choices:["競合他社との情報交換は全て禁止（誤り）","競合事業者間で価格・数量・市場分割等を共同して決定することで競争を実質的に制限すること","販売店への推奨小売価格の設定（誤り）","独占的なシェアを持つこと自体（誤り）"],answer:1,explanation:"カルテル（不当な取引制限：独禁法2条6項）は競争事業者が共同して価格・生産数量・販路・技術等を取り決め競争を実質的に制限すること。典型例は価格カルテル・入札談合。課徴金・刑事罰の対象で一定の要件で自主申告すると課徴金が減免される（リーニエンシー制度）。"},
+{id:126,category:"コンプライアンス経営",question:"「優越的地位の濫用」（独占禁止法上）として規制される行為の例として正しいものはどれか。",choices:["大企業が取引上の優位な地位を利用して下請業者に不当な不利益を与えること（協賛金の強制・返品等）","大企業が競合他社より低い価格で販売すること（誤り）","企業が独自の技術で市場で優位に立つこと（誤り）","企業が優秀な人材を高給で採用すること（誤り）"],answer:0,explanation:"優越的地位の濫用（独禁法2条9項5号）は取引上の地位が優越する者が劣位の取引相手に不当な不利益を課す行為。具体例は購入強制・協賛金等の一方的要求・不当な返品・支払遅延・人員派遣の強要等。公正取引委員会のガイドラインで詳細を規定。"},
+{id:127,category:"コンプライアンス経営",question:"「独占禁止法」違反の効果として正しいものはどれか。",choices:["公正取引委員会による排除措置命令・課徴金納付命令・刑事告発（懲役・罰金）が科される","違反行為は行政指導のみで制裁はない（誤り）","違反しても取引は有効という解釈","民事上の損害賠償請求はできない（誤り）"],answer:0,explanation:"独占禁止法違反への制裁は①公正取引委員会による排除措置命令（违法行為の停止）②課徴金納付命令（売上額の一定割合）③刑事罰（5年以下の懲役・500万円以下の罰金・法人5億円以下）④被害者からの民事損害賠償請求が可能。"},
+{id:128,category:"コンプライアンス経営",question:"「贈収賄」に関して外国公務員への贈賄を規制する日本の法律として正しいものはどれか。",choices:["独占禁止法の規制対象となるという解釈","不正競争防止法（18条の外国公務員等に対する不正の利益の供与等の禁止）","刑法の収賄罪として処罰される（誤り）","会社法が直接の規制根拠という解釈"],answer:1,explanation:"不正競争防止法18条は外国公務員等（国会議員・政府職員・国際機関職員等）に対する不正の利益供与（贈賄）を禁止する。違反は5年以下の懲役・500万円以下の罰金（法人は3億円以下の罰金）。日本が締結したOECD条約の国内実施法。"},
+{id:129,category:"コンプライアンス経営",question:"「ESG」経営における「G（ガバナンス）」の主な要素として正しいものはどれか。",choices:["取締役会の構成・役員報酬・株主権利・情報開示・反腐敗等の企業統治","脱炭素・省エネルギーという解釈","従業員の多様性・人権・サプライチェーン管理","二酸化炭素排出量削減目標という解釈"],answer:0,explanation:"ESGのG（Governance：企業統治）は取締役会の多様性・独立性・役員報酬の適切性・株主の権利保護・透明な情報開示・反腐敗・コンプライアンス体制等を指す。機関投資家はGの観点から投資先企業を評価する。"},
+{id:130,category:"コンプライアンス経営",question:"「内部通報制度」を企業が整備する義務化について正しいものはどれか。",choices:["全ての企業に内部通報制度の設置義務はない（誤り）","内部通報制度は任意の取り組みに過ぎない（誤り）","2022年の公益通報者保護法改正で常時使用従業員数300人超の事業者に内部公益通報対応体制","内部通報窓口は社外にのみ設置しなければならない（誤り）"],answer:2,explanation:"2022年施行の改正公益通報者保護法で常時使用従業員300人超の事業者（上場会社等）には①内部通報窓口の設置②調査・是正措置③通報者情報の秘密保持④範囲の周知等の内部公益通報対応体制の整備が義務付けられた。"},
+{id:131,category:"手形・電子記録債権",question:"「電子記録債権」の説明として正しいものはどれか。",choices:["紙の手形をスキャンしたデータ（誤り）","電子債権記録機関の記録原簿への記録により発生・移転する新たな金銭債権で電子手形","電子メールで送付された請求書（誤り）","インターネットバンキングの送金指示（誤り）"],answer:1,explanation:"電子記録債権（電子記録債権法）は電子債権記録機関（全銀電子債権ネットワーク「でんさい」等）の電子記録原簿への記録で発生・譲渡・消滅する新たな債権。手形の代替として利用され印紙税不要・紛失リスクなし等のメリットがある。"},
+{id:132,category:"手形・電子記録債権",question:"「でんさい（電子記録債権）」の「分割譲渡」の特徴として正しいものはどれか。",choices:["でんさいは任意の金額に分割して譲渡（電子記録）できる点が紙の手形より優れている","手形と同様に分割譲渡はできない（誤り）","分割譲渡には相手方の同意が常に必要（誤り）","分割譲渡すると元の債権は消滅する（誤り）"],answer:0,explanation:"電子記録債権（でんさい）は電子記録機関の記録により手形では不可能な任意金額への分割譲渡が可能。売掛債権をファクタリング（債権売却）等で部分的に資金化する際に柔軟に活用できる。"},
+{id:133,category:"手形・電子記録債権",question:"「手形の時効」について約束手形の振出人への時効期間として正しいものはどれか。",choices:["1年で消滅するという規定","3年（満期日または振出日から3年）","5年で消滅するという規定","10年で消滅するという規定"],answer:1,explanation:"約束手形の振出人に対する手形債権の消滅時効（手形法77条・70条）は満期日から3年。受取人が裏書人に対して請求する場合は1年（満期の翌日から）。時効完成前に手形訴訟等を提起しなければ権利が消滅する。"},
+{id:134,category:"手形・電子記録債権",question:"「手形の振出し」に当たって「白地手形」の説明として正しいものはどれか。",choices:["手形要件（金額・満期等）の一部を記載せずに振り出し後に補充することを予定した手形","真っ白の紙に押印しただけのもの（誤り）","すでに全額支払われた手形という解釈","偽造された手形という規定"],answer:0,explanation:"白地手形は手形要件の一部（金額・日付等）を意図的に空白にして相手方に補充権を与えた手形。担保提供や金額未確定の段階での授受に使用。補充権の範囲を超えた補充でも善意取得者には対抗できない。"},
+{id:135,category:"手形・電子記録債権",question:"「ファクタリング」の説明として正しいものはどれか。",choices:["銀行が手形を割り引く取引という解釈","融資の一形態という規定","売掛債権等を期日前にファクタリング会社に売却して早期資金化する金融手法","電子決済の仕組みという規定"],answer:2,explanation:"ファクタリングは保有する売掛債権・電子記録債権等を期日前にファクタリング会社（ファクター）に売却（債権譲渡）して早期資金化する手法。2者間（秘密ファクタリング）と3者間（買取先に通知）の形態がある。"},
+{id:136,category:"不動産法",question:"「不動産の物権変動の対抗要件」として正しいものはどれか。",choices:["不動産の所有権移転は契約のみで第三者に対抗できる","売買代金の完済により第三者に対抗できる（誤り）","引渡しにより第三者に対抗できる（誤り）","不動産の物権変動（所有権移転・抵当権設定等）は登記をしなければ第三者に対抗できない"],answer:3,explanation:"不動産の物権変動の対抗要件（民法177条）は登記。同一不動産を二重譲渡した場合は先に登記した者が優先される（背信的悪意者は除く）。登記なき権利者は善意の第三者には対抗できない。"},
+{id:137,category:"不動産法",question:"「借地借家法」における「定期建物賃貸借（定期借家契約）」の特徴として正しいものはどれか。",choices:["普通借家契約と同様に正当事由がなければ更新できる（この説明は誤り）","定期借家は公正証書等の書面で契約し期間満了で確定的に終了し更新がない（更新なし特約が有効）","定期借家は賃借人に不利なため全面的に禁止（誤り）","定期借家の賃料は固定で増減請求できない（誤り）"],answer:1,explanation:"定期建物賃貸借（借地借家法38条）は更新がなく期間満了で確定終了する契約。①書面（公正証書等）による契約②事前の書面交付・説明が必要③期間中の中途解約は原則不可（一定要件で解約可能）。普通借家とは異なり賃借人の更新請求権がない。"},
+{id:138,category:"不動産法",question:"「区分所有法（建物の区分所有等に関する法律）」における管理組合の意思決定として正しいものはどれか。",choices:["全員の同意がなければ何も決定できない（誤り）","一人の区分所有者が管理組合を代表できる（誤り）","管理会社が全ての決定権を持つ（誤り）","共用部分の管理・変更は区分所有者と議決権の各一定数の決議が必要（普通決議・特別決議・全員同意等）"],answer:3,explanation:"区分所有法の管理組合の意思決定は①通常の管理は区分所有者数・議決権の各過半数（普通決議）②共用部分の変更は各4分の3以上（特別決議）③規約の廃止・建替えは各5分の4以上等、事項によって必要決議数が異なる。"},
+{id:139,category:"不動産法",question:"「借地借家法」における「普通建物賃貸借（普通借家契約）」の更新拒絶の要件として正しいものはどれか。",choices:["期間満了すれば自動的に終了する（誤り）","貸主が更新拒絶するには正当事由（自己使用の必要性・立退料の支払い等）が必要","貸主は正当事由なく更新拒絶できる（誤り）","更新は借主の同意がある場合のみ可能（誤り）"],answer:1,explanation:"普通建物賃貸借（借地借家法26〜28条）は期間満了6か月前までに更新拒絶等の通知が必要。通知なければ法定更新。更新拒絶には正当事由（貸主の自己使用の必要性・建物の老朽化・立退料等を総合判断）が必要。賃借人は法律で手厚く保護されている。"},
+{id:140,category:"不動産法",question:"「宅地建物取引業法」における「重要事項説明」について正しいものはどれか。",choices:["宅地・建物の売買・賃貸の媒介等を行う際、契約締結前に宅地建物取引士が相手方に重要事項を記載","重要事項説明は不動産売買後に行えばよい（誤り）","重要事項説明は口頭のみで書面は不要（誤り）","重要事項説明は買主のみに行えばよい（誤り）"],answer:0,explanation:"宅建業法35条の重要事項説明は①宅地建物取引士が②記名した重要事項説明書を③契約前に④相手方（買主・借主）に交付・説明する義務がある。物件の法令制限・権利関係・施設環境等を説明する。2021年から一定条件でIT重説も可能。"},
+{id:141,category:"金融商品取引法",question:"「金融商品取引法」における「インサイダー取引規制」で禁止される行為として正しいものはどれか。",choices:["上場会社の株式を購入すること全般（誤り）","信用取引で株式を購入すること（誤り）","株式を長期保有することという解釈","上場会社の役員等が重要事実（未公表の業績・M&A等）を知りながら公表前にその会社の株式"],answer:3,explanation:"インサイダー取引規制（金融商品取引法166・167条）は会社関係者等が上場会社の未公表の重要事実（業績予想の修正・合併・重大な災害等）を知りながら公表前にその上場有価証券等を売買することを禁止する。違反は10年以下の懲役・3000万円以下の罰金。"},
+{id:142,category:"金融商品取引法",question:"「有価証券報告書」の提出義務がある会社として正しいものはどれか。",choices:["全ての株式会社という規定","金融商品取引所に上場している会社および店頭登録会社等","大会社のみという規定","従業員1000人以上の会社という解釈"],answer:1,explanation:"有価証券報告書（金融商品取引法24条）の提出義務は上場会社・店頭登録会社等の有価証券の発行者。各事業年度終了後3か月以内に提出が必要。財務情報・役員情報・リスク情報等を開示する。"},
+{id:143,category:"金融商品取引法",question:"「適合性の原則」（金融商品取引法上）の説明として正しいものはどれか。",choices:["全ての顧客に同一の金融商品を販売する義務（誤り）","リスクのある商品は販売禁止という解釈","顧客の知識・経験・財産状況・投資目的に照らして適合しない金融商品の販売・勧誘を禁止する原則","元本保証のない商品の販売禁止（誤り）"],answer:2,explanation:"適合性原則（金融商品取引法40条1号）は顧客の知識・経験・財産状況・契約締結の目的に照らして不適合な勧誘を禁止する。過去の裁判例でも適合性に反する勧誘を違法とする判決が多数ある。"},
+{id:144,category:"金融商品取引法",question:"「目論見書（プロスペクタス）」の交付義務について正しいものはどれか。",choices:["目論見書は投資家の要求があれば交付する（誤り）","機関投資家への場合は目論見書交付が不要（誤り）","目論見書の交付はデジタル化により不要になった（この説明は誤り）","有価証券の募集・売出しにあたり契約締結前に目論見書を投資家に交付する義務がある"],answer:3,explanation:"目論見書（金融商品取引法15条）は有価証券の募集・売出しにあたり投資家が投資判断を行うために必要な情報（発行者情報・財務情報・リスク情報等）を記載した書面で原則として契約前に交付義務がある。電子交付は一定条件で可能。"},
+{id:145,category:"金融商品取引法",question:"「公開買付け（TOB）」の強制実施義務が生じる場面として正しいものはどれか。",choices:["市場を通じて任意に株式を購入する場合（誤り）","友好的M&Aには常にTOBが必要（誤り）","取引所市場外で不特定多数から上場会社株式を買い集める場合で一定の要件","全ての株式売買にTOBが必要（誤り）"],answer:2,explanation:"公開買付規制（金融商品取引法27条の2〜）は①市場外で上場会社株式等を買い集める場合②市場内外を問わず取引後に3分の1超を持つことになる場合等は一定の買収者にTOB（公開買付け）の実施を義務付ける。"},
+{id:146,category:"環境法・その他",question:"「環境基本法」の基本原則として正しいものはどれか。",choices:["経済成長を最優先し環境保護は二次的（誤り）","環境問題は政府のみが対応する（誤り）","環境の恵沢の享受と継承・環境への負荷の少ない社会の構築・国際的協調による環境保全が基本理念","環境規制は事業者に課さないという解釈"],answer:2,explanation:"環境基本法の基本理念は①環境の恵みを享受し将来世代に継承すること②健全で恵み豊かな環境の保全を社会経済活動に組み込むこと③国際協調により地球環境保全に能動的に取り組むこと。"},
+{id:147,category:"環境法・その他",question:"「廃棄物処理法（廃棄物の処理及び清掃に関する法律）」における事業者の義務として正しいものはどれか。",choices:["事業者の廃棄物は全て市区町村が処理する（誤り）","産業廃棄物はどこでも埋め立てできる（誤り）","事業者は自己の事業活動で生じた廃棄物を自らの責任で適正に処理する義務がある","廃棄物処理に許可は不要という解釈"],answer:2,explanation:"廃棄物処理法（3条）は事業者に自己の事業活動に伴う廃棄物を自らの責任で適正に処理する義務を課す。産業廃棄物の処理を委託する場合も排出事業者は委託基準を守り処理業者（許可業者）を選定する必要がある（委託基準違反は罰則あり）。"},
+{id:148,category:"環境法・その他",question:"「建設業法」における「下請契約」の規制として正しいものはどれか。",choices:["建設業の下請契約に特別な規制はない（誤り）","特定建設業者が一定金額以上を下請けに出す場合は特定建設業の許可が必要で書面による契約","下請業者の選定は元請業者が自由に決められる（誤り）","下請代金の支払期限に制限はない（誤り）"],answer:1,explanation:"建設業法は①書面による請負契約の義務②一括下請負（丸投げ）の禁止（原則）③下請代金の支払いは検査完了後1か月以内・支払手形は120日以内④特定建設業者には一定の下請保護義務等を規定する。"},
+{id:149,category:"環境法・その他",question:"「食品安全基本法」における食品安全の基本原則として正しいものはどれか。",choices:["食品の安全性は事業者の自主的判断に任せる（誤り）","食品による健康への悪影響の未然防止・リスク分析（リスク評価・管理・コミュニケーション）が基本原則","食品安全委員会は消費者の苦情のみを処理する（誤り）","輸入食品には国内基準が適用されない（誤り）"],answer:1,explanation:"食品安全基本法は①食品供給行程の各段階での適切な措置による健康への悪影響の防止②リスク分析（リスクの科学的評価・評価に基づく管理・利害関係者間のコミュニケーション）を基本原則とする。食品安全委員会がリスク評価を担当。"},
+{id:150,category:"環境法・その他",question:"「独占禁止法」の「企業結合規制」の説明として正しいものはどれか。",choices:["全ての企業合併には独占禁止法上の審査が必要（誤り）","中小企業の合併には企業結合規制が適用されない（誤り）","一定規模以上の企業結合（合併・株式取得等）は公正取引委員会への届出","外国企業間の結合は日本で審査されない（誤り）"],answer:2,explanation:"企業結合規制（独禁法10条〜）は一定規模以上の合併・株式取得・事業譲受等について公正取引委員会への届出を義務付け一定の市場で競争を実質的に制限する結合計画を禁止する。国内の事業活動に影響する外国企業間の結合も対象。"},
+{id:151,category:"契約書の作成・審査",question:"契約書における「期限の利益の喪失」条項の説明として正しいものはどれか。",choices:["分割払いを一時的に減額できる条項（誤り）","利息の起算日を定める条項という解釈","期限を定めない場合の規定という解釈","一定の事由（支払遅延・破産等）が発生した場合に債務者が残額を直ちに支払う義務を負う条項"],answer:3,explanation:"期限の利益の喪失条項（民法137条・合意による拡張）は破産申立て・支払停止・手形不渡り・契約違反等が発生した場合に分割払いの期限の利益が消滅し残額全額が即座に弁済期到来となる条項。金融取引・売掛管理に重要。"},
+{id:152,category:"契約書の作成・審査",question:"「損害賠償の予定（違約金条項）」の説明として正しいものはどれか。",choices:["損害賠償の予定があれば実際の損害に関係なく常に予定額を請求できる","当事者が予めの合意で債務不履行の場合の損害賠償額を決めておく条項で実際の損害額を問わず請求でき立証の負担を軽減する","損害賠償の予定は常に過大として裁判所が無効にする","違約金は刑事罰の一種"],answer:0,explanation:"損害賠償の予定（民法420条）は事前に合意した金額が賠償額となり実際の損害証明が不要になる。ただし消費者契約では過大な違約金条項は無効（消費者契約法9条）。裁判所は予定額を増減できないが公序良俗違反で無効になる場合がある。"},
+{id:153,category:"契約書の作成・審査",question:"「不可抗力条項」の説明として正しいものはどれか。",choices:["天災・戦争・パンデミック等の当事者のコントロール外の事由による債務不履行を免責する条項","当事者の過失による履行遅延も免責される（誤り）","不可抗力が発生した場合は自動的に契約が終了する（この説明は誤り）","不可抗力条項は全ての契約に必須（誤り）"],answer:0,explanation:"不可抗力条項（Force Majeure Clause）は地震・洪水・戦争・テロ・政府規制・感染症拡大等の当事者の合理的なコントロール外の事由による履行不能・遅延について責任を免除する条項。民法419条・536条の特則として機能する。"},
+{id:154,category:"契約書の作成・審査",question:"「管轄条項（合意管轄）」の説明として正しいものはどれか。",choices:["合意管轄は全ての紛争に必ず適用される（誤り）","消費者契約での合意管轄は常に有効（誤り）","合意管轄は効力がなく法定管轄のみが有効（誤り）","当事者間の合意により紛争解決を行う裁判所を予め定める条項（専属的合意管轄）"],answer:3,explanation:"合意管轄（民事訴訟法11条）は第一審について当事者の合意で管轄裁判所を定めることができる。専属的合意管轄（特定の裁判所のみ）と付加的合意管轄（既存の管轄に加える）がある。消費者契約での一方的に不利な管轄合意は消費者契約法上問題となる場合がある。"},
+{id:155,category:"契約書の作成・審査",question:"「解釈規定」として契約書に規定すべき事項として重要なものはどれか。",choices:["契約書の文字サイズという規定（誤り）","日付の記載方法のみという規定（誤り）","署名欄の書式という規定という解釈","契約に使用する言語・準拠法・解釈の優先順位・用語の定義等の基本事項"],answer:3,explanation:"国際契約・重要な契約では①準拠法（どの国の法律で解釈するか）②言語条項（どちらの言語版が優先するか）③用語の定義（重要用語の明確化）④条項間の矛盾がある場合の優先順位等の解釈規定が後日の紛争防止に重要。"},
+{id:156,category:"契約書の作成・審査",question:"「完全合意条項（全部合意条項・merger clause）」の説明として正しいものはどれか。",choices:["本契約書が当事者間の唯一・完全な合意であり事前の口頭・書面の合意","最終的な契約書以外の合意は全て無効であることを規定する条項（誤り）","全ての条項を変更できないとする条項（誤り）","全ての条項が有効であることを確認する条項（誤り）"],answer:0,explanation:"完全合意条項（Entire Agreement Clause）は「本契約書は当事者間の完全な合意を構成し事前の口頭・書面の交渉・合意・表明等を全て置き換える」と規定し契約書外の合意の援用を防ぐ。国際契約で標準的に使用される。"},
+{id:157,category:"契約書の作成・審査",question:"「権利不放棄条項（Non-waiver Clause）」の説明として正しいものはどれか。",choices:["一方当事者が特定の違反を一時的に見逃しても将来の同種違反に対する権利を放棄したことにはなら","当事者の権利を全て放棄する条項（誤り）","紛争解決権を放棄する条項という解釈","契約解除権を永久に放棄する条項（誤り）"],answer:0,explanation:"権利不放棄条項（Waiver Clause）は「一方当事者による権利の不行使・遅延は権利の放棄とみなされない」ことを規定し過去の温情的な対応が将来の権利行使の障害にならないことを明確化する。英文契約での標準条項。"},
+{id:158,category:"契約書の作成・審査",question:"「表明保証（Representations and Warranties）」条項の説明として正しいものはどれか。",choices:["当事者が相手方に対して一定の事実（財務状況・法令遵守・知的財産の保有","契約の目的物の外観を保証する条項（誤り）","将来の業績を保証する条項という解釈","製品の品質のみを保証する条項（誤り）"],answer:0,explanation:"表明保証（M&A・投資契約等で多用）は当事者が現状の事実関係（財務健全性・訴訟の不存在・知的財産の適正保有等）が真実であることを表明・保証し違反した場合は損害賠償・解除の根拠となる重要条項。"},
+{id:159,category:"契約書の作成・審査",question:"「秘密保持義務違反」の場合に「損害賠償の立証困難」を解消する方法として契約実務で使用されるものはどれか。",choices:["秘密保持義務違反があれば損害は自動的に認定される（この説明は誤り）","損害賠償の請求を諦めるという解釈","違約金条項（損害賠償の予定）を設けることで実際の損害額の立証なしに合意した金額を請求できる","刑事告訴のみで対応するという解釈"],answer:2,explanation:"NDA違反の損害額立証は困難なため契約実務では「違反1件につきXX万円」の違約金条項（損害賠償の予定：民法420条）を設けることが一般的。事前に定めた額を立証不要で請求できる。消費者契約での過大な違約金は無効となる点に注意。"},
+{id:160,category:"契約書の作成・審査",question:"「電子署名」の法的効力について正しいものはどれか。",choices:["電子署名は法的効力を持たない（誤り）","手書き署名がある書面の方が常に効力が強い（この説明は誤り）","電子署名法に基づく電子署名が付された電子文書は真正に成立したものと推定される","全ての電子署名が同等の法的効力を持つ（誤り）"],answer:2,explanation:"電子署名法3条は一定の電子署名（本人の意思に基づく電子署名）が付された電子文書について民事訴訟法上の真正成立の推定（228条4項）を規定。電子署名の種類（当事者型・立会人型）によりリスクと効力が異なる点の理解が実務上重要。"},
+{id:161,category:"ビジネス実務の法律問題",question:"「フリーランス（個人請負）」に関して2023年施行の「フリーランス・事業者間取引適正化等法（フリーランス保護新法）」の内容として正しいものはどれか。",choices:["フリーランスは労働法で完全に保護されている（誤り）","フリーランスに社会保険加入が義務付けられた（誤り）","フリーランスへの外注は全て禁止（誤り）","発注事業者にフリーランスへの業務内容・報酬等の明示・報酬の60日以内の支払い"],answer:3,explanation:"2023年施行のフリーランス保護新法（特定受託事業者に係る取引の適正化等に関する法律）は①業務内容・報酬・納期等の明示義務②支払期日（60日以内）③買いたたき・一方的取消等の禁止④ハラスメント防止措置⑤育児介護配慮を発注事業者に義務付け。"},
+{id:162,category:"ビジネス実務の法律問題",question:"「テレワーク（在宅勤務）」における労働法上の問題として正しいものはどれか。",choices:["テレワーク中は労働時間規制が適用されない（誤り）","テレワークでも労働基準法の労働時間規制が原則として適用され使用者は労働時間把握義務を負う","テレワーク中の労災は適用外という解釈","テレワーク勤務者には残業代支払い義務がない（誤り）"],answer:1,explanation:"テレワーク（在宅勤務・モバイルワーク等）でも労働基準法の労働時間規制は原則として適用される。使用者はPC操作ログ・勤怠管理システム等で労働時間を適切に把握する義務がある。通信費・光熱費等の費用負担についても明確にする必要がある。"},
+{id:163,category:"ビジネス実務の法律問題",question:"「SNSでの従業員の会社情報投稿」に関する法的リスクとして正しいものはどれか。",choices:["機密情報の漏洩・名誉毀損・個人情報漏洩・著作権侵害等のリスクがあり企業はソーシャルメディア","従業員の個人的なSNS投稿には企業は関与できない（誤り）","SNS投稿は全て著作権がなく自由に利用できる（誤り）","SNSでの情報共有は法律上奨励されている（誤り）"],answer:0,explanation:"従業員のSNS投稿が①会社の機密情報・未公表情報の漏洩②他社・個人への名誉毀損・プライバシー侵害③著作権侵害④個人情報漏洩等に該当すると企業の使用者責任や直接的な法的責任が生じる。SNSポリシーの整備・教育が不可欠。"},
+{id:164,category:"ビジネス実務の法律問題",question:"「AIの利用」に関する現在の法律上の主な課題として正しいものはどれか。",choices:["AIの利用は全面的に禁止されている（誤り）","AIの判断には法的責任は一切生じない（誤り）","AIに法人格を認める法律が制定されている（誤り）","AIが生成したコンテンツの著作権帰属・学習データの著作権問題"],answer:3,explanation:"AI利用の主な法的課題は①生成AIの出力物の著作権帰属（著作権法）②学習データ利用の適法性（著作権法30条の4等）③個人情報の学習・出力（個人情報保護法）④誤情報・ハルシネーション⑤偏見・差別の問題等。各国でAI規制法の整備が進む。"},
+{id:165,category:"ビジネス実務の法律問題",question:"「景品表示法」における「ステルスマーケティング（ステマ）規制」として正しいものはどれか。",choices:["インフルエンサーへの報酬支払いは全て禁止（誤り）","2023年から広告であることを隠して行う宣伝（ステマ）が不当表示として景品表示法の規制対象","SNSでの商品紹介は全て規制される（誤り）","広告と明記すれば内容の真実性は問わない（誤り）"],answer:1,explanation:"2023年10月から景品表示法の不当表示（5条3号）の告示でステルスマーケティング（事業者が第三者に依頼した広告であることを隠した投稿等）が規制対象となった。「広告」「PR」等の表示が義務付けられ違反には措置命令。"},
+{id:166,category:"ビジネス実務の法律問題",question:"「個人情報」を含む業務委託契約における委託元の義務として正しいものはどれか。",choices:["委託先が個人情報を適切に管理するかどうかは委託先の問題（誤り）","委託元は個人情報保護法上の委託先に対する監督義務（適切な委託先選定","個人情報の委託先への提供は第三者提供として本人同意が必要（誤り）","委託先が漏洩しても委託元に責任はない（誤り）"],answer:1,explanation:"個人情報保護法25条は個人情報の取扱いを委託する場合に委託元が委託先を適切に監督する義務を規定。①適切な委託先の選定②委託契約による安全管理義務の確保③委託先の管理状況の定期的確認が必要。委託先の漏洩は委託元の責任にも繋がる。"},
+{id:167,category:"ビジネス実務の法律問題",question:"「マイナンバー（個人番号）」の取扱いに関して事業者の義務として正しいものはどれか。",choices:["マイナンバーは社員管理に自由に利用できる（誤り）","マイナンバーは公開情報なのでどのように使用してもよい（誤り）","マイナンバーの収集に本人の同意は不要（誤り）","マイナンバーは源泉徴収・社会保険手続き等の法令に定められた特定の目的以外には利用が禁止され"],answer:3,explanation:"マイナンバー法（番号法）は個人番号の利用目的を社会保障・税・災害対策分野の特定手続きに限定し目的外利用・不必要な収集・安全管理措置を怠ることを禁止する。違反は罰則（4年以下懲役・200万円以下罰金等）の対象。"},
+{id:168,category:"ビジネス実務の法律問題",question:"「サイバーセキュリティインシデント（不正アクセス等）」が発生した場合の法的対応として正しいものはどれか。",choices:["社内での処理のみで足りるという解釈","被害を受けた会社に法的責任はない（誤り）","個人情報漏洩が発生した場合は個人情報保護委員会への報告と本人通知","警察への届出は任意でありしなくてよい（誤り）"],answer:2,explanation:"サイバーインシデントへの法的対応は①個人情報漏洩：個人情報保護委員会への報告・本人通知（義務）②不正アクセスの被害届（刑事）③事実関係の証拠保全④取引先・株主等への適切な情報開示（上場会社は適時開示）が必要。"},
+{id:169,category:"ビジネス実務の法律問題",question:"「役員の第三者に対する責任」（会社法429条）の説明として正しいものはどれか。",choices:["取締役は第三者に対して直接の損害賠償責任を一切負わない（誤り）","会社が損害賠償した後は役員に求償できない（誤り）","役員の第三者責任は刑事責任のみ（誤り）","取締役等がその職務について悪意または重大な過失があり第三者に損害を与えた場合にその第三者に"],answer:3,explanation:"会社法429条は取締役・会計参与・監査役・執行役等が職務について悪意または重大な過失があることにより第三者に損害を生じさせた場合に当該役員が直接第三者に対して損害賠償責任を負う。倒産時の融資への粉飾決算等でよく問題となる。"},
+{id:170,category:"ビジネス実務の法律問題",question:"「景品規制（景品表示法上）」における「総付景品（全員提供景品）」の上限として正しいものはどれか。",choices:["取引価格の10%または100円のいずれか高い方が上限","取引価格の20%という規定","取引価格の50%という規定","上限はないという規定"],answer:0,explanation:"総付景品（全員に提供する景品）の上限（内閣総理大臣告示）は取引価格の10%または200円（改定前100円）のいずれか高い方。懸賞景品（抽選等）は最高額10万円・総額が売上予定額の2%が上限（一般懸賞）。"},
+{id:171,category:"ビジネス実務の法律問題",question:"「法人の犯罪（両罰規定）」の説明として正しいものはどれか。",choices:["法人は犯罪の主体になれないという解釈","法人への罰金は個人への罰金と同額が原則（誤り）","両罰規定で罰せられた場合でも役員個人は免責される（誤り）","役員・従業員が業務に関して犯罪行為を行った場合に法人にも罰金刑を科す規定"],answer:3,explanation:"両罰規定は独禁法・不競法・労基法・金商法等多くの経済法令に設けられており行為者（役員・従業員）が業務に関して違反行為をした場合に法人（会社）にも罰金刑を科す規定。法人の罰金は個人より高額に設定される場合が多い。"},
+{id:172,category:"ビジネス実務の法律問題",question:"「電子帳簿保存法」の改正で2024年から完全義務化された事項として正しいものはどれか。",choices:["全ての帳簿を紙で保存する義務という規定（誤り）","電子取引で受け取った取引情報は電子データのまま保存する義務（紙印刷での代替が原則不可）","会計ソフトの使用が義務化されたという規定（誤り）","全てのデータの検索要件が免除されたという規定（誤り）"],answer:1,explanation:"電子帳簿保存法の2024年1月完全義務化は電子取引（電子メール添付PDF請求書・WEB明細等）で受け取った取引情報を電子データで保存する義務化。猶予期間終了で紙印刷保存は原則不可となった。要件（訂正削除の履歴保存・検索機能等）を満たす必要がある。"},
+{id:173,category:"ビジネス実務の法律問題",question:"「民事再生申立て」が検討される状況として最も適切な説明はどれか。",choices:["資金繰りに余裕があり事業が好調な場合（誤り）","支払い困難が生じているが事業継続の可能性がある場合に事業を維持しながら債務を圧縮・整理する場合","即座に事業を終了・清算する場合（誤り）","刑事事件を起こした場合という解釈"],answer:1,explanation:"民事再生は財務的に困難に直面しているが事業価値があり再建可能な事業者が選択する再建型倒産手続き。申立て後は再生計画を作成し裁判所・債権者の認可を経て債務を一部免除・弁済期延長して事業を継続する。"},
+{id:174,category:"ビジネス実務の法律問題",question:"「経済安全保障推進法」における企業への主な影響として正しいものはどれか。",choices:["重要物資のサプライチェーン強靭化・基幹インフラの安全確保","企業の海外進出を一律禁止という解釈","個人情報保護に関する新たな義務が生じる（誤り）","輸出入の全面禁止という規定"],answer:0,explanation:"2022年施行の経済安全保障推進法は①重要物資のサプライチェーン調査・支援②電力・通信等の基幹インフラの重要設備導入の事前審査③特定重要技術の研究開発支援④特許非公開制度の4柱で企業の経済安全保障対応を求める。"},
+{id:175,category:"ビジネス実務の法律問題",question:"「クーリングオフ」の書面（または電磁的記録）送付先として正しいものはどれか。",choices:["最寄りの消費生活センターという解釈","裁判所への申立てが必要という解釈","口頭での通知で足りるという解釈","販売業者・クレジット会社の双方に書面（または電磁的記録）でクーリングオフの通知を行う"],answer:3,explanation:"クーリングオフは書面または電磁的記録（メール等）を所定の期間内に①販売業者（クレジット払いの場合はクレジット会社にも）に送付する。発信主義（書面を発送した日がクーリングオフの日付）。特定商取引法の要件を正確に守ることが重要。"},
+{id:176,category:"契約の基礎",question:"「通謀虚偽表示（仮装行為）」の効力として正しいものはどれか。",choices:["当事者間では無効だが善意の第三者には無効を対抗できない","当事者間でも有効という規定","当事者間でも第三者に対しても常に有効","第三者が悪意でも保護されるという解釈"],answer:0,explanation:"通謀虚偽表示（民法94条）は相手方と通じた虚偽の意思表示で当事者間では無効。ただし善意の第三者には無効を対抗できない（94条2項）。第三者保護のため取引安全を重視した規定で善意の第三者は無過失まで不要とされる（判例）。"},
+{id:177,category:"会社法",question:"「株式会社の設立」の手続きとして正しいものはどれか。",choices:["口頭での合意のみで設立できる","定款の作成（公証人認証）・出資の履行・取締役等の選任・設立登記が必要","登記のみで設立できる","発起人が1人でも設立できる（発起設立）"],answer:3,explanation:"株式会社（発起設立）の設立手続きは①定款作成（原始定款の公証人認証）②出資の履行（全額払込み）③取締役等の選任（設立時役員）④設立登記（管轄法務局）。発起人は1人でよく（会社法26条）設立登記で会社が成立（49条）。"},
+{id:178,category:"労働法",question:"「同一労働同一賃金」原則（パートタイム・有期雇用労働法・労働者派遣法）の内容として正しいものはどれか。",choices:["正社員と非正規社員の給与は必ず同一にしなければならない（誤り）","派遣労働者の同一労働同一賃金は任意の取り組み（誤り）","非正規社員には退職金を支払う義務がない（誤り）","正社員と非正規労働者の間の不合理な待遇差を禁止し職務内容"],answer:3,explanation:"同一労働同一賃金（パートタイム・有期雇用労働法8・9条）は職務内容・責任・配置変更の範囲が同じ場合の均等待遇と不合理な待遇差の禁止（均衡待遇）を求める。基本給・賞与・各種手当・福利厚生等を個別に比較・検討する必要がある。"},
+{id:179,category:"知的財産法",question:"「職務著作（法人著作）」が成立する要件として正しいものはどれか。",choices:["会社が発注した外部業者の著作物も法人著作になる（誤り）","従業者が個人名で公表すれば常に従業者が著作者（誤り）","法人等の発意に基づき従業者が職務上作成した著作物を法人等の名義で公表する場合","会社の命令で作成した著作物は全て会社のもの（誤り）"],answer:2,explanation:"職務著作（著作権法15条）の要件は①法人等の発意に基づく②従業者（役員含む）が職務上作成③法人等の名義で公表④契約・就業規則等に別段の定めなし。全要件を満たせば法人が著作者（著作者人格権・著作権とも）となる。"},
+{id:180,category:"民事訴訟法・倒産法",question:"「少額訴訟手続き」の対象となる金額として正しいものはどれか。",choices:["10万円以下","100万円以下","60万円以下","制限なし"],answer:2,explanation:"少額訴訟（民事訴訟法368条〜）は金銭の支払いを求める訴えで訴額60万円以下の場合に申立て可能（同一の裁判所で年10回まで）。1回の審理で判決が出る迅速手続きで弁護士なしでも使いやすい。"},
+{id:181,category:"消費者保護法",question:"「消費者契約法」における「無効となる契約条項」として正しいものはどれか。",choices:["全ての損害賠償条項が無効という解釈","消費者が作成した条項のみ無効（誤り）","事業者の損害賠償責任を全部免除する条項・消費者に一方的に不利な解除権制限","消費者が同意した条項は全て有効（誤り）"],answer:2,explanation:"消費者契約法8〜10条の無効条項は①事業者の損害賠償責任の全部免除条項②故意・重過失の一部免除条項③消費者の解除権を制限する条項④高すぎる違約金条項（平均的損害超過部分）⑤消費者の利益を一方的に害する条項等。"},
+{id:182,category:"コンプライアンス経営",question:"「下請取引の適正化（下請法）」において禁止される「買いたたき」の説明として正しいものはどれか。",choices:["下請業者が値引きを申し出た場合に受け入れること","正当な理由なく通常支払われる対価を著しく下回る下請代金を設定すること","適正価格での発注という規定","競争入札での最低価格の受け入れ（誤り）"],answer:1,explanation:"下請法4条1項5号の買いたたき禁止は下請事業者の給付に対して正当な理由なく一般的に支払われる対価より著しく低い下請代金を設定することを禁止する。原材料費上昇・最低賃金引上げへの適切な対応も求められる。"},
+{id:183,category:"不動産法",question:"「住宅ローン」と「抵当権」の関係として正しいものはどれか。",choices:["住宅ローンの抵当権設定には借主の同意は不要（誤り）","金融機関は住宅ローンの担保として対象不動産に抵当権を設定し融資し返済不能時に競売で回収する","抵当権設定後は所有者が住宅を使用できない（誤り）","抵当権は設定と同時に自動的に効力が生じ登記は不要（この説明は誤り）"],answer:1,explanation:"住宅ローンでは金融機関が貸付対象の不動産に抵当権（根抵当権の場合も）を設定（登記）する。借主はローン返済中も不動産を使用・収益できる。返済不能（デフォルト）時に金融機関は競売（または任意売却）で回収する。"},
+{id:184,category:"企業取引の法律",question:"「与信管理」における「与信限度額」の設定目的として正しいものはどれか。",choices:["取引量を増やすための目安という考え方（誤り）","取引相手方の信用リスクを管理し許容できる最大の売掛金・債権残高の上限設定","社内の予算管理のみの目的という考え方（誤り）","税務上の損金算入の要件という考え方（誤り）"],answer:1,explanation:"与信管理での与信限度額は取引先の財務状況・支払い能力・取引実績等を評価して設定する与信供与の上限。限度額以内に売掛金残高を管理することで貸倒れリスクを許容範囲に抑制する。"},
+{id:185,category:"金融商品取引法",question:"「内部者取引（インサイダー取引）」の違反事実を知った場合に証券会社員がとるべき対応として正しいものはどれか。",choices:["自ら取引して儲けるという対応（誤り）","コンプライアンス部門への報告・社内通報制度の利用・金融庁・証券取引等監視委員会への通報","取引を隠蔽するという対応という解釈","見て見ぬふりをするという対応（誤り）"],answer:1,explanation:"証券会社員がインサイダー取引（疑い）を発見した場合は①社内のコンプライアンス部門への直ちの報告②内部通報制度の利用③必要に応じて金融庁・証券取引等監視委員会（SESC）への通報が適切な対応。自ら取引・隠蔽は重大な法令違反。"},
+{id:186,category:"契約の基礎",question:"「民法の債権総則」における「債権譲渡」の対抗要件として正しいものはどれか。",choices:["債権譲渡は当事者間の合意のみで第三者にも対抗できる（誤り）","口頭による通知で第三者にも対抗できる（誤り）","登記が必要という規定","指名債権の譲渡は譲渡人から債務者への通知または債務者の承諾"],answer:3,explanation:"指名債権（通常の民法上の債権）の譲渡は債務者への通知または債務者の承諾が債務者対抗要件。第三者対抗要件は確定日付のある証書（内容証明郵便等）による通知または承諾が必要（民法467条）。"},
+{id:187,category:"会社法",question:"「株主の議決権行使」における「書面投票」・「電子投票」の説明として正しいものはどれか。",choices:["議決権行使は株主総会の場でのみ可能（誤り）","電子投票は取締役会の決議で廃止できる（誤り）","書面投票は大会社のみに認められる（誤り）","一定規模以上の会社では株主が書面（議決権行使書面）または電磁的方法で株主総会に出席せずに議"],answer:3,explanation:"議決権行使書面制度（会社法301条）は議決権者1000名以上の会社に書面による議決権行使の準備を義務付ける。電子的方法による議決権行使（電子投票）は取締役会決議で定めれば可能（会社法302条）。機関投資家の多くが電子投票を利用。"},
+{id:188,category:"知的財産法",question:"「特許の無効審判」について正しいものはどれか。",choices:["特許が登録されると永久に無効にできない","登録された特許でも新規性・進歩性を欠く等の無効理由がある場合は特許庁に無効審判を請求できる","無効審判は特許権者のみが請求できる","無効審判で無効になった特許は最初から存在しなかったことになる"],answer:3,explanation:"特許無効審判（特許法123条〜）は何人でも（利害関係人でなくても）登録特許の無効を特許庁に請求できる（一部例外あり）。認容されると特許権は遡及的に消滅（最初から存在しなかったことになる）する効果がある点が重要。"},
+{id:189,category:"民法（不法行為・物権）",question:"「工作物責任」（民法717条）の説明として正しいものはどれか。",choices:["工作物の所有者のみが責任を負う（誤り）","土地の工作物（建物・塀等）の設置・保存の瑕疵により損害が生じた場合、一次的に占有者が","工作物の瑕疵は故意があった場合のみ責任が生じる（誤り）","工作物責任は設置者のみに適用（誤り）"],answer:1,explanation:"工作物責任（民法717条）は土地工作物の設置・保存の瑕疵による損害について①まず占有者が責任を負い②占有者が損害防止に必要な注意を尽くした場合は所有者が無過失責任を負う（免責不可）。所有者の責任は絶対的（無過失）。"},
+{id:190,category:"商法・手形法",question:"「商事時効」（商法522条）の特則として正しいものはどれか。",choices:["商事債権の消滅時効は常に5年という規定（誤り）","商事時効は1年という規定という解釈","商行為によって生じた債権の消滅時効は2020年改正民法の施行後は原則として民法の時効に統一","商行為の債権に時効はないという規定（誤り）"],answer:2,explanation:"2020年民法改正施行（2020年4月）に伴い商法522条（5年の商事時効）は削除され商事債権にも原則として改正民法の消滅時効（主観的起算点から5年または客観的起算点から10年のいずれか早い方）が適用される。"},
+{id:191,category:"民事訴訟法・倒産法",question:"「個人再生手続き」の特徴として正しいものはどれか。",choices:["個人再生は法人も利用できるという解釈","個人再生は全ての債務を免除する（誤り）","個人（主に個人事業者）が住宅ローン特則等を活用しながら減額した債務を3〜5年で返済する再建","個人再生で免責された後も保証人への請求は停止する（誤り）"],answer:2,explanation:"個人再生（民事再生法221条〜）は個人債務者（個人事業者含む）が定期的収入を有することを要件に再生計画により債務を大幅減額（最低弁済額の規定あり）し3〜5年で返済する再建型手続き。住宅ローン特則で自宅を維持できる。"},
+{id:192,category:"消費者保護法",question:"「割賦販売法」の規制対象となる「マルチ商法（連鎖販売取引）」の規制として正しいものはどれか。",choices:["マルチ商法は完全に禁止されている（誤り）","特定商取引法の規制があり契約書面交付・20日間のクーリングオフ・中途解約権等が認められる","マルチ商法への参加は自由で規制はない（誤り）","マルチ商法の勧誘に書面交付義務はない（誤り）"],answer:1,explanation:"連鎖販売取引（マルチ商法：特定商取引法33条〜）は特商法で規制され①概要書面・契約書面の交付義務②20日間のクーリングオフ③中途解約権（年間購入額の上限：10万円等）④誇大広告・不実告知の禁止等が適用される。"},
+{id:193,category:"コンプライアンス経営",question:"「腐敗防止（FCPA・英国贈収賄法等）」に関して多国籍企業への影響として正しいものはどれか。",choices:["日本企業はFCPAの適用を受けない（誤り）","海外子会社の不正は親会社の責任ではない（誤り）","外国での商慣習に従った贈答は全て合法（誤り）","米国FCPAや英国贈収賄法は域外適用があり日本企業も外国公務員への贈賄"],answer:3,explanation:"米国FCPA（海外腐敗行為防止法）は米国上場企業・米国市場へのアクセスがある外国企業も対象で外国公務員への贈賄を禁止する。英国贈収賄法も広範な域外適用がある。日本企業もグローバル展開に伴いこれらへの対応が不可欠。"},
+{id:194,category:"企業取引の法律",question:"「リース取引の会計処理（ASC842・IFRS16）」への対応として実務上重要な点はどれか。",choices:["会計上リース取引は全て費用処理でよい（誤り）","ファイナンスリースのみオンバランス（誤り）","IFRS16・新リース会計基準の下ではほぼ全てのリースをオンバランス","リース取引の会計基準は変更されていない（誤り）"],answer:2,explanation:"IFRS16（2019年施行）・国際財務報告基準では賃貸借（オペレーティングリース）も原則オンバランス（使用権資産・リース負債計上）が必要で企業の財務指標に大きな影響を与える。日本会計基準でも同様の方向性で検討中。"},
+{id:195,category:"不動産法",question:"「マンション建替え決議」に必要な要件として区分所有法上正しいものはどれか。",choices:["区分所有者の過半数という規定","区分所有者・議決権の各5分の4以上の多数による集会決議","全員の一致という規定","区分所有者の3分の2以上という解釈"],answer:1,explanation:"マンション（区分所有建物）の建替え決議（区分所有法62条）は区分所有者数および議決権の各5分の4以上の多数による集会決議が必要。建替えに反対する区分所有者に対しては時価での区分所有権売渡し請求が可能。"},
+{id:196,category:"金融商品取引法",question:"「金融ADR（指定紛争解決機関）」制度の説明として正しいものはどれか。",choices:["証券・銀行・保険等の各業界に設置された指定紛争解決機関（FINMAC","金融庁が直接紛争を解決する機関（誤り）","金融機関は紛争解決機関への参加が任意（誤り）","紛争解決機関の和解案に金融機関は応じる義務がない（誤り）"],answer:0,explanation:"金融商品取引法および各業法に基づく指定紛争解決機関（証券はFINMAC・銀行は全銀協等）は金融機関と顧客間の紛争を調停等で裁判外解決する機関。金融機関には参加・手続応諾・和解案尊重の義務があり消費者の費用負担が少ない。"},
+{id:197,category:"ビジネス実務の法律問題",question:"「コーポレートガバナンス・コード」の説明として正しいものはどれか。",choices:["法律として制定された強制規定（誤り）","中小企業にのみ適用される規定（誤り）","上場会社のみに刑事罰を伴う義務を課す規定（誤り）","東京証券取引所が定める上場会社向けコーポレートガバナンスの原則でComply or Exp"],answer:3,explanation:"コーポレートガバナンス・コード（東証2015年策定・2021年改訂）は上場会社に対して取締役会の機能・株主との対話・情報開示等のガバナンス原則を示す。法的拘束力はないが「Comply or Explain」で対応を求め違反への説明を要求する。"},
+{id:198,category:"契約書の作成・審査",question:"「国際契約における仲裁条項」の利点として正しいものはどれか。",choices:["仲裁判断は外国でも執行しやすく（ニューヨーク条約）手続きの機密性","仲裁は裁判所訴訟より常にコストが低い（誤り）","仲裁では上訴が自由にできるという解釈","仲裁条項は消費者も当然に拘束される（誤り）"],answer:0,explanation:"国際商事仲裁の利点は①ニューヨーク条約（167か国以上締約）により外国での仲裁判断の執行が容易②手続きの機密性③当事者による仲裁人・仲裁地・言語・ルールの選択④専門家判断。欠点はコスト・時間がかかる場合がある点。"},
+{id:199,category:"ビジネス実務の法律問題",question:"「M&Aにおけるデューデリジェンス（DD）」の目的として正しいものはどれか。",choices:["買収対象会社の美観・清潔さを確認すること（誤り）","法務・財務・税務・事業等の観点から買収対象会社の問題点・リスクを調査して買収判断","買収後の経営統合計画の立案のみ（誤り）","買収価格の交渉を有利にするための情報収集のみ（誤り）"],answer:1,explanation:"デューデリジェンス（DD：詳細調査）はM&Aで買収対象の法務（訴訟リスク・契約・知財・コンプライアンス）・財務（財務諸表・簿外債務）・税務・IT・環境等を詳細に調査し問題点を特定して価格調整・表明保証・免責条項に反映させる。"},
+{id:200,category:"コンプライアンス経営",question:"「情報セキュリティポリシー」において企業が規定すべき主な事項として正しいものはどれか。",choices:["社員の服装規定という考え方という解釈","情報資産の分類・アクセス権限管理・インシデント対応手順・従業員教育・システム管理等の基本方針","利益目標の達成方法という考え方（誤り）","顧客への販売戦略という考え方（誤り）"],answer:1,explanation:"情報セキュリティポリシーは①情報資産の特定・分類②アクセス制御・認証管理③物理的セキュリティ④システム・ネットワーク管理⑤インシデント対応⑥従業員教育⑦サードパーティ管理等を規定する組織の情報セキュリティの基本方針文書。"},
+{id:201,category:"契約の基礎",question:"「民法の定型約款」（2020年施行）の特則として正しいものはどれか。",choices:["定型約款は相手方に全て個別に説明しなければ効力がない（誤り）","定型約款の変更には相手方全員の同意が必要（誤り）","定型約款は消費者にのみ適用される（誤り）","定型約款は組み込み合意があれば相手方が内容を知らなくても原則として契約内容となる"],answer:3,explanation:"定型約款（民法548条の2〜）は①定型取引の合意②約款の内容となる旨の合意または表示があれば個別説明なしで契約内容になる。ただし相手方の利益を一方的に害する条項は合意しなかったとみなす（548条の2第2項）。変更は一定要件で相手方の同意なく可能。"},
+{id:202,category:"会社法",question:"「特別支配株主の株式等売渡請求」の説明として正しいものはどれか。",choices:["少数株主が特別支配株主に株式売却を強制できる（誤り）","特別支配株主に株式を売却する義務はない（誤り）","総株主の議決権の90%以上を有する特別支配株主が少数株主全員に対して株式","90%株主が株主総会決議なしに完全子会社化できる（誤り）"],answer:2,explanation:"特別支配株主の株式等売渡請求（会社法179条〜：スクイーズアウト）は総議決権90%以上保有の株主が取締役会の承認を得て少数株主に対価と引換えに株式等の売渡しを求める制度。完全子会社化・上場廃止に活用される。"},
+{id:203,category:"労働法",question:"「労働者災害補償保険法（労災保険）」の「業務災害」の認定基準として正しいものはどれか。",choices:["就業時間中のケガは全て業務災害（誤り）","通勤中のケガは業務災害という解釈","業務遂行性（使用者の支配下にある状態）と業務起因性（業務と傷病の因果関係）の両方が認められ","アルバイトには労災保険が適用されない（誤り）"],answer:2,explanation:"業務災害の認定は①業務遂行性（使用者の支配下・管理下にある状態での事故）②業務起因性（業務と傷病等の間の相当因果関係）の両要件が必要。私的行為・故意・重大な過失は業務起因性を否定する要因となる場合がある。"},
+{id:204,category:"知的財産法",question:"「商標の「先使用権」の説明として正しいものはどれか。",choices:["商標登録の出願前から日本国内で不正競争目的なく商標を使用し周知されていた場合に継続使用できる権利","先に使用すれば登録商標より常に優先する（誤り）","先使用権があれば登録商標権者を無視できる（誤り）","先使用権は登録が必要という解釈"],answer:0,explanation:"先使用権（商標法32条）は他人が商標登録する前から日本国内で不正競争の目的なく使用し周知となっていた商標について登録商標権を侵害しない範囲で継続使用できる権利。ただし「周知」の立証が必要で地域的限定もある。"},
+{id:205,category:"民事訴訟法・倒産法",question:"「詐害行為取消権（民法424条）」の説明として正しいものはどれか。",choices:["詐害行為をした債務者を刑事告訴できる権利（誤り）","債務者が債権者を害することを知りながら行った財産処分行為","債務者の全ての財産処分を取り消せる（誤り）","詐害行為取消権は破産手続きでのみ使用できる（誤り）"],answer:1,explanation:"詐害行為取消権（民法424条）は債権者が債務者の詐害的な財産処分（贈与・不相当な廉価譲渡・担保提供等）を裁判所に取消請求できる権利。要件は①債権者を害すること②債務者の悪意③受益者（転得者）の悪意。"},
+{id:206,category:"消費者保護法",question:"「電子商取引での契約成立時期」に関する特則として正しいものはどれか。",choices:["クリックした瞬間に必ず契約が成立する（誤り）","電子取引の契約成立時期に特別規定はない（誤り）","民法の発信主義が適用されるという解釈","事業者が注文確認のメールを送信しただけでは承諾とはいえない場合があり注文承諾の通知が到達し"],answer:3,explanation:"電子取引での契約成立は原則として承諾の意思表示が相手方に到達した時点（到達主義：民法97条）。注文確認メールが「承諾」か「確認」かは文言・状況で判断される。事前に「注文確認メール受信時点で契約成立」と告知している場合は到達で成立。"},
+{id:207,category:"コンプライアンス経営",question:"「会社の不祥事発覚時のクライシスマネジメント」において法務・コンプライアンス上重要な初動対応として正しいものはどれか。",choices:["事実を隠蔽して影響を最小化する（誤り）","担当者個人の責任追及のみという解釈","マスコミへの情報提供のみという解釈","事実関係の迅速な調査・証拠保全・適切な情報開示（監督官庁"],answer:3,explanation:"不祥事クライシスマネジメントの法務的対応は①事実関係の迅速・正確な調査（第三者委員会活用も）②証拠の保全③関係当局（監督官庁・証券取引所等）への適切な報告・開示④原因分析⑤再発防止策の策定・実施。隠蔽は更なる法的リスクを招く。"},
+{id:208,category:"企業取引の法律",question:"「代理店契約（販売代理店契約）」の法的性質として正しいものはどれか。",choices:["代理店は常に代理権（法律行為を本人に代わって行う権限）を持つ","代理店契約に独占禁止法は適用されない（誤り）","代理店は本人の業務に関して無限の責任を負う（誤り）","代理店契約は本人代理型と販売型（リセラー型：代理店が自ら買い取り販売）に分かれ性質によって"],answer:3,explanation:"代理店契約は①代理型（本人を代理して契約締結・価格は本人が決定）と②販売型（リセラー：代理店が仕入れて自己の計算で販売・価格は代理店が設定）に大別。法的性質（代理か売買か）により本人の責任・独禁法の適用等が異なる。"},
+{id:209,category:"不動産法",question:"「不動産売買」における「瑕疵担保責任から契約不適合責任への変更」（2020年民法改正）の主な変更点として正しいものはどれか。",choices:["旧法と内容は全く同じという解釈","買主の通知期間が1年から5年に延長された（誤り）","「隠れた瑕疵」の要件がなくなり「契約の内容に適合しない」かどうかで判断するようになり買主の権利","売主の責任が全面的に軽減された（誤り）"],answer:2,explanation:"2020年改正民法の契約不適合責任（562条〜）は旧法の瑕疵担保責任から変更。①「隠れた」要件廃止（契約内容に適合しない全ての不適合が対象）②買主の権利として修補・代替物引渡・代金減額・損害賠償・解除が整理された③通知期間は不適合を知ってから1年以内（旧法と同様）。"},
+{id:210,category:"ビジネス実務の法律問題",question:"「税務調査」への対応として法務・コンプライアンス上重要なことはどれか。",choices:["税務調査には応じる必要はない（誤り）","税務調査中は全ての業務を停止しなければならない（誤り）","税務調査には誠実に対応し正確な書類・帳簿を整備しておくことが重要で不正な隠蔽は刑事罰の対象になる","税務調査の際に弁護士・税理士への相談は不要（誤り）"],answer:2,explanation:"税務調査（国税通則法等）への対応は①誠実・協力的な対応が基本②正確な帳簿・書類の整備が事前に必要③質問応答権・不当な調査拒絶への罰則あり④重加算税・刑事罰（ほ脱犯）の対象となる不正行為は厳禁。税理士・弁護士との連携が重要。"},
+{id:211,category:"契約の基礎",question:"「催告によらない解除」（民法542条）が認められる場合として正しいものはどれか。",choices:["軽微な債務不履行でも即時解除できる（誤り）","代金の未払いがあれば常に催告なしに解除できる（誤り）","催告によらない解除は認められない（誤り）","債務の全部の履行不能・債務者が履行拒絶の明確な意思表示・契約の目的を達成できない一部不履行"],answer:3,explanation:"催告によらない解除（民法542条）は①全部履行不能②確定的履行拒絶③部分的履行不能等で残存部分では契約目的達成不可④定期行為（時期が契約本質）の期間徒過⑤催告して履行可能性がない等の場合に催告なしに解除できる。"},
+{id:212,category:"会社法",question:"「会社の代表権」について代表取締役の権限として正しいものはどれか。",choices:["代表取締役は会社の業務に関する一切の裁判上・裁判外の行為について会社を代表する権限を有し内","代表取締役は取締役会の承認なく全ての行為ができる（誤り）","代表取締役は定款の定めによってのみ選任される（誤り）","代表取締役は複数置くことができない（誤り）"],answer:0,explanation:"代表取締役（会社法349条）は会社の全業務について包括的な代表権を持つ。取締役会決議が必要な事項（重要財産の処分等）について内部制限に違反した行為でも善意の第三者には無効を対抗できない（内部制限の対外不関与）。"},
+{id:213,category:"労働法",question:"「競業避止特約」（退職後の競業禁止）の有効性について正しいものはどれか。",choices:["退職後の競業避止特約は目的・期間・地域・業務範囲・代償の有無等を考慮して合理的な範囲でのみ有効","退職後の競業避止特約は常に有効という規定（誤り）","競業避止特約は全て無効という規定（誤り）","管理職に対してのみ有効という規定（誤り）"],answer:0,explanation:"退職後の競業避止条項の有効性判断（東京地裁等の判例）は①制限目的（企業秘密保護等）の合理性②期間の相当性（長くても2年程度が目安）③地域の相当性④職務の範囲⑤代償措置の有無・額を総合判断。不合理な制限は公序良俗違反で無効。"},
+{id:214,category:"知的財産法",question:"「商標権侵害」の判断基準として「類似性」の判断方法として正しいものはどれか。",choices:["全く同一の商標のみが侵害になる（誤り）","1つの要素で類似と判断されれば常に侵害（誤り）","外観（見た目）・称呼（読み方）・観念（意味）の3つを総合的に比較して需要者が混同するおそれ","文字商標のみが侵害の対象という解釈"],answer:2,explanation:"商標の類似性判断は①外観（視覚的類似）②称呼（発音・読み方の類似）③観念（意味内容の類似）を総合的に考慮し需要者が出所を誤認・混同するおそれがあるかで判断する（商標法4条1項11号等）。"},
+{id:215,category:"民法（不法行為・物権）",question:"「土地の所有権の範囲」について民法の規定として正しいものはどれか。",choices:["土地の所有権は地表面のみに及ぶ（誤り）","土地の所有権は法令の範囲内で土地の上下に及ぶ（ただし実際には航空法・鉱業法等で制限）","土地の所有権は地球の中心まで及ぶ（誤り）","土地の所有権は公道から5mまで及ぶ（誤り）"],answer:1,explanation:"土地所有権の効力（民法207条）は法令の制限内で土地の上下に及ぶ。ただし地下（地下鉄・電線等）は土地所有権が及ばない制限がある（大深度地下法等）。上空も航空法等で一定の高さ以上は自由に飛行できる。"},
+{id:216,category:"商法・手形法",question:"「商法上の商人」の定義として正しいものはどれか。",choices:["会社のみが商人という規定","固有の商行為を業とする者と会社が商人（商法4条）で個人事業主も商人になりうる","大企業のみが商人という規定","商人登録した者のみが商人という解釈"],answer:1,explanation:"商人（商法4条）は①絶対的商行為（投機的購買転売・有価証券取引・手形行為等）または②営業的商行為（製造・加工・運送・保険・銀行等）を業として行う者（固有の商行為）と③会社（擬制商人）。個人事業主も商行為を業とすれば商人。"},
+{id:217,category:"民事訴訟法・倒産法",question:"「調停制度」の特徴として正しいものはどれか。",choices:["調停は裁判所が強制的に解決を決定する（誤り）","調停委員会が当事者の間に入って話し合いを促進し両者が合意した場合に調停調書が作成されて確定","調停の申立てには弁護士が必須（誤り）","調停で合意がなければ自動的に訴訟になる（誤り）"],answer:1,explanation:"調停（民事調停法・家事事件手続法）は調停委員会（裁判官・調停委員）が仲介して当事者が互いに譲歩・合意する紛争解決手続き。合意が成立すると調停調書は確定判決と同一の効力を持つ。合意に至らない場合は調停不成立で終了（訴訟へ）。"},
+{id:218,category:"消費者保護法",question:"「訪問購入（押し買い）」の規制として正しいものはどれか。",choices:["訪問購入に法的規制はないという解釈","訪問購入は全面禁止という規定","特定商取引法で2013年から規制され8日間のクーリングオフ","訪問購入は金融機関のみが行える（誤り）"],answer:2,explanation:"訪問購入（押し買い）規制（特定商取引法58条の4〜：2013年施行）は業者が消費者宅に訪問して物品を買い取る取引への規制。①勧誘目的・種類の明示②不招請勧誘・再勧誘禁止③契約書面交付④8日間のクーリングオフ（消費者が解除可能）を義務付ける。"},
+{id:219,category:"コンプライアンス経営",question:"「M&Aにおける独占禁止法上の企業結合審査」のポイントとして正しいものはどれか。",choices:["全てのM&Aが審査対象という規定（誤り）","一定規模以上の企業結合は公正取引委員会への事前届出・審査が必要で競争制限は禁止","競合他社間の合併のみが審査対象という規定（誤り）","届出前から統合作業を開始できるという規定（誤り）"],answer:1,explanation:"企業結合規制（独禁法10条〜）は国内売上高等が一定基準（合計200億円超・個別50億円超等）を満たす企業結合について事前届出・審査義務がある。審査では競争制限性（市場集中度等）を評価し問題がある場合は禁止・行動制限・事業売却（ダイベストチャー）を求める。"},
+{id:220,category:"企業取引の法律",question:"「業務委託契約」と「雇用契約」の区別について最も重要な基準として正しいものはどれか。",choices:["業務委託は有償、雇用は無償という解釈","業務の遂行が受注者の裁量に委ねられているか（指揮命令関係の有無","名称が業務委託であれば雇用ではない（誤り）","週20時間以内の就労は全て業務委託（誤り）"],answer:1,explanation:"雇用（労働契約）か業務委託（請負・委任）かは名称でなく実態で判断（使用従属性）。判断基準は①仕事の依頼への諾否の自由②業務内容・遂行方法への指揮命令③時間・場所の拘束性④代替性⑤報酬の性格（時間給か成果報酬か）等。偽装業務委託は労基法違反。"},
+{id:221,category:"契約の基礎",question:"「民法上の時効の中断（更新）」事由として正しいものはどれか。",choices:["債権者が督促状を送付した場合（誤り）","裁判上の請求（訴訟提起）・強制執行・仮差押え・支払督促・債務承認等が時効の更新","内容証明郵便の送付は時効完成を阻止しない（誤り）","時効は中断できないという規定"],answer:1,explanation:"2020年改正民法は時効中断を「時効の更新」と「時効の完成猶予」に再構成。時効の更新（リセット）事由は①裁判上の請求②強制執行等の申立て③仮差押え・仮処分④承認（債務者が権利の存在を認める行為）。催告（内容証明等）は6か月の完成猶予のみ。"},
+{id:222,category:"会社法",question:"「事業報告」（会社法上）の説明として正しいものはどれか。",choices:["事業報告は任意書類という規定","事業報告には財務数値は含まれない（誤り）","事業報告は金融商品取引法上の書類（誤り）","株式会社は各事業年度の事業の状況等を記載した事業報告を作成し株主への提供・株主総会への報告が必要"],answer:3,explanation:"事業報告（会社法435条・2項）は事業の状況・取締役等に関する事項（社外役員・支配株主・内部統制システム等）を記載した計算書類と並ぶ必須書類。定時株主総会で報告（承認不要）し監査役の監査対象となる（会計数値は含まない）。"},
+{id:223,category:"労働法",question:"「労働審判制度」の特徴として正しいものはどれか。",choices:["労働審判は通常の民事訴訟と同じ手続き（誤り）","労働審判の申立ては使用者のみができる（誤り）","労働関係の個別紛争について3回以内の審理で迅速に解決する制度で労働審判が確定すると裁判上の","労働審判で異議申立てをすると自動的に解決される（誤り）"],answer:2,explanation:"労働審判制度（労働審判法：2006年施行）は労働関係の個別紛争（解雇・賃金等）について地方裁判所（労働審判官1名・労働審判員2名）が原則3回以内の期日で審判を行う。審判確定は確定判決と同一の効力。異議申立て（2週間以内）があると訴訟に移行。"},
+{id:224,category:"知的財産法",question:"「オープンソースソフトウェア（OSS）のライセンス」において「コピーレフト条項（GPL等）」の義務として正しいものはどれか。",choices:["GPLのコピーレフトOSSを組み込んだソフトウェアを配布する場合は派生物も同じGPLライセンスで配布","OSSを利用したソフトウェアは全て無償提供が義務（誤り）","OSSの商用利用は全て禁止という解釈","OSSに著作権はないという解釈"],answer:0,explanation:"GPLのコピーレフト条項はGPLライセンスのOSSを組み込んだ派生物を配布する場合に派生物も同じGPLで配布・ソースコードを開示する義務を課す（プロプライエタリソフトへの組込みを制限）。MIT・BSDはコピーレフトなし（より自由）。"},
+{id:225,category:"民法（不法行為・物権）",question:"「共有」における持分の処分について正しいものはどれか。",choices:["共有物全体の処分には1人の同意で足りる（誤り）","共有持分の譲渡には全員の同意が必要（誤り）","各共有者は他の共有者の同意なく自己の持分を自由に譲渡できるが共有物全体の処分には共有者全員","共有物の管理は1人の共有者が単独でできる（誤り）"],answer:2,explanation:"共有（民法249条〜）において①各共有者は自己の持分を自由に処分できる（他の同意不要）②共有物全体の処分（売却等）は共有者全員の同意が必要③管理行為は持分の過半数④保存行為は各共有者が単独でできる。"},
+{id:226,category:"商法・手形法",question:"「代理商」（商法上）と「仲立人」の違いとして正しいものはどれか。",choices:["両者は同じ機能を持つという規定（誤り）","仲立人は取引当事者になるという規定（誤り）","代理商は代理権を持たないという規定（誤り）","代理商は継続的に特定の商人のために代理または媒介する者、仲立人は不特定の依頼者のために媒介"],answer:3,explanation:"代理商（商法27条）は特定の商人（本人）のために継続的に代理または媒介する者。仲立人（543条）は不特定多数の依頼者のために商行為の媒介を業とする者で特定の本人との継続的関係を持たない点が異なる。両者とも取引当事者にはならない。"},
+{id:227,category:"民事訴訟法・倒産法",question:"「免責許可決定」（破産手続きにおける）の効果として正しいものはどれか。",choices:["全ての負債が消滅し借金がなくなる（誤り）","免責後は5年間一切のクレジット取引ができない（誤り）","免責を受けると財産を全て取られる（誤り）","免責許可決定が確定すると免責不許可事由に該当する債権等を除いて残余の債務について責任を免れ"],answer:3,explanation:"破産免責（破産法253条）は免責許可決定確定で非免責債権（租税・養育費・故意の不法行為・詐欺的取得等）を除く残余債務の弁済責任から解放される。財産は破産手続きで処分済み。信用情報への影響（5〜10年）があるが法律上の禁止ではない。"},
+{id:228,category:"消費者保護法",question:"「消費者団体訴訟制度」の説明として正しいものはどれか。",choices:["個々の消費者が集団で訴訟する制度（誤り）","認定を受けた消費者団体が消費者全体の利益のために事業者の不当行為","消費者全員が損害賠償を受ける制度（誤り）","消費者庁が代理で訴訟する制度（誤り）"],answer:1,explanation:"消費者団体訴訟制度（消費者契約法・特定商取引法・景品表示法）は内閣総理大臣が認定した適格消費者団体が消費者全体の利益のために事業者の不当条項・不当勧誘行為等に対して差止訴訟を提起できる制度（損害賠償は対象外）。"},
+{id:229,category:"コンプライアンス経営",question:"「GDPR（EU一般データ保護規則）」が日本企業に影響する場面として正しいものはどれか。",choices:["EU域外の企業にはGDPRは適用されない（誤り）","GDPRの罰金は軽微という解釈","EU域内の個人に商品・サービスを提供する日本企業や EU域内で個人データを取り扱う日本企業","GDPRは個人情報保護法と全く同じ内容（誤り）"],answer:2,explanation:"GDPRは域外適用（3条2項）によりEU在住者の個人データを取り扱う企業には所在地を問わず適用される。最大制裁金は全世界年間売上高の4%または2000万ユーロのいずれか高い方。日本企業でもEUビジネスがある場合は対応が必須。"},
+{id:230,category:"企業取引の法律",question:"「電子署名」と「電子認証」の区別として正しいものはどれか。",choices:["電子署名は本人が文書に電子的に署名する行為で電子認証は認証局","両者は同じものという規定","電子認証は電子署名なしに使用できる（誤り）","電子証明書は信頼できる機関なら誰でも発行できる（誤り）"],answer:0,explanation:"電子署名は秘密鍵で文書を暗号化（署名）する技術。電子認証（電子証明書・PKI）は認証局（CA）が電子証明書を発行し署名者の公開鍵と身元を結び付けて第三者が署名の正当性を検証できる仕組み。両者は車の両輪として機能する。"},
+{id:231,category:"契約の基礎",question:"「更改」（民法513条〜）の説明として正しいものはどれか。",choices:["既存の債務の返済期限を延長すること（誤り）","債権を他者に譲渡することという解釈","従来の債務を消滅させ新たな債務を成立させる契約（債務の内容・債務者・債権者の変更）","連帯保証人を交代させることという解釈"],answer:2,explanation:"更改（民法513条）は当事者間の合意で旧債務を消滅させ新債務を成立させる契約。①債務の内容の変更（目的物・給付内容の変更）②債務者の変更（免責的債務引受に類似）③債権者の変更が類型。旧債務に付いていた担保は原則消滅。"},
+{id:232,category:"会社法",question:"「取締役の報酬等」の決定方法として会社法上正しいものはどれか。",choices:["報酬等（額・算定方法・非金銭報酬の内容等）は定款または株主総会決議で定める必要がある","取締役が自由に自己の報酬を決定できる（誤り）","取締役会が株主総会の承認なく決定できる（誤り）","非公開会社では報酬の開示は不要（誤り）"],answer:0,explanation:"取締役の報酬等（会社法361条）は①定款または②株主総会の決議で定めることが必要。利益相反的な自己決定を防ぐため株主のコントロール下に置く。上場会社では個人別の報酬等の決定方針の開示義務が強化されている（2021年改正）。"},
+{id:233,category:"労働法",question:"「労働者の個人情報」取扱いにおける使用者の義務として正しいものはどれか。",choices:["採用選考時に全ての個人情報を収集できる（誤り）","労働者の個人情報は退職後に全て削除する義務がある（誤り）","採用後は自由に個人情報を使用できる（誤り）","採用選考時も含め労働者の個人情報は利用目的の特定・適正な取得"],answer:3,explanation:"使用者は採用・雇用管理において個人情報保護法・労働基準法上の制限（思想信条・組合活動等の調査禁止）に従い①利用目的特定②適正取得③安全管理を行う義務がある。採用時の不適切な個人情報収集は違法となる場合がある（職業安定法5条の5等）。"},
+{id:234,category:"知的財産法",question:"「特許の実施許諾（ライセンス）」において「通常実施権」の説明として正しいものはどれか。",choices:["特許権者から実施の許可を受けた者が特許を実施できる権利で登録","登録なしに第三者に対抗できる排他的権利（誤り）","通常実施権は独占的権利という解釈","通常実施権は他者への許諾を禁止できる（誤り）"],answer:0,explanation:"通常実施権（特許法78条）は特許権者の許諾に基づき特許発明を実施できる債権的権利。登録（登録実施権：特許法99条）すれば特許権が第三者に移転した場合も対抗できる（物権的効力）。専用実施権（77条）は独占的実施権で登録が効力要件。"},
+{id:235,category:"民法（不法行為・物権）",question:"「共有物分割請求」について正しいものはどれか。",choices:["共有物の分割には全員の同意が必要（誤り）","共有物分割請求には裁判が必須（誤り）","各共有者は原則としていつでも共有物の分割を求めることができる（分割請求権）","共有物は現物分割のみが認められる（誤り）"],answer:2,explanation:"共有物分割請求（民法256条）は各共有者が原則としていつでも共有物の分割を請求できる。分割方法は①現物分割②価格賠償（一方が取得して他方に代金支払い）③競売による代金分割の順で裁判所が決定（協議不調の場合）。"},
+{id:236,category:"商法・手形法",question:"「商号の続用」（商法22条）の効果として正しいものはどれか。",choices:["商号を引き継いだだけで旧会社の債務は承継しない（誤り）","商号続用には前主の同意が不要（誤り）","事業を譲り受けた者が前主の商号を続用する場合は第三者に対して前主の事業によって生じた債務に","商号続用は有限会社にのみ適用される（誤り）"],answer:2,explanation:"商号の続用（商法22条）は事業譲渡で譲受人が前主の商号を続用する場合に譲受人が前主の事業上の債務について弁済責任を負う（第三者の保護）。遅滞なく第三者に免責通知をすれば責任を免れることができる（免責登記または通知）。"},
+{id:237,category:"民事訴訟法・倒産法",question:"「強制執行（差押え）」の種類として誤っているものはどれか。",choices:["不動産強制競売","動産の差押え","債権（銀行預金・給与等）の差押え","株式会社の解散命令"],answer:3,explanation:"強制執行の種類は①不動産執行（競売・強制管理）②動産執行（差押え・換価）③債権執行（預金・給与・売掛金等の差押え）④船舶・航空機・建設機械等の執行。株式会社の解散命令は裁判所が公益上の観点から会社法（824条）に基づき発する行政的処分で強制執行ではない。"},
+{id:238,category:"消費者保護法",question:"「特定商取引法」における「役務提供契約」のクーリングオフについて正しいものはどれか。",choices:["役務（サービス）提供契約のクーリングオフはない（誤り）","クーリングオフは販売契約にのみ適用（誤り）","役務提供の全てで20日間のクーリングオフが適用（誤り）","特定継続的役務提供（エステ・学習塾・語学教室等）には契約書面受領日から8日間のクーリングオ"],answer:3,explanation:"特定継続的役務提供（特商法41条〜：エステティック・語学教室・家庭教師・学習塾・パソコン教室・結婚相手紹介）には①書面受領後8日間のクーリングオフ②中途解約権（将来分の料金返還）③過去3か月分を超える前払いの制限等が適用される。"},
+{id:239,category:"コンプライアンス経営",question:"「医療機器・医薬品」の販売に関する「薬機法（医薬品、医療機器等の品質、有効性及び安全性の確保等に関する法律）」上の規制として正しいものはどれか。",choices:["医薬品の製造・販売には許可が必要で効能・効果の広告には承認された事項以外の表現は禁止","医薬品は誰でも自由に販売できる（誤り）","医療機器に認可制度はないという解釈","一般用医薬品（OTC）の広告に規制はない（誤り）"],answer:0,explanation:"薬機法は医薬品・医薬部外品・化粧品・医療機器・再生医療等製品の製造販売許可・承認・広告規制等を定める。承認を受けていない効能・効果の広告（誇大広告・未承認効能の表示）は違反となり行政処分・刑事罰の対象となる。"},
+{id:240,category:"企業取引の法律",question:"「譲渡制限付株式（RSU）」等の株式報酬の法的性質として正しいものはどれか。",choices:["株式報酬は金銭報酬と同一の法的性質（誤り）","株式報酬には税務上の影響がない（誤り）","会社が取締役等に株式・新株予約権等を付与する報酬形態で株主総会決議・開示が必要","株式報酬は中小企業のみに認められる（誤り）"],answer:2,explanation:"役員向け株式報酬（譲渡制限付株式・ストックオプション・パフォーマンスシェア等）は会社法361条の報酬等として株主総会での承認・有価証券報告書等での開示が必要。付与時・権利確定時・売却時の税務（給与所得・譲渡所得等）についても適切な検討が必要。"},
+{id:241,category:"契約の基礎",question:"「連帯債務」における「絶対的効力事由」として正しいものはどれか。",choices:["1人の連帯債務者に生じた事由は全て他の連帯債務者に効力を及ぼす","弁済・相殺・混同・更改は絶対的効力事由として他の連帯債務者にも効力が及ぶ","請求（催告）は全員に効力が及ぶ","時効完成は絶対的効力事由"],answer:1,explanation:"2020年改正民法の連帯債務では絶対的効力事由（連帯債務者の1人への効力が全員に及ぶ）は①弁済②相殺③混同④更改に限定された（民法441条）。それ以外（請求・時効完成・免除等）は相対効（その連帯債務者のみに効力）が原則となった。"},
+{id:242,category:"会社法",question:"「MBO（マネジメント・バイアウト）」における少数株主保護として正しいものはどれか。",choices:["少数株主に対価は一切支払われない（誤り）","TOBを通じて公正な価格での買取りが行われ不満な株主は裁判所に価格決定申立てができる","少数株主には反対する権利がない（誤り）","MBOは常に不公正という規定"],answer:1,explanation:"MBOでは経営陣がTOBを実施し少数株主から株式を取得する際に公正な価格（プレミアムを含む）での買取りが求められる。TOBに応募しなかった少数株主が後のスクイーズアウトで価格に不満な場合は裁判所に価格決定（会社法172条等）を申立てられる。"},
+{id:243,category:"労働法",question:"「雇用保険法」における「基本手当（失業給付）」の受給要件として正しいものはどれか。",choices:["退職理由に関係なく即時に受給できる（誤り）","自己都合退職と会社都合退職で給付内容に差はない（誤り）","離職前の一定期間に被保険者期間があること・ハローワークへの求職申込みと就職意思があること","アルバイトは雇用保険の対象外（誤り）"],answer:2,explanation:"雇用保険の基本手当受給要件は①離職日以前2年間に被保険者期間が通算12か月以上（特定受給資格者等は6か月以上）②ハローワークへの求職申込みと積極的求職活動③就労可能で就職意思があること。自己都合退職は7日＋2か月の給付制限期間がある（2020年改正で3か月から2か月に短縮）。"},
+{id:244,category:"知的財産法",question:"「著作権の侵害」に対して著作権者が請求できる救済手段として正しいものはどれか。",choices:["刑事告訴のみの救済という規定（誤り）","損害賠償請求のみの救済という規定（誤り）","差止請求・損害賠償請求・不当利得返還請求等の民事上の救済と告訴による刑事訴追の両方がある","著作権侵害に民事的救済はないという規定（誤り）"],answer:2,explanation:"著作権侵害への救済は①差止請求（著作権法112条）②損害賠償請求（民法709条・著作権法114条の推定規定）③不当利得返還請求④著作者人格権侵害の場合の名誉回復措置請求等の民事手段と⑤著作権侵害罪（10年以下懲役等）の刑事訴追。"},
+{id:245,category:"民法（不法行為・物権）",question:"「相続放棄」の手続きと期間として正しいものはどれか。",choices:["相続放棄は口頭でできるという解釈","相続放棄すると一切の財産を受け取れない（誤り）","相続放棄の期間は6か月という解釈","自己のために相続の開始があったことを知ったときから3か月以内に家庭裁判所への申述が必要"],answer:3,explanation:"相続放棄（民法938条〜）は相続開始を知ったときから3か月以内（熟慮期間：延長申請可）に家庭裁判所への申述が必要な要式行為。放棄すると初めから相続人でなかったとみなされ相続財産の受取りも相続債務の引継ぎも行われない。"},
+{id:246,category:"商法・手形法",question:"「商業登記」の効果として正しいものはどれか。",choices:["商業登記は任意であり法的効力はない（誤り）","商業登記には登記の公信力がある（誤り）","商業登記をすれば登記事項について善意の第三者に対抗できる","商業登記の訂正は誰でも申請できる（誤り）"],answer:2,explanation:"商業登記の効力（商法9条・会社法908条）は①登記後：登記事項を善意の第三者にも対抗できる（積極的効力）②登記前：登記事項を第三者に対抗できないが悪意の第三者には対抗できる（消極的効力）。登記に公信力はなく（不動産登記と同様）登記内容が真実と異なっても善意の第三者は保護されないことがある。"},
+{id:247,category:"民事訴訟法・倒産法",question:"「時効の完成猶予」事由として正しいものはどれか。",choices:["催告だけで時効が更新（リセット）される（誤り）","時効の完成猶予は法律上認められない（誤り）","催告（内容証明郵便等）は催告時から6か月間時効の完成を猶予する","完成猶予があれば時効が停止する（誤り）"],answer:2,explanation:"時効の完成猶予（民法150条〜）は時効の完成を一時的に阻止するが時効期間はリセットされない点で更新と異なる。催告は6か月の完成猶予（その間に裁判上の請求等が必要）。協議を行う旨の合意でも最長1年の完成猶予が可能（151条）。"},
+{id:248,category:"消費者保護法",question:"「消費者基本法」と「消費者保護基本法」の違いとして正しいものはどれか。",choices:["旧消費者保護基本法（1968年）は2004年に消費者基本法として全面改正され消費者の権利と","両者は全く同じ法律という規定","消費者保護基本法は現在も施行中（誤り）","消費者基本法は廃止されたという解釈"],answer:0,explanation:"消費者保護基本法（1968年制定）は2004年に消費者基本法として全面改正。旧法の「保護」から「権利の尊重と自立支援」への理念変更が主要改正点。消費者の権利として安全の確保・情報提供・教育・意見反映・被害回復等を明示した。"},
+{id:249,category:"コンプライアンス経営",question:"「競争法コンプライアンス」において「価格に関する情報交換」が問題となる理由として正しいものはどれか。",choices:["情報交換は常に合法という規定","競合他社間での将来の価格・設備投資等に関する具体的な情報交換はカルテルの証拠","業界団体での情報交換は全て合法（誤り）","価格の参考情報を共有するだけなら問題ない（誤り）"],answer:1,explanation:"競合他社間での将来の価格・販売数量・顧客・生産能力等に関する具体的な情報交換はカルテルの合意（不当な取引制限）の証拠またはそれ自体が独禁法違反になりうる。業界団体での情報交換も同様のリスクがある。社員教育とガイドライン整備が重要。"},
+{id:250,category:"企業取引の法律",question:"「ジョイントベンチャー（合弁事業）」の法的形態として正しいものはどれか。",choices:["合弁事業は常に株式会社の形態をとる（誤り）","合弁事業は法律上禁止されている（誤り）","合弁会社（共同設立の株式会社等）・任意組合・匿名組合等の形態があり目的","JVには独占禁止法の適用がない（誤り）"],answer:2,explanation:"ジョイントベンチャーの法的形態は①合弁会社（新設の株式会社・合同会社等）②組合（民法上の任意組合・商法上の匿名組合）③契約型JV（法人格なし）等がある。独禁法上の共同行為規制にも注意が必要で競合他社間のJVは特に慎重な検討が必要。"},
+{id:251,category:"契約の基礎",question:"「保証債務の付従性」の説明として正しいものはどれか。",choices:["保証債務は主債務と全く独立している（誤り）","保証人は主債務より重い責任を負える（誤り）","保証債務は主債務に従属し主債務が消滅すれば保証債務も消滅し主債務より重い保証は主債務の限度","保証債務は主債務の消滅後も存続できる（誤り）"],answer:2,explanation:"保証の付従性（民法447条等）は保証債務が主債務に付き従う性質で①主債務消滅→保証債務も消滅②主債務より重い保証は主債務の限度に縮減③主債務の履行を求める権利が行使できなければ保証人にも行使不可等の効果がある。"},
+{id:252,category:"会社法",question:"「株主総会招集手続き」の瑕疵として取消事由になるものはどれか。",choices:["議題と関係のない議案が提出されたとき（誤り）","全株主が出席した場合という解釈","招集通知が法定の期間（原則2週間前：公開会社）より遅れて発送された場合","株主が1人の場合という規定"],answer:2,explanation:"株主総会の招集手続きの瑕疵（通知期間の違反・一部株主への招集漏れ等）は決議取消事由（会社法831条1項）となる。ただし裁判所は裁量棄却することができる。"},
+{id:253,category:"労働法",question:"「職場環境配慮義務」として使用者が負う義務として正しいものはどれか。",choices:["使用者に職場環境への配慮義務はない（誤り）","安全配慮義務は製造業にのみ適用（誤り）","安全配慮義務は労働安全衛生法の義務のみ（誤り）","使用者は労働者が安全・健康を確保して労働できるよう職場環境に配慮する義務"],answer:3,explanation:"安全配慮義務（労働契約法5条）は使用者が労働者の生命・身体等の安全を確保しつつ労働できるよう必要な配慮をする義務。過労死・ハラスメントによる精神障害等に関する訴訟で重要な根拠となる。"},
+{id:254,category:"知的財産法",question:"「特許権の共有」において各共有者が単独でできることとして正しいものはどれか。",choices:["特許権の持分譲渡という規定","実施許諾（ライセンス）の設定","他の共有者の同意なく発明を自ら実施すること","特許権の放棄という規定"],answer:2,explanation:"特許権の共有（特許法73条）において各共有者は他の共有者の同意なく自ら実施できる（73条2項）。ただし持分の譲渡・質権設定・他者へのライセンスは他の共有者全員の同意が必要（73条1・3項）。"},
+{id:255,category:"民法（不法行為・物権）",question:"「土地工作物責任」（民法717条）における所有者の責任の性質として正しいものはどれか。",choices:["故意または過失がある場合のみ責任を負う（誤り）","占有者が責任を負えば所有者は免責される（誤り）","工作物の設置・保存の瑕疵による損害について所有者は占有者が免責された場合に無過失責任","所有者の責任は故意の場合のみ（誤り）"],answer:2,explanation:"工作物責任（民法717条）における所有者の責任は絶対的無過失責任（注意を尽くしても免責されない）。占有者は注意義務を尽くしたことを証明すれば免責されるが所有者は免責されない。"},
+{id:256,category:"商法・手形法",question:"「問屋（といや）」（商法551条）の説明として正しいものはどれか。",choices:["委託者の代理人として契約する（誤り）","単なる商品の運搬を業とする者（誤り）","自己の名義をもって委託者の計算で物品の販売・購入を業とする商人","問屋は取引の当事者になれない（誤り）"],answer:2,explanation:"問屋（商法551条）は自己の名義で（直接取引の当事者となる）委託者の計算で（経済的利益は委託者に帰属）物品の販売・購入を行う独立の商人。代理と異なり相手方との契約当事者は問屋自身。"},
+{id:257,category:"民事訴訟法・倒産法",question:"「会社更生手続き」の特徴として民事再生と異なる重要な点はどれか。",choices:["会社更生は清算型手続きという解釈","会社更生の申立ては裁判所のみができる（誤り）","会社更生では経営者が留任できる（誤り）","株式会社のみを対象とし担保権者（抵当権者等）も更生手続きに取り込まれて担保権実行が禁止され"],answer:3,explanation:"会社更生の最大の特徴は担保権者も手続きに取り込まれること（担保権実行の禁止）。大規模法人（主に大企業）向けで管財人が選任され経営権を掌握する。民事再生では担保権者は別除権として独立して担保権実行可能。"},
+{id:258,category:"消費者保護法",question:"「中途解約権」（特定継続的役務提供契約）の内容として正しいものはどれか。",choices:["中途解約後の精算はないという解釈","中途解約権はエステのみに認められる（誤り）","中途解約すると違約金が無制限に発生する（誤り）","特定継続的役務提供契約は将来に向かって中途解約が可能で事業者は精算ルール"],answer:3,explanation:"特定継続的役務提供（特商法49条）の中途解約権は将来分を解除でき精算に当たって事業者が請求できる違約金等の上限が政令で規定されている。エステ・語学教室・学習塾等7業種が対象。"},
+{id:259,category:"コンプライアンス経営",question:"「危機管理広報（クライシスコミュニケーション）」の法的観点から重要な原則として正しいものはどれか。",choices:["不祥事は公表せず内部で解決する（誤り）","事実を正確に把握した上で適切なタイミングで誠実に情報開示することで風評被害の拡大","記者会見では詳細を全て隠蔽する（誤り）","法的問題については一切コメントしない（誤り）"],answer:1,explanation:"危機管理広報の法的観点からの重要原則は①事実関係の迅速・正確な把握②適切なタイミングでの誠実な情報開示③二次被害・風評拡大の防止。隠蔽は証拠隠滅・虚偽報告として法的リスクを高める。"},
+{id:260,category:"企業取引の法律",question:"「国際売買契約」に関してウィーン売買条約（CISG）の説明として正しいものはどれか。",choices:["CISGは日本では適用されない（誤り）","CISGは国際物品売買契約に関する条約で日本が締結国として加盟しており国際売買契約に原則として適用される","CISGは日本国内の取引にも適用される（誤り）","CISGは金融商品取引のみに適用される（誤り）"],answer:1,explanation:"CISG（国連国際物品売買契約に関する条約：2009年から日本発効）は締約国間の事業者間の国際物品売買に原則として自動的に適用される。当事者間の合意でその適用を排除することは可能。"},
+{id:261,category:"契約の基礎",question:"「弁済の充当」（民法488条〜）の説明として正しいものはどれか。",choices:["債権者が常に充当先を決定できる（誤り）","充当についての合意は不要という解釈","弁済は常に最初に成立した債務に充当される（誤り）","同一の債務者が複数の債務を負う場合の弁済の充当は当事者の合意→弁済者の指定→受領者の指定→"],answer:3,explanation:"弁済の充当（民法488条〜）は①合意による充当②弁済者（債務者）の指定充当③受領者（債権者）の指定充当④法定充当（弁済期到来順・費用→利息→元本の順等）の優先順位で決定される。"},
+{id:262,category:"会社法",question:"「少数株主権」として持株比率要件なく単独で行使できる権利として正しいものはどれか。",choices:["株主提案権","会計帳簿閲覧請求権","株主代表訴訟（6か月の保有要件なし：非公開会社）","株主総会決議取消訴訟の提起"],answer:3,explanation:"単独株主権（1株で行使できる権利）は①株主総会決議取消訴訟（会社法831条）②違法行為差止請求③新株発行等の差止請求等。株主提案権・会計帳簿閲覧は一定割合・総株主の議決権の3%以上等の少数株主権。代表訴訟は原則6か月保有要件（公開会社）。"},
+{id:263,category:"労働法",question:"「障害者雇用促進法」における事業主の義務として正しいものはどれか。",choices:["障害者の雇用は任意という規定","障害者雇用は中小企業のみに義務付けられる（誤り）","一定規模以上の企業は法定雇用率（民間企業2.5%：2024年度〜段階的引上げ）以上の障害者","法定雇用率を達成した企業には罰金が科される（誤り）"],answer:2,explanation:"障害者雇用促進法の法定雇用率（民間企業：2024年4月から2.5%・2026年7月から2.7%に段階引上げ予定）を達成していない常用100人超の事業主は障害者雇用納付金（月額5万円/不足1人あたり）を納付する義務がある。"},
+{id:264,category:"知的財産法",question:"「特許権侵害」の損害賠償における「逸失利益の推定」規定の説明として正しいものはどれか。",choices:["損害額は常に裁判所が自由に決める（誤り）","特許侵害の損害賠償には上限がある（誤り）","特許侵害の損害は実費のみ請求できる（誤り）","特許法102条は侵害者の利益額を特許権者の損害額と推定する等の立証負担軽減規定を設けている"],answer:3,explanation:"特許法102条の損害推定規定は①侵害者が侵害品を譲渡した数量×特許権者の単位利益（逸失利益）②侵害者が侵害から受けた利益を損害と推定③実施料相当額の最低補償（3号）の3類型。通常の損害立証の困難さを軽減するための特則。"},
+{id:265,category:"民法（不法行為・物権）",question:"「共同不法行為」（民法719条）の責任として正しいものはどれか。",choices:["複数の行為者が共同で不法行為をした場合は連帯して損害全額の賠償責任を負う","共同不法行為者はそれぞれ自己の寄与分のみ責任を負う","共同不法行為の立証は不要という解釈","共同不法行為は代理関係が必要（誤り）"],answer:0,explanation:"共同不法行為（民法719条）は数人が共同で不法行為を行った場合に各人が損害全額について連帯して賠償責任を負う（不真正連帯債務）。被害者の救済を図るため共同者の1人が全額支払っても被害者は追加請求できる。"},
+{id:266,category:"商法・手形法",question:"「手形保証」の説明として正しいものはどれか。",choices:["手形保証は裏書と同じ効果という解釈","手形上の特定の債務者の手形債務を保証する記載で手形の特定箇所への「保証」の文言と保証人の署","手形保証は主債務の消滅で消滅する（誤り）","手形保証には民法の保証の規定が全て適用される（誤り）"],answer:1,explanation:"手形保証（手形法30条〜）は手形上に「保証」等の文言と保証人の署名で成立し被保証人の手形債務を保証する。民法の保証と異なり手形保証は被保証債務が方式の欠缺以外の理由で無効でも有効とされる（独立性：手形法32条2項）。"},
+{id:267,category:"民事訴訟法・倒産法",question:"「公正証書による強制執行認諾条項」の活用として正しいものはどれか。",choices:["公正証書には強制執行力はない（誤り）","強制執行認諾条項はサービス契約に使えない（誤り）","公正証書の強制執行には裁判所の許可が必要（誤り）","金銭の支払いを内容とする契約を公正証書（強制執行認諾文言付き）で作成すれば債務不履行の際に"],answer:3,explanation:"強制執行認諾文言付き公正証書（債務名義：民事執行法22条5号）は金銭の一定額の支払いを目的とする場合に作成でき債務不履行時に裁判所の判決なしに強制執行が可能。訴訟コスト・時間の節約に有効な法的ツール。"},
+{id:268,category:"消費者保護法",question:"「個人情報の漏洩」により消費者が受けた精神的損害の請求について正しいものはどれか。",choices:["精神的損害に対する慰謝料請求はできない（誤り）","行政罰のみで民事請求はできない（誤り）","慰謝料額は常に一定という規定","個人情報の漏洩により精神的苦痛を受けた場合に不法行為（民法709条）を根拠として慰謝料"],answer:3,explanation:"個人情報の漏洩で精神的損害を受けた場合、被害者は不法行為（民法709条）を根拠に損害賠償（慰謝料・財産的損害等）を請求できる。実際の裁判例では1件の漏洩での慰謝料は数千円〜数万円程度が多いが漏洩規模・内容で大きく異なる。"},
+{id:269,category:"コンプライアンス経営",question:"「社外取締役の独立性」について東証のガバナンスコードが求める事項として正しいものはどれか。",choices:["社外取締役は取引先から選任できる（誤り）","プライム市場上場会社は取締役会の過半数を独立社外取締役とすることが求められるようになった","社外取締役に独立性の要件はない（誤り）","社外取締役は常勤でなければならない（誤り）"],answer:1,explanation:"2021年改訂コーポレートガバナンス・コードはプライム市場上場会社に取締役会の過半数を独立社外取締役とすることを求める（補充原則4-8①）。スタンダード市場は2名以上の独立社外取締役を求める（原則4-8）。"},
+{id:270,category:"企業取引の法律",question:"「ABL（動産・債権担保融資）」の説明として正しいものはどれか。",choices:["不動産のみを担保とする融資の方法（誤り）","売掛債権・在庫・機械設備等の流動資産を担保として事業者が融資を受ける動産・債権融資","担保のない信用融資の方法という解釈","上場会社のみが利用できる融資の方法（誤り）"],answer:1,explanation:"ABL（Asset-Based Lending：動産・債権担保融資）は売掛金・棚卸資産・機械設備等の動産・債権を担保に融資を受ける手法。不動産担保に乏しい中小企業の資金調達手段として注目される。動産譲渡登記・債権譲渡登記制度を活用し担保の対抗要件を整備する。"},
+{id:271,category:"契約の基礎",question:"「代物弁済」（民法482条）の説明として正しいものはどれか。",choices:["債務者が本来の給付の代わりに他の給付をすることで債権者の同意を得て債務を消滅させること","債務を免除することという規定","第三者が代わりに弁済すること（誤り）","分割払いに変更することという解釈"],answer:0,explanation:"代物弁済（民法482条）は債権者の承諾を得て本来の給付の代わりに他の給付（代物）を行うことで債務を消滅させること。代物の給付により弁済と同一の効力が生じる。不動産の代物弁済では登記移転が必要。"},
+{id:272,category:"会社法",question:"「株主の帳簿閲覧権」（会社法433条）の行使要件として正しいものはどれか。",choices:["1株でも持っていれば閲覧できるという規定（誤り）","総株主の議決権の3%以上を6か月以上継続保有する株主が理由を記載した書面で請求できる","閲覧理由の記載は不要という規定（誤り）","会計帳簿閲覧は取締役に限られるという規定（誤り）"],answer:1,explanation:"会計帳簿等の閲覧請求権（会社法433条）は総株主の議決権または発行済株式の3%以上（定款で引下げ可）を6か月以上保有する株主が理由を明示して請求できる。会社は一定の拒絶事由（営業秘密開示等）がある場合に拒絶できる。"},
+{id:273,category:"労働法",question:"「労働基準法上の労働時間」の規制として正しいものはどれか。",choices:["法定労働時間は週50時間という解釈","管理職には労働時間規制が全く適用されない（この説明は誤り）","法定労働時間の例外は一切ない（誤り）","1日8時間・週40時間が法定労働時間の上限（三六協定なしには超えられない）"],answer:3,explanation:"労働基準法の法定労働時間（32条）は1日8時間・1週40時間（特例業種は週44時間）。これを超える時間外労働には三六協定の締結・届出と割増賃金の支払いが必要。管理監督者は時間外・休日規定の適用除外だが深夜労働割増は適用される。"},
+{id:274,category:"知的財産法",question:"「AIが自律的に生成した著作物」の著作権について現行著作権法の考え方として正しいものはどれか。",choices:["人間の創作的寄与がなくAIが自律的に生成したものは著作物に当たらず著作権は発生しないとされる","AIが生成した著作物のAIに著作権が発生する（誤り）","AIを開発した会社に著作権が発生する（誤り）","AIの生成物は全てパブリックドメイン（誤り）"],answer:0,explanation:"著作権法の著作物の定義（2条1項1号）は「思想または感情を創作的に表現したもの」で人間の創作活動を前提とする。AIが完全自律的に生成したものは人間の思想・感情の表現でないため著作物に当たらないとされる（文化庁見解）。"},
+{id:275,category:"民法（不法行為・物権）",question:"「相続における限定承認」の説明として正しいものはどれか。",choices:["相続財産の範囲内でのみ被相続人の債務を弁済する条件付きで相続を承認すること","単純承認と全く同じという規定","相続財産を全て国庫に帰属させること（誤り）","遺産の一部のみを承認すること（誤り）"],answer:0,explanation:"限定承認（民法922条〜）は相続財産の限度においてのみ被相続人の債務・遺贈を弁済する条件付きの承認で相続人が全員共同でのみ行使できる（928条）。固有財産で債務を弁済する必要がない点で相続放棄と単純承認の中間的な形態。"},
+{id:276,category:"商法・手形法",question:"「電子マネー」の法的性質として正しいものはどれか。",choices:["電子マネーは法定通貨と同じ効力を持つ（誤り）","電子マネーは前払式支払手段として資金決済法の規制対象（発行者への登録義務・未使用残高の保全等）","電子マネーは有価証券の一種という解釈","電子マネーの発行に規制はない（誤り）"],answer:1,explanation:"電子マネー（交通系・流通系等）は前払式支払手段として資金決済法（3条〜）の規制対象。発行者は①登録または届出義務②未使用残高の2分の1以上の保全義務（供託等）③利用者への情報提供義務がある。"},
+{id:277,category:"民事訴訟法・倒産法",question:"「仮処分（仮の地位を定める仮処分）」の活用例として正しいものはどれか。",choices:["金銭債権の保全のみに使用されるという規定（誤り）","仮処分は確定判決と同じ効力という規定（誤り）","著作権侵害品の差止め・解雇された従業員の地位保全・競業行為の差止め等に使用される","仮処分は損害賠償請求のみという規定（誤り）"],answer:2,explanation:"仮処分（民事保全法23条）には①係争物に関する仮処分（物の引渡し・明渡しを保全）と②仮の地位を定める仮処分（著作権侵害品販売差止・従業員の地位保全等）がある。本案訴訟までの暫定的な権利保護として活用される。"},
+{id:278,category:"消費者保護法",question:"「通信販売における返品・クーリングオフ」について正しいものはどれか。",choices:["通信販売は常に8日間のクーリングオフが使える（誤り）","通信販売の返品費用は常に事業者負担（誤り）","通信販売にはクーリングオフがなく返品については返品可否・期間","通信販売の返品権は行使できない場合がある（誤り）"],answer:2,explanation:"通信販売（特定商取引法11条・15条の3）には一般のクーリングオフはなく返品については返品特約（返品可否・期間・費用負担等）の広告表示が義務。返品特約の表示がない場合は商品到着後8日以内の返品（返品費用は消費者負担）が法定される。"},
+{id:279,category:"コンプライアンス経営",question:"「公益通報者保護法（2022年施行改正）」の主要改正点として正しいものはどれか。",choices:["公益通報者保護法が廃止されたという誤解（誤り）","通報者の保護が弱化されたという誤解（誤り）","通報できる範囲が縮小されたという誤解（誤り）","常時300人超の事業者への内部通報対応体制整備義務・通報者情報の秘密保持義務等が主要改正点"],answer:3,explanation:"2022年施行改正公益通報者保護法の主要改正は①常時使用従業員300人超の事業者に内部公益通報対応体制の整備義務（相談窓口設置・調査・是正・秘密保持等）②従事者（調査担当者等）の通報者情報漏洩禁止③保護される通報範囲の拡大等。"},
+{id:280,category:"企業取引の法律",question:"「LOI（Letter of Intent：意向表明書）・MOU（Memorandum of Understanding：覚書）」の法的性質として正しいものはどれか。",choices:["LOI・MOUは通常法的拘束力を持たない予備的合意文書だが誠実交渉義務条項","LOI・MOUは常に法的拘束力がある（誤り）","LOI・MOUに署名したら最終契約が不要（誤り）","LOI・MOUは公証が必要という解釈"],answer:0,explanation:"LOI・MOUは当事者の基本的合意事項をまとめた予備的文書で一般的に法的拘束力がない（non-binding）とされるが①秘密保持②費用分担③誠実交渉④独占交渉権等の条項については拘束力を持たせることが多い。「Binding」「Non-binding」の明示が重要。"},
+{id:281,category:"契約の基礎",question:"「事務管理」（民法697条）の説明として正しいものはどれか。",choices:["委任契約なしに他人の事務を行うことで損害賠償請求権が生じる","事務管理は常に禁止されるという解釈","事務管理には常に報酬が発生する（誤り）","義務なく他人のために事務を管理した者は本人の利益のために継続する義務を負い費用の償還を請求できる"],answer:3,explanation:"事務管理（民法697条〜）は義務なく他人の事務を管理する準法律行為。管理者は①本人の意思・利益に従って管理を継続する義務②費用の償還請求権を持つ。不法行為でなく法律上の原因なき行為として不当利得と区別される。"},
+{id:282,category:"会社法",question:"「吸収分割」と「新設分割」の違いとして正しいものはどれか。",choices:["両者に違いはないという規定","吸収分割は清算手続きを経るという解釈","新設分割は株主総会決議不要という解釈","吸収分割は既存の会社に事業を引き継がせ新設分割は新たに設立した会社に事業を引き継がせる"],answer:3,explanation:"会社分割の類型は①吸収分割（会社法757条〜）：既存の承継会社が分割会社の事業の権利義務を承継と②新設分割（762条〜）：新たに設立する会社に事業の権利義務を承継。いずれも原則として各社の株主総会特別決議が必要（簡易・略式分割の例外あり）。"},
+{id:283,category:"労働法",question:"「職業訓練・能力開発」に関して使用者の権利として正しいものはどれか。",choices:["使用者は一切従業員への教育訓練を行えない（誤り）","研修費の全額返還特約は常に無効という規定（誤り）","業務上の必要性がある範囲で技術研修等の受講を命じることができ費用負担の条件が問題となる","使用者は研修内容を自由に決定できないという規定"],answer:2,explanation:"業務上必要な研修受講命令は一般的に適法。研修費用返還特約（研修後一定期間内の退職時の返還義務）は労働基準法16条の「損害賠償予定の禁止」に反しないか問題になるが目的・金額・期間が合理的な場合は有効とした判例がある。"},
+{id:284,category:"知的財産法",question:"「著作隣接権」の説明として正しいものはどれか。",choices:["著作者の権利と全く同じ権利という解釈","著作隣接権は登録が必要という解釈","著作隣接権の保護期間は50年（誤り）","実演家・レコード製作者・放送事業者・有線放送事業者が著作物の伝達に関して持つ権利で著作権に"],answer:3,explanation:"著作隣接権（著作権法89条〜）は著作物の創作には関わらないが伝達・媒体となる①実演家②レコード製作者③放送事業者④有線放送事業者が持つ権利。保護期間は実演・レコードは公表後70年（2018年改正）、放送は公表後50年。"},
+{id:285,category:"民法（不法行為・物権）",question:"「抵当権の物上代位」の説明として正しいものはどれか。",choices:["抵当権者は抵当物件から生じた収益を自動的に取得できる（誤り）","物上代位には競売が必要という解釈","抵当目的物が滅失・損傷した場合に支払われる火災保険金・賠償金","物上代位は抵当権にのみ認められる（誤り）"],answer:2,explanation:"物上代位（民法372条・304条）は目的物の売却・賃貸・滅失・損傷により債務者が受けるべき金銭（保険金・賃料・損害賠償等）に担保権の効力が及ぶ制度。差押えにより他の債権者に優先して弁済を受けられる。差押え前の支払いには物上代位が及ばない。"},
+{id:286,category:"商法・手形法",question:"「手形の善意取得（手形法16条2項）」の要件として正しいものはどれか。",choices:["裏書人の権利を調査しなければ善意取得できない（誤り）","善意取得は為替手形にのみ認められる（誤り）","善意取得には時価での取得が必要（誤り）","裏書の連続した手形を悪意または重大な過失なく取得した者は前主に権利がなくても手形上の権利を"],answer:3,explanation:"手形の善意取得（手形法16条2項）は①裏書の連続②悪意または重大な過失のない取得の要件を満たす場合に前主が無権利者でも手形権利を原始取得する。流通証券としての手形の安全な流通を保護する制度。"},
+{id:287,category:"民事訴訟法・倒産法",question:"「民事調停」と「民事訴訟」の比較として正しいものはどれか。",choices:["調停は費用が訴訟と同額という解釈","調停は当事者の合意が必要で合意がなければ解決できない（不成立）が訴訟は裁判所が判決で解決する","調停の合意は法的効力がないという解釈","調停は裁判所以外で行われるという解釈"],answer:1,explanation:"民事調停（民事調停法）は当事者の自主的合意による解決を図るため合意がなければ解決できない（不成立で終了）。民事訴訟は合意不要で裁判所が判決で解決する（相手方が欠席でも判決可能）。調停成立の調停調書は確定判決と同一の効力。"},
+{id:288,category:"消費者保護法",question:"「ペット・動物の売買」における消費者保護として正しいものはどれか。",choices:["ペットの売買に特別な規制はない（誤り）","ペットの欠陥（病気等）に売主の責任はない（誤り）","動物取扱業（販売業・保管業等）の登録義務・飼育基準・生後56日未満の犬猫の展示販売禁止","ペットは消費者契約法の対象外（誤り）"],answer:2,explanation:"動物愛護管理法（2019年改正）はペット販売業者への①動物取扱業登録②適切な飼育管理③生後56日（8週）以下の犬・猫の展示販売禁止④終生飼養の努力義務等を規定。欠陥ペット（隠れた瑕疵・契約不適合）については民法の契約不適合責任が適用される。"},
+{id:289,category:"コンプライアンス経営",question:"「取締役会の実効性評価」についてコーポレートガバナンス・コードが求める内容として正しいものはどれか。",choices:["取締役会の評価は任意という考え方（誤り）","外部機関による評価は禁止という規定（誤り）","評価結果の開示は不要という考え方（誤り）","取締役会全体および各委員会の機能・構成・運営を定期的に分析・評価しその概要の開示が求められる"],answer:3,explanation:"コーポレートガバナンス・コード（補充原則4-11③）はプライム・スタンダード市場上場会社に取締役会全体および各委員会の実効性について定期的（通常は年1回）に分析・評価を行いその概要をコーポレートガバナンス報告書等で開示することを求める。"},
+{id:290,category:"企業取引の法律",question:"「消費者向け電子商取引（BtoC-EC）」における「特定商取引法」の広告表示義務として誤っているものはどれか。",choices:["通信販売業者の名称・住所・電話番号（誤り）","販売価格・送料という規定","クーリングオフが適用される旨の表示（通信販売にはクーリングオフが適用されないため表示義務はない）","返品・交換の条件という規定"],answer:2,explanation:"通信販売の広告表示義務（特商法11条）は①販売価格・送料②支払方法・時期③商品引渡し時期④返品条件⑤事業者情報（名称・住所・代表者・電話番号）等。クーリングオフは訪問販売等に適用されるが通信販売には適用されない（表示義務もない）。"},
+{id:291,category:"契約の基礎",question:"「抵当権と賃借権の優劣」について正しいものはどれか。",choices:["登記の先後で優劣が決まり抵当権設定登記より先に対抗要件を備えた賃借権は競売後も存続する","賃借権は常に抵当権に優先するという規定（誤り）","賃借権は常に抵当権に劣後するという規定（誤り）","登記なしの賃借権は抵当権に優先するという規定（誤り）"],answer:0,explanation:"抵当権と賃借権の優劣は原則登記の先後で決まる。抵当権設定登記後の賃借権（短期賃貸借含む）は競売で消滅するが建物の場合は明渡し猶予（競売代金納付から6か月：民法395条）がある。"},
+{id:292,category:"会社法",question:"「第三者割当増資」における既存株主への影響として正しいものはどれか。",choices:["既存株主に何も影響がないという解釈","特定の第三者に新株を割り当てることで既存株主の持株比率が希薄化し経営権に影響する場合がある","第三者割当増資には株主総会決議が常に不要（誤り）","第三者割当増資は有利発行でも許可されない（誤り）"],answer:1,explanation:"第三者割当増資は特定の第三者に株式を発行するため①既存株主の持株比率希薄化（EPS低下）②経営権への影響（支配権の変動）が生じる。有利発行（特に低い払込金額）の場合は株主総会特別決議が必要（会社法199条3項）。"},
+{id:293,category:"労働法",question:"「解雇予告」の要件として労働基準法上正しいものはどれか。",choices:["解雇はいつでも即日できる","使用者は少なくとも30日前に予告するか予告せずに解雇する場合は平均賃金30日分以上の解雇予告手当を支払う義務がある","解雇予告は書面でなければならない","試用期間中の解雇に予告義務はない（一定期間後は適用）"],answer:3,explanation:"解雇予告（労基法20条）は30日前の予告または30日分以上の解雇予告手当の支払いが必要。例外：試用期間中（14日以内：採用後14日を超えると予告義務発生）・天災等やむを得ない事由・労働者の責めに帰すべき事由による解雇（労基署の認定が必要）。"},
+{id:294,category:"知的財産法",question:"「商標の普通名称化」の問題について正しいものはどれか。",choices:["商標は登録すれば永久に保護される（誤り）","登録商標が業界内で普通名称として使用されるようになると商標登録が無効","普通名称化した商標でも独占使用できる（誤り）","普通名称化は商標権者に有利という解釈"],answer:1,explanation:"登録商標が商品・役務の普通名称として業界で広く使われるようになると第3条1項1号に該当して識別力を失い商標登録取消審判（商標法50条）の対象となる。エスカレーター・セロハン・ホッチキス等の事例があり商標の適切な管理・使用が重要。"},
+{id:295,category:"民法（不法行為・物権）",question:"「使用貸借」（民法593条〜）の説明として正しいものはどれか。",choices:["無償で物を貸し借りする契約で借主は返還請求に応じる義務があり一定の場合に終了する","賃貸借と同じ権利関係という規定（誤り）","使用貸借は書面でなければ無効という規定（誤り）","使用貸借は登記できるという規定（誤り）"],answer:0,explanation:"使用貸借（民法593条〜）は無償で目的物を貸す契約。賃貸借と異なり①対抗力がない（第三者に主張できない）②貸主死亡・借主死亡の扱いが賃貸借と異なる③占有権限が弱い。家族間での不動産貸し借りに多く見られる形態。"},
+{id:296,category:"商法・手形法",question:"「株式会社・合名会社・合資会社・合同会社」の比較として正しいものはどれか。",choices:["全ての会社形態で社員は有限責任という規定","合名会社に定款は不要という規定（誤り）","合同会社は上場が可能という規定（誤り）","合名会社は全員無限責任・合資会社は混在・合同会社と株式会社は全員有限責任"],answer:3,explanation:"会社法上の会社形態と社員責任：①合名会社（無限責任社員のみ）②合資会社（無限責任社員＋有限責任社員）③合同会社・有限会社（有限責任社員のみ・持分会社）④株式会社（株主全員有限責任）。合同会社はLLC（Limited Liability Company）に相当する。"},
+{id:297,category:"民事訴訟法・倒産法",question:"「財産開示手続き」（民事執行法196条〜）の説明として正しいものはどれか。",choices:["債務者が任意に財産を開示する任意的手続き（この説明は誤り）","財産開示は弁護士のみが申立てできるという規定","一定の条件のもとで債務者を裁判所に呼び出して財産状況を開示させる法的手続き","財産開示の対象は不動産のみという規定（誤り）"],answer:2,explanation:"財産開示手続き（民事執行法196条〜）は確定判決等の債務名義を持つ債権者が申立てにより債務者を裁判所に呼び出し宣誓のもとに財産を開示させる手続き。2020年改正で①銀行・証券会社への預金・有価証券照会②市区町村・登記所への不動産・給与情報照会も可能になった。"},
+{id:298,category:"消費者保護法",question:"「製品の安全」に関する「消費生活用製品安全法」の規制として正しいものはどれか。",choices:["全ての製品に安全規制があるという考え方（誤り）","安全規制に違反しても行政罰はないという規定（誤り）","消費生活用製品による重大事故は製造・輸入事業者が経済産業大臣に報告する義務がある","製品事故の公表は事業者の裁量という考え方（誤り）"],answer:2,explanation:"消費生活用製品安全法は①特別特定製品（乳幼児用品・圧力鍋等）にはPSCマークが義務②一般製品の重大製品事故（死亡・重傷・火災・一酸化炭素中毒等）は製造・輸入業者に報告義務③国はリコール命令等の措置を取ることができる。"},
+{id:299,category:"コンプライアンス経営",question:"「会社法の内部統制システム」の整備について大会社に義務付けられていることとして正しいものはどれか。",choices:["内部統制の整備は任意という解釈","内部統制システムの構築は監査役の職務（誤り）","内部統制は上場会社のみに義務付けられる（誤り）","大会社は業務の適正を確保するための体制（内部統制システム）の整備・決定"],answer:3,explanation:"大会社（会社法362条4項6号・5項）は取締役会で内部統制システム（業務の適正確保のための体制：リスク管理・コンプライアンス・内部監査等）の整備に関する基本方針を決定する義務がある。上場会社は金商法上の内部統制報告制度（J-SOX）もある。"},
+{id:300,category:"ビジネス実務の法律問題",question:"「ビジネス実務法務」の学習において最も重要な考え方として正しいものはどれか。",choices:["法律の条文を全て暗記することが目的（誤り）","法的リスクを事前に察知し問題が発生する前に専門家に相談・適切な対応をとる予防法務の考え方が","問題が発生してから弁護士に相談すればよい（誤り）","コンプライアンスより利益優先（誤り）"],answer:1,explanation:"ビジネス実務法務の本質は予防法務（preventive law）の考え方であり法的問題が発生する前に契約書の適切な作成・法令遵守の体制整備・リスクの早期察知を行い問題の発生を未然に防ぐことにある。問題発生後の対応（訴訟・紛争解決）より予防が圧倒的にコスト効率が高い。"}
+];
+const CAT_META={
+"契約の基礎":{"color":"#0969A2","icon":"📜","bg":"#E3F2FD"},
+"会社法":{"color":"#2E7D32","icon":"🏢","bg":"#E8F5E9"},
+"知的財産法":{"color":"#6A1B9A","icon":"💡","bg":"#F3E5F5"},
+"労働法":{"color":"#C62828","icon":"👥","bg":"#FFEBEE"},
+"民法（不法行為・物権）":{"color":"#E65100","icon":"⚖️","bg":"#FFF3E0"},
+"商法・手形法":{"color":"#37474F","icon":"🏛️","bg":"#ECEFF1"},
+"民事訴訟法・倒産法":{"color":"#4527A0","icon":"⚡","bg":"#EDE7F6"},
+"消費者保護法":{"color":"#00838F","icon":"🛡️","bg":"#E0F7FA"},
+"個人情報保護法":{"color":"#AD1457","icon":"🔐","bg":"#FCE4EC"},
+"企業取引の法律":{"color":"#1565C0","icon":"🤝","bg":"#E3F2FD"},
+"コンプライアンス経営":{"color":"#558B2F","icon":"📊","bg":"#F1F8E9"},
+"手形・電子記録債権":{"color":"#BF360C","icon":"📄","bg":"#FBE9E7"},
+"不動産法":{"color":"#00695C","icon":"🏠","bg":"#E0F2F1"},
+"金融商品取引法":{"color":"#880E4F","icon":"💹","bg":"#FCE4EC"},
+"環境法・その他":{"color":"#33691E","icon":"🌿","bg":"#F1F8E9"},
+"契約書の作成・審査":{"color":"#F57F17","icon":"✍️","bg":"#FFFDE7"},
+"ビジネス実務の法律問題":{"color":"#01579B","icon":"💼","bg":"#E1F5FE"}
+};
+
+const SUBCAT_DEF={
+  "契約の基礎":[{key:"c1",label:"📜 契約の成立・効力",ids:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]},{key:"c2",label:"🔄 契約の種類・解除",ids:[17,18,19,20,176,186,201,211,221,231,241,251,261,271,281,291]}],
+  "会社法":[{key:"co1",label:"🏢 会社の機関・設立",ids:[21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36]},{key:"co2",label:"📋 株主・資金調達・組織再編",ids:[37,38,39,40,177,187,202,212,222,232,242,252,262,272,282,292]}],
+  "知的財産法":[{key:"ip1",label:"💡 特許・実用新案・意匠",ids:[41,42,43,44,45,46,47,48,49,50,179]},{key:"ip2",label:"©️ 著作権・商標・不正競争",ids:[188,204,214,224,234,244,254,264,274,284,294]}],
+  "労働法":[{key:"lb1",label:"👥 雇用・労働条件",ids:[51,52,53,54,55,56,57,58,59,60]},{key:"lb2",label:"⚡ 解雇・ハラスメント・安全衛生",ids:[178,203,213,223,233,243,253,263,273,283,293]}],
+  "民法（不法行為・物権）":[{key:"tl1",label:"⚖️ 不法行為・物権・担保",ids:[61,62,63,64,65,66,67,68,69,70,189,215,225,235,245,255,265,275,285,295]}],
+  "商法・手形法":[{key:"cm1",label:"🏛️ 商法・商行為・手形法",ids:[71,72,73,74,75,76,77,78,79,80,190,216,226,236,246,256,266,276,286,296]}],
+  "民事訴訟法・倒産法":[{key:"cv1",label:"⚡ 民事訴訟・保全",ids:[81,82,83,84,85,86,87,88,89,90,180]},{key:"cv2",label:"🏦 倒産・再生手続き",ids:[191,205,217,227,237,247,257,267,277,287,297]}],
+  "消費者保護法":[{key:"cs1",label:"🛡️ 消費者保護法・特商法",ids:[91,92,93,94,95,96,97,98,99,100,181]},{key:"cs2",label:"📦 製造物責任・消費者契約",ids:[192,206,218,228,238,248,258,268,278,288,298]}],
+  "個人情報保護法":[{key:"pi1",label:"🔐 個人情報保護法・GDPR",ids:[101,102,103,104,105,106,107,108,109,110]}],
+  "企業取引の法律":[{key:"bt1",label:"🤝 下請法・独占禁止法",ids:[111,112,113,114,115,116,117,118,119,120]},{key:"bt2",label:"💳 電子商取引・国際取引",ids:[184,194,208,220,230,240,250,260,270,280,290]}],
+  "コンプライアンス経営":[{key:"cp1",label:"📊 内部統制・ガバナンス",ids:[121,122,123,124,125,126,127,128,129,130,182]},{key:"cp2",label:"🔎 危機管理・CSR・企業倫理",ids:[193,200,207,219,229,239,249,259,269,279,289,299]}],
+  "手形・電子記録債権":[{key:"hf1",label:"📄 手形・電子記録債権",ids:[131,132,133,134,135]}],
+  "不動産法":[{key:"re1",label:"🏠 不動産取引・借地借家法",ids:[136,137,138,139,140,183,195,209]}],
+  "金融商品取引法":[{key:"fi1",label:"💹 金融商品取引法・規制",ids:[141,142,143,144,145,185,196]}],
+  "環境法・その他":[{key:"ev1",label:"🌿 環境法・その他の法規",ids:[146,147,148,149,150]}],
+  "契約書の作成・審査":[{key:"dr1",label:"✍️ 契約書の作成・審査",ids:[151,152,153,154,155,156,157,158,159,160,198]}],
+  "ビジネス実務の法律問題":[{key:"bp1",label:"💼 企業実務の法律問題",ids:[161,162,163,164,165,166,167,168,169]},{key:"bp2",label:"🔍 デジタル・新領域の法律",ids:[170,171,172,173,174,175,197,199,210,300]}]
+};
+// カテゴリ正規化
+(function normalizeCats(){
+const MAP={"契約の基礎":"契約の基礎","会社法":"会社法","知的財産法":"知的財産法","労働法":"労働法","民法（不法行為・物権）":"民法（不法行為・物権）","商法・手形法":"商法・手形法","民事訴訟法・倒産法":"民事訴訟法・倒産法","消費者保護法":"消費者保護法","個人情報保護法":"個人情報保護法","企業取引の法律":"企業取引の法律","コンプライアンス経営":"コンプライアンス経営","手形・電子記録債権":"手形・電子記録債権","不動産法":"不動産法","金融商品取引法":"金融商品取引法","環境法・その他":"環境法・その他","契約書の作成・審査":"契約書の作成・審査","ビジネス実務の法律問題":"ビジネス実務の法律問題"};
+ALL_QUESTIONS.forEach(q=>{if(MAP[q.category])q.category=MAP[q.category];});
+})();
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_bizlaw3";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",fsc:null,subcatOpen:false,ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+// ① 前回の続きセーブ/ロード
+function saveProgress(){setUd(p=>({...p,lastProgress:{mode:S.mode,fc:S.fc,shuffle:S.shuffle,ts:S.ts,deckIds:S.deck.map(q=>q.id),idx:S.idx,ts_:Date.now()}}));}
+function hasProgress(){const p=S.ud.lastProgress;return p&&p.deckIds&&p.deckIds.length>0&&p.idx<p.deckIds.length-1;}
+function retryQ(){clearInterval(S.tiv);S.sel=null;S.tout=false;S.tl=null;S.showExp=false;render();startTimer();}
+function pauseQ(){clearInterval(S.tiv);saveProgress();S.screen="home";render();}
+function resumeSession(){
+  const p=S.ud.lastProgress;if(!p)return;
+  S.mode=p.mode;S.fc=p.fc;S.shuffle=p.shuffle||false;S.ts=p.ts||0;
+  S.deck=p.deckIds.map(id=>ALL_QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+  S.idx=p.idx;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(S.fsc&&S.fc!=="全て"){const sub=(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc);if(sub)pool=pool.filter(q=>sub.ids.includes(q.id));}
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  // ① 進捗クリアして新規スタート
+  setUd(p=>{const np={...p};delete np.lastProgress;return np;});
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;
+  clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>{
+    const wc={...p.wrongCounts};
+    if(ok){
+      // ④ 弱点モードで正解したらwrongCountsから削除（クリア）
+      if(S.mode==="WEAK") delete wc[q.id];
+      else wc[q.id]=Math.max(0,(wc[q.id]||0));
+    } else {
+      wc[q.id]=(wc[q.id]||0)+1;
+    }
+    return{...p,wrongCounts:wc,history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1};
+  });
+  // ① 進捗保存
+  saveProgress();
+  render();
+  const el=document.getElementById("app");
+  if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){
+    // ① セッション完了: 進捗クリア
+    setUd(p=>{const np={...p,totalSessions:(p.totalSessions||0)+1};delete np.lastProgress;return np;});
+    S.screen="result";render();
+  } else {
+    S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;
+    saveProgress();
+    render();startTimer();
+  }
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){
+  document.getElementById("app").innerHTML=build();
+  if(S.screen==="notebook"||S.screen==="quiz"){
+    const el=document.getElementById("app");
+    if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+  }
+  if(S.screen==="result"||S.screen==="home"){
+    // ⑥ resultとhomeは常にページ最上部
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const isFiltered=S.mode==="ALL"&&(S.fc!=="全て"||S.fsc);
+  const filterLabel=S.fsc?(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc)?.label.replace(/^[^\s]+\s/,""):S.fc!=="全て"?S.fc:"";
+  const left=`
+    <div class="card">
+      <div class="cat-card-hd">
+        <span class="cat-card-title">カテゴリ・絞り込み</span>
+        ${isFiltered?`<span class="cat-filter-badge active">🎯 ${filterLabel}</span>`:`<span class="cat-filter-badge none">全問題</span>`}
+      </div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}">
+        ${cats.map(c=>{
+          const a=S.fc===c;
+          const m=CAT_META[c];
+          const cnt=c==="全て"?ALL_QUESTIONS.length:ALL_QUESTIONS.filter(q=>q.category===c).length;
+          const wc=c==="全て"?wq.length:ALL_QUESTIONS.filter(q=>q.category===c&&(S.ud.wrongCounts||{})[q.id]>0).length;
+          const badge=wc>0?`<span style="background:#E8572A;color:#fff;font-size:9px;font-weight:700;border-radius:4px;padding:0 4px;">${wc}</span>`:"";
+          return`<button class="cat-chip ${a?"active":""}" onclick="S.fc='${c}';S.fsc=null;render()">${c!=="全て"&&m?m.icon+" ":""}${c}<span style="opacity:.55;font-size:10px;margin-left:3px;">${cnt}</span>${badge}</button>`;
+        }).join("")}
+      </div>
+      ${S.mode==="ALL"&&S.fc!=="全て"&&SUBCAT_DEF[S.fc]?(()=>{
+        const subs=SUBCAT_DEF[S.fc];
+        return`<div class="subcat-section">
+          <div class="subcat-label">章で絞り込む</div>
+          <div class="subcat-grid">
+            <button class="subcat-chip ${!S.fsc?"active":""}" onclick="S.fsc=null;render()">全章</button>
+            ${subs.map(s=>{
+              const cnt2=ALL_QUESTIONS.filter(q=>q.category===S.fc&&s.ids.includes(q.id)).length;
+              return`<button class="subcat-chip ${S.fsc===s.key?"active":""}" onclick="S.fsc='${s.key}';render()">${s.label}<span style="opacity:.6;font-size:10px;margin-left:3px;">${cnt2}</span></button>`;
+            }).join("")}
+          </div>
+        </div>`;
+      })():""}
+      ${S.mode!=="ALL"?`<p style="font-size:11px;color:var(--text3);margin-top:4px;">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+      <div class="opts-compact">
+        <span class="opt-label-ic">⏱</span>
+        ${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}
+        <div class="opts-compact-sep"></div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"ランダム":"順番通り"}</button>
+      </div>
+    </div>
+    ${(()=>{
+      const p=S.ud.lastProgress;
+      const hasP=hasProgress();
+      if(hasP){
+        const resumeQ=p.deckIds&&ALL_QUESTIONS.find(q=>q.id===p.deckIds[p.idx]);
+        const cat=resumeQ?(CAT_META[resumeQ.category]||{icon:"📄"}):{icon:"📄"};
+        const catLabel=resumeQ?resumeQ.category:"";
+        const qNum=p.idx+1;
+        return`<div class="start-row">
+          <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+          <button class="resume-btn" onclick="resumeSession()">
+            <span class="resume-btn-label">▶ 続きから学習</span>
+            <span class="resume-btn-sub">${qNum}問目 ${cat.icon}${catLabel}</span>
+          </button>
+        </div>`;
+      } else {
+        return`<button class="start-btn start-btn-solo ${startOff?"off":""}" onclick="go()">学習スタート ${arr()}</button>`;
+      }
+    })()}
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  const modeTabs=[
+    {k:"ALL",ic:"📚",lbl:"全問",cnt:ALL_QUESTIONS.length,dis:false},
+    {k:"WEAK",ic:"🔥",lbl:"弱点",cnt:wq.length,dis:!wq.length},
+    {k:"STAR",ic:"⭐",lbl:"★登録",cnt:sq.length,dis:!sq.length}
+  ].map(m=>{const on=S.mode===m.k?"hm-on":"";const dis=m.dis?"hm-dis":"";const click=m.dis?"":"S.mode=\'"+m.k+"\';S.fsc=null;render()";return`<button class="hm-tab ${on} ${dis}" onclick="${click}"><span class="hm-ic">${m.ic}</span><span class="hm-lbl">${m.lbl}</span><span class="hm-cnt">${m.cnt}問</span></button>`;}).join("");
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-top">
+        <div class="hero-left">
+          <div class="hero-exam-type">ビジネス・法律</div>
+          <div class="hero-exam-name">ビジネス法務3級</div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+            ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+          </div>
+        </div>
+        <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+          <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+          <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+          <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+        </div>
+      </div>
+      <div class="hero-mode-bar">${modeTabs}</div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const catMeta=CAT_META[cur.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+  const catLabel=cur.category||"";
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="44" height="44" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+
+  // ── 未回答：問題文＋4択を表示 ──────────────────────
+  if(!ia){
+    const ch=cur.choices.map((c,i)=>`<button class="choice" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span></button>`).join("");
+    return`<div class="quiz-inner">
+      <div class="pc-quiz-main">
+        <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+        <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+        ${tim}
+        <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+        <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+        <div class="choices">${ch}</div>
+      </div>
+      <div class="pc-quiz-side">
+        <div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>
+        <div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>
+      </div>
+    </div>`;
+  }
+
+  // ── 回答済み：選択肢を非表示にして解説カードのみ表示 ──
+  const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";
+  const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";
+  const vc=ic&&!S.tout?"var(--green-d)":S.tout?"var(--gold)":"var(--accent)";
+
+  const correctRow=`<div class="exp-correct-bar ok">
+    <span class="exp-correct-label">正解</span>
+    <span class="exp-correct-text">${al[cur.answer]}. ${cur.choices[cur.answer]}</span>
+  </div>`;
+  const myRow=(!ic&&!S.tout&&S.sel!==null)?`<div class="exp-correct-bar ng">
+    <span class="exp-correct-label">あなた</span>
+    <span class="exp-correct-text">${al[S.sel]}. ${cur.choices[S.sel]}</span>
+  </div>`:"";
+
+  // PC側解説パネル
+  const expPC=`<div class="side-panel">
+    <div class="side-title">解説</div>
+    <div style="font-size:13px;font-weight:700;color:${vc};margin-bottom:8px;">${v}</div>
+    <div style="background:rgba(29,158,117,.1);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#0F6E56;"><strong>正解：</strong>${al[cur.answer]}. ${cur.choices[cur.answer]}</div>
+    ${(!ic&&!S.tout&&S.sel!==null)?`<div style="background:rgba(230,81,0,.08);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#8B2A0E;"><strong>あなた：</strong>${al[S.sel]}. ${cur.choices[S.sel]}</div>`:""}
+    <div class="side-exp-body">${cur.explanation}</div>
+  </div>`;
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="exp-card exp-sp ${cls}">
+        <div class="exp-head"><span class="exp-verdict">${v}</span></div>
+        ${correctRow}${myRow}
+        <p class="exp-body">${cur.explanation}</p>
+      </div>
+      <div class="next-wrap"><div class="next-3">
+        <button class="btn-retry" onclick="retryQ()">🔁<span class="btn-sub-lbl">もう一度</span></button>
+        <button class="btn-pause" onclick="pauseQ()">⏸<span class="btn-sub-lbl">中断</span></button>
+        <button class="btn-next-main" onclick="next()">${S.idx+1>=S.deck.length?"🏁 結果を見る":"次の問題 →"}</button>
+      </div></div>
+    </div>
+    <div class="pc-quiz-side">${expPC}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  // ⑤ undefinedを除去: questionが存在するか確認
+  const log=S.sess.map((a,i)=>{
+    if(!a.q||!a.q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[a.q.id]||0;
+    const cat=CAT_META[a.q.category];
+    const icon=cat?cat.icon:"";
+    const qText=a.q.question.slice(0,28)+"…";
+    return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${icon}</span><span class="ar-q">${qText}</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;
+  }).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/><circle cx="50" cy="50" r="42" fill="none" stroke="${vc}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${sr*2.639} 263.9" transform="rotate(-90 50 50)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{
+    if(!q||!q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[q.id]||0;
+    const is=(S.ud.starIds||[]).includes(q.id);
+    const cat=CAT_META[q.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+    return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${cat.color};background:${cat.bg};border-color:${cat.color}55">${cat.icon} ${q.category||""}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;
+  }).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+
+// ── ページ内ナビ スクロール処理 ──
+function scrollToApp(e){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById("app");
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab("app");
+}
+function scrollTo_(e, id){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById(id);
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab(id);
+}
+function setActiveTab(id){
+  document.querySelectorAll(".pn-tab").forEach(t => t.classList.remove("active"));
+  const map = {app:0, apply:1, books:2, courses:3, overview:4, syllabus:5, roadmap:6, faq:7};
+  const tabs = document.querySelectorAll(".pn-tab");
+  const idx = map[id];
+  if(idx !== undefined && tabs[idx]) tabs[idx].classList.add("active");
+}
+const _navIds = ["faq","roadmap","syllabus","overview","courses","books","apply"];
+window.addEventListener("scroll", ()=>{
+  const offset = 120;
+  for(const id of _navIds){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= offset){
+      setActiveTab(id); return;
+    }
+  }
+  setActiveTab("app");
+}, {passive:true});
+</script>
+
+<section class="aff-section">
+  <div class="aff-inner">
+    <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+    <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+    <a class="official-btn" href="https://kentei.tokyo-cci.or.jp/bizlaw/" target="_blank" rel="noopener">
+      <div class="official-ico">🏛️</div>
+      <div class="official-info"><div class="official-name">東京商工会議所（ビジネス実務法務検定試験）（公式）</div><div class="official-note">試験日程・申込方法・受験料の詳細はこちらから確認できます</div></div>
+      <div class="official-arr">→</div>
+    </a>
+    <div class="aff-h3">おすすめ参考書</div><div class="book-list"><div class="book-card"><div class="book-title">📖 ビジネス実務法務検定試験3級公式テキスト（東京商工会議所）</div><div class="book-memo">公式テキスト。IBT/CBT方式に完全対応</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=ビジネス実務法務検定試験3級公式テキスト東京商工会議所&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/ビジネス実務法務検定試験3級公式テキスト東京商工会議所/" target="_blank" rel="noopener">楽天 で見る</a></div></div><div class="book-card"><div class="book-title">📖 ビジネス実務法務検定3級問題集（TAC出版）</div><div class="book-memo">過去問ベースの問題集。演習に最適</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=ビジネス実務法務検定3級問題集TAC出版&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/ビジネス実務法務検定3級問題集TAC出版/" target="_blank" rel="noopener">楽天 で見る</a></div></div></div>
+    <div class="aff-h3">おすすめ通信講座</div><div class="course-list"><a class="course-card" href="https://www.tac-school.co.jp/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">資格の学校TAC ビジネス実務法務講座</div><div class="course-price">約15,000円〜</div><div class="course-feat">信頼の実績・丁寧な解説</div></div><div class="course-arr">›</div></a><a class="course-card" href="https://studying.jp/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">スタディング ビジネス実務法務講座</div><div class="course-price">約5,000円〜</div><div class="course-feat">スマホ完結・業界最安クラス</div></div><div class="course-arr">›</div></a></div>
+    <p class="aff-note">※ 参考書・通信講座のリンクはアフィリエイトリンクです。<br>※ 価格は変動する場合があります。最新情報は各公式サイトでご確認ください。</p>
+  </div>
+</section>
+<section class="seo-section">
+  <div class="seo-inner">
+    <h2 class="seo-h2">ビジネス実務法務検定 3級とは</h2>
+    <p class="seo-lead">ビジネス実務法務検定3級は、ビジネスに関わる法律の基礎知識を問う検定です。コンプライアンス意識の高まりとともに、法務部門以外でも幅広く取得が推奨されています。民法・会社法・労働法など社会人が知っておくべき法律の基礎を体系的に学べます。</p>
+    <h3 class="seo-h3">試験概要</h3>
+    <div class="info-grid2">
+      <div class="ig-card"><div class="ig-lbl">合格率</div><div class="ig-val">70%</div></div>
+      <div class="ig-card"><div class="ig-lbl">勉強時間</div><div class="ig-val">60〜100時間</div></div>
+      <div class="ig-card"><div class="ig-lbl">受験料</div><div class="ig-val">5,500円</div></div>
+      <div class="ig-card"><div class="ig-lbl">試験形式</div><div class="ig-val">4択マークシート・50問（IBT/CBT）</div></div>
+      <div class="ig-card"><div class="ig-lbl">試験回数</div><div class="ig-val">年2回（7月・12月頃）</div></div>
+      <div class="ig-card"><div class="ig-lbl">難易度</div><div class="ig-val">★☆☆☆☆</div></div>
+    </div>
+    <h3 class="seo-h3">試験科目・出題範囲</h3><table class="seo-table"><thead><tr><th>科目・分野</th><th>主な内容</th></tr></thead><tbody><tr><td>民法の基礎</td><td>契約・売買・不法行為・消費者保護法</td></tr><tr><td>会社法の基礎</td><td>株式会社の仕組み・機関設計・株主総会</td></tr><tr><td>労働法</td><td>労働契約・解雇・労働時間・ハラスメント</td></tr><tr><td>知的財産法</td><td>著作権・特許・商標の基礎</td></tr><tr><td>個人情報保護法</td><td>個人情報の取扱い・プライバシー保護</td></tr></tbody></table>
+    <h3 class="seo-h3">学習ロードマップ</h3><div class="roadmap"><div class="rm-step"><div class="rm-num">1</div><div><div class="rm-title">民法の基礎を学ぶ（1〜2週目）</div><div class="rm-desc">契約・不法行為・時効等の基本概念を理解する</div></div></div><div class="rm-step"><div class="rm-num">2</div><div><div class="rm-title">会社法の基礎を学習（2〜3週目）</div><div class="rm-desc">株式会社の仕組みと基本的なルールを把握する</div></div></div><div class="rm-step"><div class="rm-num">3</div><div><div class="rm-title">労働法・個人情報保護を押さえる（3〜4週目）</div><div class="rm-desc">職場で直接役立つ労働法・個人情報の頻出事項を学ぶ</div></div></div><div class="rm-step"><div class="rm-num">4</div><div><div class="rm-title">問題演習で仕上げ（4〜6週目）</div><div class="rm-desc">IBT/CBT形式の過去問を繰り返し得点力を高める</div></div></div></div>
+    <h3 class="seo-h3">この資格を取ったら次は？</h3><div class="next-shikaku"><a class="next-card" href="bizlaw2.html"><div class="next-ico" style="background:#FAEEDA">📜</div><div><div class="next-name">ビジネス実務法務 2級</div><div class="next-desc">より実践的な法務知識へステップアップ</div></div></a><a class="next-card" href="chizai3.html"><div class="next-ico" style="background:#FAEEDA">💡</div><div><div class="next-name">知的財産管理技能士 3級</div><div class="next-desc">知財に特化した専門国家資格</div></div></a></div>
+    <h3 class="seo-h3">よくある質問（FAQ）</h3><div class="faq-list"><details class="faq-item"><summary class="faq-q">ビジネス実務法務検定3級の合格率はどのくらいですか？</summary><p class="faq-a">約70%程度で比較的合格しやすい資格です。しっかりテキストで学習すれば合格できます。</p></details><details class="faq-item"><summary class="faq-q">法律の知識がなくても取れますか？</summary><p class="faq-a">初学者向けに設計された試験です。専用テキストで学習すれば法律知識がなくても合格できます。</p></details><details class="faq-item"><summary class="faq-q">どんな職種に役立ちますか？</summary><p class="faq-a">法務部門はもちろん、営業・総務・人事・経理など全職種でコンプライアンス知識として役立ちます。</p></details><details class="faq-item"><summary class="faq-q">2級との違いは何ですか？</summary><p class="faq-a">3級は基礎知識、2級は応用・実践レベルです。3級合格後に2級を目指す方が多いです。</p></details></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-logo">
+      <span class="sf-lmark">問</span>
+      資格<span>ドリル</span>
+    </div>
+    <div class="sf-links">
+      <a href="index.html">資格一覧トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="sf-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>
