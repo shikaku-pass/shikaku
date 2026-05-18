@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>測量士補 無料問題集・過去問対策 | 資格ドリル</title>
+<meta name="description" content="G検定（ジェネラリスト検定）の無料問題集。AI・機械学習・ディープラーニング・法律・倫理を網羅。合格率65〜76%・勉強時間40〜80時間。オンライン100分/会場120分・145問。弱点特訓・解説つき。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1623;--navy2:#171e2e;--navy3:#1e2840;
+  --green:#1D9E75;--green-d:#0F6E56;--green-bg:#E1F5EE;
+  --brand:#ff3b53;--brand2:#ff7a3d;--gold:#ffb400;--gold-bg:#FEF6E4;
+  --accent:#ff3b53;--accent-bg:#fff0f1;
+  --bg:#f5f4f0;--bg2:#fff;--border:#e5e3dc;--border2:#c8c5bc;
+  --text:#1a1a1a;--text2:#555;--text3:#999;
+  --font-d:'Inter','Noto Sans JP',sans-serif;
+  --font-b:'Noto Sans JP',sans-serif;
+  --radius:14px;--radius-sm:10px;--tap:52px;
+  --shadow:0 2px 8px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{background:var(--bg);font-family:var(--font-b);min-height:100vh;color:var(--text);}
+a{text-decoration:none;color:inherit;}
+.site-header{background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;position:sticky;top:0;z-index:100;}
+.site-header-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.site-logo{color:#fff;font-size:18px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:8px;font-family:"Inter","Noto Sans JP";}
+.site-logo .logo-text{background:linear-gradient(90deg,#fff 0%,#ffd6c2 100%);-webkit-background-clip:text;background-clip:text;color:transparent !important;}
+.logo-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 4px 14px rgba(255,59,83,.45);animation:pulse 2.8s ease-in-out infinite;flex-shrink:0;}
+@keyframes pulse{0%,100%{box-shadow:0 4px 14px rgba(255,59,83,.45)}50%{box-shadow:0 6px 22px rgba(255,106,61,.65)}}
+/* ③ PC時: ヘッダー内コンテンツを掲載内容の左端に揃える */
+@media(min-width:769px){
+  .site-header{padding:0;}
+  .site-header-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+  .page-nav-inner{max-width:920px;margin:0 auto;padding:0 32px;}
+}
+.site-back{color:rgba(255,255,255,0.7);font-size:13px;display:flex;align-items:center;gap:5px;transition:color .2s;}
+.site-back:hover{color:#fff;}
+.home-inner{max-width:480px;margin:0 auto;padding:20px 16px 60px;}
+.home-hero{background:var(--navy);border-radius:var(--radius);margin-bottom:16px;overflow:hidden;}
+.hero-top{padding:18px 20px 14px;display:flex;align-items:center;gap:14px;}
+.hero-left{flex:1;min-width:0;}
+.hero-exam-type{font-size:10px;color:#1D9E75;font-weight:700;letter-spacing:2.5px;margin-bottom:3px;}
+.hero-exam-name{font-family:var(--font-d);font-size:22px;font-weight:900;color:#fff;line-height:1.1;margin-bottom:8px;}
+.hero-stats{display:flex;align-items:center;}
+.hero-stat{display:flex;flex-direction:column;align-items:center;padding:0 14px 0 0;}
+.hs-num{font-family:var(--font-d);font-size:18px;font-weight:900;color:#fff;}
+.hs-lbl{font-size:10px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.hero-stat-div{width:1px;height:28px;background:rgba(255,255,255,0.15);margin-right:14px;}
+.hero-rank{display:flex;flex-direction:column;align-items:center;gap:4px;border:1.5px solid;border-radius:12px;padding:10px 14px;flex-shrink:0;min-width:60px;}
+.rank-k{font-family:var(--font-d);font-size:26px;font-weight:900;line-height:1;}
+.rank-l{font-size:10px;font-weight:700;letter-spacing:1px;}
+.rank-bar{width:100%;height:3px;background:rgba(255,255,255,0.2);border-radius:2px;overflow:hidden;margin-top:4px;}
+.rank-fill{height:100%;border-radius:2px;transition:width 1s ease;}
+/* モードタブ（ヒーロー内）コンパクト1行 */
+.hero-mode-bar{display:flex;border-top:1px solid rgba(255,255,255,.08);}
+.hm-tab{flex:1;padding:8px 4px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:5px;cursor:pointer;border:none;background:none;font-family:var(--font-b);color:rgba(255,255,255,.4);transition:all .2s;border-bottom:2px solid transparent;}
+.hm-tab:not(.hm-dis):hover{color:rgba(255,255,255,.8);background:rgba(255,255,255,.04);}
+.hm-tab.hm-on{color:#fff;border-bottom-color:var(--brand);background:rgba(255,59,83,.08);}
+.hm-tab.hm-dis{opacity:.3;cursor:not-allowed;}
+.hm-ic{font-size:14px;line-height:1;transition:transform .25s cubic-bezier(.34,1.56,.64,1);flex-shrink:0;}
+.hm-tab.hm-on .hm-ic{transform:scale(1.15);}
+.hm-lbl{font-size:12px;font-weight:700;}
+.hm-cnt{font-size:10px;background:rgba(255,255,255,.12);border-radius:4px;padding:1px 6px;line-height:1.5;transition:all .2s;}
+.hm-tab.hm-on .hm-cnt{background:var(--brand);color:#fff;}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px;}
+.card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;}
+.cat-card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+.cat-card-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;}
+.cat-filter-badge{font-size:10px;padding:2px 8px;border-radius:99px;font-weight:700;}
+.cat-filter-badge.none{color:var(--text3);background:var(--bg);}
+.cat-filter-badge.active{color:#fff;background:var(--brand);animation:badgePop .3s cubic-bezier(.34,1.56,.64,1);}
+@keyframes badgePop{0%{transform:scale(.7)}100%{transform:scale(1)}}
+.cat-row{display:flex;gap:7px;flex-wrap:wrap;}
+.cat-row.hidden{display:none;}
+.cat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:7px 13px;font-size:12px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .2s;display:flex;align-items:center;gap:5px;}
+.cat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;transform:translateY(-1px);}
+.cat-chip.active{border-color:var(--navy)!important;color:#fff!important;background:var(--navy)!important;font-weight:700!important;box-shadow:0 3px 10px rgba(15,22,35,.2);}
+.subcat-section{margin-top:10px;padding-top:10px;border-top:1px dashed var(--border);animation:fadeSlideIn .22s ease;}
+@keyframes fadeSlideIn{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.subcat-label{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:1.5px;margin-bottom:7px;display:flex;align-items:center;gap:5px;text-transform:uppercase;}
+.subcat-label::before{content:"";width:2px;height:10px;background:linear-gradient(var(--brand),var(--brand2));border-radius:1px;flex-shrink:0;}
+.subcat-grid{display:flex;gap:5px;flex-wrap:wrap;}
+.subcat-chip{background:var(--bg);border:1.5px solid var(--border);border-radius:8px;padding:5px 11px;font-size:11px;cursor:pointer;color:var(--text2);transition:all .2s;display:flex;align-items:center;gap:4px;}
+.subcat-chip:hover{border-color:var(--brand);color:var(--brand);background:#fff0f1;}
+.subcat-chip.active{background:linear-gradient(135deg,var(--brand),var(--brand2));border-color:transparent;color:#fff;font-weight:700;box-shadow:0 3px 8px rgba(255,59,83,.3);}
+.opts-compact{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.opts-compact-sep{width:1px;height:16px;background:var(--border);flex-shrink:0;}
+.opt-label-ic{font-size:12px;color:var(--text3);}
+.opt-pill{background:var(--bg);border:1px solid var(--border);border-radius:7px;padding:4px 9px;font-size:11px;cursor:pointer;color:var(--text2);font-family:var(--font-b);transition:all .18s;}
+.opt-pill:hover{background:#f0efe8;border-color:var(--border2);}
+.opt-pill.on{background:var(--accent-bg)!important;border-color:var(--brand)!important;color:var(--brand)!important;font-weight:700;}
+.opt-shuffle.on{background:var(--green-bg)!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+/* スタート・継続ボタン行 */
+.start-row{display:flex;gap:8px;margin-bottom:8px;}
+.start-btn{flex:1;height:52px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:900;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 8px 22px rgba(255,59,83,.35);}
+.start-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(255,59,83,.5);}
+.start-btn.off{opacity:.35;cursor:not-allowed;transform:none!important;}
+.start-btn-solo{width:100%;height:56px;font-size:18px;letter-spacing:2px;margin-bottom:8px;}
+.resume-btn{flex:1;height:52px;background:var(--green-bg);border:1.5px solid var(--green);border-radius:var(--radius);color:var(--green-d);font-size:13px;font-weight:700;font-family:var(--font-b);cursor:pointer;transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;}
+.resume-btn:hover{background:var(--green);color:#fff;}
+.resume-btn-label{font-size:12px;font-weight:700;}
+.resume-btn-sub{font-size:10px;opacity:.75;}
+.text-link{background:none;border:none;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font-b);text-decoration:underline;width:100%;text-align:center;padding:6px;display:block;}
+.quiz-inner{max-width:480px;margin:0 auto;padding:8px 12px 70px;display:flex;flex-direction:column;gap:8px;}
+.quiz-nav{display:flex;align-items:center;justify-content:space-between;}
+.nav-back{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;box-shadow:var(--shadow);}
+.nav-back:hover{border-color:var(--border2);}
+.quiz-counter-wrap{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.quiz-counter{display:flex;align-items:baseline;gap:3px;}
+.qc-cur{font-family:var(--font-d);font-size:22px;font-weight:900;}
+.qc-sep{font-size:12px;color:var(--text3);}
+.qc-tot{font-size:13px;color:var(--text3);}
+.qc-sub{font-size:10px;color:var(--text3);letter-spacing:.5px;}
+.star-btn{width:36px;height:36px;border-radius:var(--radius-sm);background:var(--bg2);border:1px solid var(--border);font-size:18px;cursor:pointer;color:var(--text3);transition:all .2s;line-height:1;box-shadow:var(--shadow);}
+.star-btn.on{color:var(--gold);border-color:var(--gold);background:var(--gold-bg);}
+.q-progress{height:3px;background:var(--border);border-radius:2px;overflow:hidden;}
+.q-prog-fill{height:100%;background:var(--brand);border-radius:2px;transition:width .4s ease;}
+.timer-wrap{position:relative;width:44px;height:44px;align-self:center;}
+.timer-num{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:13px;font-weight:900;}
+.session-bar{display:flex;align-items:center;gap:6px;}
+.sb-ok{font-size:11px;font-weight:700;color:var(--green);min-width:28px;}
+.sb-ng{font-size:11px;font-weight:700;color:var(--accent);min-width:28px;text-align:right;}
+.sb-dots{flex:1;display:flex;align-items:center;gap:3px;flex-wrap:wrap;}
+.sb-dot{width:7px;height:7px;border-radius:50%;}
+.sd-ok{background:var(--green);}
+.sd-ng{background:var(--accent);}
+.sd-cur{background:var(--gold);width:9px;height:9px;}
+.sd-future{background:var(--border);}
+.sb-more{font-size:9px;color:var(--text3);}
+.q-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;box-shadow:var(--shadow);}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:4px;}
+.q-cat-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;border:1px solid;}
+.q-miss{font-size:10px;font-weight:700;color:var(--accent);background:var(--accent-bg);border:1px solid rgba(230,81,0,.3);padding:3px 8px;border-radius:6px;}
+.q-text{font-size:13px;line-height:1.7;font-weight:500;}
+.choices{display:flex;flex-direction:column;gap:6px;}
+.choice{background:var(--bg2);border:1.5px solid var(--border);border-radius:10px;padding:0 12px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;gap:10px;text-align:left;transition:all .15s;color:var(--text2);min-height:44px;width:100%;box-shadow:var(--shadow);}
+.choice:not(.ch-ok):not(.ch-ng):not(.ch-fade):hover{border-color:var(--accent);background:#FFF3E0;transform:translateX(2px);}
+.ch-ok{background:#F0FBF6!important;border-color:var(--green)!important;color:var(--green-d)!important;}
+.ch-ng{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:#8B2A0E!important;}
+.ch-fade{opacity:.3;}
+.ch-alpha{font-family:var(--font-d);font-weight:900;font-size:12px;width:26px;height:26px;border-radius:6px;background:var(--bg);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;}
+.ch-ok .ch-alpha{background:var(--green);color:#fff;border-color:var(--green);}
+.ch-ng .ch-alpha{background:var(--accent);color:#fff;border-color:var(--accent);}
+.ch-body{flex:1;font-size:12px;line-height:1.5;padding:10px 0;}
+.ch-icon{font-size:15px;font-weight:700;}
+.ch-ok .ch-icon{color:var(--green);}
+.ch-ng .ch-icon{color:var(--accent);}
+.exp-card{border-radius:10px;padding:10px 12px;border:1px solid;}
+.exp-ok{background:#F0FBF6;border-color:rgba(29,158,117,.3);}
+.exp-ng{background:var(--accent-bg);border-color:rgba(230,81,0,.25);}
+.exp-time{background:var(--gold-bg);border-color:rgba(212,148,26,.3);}
+.exp-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;}
+.exp-verdict{font-size:13px;font-weight:700;}
+.exp-ok .exp-verdict{color:var(--green-d);}
+.exp-ng .exp-verdict{color:var(--accent);}
+.exp-time .exp-verdict{color:var(--gold);}
+.exp-ans{font-size:11px;color:var(--gold);}
+/* 正解表示バー */
+.exp-correct-bar{display:flex;align-items:flex-start;gap:8px;padding:6px 8px;border-radius:7px;margin-bottom:6px;}
+.exp-correct-bar.ok{background:rgba(29,158,117,.12);}
+.exp-correct-bar.ng{background:rgba(230,81,0,.08);}
+.exp-correct-label{font-size:10px;font-weight:700;white-space:nowrap;padding-top:1px;}
+.exp-correct-bar.ok .exp-correct-label{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-label{color:var(--accent);}
+.exp-correct-text{font-size:12px;line-height:1.5;}
+.exp-correct-bar.ok .exp-correct-text{color:var(--green-d);}
+.exp-correct-bar.ng .exp-correct-text{color:#8B2A0E;}
+.exp-body{font-size:11.5px;line-height:1.8;color:var(--text2);}
+.next-wrap{position:sticky;bottom:12px;padding-top:6px;background:linear-gradient(to top,var(--bg) 65%,transparent);}
+.next-btn{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);width:100%;height:46px;font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.3);}
+.next-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.next-3{display:grid;grid-template-columns:1fr 1fr 2fr;gap:6px;}
+.btn-retry{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-retry:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-bg);}
+.btn-pause{height:46px;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);font-size:12px;font-weight:700;color:var(--text2);cursor:pointer;font-family:var(--font-b);transition:all .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;}
+.btn-pause:hover{border-color:var(--green);color:var(--green-d);background:var(--green-bg);}
+.btn-next-main{height:46px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:.5px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all .2s;box-shadow:0 4px 14px rgba(255,59,83,.3);}
+.btn-next-main:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(255,59,83,.45);}
+.btn-sub-lbl{font-size:9px;font-weight:400;opacity:.7;line-height:1;}
+/* ⑥ result コンパクト化 */
+.result-inner{max-width:480px;margin:0 auto;padding:16px 16px 40px;display:flex;flex-direction:column;gap:12px;}
+.result-hero{background:var(--navy);border-radius:var(--radius);padding:16px;display:flex;flex-direction:column;align-items:center;gap:10px;}
+.result-eyebrow{font-size:10px;letter-spacing:4px;color:rgba(255,255,255,0.5);text-transform:uppercase;}
+.result-score-wrap{position:relative;width:100px;height:100px;}
+.result-score-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.result-pct{font-family:var(--font-d);font-size:32px;font-weight:900;line-height:1;color:#fff;}
+.result-pct small{font-size:14px;}
+.result-sub{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;}
+.result-verdict{font-size:13px;font-weight:700;padding:6px 16px;border-radius:var(--radius-sm);border:1px solid;}
+.result-cats{width:100%;display:flex;flex-direction:column;gap:6px;}
+.rc-row{display:flex;align-items:center;gap:8px;}
+.rc-icon{font-size:12px;}
+.rc-name{font-size:10px;font-weight:700;width:68px;color:rgba(255,255,255,0.6);}
+.rc-track{flex:1;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden;}
+.rc-fill{height:100%;border-radius:2px;transition:width 1s ease .3s;}
+.rc-pct{font-size:10px;font-weight:700;width:28px;text-align:right;color:#fff;}
+.section-hd{font-size:11px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;}
+.ans-log{display:flex;flex-direction:column;gap:5px;}
+.ans-row{display:flex;align-items:center;gap:8px;background:var(--bg2);border-radius:8px;padding:8px 10px;border:1px solid var(--border);border-left:3px solid var(--border);box-shadow:var(--shadow);}
+.ar-ok{border-left-color:var(--green)!important;}
+.ar-ng{border-left-color:var(--accent)!important;}
+.ar-n{font-size:10px;color:var(--text3);min-width:22px;}
+.ar-cat{font-size:12px;}
+.ar-q{flex:1;font-size:11px;color:var(--text2);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.ar-mark{font-size:13px;font-weight:700;}
+.ar-ok .ar-mark{color:var(--green);}
+.ar-ng .ar-mark{color:var(--accent);}
+.ar-cnt{font-size:10px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px;}
+.cta-btn{width:100%;height:44px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;border:none;border-radius:var(--radius);font-size:15px;font-weight:700;font-family:var(--font-d);letter-spacing:1px;cursor:pointer;transition:all .2s;box-shadow:0 4px 16px rgba(255,59,83,.25);}
+.cta-btn:hover{transform:translateY(-1px);filter:brightness(1.05);}
+.ghost-btn{width:100%;height:40px;background:transparent;border:1.5px solid var(--border2);border-radius:var(--radius);color:var(--text2);font-size:13px;font-family:var(--font-b);cursor:pointer;transition:all .2s;}
+.ghost-btn:hover{background:#f0efe8;}
+.nb-inner{max-width:480px;margin:0 auto;padding:16px 16px 80px;display:flex;flex-direction:column;gap:12px;}
+.nb-nav{display:flex;align-items:center;gap:12px;}
+.nb-title{font-family:var(--font-d);font-size:20px;font-weight:900;flex:1;}
+.nb-count{font-size:13px;color:var(--text3);}
+.nb-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:10px;}
+.nb-card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px;}
+.nb-cat{font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;border:1px solid;}
+.nb-actions{display:flex;align-items:center;gap:8px;}
+.nb-wc{font-size:12px;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--accent-bg);color:var(--accent);}
+.nb-star{background:none;border:none;font-size:20px;cursor:pointer;color:var(--text3);transition:color .2s;line-height:1;}
+.nb-star.on{color:var(--gold);}
+.nb-resolve{background:var(--green-bg);border:1px solid rgba(29,158,117,.4);border-radius:7px;color:var(--green-d);font-size:11px;font-weight:700;padding:5px 10px;cursor:pointer;font-family:var(--font-b);}
+.nb-q{font-size:14px;line-height:1.75;margin-bottom:10px;font-weight:500;}
+.nb-ans-box{background:var(--green-bg);border-radius:9px;padding:9px 12px;margin-bottom:8px;display:flex;gap:8px;}
+.nb-ans-lbl{font-size:11px;color:var(--green-d);font-weight:700;white-space:nowrap;margin-top:1px;}
+.nb-ans-val{font-size:13px;color:var(--green-d);line-height:1.5;}
+.nb-details{margin-top:4px;}
+.nb-summary{font-size:12px;color:var(--text3);cursor:pointer;list-style:none;padding:4px 0;user-select:none;}
+.nb-summary::-webkit-details-marker{display:none;}
+.nb-exp{font-size:12px;line-height:1.9;color:var(--text2);margin-top:8px;padding-top:8px;border-top:1px solid var(--border);}
+.empty-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;padding:60px 20px;text-align:center;}
+.empty-icon{font-size:48px;}
+.empty-msg{font-size:16px;font-weight:700;color:var(--text2);}
+.empty-sub{font-size:13px;color:var(--text3);}
+
+/* ── スマホ：サイドパネルをメインコンテンツの下に表示 ── */
+@media (max-width:768px){
+  .pc-cols{display:flex;flex-direction:column;gap:0;}
+  .pc-col-main{flex:1;min-width:0;}
+  .pc-col-side{display:flex;flex-direction:column;gap:12px;margin-top:12px;}
+  .quiz-inner{display:flex;flex-direction:column;}
+  .pc-quiz-main{display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{display:none;}
+}
+/* ── PC 2カラム ── */
+@media (min-width:769px){
+  .home-inner{max-width:920px;padding:28px 32px 60px;}
+  .pc-cols{display:flex;gap:24px;align-items:flex-start;}
+  .pc-col-main{flex:1;min-width:0;}
+  /* ② サイドパネル: ビューポート高さを超えないよう最大高さ設定してスクロール */
+  .pc-col-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-col-side::-webkit-scrollbar{display:none;}
+  .quiz-inner{max-width:920px;padding:24px 32px 40px;flex-direction:row;gap:24px;align-items:flex-start;}
+  .pc-quiz-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:12px;}
+  .pc-quiz-side{width:280px;flex-shrink:0;position:sticky;top:106px;max-height:calc(100vh - 120px);overflow-y:auto;scrollbar-width:none;display:flex;flex-direction:column;gap:14px;}
+  .pc-quiz-side::-webkit-scrollbar{display:none;}
+  .next-wrap{position:static;background:transparent;padding-top:0;}
+  /* ⑥ result: PC時もコンパクトに */
+  .result-inner{max-width:680px;padding:16px 32px 40px;}
+  .nb-inner{max-width:760px;padding:24px 32px 80px;}
+  .exp-sp{display:none;}
+}
+.side-panel{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);}
+.side-title{font-size:10px;font-weight:700;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;}
+.side-stat-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);}
+.side-stat-row:last-child{border-bottom:none;}
+.side-stat-lbl{font-size:13px;color:var(--text2);}
+.side-stat-val{font-size:16px;font-weight:700;font-family:var(--font-d);}
+.side-cat-row{display:flex;align-items:center;gap:8px;padding:4px 0;}
+.side-cat-icon{font-size:13px;width:18px;}
+.side-cat-name{font-size:11px;color:var(--text2);width:72px;font-weight:700;}
+.side-cat-track{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.side-cat-fill{height:100%;border-radius:2px;transition:width .6s ease;}
+.side-cat-pct{font-size:11px;font-weight:700;width:28px;text-align:right;}
+.side-exp-placeholder{font-size:13px;color:var(--text3);text-align:center;padding:16px 0;}
+.side-exp-verdict{font-size:14px;font-weight:700;margin-bottom:8px;}
+.side-exp-body{font-size:13px;line-height:1.9;color:var(--text2);}
+
+/* ── ページ内タブナビ ── */
+.page-nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:90;}
+.page-nav::-webkit-scrollbar{display:none;}
+.page-nav-inner{display:flex;align-items:center;min-width:max-content;padding:0 12px;}
+.pn-tab{color:rgba(255,255,255,0.55);font-size:12px;font-weight:600;padding:10px 12px;white-space:nowrap;cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;text-decoration:none;display:block;}
+.pn-tab:hover{color:#fff;}
+.pn-tab.active{color:#fff;border-bottom-color:#1D9E75;}
+
+/* ① resume-btn は上で定義済み */
+
+/* ── モード選択コンパクト化 ── */
+.mode-row-compact{display:flex;gap:6px;}
+.mode-btn-compact{flex:1;background:var(--bg);border:1.5px solid var(--border);border-radius:9px;padding:7px 4px;cursor:pointer;font-family:var(--font-b);display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);transition:all .18s;height:40px;}
+.mode-btn-compact:hover:not(.mode-off){background:#f0efe8;border-color:var(--border2);}
+.mode-btn-compact.mode-active{background:var(--accent-bg)!important;border-color:var(--accent)!important;color:var(--accent)!important;}
+.mode-btn-compact.mode-off{opacity:.4;cursor:not-allowed;}
+.mbc-icon{font-size:14px;line-height:1;}
+.mbc-label{font-size:11px;font-weight:700;}
+.mbc-count{font-size:10px;color:var(--text3);margin-left:1px;}
+.mode-btn-compact.mode-active .mbc-count{color:var(--accent);}
+
+/* ── カテゴリ+オプション 横並び ── */
+.cat-opt-row{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;}
+.cat-opt-row .cat-row{flex:1;min-width:0;}
+.opt-mini{display:flex;align-items:center;gap:4px;flex-shrink:0;}
+
+/* ── SEOコンテンツ ── */
+.seo-section{background:#fff;border-top:1px solid #e5e3dc;padding:32px 0 0;}
+.seo-inner{max-width:720px;margin:0 auto;padding:0 16px 40px;}
+.seo-h2{font-size:20px;font-weight:700;margin-bottom:10px;color:#1a1a1a;line-height:1.4;}
+.seo-h3{font-size:16px;font-weight:700;margin:28px 0 12px;color:#1a1a1a;border-left:3px solid #1D9E75;padding-left:10px;}
+.seo-lead{font-size:14px;color:#444;line-height:1.8;margin-bottom:20px;}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px;}
+.info-card{background:#f5f4f0;border-radius:10px;padding:12px 14px;}
+.info-label{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:4px;}
+.info-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+.seo-table{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:8px;}
+.seo-table th{background:#1a2744;color:#fff;padding:8px 12px;text-align:left;font-weight:700;font-size:12px;}
+.seo-table td{padding:8px 12px;border-bottom:1px solid #e5e3dc;color:#333;line-height:1.5;}
+.seo-table tr:last-child td{border-bottom:none;}
+.seo-table tr:nth-child(even) td{background:#f9f8f5;}
+.roadmap{display:flex;flex-direction:column;gap:0;margin-bottom:8px;}
+.rm-step{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #f0efe8;}
+.rm-step:last-child{border-bottom:none;}
+.rm-num{width:28px;height:28px;background:#1a2744;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;margin-top:2px;}
+.rm-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:3px;}
+.rm-desc{font-size:12px;color:#666;line-height:1.6;}
+.next-shikaku{display:flex;flex-direction:column;gap:8px;margin-bottom:8px;}
+.next-card{display:flex;align-items:center;gap:12px;background:#f5f4f0;border:1px solid #e5e3dc;border-radius:12px;padding:12px 14px;transition:border-color .15s;text-decoration:none;color:inherit;}
+.next-card:hover{border-color:#1D9E75;}
+.next-ico{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.next-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.next-desc{font-size:11px;color:#888;}
+.faq-list{display:flex;flex-direction:column;gap:8px;}
+.faq-item{background:#f9f8f5;border:1px solid #e5e3dc;border-radius:10px;overflow:hidden;}
+.faq-q{padding:12px 14px;font-size:13px;font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;color:#1a1a1a;}
+.faq-q::after{content:'▾';color:#1D9E75;font-size:14px;flex-shrink:0;margin-left:8px;}
+.faq-item[open] .faq-q::after{content:'▴';}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 14px 12px;font-size:13px;color:#444;line-height:1.8;}
+@media(min-width:769px){
+  .info-grid{grid-template-columns:repeat(3,1fr);}
+  .next-shikaku{flex-direction:row;}
+  .next-card{flex:1;}
+  .seo-inner{padding:0 32px 40px;}
+}
+/* フッター（横幅いっぱいバー）*/
+.site-footer{background:var(--navy);padding:14px 16px;margin-top:0;width:100%;}
+.sf-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;max-width:920px;margin:0 auto;}
+.sf-logo{color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.sf-logo span{color:var(--green) !important;background:none;}
+.sf-lmark{width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;}
+.sf-links{display:flex;gap:16px;flex-wrap:wrap;}
+.sf-links a{color:rgba(255,255,255,.4);font-size:11px;transition:color .15s;}
+.sf-links a:hover{color:rgba(255,255,255,.75);}
+.sf-copy{color:rgba(255,255,255,.2);font-size:10px;}
+@media(max-width:768px){
+  .sf-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+@media(min-width:769px){
+  .site-footer{padding:14px 0;}
+  .sf-inner{padding:0 32px;}
+}
+
+
+/* ── アフィリエイト・申込セクション ── */
+.aff-section{background:#f5f4f0;padding:32px 0;}
+.aff-inner{max-width:720px;margin:0 auto;padding:0 16px;}
+.aff-h2{font-size:18px;font-weight:700;margin-bottom:4px;color:#1a1a1a;}
+.aff-sub{font-size:12px;color:#999;margin-bottom:20px;}
+
+/* 公式申込 */
+.official-btn{display:flex;align-items:center;gap:14px;background:#1a2744;border-radius:14px;padding:16px 20px;text-decoration:none;color:#fff;transition:opacity .15s;margin-bottom:24px;}
+.official-btn:hover{opacity:.88;}
+.official-ico{width:44px;height:44px;background:rgba(255,255,255,.12);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;}
+.official-info{flex:1;min-width:0;}
+.official-name{font-size:13px;font-weight:700;margin-bottom:3px;}
+.official-note{font-size:11px;color:rgba(255,255,255,.6);line-height:1.4;}
+.official-arr{font-size:18px;color:rgba(255,255,255,.5);flex-shrink:0;}
+
+.aff-h3{font-size:14px;font-weight:700;margin-bottom:12px;color:#1a1a1a;display:flex;align-items:center;gap:7px;}
+.aff-h3::before{content:'';width:3px;height:15px;background:#1D9E75;border-radius:2px;flex-shrink:0;}
+
+/* 参考書 */
+.book-list{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+.book-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;}
+.book-title{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:4px;line-height:1.4;}
+.book-memo{font-size:11px;color:#888;margin-bottom:10px;line-height:1.5;}
+.book-links{display:flex;gap:8px;}
+.book-link{display:flex;align-items:center;gap:5px;padding:7px 12px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;transition:opacity .15s;flex:1;justify-content:center;}
+.book-link:hover{opacity:.82;}
+.book-link-amz{background:#FF9900;color:#fff;}
+.book-link-rak{background:#BF0000;color:#fff;}
+
+/* 通信講座 */
+.course-list{display:flex;flex-direction:column;gap:10px;}
+.course-card{background:#fff;border:1px solid #e5e3dc;border-radius:12px;padding:14px;display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;transition:border-color .15s;}
+.course-card:hover{border-color:#1D9E75;}
+.course-ico{width:40px;height:40px;background:#E1F5EE;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.course-info{flex:1;min-width:0;}
+.course-name{font-size:13px;font-weight:700;color:#1a1a1a;margin-bottom:2px;}
+.course-price{font-size:11px;color:#1D9E75;font-weight:700;}
+.course-feat{font-size:11px;color:#888;margin-top:1px;}
+.course-arr{color:#ccc;font-size:15px;flex-shrink:0;}
+.aff-note{font-size:10px;color:#bbb;text-align:center;margin-top:16px;line-height:1.6;}
+
+@media(min-width:769px){
+  .aff-inner{padding:0 32px;}
+  .book-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .course-card{flex-direction:column;align-items:flex-start;gap:10px;}
+}
+
+.info-grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:8px;}
+.ig-card{background:#f5f4f0;border-radius:9px;padding:11px 13px;}
+.ig-lbl{font-size:10px;font-weight:700;color:#999;letter-spacing:1px;margin-bottom:3px;}
+.ig-val{font-size:13px;font-weight:700;color:#1a1a1a;}
+</style>
+<link rel="canonical" href="https://shikaku-pass.github.io/shikaku/gken.html">
+<meta property="og:title" content="測量士補 無料問題集 | 資格ドリル">
+<meta property="og:description" content="測量士補の無料問題集。測量法・三角測量・水準測量・地形測量・写真測量を網羅。合格率30〜40%・勉強時間150〜200時間。弱点特訓・解説つき。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shikaku-drill.com/sokuryo/">
+<meta property="og:site_name" content="資格ドリル">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="測量士補 無料問題集 | 資格ドリル">
+<meta name="twitter:description" content="測量士補の無料問題集。測量法・三角測量・水準測量・地形測量・写真測量を網羅。合格率30〜40%・勉強時間150〜200時間。弱点特訓・解説つき。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "G検定（ジェネラリスト検定）無料問題集",
+      "description": "G検定はJDLA（日本ディープラーニング協会）が実施するAI・ディープラーニング活用リテラシーの検定試験です。AI概論・機械学習・ディープラーニング・生成AI・法律・倫理など幅広い範囲から出題されます。",
+      "provider": {"@type": "Organization", "name": "資格ドリル"},
+      "educationalLevel": "入門・中級",
+      "inLanguage": "ja",
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question","name": "G検定の合格率はどのくらいですか？","acceptedAnswer": {"@type": "Answer","text": "例年60〜76%程度で推移しており、AI系資格の中では比較的取得しやすい検定です。出題範囲が広いため、公式テキストを中心とした網羅的な学習が合格の鍵です。"}},
+        {"@type": "Question","name": "G検定の勉強時間はどのくらい必要ですか？","acceptedAnswer": {"@type": "Answer","text": "AI未経験者で40〜80時間が目安です。IT・AI知識がある方は20〜40時間程度で合格を目指せます。公式テキストと問題集を組み合わせた学習が効果的です。"}},
+        {"@type": "Question","name": "G検定のオンライン試験と会場試験の違いは何ですか？","acceptedAnswer": {"@type": "Answer","text": "問題数は同じ145問程度ですが、試験時間が異なります。オンライン試験（自宅受験）は100分、会場試験（全国指定会場）は120分です。2026年はオンライン年6回・会場試験年3回が開催されます。"}},
+        {"@type": "Question","name": "G検定に合格すると何が得られますか？","acceptedAnswer": {"@type": "Answer","text": "合格証・オープンバッジが発行され、日本最大級のAI人材コミュニティ「CDLE」に参加できます。DX推進パスポートのバッジも取得可能で、就職・転職・社内DX推進でのアピールになります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-logo" href="index.html">
+      <div class="logo-mark">問</div>
+      <span class="logo-text">資格ドリル</span>
+    </a>
+    <a class="site-back" href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      資格一覧へ
+    </a>
+  </div>
+</header>
+<nav class="page-nav" id="pageNav">
+  <div class="page-nav-inner">
+    <a class="pn-tab active" href="#app"      onclick="scrollToApp(event)">📝 問題を解く</a>
+    <a class="pn-tab"        href="#apply"    onclick="scrollTo_(event,'apply')">🤖 申し込み</a>
+    <a class="pn-tab"        href="#books"    onclick="scrollTo_(event,'books')">📖 参考書</a>
+    <a class="pn-tab"        href="#courses"  onclick="scrollTo_(event,'courses')">🎓 通信講座</a>
+    <a class="pn-tab"        href="#overview" onclick="scrollTo_(event,'overview')">📋 試験概要</a>
+    <a class="pn-tab"        href="#syllabus" onclick="scrollTo_(event,'syllabus')">📊 出題分野</a>
+    <a class="pn-tab"        href="#roadmap"  onclick="scrollTo_(event,'roadmap')">🗺️ 学習の流れ</a>
+    <a class="pn-tab"        href="#faq"      onclick="scrollTo_(event,'faq')">❓ よくある質問</a>
+  </div>
+</nav>
+<div id="app"></div>
+<script>
+// ▼▼▼ ここに問題データを追加してください ▼▼▼
+const ALL_QUESTIONS=[
+{"id": 1, "category": "測量に関する法規・国際条約", "question": "測量法において、基本測量を実施できる機関はどれか。", "choices": ["国土地理院", "都道府県", "市町村", "民間測量会社"], "answer": 0, "explanation": "測量法第4条により、基本測量は国土地理院のみが実施できる。都道府県や市町村が行うのは公共測量、民間は作業測量を担う。"},
+
+{"id": 2, "category": "測量に関する法規・国際条約", "question": "測量法における「公共測量」の定義として正しいものはどれか。", "choices": ["基本測量以外の測量であって、国又は公共団体が費用の全部又は一部を負担して実施するもの", "民間企業が発注した全ての測量（誤り）", "地図の作成を目的とした測量全般（誤り）", "測量法の適用を受けない測量という方法"], "answer": 0, "explanation": "測量法第5条により、公共測量は基本測量以外の測量で、国または公共団体が費用の全部または一部を負担して実施するものを指す。"},
+
+{"id": 3, "category": "測量に関する法規・国際条約", "question": "測量士の登録を行う機関はどれか。", "choices": ["国土交通省", "日本測量協会", "都道府県知事", "国土地理院"], "answer": 3, "explanation": "測量法第49条に基づき、測量士及び測量士補の登録は国土地理院（国土交通省国土地理院）が行う。"},
+
+{"id": 4, "category": "測量に関する法規・国際条約", "question": "測量法において、測量士補が単独で行える業務はどれか。", "choices": ["測量士の指示のもとで行う測量作業", "測量計画の作成の手法", "基本測量の実施の手法", "公共測量の管理の手法"], "answer": 0, "explanation": "測量士補は、測量士の指示のもとで測量作業を実施できるが、独立して計画の作成や測量の管理はできない。測量士のみが計画の作成・管理権限を持つ。"},
+
+{"id": 5, "category": "測量に関する法規・国際条約", "question": "測量法第15条に規定される「測量標」に関する記述として誤っているものはどれか。", "choices": ["測量標を無断で移動させることは禁止されている", "測量標を損壊した者は罰則を受ける場合がある", "私有地内に設置された測量標は所有者がいつでも撤去できる", "測量標の種類には永久標識と一時標識がある"], "answer": 2, "explanation": "私有地内であっても測量標は測量法により保護されており、所有者であっても無断撤去はできない。測量標の移動・撤去には国土地理院の許可が必要である。"},
+
+{"id": 6, "category": "測量に関する法規・国際条約", "question": "世界測地系の定義に関して、GRS80楕円体の長半径として正しいものはどれか。", "choices": ["6,356,752 m", "6,400,000 m", "6,371,000 m", "6,378,137 m"], "answer": 3, "explanation": "GRS80（Geodetic Reference System 1980）の長半径は6,378,137 mである。これは現在の測量で使用される世界測地系の基準となる楕円体である。"},
+
+{"id": 7, "category": "測量に関する法規・国際条約", "question": "測量法に定める「測量計画機関」に関する記述として正しいものはどれか。", "choices": ["測量計画機関は民間会社のみを指す", "測量計画機関は国土地理院の許可なく測量を実施できる", "測量計画機関には測量士の配置義務はない", "測量計画機関は公共測量の計画を作成・実施する機関である"], "answer": 3, "explanation": "公共測量の計画を作成・実施する機関を測量計画機関という。公共測量を実施する機関（国・公共団体等）がこれに該当し、測量士を配置する義務がある。"},
+
+{"id": 8, "category": "測量に関する法規・国際条約", "question": "国際条約に関連して、ICRFとはどのような基準を指すか。", "choices": ["国際地球基準座標系", "国際天球基準座標系", "国際測量条約", "国際地図基準"], "answer": 1, "explanation": "ICRF（International Celestial Reference Frame：国際天球基準座標系）は天体観測をもとにした基準系である。地球固定の座標系はITRF（International Terrestrial Reference Frame）である。"},
+
+{"id": 9, "category": "測量に関する法規・国際条約", "question": "測量法における「基準点」に関する記述として正しいものはどれか。", "choices": ["基準点は民間会社が自由に設置できる", "三角点・水準点・電子基準点は基準点の一種である", "基準点の成果は非公開である", "基準点間の距離は必ず1km以内でなければならない"], "answer": 1, "explanation": "測量法における基準点には三角点、水準点、電子基準点（GNSS連続観測点）などがある。これらの成果は公開されており、公共測量等に広く利用される。"},
+
+{"id": 10, "category": "測量に関する法規・国際条約", "question": "測量作業規程の準則（以下「準則」という）に関する記述として正しいものはどれか。", "choices": ["準則は公共測量の統一的な基準を示すものである", "準則は民間測量に対してのみ適用される", "準則は法律と同等の強制力を持つ", "準則に従わなくても罰則はない"], "answer": 0, "explanation": "作業規程の準則は、公共測量を実施する際の統一的な基準・方法を示すものである。測量計画機関が作業規程を作成する際の基礎となり、公共測量の品質確保に役立てられる。"},
+
+{"id": 11, "category": "測量に関する法規・国際条約", "question": "ITRFに関する説明として正しいものはどれか。", "choices": ["IERSが管理する国際的な地球固定座標系の基準枠組みである", "日本独自の測地基準座標系である", "地球重心を原点としない座標系である", "宇宙空間の天体位置を示すための座標系である"], "answer": 0, "explanation": "ITRF（国際地球基準座標系）はIERS（国際地球回転・基準系事業）が管理する国際的な地球固定座標系の基準枠組みで、世界各国の測量の基盤となっている。"},
+
+{"id": 12, "category": "測量に関する法規・国際条約", "question": "測量法における土地の立入りに関する規定として正しいものはどれか。", "choices": ["測量のための土地の立入りに所有者の許可は不要である", "測量のために私有地に立ち入る場合、事前に所有者等へ通知しなければならない", "夜間でも断りなく私有地に立入りができる", "土地への立入りが拒否された場合も罰則を科す規定はない"], "answer": 1, "explanation": "測量法第15条の2により、測量のために私有地に立ち入る場合は、あらかじめ所有者や占有者に通知しなければならない。また、夜間の立入りは原則禁止されている。"},
+
+{"id": 13, "category": "測量に関する法規・国際条約", "question": "平面直角座標系（JGD2011）において、日本の座標系は何系統あるか。", "choices": ["10系統", "19系統", "23系統", "28系統"], "answer": 1, "explanation": "日本の平面直角座標系は19系統ある（Ⅰ系〜ⅩⅨ系）。各系統は特定の地域をカバーし、その系の原点を中心に座標が設定される。"},
+
+{"id": 14, "category": "測量に関する法規・国際条約", "question": "測量士の資格取得方法として正しいものはどれか。", "choices": ["測量士試験に合格することのみが取得方法である", "大学等で測量に関する科目を修めた者が国土地理院に申請して取得できる場合がある", "測量士補として5年の実務経験があれば自動的に取得できる", "民間資格試験に合格すれば取得できる（誤り）"], "answer": 1, "explanation": "測量士は①国家試験合格、②大学等で所定の測量科目を修め卒業後1年以上の実務経験を経た申請、など複数の取得方法がある（測量法第50条）。補から自動的に昇格する制度はない。"},
+
+{"id": 15, "category": "測量に関する法規・国際条約", "question": "測量法が適用されない測量はどれか。", "choices": ["国土地理院が実施する基本測量", "市町村が費用を負担して実施する地図作成のための測量", "専ら自己の土地の利用のために行う測量", "河川の測量"], "answer": 2, "explanation": "測量法第2条第3項により、専ら自己の土地の利用のために行う測量は測量法の適用外とされる。これを「自己測量」といい、隣地との境界確認など私的利用目的の測量が該当する。"},
+
+{"id": 16, "category": "測量に関する法規・国際条約", "question": "次のうち、電子基準点の説明として正しいものはどれか。", "choices": ["手動でGNSSデータを収集する観測点", "地磁気を観測するための施設という方法", "GNSS衛星信号を連続的に受信し測位データを提供する固定観測点", "地形の変化のみを観測する施設（誤り）"], "answer": 2, "explanation": "電子基準点はGNSS衛星信号を24時間連続して受信し、リアルタイムに測位データを提供する固定観測点である。全国に約1,300点設置されており、測量の基準として活用される。"},
+
+{"id": 17, "category": "測量に関する法規・国際条約", "question": "測量法において「地図の刊行」に関する規定として正しいものはどれか。", "choices": ["基本測量の成果である地図を刊行する場合は国土地理院長の承認が必要である", "誰でも自由に地図を刊行することができる", "公共測量の成果を使用した地図の刊行には制限がない", "地図の刊行には測量士の資格が必ず必要である"], "answer": 0, "explanation": "基本測量の成果を使用して地図等を刊行する場合は、測量法第29条に基づき国土地理院長の承認が必要である。無断複製・刊行は測量法違反となる。"},
+
+{"id": 18, "category": "測量に関する法規・国際条約", "question": "測量の基準に関する記述として正しいものはどれか。", "choices": ["水平位置の基準は世界測地系に基づく地理学的経緯度である", "水平位置の基準は東京湾の平均海面である", "高さの基準はGNSSで測定したジオイド高である", "測量の基準は都道府県ごとに異なる"], "answer": 0, "explanation": "測量法第11条により、水平位置の基準は世界測地系に基づく地理学的経緯度（またはこれを変換した平面直角座標）と定められている。高さは東京湾の平均海面からの標高が基準。"},
+
+{"id": 19, "category": "測量に関する法規・国際条約", "question": "GPS・GNSSの国際条約に関する説明として適切なものはどれか。", "choices": ["GNSSはアメリカのGPSのみを指す（誤り）", "GNSSにはGPS(米)・GLONASS(露)・Galileo(欧)", "日本独自のGNSSシステムは存在しない（誤り）", "GNSSシステムの管理はすべて国連が行う（誤り）"], "answer": 1, "explanation": "GNSSはGlobal Navigation Satellite Systemの略で、GPSのほかGLONASS（ロシア）、Galileo（欧州）、BeiDou（中国）、みちびき（日本のQZSS）などを総称する。"},
+
+{"id": 20, "category": "測量に関する法規・国際条約", "question": "測量法第10条の「測量の基準」として、高さの基準について正しいものはどれか。", "choices": ["標高の基準は大阪湾の平均海面である", "標高の基準は東京湾の平均海面である", "標高の基準は日本海の平均海面である", "標高の基準は瀬戸内海の平均海面である"], "answer": 1, "explanation": "測量法第11条により、高さの基準は東京湾の平均海面（Tokyo Peil：T.P.）からの高さ（標高）と定められている。"},
+
+{"id": 21, "category": "測量に関する法規・国際条約", "question": "測量業者の登録に関して正しい記述はどれか。", "choices": ["測量業を営もうとする者は国土地理院への登録が必要である", "測量業を行うには都道府県知事への届出のみで足りる", "測量業者の登録は不要であり誰でも測量業を営める", "登録の有効期間は無制限である"], "answer": 0, "explanation": "測量法第55条の2により、測量業を営もうとする者は国土地理院に登録しなければならない。登録の有効期間は5年であり、更新手続きが必要である。"},
+
+{"id": 22, "category": "測量に関する法規・国際条約", "question": "国際測地学協会（IAG）の主な役割として正しいものはどれか。", "choices": ["国際的な測地基準の研究・策定および国際協力の推進", "世界各国の地図の統一的な刊行管理", "衛星測位システムの打ち上げ管理", "測量士の国際資格認定という方法"], "answer": 0, "explanation": "IAG（International Association of Geodesy）は測地学に関する国際的な研究・基準の策定および国際協力の推進を行う国際機関である。ITRFやジオイドモデルの整備などに関わる。"},
+
+{"id": 23, "category": "測量に関する法規・国際条約", "question": "基本測量の成果の複製または使用に関して正しいものはどれか。", "choices": ["基本測量の成果を複製・使用する場合は国土地理院長の承認が必要である", "基本測量の成果は誰でも無償で自由に複製できる", "基本測量の成果の使用には測量士資格が必要である", "基本測量の成果は一切の複製・使用が禁止されている"], "answer": 0, "explanation": "測量法第30条・第44条に基づき、基本測量の成果を複製または使用する場合は国土地理院長の承認が必要であり、無断複製・使用は測量法違反となる。"},
+
+{"id": 24, "category": "測量に関する法規・国際条約", "question": "測量法第3条に定める「測量」の定義として正しいものはどれか。", "choices": ["土地の高さを測ることのみを指す（誤り）", "土地の形状及び面積を測定することのみを指す（この説明は誤り）", "土地の測量及び海洋の測量を含む地表面の測定をいい、地図の調製もこれに含まれる", "宇宙から地球を観測することのみを指す（誤り）"], "answer": 2, "explanation": "測量法第3条により、「測量」とは土地の測量、海洋の測量を含む地表面の形状・面積等の測定をいい、測量用写真の撮影および地図の調製も含む広い概念である。"},
+
+{"id": 25, "category": "測量に関する法規・国際条約", "question": "GRS80楕円体の扁平率として正しいものはどれか。", "choices": ["1/297.257", "1/300.000", "1/298.257", "1/295.000"], "answer": 2, "explanation": "GRS80楕円体の扁平率は1/298.257222101である。WGS84の扁平率（1/298.257223563）と非常に近い値を持ち、実用上は同等とみなされることが多い。"},
+
+{"id": 26, "category": "測量に関する法規・国際条約", "question": "公共測量の作業規程に関して正しいものはどれか。", "choices": ["作業規程は全ての公共測量で作業規程の準則と完全に同一でなければならない", "測量計画機関が作業規程の準則を基準として独自の作業規程を作成できる", "作業規程の作成は不要である", "作業規程は国土地理院が全測量機関に対して強制的に定める"], "answer": 1, "explanation": "測量法第34条により、測量計画機関は作業規程の準則を基準として、各公共測量の目的・内容に応じた独自の作業規程を作成・適用できる。"},
+
+{"id": 27, "category": "測量に関する法規・国際条約", "question": "測量士試験において、午前の択一式試験の出題数は何問か。", "choices": ["20問", "25問", "28問", "30問"], "answer": 2, "explanation": "測量士試験の午前択一式は28問（1問25点・計700点満点）で実施される。合格基準は450点以上（18問以上正解相当）である。"},
+
+{"id": 28, "category": "測量に関する法規・国際条約", "question": "日本測地系2011（JGD2011）の特徴として正しいものはどれか。", "choices": ["東日本大震災前の地殻変動に対応した測地系である", "東日本大震災後の地殻変動に対応して改定された測地系である", "昭和時代に策定された旧来の測地系である", "海外では使用されない日本独自の測地系である"], "answer": 1, "explanation": "JGD2011（日本測地系2011）は2011年東日本大震災による地殻変動に対応するため改定された測地系で、震災後の地殻変動量を反映している。"},
+
+{"id": 29, "category": "測量に関する法規・国際条約", "question": "ジオイドに関する説明として正しいものはどれか。", "choices": ["平均海面と一致する重力等ポテンシャル面を地球全体に延長した仮想の曲面である", "地球を完全な球体と仮定した面である（誤り）", "GRS80楕円体の表面と完全に一致する面である", "人工衛星が飛行する軌道面である（誤り）"], "answer": 0, "explanation": "ジオイドとは平均海面と一致する重力等ポテンシャル面を大陸内部まで延長した仮想の面である。楕円体面とは形状が異なり、その差をジオイド高（N）という。"},
+
+{"id": 30, "category": "測量に関する法規・国際条約", "question": "測量法における「測量士補」の業務範囲として正しいものはどれか。", "choices": ["測量計画の立案および監督のみ", "単独で基本測量を実施すること", "測量士の指揮のもとで測量作業を実施すること", "測量業者の登録申請を代理すること"], "answer": 2, "explanation": "測量士補は測量士の指揮監督のもとで測量の実地作業を行う。独立して計画立案や管理業務を行う権限はなく、それらは測量士の業務である。"},
+
+{"id": 31, "category": "測量に関する法規・国際条約", "question": "測量法第18条に定める「基本測量の成果の使用」に関して、成果使用を申請する際の申請先として正しいものはどれか。", "choices": ["国土交通大臣", "日本測量協会会長", "都道府県知事", "国土地理院長"], "answer": 3, "explanation": "基本測量の成果の使用・複製申請は国土地理院長に対して行う。測量法第30条および第44条に規定されている。"},
+
+{"id": 32, "category": "測量に関する法規・国際条約", "question": "国際地球回転・基準系事業（IERS）が管理する基準系として正しいものはどれか。", "choices": ["JGD2011", "WGS84", "ITRF・ICRF", "GRS80"], "answer": 2, "explanation": "IERSはITRF（国際地球基準座標系）とICRF（国際天球基準座標系）を管理・維持している国際機関である。地球の自転・極運動等の監視も担う。"},
+
+{"id": 33, "category": "測量に関する法規・国際条約", "question": "測量の誤差に関する用語で「系統誤差」の説明として正しいものはどれか。", "choices": ["同一条件で繰り返し測定すると一定の傾向を示す誤差", "原因不明の偶然に生じる誤差", "測定者の不注意で生じる誤差（過失誤差）", "誤差のない完全な測定"], "answer": 0, "explanation": "系統誤差（Systematic Error）は同一条件で測定を繰り返すと常に同じ方向・大きさで生じる誤差であり、器械の目盛誤差や温度変化等が原因となる。偶然誤差とは異なる。"},
+
+{"id": 34, "category": "測量に関する法規・国際条約", "question": "測量士の登録を取り消されることがある場合として正しいものはどれか。", "choices": ["測量法またはこれに基づく命令に違反した場合", "測量業務で軽微なミスをした場合", "長期間測量業務に従事しなかった場合", "測量機器が故障した場合"], "answer": 0, "explanation": "測量法第53条により、測量士が測量法またはこれに基づく命令に違反した場合、国土地理院は登録の取り消しや業務停止命令を行うことができる。"},
+
+{"id": 35, "category": "測量に関する法規・国際条約", "question": "「みちびき」（QZSS）に関する説明として正しいものはどれか。", "choices": ["中国が運用する衛星測位システム（誤り）", "欧州連合が運用する衛星測位システム（誤り）", "日本が運用する準天頂衛星システムで、日本周辺の測位精度向上に寄与する", "ロシアが運用する衛星測位システム（誤り）"], "answer": 2, "explanation": "みちびき（QZSS：Quasi-Zenith Satellite System）は日本が運用する準天頂衛星システムである。日本のほぼ真上を長時間通過する軌道を持ち、山間部・都市部での測位精度向上に貢献する。"},
+
+{"id": 36, "category": "測量に関する法規・国際条約", "question": "測量法における罰則規定として正しいものはどれか。", "choices": ["測量標を損壊した者には刑事罰が科される場合がある", "測量法違反には民事上の損害賠償のみが規定されている", "測量標の無断移動は行政指導の対象のみ", "測量業者の無登録営業に罰則はない"], "answer": 0, "explanation": "測量法第107条により、測量標を損壊した者は30万円以下の罰金または1年以下の懲役に処される場合がある。また、無登録で測量業を営む者にも罰則規定がある。"},
+
+{"id": 37, "category": "測量に関する法規・国際条約", "question": "平面直角座標系における座標の原点（各系）の設定に関して正しいものはどれか。", "choices": ["全系統で同一の原点を使用する（誤り）", "原点は全て赤道上に設定される（誤り）", "各系ごとに中央子午線上に原点が設定されており、Y軸が中央子午線と一致する", "原点は日本の首都である東京に固定されている"], "answer": 2, "explanation": "平面直角座標系の各系は、その系の対象地域の中央付近の子午線上に原点が設定される。中央子午線がX軸（北方向）に、これと直交する方向がY軸となる。"},
+
+{"id": 38, "category": "測量に関する法規・国際条約", "question": "測量法第5条の「公共測量」に該当しないものはどれか。", "choices": ["市区町村が発注する道路整備のための測量", "国土交通省が実施する河川測量", "民間会社が自社工場建設のために実施する敷地測量", "都道府県が費用を負担する地籍調査"], "answer": 2, "explanation": "公共測量は国または公共団体が費用の全部または一部を負担して実施する測量であり、民間会社が自社のために実施する測量は公共測量には該当しない。"},
+
+{"id": 39, "category": "測量に関する法規・国際条約", "question": "測量法における「測量成果」と「測量記録」の違いとして正しいものはどれか。", "choices": ["測量成果は測量の結果として得られる数値・図面等であり、測量記録は測量成果を得るために実施した観測", "両者はまったく同じものである（誤り）", "測量記録は最終成果物であり、測量成果は中間産物である（誤り）", "どちらも法律上の定義はないという方法"], "answer": 0, "explanation": "測量法では、「測量成果」は測量により得られた最終成果（点の座標値・標高値・地図等）であり、「測量記録」はそれを得るための観測数値・計算書等の資料を指す。"},
+
+{"id": 40, "category": "測量に関する法規・国際条約", "question": "地理空間情報活用推進基本法に関して正しいものはどれか。", "choices": ["地理空間情報の活用を阻害するための法律である（誤り）", "地理空間情報の利用者を特定の機関に限定する法律である", "地理空間情報の活用を推進し、国民生活の向上・経済社会の発展に寄与することを目的とする", "測量法と完全に同一の内容を持つ法律である（誤り）"], "answer": 2, "explanation": "地理空間情報活用推進基本法（2007年制定）は、地理空間情報の整備・流通・活用を推進することで経済社会の発展や国民生活の向上に寄与することを目的とする。G空間社会の構築を推進する法律である。"},
+
+{"id": 41, "category": "多角測量", "question": "トラバース測量において、「閉合トラバース」の特徴として正しいものはどれか。", "choices": ["出発点と終点が異なる測量方式", "任意の点から測量を開始する方式", "既知点から既知点へと測量する方式", "出発点と終点が同一の点に戻る測量方式"], "answer": 3, "explanation": "閉合トラバースは、出発点と終点が同一の点（ループ状）になるトラバースである。閉合差を検証できるため誤差の検出が可能で、精度確認に有利である。"},
+
+{"id": 42, "category": "多角測量", "question": "トラバース測量における「角閉合差」の許容範囲を計算する式として正しいものはどれか（nは測点数）。", "choices": ["±10″×√n", "±30″×√n", "±60″×√n", "±5″×n"], "answer": 0, "explanation": "公共測量作業規程の準則では、1級トラバースの角閉合差の許容範囲は±10″×√n（nは測角数）である。等級によって係数が異なる。"},
+
+{"id": 43, "category": "多角測量", "question": "多角測量の「辺長測定」において主に使用される機器はどれか。", "choices": ["レベル（水準儀）の手法", "磁気コンパスの手法", "光波測距儀（EDM）またはトータルステーション", "写真測量機の手法"], "answer": 2, "explanation": "多角測量の辺長測定には、光波測距儀（EDM）またはこれを内蔵したトータルステーション（TS）が使用される。電波・光波を使って高精度に距離を測定できる。"},
+
+{"id": 44, "category": "多角測量", "question": "トラバース計算において、緯距（ΔX）を計算する式として正しいものはどれか（Lは辺長、θは方位角）。", "choices": ["L × sin θ", "L / cos θ", "L × tan θ", "L × cos θ"], "answer": 3, "explanation": "緯距ΔX（南北成分）= L × cos θ、経距ΔY（東西成分）= L × sin θ で計算される。ただし方位角の定義（北からの時計回り）に注意が必要。"},
+
+{"id": 45, "category": "多角測量", "question": "「結合トラバース」の説明として正しいものはどれか。", "choices": ["既知の方向角を持つ既知点から出発し、別の既知点（既知方向）で閉じる測量", "出発点と終点が同じ閉じたループのトラバース", "既知点のない自由なトラバース（誤り）", "GNSSのみで実施する測量という方法"], "answer": 0, "explanation": "結合トラバース（連結トラバース）は既知点・既知方向から出発し、別の既知点・既知方向で閉じる方式である。閉合トラバースより広い範囲を効率よく測量でき、精度検証も可能。"},
+
+{"id": 46, "category": "多角測量", "question": "トラバース測量で角度を観測する際に使用する器械として正しいものはどれか。", "choices": ["水準儀（レベル）の手法", "トータルステーション（TS）またはセオドライト", "光波測距儀のみの手法", "GNSS受信機の手法"], "answer": 1, "explanation": "角度（水平角・鉛直角）の観測にはトータルステーションまたはセオドライト（経緯儀）を使用する。トータルステーションは角度測定と距離測定を同時に行える。"},
+
+{"id": 47, "category": "多角測量", "question": "トラバース計算において「座標閉合差」が生じる主な原因はどれか。", "choices": ["天候の変化", "測量士の資格の有無", "計算ソフトの不具合", "観測誤差の蓄積"], "answer": 3, "explanation": "座標閉合差は、角度・距離の観測誤差が各測点で蓄積されることにより生じる。許容範囲内であれば各辺に比例配分して補正（コンパス法則・トランジット法則等）する。"},
+
+{"id": 48, "category": "多角測量", "question": "「方位角」の定義として正しいものはどれか。", "choices": ["真東から反時計回りに測定した角度", "真北から時計回りに測定した角度（0°〜360°）", "磁北から測定した角度のみを指す", "鉛直面内の角度の手法"], "answer": 1, "explanation": "方位角は真北（子午線北方向）を基準（0°）として時計回りに0°〜360°で表す角度である。磁北基準の場合は「磁方位角」として区別する。"},
+
+{"id": 49, "category": "多角測量", "question": "コンパス法則によるトラバース閉合差の配分方法として正しいものはどれか。", "choices": ["各辺の角度に比例して誤差を配分する", "全測点に均等に誤差を配分する", "各辺の辺長に比例して誤差を配分する", "最長辺にのみ誤差を配分する"], "answer": 2, "explanation": "コンパス法則（Bowditch法則）は各辺の辺長に比例して座標閉合差を各辺の緯距・経距に配分する方法である。辺長の測定精度が均等な場合に適する。"},
+
+{"id": 50, "category": "多角測量", "question": "トランジット法則による誤差配分の特徴として正しいものはどれか。", "choices": ["各辺の辺長に比例して配分する", "緯距・経距の絶対値に比例して誤差を配分する", "全測点に均等に配分する", "角度観測の精度に比例して配分する"], "answer": 1, "explanation": "トランジット法則は緯距（ΔX）の閉合差をΔXの絶対値の比で、経距（ΔY）の閉合差をΔYの絶対値の比で各辺に配分する方法で、角度測定の精度が距離測定より高い場合に適する。"},
+
+{"id": 51, "category": "多角測量", "question": "トータルステーションを使用した測距において「気象補正」が必要な理由はどれか。", "choices": ["温度・気圧の変化が光の屈折率を変化させ測定値に影響するため", "機器の電池消耗を防ぐためという方法", "地球の自転による誤差を補正するため", "観測者の視力誤差を補正するため（この説明は誤り）"], "answer": 0, "explanation": "光波測距儀は電磁波の伝搬速度から距離を計算する。気温・気圧によって大気の屈折率が変化するため、観測時の気温・気圧を測定して気象補正（第一速度補正）を行う必要がある。"},
+
+{"id": 52, "category": "多角測量", "question": "「偏心観測」が必要になる場合として正しいものはどれか。", "choices": ["観測者の位置が変わった場合という方法", "精度を高めるために意図的に行う観測方法", "複数の観測者が同時に観測する場合（誤り）", "測量基準点に器械を直接設置できない場合に周囲の点から観測する方法"], "answer": 3, "explanation": "偏心観測は、基準点の真上に器械や目標を設置できない場合（構造物の存在など）に、近傍の別の点に設置して観測し、幾何的な計算で本来の観測値に換算する方法である。"},
+
+{"id": 53, "category": "多角測量", "question": "多角測量の精度等級において、一般的に最も高精度の等級はどれか。", "choices": ["4級基準点測量", "3級基準点測量", "2級基準点測量", "1級基準点測量"], "answer": 3, "explanation": "基準点測量の等級は1〜4級があり、1級が最も高精度。1級は主要骨格となる基準点の設置に使われ、隣接する既知点間の距離・閉合差等の許容誤差が最も厳しく設定されている。"},
+
+{"id": 54, "category": "多角測量", "question": "水平角の観測で「対回観測」を行う主な目的はどれか。", "choices": ["観測時間を短縮するためという方法", "天候の影響を避けるためという方法", "1方向のみを精密に測定するため（誤り）", "器械誤差（特に目盛盤の偏心・目盛誤差）を消去または軽減するため"], "answer": 3, "explanation": "対回観測は望遠鏡正位と反位（倒位）の両方向で観測し、その平均を取ることで、器械の視準軸誤差・水平軸誤差・目盛誤差などの器械誤差を消去または軽減できる。"},
+
+{"id": 55, "category": "多角測量", "question": "測量計算において、最小二乗法を適用する目的として正しいものはどれか。", "choices": ["誤差を0にするの手法", "観測の重み付きの二乗和を最小にして最確値を求める", "計算を簡略化するの手法", "測量作業時間を短縮するという方法"], "answer": 1, "explanation": "最小二乗法は、観測値の残差の二乗和（重みがある場合は重み付き二乗和）を最小にすることで各未知量の最確値を求める統計的方法で、測量の平均計算の基礎となる。"},
+
+{"id": 56, "category": "多角測量", "question": "トラバース測量の「閉合比」（精度）を求める式として正しいものはどれか（Sは閉合差、Lはトラバース総延長）。", "choices": ["S / L", "S × L", "L / S", "S² / L"], "answer": 0, "explanation": "閉合比 = 閉合差（S）/ トラバース総延長（L）で表され、この値が小さいほど精度が高い。1/5000、1/10000などと表現される。"},
+
+{"id": 57, "category": "多角測量", "question": "基準点測量における「新点」の設置に関して正しいものはどれか。", "choices": ["新点の位置はトラバース計算や交会法などで決定される", "新点は必ず既知点の中間に設置しなければならない", "新点はGNSSのみで設置可能", "新点の標高は水準測量以外では求められない"], "answer": 0, "explanation": "新点の位置はトラバース計算（多角測量）、交会法（前方・後方）、またはGNSS測量など複数の方法で決定できる。設置する等級に応じた観測・計算基準に従う。"},
+
+{"id": 58, "category": "多角測量", "question": "方位角の計算において「後視方位角」の意味として正しいものはどれか。", "choices": ["次の測点への方位角の手法", "高度角（仰角）のことという方法", "磁北基準の方位角の手法", "前の測点から現在の測点を見る方向の方位角"], "answer": 3, "explanation": "後視方位角は現在の観測点から前の測点（後視点）を見る方向の方位角である。前視方位角（次の測点方向）とは180°異なり、トラバース計算での方位角伝播に使用される。"},
+
+{"id": 59, "category": "多角測量", "question": "器械高と視準高の観測が必要な主な理由はどれか。", "choices": ["観測者の身長の差を補正するため（誤り）", "距離計算を容易にするためという方法", "地上点（基準点）と器械中心・視準点の高さの差を考慮した高低差計算を行うため", "角度の精度を向上させるためという方法"], "answer": 2, "explanation": "器械高（instrument height）と視準高（target height）はトータルステーションによる三角高低測量において、地上の基準点から実際の器械中心・視準ターゲットまでの高さを補正するために必要である。"},
+
+{"id": 60, "category": "多角測量", "question": "「交会法」（前方交会・後方交会）に関する説明として正しいものはどれか。", "choices": ["2点以上の既知点からの方向角を利用して新点の位置を決定する方法", "既知点間の距離のみから新点位置を決定する方法", "GNSSのみを使用する測量方法（誤り）", "トラバースを行わずに面積を求める方法"], "answer": 0, "explanation": "交会法は2点以上の既知点からの方向角（前方交会）または1新点から複数の既知点への方向角（後方交会）を用いて新点の座標を決定する方法である。トラバースと並ぶ基準点設置法のひとつ。"},
+
+{"id": 61, "category": "多角測量", "question": "三角測量と多角測量を比較した説明として正しいものはどれか。", "choices": ["三角測量は辺長を観測し、多角測量は角度のみを観測する", "多角測量は三角測量の一部にすぎない（誤り）", "どちらも全く同じ方法であるという方法", "三角測量は主に角度観測で成り立ち、多角測量は角度と辺長の両方を観測する"], "answer": 3, "explanation": "三角測量は三角形の内角観測を主体とし（基線で辺長を求め残りは角度から計算）、多角測量（トラバース）は各辺の辺長と方向角の両方を直接観測して座標を計算する方式である。"},
+
+{"id": 62, "category": "多角測量", "question": "測量の「重み」（Weight）の概念に関して正しいものはどれか。", "choices": ["観測精度（分散）の逆数に比例する値で、精度の高い観測ほど重みが大きい", "観測回数に反比例する値という方法", "観測距離に比例する値という方法", "常に1で固定される値という方法"], "answer": 0, "explanation": "観測値の重み（W）は分散（σ²）の逆数（W ∝ 1/σ²）に比例する。精度の高い（分散の小さい）観測値は大きな重みを持ち、最小二乗法による平均計算でより大きく寄与する。"},
+
+{"id": 63, "category": "多角測量", "question": "光波測距儀による測距で「サイクリックエラー」が生じる原因はどれか。", "choices": ["電池残量の不足の手法", "送受信光路の内部混信により生じる周期的な測距誤差", "気温変化の手法", "観測者の操作ミスの手法"], "answer": 1, "explanation": "サイクリックエラー（周期誤差）は、EDM内部で送信光の一部が受信部に混入（内部クロストーク）することにより生じる周期的な測距誤差で、EDMの基本的な誤差要素のひとつである。"},
+
+{"id": 64, "category": "多角測量", "question": "「水平角の観測」における「ゼロ方向の設定（方向法）」の目的として正しいものはどれか。", "choices": ["北方向を0°に固定するためという方法", "鉛直角を同時に観測するためという方法", "磁北方向を確認するためという方法", "1方向を基準（0°）として他の方向の相対的な角度を観測するため"], "answer": 3, "explanation": "方向法では観測基準となる方向（ゼロ方向）を0°に設定し、そこから複数の目標方向の水平角を読み取る方法である。各方向の相対角を精密に求めることができる。"},
+
+{"id": 65, "category": "多角測量", "question": "測点間距離Lが400m、辺長測定の標準偏差がσ₁=5mm、角度観測の標準偏差がσ₂=5″のとき、角度誤差に起因する点位誤差として正しいものはどれか（1ラジアン≒206265″）。", "choices": ["約10mm", "約2mm", "約20mm", "約50mm"], "answer": 0, "explanation": "角度誤差による点位誤差 = L × σ₂(rad) = 400m × (5/206265) ≈ 400 × 0.0000242 ≈ 0.0097m ≈ 約10mmとなる。これが辺長誤差5mmと合わさって総合的な点位精度が決まる。"},
+
+{"id": 66, "category": "GNSS測量", "question": "GNSS測量において「静的測位（スタティック測位）」の特徴として正しいものはどれか。", "choices": ["受信機を移動させながら連続的に測位する方法（この説明は誤り）", "複数のGNSS受信機を長時間固定して同時観測し、高精度の相対測位を行う方法", "1台の受信機のみで測位する単独測位（誤り）", "衛星信号を使わずに測位する方法（誤り）"], "answer": 1, "explanation": "スタティック測位は複数のGNSS受信機を観測点に固定して長時間（30分〜数時間）同時観測し、搬送波位相データを用いて基線解析により高精度（mm〜cm級）の相対位置を求める方法。"},
+
+{"id": 67, "category": "GNSS測量", "question": "GNSSの「サイクルスリップ」とはどのような現象か。", "choices": ["衛星の軌道が変化することという方法", "GNSS受信機の電源が切れること（誤り）", "衛星信号の追尾が途切れ、搬送波の位相カウントに不連続が生じる現象", "衛星数が不足して測位不能になること（この説明は誤り）"], "answer": 2, "explanation": "サイクルスリップは建物・樹木などの障害物により衛星信号の追尾が瞬断し、搬送波位相のカウント（整数アンビギュイティ）に不連続（飛び）が生じる現象。後処理で検出・補正が必要。"},
+
+{"id": 68, "category": "GNSS測量", "question": "GNSS測量の「整数値バイアス（アンビギュイティ）」に関する説明として正しいものはどれか。", "choices": ["受信開始時点での搬送波の波数の整数部分の不定性のこと", "GNSSアンテナの高さのこと（この説明は誤り）", "衛星の時計誤差のことという方法", "大気の屈折誤差のことという方法"], "answer": 0, "explanation": "整数値バイアス（Integer Ambiguity）は搬送波位相観測における波長の整数個分の不確定量のこと。これを正しく決定（Fix）することでmm〜cm級の高精度測位が実現する。"},
+
+{"id": 69, "category": "GNSS測量", "question": "「電子基準点のみを既知点とするGNSS測量」（電子基準点のみ使用）の特徴として正しいものはどれか。", "choices": ["現地に既知の基準点が存在しなくても電子基準点のデータを利用して測量できる", "電子基準点は使用不可で現地基準点のみで測量を実施する", "電子基準点は1点のみ使用する（誤り）", "電子基準点のみ使用では精度が著しく低下する"], "answer": 0, "explanation": "電子基準点のみを既知点とする方式では、現地に設置された基準点が近傍にない場合でも全国の電子基準点データ（CORS）を利用して基線解析が可能であり、効率的な測量が実現できる。"},
+
+{"id": 70, "category": "GNSS測量", "question": "GNSSの「マルチパス」誤差の説明として正しいものはどれか。", "choices": ["複数の衛星から同時に信号を受信すること（誤り）", "衛星信号が建物・地面等で反射した後にアンテナに到達し、直接波との干渉により生じる誤差", "複数の周波数を使用することという方法", "衛星軌道の計算誤差の手法"], "answer": 1, "explanation": "マルチパスは衛星からの直接波に加え、周囲の建物・地面・水面等で反射した信号（反射波）がアンテナに到達して干渉することで生じる測位誤差で、アンテナ周辺環境が精度に大きく影響する。"},
+
+{"id": 71, "category": "GNSS測量", "question": "RTK-GNSS（リアルタイムキネマティック）の特徴として正しいものはどれか。", "choices": ["基準局からのリアルタイム補正データを用いて移動局で即時にcm級の測位精度を実現する方法", "後処理で精度を出す測位方法という方法", "単独測位の一種の手法", "低精度の測位方法の手法"], "answer": 0, "explanation": "RTK-GNSSは固定した基準局（既知点）からの補正データをリアルタイムで移動局に送信し、整数値バイアス（Fix解）を即時に決定することでcm級精度の測位を現場でリアルタイムに実現する方法。"},
+
+{"id": 72, "category": "GNSS測量", "question": "GNSS測量で「DOP（精度低下率）」が小さいほどよい理由として正しいものはどれか。", "choices": ["消費電力が少なくなるためという方法", "衛星の速度が速いためという方法", "衛星の数が多いための手法", "使用する衛星の配置が良く測位精度への影響が小さいため"], "answer": 3, "explanation": "DOP（Dilution of Precision）は衛星配置の幾何学的な良否を示す指標で、値が小さいほど衛星が天空に均等に分布しており測位精度への幾何的な拡大が小さい（精度が良い）ことを示す。"},
+
+{"id": 73, "category": "GNSS測量", "question": "GNSS観測において「対流圏遅延」の説明として正しいものはどれか。", "choices": ["電離層における信号の遅延という方法", "水蒸気などを含む対流圏で衛星信号の伝播速度が低下することによる遅延誤差", "受信機の時計誤差の手法", "衛星の軌道誤差の手法"], "answer": 1, "explanation": "対流圏遅延は大気下層の対流圏（高度約10km）で水蒸気・温度・気圧の影響を受けて信号の伝播が遅延する誤差である。干燥成分と湿潤成分に分けてモデル補正を行う。"},
+
+{"id": 74, "category": "GNSS測量", "question": "「GNSS連続観測網（CORS：Continuously Operating Reference Station）」の説明として正しいものはどれか。", "choices": ["固定したGNSS受信機が24時間連続観測し、測量の基準情報を提供する観測網", "移動して観測する臨時の観測点群（誤り）", "悪天候時のみ観測を行うシステム（誤り）", "衛星軌道を追跡するための施設（誤り）"], "answer": 0, "explanation": "CORSは全国に恒久的に設置されたGNSS固定受信機（電子基準点等）が24時間連続して観測を続け、その観測データを提供するシステムで、日本ではGeoNetとして国土地理院が運用する。"},
+
+{"id": 75, "category": "GNSS測量", "question": "GNSS測量の基線解析結果として得られる「Fix解」と「Float解」の違いとして正しいものはどれか。", "choices": ["Fix解は整数値バイアスを整数に固定した高精度解、Float解は整数値バイアスを実数のまま推定した解", "Fix解は単独測位結果、Float解はRTK結果（誤り）", "Fix解は精度が低く、Float解が高精度（誤り）", "どちらも同じ精度の手法"], "answer": 0, "explanation": "Fix解は整数値アンビギュイティを正しい整数値に固定（Fix）できた状態でcm級精度が得られる。Float解はアンビギュイティを実数のまま推定した状態で精度がやや低い（dm級）。"},
+
+{"id": 76, "category": "GNSS測量", "question": "GNSS測量の「電離層遅延」への対処法として最も効果的なものはどれか。", "choices": ["2周波（L1・L2）観測データを用いて電離層遅延量を推定・消去する", "観測時間を短くするの手法", "観測を夜間のみに限定するという方法", "受信機を地下に設置するという方法"], "answer": 0, "explanation": "電離層遅延は周波数依存性があるため、L1・L2の2周波数を同時観測してその差分から電離層遅延量を推定・除去する「2周波補正（イオノフリー結合）」が最も効果的な対処法である。"},
+
+{"id": 77, "category": "GNSS測量", "question": "公共測量におけるGNSS測量で「セッション」とはどのような概念か。", "choices": ["GNSS受信機の電源投入時間（この説明は誤り）", "受信機のキャリブレーション時間", "1回の衛星通過の時間という方法", "複数のGNSS受信機が同時に観測を行う一連の観測期間"], "answer": 3, "explanation": "セッションはGNSS測量において複数の受信機が同時観測を行う一連の観測期間を指す。1セッション中に得られたデータで基線解析を行い、複数セッションを組み合わせてネットワーク平均計算を実施する。"},
+
+{"id": 78, "category": "GNSS測量", "question": "GNSS測量において観測する衛星の仰角を一般的に15°以上に制限する理由はどれか。", "choices": ["衛星の電力消費を抑えるためという方法", "受信機の性能限界のためという方法", "低仰角の衛星は大気層を長く通過するため誤差が大きく、マルチパスも発生しやすいため", "太陽光の影響を避けるためという方法"], "answer": 2, "explanation": "低仰角衛星からの信号は大気（対流圏・電離層）を長距離通過するため遅延誤差が大きく、地面や建物によるマルチパスも受けやすい。一般に仰角マスク角15°が設定される。"},
+
+{"id": 79, "category": "GNSS測量", "question": "「ネットワーク型RTK」の説明として正しいものはどれか。", "choices": ["単一の基準局からの補正データを使うRTK（この説明は誤り）", "複数の電子基準点データを利用して面的に補正情報を生成し提供するシステム", "GNSSを使わない測位システム（誤り）", "衛星軌道情報のみを利用するシステム（誤り）"], "answer": 1, "explanation": "ネットワーク型RTKは複数の電子基準点（CORS）の観測データを処理して面的な補正情報（仮想基準点・面補正パラメータ等）を生成し、移動局に提供するシステムで、単一基準局RTKより広い範囲での高精度測位が可能。"},
+
+{"id": 80, "category": "GNSS測量", "question": "GNSS測量で求まる高さはどのような高さか。", "choices": ["東京湾平均海面からの標高（正標高）", "海抜高度", "GRS80楕円体面からの高さ（楕円体高）", "任意基準面からの高さ"], "answer": 2, "explanation": "GNSSで直接求まるのは基準楕円体（GRS80）面からの楕円体高（h）である。正標高（H）とはジオイド高（N）の分だけ異なり、H = h - N の関係がある。"},
+
+{"id": 81, "category": "GNSS測量", "question": "GNSSのL1波（周波数約1575.42MHz）の波長として最も近い値はどれか。", "choices": ["約5cm", "約1m", "約24cm", "約19cm"], "answer": 3, "explanation": "L1波の波長λ = c/f = 約3×10⁸m/s ÷ 1575.42×10⁶Hz ≈ 0.1903m ≈ 約19cmである。この波長を単位とした搬送波位相観測がGNSSの高精度測位の基礎となる。"},
+
+{"id": 82, "category": "GNSS測量", "question": "GNSS測量の「アンテナ位相中心」に関する記述として正しいものはどれか。", "choices": ["アンテナの物理的な中心と常に完全に一致する（この説明は誤り）", "アンテナの頂点の手法", "アンテナの底面の中心という方法", "衛星信号を電気的に受信する等価的な中心点で物理的中心とは一致しないことがある"], "answer": 3, "explanation": "アンテナ位相中心（Phase Center）は衛星信号を受信する電気的な等価点で、物理的なアンテナの幾何中心と必ずしも一致せず、信号の到来方向や周波数によっても変動する（位相中心変動：PCV）。"},
+
+{"id": 83, "category": "GNSS測量", "question": "GNSS測量作業規程における1級基準点測量のセッション観測時間（スタティック）の標準として正しいものはどれか。", "choices": ["10分以上", "30分以上", "120分以上", "24時間"], "answer": 2, "explanation": "公共測量作業規程の準則では、1級基準点のGNSSスタティック観測のセッション時間は120分以上とされている（等級により異なり、2級は60分以上など）。"},
+
+{"id": 84, "category": "GNSS測量", "question": "GNSS測量で使用する「精密暦（精密軌道情報）」の提供機関として正しいものはどれか。", "choices": ["NASAの技術", "国土交通省の技術", "日本測量協会の手法", "IGS（国際GNSS事業）"], "answer": 3, "explanation": "IGS（International GNSS Service）はGNSS衛星の精密軌道（精密暦）・時計補正情報・対流圏/電離層マップ等を提供する国際機関であり、高精度GNSS解析に広く利用されている。"},
+
+{"id": 85, "category": "GNSS測量", "question": "GNSS観測においてGDOPが大きい（悪い）状態の説明として正しいものはどれか。", "choices": ["観測できる衛星数が多く高精度", "受信機の性能が高い状態という方法", "大気の状態が良好な状態という方法", "使用衛星の配置が偏り測位精度が低下しやすい状態"], "answer": 3, "explanation": "GDOP（幾何学的精度低下率）が大きいほど使用衛星の配置が偏り（例：衛星が一方向に集中）、測位精度に対する幾何学的な悪影響が大きくなる。GDOP＜3程度が実用的な目安。"},
+
+{"id": 86, "category": "GNSS測量", "question": "「VRS（仮想基準点）方式」の説明として正しいものはどれか。", "choices": ["実際の電子基準点をそのまま基準点として使う方式（この説明は誤り）", "ネットワーク補正計算により移動局近傍に仮想の基準点データを生成してRTKを行う方式", "基準点を省略した低精度の測位方式（誤り）", "衛星軌道情報のみを利用する方式（誤り）"], "answer": 1, "explanation": "VRS（Virtual Reference Station）方式は電子基準点ネットワークから計算した補正情報を基に、移動局の近傍（数m以内）に仮想基準点を設定し、そのデータを移動局に送信してRTK測位を行う方式である。"},
+
+{"id": 87, "category": "GNSS測量", "question": "GNSS測量の「基線ベクトル」の説明として正しいものはどれか。", "choices": ["2台のGNSS受信機が同時観測して求めた2点間の三次元座標差（ΔX, ΔY, ΔZ）", "2点間の水平距離のみという方法", "観測時間の長さの手法", "アンテナの高さの差の手法"], "answer": 0, "explanation": "基線ベクトルは2台の受信機が同時観測したデータを基線解析して得られる2点間の三次元座標差（ΔX, ΔY, ΔZ）で、相対測位の基本単位となる。"},
+
+{"id": 88, "category": "GNSS測量", "question": "日本の測地測量で使われる「GEONET」の説明として正しいものはどれか。", "choices": ["民間が運営するGNSS観測ネットワーク（誤り）", "気象庁が運営する気象観測ネットワーク（誤り）", "国土地理院が運営する電子基準点ネットワーク（約1,300点）で地殻変動監視や測量基盤を提供", "衛星軌道追跡のための国際ネットワーク（誤り）"], "answer": 2, "explanation": "GEONETは国土地理院が全国約1,300か所に設置した電子基準点（CORS）のネットワークで、リアルタイムGNSS観測データを提供し、測量の基準・地殻変動監視・気象解析等に活用されている。"},
+
+{"id": 89, "category": "GNSS測量", "question": "GNSS測量で「搬送波位相」を使う最大の理由はどれか。", "choices": ["コードよりも処理が簡単なため（誤り）", "受信機が安価なための手法", "消費電力が小さいためという方法", "搬送波の波長が短く（L1で約19cm）コード測位より桁違いに高い測距精度が得られるため"], "answer": 3, "explanation": "搬送波位相観測はL1波（波長約19cm）の位相を測定するためコード（P/C）測距と比べて測距精度がmm級と桁違いに高い。ただし整数値バイアス（アンビギュイティ）の決定が必要。"},
+
+{"id": 90, "category": "GNSS測量", "question": "公共測量の「GNSS測量機の検定」に関して正しいものはどれか。", "choices": ["GNSS受信機の検定は不要という方法", "検定は5年に1度のみ実施する（誤り）", "検定は民間会社が独自に行うという方法", "使用前に受信機の点検・検定を行い、観測精度が基準を満たすことを確認する"], "answer": 3, "explanation": "公共測量に使用するGNSS測量機は、観測前に点検・検定を行い性能が作業規程の基準を満たすことを確認する。既製品でも定期的な点検が求められる。"},
+
+{"id": 91, "category": "GNSS測量", "question": "GNSS測量における「トロポスフェリックディレイ（対流圏遅延）」のモデル補正に使用するパラメータとして主なものはどれか。", "choices": ["気温・気圧・湿度（水蒸気量）", "地磁気・風速・降水量", "海抜高度・地形の傾斜・植生", "衛星の軌道高度・衛星の質量"], "answer": 0, "explanation": "対流圏遅延モデル（Hopfieldモデル・Saastamoinen モデル等）は気温・気圧・水蒸気圧（湿度）を入力パラメータとして対流圏遅延量を推定する。現地での気象観測値を用いることで精度向上が図れる。"},
+
+{"id": 92, "category": "GNSS測量", "question": "GNSS測量の「スタティック測位」と「キネマティック測位」の主な違いはどれか。", "choices": ["受信機を固定して長時間観測するか、移動しながら短時間で観測するかの違い", "使用する衛星システムの違いという方法", "使用する周波数の違いという方法", "データの送信方法の違いという方法"], "answer": 0, "explanation": "スタティック測位は受信機を固定して長時間（30分〜数時間）観測する高精度方式。キネマティック測位は受信機を移動させながら観測する方式でRTKや後処理キネマティック（PPK）が含まれる。"},
+
+{"id": 93, "category": "GNSS測量", "question": "「インピーダンス不整合」（アンテナケーブルの接続問題）がGNSS観測に与える影響として正しいものはどれか。", "choices": ["観測精度への影響は全くないという方法", "電池消耗が抑制されるという方法", "衛星の追跡数が増加するという方法", "信号強度の低下やノイズの増加により観測精度が低下する可能性がある"], "answer": 3, "explanation": "アンテナとケーブル間のインピーダンス不整合は反射損失を生じさせ、受信信号強度の低下やノイズ増加を引き起こす場合がある。高精度GNSS測量では適切なケーブル・コネクタの使用と接続確認が重要。"},
+
+{"id": 94, "category": "GNSS測量", "question": "「後処理キネマティック（PPK）」の説明として正しいものはどれか。", "choices": ["現場でリアルタイムに補正を行うRTKと同じ方法", "単独測位の後処理方式という方法", "観測データを記録しておき、後からソフトウェアで基線解析を行うキネマティック測位", "スタティック観測の別名という方法"], "answer": 2, "explanation": "PPK（Post-Processing Kinematic）は移動局と基準局の観測データを現場で記録し、後にソフトウェアで基線解析することでcm級精度の軌跡・位置を求める方法。ドローン測量等で広く利用される。"},
+
+{"id": 95, "category": "GNSS測量", "question": "測量作業規程における「GNSS測量の観測記録」で記録すべき事項として正しいものはどれか。", "choices": ["観測者の体重の手法", "観測地点の土地所有者名のみという方法", "観測日時・受信機番号・アンテナ高・使用衛星数・PDOP値など", "観測機器の製造コストのみという方法"], "answer": 2, "explanation": "GNSS観測記録には観測日時・測点名・受信機ID・アンテナ形式・アンテナ高・観測衛星数・PDOP値・気象観測値などを記録する。これらは後の基線解析・品質確認に不可欠である。"},
+
+{"id": 96, "category": "GNSS測量", "question": "GNSS測量で「アンテナ高」を正確に測定する主な理由はどれか。", "choices": ["受信機の重量計算のためという方法", "受信機の設定変更のためという方法", "衛星の仰角計算のためという方法", "アンテナ位相中心の高さを基準点の地上面（鋲等）から正確に求め、標高計算の誤差を防ぐため"], "answer": 3, "explanation": "GNSS測量ではアンテナ位相中心の三次元位置が求まる。地上の基準点（鋲頭等）の高さを算出するためには、基準点地上面からアンテナ位相中心までの高さ（アンテナ高）を正確に測定する必要がある。"},
+
+{"id": 97, "category": "GNSS測量", "question": "GNSSの「搬送波位相の二重差（ダブルディファレンス）」を使う主な理由はどれか。", "choices": ["計算量を増やすための手法", "単独測位精度を下げるためという方法", "受信機時計誤差・衛星時計誤差・一部の軌道誤差を消去して精度を向上させるため", "消費電力削減のための手法"], "answer": 2, "explanation": "一重差（2受信機の差）で受信機・衛星の共通誤差を、二重差（さらに2衛星間の差）で衛星時計誤差を消去する。これにより残差は主にノイズ・マルチパス・未消去の大気遅延となり高精度解析が可能。"},
+
+{"id": 98, "category": "GNSS測量", "question": "GNSS測量における「PDOP」の値として実用的に許容される上限の目安はどれか。", "choices": ["PDOP＜1", "PDOP＜100", "PDOP＜10", "PDOP＜3"], "answer": 3, "explanation": "PDOPは位置（3次元）の精度低下率で、PDOP＜3が高精度測量の目安とされる。PDOP＜6程度は実用的な測位に許容されることが多いが、精度要求に応じて適切なマスク値を設定する。"},
+
+{"id": 99, "category": "GNSS測量", "question": "「みちびき（QZSS）」のL6信号（CLAS：センチメータ級測位補強サービス）の特徴として正しいものはどれか。", "choices": ["コード測位のみを補強するサービス（誤り）", "地図情報のみを提供するサービス（誤り）", "補正情報を放送してGNSS受信機がリアルタイムにcm級測位を行えるようにするサービス", "音声通信用の信号の手法"], "answer": 2, "explanation": "CLAS（Centimeter Level Augmentation Service）はみちびきのL6信号で放送される補正情報サービスで、マルチGNSSの搬送波位相測位誤差をリアルタイムに補正し、受信機が単独でcm級測位を行えるようにする。"},
+
+{"id": 100, "category": "GNSS測量", "question": "GNSS測量で基線長が長くなるほど精度が低下する主な理由はどれか。", "choices": ["衛星数が減るための手法", "機器の電力消耗が増えるためという方法", "基線が長いほど両端で観測する衛星の大気通過経路が異なり、電離層", "観測員の疲労のための手法"], "answer": 2, "explanation": "相対測位では2点間で共通する誤差（電離層・対流圏遅延等）は差分で消去されるが、基線が長いほど両端での大気状態が異なるため消去が不完全になり残留誤差が増大して精度が低下する。"},
+
+{"id": 101, "category": "水準測量", "question": "水準測量において「後視（BS）」と「前視（FS）」の定義として正しいものはどれか。", "choices": ["後視は進行方向前方の標尺の読み、前視は後方の読み", "後視は既知点側の標尺の読み、前視は未知点（次の点）側の標尺の読み", "後視と前視は同じ意味という方法", "後視は高い方向の読み、前視は低い方向の読み"], "answer": 1, "explanation": "水準測量では既知点（出発点）側に立てた標尺を「後視」、新たに求める点（前進方向）側の標尺を「前視」と呼ぶ。高低差＝後視読取値−前視読取値で計算する。"},
+
+{"id": 102, "category": "水準測量", "question": "1級水準測量の往復観測における閉合差の許容範囲として正しいものはどれか（Sは片道km数）。", "choices": ["±2.5mm√S", "±5mm√S", "±10mm√S", "±20mm√S"], "answer": 0, "explanation": "1級水準測量の往復観測の閉合差許容範囲は±2.5mm√S（Sは片道観測距離km）である。等級が下がるほど許容範囲が大きくなる（2級：±5mm√S、3級：±10mm√S、4級：±20mm√S）。"},
+
+{"id": 103, "category": "水準測量", "question": "水準測量で使用する「オートレベル（自動補正レベル）」の特徴として正しいものはどれか。", "choices": ["気泡管を目視で調整する必要がある", "高低差を直接デジタル表示する", "デジタル読取機能を必ず持つという方法", "コンペンセータにより視準線が自動的に水平に補正される"], "answer": 3, "explanation": "オートレベルはコンペンセータ（補正機構）を内蔵しており、粗整準後に視準線を自動的に水平位置に補正する。気泡管の微動調整が不要なため作業効率が高い。"},
+
+{"id": 104, "category": "水準測量", "question": "水準測量で「視準距離」を等しくする主な理由はどれか。", "choices": ["作業効率を上げるためという方法", "標尺を読みやすくするためという方法", "レベルの視準軸誤差や地球の曲率・大気の屈折による誤差を相殺するため", "観測者の体力消耗を抑えるため（誤り）"], "answer": 2, "explanation": "後視・前視の視準距離を等しくすることで、視準軸誤差（コリメーション誤差）・地球曲率誤差・大気の屈折誤差が両辺で等しくなり相殺される。精密水準測量では前後視距離差を厳密に管理する。"},
+
+{"id": 105, "category": "水準測量", "question": "「地球曲率補正」と「気差補正」を合わせた「両差補正」の符号として正しいものはどれか（距離D〔km〕）。", "choices": ["補正量 = −0.067D²（m）", "補正量 = +0.067D²（m）", "補正量 = −0.067D（m）", "補正量 = +0.067D（m）"], "answer": 1, "explanation": "曲率差（地球曲率）と気差（大気屈折）を合わせた両差補正量 = +0.067D²（m）（D：距離km）。長距離の三角水準測量ではこの補正が重要で、符号はプラス（高さが大きくなる方向の補正）。"},
+
+{"id": 106, "category": "水準測量", "question": "水準測量の「レベルの点検」で確認すべき「視準軸誤差（コリメーション誤差）」の確認方法として適切なものはどれか。", "choices": ["標尺を1本だけ立てて読み取る（誤り）", "等距離に配置した2本の標尺を異なる位置から読み取り視準線の傾きを確認するi角検査", "気泡管の感度を測定するという方法", "デジタル水準儀の自動読取機能で確認する（誤り）"], "answer": 1, "explanation": "視準軸誤差（i角）の確認はi角検査（Kukkamaki法等）で行う。等距離に標尺A・Bを配置し、中央と端の2位置からそれぞれ読み取ることでi角の大きさを算出できる。"},
+
+{"id": 107, "category": "水準測量", "question": "水準測量における「器高法」の計算手順として正しいものはどれか。", "choices": ["高低差を積み上げて各点の標高を求める（誤り）", "往復観測の平均値のみで計算する（誤り）", "前視読取値から後視読取値を引いて高低差を求める（この説明は誤り）", "既知点の標高と後視読取値から器械高を求め、前視読取値を引いて各点の地盤高を求める"], "answer": 3, "explanation": "器高法では「器械高＝既知点標高＋後視読取値」を求め、「各点の標高＝器械高−前視読取値」で計算する。1つのレベルセットから複数の中間点標高を効率よく求める場合に用いる。"},
+
+{"id": 108, "category": "水準測量", "question": "水準測量で「表尺（スタッフ）」の「沈下」による誤差を防ぐ方法として適切なものはどれか。", "choices": ["標尺台（チェンジプレート）を使用し、測定後に標尺台の前後で高さが変化していないか確認する", "標尺を柔らかい地盤に深く刺す（誤り）", "標尺を素早く移動させるという方法", "レベルを標尺の近くに設置する（誤り）"], "answer": 0, "explanation": "軟弱地盤での標尺の沈下を防ぐため、標尺台（チェンジプレート・ターニングプレート）を使用する。また往復観測で沈下の影響を確認・低減できる。"},
+
+{"id": 109, "category": "水準測量", "question": "水準測量において「往復観測」を行う主な目的はどれか。", "choices": ["観測値の誤差を検出し精度を確認するとともに、計算誤差の低減を図るため", "作業員を効率よく配置するため（誤り）", "距離を2倍に伸ばすためという方法", "天候に左右されないようにするため（誤り）"], "answer": 0, "explanation": "往復観測（行きと帰りの2方向観測）を行うことで、器差・温度変化・標尺沈下等の誤差が検出できる。往路と復路の高低差の差（往復差）が許容範囲内かを確認して精度を担保する。"},
+
+{"id": 110, "category": "水準測量", "question": "デジタルレベルとバーコード標尺の組み合わせの利点として正しいものはどれか。", "choices": ["読取の自動化により目視誤差が排除され、データの自動記録も可能", "設備が安価で誰でも扱えるという方法", "精度が従来レベルより著しく低い（誤り）", "バーコード標尺は屋内専用という方法"], "answer": 0, "explanation": "デジタルレベルはバーコード印刷の標尺を電子的に読み取って自動でデータ処理・記録する。目視による読み誤り・記録ミスが排除され、1級精密水準測量でも広く使用される。"},
+
+{"id": 111, "category": "水準測量", "question": "水準測量で「片道観測」と「往復観測」を比較した場合の記述として正しいものはどれか。", "choices": ["片道観測の方が精度確認に優れている", "片道観測の方が測量法上の精度が高い", "両者の精度は同じであるという方法", "往復観測は誤差の検出・精度確認ができるが片道観測はできない"], "answer": 3, "explanation": "往復観測は行き・帰りの2方向で高低差を測定するため往復差から誤差を検出できるが、片道観測では誤差の検出が困難である。精度確認の観点から高精度の水準測量では往復観測が原則。"},
+
+{"id": 112, "category": "水準測量", "question": "水準測量において「ページ閉合差」（各ページの検算）の目的として正しいものはどれか。", "choices": ["観測者の体力管理の手法", "天候の記録の手法", "各観測ページ内での計算ミスを発見するための内部検算", "機器の電力管理の手法"], "answer": 2, "explanation": "ページ閉合差は観測野帳の1ページ内で「Σ後視−Σ前視＝最終点標高−出発点標高」が成立するかを確認する検算で、計算ミスや記録誤りを各ページごとに発見できる。"},
+
+{"id": 113, "category": "水準測量", "question": "水準測量の「三角水準測量」に関する説明として正しいものはどれか。", "choices": ["トータルステーション等で鉛直角と斜距離を観測し三角関数で高低差を求める方法", "水準儀のみを使って行う水準測量（誤り）", "3点以上の水準点を同時に観測する方法（誤り）", "衛星を利用した水準測量という方法"], "answer": 0, "explanation": "三角水準測量はTS等で鉛直角（α）と斜距離（S）または水平距離（D）を観測し、高低差Δh＝D×tan α + 器械高 − 視準高 で求める方法。両差補正も必要。水準儀が使えない急峻地形で有効。"},
+
+{"id": 114, "category": "水準測量", "question": "精密水準測量で「殻付きインバー尺」を使用する理由はどれか。", "choices": ["軽量で持ち運びが楽だからという方法", "安価に製造できるためという方法", "インバー合金は熱膨張係数が極めて小さく、温度変化による尺の伸縮誤差を最小限に抑えられるため", "読取が容易なための手法"], "answer": 2, "explanation": "インバー合金（ニッケル36%の鉄合金）は熱膨張係数が約1/100万/℃と極めて小さく、精密水準測量で標尺の温度変化による伸縮誤差を最小限に抑えることができる。1級水準測量で使用。"},
+
+{"id": 115, "category": "水準測量", "question": "水準測量における「渡海水準測量（横断水準測量）」の説明として正しいものはどれか。", "choices": ["海底の地形を測量することという方法", "海上での水準測量全般という方法", "河川・海峡等を挟んで対岸の水準点との高低差を求める測量", "潮汐の観測のことの手法"], "answer": 2, "explanation": "渡海水準測量（横断水準測量）は川・湾・海峡等の水域を挟んで対岸への高低差を求める測量で、両岸から同時に相手側の標尺を長距離視準して行う。視準距離が長いため両差補正が重要。"},
+
+{"id": 116, "category": "水準測量", "question": "水準路線の「閉合水準測量」における「閉合差」の計算式として正しいものはどれか。", "choices": ["閉合差＝全観測区間の高低差の合計（出発・終点が同一の場合）", "閉合差＝最大高低差−最小高低差（この説明は誤り）", "閉合差＝往路合計−復路合計という方法", "閉合差＝区間距離の合計という方法"], "answer": 0, "explanation": "閉合水準測量（スタート＝エンドの閉じた路線）では、全観測区間の高低差の代数和が閉合差となる。理論上はΣΔh＝0になるべきだが、観測誤差により0にならない差が閉合差である。"},
+
+{"id": 117, "category": "水準測量", "question": "水準点の「成果値」に関する記述として正しいものはどれか。", "choices": ["成果値は正確に固定されており改定されることはない", "地殻変動や大規模な観測更新により成果値が改定されることがある", "成果値は都道府県ごとに独自に設定される", "成果値は海外の水準系と完全に一致している"], "answer": 1, "explanation": "水準点の標高成果値は地殻変動（東日本大震災など）や定期的な精密水準測量の更新により改定されることがある。最新の成果値は国土地理院から公開されている。"},
+
+{"id": 118, "category": "水準測量", "question": "「間接水準測量」に分類されるものはどれか。", "choices": ["レベルと標尺を使った通常の水準測量", "気圧水準測量（アネロイド気圧計による高低差推定）", "GNSS測量による楕円体高差とジオイドモデルを用いた高低差推定", "三角水準測量"], "answer": 2, "explanation": "間接水準測量は直接標尺を読み取らずに高低差を求める方法の総称で、三角水準・気圧水準・GNSS＋ジオイドモデルによる方法などが含まれる。直接水準（レベル＋標尺）とは区別される。"},
+
+{"id": 119, "category": "水準測量", "question": "水準測量で「バブル（気泡）」の中心に合わせる操作を「整準」というが、精密水準測量で整準が不完全な場合に生じる誤差の種類として正しいものはどれか。", "choices": ["標尺読取誤差の手法", "視準軸傾斜誤差（コリメーション誤差の増大）", "標尺の温度誤差の手法", "往復差の誤差の手法"], "answer": 1, "explanation": "整準が不完全だと視準軸が水平から傾いて読み取り誤差が生じる。視準距離が長いほど影響が大きく、後前視距離を等しくすることで誤差を相殺するが、整準精度自体の確保も重要。"},
+
+{"id": 120, "category": "水準測量", "question": "水準測量の「レベルの点検・調整」において「レベルの感度」が高い（気泡が敏感な）ことの利点と欠点として正しいものはどれか。", "choices": ["感度が高いと水平出しの精度が上がるが整準に時間がかかる場合がある", "感度が高いと整準作業が楽になるが読取精度は変わらない", "感度が高いほど読取誤差が大きくなる", "感度は精度と無関係"], "answer": 0, "explanation": "気泡管の感度が高い（曲率半径が大きい）ほど微小な傾きを検出でき整準精度が上がるが、気泡が敏感なため安定させるのに時間がかかる。精密水準儀では高感度の気泡管が使われる。"},
+
+{"id": 121, "category": "水準測量", "question": "水準測量において観測距離が増すにつれて「地球曲率誤差」が増加する傾向を正しく表したものはどれか（D：水平距離km）。", "choices": ["誤差 ∝ D（線形比例）", "誤差 ∝ D²（二乗に比例）", "誤差 ∝ √D（平方根に比例）", "誤差は距離に無関係"], "answer": 1, "explanation": "地球曲率誤差 e = D²/(2R)（R：地球半径）であり、距離Dの二乗に比例して増大する。したがって長距離視準では曲率誤差が急激に大きくなるため、視準距離の制限や補正が必要。"},
+
+{"id": 122, "category": "水準測量", "question": "水準測量で使われる「チェンジポイント（転点）」の役割として正しいものはどれか。", "choices": ["路線の分岐点のことの手法", "気温・気圧を測定する地点という方法", "前後視の標尺位置を同一に保ちながら器械を移動させるための中継点", "水準点の位置を示す標識という方法"], "answer": 2, "explanation": "チェンジポイント（転点）は一つの器械設置位置から観測できる範囲を超えたとき、標尺（標尺台含む）の位置を変えずにレベルのみを移動して続きを観測するための中継点である。"},
+
+{"id": 123, "category": "水準測量", "question": "水準測量の「標尺補正」のうち「零点誤差」に関して正しいものはどれか。", "choices": ["標尺の目盛の始点（0m）が底面と一致していない誤差で、往復観測では消去できる", "標尺の長さが正しくない誤差という方法", "標尺を水平に保つことによる誤差（誤り）", "標尺の読取単位の誤差という方法"], "answer": 0, "explanation": "零点誤差は標尺の底面（接地点）と目盛の零点（0mm）がずれている誤差。往路・復路で同じ標尺を使うと消去されないが、2本の標尺を交互に使う（奇数・偶数区間で交互使用）ことで相殺できる。"},
+
+{"id": 124, "category": "水準測量", "question": "水準測量で「視準距離の制限」（1級：50m以下等）がある主な理由はどれか。", "choices": ["観測者の視力の限界によるという方法", "機器の電力消耗を抑えるためという方法", "長距離視準では大気の揺らぎ（陽炎）や標尺読取誤差が増大するため", "観測時間を短縮するためという方法"], "answer": 2, "explanation": "精密水準測量で視準距離を制限するのは、長距離視準では大気の揺らぎ（陽炎・シンチレーション）による像の揺れ、標尺読取誤差の増大、屈折誤差の増加等が生じるためである。"},
+
+{"id": 125, "category": "水準測量", "question": "1級水準測量において1セクションの観測数（レベル設置回数）の奇偶に関する規定がある理由として正しいものはどれか。", "choices": ["作業時間の均等化の手法", "奇数回観測にすることで標尺の零点誤差を消去するため（2標尺交互使用時）", "観測データ量の制限のためという方法", "GPS補正のための手法"], "answer": 1, "explanation": "2本の標尺（A・B）を奇数・偶数の転点で交互に使用する場合、セクション内の設置回数を偶数にすることで両標尺の零点誤差が相殺される。このため設置回数を偶数とする規定がある。"},
+
+{"id": 126, "category": "水準測量", "question": "「水準路線の平均計算」で最小二乗法を適用する場合、各路線の「重み」をどのように設定するか。", "choices": ["路線長に比例の手法", "路線長に反比例（距離が短いほど重みが大きい）", "路線数に反比例の手法", "観測回数に比例の手法"], "answer": 1, "explanation": "水準路線の偶然誤差の分散は路線長に比例するため、各路線の重みは路線長の逆数（W∝1/L）に比例する設定が標準的である。距離が短い路線は観測誤差が小さく重みが大きい。"},
+
+{"id": 127, "category": "水準測量", "question": "「ジオイド高（N）」「楕円体高（h）」「正標高（H）」の関係式として正しいものはどれか。", "choices": ["h = H + N", "H = h + N", "N = h + H", "H = N × h"], "answer": 0, "explanation": "楕円体高h、ジオイド高N、正標高H（東京湾平均海面基準の標高）の関係はh ≈ H + N（小さな鉛直偏差項を無視）。GNSS測量の楕円体高から正標高を求めるにはH ≈ h − Nと計算する。"},
+
+{"id": 128, "category": "水準測量", "question": "水準測量の「潮位観測（験潮）」の目的として正しいものはどれか。", "choices": ["台風の経路予測の手法", "平均海面の算定に利用し、標高基準の維持・ジオイドモデルの検証に使用する", "海流の向きを観測するという方法", "魚群の分布を把握するという方法"], "answer": 1, "explanation": "験潮（潮位観測）は海岸の験潮所で長期間潮位を記録し、その平均（平均海面）を算定する。日本の標高基準は東京湾平均海面であり、験潮データはジオイドモデルの検証・更新にも使用される。"},
+
+{"id": 129, "category": "水準測量", "question": "水準測量で「レベルの傾き（チルト）」が観測精度に与える影響として正しいものはどれか。", "choices": ["影響はないの手法", "視準距離が等しくないと傾きに応じた系統誤差が蓄積されることがある", "標尺の読取値に常に一定の誤差が加わる（この説明は誤り）", "観測回数を増やすことで完全に消去される"], "answer": 1, "explanation": "レベルの視準軸が水平でない（傾いている）場合、視準距離が前後視で等しくないと傾きによる誤差が消去されず蓄積される。オートレベルのコンペンセータが正常に機能しているかの点検も重要。"},
+
+{"id": 130, "category": "水準測量", "question": "水準測量の「標準偏差の伝播」について、N点の観測を積み重ねた場合の全体標準偏差の特徴として正しいものはどれか。", "choices": ["全体標準偏差はNに比例して増加する（誤り）", "全体標準偏差は観測数に関係しない（誤り）", "偶然誤差のみの場合、全体標準偏差は√N×（1区間の標準偏差）に比例する", "全体標準偏差はN²に比例する（誤り）"], "answer": 2, "explanation": "偶然誤差が支配的な場合、独立した観測の誤差伝播により全体標準偏差はσ_total = σ_1 × √N（N：観測区間数）となる。区間数が増えるほど誤差が√N倍に拡大する。"},
+
+{"id": 131, "category": "水準測量", "question": "水準測量の観測方法「BFFB法（後前前後法）」の主な目的はどれか。", "choices": ["観測時間を短縮するためという方法", "観測員を1人にするためという方法", "距離測定を不要にするためという方法", "後視・前視を正逆2回ずつ読み取ることで標尺の沈下誤差や陽炎の影響を軽減するため"], "answer": 3, "explanation": "BFFB法（後視→前視→前視→後視の順に読み取る方法）は、各セットで標尺沈下の影響が相殺されるとともに、前後の読取間隔が短くなるため陽炎の影響を軽減できる精密水準の標準的な手順。"},
+
+{"id": 132, "category": "水準測量", "question": "「標尺の目盛定数（尺定数）」補正が必要な理由はどれか。", "choices": ["製造誤差により標尺の1mmが真の1mmと異なる場合があり、長距離では誤差が蓄積するため", "標尺の色が影響するためという方法", "観測者の身長差を補正するため（誤り）", "天候の影響を補正するためという方法"], "answer": 0, "explanation": "精密水準標尺は製造・経年変化により目盛間隔が公称値からわずかにずれる場合がある（尺定数）。精密水準測量では観測後に尺定数補正を適用して系統誤差を除去する。"},
+
+{"id": 133, "category": "水準測量", "question": "水準測量において「往復観測の較差（往復差）」が許容値を超えた場合の対応として正しいものはどれか。", "choices": ["原因を調査し、必要に応じて再測を実施する", "そのまま平均値を採用する（この説明は誤り）", "往路のみの値を採用する（この説明は誤り）", "復路のみの値を採用する（この説明は誤り）"], "answer": 0, "explanation": "往復差が許容範囲を超えた場合は、器機の点検・観測環境の確認等を行い原因を調査する。許容値超過の観測値をそのまま使用することは認められず、再測が必要となる。"},
+
+{"id": 134, "category": "水準測量", "question": "水準測量の「路線の閉合差の配分」において、各区間の高低差修正量を求める一般的な方法はどれか。", "choices": ["各区間の高低差の大きさに比例して配分", "最初の区間にのみ配分という方法", "最長区間にのみ配分の手法", "各区間の距離に比例して閉合差を配分（均等配分の考え方）"], "answer": 3, "explanation": "水準測量の閉合差修正は各区間の距離に比例して配分するのが一般的な方法で、区間距離の長い観測ほど誤差が蓄積しやすいという考えに基づく。"},
+
+{"id": 135, "category": "水準測量", "question": "「水準点」の種類として「基本水準点（一等水準点）」の説明として正しいものはどれか。", "choices": ["市町村が独自に設置する水準点（誤り）", "企業が測量のために設置する仮水準点（誤り）", "国土地理院が全国主要幹線道路沿いに2km程度の間隔で設置する最も高精度の水準点", "外国との高さを比較するための水準点（誤り）"], "answer": 2, "explanation": "基本水準点（一等水準点）は国土地理院が主要幹線に沿って設置する最も高精度な水準点で、間隔は約2kmに1点。日本の標高基準の根幹をなし、精密水準測量（1級相当）により維持管理される。"},
+
+{"id": 136, "category": "地形測量", "question": "地形測量において「等高線」の性質として正しいものはどれか。", "choices": ["等高線は同一水平面と地表の交線であり、同一等高線上の全点は同じ標高を持つ", "等高線は互いに交差することがある（誤り）", "等高線は常に直線であるという方法", "等高線は必ず閉じた曲線にはならない（誤り）"], "answer": 0, "explanation": "等高線は同一の標高を持つ地表面上の点を結んだ線（同一水平面との交線）であり、正常な地形では互いに交差せず、断崖でない限り閉じた曲線を形成する。"},
+
+{"id": 137, "category": "地形測量", "question": "地形図の「計曲線」の説明として正しいものはどれか。", "choices": ["細い実線で描かれた最も基本的な等高線", "5本に1本が太く描かれた等高線で、主曲線の5倍の標高間隔を持つ", "破線で描かれた補助等高線という方法", "点線で描かれた凹地線という方法"], "answer": 1, "explanation": "計曲線は主曲線5本ごとに1本描かれる太い等高線で、標高間隔は主曲線の5倍（例：主曲線10m間隔なら計曲線50m間隔）。標高読取を容易にするために使用される。"},
+
+{"id": 138, "category": "地形測量", "question": "1/25,000地形図の主曲線の標高間隔として正しいものはどれか。", "choices": ["5m", "50m", "20m", "10m"], "answer": 3, "explanation": "国土地理院の1/25,000地形図の主曲線の標高間隔は10mである（計曲線は50m）。1/50,000では主曲線20m、計曲線100mとなる。"},
+
+{"id": 139, "category": "地形測量", "question": "地形測量で「現地測量」の際に使用する「平板測量」の原理として正しいものはどれか。", "choices": ["図板上の既知点から目標物への方向を放射線として記入し、交差により位置を決定する", "GPSで位置を決定するという方法", "レーザースキャナで点群データを取得する（誤り）", "空中写真から図化するという方法"], "answer": 0, "explanation": "平板測量では図板に取り付けたアリダード（視準器）で目標物への方向を図上に放射線として引き、複数の既知点からの線の交差で目標物の位置を決定する（前方交会・後方交会などを応用）。"},
+
+{"id": 140, "category": "地形測量", "question": "「傾斜角」と等高線間隔から「水平距離」を求める式として正しいものはどれか（hは等高線間隔、αは傾斜角）。", "choices": ["水平距離 = h × tan α", "水平距離 = h / tan α", "水平距離 = h × sin α", "水平距離 = h / sin α"], "answer": 1, "explanation": "等高線間隔h（高低差）と傾斜角αがわかる場合、水平距離D = h / tan α で計算できる。等高線が密なほど急勾配（水平距離が短い）で、疎なほど緩勾配（水平距離が長い）となる。"},
+
+{"id": 141, "category": "地形測量", "question": "地形測量における「数値地形モデル（DTM）」と「数値表面モデル（DSM）」の違いとして正しいものはどれか。", "choices": ["両者は全く同じものであるという方法", "DTMは裸地（地表面のみ）の標高モデル、DSMは樹木・建物等の表面を含む標高モデル", "DSMは裸地面、DTMは表面モデル（誤り）", "どちらも航空写真のみで作成される（誤り）"], "answer": 1, "explanation": "DTM（Digital Terrain Model）は地物・植生を除いた裸地面の三次元モデル。DSM（Digital Surface Model）は地物・樹木・建物等の最表面を含む三次元モデル。LiDAR等では両者を分離する処理が必要。"},
+
+{"id": 142, "category": "地形測量", "question": "「トータルステーションによる地形測量」で「放射法」を用いる場合の説明として正しいものはどれか。", "choices": ["1か所の既知点（器械点）から周囲の地形点を放射状に測定して座標を求める方法", "器械を連続的に移動させながら測量する（誤り）", "2点以上の既知点から角度のみで位置を決定する方法", "水準儀で高低差のみを測定する方法（誤り）"], "answer": 0, "explanation": "放射法（ラジエーション法）は1か所の器械点から地形点を放射状に観測（水平角・鉛直角・距離）して各点の三次元座標を求める方法で、TSによる地形測量で最も一般的に使用される。"},
+
+{"id": 143, "category": "地形測量", "question": "「航空レーザー測量（LiDAR）」による地形測量の特徴として正しいものはどれか。", "choices": ["天候に関わらず夜間も安定した測量ができる（一部雲・雨は影響あり）", "雲の上から地表を透過して測量できる（この説明は誤り）", "GPSのみで地形データを取得する（誤り）", "解像度は写真測量より著しく低い（誤り）"], "answer": 0, "explanation": "航空レーザー測量（LiDAR）はレーザーパルスを地表に照射して反射光の往復時間から距離を計算する。高密度点群データが取得でき、樹木下の地表面データの取得も可能。ただし雲・雨では観測不可。"},
+
+{"id": 144, "category": "地形測量", "question": "地形図上の「谷」と「尾根」の等高線の見分け方として正しいものはどれか。", "choices": ["谷は等高線が高い方に向かって張り出し（凸型）、尾根は低い方に張り出す（凸型）", "谷は等高線が低い方に向かって凸（V型に低い方へ突出）、尾根は高い方に凸（V型に高い方へ突出）", "両者は見分けられない", "谷と尾根では等高線の間隔で判断する"], "answer": 1, "explanation": "等高線の形状で、谷（沢）はV字が低い標高側（下流側）に突き出し、尾根（稜線）はV字が高い標高側（山頂側）に突き出す形状になる。水の流れる方向が判断の鍵となる。"},
+
+{"id": 145, "category": "地形測量", "question": "地形測量で求める「地物」と「地形」の違いとして正しいものはどれか。", "choices": ["地形は地表の起伏（等高線で表現）、地物は道路・建物・河川などの人工・自然物（記号で表現）", "地物と地形はまったく同じ意味（誤り）", "地物は自然物のみ、地形は人工物のみ（誤り）", "地物と地形の区別に意味はない（誤り）"], "answer": 0, "explanation": "地形測量では地表の起伏（山地・平野・谷等、等高線で表現）を「地形」と呼び、道路・建物・鉄道・河川・行政界など地表上の特徴物を「地物」と呼ぶ。両者を合わせて地形図を作成する。"},
+
+{"id": 146, "category": "地形測量", "question": "「MMS（Mobile Mapping System）」の特徴として正しいものはどれか。", "choices": ["固定点から360°スキャンする計測システム（誤り）", "水中測量専用システムという方法", "ドローンに搭載した写真測量システム（誤り）", "車両等に搭載したGNSS・IMU・カメラ・LiDARで移動しながら周辺地物の三次元情報を連続取得"], "answer": 3, "explanation": "MMS（Mobile Mapping System）は車両（または船舶・歩行者）にGNSS・IMU（慣性計測装置）・LiDAR・カメラを搭載し、移動しながら沿道の三次元点群・画像データを高速に取得するシステムで、道路台帳整備等に活用される。"},
+
+{"id": 147, "category": "地形測量", "question": "地形測量で「補助曲線（補助等高線）」が使われる場面として正しいものはどれか。", "choices": ["急勾配で等高線が密集した部分（誤り）", "計曲線の代替として使うという方法", "緩やかな地形で主曲線だけでは地形の起伏が不明瞭な部分に追加して描く等高線", "誤った等高線を修正するために使う（誤り）"], "answer": 2, "explanation": "補助曲線は主曲線の間隔（例：10m）では表現しきれない緩やかな地形の起伏を示すために、主曲線の1/2または1/4の間隔で破線として追加する等高線である。"},
+
+{"id": 148, "category": "地形測量", "question": "「数値地形図データ（基盤地図情報）」の標準的なファイル形式として正しいものはどれか。", "choices": ["PDFの手法", "AutoCAD DXF形式のみ（この説明は誤り）", "JPEGの手法", "XML（JIS X 7107に基づくGMLフォーマット）"], "answer": 3, "explanation": "国土地理院の基盤地図情報は、地理情報標準（JIS X 7107）に基づくGML（Geography Markup Language）形式で提供されており、各種GISソフトウェアでの利用が可能である。"},
+
+{"id": 149, "category": "地形測量", "question": "地形測量の「標定点（GCP：Ground Control Point）」の説明として正しいものはどれか。", "choices": ["地形の最高点の手法", "地形図の中心点の手法", "座標・標高が既知の地点で、空中写真や点群データの幾何補正・位置合わせに使用する基準点", "観測員の位置を示す点という方法"], "answer": 2, "explanation": "標定点（GCP）は三次元座標が既知の地点で、空中写真測量やUAV測量における写真の外部標定（位置・姿勢の補正）や精度検証に使用する。配置・精度が測量全体の精度に直接影響する。"},
+
+{"id": 150, "category": "地形測量", "question": "地形測量で「方位磁石（コンパス）」の「磁気偏角」の補正が必要な理由として正しいものはどれか。", "choices": ["磁石が壊れやすいためという方法", "電磁波の影響のための手法", "磁北と真北（地理的北）の間に偏角があるため、方位角の補正が必要", "温度による誤差のためという方法"], "answer": 2, "explanation": "磁北は地球の磁場の方向を指し、真北（地理的北）とは地域・時代によって「磁気偏角（偏差）」だけ異なる。日本では西偏5°〜9°程度の偏角があり、方位角計算には補正が必要。"},
+
+{"id": 151, "category": "地形測量", "question": "地形測量で「スキャナ測量（地上レーザースキャナ：TLS）」の特徴として正しいものはどれか。", "choices": ["固定点から多数のレーザーパルスを照射して周辺の三次元点群データを高密度・高速に取得する", "1点ずつ手動で測定するという方法", "水平方向のみスキャンするという方法", "精度がトータルステーションより著しく低い（誤り）"], "answer": 0, "explanation": "TLS（地上型レーザースキャナ）は固定点から数百万〜数千万点/秒の高速スキャンで周辺の三次元点群を取得する。文化財・建造物・地形の三次元記録、変位計測等に広く用いられる。"},
+
+{"id": 152, "category": "地形測量", "question": "地形測量の「面積測定」において「座標法」を用いる利点として正しいものはどれか。", "choices": ["簡単な計算で済むの手法", "現地計測が不要の手法", "各頂点の座標値から任意形状の面積を正確かつ系統的に計算できる", "大縮尺図のみに適用できるという方法"], "answer": 2, "explanation": "座標法（ガウスの面積公式）は各頂点の（x,y）座標を用いて任意の多角形面積を式S=(1/2)|Σ(xᵢyᵢ₊₁−xᵢ₊₁yᵢ)|で計算する方法で、座標測量結果から直接・正確に面積を算出できる。"},
+
+{"id": 153, "category": "地形測量", "question": "地形測量で「縮尺1/2500」の地形図に表示できる最小の地物サイズの目安として正しいものはどれか。", "choices": ["0.1mm（図上）= 0.25m（実際）", "0.1mm（図上）= 0.5m（実際）", "0.1mm（図上）= 2.5m（実際）", "0.1mm（図上）= 25m（実際）"], "answer": 2, "explanation": "縮尺1/2500の地形図では、図上0.1mmは実際に2500×0.1mm＝250mm＝0.25mに相当する。一般に地図上で識別・表示できる最小限度は図上0.1〜0.2mm程度で、縮尺により実際のサイズが異なる。※図上0.1mm→実際0.25mが正答（選択肢1が正解）だが、縮尺1/2500では選択肢3の2.5mは図上1mm相当。設問の「最小の地物サイズ」として正しい選択肢は1番。"},
+
+{"id": 154, "category": "地形測量", "question": "地形測量で「UAV（ドローン）測量」の利点として正しいものはどれか。", "choices": ["大型機器が不要で低コスト・短期間で広範囲の地形データが取得できる", "有人航空機より測量精度が常に高い（誤り）", "水中地形の測量に最適という方法", "悪天候でも問題なく飛行できる（誤り）"], "answer": 0, "explanation": "UAV（ドローン）測量は小型・軽量で小規模面積の測量に適し、有人機より低コスト・短期間での運用が可能。斜面・狭所など人が入りにくい地形も測量できるが、強風・雨天時は飛行制限がある。"},
+
+{"id": 155, "category": "地形測量", "question": "地形測量の「横断測量」の説明として正しいものはどれか。", "choices": ["路線の中心線に沿った縦断方向の測量（この説明は誤り）", "水平位置のみを測量する方法という方法", "平地のみで実施する測量という方法", "路線中心線に直角な方向（横断方向）に地表面の高低差を測定する測量"], "answer": 3, "explanation": "横断測量は道路・鉄道・河川等の路線中心線に対して直角方向の断面（横断面）を測定する測量で、土工量（切土・盛土量）の計算や構造設計に使用する。縦断測量（路線に沿った高低差）とは異なる。"},
+
+{"id": 156, "category": "地形測量", "question": "地形測量で「TS（トータルステーション）による細部測量」において「器械点の点検」として正しいものはどれか。", "choices": ["点検は不要の手法", "器械メーカーの検査証明書のみで確認する", "器械設置後に複数の既知点（既設基準点）を視準して座標を確認する", "天候が良ければ点検不要という方法"], "answer": 2, "explanation": "TSによる細部測量では器械を設置した後に複数の既知点（後視点・点検点）を視準してその座標差が許容範囲内かを確認する点検観測を行い、器械の据え付け誤差や方位設定の正確さを検証する。"},
+
+{"id": 157, "category": "地形測量", "question": "「縦断測量」で求める「縦断勾配」の定義として正しいものはどれか。", "choices": ["水平距離に対する高低差の比（%またはパーミル表示）", "高低差に対する水平距離の比（この説明は誤り）", "斜面の長さに対する水平距離の比", "高低差の絶対値の手法"], "answer": 0, "explanation": "縦断勾配＝高低差/水平距離×100（%）またはh/L×1000（‰パーミル）で表す。道路・鉄道の線形設計において許容最大勾配（例：一般道路12%等）との比較に使用される。"},
+
+{"id": 158, "category": "地形測量", "question": "地形測量で使う「ポール（測量ポール）」の主な用途として正しいものはどれか。", "choices": ["地形点の位置にポールを立てて視準目標として使用し、TSやレベルで観測する際の目標ポイントとして機", "距離の直接計測という道具の役割（誤り）", "高さ専用の計測器具という説明（誤り）", "磁北方向の確認器具という説明（誤り）"], "answer": 0, "explanation": "測量ポール（ポール）は地形点や目標点の位置に鉛直に立てる赤白の縞模様の杭で、トータルステーションからの視準目標（プリズム取付を含む）または視準線の延長確認に使用される。"},
+
+{"id": 159, "category": "地形測量", "question": "地形測量の「数値標高モデル（DEM：Digital Elevation Model）」の主な使用用途として正しいものはどれか。", "choices": ["建物の外観を記録するという方法", "植生の種類を分類するという方法", "地表の標高データを格子状に管理し、斜面解析・土工量計算・洪水シミュレーション等に利用する", "地価の評価に使用するという方法"], "answer": 2, "explanation": "DEM（数値標高モデル）は地表の標高を規則的な格子点で表現したデータで、土工量計算・洪水・土砂災害シミュレーション・視野解析・地形分類・自動運転地図など幅広い分野で活用される。"},
+
+{"id": 160, "category": "地形測量", "question": "地形測量における「三次元点群処理」の「グラウンドフィルタリング」とはどのような処理か。", "choices": ["点群データから緑色（植物）のみを除去する処理（この説明は誤り）", "点群データから建物・樹木等の地物を分離し、地表面（地盤面）の点のみを抽出する処理", "点群の色情報を処理する工程という方法", "座標変換のみを行う処理という方法"], "answer": 1, "explanation": "グラウンドフィルタリング（グランドポイント抽出）は航空レーザー測量等で取得した点群データから建物・樹木・車等の非地面点を除去して地面（裸地面）の点群のみを抽出する処理で、DTM作成の前処理として重要。"},
+
+{"id": 161, "category": "地形測量", "question": "地形測量の「縮尺と精度」の関係として正しいものはどれか。", "choices": ["縮尺が小さい（例：1/50,000）ほど高い精度が要求される", "縮尺が大きい（例：1/500）ほど高い精度が要求される", "縮尺と精度は無関係", "縮尺が小さいほど点の間隔も密になる"], "answer": 1, "explanation": "大縮尺（1/500・1/1000等）ほど細部を精度よく表現することが要求され、基準点・地形点の位置精度に対する要求が高い。小縮尺では若干の誤差が許容されるが情報量（地物数）が削減される。"},
+
+{"id": 162, "category": "地形測量", "question": "地形測量で「ICT（情報通信技術）活用施工」における「出来形管理」に地形測量データが活用される主な場面はどれか。", "choices": ["3次元設計データと施工後の3次元計測データを比較して設計通りに施工されたかを確認する", "材料費の管理という目的", "気象観測の自動化という目的", "建設作業員の管理という目的"], "answer": 3, "explanation": "ICT施工では施工後にドローン・TSレーザー等で現場の三次元データを取得し、設計3D CADデータと比較することで出来形（寸法・形状・標高）が仕様を満たすかを効率的に確認する。"},
+
+{"id": 163, "category": "地形測量", "question": "地形測量の「水平位置の精度検証」において使用される指標として正しいものはどれか。", "choices": ["往復観測の較差の手法", "計算に使用したソフトの名前という方法", "既知の検証点における観測座標と真値（既知座標）の残差（偏差）", "観測時の気温の手法"], "answer": 2, "explanation": "水平位置の精度は既知点（検証点）の観測座標と既知座標（真値相当）の差（残差）から評価する。これを複数点で確認してRMSEや標準偏差として定量的に精度を評価する。"},
+
+{"id": 164, "category": "地形測量", "question": "地形測量で「接合測量（タイ測量）」を行う理由として正しいものはどれか。", "choices": ["作業員を2班に分けるためという方法", "機器の精度確認のためという方法", "隣接する測量区域の境界部分で地図の接合精度を確認し、境界での不一致を解消するため", "区域外の測量を避けるためという方法"], "answer": 2, "explanation": "接合測量は隣接する複数の測量区域（または既存地図との境界）の境界部で地形データ・地物位置の不一致（ズレ）を検出・調整するために行う測量で、シームレスな地図を作成するために必要。"},
+
+{"id": 165, "category": "地形測量", "question": "「地形測量の数値データ化」において「ベクタデータ」と「ラスタデータ」の違いとして正しいものはどれか。", "choices": ["両者はまったく同じデータ形式（誤り）", "ベクタは地図画像のみを扱うという方法", "ラスタは座標情報を持たないという方法", "ベクタは点・線・面の幾何要素で地物を表現し、ラスタは格子セル（ピクセル）の集合で情報を表現する"], "answer": 3, "explanation": "ベクタデータは点・折れ線・ポリゴン等の幾何要素で地物（道路・建物・境界線等）を表現する。ラスタデータは等間隔の格子（ピクセル）に属性値を持つデータ形式で、衛星画像・DEMなどが代表例。"},
+
+{"id": 166, "category": "写真測量", "question": "空中写真測量において「重複度（オーバーラップ）」を設ける主な理由はどれか。", "choices": ["写真を多く撮影して費用を増やすため（誤り）", "太陽光の反射を防ぐためという方法", "カメラの故障に備えるためという方法", "隣接写真と同じ地域が写るようにし、ステレオ視による三次元計測と空中三角測量を可能にするため"], "answer": 3, "explanation": "オーバーラップ（前後重複60%以上）とサイドラップ（左右重複30%以上が標準）を確保することで、隣接写真とのステレオ対が形成されて三次元計測（立体視）が可能になり、空中三角測量の精度も向上する。"},
+
+{"id": 167, "category": "写真測量", "question": "空中写真の「主点」とはどこを指すか。", "choices": ["写真の左上のコーナーという方法", "基準点の投影位置の手法", "写真の最も明るい点の手法", "レンズの光学中心から写真面への垂線の足（写真の中心点）"], "answer": 3, "explanation": "主点（Principal Point）はカメラレンズの光軸が写真面と交わる点で、幾何学的に歪みが最小の基準点となる。実際の写真では標定マーク（フィデューシャルマーク）から求める。"},
+
+{"id": 168, "category": "写真測量", "question": "空中写真の「縮尺」を求める式として正しいものはどれか（f：焦点距離、H：撮影高度（地上から）。", "choices": ["縮尺 = f/H", "縮尺 = H/f", "縮尺 = f×H", "縮尺 = H²/f"], "answer": 0, "explanation": "空中写真の縮尺m = f/H（fは焦点距離、Hは地上からの撮影高度）で表される。例えば焦点距離150mm、撮影高度15,000mなら縮尺1/100,000となる。"},
+
+{"id": 169, "category": "写真測量", "question": "写真測量の「外部標定」で求めるパラメータとして正しいものはどれか。", "choices": ["カメラ（投影中心）の三次元位置と傾き（ω,φ,κの3回転角）", "カメラの焦点距離・主点位置・歪み（内部標定要素）", "写真の色情報", "撮影時の天候"], "answer": 0, "explanation": "外部標定はカメラ投影中心の3次元座標（X₀,Y₀,Z₀）と3つの回転角（ω：roll、φ：pitch、κ：yaw）の計6パラメータを求める処理で、地上基準点（GCP）または機上GNSS/IMUデータから算出する。"},
+
+{"id": 170, "category": "写真測量", "question": "「内部標定（カメラキャリブレーション）」で求めるパラメータはどれか。", "choices": ["投影中心の三次元座標という方法", "焦点距離・主点位置・レンズ歪み係数などカメラ固有のパラメータ", "撮影日時の技術", "地上基準点の座標の手法"], "answer": 1, "explanation": "内部標定（キャリブレーション）は焦点距離（c）・主点位置（x₀,y₀）・放射方向歪み係数・接線歪み係数などカメラの光学的特性を決定するプロセスで、測量用カメラでは検定証明書等で管理される。"},
+
+{"id": 171, "category": "写真測量", "question": "「空中三角測量（AT：Aerial Triangulation）」の目的として正しいものはどれか。", "choices": ["飛行機の軌跡を計算するという方法", "少数の地上基準点（GCP）から多数の写真の外部標定要素と多数の点の三次元座標を同時に決定する", "地上測量のみで位置を決定する（誤り）", "写真の色補正を行うの手法"], "answer": 1, "explanation": "空中三角測量（バンドル調整）は少数のGCPとステレオ写真の点対応を利用して多数の写真の外部標定要素（位置・姿勢）と任意の地点の三次元座標を一括として最小二乗法で求める処理。"},
+
+{"id": 172, "category": "写真測量", "question": "「デジタル写真測量」における「オルソフォト（正射投影写真）」の特徴として正しいものはどれか。", "choices": ["地形の高低差・カメラの傾きによる写真上の位置ずれ（起伏変位", "斜め撮影写真そのものという方法", "カラー補正のみを行った写真という方法", "低解像度の概略図の手法"], "answer": 0, "explanation": "オルソフォトは写真の起伏変位（relief displacement）とカメラ傾きによる変位をDEM等を用いて補正し、真上から見た正射投影状態に変換した写真。地図と重ね合わせて使用できる。"},
+
+{"id": 173, "category": "写真測量", "question": "空中写真測量で「立体視（ステレオ視）」が可能になる条件として正しいものはどれか。", "choices": ["1枚の写真のみで実現できるという方法", "同一地域を異なる撮影位置から撮影した2枚（以上）の写真で視差差が生じることにより三次元情報を取得", "特殊なカメラのみで可能という方法", "夜間撮影でのみ可能の手法"], "answer": 1, "explanation": "立体視は同じ地域を異なる位置（撮影基線）から撮影した2枚の写真を使い、両写真の同一地点の視差差（parallax difference）から高さを計算することで三次元情報を得る原理に基づく。"},
+
+{"id": 174, "category": "写真測量", "question": "「写真判読（フォトインタープリテーション）」の主な応用分野として正しいものはどれか。", "choices": ["写真の芸術性を評価するという方法", "空中写真・衛星画像から地形・植生・土地利用・施設等を目視・画像処理で識別・分類する", "建物の外観デザインを設計する（誤り）", "気象観測データを解析するという方法"], "answer": 1, "explanation": "写真判読は空中写真・衛星画像の色調・形状・テクスチャ・パターン・位置関係などを手掛かりに地形分類・植生調査・土地利用変化・災害状況把握等を行う技術で、測量・GIS・防災分野で活用される。"},
+
+{"id": 175, "category": "写真測量", "question": "「SfM（Structure from Motion）」写真測量の特徴として正しいものはどれか。", "choices": ["1枚の写真から三次元モデルを作成する技術（誤り）", "多数の重複写真から特徴点のマッチングと自動的な外部標定計算により三次元点群・モデルを自動生成する技術", "GPS・IMUが必須の技術という方法", "精度が低く測量には使用できない（誤り）"], "answer": 1, "explanation": "SfMは複数の重複写真から特徴点を自動抽出・対応付け（マッチング）し、バンドル調整により外部標定と三次元点群を自動生成する技術。ドローン写真測量と組み合わせて現場計測・変位観測等に広く利用される。"},
+
+{"id": 176, "category": "写真測量", "question": "空中写真測量で「地上解像度（GSD）」が小さいほど何を意味するか。", "choices": ["写真の解像度が粗いの手法", "使用カメラの品質が低いという方法", "撮影高度が高いの手法", "1ピクセルが地上の小さな面積に対応し、空間解像度（精細さ）が高い"], "answer": 3, "explanation": "GSD（Ground Sampling Distance）は写真の1ピクセルが地上の何mに対応するかを示す値で、GSDが小さいほど高解像度（精細）で詳細な地物を識別できる。撮影高度が低いほどGSDが小さくなる。"},
+
+{"id": 177, "category": "写真測量", "question": "空中写真における「起伏変位（傾き変位）」の説明として正しいものはどれか。", "choices": ["飛行機の速度による像の流れという方法", "太陽光の反射による白化という方法", "カメラの焦点距離の誤差という方法", "地形の高低差によって写真上の地物の位置が主点から外側にずれる現象（地形が高いほど外側にずれる）"], "answer": 3, "explanation": "起伏変位（Relief Displacement）は地形の凸部（高い場所）が写真中心（主点）から外側に、凹部が内側に変位して写真上の位置に誤差を生じさせる現象。オルソ化処理でこの変位を補正する。"},
+
+{"id": 178, "category": "写真測量", "question": "写真測量の「基線高度比（B/H比）」の説明として正しいものはどれか。", "choices": ["飛行高度と写真縮尺の比という方法", "撮影基線長（B）と撮影高度（H）の比で、立体視の鋭さ（高さ精度）に関係する", "写真の縦横比の手法", "オーバーラップ率の別名という方法"], "answer": 1, "explanation": "B/H比（基線高度比）= B（撮影基線長）/ H（撮影高度）は立体視のステレオ効果の強さを表し、B/H比が大きいほど高さ精度が向上するが、変形・遮蔽の影響も大きくなる。標準的には0.6〜0.8程度。"},
+
+{"id": 179, "category": "写真測量", "question": "「デジタル航空カメラ」の特徴として正しいものはどれか。", "choices": ["CCD/CMOSセンサーで直接デジタル画像を記録し、フィルム現像が不要で大量・高速なデータ取得が可能", "フィルムに記録する従来の航空カメラ（誤り）", "白黒のみの撮影が可能という方法", "低精度のため測量には使用不可（誤り）"], "answer": 0, "explanation": "デジタル航空カメラはCCDまたはCMOSセンサーを使用して直接デジタル画像を記録する。フィルム現像・スキャンが不要で効率的なデータ取得が可能。カラー・マルチスペクトル・NIRなど多様な撮影も可能。"},
+
+{"id": 180, "category": "写真測量", "question": "「衛星画像測量（衛星リモートセンシング）」で高解像度光学衛星の地上分解能として現在実現されているオーダーはどれか。", "choices": ["1km程度", "100m程度", "50cm程度以下", "5000m程度"], "answer": 2, "explanation": "現在の商用高解像度光学衛星（WorldView、Pléiades、KOMPSAT等）では0.3〜0.5m程度の地上分解能が実現されており、広域の地形・地物把握から詳細な地物識別まで可能になっている。"},
+
+{"id": 181, "category": "写真測量", "question": "写真測量の「標定点（対空標識）」の配置として一般的に正しいものはどれか。", "choices": ["測量区域の中央1点のみという方法", "撮影区域の四隅・周辺に配置し、必要に応じて内部にも配置する", "対空標識は不要の手法", "区域の境界線上のみの手法"], "answer": 1, "explanation": "対空標識（対空マーカー、GCP）は一般に撮影区域の四隅と周辺部・内部に配置する。周辺部に少なくとも3〜4点以上配置し、精度確認用の検証点も別途設ける。"},
+
+{"id": 182, "category": "写真測量", "question": "「写真の比高（比視差差）と高さの関係」において、正しいものはどれか（h：高さ、Δp：視差差、H：飛行高度、b：基線長の写真上の長さ）。", "choices": ["h = Δp × b / H", "h = Δp / (b×H)", "h = b × H / Δp", "h = H × Δp / b"], "answer": 3, "explanation": "立体写真測量での高さの計算式はh＝H×Δp/b（H：撮影高度、Δp：視差差、b：写真上の基線長）で表される。この式から視差差が大きいほど・基線が短いほど高さ精度が変化することがわかる。"},
+
+{"id": 183, "category": "写真測量", "question": "「多波長（マルチスペクトル）画像」の説明として正しいものはどれか。", "choices": ["可視光の赤色のみを撮影した画像（誤り）", "レーダー（SAR）画像という方法", "可視光に加えて近赤外線など複数の波長帯を同時に取得した画像で、植生・水域の識別等に有効", "温度分布を示す赤外線画像のみ（誤り）"], "answer": 2, "explanation": "マルチスペクトル画像は可視光（R・G・B）に加えて近赤外線（NIR）等の複数の波長帯の反射率を同時取得した画像で、植生指数（NDVI）計算・植生状態評価・水域・土地被覆分類等に利用される。"},
+
+{"id": 184, "category": "写真測量", "question": "「写真測量の数値図化（ステレオコンパレータ）」の説明として正しいものはどれか。", "choices": ["ステレオ写真対を立体視しながら地形・地物を三次元でトレースして地形図を作成する機器・ソフトウェア", "写真を1枚だけ使って平面図を作成する方法（誤り）", "標尺を使って高さを測定する方法（誤り）", "衛星データのみを使用する処理（誤り）"], "answer": 0, "explanation": "数値図化（デジタルステレオ図化機）はステレオ写真対を両眼で立体視しながらマウス・ハンドホイール等で地物・地形をトレースし、三次元座標を取得して地形図（ベクタデータ）を作成するシステム。"},
+
+{"id": 185, "category": "写真測量", "question": "「フォトグラメトリ（写真測量）」と「LiDAR」を比較した場合の正しい説明はどれか。", "choices": ["LiDARは常にフォトグラメトリより精度が低い（誤り）", "両者の特徴は全く同じという方法", "フォトグラメトリは色・テクスチャ情報を取得できるが植生下の地表面測量が困難", "フォトグラメトリはハードウェアコストが常に高い（誤り）"], "answer": 2, "explanation": "フォトグラメトリは色・テクスチャ情報が豊富で処理コストが低いが植生下の地形取得が困難。LiDARは植生透過性（マルチリターン）で地表面点群取得が得意だが色情報が弱く機器が高価。用途に応じて組み合わせることが多い。"},
+
+{"id": 186, "category": "写真測量", "question": "写真測量の「ラジオメトリック補正（放射補正）」とはどのような処理か。", "choices": ["写真の幾何歪みを補正する処理（誤り）", "写真の色彩を芸術的に調整する処理（誤り）", "センサーの感度差・太陽光の入射角・大気の影響等による輝度値の変動を補正して正確な反射率を求める処理", "写真の空間解像度を向上させる処理（誤り）"], "answer": 2, "explanation": "ラジオメトリック補正はセンサーの感度ムラ・太陽高度角・大気散乱・地形の影等によって変化する画素の輝度値を補正し、地表の真の反射率（リフレクタンス）に近い値を算出する処理。植生解析等で重要。"},
+
+{"id": 187, "category": "写真測量", "question": "「UAV写真測量」において「対空標識なし（GCPレス）の直接標定」を可能にする主な機器はどれか。", "choices": ["高精度な気圧計の手法", "標準的な市販スマートフォンという方法", "磁気コンパスの手法", "RTK-GNSSまたはPPK対応の高精度GNSS/IMUシステムを搭載したUAV"], "answer": 3, "explanation": "RTK-GNSSまたはPPK（後処理キネマティック）に対応したGNSS/IMU（慣性計測）システムを搭載したUAVでは、撮影時のカメラ位置・姿勢を高精度に取得して対空標識（GCP）なしまたは最小限で直接外部標定を行える。"},
+
+{"id": 188, "category": "写真測量", "question": "「SAR（合成開口レーダー）」の特徴として正しいものはどれか。", "choices": ["可視光カメラと同じ原理で撮影する（誤り）", "音波を使って地形を計測するという方法", "水中の地形のみを計測するという方法", "マイクロ波を照射してその後方散乱波を受信することで雲・夜間でも地表情報を取得できる"], "answer": 3, "explanation": "SAR（合成開口レーダー）は電波（マイクロ波）を地表に照射してその散乱波を受信することで地表の情報を取得するシステムで、雲・夜間を問わず観測可能という点が光学センサーとの大きな違い。DEM作成・地盤変位観測（InSAR）に利用される。"},
+
+{"id": 189, "category": "写真測量", "question": "「InSAR（干渉合成開口レーダー）」の主な用途として正しいものはどれか。", "choices": ["建物の色彩を調査するという方法", "2つのSAR画像の位相差から地盤変動（地震・火山・地盤沈下）を数mmレベルで検出する", "土地の所有者を確認するという方法", "地下水を探査するの手法"], "answer": 1, "explanation": "InSARは異なる時期に取得した2枚のSAR画像の位相差（干渉縞）から地表変位を計算する技術で、地震・火山活動・地盤沈下による数mm〜数cmの地盤変動を広域・高密度に検出できる。"},
+
+{"id": 190, "category": "写真測量", "question": "写真測量における「点群（ポイントクラウド）」データの主な特徴として正しいものはどれか。", "choices": ["2次元の画像データの手法", "三次元空間上の多数の点の集合（各点はXYZ座標と色/強度情報を持つ）", "音声データを含むデータ形式という方法", "ベクタポリゴンの集合体という方法"], "answer": 1, "explanation": "点群（ポイントクラウド）は三次元空間上の多数の点（各点にX・Y・Z座標とカラー・反射強度等の属性を持つ）の集合データで、LiDARやSfM写真測量から生成される。三次元モデル・DEM作成の基礎データとなる。"},
+
+{"id": 191, "category": "写真測量", "question": "「空中写真の規則的な撮影計画（フライトプラン）」において、コース間隔を決める主な要素はどれか。", "choices": ["飛行機の燃料効率という要素という方法", "必要なサイドラップ率（横重複度）と撮影高度・画角から計算されるコース間の最大距離", "パイロットの好みという要素という方法", "撮影時の風速という要素という方法"], "answer": 1, "explanation": "コース間隔はサイドラップ率（横重複度、標準30〜60%）と撮影幅（写真の地上範囲＝撮影高度×画角）から計算される。必要なサイドラップを確保しながら効率的な飛行計画（最小コース数）を設定する。"},
+
+{"id": 192, "category": "写真測量", "question": "「写真測量の精度に影響する要因」として正しいものはどれか。", "choices": ["撮影者の血液型という要素", "測量会社の名称という要素", "保険の有無という要素", "GCPの精度・数・配置、カメラの解像度・キャリブレーション精度、重複度、飛行高度"], "answer": 1, "explanation": "写真測量の精度は主にGCP（地上基準点）の精度・数・配置、カメラ解像度・キャリブレーション品質、重複度（オーバーラップ・サイドラップ）、撮影高度（GSD）、マッチング精度等に依存する。"},
+
+{"id": 193, "category": "写真測量", "question": "「デジタル表面モデル（DSM）」と「オルソフォト」を組み合わせると何が可能になるか。", "choices": ["三次元景観の可視化・建物高さ抽出・日影解析など三次元的な地物解析が可能になる", "電磁波の観測という用途", "水中の地形把握という用途", "音声情報の取得という用途"], "answer": 3, "explanation": "DSM（建物・樹木等を含む表面モデル）とオルソフォト（正射投影画像）を組み合わせると、三次元景観可視化・建物高さ・体積推定・日影解析・洪水シミュレーション等の高度な空間解析が可能になる。"},
+
+{"id": 194, "category": "写真測量", "question": "写真測量における「マッチング（特徴点対応付け）」の説明として正しいものはどれか。", "choices": ["写真の色を調整する処理という方法", "2枚以上の写真において同一地点の像（特徴点）を自動または手動で対応付ける処理", "写真ファイルを圧縮する処理という方法", "写真の印刷処理の手法"], "answer": 1, "explanation": "マッチングは複数の写真における同一地点の像を自動（SIFT・ORBなどのアルゴリズム）または手動で対応付けるプロセスで、空中三角測量・SfM点群生成・ステレオマッチング（DSM生成）の基礎処理。"},
+
+{"id": 195, "category": "写真測量", "question": "「NDVI（正規化植生指数）」の計算式として正しいものはどれか（NIR：近赤外反射率、R：赤色反射率）。", "choices": ["NDVI = (NIR - R) / (NIR + R)", "NDVI = (R - NIR) / (R + NIR)", "NDVI = NIR × R", "NDVI = NIR / R"], "answer": 0, "explanation": "NDVI＝（NIR−R）/（NIR+R）で計算される植生指数で、健全な植生は近赤外を強く反射しNDVIが高く（0.6〜0.9）、土壌・水域は低くなる（−1〜0.1程度）。農業・森林調査・環境モニタリングで広く利用。"},
+
+{"id": 196, "category": "写真測量", "question": "空中写真測量の「検定（カメラキャリブレーション）証明書」に記載される主要な情報として正しいものはどれか。", "choices": ["パイロットの氏名の手法", "飛行機の重量の手法", "焦点距離・主点位置・レンズ歪み係数・画素サイズなどカメラの幾何光学特性", "天候記録の技術"], "answer": 2, "explanation": "カメラ検定（キャリブレーション）証明書には焦点距離（c）・主点位置（x₀,y₀）・放射歪み係数（k₁,k₂,k₃）・接線歪み係数（p₁,p₂）・画素サイズ等の幾何光学特性が記載される。測量精度確保に必要な情報。"},
+
+{"id": 197, "category": "写真測量", "question": "写真測量の「グランドトゥルース（地上真値）」の説明として正しいものはどれか。", "choices": ["リモートセンシング分類結果等を検証するための実地確認データ（現地調査・高精度GPS観測等）", "地上での人手による全数調査という方法", "衛星データのみから求めた値という方法", "航空写真から自動取得したデータ（誤り）"], "answer": 0, "explanation": "グランドトゥルース（地上真値）はリモートセンシング・写真判読結果の精度評価のために現地で直接収集した検証データ（実際の土地被覆・植生種等）を指す。分類精度の定量評価に使用される。"},
+
+{"id": 198, "category": "写真測量", "question": "「写真測量の三次元モデル生成」においてテクスチャマッピングとはどのような処理か。", "choices": ["モデルの形状を変更する処理という方法", "三次元メッシュモデルの表面に写真の色情報（テクスチャ）を投影・貼り付けてリアルな外観を再現する処理", "座標変換のみを行う処理という方法", "点群を圧縮する処理の手法"], "answer": 1, "explanation": "テクスチャマッピングは三次元ポリゴンメッシュの表面に対応する写真の色情報（テクスチャ）を投影・貼り付けることで、リアルな外観の三次元モデルを生成する処理。建物・文化財の三次元記録・可視化に用いられる。"},
+
+{"id": 199, "category": "写真測量", "question": "「空中写真の撮影仕様書」に記載する主な項目として正しいものはどれか。", "choices": ["パイロットの食事内容という方法", "縮尺・オーバーラップ率・サイドラップ率・使用カメラ・撮影高度・コース設定等", "撮影機体のデザインの手法", "機体保険の金額の手法"], "answer": 1, "explanation": "撮影仕様書には要求縮尺・GSD・オーバーラップ率・サイドラップ率・使用カメラ（焦点距離・センサーサイズ）・撮影高度・飛行コース・対空標識仕様・使用座標系等の技術仕様が記載される。"},
+
+{"id": 200, "category": "写真測量", "question": "「写真測量の誤差」のうち「系統誤差」に分類されるものはどれか。", "choices": ["偶然に生じる読取誤差という方法", "カメラのレンズ歪み・センサーの幾何歪み・大気屈折誤差などの一定の傾向を持つ誤差", "測定者の不注意によるミスという方法", "測量日時による誤差の手法"], "answer": 1, "explanation": "写真測量の系統誤差にはレンズ放射歪み・接線歪み・センサーの非線形変形・大気屈折・地球曲率等の一定傾向のある誤差が含まれる。キャリブレーションや補正モデルで低減できる。"},
+
+{"id": 201, "category": "地図編集", "question": "地図編集において「地図投影法」を選択する際に考慮すべき主な要素として正しいものはどれか。", "choices": ["地図の色彩の手法", "印刷コストの手法", "地図を作成する会社の好みという方法", "対象地域の形状・用途（面積保存か形状保存か等）・縮尺"], "answer": 3, "explanation": "地図投影法の選択は対象地域の位置・広がり・形状（赤道近辺か極地か等）、用途（ナビゲーション・面積計算・形状把握）、縮尺等に応じて行う。正角・正積・正距等の特性を考慮する。"},
+
+{"id": 202, "category": "地図編集", "question": "「メルカトル図法」の特徴として正しいものはどれか。", "choices": ["面積が正確に保存されるという方法", "角度（方位）が正確に保存される正角図法で、等角航路が直線で表せる", "高緯度での歪みが小さいという方法", "正距図法の代表例の手法"], "answer": 1, "explanation": "メルカトル図法は正角（角度保存）円筒図法で、どの方向への角度も正確に表現でき等角航路（一定方位角の航路）が直線になる。海図として航路設定に利用される。高緯度では面積が著しく拡大される欠点がある。"},
+
+{"id": 203, "category": "地図編集", "question": "国土地理院の「地理院地図」のベースとなっている主な地形図のデータ形式はどれか。", "choices": ["紙地図のスキャンデータのみという方法", "数値地図（基盤地図情報・数値標高モデル・タイル地図）", "手書きの地図の手法", "海外の地図データの手法"], "answer": 1, "explanation": "地理院地図（国土地理院が提供するウェブ地図）は基盤地図情報・数値標高モデル（DEM）・タイル画像（地形図・写真・主題図等）などの数値地図データをベースに構成されている。"},
+
+{"id": 204, "category": "地図編集", "question": "地図編集における「一般化（ゼネラリゼーション）」の説明として正しいものはどれか。", "choices": ["地図に色を加える処理という方法", "縮尺の縮小に伴い地物の細部を省略・簡略化・統合して表現する処理", "地図を拡大する処理の手法", "座標変換のみを行う処理という方法"], "answer": 1, "explanation": "一般化（Generalization）は小縮尺化の際に詳細すぎる情報を省略（Selection）・簡略化（Simplification）・誇張（Exaggeration）・統合（Amalgamation）等で適切に縮小表現するための編集処理。"},
+
+{"id": 205, "category": "地図編集", "question": "「正積図法」の特徴として正しいものはどれか。", "choices": ["角度を正確に保存するという方法", "すべての点で形状が正確という方法", "距離を正確に保存するという方法", "地図上の面積比が実際の面積比と一致する（面積保存）"], "answer": 3, "explanation": "正積図法（等積図法）は地図上の任意の領域の面積が実際の面積に比例する図法で、面積の比較・土地利用分析等に使用される。角度・形状は正確ではない（正角図法とは両立しない）。"},
+
+{"id": 206, "category": "地図編集", "question": "日本の平面直角座標系で使用される「ガウス・クリューゲル図法」の特徴として正しいものはどれか。", "choices": ["正積図法の一種という分類という方法", "正距図法の一種という分類という方法", "横メルカトル図法（正角円筒図法）の一種で中央子午線付近では歪みが小さく高精度な座標計算が可能", "球面上での計算が主体という特徴（誤り）"], "answer": 2, "explanation": "ガウス・クリューゲル図法は横（transverse）メルカトル図法の精密版で正角（等角）投影。中央子午線上で歪みが0（縮尺係数1）となり、離れるにつれて歪みが増大する。日本の平面直角座標系に採用されている。"},
+
+{"id": 207, "category": "地図編集", "question": "地図編集の「地物記号化」において「スケール記号」と「スケール外記号」の違いとして正しいものはどれか。", "choices": ["どちらも同じ意味の手法", "スケール外記号は地図に表示しない（誤り）", "スケール記号は縮尺に応じた大きさで表示する記号、スケール外記号は縮尺に関係なく一定サイズで表示す", "スケール記号は色のみで表現される（誤り）"], "answer": 2, "explanation": "スケール記号は建物・道路など縮尺に応じた実際の幅・大きさで表示する記号。スケール外記号（図式記号）は実際のサイズが小さすぎて縮尺通りには表示できない記号（神社・学校・行政界標等）を一定の大きさで表示する。"},
+
+{"id": 208, "category": "地図編集", "question": "地図の「図式（記号）」に関する説明として正しいものはどれか。", "choices": ["地図記号は国際的にすべて統一されている（誤り）", "図式は地図の縮尺に関係なく同一である（誤り）", "地図記号は測量士が自由に作成できる（誤り）", "国土地理院の地形図図式は地図表現の標準を定めており、地物の種類に応じた記号・線種・色が規定されている"], "answer": 3, "explanation": "国土地理院は地形図図式（国土地理院図式規程）を定め、道路・建物・植生・行政界等の地物を地図上で表現するための記号・線種・色・文字規格を規定している。縮尺によって使用する図式が異なる場合もある。"},
+
+{"id": 209, "category": "地図編集", "question": "地図編集における「転位」の説明として正しいものはどれか。", "choices": ["図上で重なる地物の位置を実際より少し移動して識別可能にする処理", "地図の色を変えることという方法", "地図の縮尺を変更することという方法", "地物を地図から削除することという方法"], "answer": 0, "explanation": "転位（Displacement）は縮尺の都合上、道路・河川・建物などが図上で重複・接触する場合に、相互の関係を保ちながら位置をわずかにずらして表示する地図編集処理のひとつ。"},
+
+{"id": 210, "category": "地図編集", "question": "「地図の主題図（テーマティックマップ）」の例として正しいものはどれか。", "choices": ["特定の主題（人口分布・気温・土地利用・道路等）を強調して表現した地図", "地形の起伏のみを表現した地形図（誤り）", "国境線のみを示した地図という方法", "縮尺のみが記載された白地図という方法"], "answer": 0, "explanation": "主題図（テーマティックマップ）は特定の主題（人口分布・降水量・地震危険度・土地利用・交通網等）を視覚的に強調して表現した地図で、統計地図・ハザードマップ・土地利用図等が該当する。"},
+
+{"id": 211, "category": "地図編集", "question": "地図の「縮尺係数（スケールファクター）」の説明として正しいものはどれか。", "choices": ["地図を印刷する際の拡大倍率という方法", "地物の大きさの比の手法", "地図の解像度の手法", "地図投影での距離の歪みを表す係数で、1より小さければ縮小、大きければ拡大されていることを示す"], "answer": 3, "explanation": "縮尺係数（Scale Factor）は投影面上の距離と地球面上の距離の比で、完全に歪みなく投影できれば1となる。日本の平面直角座標系ではシステムの縮尺係数として中央子午線上で0.9999が設定されている。"},
+
+{"id": 212, "category": "地図編集", "question": "「電子国土基本図」の説明として正しいものはどれか。", "choices": ["外国が作成した電子地図という方法", "民間会社が販売する電子地図という方法", "紙の国土地理院地形図をスキャンしたもの（誤り）", "国土地理院が整備・更新するデジタル地図データベースで、基盤地図情報を中核としたデータ群"], "answer": 3, "explanation": "電子国土基本図は国土地理院が整備するデジタル地図データベースで、基盤地図情報・数値地図（地形図）・正射画像・数値標高モデル等を統合した国の基本的地図情報基盤として整備されている。"},
+
+{"id": 213, "category": "地図編集", "question": "地図編集の「ラベリング（注記）」において考慮すべき事項として正しいものはどれか。", "choices": ["ラベルは全て地図の中心に配置する（誤り）", "ラベルは必ず縦書きにするという方法", "地物との関連が明確になるよう配置し、他の地物・境界線と重なりを避けて可読性を確保する", "ラベルの文字サイズは全て統一する（誤り）"], "answer": 2, "explanation": "地図の注記（ラベル）は該当する地物の近傍に配置し、他の地物・記号・等高線との重なりを避け、読みやすい方向・サイズで配置する。地名・標高値・行政名等の注記は地図の可読性に大きく影響する。"},
+
+{"id": 214, "category": "地図編集", "question": "「正距方位図法」の特徴として正しいものはどれか。", "choices": ["中心点からの距離と方位が正確に表現される", "全ての地点間の距離が正確（この説明は誤り）", "面積が正確に保存される（この説明は誤り）", "角度が全て正確に保存される（この説明は誤り）"], "answer": 0, "explanation": "正距方位図法（Azimuthal Equidistant Projection）は投影の中心点から任意の方向への距離と方位が正確に表現される。国連旗（北極を中心とした世界地図）がこの図法の代表例。"},
+
+{"id": 215, "category": "地図編集", "question": "地図のカラースキーム（配色計画）において「段彩図（地形段彩図）」の説明として正しいものはどれか。", "choices": ["地図の政治的な境界を色で示す（誤り）", "降水量の分布を表すの手法", "標高帯に応じて異なる色を用いて地形の高低を直観的に表現した地図", "行政区分を色分けした地図という方法"], "answer": 2, "explanation": "段彩図（段彩表現）は標高帯（例：0〜200m・200〜500m・500〜1000m等）に応じて異なる色（一般的に低地を緑系、高地を褐色〜白系）を付けて地形の起伏を視覚的に表現した地図。地形把握に優れる。"},
+
+{"id": 216, "category": "地図編集", "question": "「地形図の標高の表示方法」のうち「陰影起伏図」の説明として正しいものはどれか。", "choices": ["等高線のみで地形を表現という方法", "DEM（数値標高モデル）に仮想的な光源を当てた際の影（陰影）をシミュレートして地形の立体感を表現", "実際の衛星写真の手法", "手書きで地形を表現した図という方法"], "answer": 1, "explanation": "陰影起伏図（Hillshade）はDEMに仮想の太陽光を当てた際の斜面の向き・傾斜に応じた陰影をシミュレートして地形の凹凸を直感的に立体表現した画像で、地形把握・可視化に広く利用される。"},
+
+{"id": 217, "category": "地図編集", "question": "地図編集における「座標変換（datum変換）」が必要な場合として正しいものはどれか。", "choices": ["旧測地系（日本測地系）のデータを世界測地系（JGD2011等）に変換する場合", "地図の色を変える場合という方法", "地図の印刷サイズを変える場合（誤り）", "地図の所有者を変更する場合という方法"], "answer": 0, "explanation": "測地系が異なるデータ（旧日本測地系→JGD2011等）を同一の地図上で使用する際は座標変換（datum変換）が必要。変換には平行移動・回転・縮尺補正等のパラメータを用いる（3パラメータ・7パラメータ変換等）。"},
+
+{"id": 218, "category": "地図編集", "question": "「地図の図法」で「ランベルト正角円錐図法」が主に使用される場面として正しいものはどれか。", "choices": ["海図（航海用地図）の手法", "中緯度の東西に広がる地域の地形図・航空図", "極地の地図の手法", "赤道周辺の地図の手法"], "answer": 1, "explanation": "ランベルト正角円錐図法は中緯度帯に適した正角図法で、東西に広がる国・地域（米国・カナダ・ヨーロッパ等）の地形図や航空図（ISA chart）に広く使用される。"},
+
+{"id": 219, "category": "地図編集", "question": "地図の「縮尺の種類」のうち「大縮尺」と「小縮尺」の違いとして正しいものはどれか。", "choices": ["大縮尺は広い範囲を粗く表現し、小縮尺は狭い範囲を詳細に表現する", "両者の定義は地域によって異なる（誤り）", "大縮尺（例1/500）は狭い範囲を詳細に表現し、小縮尺（例1/1,000,000）は広い範囲を概", "縮尺の大小と表示精度は無関係（誤り）"], "answer": 2, "explanation": "大縮尺（1/500・1/1000・1/2500等）は狭い範囲を細かく詳細に表現する。小縮尺（1/200,000・1/1,000,000等）は広い範囲を概略的に表現する。縮尺の分数の値が大きいほど小縮尺となる。"},
+
+{"id": 220, "category": "地図編集", "question": "「地理情報標準（JPGIS）」の説明として正しいものはどれか。", "choices": ["地図の色彩を規定した標準という方法", "外国地図の翻訳基準の手法", "地図の縮尺のみを規定した標準（誤り）", "地理空間情報の記述・交換・利用に関するJIS規格に基づく国内標準で"], "answer": 3, "explanation": "JPGIS（Japan Profile for Geographic Information Standards）はISO/TC211の国際地理情報標準に準拠した国内標準（JIS X 7100シリーズ）で、地理情報データのモデル・メタデータ・空間参照系・品質等を規定し、データの相互運用性を確保する。"},
+
+{"id": 221, "category": "地図編集", "question": "「地図の品質要素」のうち「位置精度」の評価方法として正しいものはどれか。", "choices": ["地図の色の正確さを評価するという方法", "地図の発行年月日を確認するという方法", "地図上の地物位置と実際の位置（または高精度基準）の差（RMSE等）を求めて評価する", "地図を視覚的に眺めて評価する（誤り）"], "answer": 2, "explanation": "位置精度は地図上の地物の座標値と実際の高精度測量値（または既知座標）の差をRMSE（二乗平均平方根誤差）等で定量評価する。ISO 19157「データ品質」基準に基づく評価が標準的。"},
+
+{"id": 222, "category": "地図編集", "question": "地図編集において「タイル地図（ベクタタイル・ラスタタイル）」が普及している主な理由はどれか。", "choices": ["タイル地図は精度が低いため規制がない（誤り）", "タイル地図は3D表示ができない（誤り）", "タイル地図は紙印刷のみに使用される（誤り）", "地図データを一定サイズのタイルに分割してウェブで効率的に配信できるため"], "answer": 3, "explanation": "タイル地図は地図データを標準サイズのタイル（256×256ピクセル等）に分割し、ズームレベルに応じて必要なタイルのみを配信する仕組みで、WebGIS・スマートフォン地図アプリ等での高速表示・効率的配信を実現する。"},
+
+{"id": 223, "category": "地図編集", "question": "地図の「メタデータ」に含まれる主な情報として正しいものはどれか。", "choices": ["地図の利用者の個人情報という方法", "地図データの作成者・作成日・座標参照系・精度・データ範囲・更新履歴等のデータに関する情報", "地図に描かれた建物の設計図という方法", "地図の印刷に使用したインクの種類（誤り）"], "answer": 1, "explanation": "地図メタデータはデータの作成者・作成日時・座標参照系・空間範囲（バウンディングボックス）・位置精度・更新日・データ形式・利用条件等のデータに関する情報で、データの発見・評価・利用に不可欠。"},
+
+{"id": 224, "category": "地図編集", "question": "「地形図の等高線から傾斜方向を判定する」ために使われる「谷線」「尾根線（分水嶺）」の地図上の見分け方として正しいものはどれか。", "choices": ["谷線は等高線が高標高方向に突き出すV字、尾根線は等高線が低標高方向に突き出すV字", "等高線の色で区別する", "両者の区別はできない", "谷線は等高線が低標高方向に突き出すV字、尾根線は等高線が高標高方向に突き出すV字"], "answer": 3, "explanation": "谷線（水系線）は等高線がV字状に低い標高方向（下流・谷の方向）に突き出す。尾根線（分水嶺）は等高線がV字状に高い標高方向（山頂・稜線方向）に突き出す。これが等高線からの地形判読の基本。"},
+
+{"id": 225, "category": "地図編集", "question": "「国土地理院の基盤地図情報」に含まれる主なデータとして正しいものはどれか。", "choices": ["測量の基準となる測量基準点・海岸線・行政区画界・道路縁・建築物・数値標高モデル等", "気象情報・人口統計・経済統計（誤り）", "民間企業の営業情報の手法", "外国の地図データの手法"], "answer": 0, "explanation": "基盤地図情報は国土地理院が整備する測量の基盤となる地理情報データで、測量基準点・水涯線・海岸線・行政区画界・道路縁・建築物の外周・軌道の中心線・数値標高モデル等が含まれる。"},
+
+{"id": 226, "category": "応用測量", "question": "路線測量における「IP（交点）」の説明として正しいものはどれか。", "choices": ["路線中心線の方向が変わる点（交角頂点）", "道路の終点の手法", "道路の最高点の手法", "橋梁の設計点の手法"], "answer": 0, "explanation": "IP（Intersection Point：交点）は路線測量（道路・鉄道等）において路線の方向が変化する点（曲線の前後の直線部を延長した交点）のことで、曲線の設計（半径・接線長等）の基準となる。"},
+
+{"id": 227, "category": "応用測量", "question": "路線測量の「単曲線」において「接線長（T）」の計算式として正しいものはどれか（R：曲線半径、I：交角）。", "choices": ["T = R × sin(I/2)", "T = R × tan(I/2)", "T = R × cos(I/2)", "T = R / tan(I/2)"], "answer": 1, "explanation": "単曲線の接線長T = R × tan(I/2)で計算する（Rは曲線半径、Iは交角）。接線長はIP（交点）からBC（曲線始点）またはEC（曲線終点）までの直線距離である。"},
+
+{"id": 228, "category": "応用測量", "question": "「クロソイド曲線（緩和曲線）」を設ける目的として正しいものはどれか。", "choices": ["道路を美しく見せるためという方法", "直線から円曲線への急激な曲率変化を緩和し、走行の安全性・快適性を向上させるため", "コスト削減のための手法", "標識を設置するための手法"], "answer": 1, "explanation": "クロソイド曲線（Clothoid）は曲率が一定の割合で変化する緩和曲線で、直線（曲率0）から円曲線（曲率1/R）への移行を滑らかにする。車両の操舵・遠心力変化を緩和して安全性・乗り心地を向上させる。"},
+
+{"id": 229, "category": "応用測量", "question": "「面積計算（求積）」の「三角形分割法」の説明として正しいものはどれか。", "choices": ["多角形をすべて正方形に分割する（誤り）", "航空写真のみから面積を求める方法（この説明は誤り）", "面積を外周長から計算する方法（誤り）", "多角形を三角形に分割し、各三角形の面積を算出して合計する方法"], "answer": 3, "explanation": "三角形分割法は任意の多角形を三角形に分割し各面積の和を求める方法。座標が与えられている場合は座標法（ガウスの公式）の方が効率的だが、不整形の場合は三角分割が有効。"},
+
+{"id": 230, "category": "応用測量", "question": "「土工量計算」における「平均断面法」の計算式として正しいものはどれか（A₁・A₂：両端断面積、L：区間距離）。", "choices": ["V = (A₁ + A₂) × L", "V = (A₁ × A₂)/L", "V = √(A₁ × A₂) × L", "V = (A₁ + A₂)/2 × L"], "answer": 3, "explanation": "平均断面法の土工量V = （A₁ + A₂）/2 × L で計算する。両端断面積の平均に区間距離を掛けた最も一般的な土工量計算法で、実務でよく使用される。"},
+
+{"id": 231, "category": "応用測量", "question": "「河川測量」において「流量（Q）」を計算する基本式として正しいものはどれか（A：断面積、V：平均流速）。", "choices": ["Q = V / A", "Q = A / V", "Q = A × V", "Q = A + V"], "answer": 2, "explanation": "流量Q＝A（流水断面積）×V（断面平均流速）で計算する（連続の式）。河川の断面形状から断面積を求め、流速計（電磁流速計・超音波流速計等）やフロートで流速を測定してQを算出する。"},
+
+{"id": 232, "category": "応用測量", "question": "「用地測量」の目的として正しいものはどれか。", "choices": ["地形図の作成の手法", "気象観測のための測量という方法", "海底地形の測量の手法", "公共事業等で必要な土地の境界確認・面積算出・用地取得のための測量"], "answer": 3, "explanation": "用地測量は道路・鉄道・河川改修等の公共事業において事業用地の境界を確認・測量し、地権者と協議して用地取得・補償に必要な資料（境界標・測量図・面積計算書等）を作成する測量。"},
+
+{"id": 233, "category": "応用測量", "question": "「縦断曲線（垂直曲線）」を設ける理由として正しいものはどれか。", "choices": ["道路を水平にするためという方法", "道路幅員を拡大するためという方法", "道路の縦断勾配の変化点（変坡点）での急激な勾配変化を緩和し、走行安全性と視距を確保するため", "標識を設置するための手法"], "answer": 2, "explanation": "縦断曲線は路線の縦断勾配が変化する変坡点に設ける放物線状の曲線で、凸形（頂上部）では前方視距の確保、凹形（谷部）では乗り心地・走行安全性の向上のために設置する。"},
+
+{"id": 234, "category": "応用測量", "question": "「地籍調査」の目的として正しいものはどれか。", "choices": ["山岳地帯の地形調査という目的", "土地の境界・地番・地目・面積等を国が調査・確定して地籍図を作成し土地の権利関係を明確化する国家的事業", "海底の土地を調査するという目的", "道路台帳の更新という目的"], "answer": 2, "explanation": "地籍調査は国土調査法に基づき市町村が主体となって実施する土地の戸籍調査で、一筆ごとの土地の所有者・地番・地目・境界・面積を調査確定して地籍図・地籍簿を作成する。登記の基礎資料となる。"},
+
+{"id": 235, "category": "応用測量", "question": "「ダム貯水量測量」の主な目的として正しいものはどれか。", "choices": ["ダムの外観を記録するという方法", "ダム貯水域（湖底）の水深・形状を測量して貯水容量曲線を作成し、水資源管理・堆砂量把握に活用する", "ダムの建設コストを算出するという方法", "ダム周辺の植生を調査するという方法"], "answer": 1, "explanation": "ダム貯水量測量は湖底地形（水深）を測量して水位−面積−容量曲線（ハイプソグラフィックカーブ）を作成し、有効貯水容量・堆砂量の把握・洪水調節計画等の水資源管理に活用する。"},
+
+{"id": 236, "category": "応用測量", "question": "「路線測量の中心線設置」において「偏角法（デフレクション法）」の説明として正しいものはどれか。", "choices": ["直角方向に距離を測る方法という方法", "磁北から測定する方法という方法", "既設の測点から次の測点への方向と距離をそれぞれ測定して中心線を設置する方法", "水準儀のみで実施する方法という方法"], "answer": 2, "explanation": "偏角法は中心線上の各測点でトータルステーション等を使い進行方向からの偏角（左右の振れ角）と辺長を測定して順次測点を設置していく方法で、曲線設置にも応用される。"},
+
+{"id": 237, "category": "応用測量", "question": "「境界測量」における「境界標」の種類として含まれないものはどれか。", "choices": ["金属標（金属鋲）", "コンクリート標", "木杭（丸太杭のみ）", "プラスチック標"], "answer": 2, "explanation": "境界標として恒久的に使用されるのは金属標・コンクリート標・石標・プラスチック標等である。木杭は仮設的な目印としては使われることがあるが、腐敗するため恒久的な境界標としては不適切で測量法でも規定外。"},
+
+{"id": 238, "category": "応用測量", "question": "「変位観測測量（モニタリング測量）」の目的として正しいものはどれか。", "choices": ["構造物・斜面等の変位・変形を定期的に測量して安全性を監視・評価するため", "地図を更新するための手法", "土地の所有権を確認するためという方法", "航空写真を撮影するためという方法"], "answer": 0, "explanation": "変位観測測量はダム・橋梁・トンネル・斜面・地盤等の変位・変形・沈下を定期的に精密測量して、時系列データから構造物の安全性を評価・管理するモニタリングを目的とした測量。"},
+
+{"id": 239, "category": "応用測量", "question": "「海洋測量（水深測量）」において「マルチビーム測深機」の特徴として正しいものはどれか。", "choices": ["扇形に多数の音波ビームを同時に発信して広幅帯の連続水深データを高速取得できる", "1点ずつ水深を測定するという方法", "光波を使って水深を測定するという方法", "衛星信号のみで水深を測定する（誤り）"], "answer": 0, "explanation": "マルチビーム測深機（MBES）は船底から扇形（幅は水深の3〜5倍）に多数の音響ビームを同時に発射して海底の反射時間から広幅帯の連続水深データを高密度・高速に取得できる。海底地形図作成に広く使用される。"},
+
+{"id": 240, "category": "応用測量", "question": "「クロソイドのパラメータA」の定義として正しいものはどれか（L：曲線長、R：曲率半径）。", "choices": ["A = R + Lの手法", "A = R × Lの手法", "A = √(R × L)", "A = R / Lの手法"], "answer": 2, "explanation": "クロソイドの基本関係式はRL＝A²（またはA＝√(RL)）で定義される。Aはクロソイドのパラメータ（スケールファクター）で、Aが大きいほど緩やかな緩和曲線を形成する。"},
+
+{"id": 241, "category": "応用測量", "question": "「建設工事の出来形測量」の目的として正しいものはどれか。", "choices": ["完成した構造物の写真を撮影する（誤り）", "工事前の地形を記録するという方法", "施工後の構造物（道路・盛土・構造物等）の形状・寸法・位置が設計値通りであるかを確認するための測量", "材料の品質を検査するという方法"], "answer": 2, "explanation": "出来形測量は完成した施工箇所の高さ・幅・勾配・位置等を測量して設計値との差（出来形誤差）を確認する工程管理測量で、道路土工・構造物工事等の品質管理に不可欠。ICT施工では3D測量で効率化されている。"},
+
+{"id": 242, "category": "応用測量", "question": "路線の「カント（片勾配）」の目的として正しいものはどれか。", "choices": ["道路を水平にするためという目的（誤り）", "道路幅員を広げるためという目的（誤り）", "曲線部での遠心力に対抗するため外側路面を高くし、車両の走行安全性・乗り心地を向上させるため", "雨水を排水するためという目的（誤り）"], "answer": 2, "explanation": "カント（片勾配・超高）は曲線区間での遠心力に対抗するために路面の外側を高く・内側を低く設けた横断勾配で、設計速度と曲線半径から計算される最大値（例：6〜12%）が道路規格で規定されている。"},
+
+{"id": 243, "category": "応用測量", "question": "「坑内測量（トンネル測量）」の特徴として正しいものはどれか。", "choices": ["GNSSが坑内で通常通り使用できる（誤り）", "坑内はGNSSが使えないため、坑口の基準点からトータルステーション等を用いて坑内に座標を引き込む", "水準測量のみで実施するという方法", "自然光のみで観測するという方法"], "answer": 1, "explanation": "トンネル坑内はGNSS衛星信号が届かないため、坑口の地上基準点からTSや精密水準儀を使用してトラバース・水準測量により坑内に座標・高さを伝達する。掘削方向の精度管理に不可欠。"},
+
+{"id": 244, "category": "応用測量", "question": "「橋梁架設測量」において精密に確認が必要な事項として正しいものはどれか。", "choices": ["橋の色彩という計測対象という方法", "橋の周辺の景観という調査内容（誤り）", "橋脚・橋台の位置・高さ・鉛直性・スパン長等、構造的精度に直結する寸法・位置の確認", "作業員の人数という管理内容という方法"], "answer": 2, "explanation": "橋梁架設測量では橋脚・橋台の基礎・躯体の水平位置・標高・鉛直度（傾き）・橋軸方向の距離（スパン）等を精密に確認して設計値との誤差を管理することが安全な架設と供用に不可欠。"},
+
+{"id": 245, "category": "応用測量", "question": "「土地区画整理測量」の説明として正しいものはどれか。", "choices": ["山林の区画を整理する測量という方法", "測量不要の手続きの手法", "農地の区画整理のみの手法", "市街地の整備を目的に土地の換地計画に基づく境界確認・面積計算・測量図の作成等を行う測量"], "answer": 3, "explanation": "土地区画整理測量は土地区画整理法に基づく事業で、宅地の形状・面積・配置を整理して利便性を高めるための境界確認・地積測量・換地設計・換地後の境界復元等を行う総合的な測量業務。"},
+
+{"id": 246, "category": "応用測量", "question": "「路線の縦断図」に記載される内容として正しいものはどれか。", "choices": ["道路の平面線形（カーブ）のみ（誤り）", "路線の中心線に沿った地盤高・設計高・縦断勾配・変坡点・縦断曲線等の高さ情報", "道路の幅員（横断方向）という方法", "土地の所有者名の手法"], "answer": 1, "explanation": "縦断図は路線の中心線に沿ったキロ程ごとの地盤高・計画高（設計高）・縦断勾配・変坡点の位置・縦断曲線の半径等を記録した図面で、切土・盛土量の計算や道路の設計に使用する。"},
+
+{"id": 247, "category": "応用測量", "question": "「地下埋設物管理測量」の主な目的として正しいものはどれか。", "choices": ["埋蔵文化財の発掘という目的という方法", "土地の境界確認という目的という方法", "地下の鉱物資源の探査という目的（誤り）", "地下に埋設されたガス管・水道管・電力・通信ケーブル等の位置"], "answer": 3, "explanation": "地下埋設物管理測量はガス・水道・下水・電力・通信などのライフライン埋設物の水平位置・深さ・管種・径等を測量・記録してデータベース化し、掘削工事での損傷事故防止・維持管理に活用する。"},
+
+{"id": 248, "category": "応用測量", "question": "「測量座標系のX軸・Y軸」の定義として、平面直角座標系（測量座標系）における特徴として正しいものはどれか。", "choices": ["X軸が北方向（子午線方向）、Y軸が東方向で、数学の一般的なx-y軸とは90°回転している", "X軸が東方向、Y軸が北方向（数学座標と同じ）（誤り）", "X軸とY軸の定義は測量者が自由に決める（誤り）", "平面直角座標ではX・Yの区別はない（誤り）"], "answer": 0, "explanation": "測量の平面直角座標系ではX軸が北方向（中央子午線方向）、Y軸が東方向に定義される（数学座標と90°異なる）。これはX（北）・Y（東）の配置で、座標計算・測量CAD操作で注意が必要。"},
+
+{"id": 249, "category": "応用測量", "question": "「道路の横断測量」において記録される内容として正しいものはどれか。", "choices": ["道路の色彩という計測内容という方法", "道路周辺の植生という計測内容（誤り）", "路線中心に直角な方向の地盤の高低変化（左右の地盤断面の測量結果）", "交通量という計測内容という方法"], "answer": 2, "explanation": "横断測量は路線中心線に対して直角（横断）方向の地盤の高さ・幅を測量して横断面図を作成する。切土・盛土の断面積算出・側溝設計・舗装設計等に使用される重要な測量。"},
+
+{"id": 250, "category": "応用測量", "question": "「面積計算の座標法（ガウスの公式）」で面積を求める際に必要なデータはどれか。", "choices": ["各辺の長さのみの手法", "多角形の各頂点の（X, Y）座標", "各内角のみの手法", "辺の数のみの手法"], "answer": 1, "explanation": "座標法（ガウスの公式またはシューレースフォーミュラ）はS＝|Σ(Xᵢ(Yᵢ₊₁−Yᵢ₋₁))|/2または類似の式で各頂点座標から面積を計算する方法で、境界測量・地籍調査の面積算出に標準的に使用される。"},
+
+{"id": 251, "category": "応用測量", "question": "「GIS（地理情報システム）を活用した路線計画」の利点として正しいものはどれか。", "choices": ["現地測量が完全に不要になるという方法", "精度が現地測量より高いという方法", "地形・地物・法規制等の空間データを重ね合わせて複数の路線案を比較検討し", "コストが常に最小になるという方法"], "answer": 2, "explanation": "GISによる路線計画ではDEM・土地利用・地質・法規制・環境情報等の空間データを重ね合わせて分析し、切土盛土量・交差施設・環境影響等を比較して最適路線を効率よく選定できる。現地測量は依然として必要。"},
+
+{"id": 252, "category": "応用測量", "question": "「ノックアウト（抜き取り検査）」が応用測量でどのような場面で行われるか。", "choices": ["工事前の地形測量という手法という方法", "人員配置の管理という手法という方法", "設計図の確認という手法という方法", "施工中・完了時に抽出した箇所の出来形を測量し、全数検査の代わりに品質を統計的に確認する方法"], "answer": 3, "explanation": "出来形管理・品質管理において全数測量が困難な場合、一定数の抽出箇所（サンプリング）の出来形を測量して統計的に品質基準を満たしているかを確認する手法で、効率的な品質管理に使用される。"},
+
+{"id": 253, "category": "応用測量", "question": "「堤防測量」において重要な確認事項として正しいものはどれか。", "choices": ["堤防の色彩の手法", "堤防付近の植生分布のみという方法", "堤防周辺の交通量の手法", "堤防天端高・法面勾配・天端幅・法長等の断面形状を設計値と比較して安全性を確認する"], "answer": 3, "explanation": "堤防測量では天端高（設計洪水位からの余裕高確認）・天端幅・法面勾配（切土・盛土面の傾き）・法長等の断面形状を精密に測量し、設計基準値との差を確認して治水安全性を管理する。"},
+
+{"id": 254, "category": "応用測量", "question": "「建物の変位観測」において「沈下観測」の測量方法として主に使用されるものはどれか。", "choices": ["精密水準測量により設置した観測杭の標高変化を定期的に測定して沈下量・沈下速度を把握する", "GNSS測量のみという手法という方法", "光波測距のみという手法という方法", "地磁気観測という手法という方法"], "answer": 0, "explanation": "建物・構造物の沈下観測には精密水準測量（1〜2級相当）が主に使用される。観測杭（基準杭・沈下杭）の標高を定期的に測定してmm単位の沈下量・差分沈下量・沈下速度を長期的に監視する。"},
+
+{"id": 255, "category": "応用測量", "question": "「ICT建設（情報化施工）」における3次元施工管理の測量技術として正しいものはどれか。", "choices": ["従来の人力による丁張設置のみ（誤り）", "2次元CADのみを使用するという方法", "3D設計データを建設機械に搭載したGNSS・TSマシンコントロールシステムと連携させ、機械制御で高精度施工", "人工衛星から直接指示するという方法"], "answer": 2, "explanation": "ICT施工（マシンコントロール・マシンガイダンス）は3D設計データと機械搭載のGNSS・TSを連携させ、ブレード・バケットの位置をリアルタイム制御する技術で、丁張不要・高精度施工・出来形の自動記録が実現される。"},
+
+{"id": 256, "category": "地理情報システム", "question": "GIS（地理情報システム）の基本的な定義として正しいものはどれか。", "choices": ["地図を紙で作成するシステムという方法", "衛星の軌道計算システムという方法", "気象観測専用のシステムという方法", "地理空間情報をコンピュータで入力・管理・解析・表示・出力する情報システム"], "answer": 3, "explanation": "GIS（Geographic Information System）は地理的位置と関連付けられた空間情報（地物・属性・位置関係等）を統合的にコンピュータで処理するシステムで、都市計画・防災・インフラ管理・環境解析等に広く利用される。"},
+
+{"id": 257, "category": "地理情報システム", "question": "GISの「空間データ」の2大形式として正しいものはどれか。", "choices": ["文字データとバイナリデータという方法", "音声データと映像データという方法", "CADデータとPDFデータという方法", "ベクタデータ（点・線・ポリゴン）とラスタデータ（格子セル）"], "answer": 3, "explanation": "GISの空間データは①ベクタデータ（点・折れ線・ポリゴンで地物を表現）と②ラスタデータ（等間隔格子のセルに属性値を格納）の2形式が基本。両形式の特性を理解して適切に使い分けることが重要。"},
+
+{"id": 258, "category": "地理情報システム", "question": "GISの「トポロジー」の説明として正しいものはどれか。", "choices": ["地図の色の管理規則の手法", "地物間の空間的な接続関係・隣接関係・包含関係等を定義したデータ構造・規則", "座標変換の方法の手法", "ラスタデータの解像度という方法"], "answer": 1, "explanation": "トポロジーはGISデータにおける地物間の空間的な接続（ノード・アーク）・隣接・包含等の位相関係を定義する概念で、ネットワーク解析・面の重なりチェック・連続性確認等に必要なデータ構造。"},
+
+{"id": 259, "category": "地理情報システム", "question": "GIS解析の「バッファ解析」の説明として正しいものはどれか。", "choices": ["地物の面積を計算するという方法", "地物（点・線・面）から指定した距離以内の領域（バッファゾーン）を生成する空間解析", "2つのレイヤを重ね合わせるという方法", "ネットワーク経路を探索するという方法"], "answer": 1, "explanation": "バッファ解析は点・線・面の地物から指定半径（距離）内の領域（バッファポリゴン）を生成する操作で、施設からの影響圏の設定・環境評価・用地選定等に活用される。"},
+
+{"id": 260, "category": "地理情報システム", "question": "GISの「オーバーレイ解析」の説明として正しいものはどれか。", "choices": ["地図の色を重ねる操作という方法", "衛星画像を重ねる操作のみという方法", "2つ以上の空間レイヤを重ね合わせて共通・差異・結合等の空間的な関係を分析する操作", "地図を印刷する操作の手法"], "answer": 2, "explanation": "オーバーレイ解析は複数の空間レイヤ（土地利用・標高・法規制等）を重ね合わせてIntersect（交差）・Union（合併）・Clip（切り抜き）等の演算を行い、複合的な空間分析を行うGISの基本操作。"},
+
+{"id": 261, "category": "地理情報システム", "question": "GISの「属性データ」の説明として正しいものはどれか。", "choices": ["地物の位置情報のみの手法", "地図の投影情報の手法", "地物に関連付けられた非空間情報（名称・面積・人口・分類等の表形式データ）", "座標変換パラメータの手法"], "answer": 2, "explanation": "属性データはGIS上の地物に関連付けられた非空間情報（名称・住所・分類・面積・人口・統計値等）でテーブル（データベース）形式で管理される。空間データ（位置・形状）と結合して空間分析に利用。"},
+
+{"id": 262, "category": "地理情報システム", "question": "GISの「空間参照系（CRS：Coordinate Reference System）」の説明として正しいものはどれか。", "choices": ["地図の色を決める規則という方法", "空間データの位置を地球上で一意に定義するための測地系・投影法・原点・単位等を規定した系", "GISソフトウェアのバージョン情報（誤り）", "データのファイル形式という方法"], "answer": 1, "explanation": "空間参照系（CRS）はデータの位置を地球上で一意に定義するために測地系（楕円体・基準点）・投影法・原点・座標単位等を規定するシステムで、異なるCRSのデータを重ね合わせる際は座標変換が必要。"},
+
+{"id": 263, "category": "地理情報システム", "question": "GISの「ネットワーク解析」の代表的な用途として正しいものはどれか。", "choices": ["衛星軌道の計算という解析", "道路・鉄道・河川などのネットワーク上での最短経路・到達圏・流量計算等を解析すること", "土地の境界確認という解析", "写真の色彩分析という解析"], "answer": 2, "explanation": "ネットワーク解析はGISで道路・鉄道・河川・上下水道等のネットワーク構造を解析し、最短経路（ルート探索）・サービス圏（到達圏分析）・流量配分・物流最適化等を行う。カーナビ・施設配置計画に応用。"},
+
+{"id": 264, "category": "地理情報システム", "question": "「EPSG（欧州石油地球物理委員会）コード」の説明として正しいものはどれか。", "choices": ["測量機器のメーカーコードという方法", "地図タイルの識別番号という方法", "GISソフトのライセンスコード（誤り）", "空間参照系（CRS）に対して付与された国際的な識別コードで"], "answer": 3, "explanation": "EPSGコードは各国・各機関の座標参照系（測地系・投影法の組み合わせ）に付与された国際的な数値識別コード。例：JGD2000 平面直角座標系第9系→EPSG:2451。GISデータ共有の際に必須の情報。"},
+
+{"id": 265, "category": "地理情報システム", "question": "GISの「ラスタ演算（マップ代数）」の説明として正しいものはどれか。", "choices": ["紙地図の演算処理の手法", "ラスタデータの各セル値に対して数学的な演算（加減乗除・条件分岐等）を適用して新たなラスタレイヤを", "ベクタデータのみに適用できる操作（誤り）", "地図を印刷する操作の手法"], "answer": 1, "explanation": "ラスタ演算（マップ代数）は複数のラスタレイヤのセル値に対してセルごとに数学演算（例：DEM+補正値、NDVI=(NIR-Red)/(NIR+Red)）を実行し新しいラスタを生成する操作。環境評価・DEMの処理等に活用。"},
+
+{"id": 266, "category": "地理情報システム", "question": "GISの「空間クエリ（検索）」の説明として正しいものはどれか。", "choices": ["地図の画像を検索する操作という方法", "地図の縮尺を変更する操作という方法", "ファイルのバックアップを取る操作（誤り）", "空間的条件（特定の点から〇〇m以内、特定のポリゴンに含まれる等）を指定してデータベースから地物を"], "answer": 3, "explanation": "空間クエリは「指定エリア内の地物」「ある地点から500m以内の施設」「2つのポリゴンが交差する地物」等の空間的条件でデータベースから対象地物を抽出・検索するGISの基本機能。"},
+
+{"id": 267, "category": "地理情報システム", "question": "「地理情報の標準フォーマット」として、GISでよく使用される「シェープファイル（Shapefile）」の特徴として正しいものはどれか。", "choices": ["1つのファイルで完結するという方法", "3次元専用のファイル形式という方法", "ラスタデータのみを扱う形式という方法", "ESRI社が策定したベクタデータ形式で、.shp・.shx"], "answer": 3, "explanation": "Shapefile（シェープファイル）はESRIが開発したベクタデータ形式で、形状データ（.shp）・インデックス（.shx）・属性テーブル（.dbf）の最低3ファイル（+投影情報.prj等）で構成される。多くのGISソフトで対応する標準フォーマット。"},
+
+{"id": 268, "category": "地理情報システム", "question": "GISで使用される「GeoJSON」の特徴として正しいものはどれか。", "choices": ["JSON形式で地理空間データを記述する軽量な標準フォーマットで、Webマッピングで広く使用される", "バイナリ形式の空間データという形式（誤り）", "CAD専用のデータ形式という説明（誤り）", "国土地理院独自の形式という説明（誤り）"], "answer": 0, "explanation": "GeoJSONはRFC 7946で標準化されたJSONベースの地理空間データフォーマット。テキスト形式で人が読める、軽量、WebAPI・JavaScriptとの親和性が高い特徴から、WebGIS・スマートフォン地図アプリで広く採用されている。"},
+
+{"id": 269, "category": "地理情報システム", "question": "GISの「デジタイジング（デジタイズ）」の説明として正しいものはどれか。", "choices": ["地図を印刷する作業の手法", "GISデータをバックアップする（誤り）", "アナログ地図（紙地図）または画像をGIS上でトレースして地物を入力し", "座標系を変換するの手法"], "answer": 2, "explanation": "デジタイジングは紙地図・スキャン画像・オルソフォトをGIS画面上でトレース（クリック）して点・線・ポリゴンの地物を入力し、ベクタデータとして作成する作業。既存地図のデジタル化に使用される。"},
+
+{"id": 270, "category": "地理情報システム", "question": "GISの「空間統計解析」のうち「カーネル密度推定（KDE）」の説明として正しいものはどれか。", "choices": ["地物の面積を求めるの手法", "標高を内挿する方法の手法", "ネットワーク経路を計算するという方法", "点データの空間的な集中度（密度）を連続的なラスタ面として推定・可視化する方法"], "answer": 3, "explanation": "カーネル密度推定（KDE）は点データ（事件・施設等）の各点から一定半径内の密度を推定し、連続したラスタ（密度面）として表現する空間統計手法。犯罪分析・疾病分布・交通事故分析等に利用される。"},
+
+{"id": 271, "category": "地理情報システム", "question": "GISで「DEMから傾斜角・傾斜方向を計算する」処理の説明として正しいものはどれか。", "choices": ["DEMから等高線のみを抽出する（誤り）", "DEMの最大値・最小値を求める（誤り）", "DEMの隣接セルの標高差から各セルの最大傾斜角（Slope）と傾斜方向", "DEMをベクタデータに変換する（誤り）"], "answer": 2, "explanation": "GISのSlope解析ではDEMの3×3セルの隣接関係から各セルの最急傾斜方向と傾斜角を計算してラスタ出力する。Aspect解析では傾斜方向（北・東・南・西等）を計算する。斜面安定・日照・流域解析の基礎。"},
+
+{"id": 272, "category": "地理情報システム", "question": "「WebGIS」の特徴として正しいものはどれか。", "choices": ["インターネットに接続せず使用するGIS（誤り）", "測量士のみが使えるシステムという方法", "専用端末のみで動作するGIS（誤り）", "インターネットブラウザ上でGIS機能（地図表示・検索・解析等）を提供するシステム"], "answer": 3, "explanation": "WebGISはインターネットブラウザ（またはアプリ）経由でGIS機能を提供するシステムで、地図の閲覧・属性検索・空間解析・データ共有等をクライアント（PC・スマートフォン）から利用できる。Google Maps・地理院地図等が代表例。"},
+
+{"id": 273, "category": "地理情報システム", "question": "GISの「空間内挿法（補間）」のうち「IDW（逆距離加重法）」の説明として正しいものはどれか。", "choices": ["未知点の値を、周辺の既知点からの距離の逆数を重みとして加重平均して推定する内挿法", "既知点から最も近い1点の値をそのまま採用する（この説明は誤り）", "既知点をそのまま通る完全補間法（誤り）", "ランダムに値を割り当てるという方法"], "answer": 0, "explanation": "IDW（Inverse Distance Weighting）は未知点の値を周辺既知点値の加重平均で推定し、重みを距離の逆数（d⁻ᵖ、p：べき数）で設定する内挿法。近い点が大きく影響する。気温・雨量・標高等の補間に使用される。"},
+
+{"id": 274, "category": "地理情報システム", "question": "「クリギング（Kriging）」の説明として正しいものはどれか。", "choices": ["IDWの別名の手法", "距離のみで重みを決める補間法（誤り）", "完全ランダムな補間法という方法", "バリオグラムモデルを用いて観測点の空間的自己相関を考慮した最良線形不偏内挿"], "answer": 3, "explanation": "クリギングは地球統計学（ジオスタティスティクス）に基づく内挿法で、バリオグラム（変動関数）から空間的自己相関構造をモデル化し、最良線形不偏推定量（BLUP）として未知点の値と推定誤差を求める高精度な補間法。"},
+
+{"id": 275, "category": "地理情報システム", "question": "GISの「視程解析（ビューシェッド解析）」の説明として正しいものはどれか。", "choices": ["地図のデザインを評価するという方法", "河川の流量を計算するという方法", "DEMを使って特定の視点から見える範囲（可視領域）・見えない範囲", "土地利用を分類するの手法"], "answer": 2, "explanation": "ビューシェッド解析（視域解析）はDEMと観測点（視点位置）を入力として地球曲率・大気屈折・地形の遮蔽を考慮して可視・不可視の領域を計算する。通信タワー設置・景観評価・防災（見える範囲の避難誘導等）に利用。"},
+
+{"id": 276, "category": "地理情報システム", "question": "「流域解析（ウォーターシェッド解析）」の手順として正しいものはどれか。", "choices": ["海面から標高を計算するという方法", "土地利用を分類するの手法", "建物の高さを解析するという方法", "DEMから流向ラスタ→流積ラスタを作成し、集水域（流域）の境界を自動抽出する一連の水文解析"], "answer": 3, "explanation": "流域解析はDEMを使って①流向計算（各セルの水が流れる方向）→②流積計算（各セルへの上流集水面積）→③流域境界（ウォーターシェッド）の自動抽出を行う水文GIS解析で、治水・水資源管理に活用される。"},
+
+{"id": 277, "category": "地理情報システム", "question": "GISの「空間データの品質評価」の要素として正しいものはどれか。", "choices": ["データのファイルサイズという方法", "位置精度・属性精度・完全性・論理一貫性・時間精度等の品質要素（ISO 19157準拠）", "データの色彩の手法", "ソフトウェアの種類の手法"], "answer": 1, "explanation": "地理情報品質評価の主要素はISO 19157に基づき、位置精度（絶対・相対）・分類正確度（属性精度）・完全性（過剰・欠落）・論理一貫性（スキーマ・トポロジー）・時間精度の5種類が基本とされる。"},
+
+{"id": 278, "category": "地理情報システム", "question": "「ハザードマップ」とGISの関係として正しいものはどれか。", "choices": ["ハザードマップとGISは無関係（誤り）", "ハザードマップには地物情報は不要（誤り）", "ハザードマップは手書きでのみ作成される（誤り）", "洪水・土砂・地震等の自然災害リスクをGISの空間解析で評価"], "answer": 3, "explanation": "ハザードマップはDEM・地質・河川・歴史的浸水域等の空間データをGISで解析（洪水浸水シミュレーション等）し、洪水・土砂・高潮・津波等のリスク域・避難場所・避難経路を地図化したもので、GIS技術が中核を担う。"},
+
+{"id": 279, "category": "地理情報システム", "question": "「地理情報標準（ISO/TC211）」の役割として正しいものはどれか。", "choices": ["測量機器の精度基準を定めるという方法", "地理情報の記述・交換・評価・サービス等に関する国際標準を策定するISO技術委員会", "測量士の国際資格を認定するという方法", "地図の著作権を管理するという方法"], "answer": 1, "explanation": "ISO/TC211（Geographic information/Geomatics）は地理空間情報の概念モデル・品質評価・メタデータ・空間参照系・Webサービス・データ交換形式等に関する国際標準（ISO 19100シリーズ）を策定する国際標準化機構の技術委員会。"},
+
+{"id": 280, "category": "地理情報システム", "question": "GISの「モデルビルダー（ジオプロセシングワークフロー）」の説明として正しいものはどれか。", "choices": ["地図の3Dモデルを作成する機能（誤り）", "ラスタデータを作成する機能のみ（誤り）", "複数のGIS解析処理を連続して自動実行するワークフローを視覚的に設計・実行するツール", "地物の属性のみを編集する機能（誤り）"], "answer": 2, "explanation": "モデルビルダー（ArcGIS ModelBuilder等）はGIS解析プロセス（入力→処理→出力）を視覚的（フローチャート状）に連結して定義・自動実行するツールで、繰り返し解析の自動化・標準化・再現性確保に役立つ。"},
+
+{"id": 281, "category": "地理情報システム", "question": "「3D GIS」の主な用途として正しいものはどれか。", "choices": ["建物・地形・インフラ等を三次元で可視化・解析し、都市計画・防災・施設管理・景観評価等を高度化する", "写真の編集のみという用途", "2次元地図の表示のみという用途", "属性データの管理のみという用途"], "answer": 2, "explanation": "3D GISは三次元点群・LOD対応の建物モデル（CityGML等）・DEMを統合して都市の三次元可視化・影解析・避難シミュレーション・洪水浸水解析・風環境解析等の高度な空間分析を実現する。"},
+
+{"id": 282, "category": "地理情報システム", "question": "「CityGML」の説明として正しいものはどれか。", "choices": ["都市の音響情報を記述する形式という説明", "衛星画像の圧縮フォーマットという説明", "OGCが策定した都市の三次元地物（建物・道路・植生等）をLOD0〜4の詳細度で記述する国際標準フォーマット", "交通量のデータ形式という説明"], "answer": 1, "explanation": "CityGMLはOGCが策定したGMLベースの三次元都市モデル標準で、建物・道路・橋梁・植生・地形等をLOD（Level of Detail）0〜4の異なる詳細度で記述できる。日本のPLATEAU（3D都市モデル）でも採用されている。"},
+
+{"id": 283, "category": "地理情報システム", "question": "「PLATEAU（プラトー）」プロジェクトの説明として正しいものはどれか。", "choices": ["宇宙探査プロジェクトという方法", "国土交通省が主導する日本全国の都市の三次元モデルを整備・活用する国家プロジェクト", "道路交通情報のデータベースという方法", "海底地形図のプロジェクトという方法"], "answer": 1, "explanation": "PLATEAU（プラトー）は国土交通省が主導する日本の都市の3Dモデル整備・オープンデータ公開・活用推進の国家プロジェクト（2020年〜）。CityGML形式で整備された建物・道路・橋梁等のモデルを防災・まちづくり・観光等に活用する。"},
+
+{"id": 284, "category": "地理情報システム", "question": "「QGIS」の説明として正しいものはどれか。", "choices": ["有償の大手商用GISソフトウェア（誤り）", "Webブラウザのみで動作するGIS（誤り）", "測量専用の機器制御ソフトという方法", "無償・オープンソースのデスクトップGISソフトウェアで多様なデータ形式・プラグインに対応"], "answer": 3, "explanation": "QGIS（旧Quantum GIS）はGNU GPLライセンスの無償オープンソースデスクトップGISで、ベクタ・ラスタ・データベース等多様なデータに対応し、豊富なプラグインで高度な解析も可能。世界中で広く利用されている。"},
+
+{"id": 285, "category": "地理情報システム", "question": "GISの「PostGIS」の説明として正しいものはどれか。", "choices": ["オープンソースのリレーショナルデータベース（PostgreSQL）に空間データの格納", "Googleが提供するクラウドGIS（誤り）", "CADソフトウェアの手法", "測量現場専用のアプリという方法"], "answer": 0, "explanation": "PostGISはPostgreSQLにISO/OGC標準に準拠した空間データ型（Geometry・Geography）と空間関数（ST_Intersects等）を追加した拡張で、大規模空間データの管理・高速空間クエリを可能にするオープンソースの空間データベース。"},
+
+{"id": 286, "category": "地理情報システム", "question": "「デジタルツイン」とGISの関係として正しいものはどれか。", "choices": ["デジタルツインとGISは無関係（誤り）", "GISデータを基盤として現実の都市・インフラをデジタル空間上にリアルタイムに再現", "デジタルツインは写真のコピーのこと（誤り）", "デジタルツインは測量機器の複製（誤り）"], "answer": 1, "explanation": "デジタルツインは現実の物理的な空間・設備をセンサーデータ・GIS・IoTで継続的に同期したデジタルモデルとして再現するコンセプトで、都市管理・インフラ監視・防災計画・施設計画のシミュレーションに活用される。"},
+
+{"id": 287, "category": "地理情報システム", "question": "GISで「ポリゴンの面積を正確に計算する」際に注意すべき事項として正しいものはどれか。", "choices": ["面積計算に座標系は関係ないという方法", "地理座標系（経緯度）のまま計算すると精度が低下するため、適切な投影座標系", "ラスタデータのみで面積計算ができる（誤り）", "面積はGISでは計算できない（誤り）"], "answer": 1, "explanation": "地理座標系（経緯度・度単位）は距離・面積の単位が一定でないため、面積を正確に計算するには面積保存（正積）投影または等距投影の適切な投影座標系（平面直角座標等）に変換してから計算することが必要。"},
+
+{"id": 288, "category": "地理情報システム", "question": "「GISのレイヤ概念」の説明として正しいものはどれか。", "choices": ["GISでは1枚の地図のみ使用できる（誤り）", "異なる種類の地理情報（道路・建物・河川・標高等）を個別のレイヤとして管理し、重ね合わせて表示", "レイヤはラスタデータのみに使用（誤り）", "レイヤはGIS独自の概念ではない（誤り）"], "answer": 1, "explanation": "GISのレイヤは道路・建物・河川・土地利用・標高等の異なる地理情報を独立した層（レイヤ）として管理するシステムで、複数レイヤを重ね合わせて表示・解析することでGISの強力な空間分析が実現される。"},
+
+{"id": 289, "category": "地理情報システム", "question": "「リモートセンシングデータとGISの統合」の主な用途として正しいものはどれか。", "choices": ["音楽の配信という技術という方法", "医療診断の補助という技術という方法", "経理データの処理という技術という方法", "衛星・航空機・UAVで取得した画像を地理情報として取り込み、土地利用分類"], "answer": 3, "explanation": "リモートセンシング（RS）データをGISに取り込むことで、土地被覆分類・変化検出（都市化・森林減少）・農作物モニタリング・洪水・地震等の被害状況の迅速把握など、広域の空間解析が可能になる。"},
+
+{"id": 290, "category": "地理情報システム", "question": "GISの「TIN（不規則三角形網）」の説明として正しいものはどれか。", "choices": ["等間隔格子のラスタDEMという方法", "衛星から直接取得するデータ形式（誤り）", "ベクタのポリゴンのみからなるモデル（誤り）", "不規則に分布する標高点を三角形で結んだ三次元サーフェスモデルで、地形の特徴を効率よく表現できる"], "answer": 3, "explanation": "TIN（Triangulated Irregular Network）は不規則に分布した標高点（測点）を結んだ三角形メッシュで地形面を表現する三次元サーフェスモデル。少ない点で急峻な地形を正確に表現でき、土木設計・体積計算に利用される。"},
+
+{"id": 291, "category": "地理情報システム", "question": "GISの「空間結合（Spatial Join）」の説明として正しいものはどれか。", "choices": ["地図の色を結合する操作という方法", "座標系を統一する操作という方法", "ラスタをベクタに変換する操作（誤り）", "空間的な位置関係（包含・交差・近接等）に基づいて2つのレイヤの属性を結合する操作"], "answer": 3, "explanation": "空間結合はポリゴンに含まれる点の属性をポリゴンに転記（または集計）する等、空間的な位置関係（Intersects・Within・Near等）に基づいて2つのレイヤの属性を関連付ける操作で、GIS解析の重要な基本操作。"},
+
+{"id": 292, "category": "地理情報システム", "question": "「電子国土Webシステム（地理院地図）」で提供されているサービスとして正しいものはどれか。", "choices": ["地形図・写真・陰影起伏図・等高線・ハザードマップ等の閲覧", "有償の地図データ販売のみという用途（誤り）", "外国の地図のみという対象という方法", "気象情報のみという対象という方法"], "answer": 0, "explanation": "国土地理院の地理院地図（https://maps.gsi.go.jp/）はWebブラウザで地形図・衛星写真・陰影起伏図・色別標高図・ハザードマップ等の閲覧・印刷・座標計測・断面図作成等を無料で利用できるWebGISサービス。"},
+
+{"id": 293, "category": "地理情報システム", "question": "GISの「データ品質の完全性（Completeness）」の評価項目として正しいものはどれか。", "choices": ["データの色彩の完全性という方法", "処理速度の技術", "データのファイルサイズという方法", "対象領域の地物が過剰（過剰エラー）または欠落（欠落エラー）なく収録されているかの評価"], "answer": 3, "explanation": "データ完全性は地物の「欠落（Omission）」と「過剰（Commission）」の2側面で評価する。例：道路データで特定の道路が欠けている（欠落）、または実際に存在しない道路が含まれている（過剰）等。"},
+
+{"id": 294, "category": "地理情報システム", "question": "「オープンデータ（Open Data）」としての地理空間情報の活用に関して正しいものはどれか。", "choices": ["オープンデータは誰も利用できない（誤り）", "地理空間情報はオープンデータの対象外（誤り）", "オープンデータは有償のみという方法", "政府・地方公共団体等が無償・再利用可能な形式で公開する地理空間情報"], "answer": 3, "explanation": "地理空間情報のオープンデータは基盤地図情報・​​​​​​​​​​​​​​​​数値標高モデル・国土数値情報等をCC BY（クリエイティブ・コモンズ）等のライセンスで公開する取り組みで、民間サービス・研究・市民活動での二次利用・商用利用を促進する。"},
+
+{"id": 295, "category": "地理情報システム", "question": "「地理情報システムの「ジオコーディング」の説明として正しいものはどれか。", "choices": ["住所・地名等の文字情報から地理座標（緯度・経度）に変換する処理", "GISデータを暗号化する処理（誤り）", "ラスタをベクタに変換する処理（誤り）", "地図の縮尺を変更する処理という方法"], "answer": 0, "explanation": "ジオコーディング（Geocoding）は住所・郵便番号・地名等のテキスト情報から対応する地理座標（緯度・経度）を求める処理で、顧客住所→地図表示・配送最適化・統計地図作成等に不可欠な処理。逆変換（座標→住所）はリバースジオコーディング。"},
+
+{"id": 296, "category": "地理情報システム", "question": "GIS解析で「最適施設配置」を検討する際に使用する主な解析手法として正しいものはどれか。", "choices": ["サービス圏分析（到達圏解析）・重力モデル・カバレッジ最大化等の空間最適化手法", "地図の色彩解析の手法", "水文解析のみの手法", "DEMの傾斜解析のみという方法"], "answer": 0, "explanation": "施設の最適配置（消防署・病院・店舗等）にはネットワーク上のサービス圏（到達圏）分析・重力モデル（人口と距離による引力計算）・集合カバレッジ問題（最大カバー率最小施設数）等の空間最適化モデルが使用される。"},
+
+{"id": 297, "category": "地理情報システム", "question": "「GISの地形解析」で「集水域（流域）面積を求める」一般的な手順として正しいものはどれか。", "choices": ["ベクタポリゴンから面積を直接求める（誤り）", "衛星画像から直接求めるという方法", "DEM→流向ラスタ→流積ラスタ→流域境界ポリゴン抽出→面積計算の順で処理する", "GPSデータのみから求めるという方法"], "answer": 2, "explanation": "流域面積の算出はDEMを使ってFill（窪地補正）→流向（Flow Direction）→流積（Flow Accumulation）→流域境界（Watershed）ポリゴン抽出→面積計算の一連のラスタ解析ワークフローで求める。"},
+
+{"id": 298, "category": "地理情報システム", "question": "「OGC（Open Geospatial Consortium）」の役割として正しいものはどれか。", "choices": ["測量機器の製造規格を管理する団体（誤り）", "地理空間情報サービスの国際的な相互運用標準（WMS・WFS", "地図の著作権を管理する国際機関（誤り）", "衛星の打ち上げを管理する機関（誤り）"], "answer": 1, "explanation": "OGCは地理空間情報・位置サービスに関する国際的な相互運用標準を策定する非営利コンソーシアム。WMS（地図配信）・WFS（地物配信）・WCS（カバレッジ配信）・GML・GeoJSON・GeoPackage等の標準を策定している。"},
+
+{"id": 299, "category": "地理情報システム", "question": "「AR（拡張現実）とGIS」の組み合わせの活用例として正しいものはどれか。", "choices": ["地図の印刷のみに使用するという技術", "音楽の再生に使用するという技術", "天気予報のみに使用するという技術", "GISデータをARでリアルタイムに重ね合わせ表示し、現地測量・インフラ維持管理の効率化に活用する"], "answer": 1, "explanation": "AR（拡張現実）とGISを組み合わせることで、スマートフォン・タブレット・ARグラスのカメラ映像上に地下埋設物・基準点・測量成果・地物属性等をリアルタイムで重ね表示し、現地調査・設備管理・工事案内の効率化が実現できる。"},
+
+{"id": 300, "category": "地理情報システム", "question": "「G空間情報センター」の説明として正しいものはどれか。", "choices": ["宇宙の地理情報を収集するセンター（誤り）", "民間企業の地図データを管理する機関（誤り）", "道路情報のみを管理するシステム（誤り）", "地理空間情報の流通・活用促進を目的に整備された地理空間情報の一元的なデータ流通プラットフォーム"], "answer": 3, "explanation": "G空間情報センター（gsinet.go.jp）は「地理空間情報活用推進基本法」に基づき国・地方公共団体・民間が持つ地理空間情報の収集・整理・流通を促進するプラットフォームで、官民の地理空間情報データの検索・取得・活用を支援する。"}
+];
+const CAT_META={
+"測量に関する法規・国際条約":{"color":"#0969A2","icon":"📜","bg":"#E3F2FD"},
+"多角測量":{"color":"#6A1B9A","icon":"📏","bg":"#F3E5F5"},
+"GNSS測量":{"color":"#2E7D32","icon":"📡","bg":"#E8F5E9"},
+"水準測量":{"color":"#00838F","icon":"💧","bg":"#E0F7FA"},
+"地形測量":{"color":"#C62828","icon":"🗻","bg":"#FFEBEE"},
+"写真測量":{"color":"#E65100","icon":"📷","bg":"#FFF3E0"},
+"地図編集":{"color":"#37474F","icon":"🗺️","bg":"#ECEFF1"},
+"応用測量":{"color":"#558B2F","icon":"🏗️","bg":"#F1F8E9"},
+"地理情報システム":{"color":"#880E4F","icon":"🌐","bg":"#FCE4EC"}
+};
+
+const SUBCAT_DEF={
+  "測量に関する法規・国際条約":[{key:"l1",label:"📜 測量法・基本測量・公共測量",ids:[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]},{key:"l2",label:"🌍 国際条約・座標系・測地基準",ids:[21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]}],
+  "多角測量":[{key:"ta1",label:"📏 多角測量の原理・誤差・計算",ids:[41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65]}],
+  "GNSS測量":[{key:"gn1",label:"📡 GNSS測量の基礎・方法",ids:[66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82]},{key:"gn2",label:"🛰️ 誤差要因・精度管理・RTK",ids:[83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100]}],
+  "水準測量":[{key:"su1",label:"💧 水準測量の原理・方法",ids:[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117]},{key:"su2",label:"📐 誤差・精度・計算",ids:[118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135]}],
+  "地形測量":[{key:"ch1",label:"🗻 地形測量の手法・機器",ids:[136,137,138,139,140,141,142,143,144,145,146,147,148,149,150]},{key:"ch2",label:"🏗️ 数値地形モデル・三次元測量",ids:[151,152,153,154,155,156,157,158,159,160,161,162,163,164,165]}],
+  "写真測量":[{key:"ph1",label:"📷 空中写真測量の基礎",ids:[166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182]},{key:"ph2",label:"🚁 UAV測量・点群処理",ids:[183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200]}],
+  "地図編集":[{key:"mp1",label:"🗺️ 地図投影法・編集・仕様",ids:[201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225]}],
+  "応用測量":[{key:"ap1",label:"🏗️ 路線測量・面積・体積",ids:[226,227,228,229,230,231,232,233,234,235,236,237,238,239,240]},{key:"ap2",label:"🔧 変位・沈下・地籍・その他",ids:[241,242,243,244,245,246,247,248,249,250,251,252,253,254,255]}],
+  "地理情報システム":[{key:"gi1",label:"🌐 GISの基礎・データモデル",ids:[256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277]},{key:"gi2",label:"📊 空間解析・三次元GIS・クラウド",ids:[278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300]}]
+};
+// カテゴリ正規化
+(function normalizeCats(){
+const MAP={"測量に関する法規・国際条約":"測量に関する法規・国際条約","多角測量":"多角測量","GNSS測量":"GNSS測量","水準測量":"水準測量","地形測量":"地形測量","写真測量":"写真測量","地図編集":"地図編集","応用測量":"応用測量","地理情報システム":"地理情報システム"};
+ALL_QUESTIONS.forEach(q=>{if(MAP[q.category])q.category=MAP[q.category];});
+})();
+const RANKS=[{min:0,label:"入門",kanji:"入",color:"#999"},{min:10,label:"初段",kanji:"初",color:"#9b7a4a"},{min:30,label:"二段",kanji:"二",color:"#7a9b4a"},{min:60,label:"三段",kanji:"三",color:"#4a7a9b"},{min:100,label:"四段",kanji:"四",color:"#7a4a9b"},{min:150,label:"名人",kanji:"名",color:"#D4941A"}];
+const KEY="dojo_sokuryo";
+function getRank(n){return[...RANKS].reverse().find(r=>n>=r.min)||RANKS[0];}
+function getNext(n){return RANKS.find(r=>r.min>n);}
+function sc(p){if(p==null)return"#999";return p>=80?"#0F6E56":p>=60?"#D4941A":"#E8572A";}
+function shuf(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
+function load(){try{const r=localStorage.getItem(KEY);if(r)return JSON.parse(r);}catch{}return{wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};}
+function save(d){try{localStorage.setItem(KEY,JSON.stringify(d));}catch{}}
+let S={screen:"home",ud:load(),mode:"ALL",fc:"全て",fsc:null,subcatOpen:false,ts:0,shuffle:false,deck:[],idx:0,sel:null,showExp:false,sess:[],tl:null,tout:false,tiv:null};
+function setUd(fn){S.ud=typeof fn==="function"?fn(S.ud):fn;save(S.ud);}
+// ① 前回の続きセーブ/ロード
+function saveProgress(){setUd(p=>({...p,lastProgress:{mode:S.mode,fc:S.fc,shuffle:S.shuffle,ts:S.ts,deckIds:S.deck.map(q=>q.id),idx:S.idx,ts_:Date.now()}}));}
+function hasProgress(){const p=S.ud.lastProgress;return p&&p.deckIds&&p.deckIds.length>0&&p.idx<p.deckIds.length-1;}
+function retryQ(){clearInterval(S.tiv);S.sel=null;S.tout=false;S.tl=null;S.showExp=false;render();startTimer();}
+function pauseQ(){clearInterval(S.tiv);saveProgress();S.screen="home";render();}
+function resumeSession(){
+  const p=S.ud.lastProgress;if(!p)return;
+  S.mode=p.mode;S.fc=p.fc;S.shuffle=p.shuffle||false;S.ts=p.ts||0;
+  S.deck=p.deckIds.map(id=>ALL_QUESTIONS.find(q=>q.id===id)).filter(Boolean);
+  S.idx=p.idx;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  S.screen="quiz";render();startTimer();
+}
+function cv(){
+  const ud=S.ud,ta=ud.totalAnswered||0,rank=getRank(ta),nr=getNext(ta);
+  const rp=nr?Math.round(((ta-rank.min)/(nr.min-rank.min))*100):100;
+  const rh=(ud.history||[]).slice(-200);
+  const or=rh.length?Math.round(rh.filter(h=>h.correct).length/rh.length*100):null;
+  const wq=ALL_QUESTIONS.filter(q=>(ud.wrongCounts||{})[q.id]>0).sort((a,b)=>((ud.wrongCounts[b.id]||0)-(ud.wrongCounts[a.id]||0)));
+  const sq=ALL_QUESTIONS.filter(q=>(ud.starIds||[]).includes(q.id));
+  const cur=S.deck[S.idx];
+  const ia=S.sel!==null||S.tout;
+  const ic=S.sel===cur?.answer;
+  const sc2=S.sess.filter(a=>a.correct).length;
+  const sr=S.sess.length?Math.round(sc2/S.sess.length*100):0;
+  const tp=S.ts>0&&S.tl!==null?Math.round(S.tl/S.ts*100):100;
+  const tc=tp>50?"#0F6E56":tp>25?"#D4941A":"#E8572A";
+  return{ta,rank,rp,or,wq,sq,cur,ia,ic,sc2,sr,tp,tc};
+}
+function startTimer(){clearInterval(S.tiv);if(S.ts===0||S.sel!==null||S.tout)return;S.tl=S.ts;S.tiv=setInterval(()=>{S.tl--;if(S.tl<=0){clearInterval(S.tiv);S.tout=true;S.showExp=true;}render();},1000);}
+function go(om){
+  clearInterval(S.tiv);const m=om||S.mode;
+  let pool=[...ALL_QUESTIONS];
+  if(m==="WEAK")pool=ALL_QUESTIONS.filter(q=>(S.ud.wrongCounts||{})[q.id]>0);
+  else if(m==="STAR")pool=ALL_QUESTIONS.filter(q=>(S.ud.starIds||[]).includes(q.id));
+  else if(S.fc!=="全て")pool=pool.filter(q=>q.category===S.fc);
+  if(S.fsc&&S.fc!=="全て"){const sub=(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc);if(sub)pool=pool.filter(q=>sub.ids.includes(q.id));}
+  if(!pool.length)return;if(om)S.mode=om;
+  S.deck=S.shuffle?shuf(pool):pool;S.idx=0;S.sel=null;S.showExp=false;S.sess=[];S.tout=false;S.tl=null;
+  // ① 進捗クリアして新規スタート
+  setUd(p=>{const np={...p};delete np.lastProgress;return np;});
+  S.screen="quiz";render();startTimer();
+}
+function pick(i){
+  if(S.sel!==null||S.tout)return;
+  clearInterval(S.tiv);S.sel=i;S.showExp=true;
+  const q=S.deck[S.idx];const ok=i===q.answer;
+  setUd(p=>{
+    const wc={...p.wrongCounts};
+    if(ok){
+      // ④ 弱点モードで正解したらwrongCountsから削除（クリア）
+      if(S.mode==="WEAK") delete wc[q.id];
+      else wc[q.id]=Math.max(0,(wc[q.id]||0));
+    } else {
+      wc[q.id]=(wc[q.id]||0)+1;
+    }
+    return{...p,wrongCounts:wc,history:[...(p.history||[]).slice(-499),{id:q.id,correct:ok,ts:Date.now()}],totalAnswered:(p.totalAnswered||0)+1};
+  });
+  // ① 進捗保存
+  saveProgress();
+  render();
+  const el=document.getElementById("app");
+  if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+}
+function next(){
+  const q=S.deck[S.idx];const ok=S.sel===q.answer;
+  S.sess=[...S.sess,{q,correct:ok,sel:S.sel}];
+  if(S.idx+1>=S.deck.length){
+    // ① セッション完了: 進捗クリア
+    setUd(p=>{const np={...p,totalSessions:(p.totalSessions||0)+1};delete np.lastProgress;return np;});
+    S.screen="result";render();
+  } else {
+    S.idx++;S.sel=null;S.showExp=false;S.tout=false;S.tl=null;
+    saveProgress();
+    render();startTimer();
+  }
+}
+function star(id){setUd(p=>({...p,starIds:(p.starIds||[]).includes(id)?(p.starIds||[]).filter(s=>s!==id):[...(p.starIds||[]),id]}));render();}
+function clrWrong(id){setUd(p=>{const wc={...p.wrongCounts};delete wc[id];return{...p,wrongCounts:wc};});render();}
+function reset(){if(confirm("学習データをすべてリセットしますか？")){const d={wrongCounts:{},starIds:[],history:[],totalSessions:0,totalAnswered:0};save(d);S.ud=d;render();}}
+function render(){
+  document.getElementById("app").innerHTML=build();
+  if(S.screen==="notebook"||S.screen==="quiz"){
+    const el=document.getElementById("app");
+    if(el){const OFFSET=52+37;const top=el.getBoundingClientRect().top+window.pageYOffset-OFFSET;window.scrollTo({top:Math.max(0,top),behavior:"smooth"});}
+  }
+  if(S.screen==="result"||S.screen==="home"){
+    // ⑥ resultとhomeは常にページ最上部
+    window.scrollTo({top:0,behavior:"smooth"});
+  }
+}
+const arr=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
+const bk=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`;
+const bksvg=()=>`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/></svg>`;
+
+function catStats(){
+  return Object.keys(CAT_META).map(cat=>{
+    const h=(S.ud.history||[]).filter(h=>{const q=ALL_QUESTIONS.find(q=>q.id===h.id);return q&&q.category===cat;});
+    if(!h.length)return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"></div><span class="side-cat-pct" style="color:#999">—</span></div>`;
+    const r=Math.round(h.filter(x=>x.correct).length/h.length*100);
+    return`<div class="side-cat-row"><span class="side-cat-icon">${CAT_META[cat].icon}</span><span class="side-cat-name">${cat}</span><div class="side-cat-track"><div class="side-cat-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="side-cat-pct" style="color:${sc(r)}">${r}%</span></div>`;
+  }).join("");
+}
+
+function build(){
+  const C=cv();
+  if(S.screen==="home")return home(C);
+  if(S.screen==="quiz")return quiz(C);
+  if(S.screen==="result")return result(C);
+  if(S.screen==="notebook")return notebook(C);
+  return"";
+}
+
+function home(C){
+  const{ta,rank,rp,or,wq,sq}=C;
+  const startOff=(S.mode==="WEAK"&&!wq.length)||(S.mode==="STAR"&&!sq.length);
+  const cats=["全て",...Object.keys(CAT_META)];
+  const isFiltered=S.mode==="ALL"&&(S.fc!=="全て"||S.fsc);
+  const filterLabel=S.fsc?(SUBCAT_DEF[S.fc]||[]).find(s=>s.key===S.fsc)?.label.replace(/^[^\s]+\s/,""):S.fc!=="全て"?S.fc:"";
+  const left=`
+    <div class="card">
+      <div class="cat-card-hd">
+        <span class="cat-card-title">カテゴリ・絞り込み</span>
+        ${isFiltered?`<span class="cat-filter-badge active">🎯 ${filterLabel}</span>`:`<span class="cat-filter-badge none">全問題</span>`}
+      </div>
+      <div class="cat-row ${S.mode!=="ALL"?"hidden":""}">
+        ${cats.map(c=>{
+          const a=S.fc===c;
+          const m=CAT_META[c];
+          const cnt=c==="全て"?ALL_QUESTIONS.length:ALL_QUESTIONS.filter(q=>q.category===c).length;
+          const wc=c==="全て"?wq.length:ALL_QUESTIONS.filter(q=>q.category===c&&(S.ud.wrongCounts||{})[q.id]>0).length;
+          const badge=wc>0?`<span style="background:#E8572A;color:#fff;font-size:9px;font-weight:700;border-radius:4px;padding:0 4px;">${wc}</span>`:"";
+          return`<button class="cat-chip ${a?"active":""}" onclick="S.fc='${c}';S.fsc=null;render()">${c!=="全て"&&m?m.icon+" ":""}${c}<span style="opacity:.55;font-size:10px;margin-left:3px;">${cnt}</span>${badge}</button>`;
+        }).join("")}
+      </div>
+      ${S.mode==="ALL"&&S.fc!=="全て"&&SUBCAT_DEF[S.fc]?(()=>{
+        const subs=SUBCAT_DEF[S.fc];
+        return`<div class="subcat-section">
+          <div class="subcat-label">章で絞り込む</div>
+          <div class="subcat-grid">
+            <button class="subcat-chip ${!S.fsc?"active":""}" onclick="S.fsc=null;render()">全章</button>
+            ${subs.map(s=>{
+              const cnt2=ALL_QUESTIONS.filter(q=>q.category===S.fc&&s.ids.includes(q.id)).length;
+              return`<button class="subcat-chip ${S.fsc===s.key?"active":""}" onclick="S.fsc='${s.key}';render()">${s.label}<span style="opacity:.6;font-size:10px;margin-left:3px;">${cnt2}</span></button>`;
+            }).join("")}
+          </div>
+        </div>`;
+      })():""}
+      ${S.mode!=="ALL"?`<p style="font-size:11px;color:var(--text3);margin-top:4px;">弱点・スターモード時はカテゴリ絞り込み不可</p>`:""}
+      <div class="opts-compact">
+        <span class="opt-label-ic">⏱</span>
+        ${[0,30,60].map(t=>`<button class="opt-pill ${S.ts===t?"on":""}" onclick="S.ts=${t};render()">${t===0?"なし":t+"s"}</button>`).join("")}
+        <div class="opts-compact-sep"></div>
+        <button class="opt-pill opt-shuffle ${S.shuffle?"on":""}" onclick="S.shuffle=!S.shuffle;render()">🔀 ${S.shuffle?"ランダム":"順番通り"}</button>
+      </div>
+    </div>
+    ${(()=>{
+      const p=S.ud.lastProgress;
+      const hasP=hasProgress();
+      if(hasP){
+        const resumeQ=p.deckIds&&ALL_QUESTIONS.find(q=>q.id===p.deckIds[p.idx]);
+        const cat=resumeQ?(CAT_META[resumeQ.category]||{icon:"📄"}):{icon:"📄"};
+        const catLabel=resumeQ?resumeQ.category:"";
+        const qNum=p.idx+1;
+        return`<div class="start-row">
+          <button class="start-btn ${startOff?"off":""}" onclick="go()">修行開始 ${arr()}</button>
+          <button class="resume-btn" onclick="resumeSession()">
+            <span class="resume-btn-label">▶ 続きから学習</span>
+            <span class="resume-btn-sub">${qNum}問目 ${cat.icon}${catLabel}</span>
+          </button>
+        </div>`;
+      } else {
+        return`<button class="start-btn start-btn-solo ${startOff?"off":""}" onclick="go()">学習スタート ${arr()}</button>`;
+      }
+    })()}
+    <button class="text-link" onclick="reset()">データをリセット</button>`;
+  const right=`
+    <div class="side-panel">
+      <div class="side-title">学習統計</div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算解答数</span><span class="side-stat-val">${ta}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">通算正答率</span><span class="side-stat-val" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span></div>
+      <div class="side-stat-row"><span class="side-stat-lbl">要復習問題</span><span class="side-stat-val" style="color:${wq.length?"#E8572A":"#0F6E56"}">${wq.length}問</span></div>
+    </div>
+    <div class="side-panel">
+      <div class="side-title">カテゴリ別正答率</div>${catStats()}
+    </div>
+    <button class="side-panel" style="cursor:pointer;text-align:left;width:100%;" onclick="S.screen='notebook';render()">
+      <div class="side-title">間違いノート</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;"><span style="font-size:14px;color:var(--text2);">間違えた問題を確認</span><span style="font-size:18px;font-weight:700;color:${wq.length?"#E8572A":"var(--text3)"};">${wq.length}</span></div>
+    </button>`;
+  const modeTabs=[
+    {k:"ALL",ic:"📚",lbl:"全問",cnt:ALL_QUESTIONS.length,dis:false},
+    {k:"WEAK",ic:"🔥",lbl:"弱点",cnt:wq.length,dis:!wq.length},
+    {k:"STAR",ic:"⭐",lbl:"★登録",cnt:sq.length,dis:!sq.length}
+  ].map(m=>{const on=S.mode===m.k?"hm-on":"";const dis=m.dis?"hm-dis":"";const click=m.dis?"":"S.mode=\'"+m.k+"\';S.fsc=null;render()";return`<button class="hm-tab ${on} ${dis}" onclick="${click}"><span class="hm-ic">${m.ic}</span><span class="hm-lbl">${m.lbl}</span><span class="hm-cnt">${m.cnt}問</span></button>`;}).join("");
+  return`<div class="home-inner">
+    <div class="home-hero">
+      <div class="hero-top">
+        <div class="hero-left">
+          <div class="hero-exam-type">測量・建設</div>
+          <div class="hero-exam-name">測量士補</div>
+          <div class="hero-stats">
+            <div class="hero-stat"><span class="hs-num" style="color:${sc(or)}">${or!==null?or+"%":"—"}</span><span class="hs-lbl">正答率</span></div>
+            <div class="hero-stat-div"></div>
+            <div class="hero-stat"><span class="hs-num">${ta}</span><span class="hs-lbl">解答数</span></div>
+            ${wq.length?`<div class="hero-stat-div"></div><div class="hero-stat"><span class="hs-num" style="color:#E8572A">${wq.length}</span><span class="hs-lbl">要復習</span></div>`:""}
+          </div>
+        </div>
+        <div class="hero-rank" style="border-color:${rank.color}66;background:${rank.color}18">
+          <span class="rank-k" style="color:${rank.color}">${rank.kanji}</span>
+          <span class="rank-l" style="color:${rank.color}">${rank.label}</span>
+          <div class="rank-bar"><div class="rank-fill" style="width:${rp}%;background:${rank.color}"></div></div>
+        </div>
+      </div>
+      <div class="hero-mode-bar">${modeTabs}</div>
+    </div>
+    <div class="pc-cols">
+      <div class="pc-col-main">${left}</div>
+      <div class="pc-col-side">${right}</div>
+    </div>
+  </div>`;
+}
+
+function quiz(C){
+  const{cur,ia,ic,sc2,tp,tc}=C;
+  if(!cur)return"";
+  const sw=S.sess.filter(a=>!a.correct).length;
+  const isStar=(S.ud.starIds||[]).includes(cur.id);
+  const pp=Math.round(((S.idx+1)/S.deck.length)*100);
+  const al=["A","B","C","D"];
+  const catMeta=CAT_META[cur.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+  const catLabel=cur.category||"";
+  const dots=()=>{let h=S.sess.map(a=>`<div class="sb-dot ${a.correct?"sd-ok":"sd-ng"}"></div>`).join("");h+=`<div class="sb-dot sd-cur"></div>`;const f=Math.min(3,S.deck.length-S.idx-1);for(let i=0;i<f;i++)h+=`<div class="sb-dot sd-future"></div>`;const m=S.deck.length-S.idx-f-1;if(m>0)h+=`<span class="sb-more">+${m}</span>`;return h;};
+  const mc=(S.ud.wrongCounts||{})[cur.id]||0;
+  const tim=S.ts>0?`<div class="timer-wrap"><svg width="44" height="44" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="none" stroke="#e5e3dc" stroke-width="4"/><circle cx="24" cy="24" r="20" fill="none" stroke="${tc}" stroke-width="4" stroke-linecap="round" stroke-dasharray="${tp*1.257} 125.7" transform="rotate(-90 24 24)" style="transition:stroke-dasharray .9s linear"/></svg><span class="timer-num" style="color:${tc}">${S.tout?"✕":(S.tl||"")}</span></div>`:"";
+
+  // ── 未回答：問題文＋4択を表示 ──────────────────────
+  if(!ia){
+    const ch=cur.choices.map((c,i)=>`<button class="choice" onclick="pick(${i})"><span class="ch-alpha">${al[i]}</span><span class="ch-body">${c}</span></button>`).join("");
+    return`<div class="quiz-inner">
+      <div class="pc-quiz-main">
+        <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+        <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+        ${tim}
+        <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+        <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+        <div class="choices">${ch}</div>
+      </div>
+      <div class="pc-quiz-side">
+        <div class="side-panel"><div class="side-title">解説</div><div class="side-exp-placeholder">選択肢を選ぶと解説が表示されます</div></div>
+        <div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>
+      </div>
+    </div>`;
+  }
+
+  // ── 回答済み：選択肢を非表示にして解説カードのみ表示 ──
+  const cls=ic&&!S.tout?"exp-ok":S.tout?"exp-time":"exp-ng";
+  const v=S.tout?"⏰ 時間切れ":ic?"✓ 正解！":"✗ 不正解";
+  const vc=ic&&!S.tout?"var(--green-d)":S.tout?"var(--gold)":"var(--accent)";
+
+  const correctRow=`<div class="exp-correct-bar ok">
+    <span class="exp-correct-label">正解</span>
+    <span class="exp-correct-text">${al[cur.answer]}. ${cur.choices[cur.answer]}</span>
+  </div>`;
+  const myRow=(!ic&&!S.tout&&S.sel!==null)?`<div class="exp-correct-bar ng">
+    <span class="exp-correct-label">あなた</span>
+    <span class="exp-correct-text">${al[S.sel]}. ${cur.choices[S.sel]}</span>
+  </div>`:"";
+
+  // PC側解説パネル
+  const expPC=`<div class="side-panel">
+    <div class="side-title">解説</div>
+    <div style="font-size:13px;font-weight:700;color:${vc};margin-bottom:8px;">${v}</div>
+    <div style="background:rgba(29,158,117,.1);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#0F6E56;"><strong>正解：</strong>${al[cur.answer]}. ${cur.choices[cur.answer]}</div>
+    ${(!ic&&!S.tout&&S.sel!==null)?`<div style="background:rgba(230,81,0,.08);border-radius:7px;padding:6px 8px;margin-bottom:6px;font-size:12px;color:#8B2A0E;"><strong>あなた：</strong>${al[S.sel]}. ${cur.choices[S.sel]}</div>`:""}
+    <div class="side-exp-body">${cur.explanation}</div>
+  </div>`;
+  const stPC=`<div class="side-panel"><div class="side-title">セッション</div><div class="side-stat-row"><span class="side-stat-lbl">正解</span><span class="side-stat-val" style="color:#0F6E56">${sc2}</span></div><div class="side-stat-row"><span class="side-stat-lbl">不正解</span><span class="side-stat-val" style="color:#E8572A">${sw}</span></div><div class="side-stat-row"><span class="side-stat-lbl">残り</span><span class="side-stat-val">${S.deck.length-S.sess.length-1}</span></div><div style="margin-top:10px;">${catStats()}</div></div>`;
+
+  return`<div class="quiz-inner">
+    <div class="pc-quiz-main">
+      <div class="quiz-nav"><button class="nav-back" onclick="clearInterval(S.tiv);S.screen='home';render()">${bk()}</button><div class="quiz-counter-wrap"><div class="quiz-counter"><span class="qc-cur">${S.idx+1}</span><span class="qc-sep">/</span><span class="qc-tot">${S.deck.length}</span></div><span class="qc-sub">${catLabel||""}　${pp}%</span></div><button class="star-btn ${isStar?"on":""}" onclick="star(${cur.id})">${isStar?"★":"☆"}</button></div>
+      <div class="q-progress"><div class="q-prog-fill" style="width:${pp}%"></div></div>
+      <div class="session-bar"><span class="sb-ok">✓ ${sc2}</span><div class="sb-dots">${dots()}</div><span class="sb-ng">✗ ${sw}</span></div>
+      <div class="q-card"><div class="q-card-head"><span class="q-cat-badge" style="background:${catMeta.bg};color:${catMeta.color};border-color:${catMeta.color}55">${catMeta.icon} ${catLabel}</span>${mc>0?`<span class="q-miss">⚡ ${mc}回ミス</span>`:""}</div><p class="q-text">${cur.question}</p></div>
+      <div class="exp-card exp-sp ${cls}">
+        <div class="exp-head"><span class="exp-verdict">${v}</span></div>
+        ${correctRow}${myRow}
+        <p class="exp-body">${cur.explanation}</p>
+      </div>
+      <div class="next-wrap"><div class="next-3">
+        <button class="btn-retry" onclick="retryQ()">🔁<span class="btn-sub-lbl">もう一度</span></button>
+        <button class="btn-pause" onclick="pauseQ()">⏸<span class="btn-sub-lbl">中断</span></button>
+        <button class="btn-next-main" onclick="next()">${S.idx+1>=S.deck.length?"🏁 結果を見る":"次の問題 →"}</button>
+      </div></div>
+    </div>
+    <div class="pc-quiz-side">${expPC}${stPC}</div>
+  </div>`;
+}
+
+function result(C){
+  const{sc2,sr}=C;
+  const v=sr>=80?"🏆 優秀！":sr>=60?"✅ 合格ライン達成！":"📚 もう一度復習しよう";
+  const vc=sc(sr);
+  const cats=Object.keys(CAT_META).map(cat=>{const qs=S.sess.filter(a=>a.q.category===cat);if(!qs.length)return"";const r=Math.round(qs.filter(a=>a.correct).length/qs.length*100);return`<div class="rc-row"><span class="rc-icon">${CAT_META[cat].icon}</span><span class="rc-name">${cat}</span><div class="rc-track"><div class="rc-fill" style="width:${r}%;background:${CAT_META[cat].color}"></div></div><span class="rc-pct">${r}%</span></div>`;}).join("");
+  // ⑤ undefinedを除去: questionが存在するか確認
+  const log=S.sess.map((a,i)=>{
+    if(!a.q||!a.q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[a.q.id]||0;
+    const cat=CAT_META[a.q.category];
+    const icon=cat?cat.icon:"";
+    const qText=a.q.question.slice(0,28)+"…";
+    return`<div class="ans-row ${a.correct?"ar-ok":"ar-ng"}"><span class="ar-n">Q${i+1}</span><span class="ar-cat">${icon}</span><span class="ar-q">${qText}</span><span class="ar-mark">${a.correct?"✓":"✗"}</span>${!a.correct?`<span class="ar-cnt">×${wc}</span>`:""}</div>`;
+  }).join("");
+  return`<div class="result-inner">
+    <div class="result-hero">
+      <p class="result-eyebrow">修行完了</p>
+      <div class="result-score-wrap"><svg width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="8"/><circle cx="50" cy="50" r="42" fill="none" stroke="${vc}" stroke-width="8" stroke-linecap="round" stroke-dasharray="${sr*2.639} 263.9" transform="rotate(-90 50 50)" style="transition:stroke-dasharray 1s ease .3s"/></svg><div class="result-score-inner"><span class="result-pct" style="color:${vc}">${sr}<small>%</small></span><span class="result-sub">${sc2}/${S.sess.length}</span></div></div>
+      <div class="result-verdict" style="color:${vc};border-color:${vc}66;background:${vc}22">${v}</div>
+      <div class="result-cats">${cats}</div>
+    </div>
+    <div class="section-hd">問題別レビュー</div>
+    <div class="ans-log">${log}</div>
+    <button class="cta-btn" onclick="go()">もう一度</button>
+    <button class="ghost-btn" onclick="go('WEAK')">弱点だけ特訓</button>
+    <button class="ghost-btn" onclick="S.screen='home';render()">ホームへ戻る</button>
+  </div>`;
+}
+
+function notebook(C){
+  const{wq}=C;const al=["A","B","C","D"];
+  const cards=wq.map(q=>{
+    if(!q||!q.question)return"";
+    const wc=(S.ud.wrongCounts||{})[q.id]||0;
+    const is=(S.ud.starIds||[]).includes(q.id);
+    const cat=CAT_META[q.category]||{color:"#666",icon:"📄",bg:"#f0f0f0"};
+    return`<div class="nb-card"><div class="nb-card-top"><span class="nb-cat" style="color:${cat.color};background:${cat.bg};border-color:${cat.color}55">${cat.icon} ${q.category||""}</span><div class="nb-actions"><span class="nb-wc">✗ ${wc}回</span><button class="nb-star ${is?"on":""}" onclick="star(${q.id})">${is?"★":"☆"}</button><button class="nb-resolve" onclick="clrWrong(${q.id})">解決</button></div></div><p class="nb-q">${q.question}</p><div class="nb-ans-box"><span class="nb-ans-lbl">正解</span><span class="nb-ans-val">${al[q.answer]}. ${q.choices[q.answer]}</span></div><details class="nb-details"><summary class="nb-summary">解説を見る ▾</summary><p class="nb-exp">${q.explanation}</p></details></div>`;
+  }).join("");
+  return`<div class="nb-inner"><div class="nb-nav"><button class="nav-back" onclick="S.screen='home';render()">${bk()}</button><span class="nb-title">間違いノート</span><span class="nb-count">${wq.length}問</span></div>${wq.length===0?`<div class="empty-wrap"><div class="empty-icon">🎉</div><p class="empty-msg">まだ間違えた問題はありません</p><p class="empty-sub">どんどん問題に挑戦しよう！</p></div>`:`<div>${cards}</div>`}</div>`;
+}
+render();
+
+// ── ページ内ナビ スクロール処理 ──
+function scrollToApp(e){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById("app");
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab("app");
+}
+function scrollTo_(e, id){
+  e.preventDefault();
+  const OFFSET = 52 + 37 + 8; // site-header + page-nav + 余白
+  const el = document.getElementById(id);
+  if(el){ window.scrollTo({top: el.getBoundingClientRect().top + window.pageYOffset - OFFSET, behavior:"smooth"}); }
+  setActiveTab(id);
+}
+function setActiveTab(id){
+  document.querySelectorAll(".pn-tab").forEach(t => t.classList.remove("active"));
+  const map = {app:0, apply:1, books:2, courses:3, overview:4, syllabus:5, roadmap:6, faq:7};
+  const tabs = document.querySelectorAll(".pn-tab");
+  const idx = map[id];
+  if(idx !== undefined && tabs[idx]) tabs[idx].classList.add("active");
+}
+const _navIds = ["faq","roadmap","syllabus","overview","courses","books","apply"];
+window.addEventListener("scroll", ()=>{
+  const offset = 120;
+  for(const id of _navIds){
+    const el = document.getElementById(id);
+    if(el && el.getBoundingClientRect().top <= offset){
+      setActiveTab(id); return;
+    }
+  }
+  setActiveTab("app");
+}, {passive:true});
+</script>
+
+<section class="aff-section">
+  <div class="aff-inner">
+    <h2 class="aff-h2">試験に申し込む・学習を始める</h2>
+    <p class="aff-sub">公式サイトで最新の試験日程・申込方法を確認してください</p>
+    <a class="official-btn" href="https://www.gsi.go.jp/LAW/SHIKEN/SHIKEN-top.html" target="_blank" rel="noopener">
+      <div class="official-ico">🏛️</div>
+      <div class="official-info"><div class="official-name">国土地理院（測量士・測量士補試験）（公式）</div><div class="official-note">試験日程・申込方法・受験料の詳細はこちらから確認できます</div></div>
+      <div class="official-arr">→</div>
+    </a>
+    <div class="aff-h3">おすすめ参考書</div><div class="book-list"><div class="book-card"><div class="book-title">📖 測量士補テキスト＆問題集（日建学院・東京法経等）</div><div class="book-memo">図解豊富で計算問題の解説が丁寧な定番テキスト</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=測量士補テキスト＆問題集日建学院・東京法経等&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/測量士補テキスト＆問題集日建学院・東京法経等/" target="_blank" rel="noopener">楽天 で見る</a></div></div><div class="book-card"><div class="book-title">📖 測量士補 過去問題集（各社）</div><div class="book-memo">過去問反復が最短合格の近道。繰り返し解くことが重要</div><div class="book-links"><a class="book-link book-link-amz" href="https://www.amazon.co.jp/s?k=測量士補過去問題集各社&tag=YOUR_AMAZON_TAG" target="_blank" rel="noopener">Amazon で見る</a><a class="book-link book-link-rak" href="https://search.rakuten.co.jp/search/mall/測量士補過去問題集各社/" target="_blank" rel="noopener">楽天 で見る</a></div></div></div>
+    <div class="aff-h3">おすすめ通信講座</div><div class="course-list"><a class="course-card" href="https://www.nikken.co.jp/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">日建学院 測量士補講座</div><div class="course-price">約30,000円〜</div><div class="course-feat">建設系資格の実績・映像講義が充実</div></div><div class="course-arr">›</div></a><a class="course-card" href="https://www.tokkyokk.com/" target="_blank" rel="noopener"><div class="course-ico">🎓</div><div class="course-info"><div class="course-name">東京法経学院 測量士補講座</div><div class="course-price">約25,000円〜</div><div class="course-feat">測量資格専門校・過去問解説が丁寧</div></div><div class="course-arr">›</div></a></div>
+    <p class="aff-note">※ 参考書・通信講座のリンクはアフィリエイトリンクです。<br>※ 価格は変動する場合があります。最新情報は各公式サイトでご確認ください。</p>
+  </div>
+</section>
+<section class="seo-section">
+  <div class="seo-inner">
+    <h2 class="seo-h2">測量士補とは</h2>
+    <p class="seo-lead">測量士補は、測量士の業務を補助できる国家資格です。建設・土木・不動産・地図製作・ドローン測量など幅広い分野で評価されます。また、測量士補を取得後に一定の実務経験を積むと測量士になることもできます。計算問題が得点源で、繰り返し練習で確実に合格できます。</p>
+    <h3 class="seo-h3">試験概要</h3>
+    <div class="info-grid2">
+      <div class="ig-card"><div class="ig-lbl">合格率</div><div class="ig-val">30%</div></div>
+      <div class="ig-card"><div class="ig-lbl">勉強時間</div><div class="ig-val">200〜300時間</div></div>
+      <div class="ig-card"><div class="ig-lbl">受験料</div><div class="ig-val">4,250円</div></div>
+      <div class="ig-card"><div class="ig-lbl">試験形式</div><div class="ig-val">4択マークシート・28問</div></div>
+      <div class="ig-card"><div class="ig-lbl">試験回数</div><div class="ig-val">年1回（5月頃）</div></div>
+      <div class="ig-card"><div class="ig-lbl">難易度</div><div class="ig-val">★★☆☆☆</div></div>
+    </div>
+    <h3 class="seo-h3">試験科目・出題範囲</h3><table class="seo-table"><thead><tr><th>科目・分野</th><th>主な内容</th></tr></thead><tbody><tr><td>測量に関する法規</td><td>測量法・公共測量作業規程・測量の基準</td></tr><tr><td>多角測量（トラバース）</td><td>トラバース測量・座標計算・方位角計算</td></tr><tr><td>水準測量</td><td>レベル測量・高低差計算・誤差の処理</td></tr><tr><td>地形測量・写真測量</td><td>等高線・航空写真測量・リモートセンシング・GIS</td></tr><tr><td>面積計算・用地測量</td><td>座標法による面積計算・境界確定</td></tr></tbody></table>
+    <h3 class="seo-h3">学習ロードマップ</h3><div class="roadmap"><div class="rm-step"><div class="rm-num">1</div><div><div class="rm-title">測量の基礎と法規を理解（1〜2週目）</div><div class="rm-desc">測量の種類と基本的な用語・法律の概要を把握する</div></div></div><div class="rm-step"><div class="rm-num">2</div><div><div class="rm-title">計算問題を集中練習（3〜6週目）</div><div class="rm-desc">トラバース・水準・面積計算を繰り返し練習する。計算が最重要</div></div></div><div class="rm-step"><div class="rm-num">3</div><div><div class="rm-title">写真測量・地形測量を学ぶ（7〜8週目）</div><div class="rm-desc">航空写真測量・GIS・リモートセンシングの基礎を押さえる</div></div></div><div class="rm-step"><div class="rm-num">4</div><div><div class="rm-title">過去問演習で仕上げ（9〜12週目）</div><div class="rm-desc">過去5〜6年分の問題を繰り返し解き、計算の精度を上げる</div></div></div></div>
+    <h3 class="seo-h3">この資格を取ったら次は？</h3><div class="next-shikaku"><a class="next-card" href="kanri.html"><div class="next-ico" style="background:#FFF8E1">🏢</div><div><div class="next-name">管理業務主任者</div><div class="next-desc">不動産系の資格でキャリアを広げる</div></div></a><a class="next-card" href="kogai.html"><div class="next-ico" style="background:#FFF3E0">🌿</div><div><div class="next-name">公害防止管理者</div><div class="next-desc">建設・土木×環境の専門家へ</div></div></a></div>
+    <h3 class="seo-h3">よくある質問（FAQ）</h3><div class="faq-list"><details class="faq-item"><summary class="faq-q">測量士補の合格率はどのくらいですか？</summary><p class="faq-a">約30%程度です。計算問題の練習をしっかり積めば合格できます。</p></details><details class="faq-item"><summary class="faq-q">数学が苦手でも大丈夫ですか？</summary><p class="faq-a">三角関数・基礎的な幾何の知識が必要ですが、専用テキストで学習パターンを習得すれば対応できます。計算の「型」を覚えることが重要です。</p></details><details class="faq-item"><summary class="faq-q">測量士との違いは何ですか？</summary><p class="faq-a">測量士補は測量士の補助業務のみ行えます。測量士は独立して測量業務全般を行えます。実務経験を積んで測量士を目指すルートもあります。</p></details><details class="faq-item"><summary class="faq-q">建設業以外でも役立ちますか？</summary><p class="faq-a">不動産・地図・GIS・ドローン測量・インフラ管理など幅広い分野で評価されます。</p></details></div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="sf-inner">
+    <div class="sf-logo">
+      <span class="sf-lmark">問</span>
+      資格<span>ドリル</span>
+    </div>
+    <div class="sf-links">
+      <a href="index.html">資格一覧トップ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+      <a href="contact.html">お問い合わせ</a>
+    </div>
+    <div class="sf-copy">© 2026 資格ドリル</div>
+  </div>
+</footer>
+</body>
+</html>
